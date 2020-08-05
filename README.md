@@ -1,2 +1,2 @@
 # Python_Templates
-Instructions on Instructions.tct to set up v.environment
+Instructions on Instructions.txt to set up v.environment
