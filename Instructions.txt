@@ -1,6 +1,8 @@
-#copy to terminal to create virtula environment
+#copy to terminal to create virtual environment
 py -m venv env
 #copy to terminal to activate virtual environment
 .\env\Scripts\activate
 #upgrade PIP
 python -m pip install --upgrade pip
+
+#you are ready to code/ add more libraries
