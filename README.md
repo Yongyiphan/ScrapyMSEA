@@ -1,2 +1,1 @@
-# Python_Templates
-Instructions on Instructions.txt to set up v.environment
+Web Scraping For MSEA Calculator using Scrapy
