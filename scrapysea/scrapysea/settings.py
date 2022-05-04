@@ -8,6 +8,7 @@
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
 from pickle import FALSE
+import QuietLogFormatter
 
 
 BOT_NAME = 'scrapysea'
@@ -90,5 +91,3 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
-LOG_ENABLED = FALSE
-#LOG_LEVEL = "INFO"

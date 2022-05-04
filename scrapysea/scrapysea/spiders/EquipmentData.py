@@ -5,8 +5,8 @@ import re
 
 
 
-Eqlogger = CustomLogger.Set_Custom_Logger("EquipmentAllSpider", "./Logs/Equipment.log", propagate=False)
-Eslogger = CustomLogger.Set_Custom_Logger("EquipmentSetSpider", "./Logs/EquipmentSet.log", propagate=False)
+Eqlogger = CustomLogger.Set_Custom_Logger("EquipmentAllSpider", logTo ="./Logs/Equipment.log", propagate=False)
+Eslogger = CustomLogger.Set_Custom_Logger("EquipmentSetSpider", logTo ="./Logs/EquipmentSet.log", propagate=False)
 #configure_logging(install_root_handler=False)
 
 class TotalEquipmentSpider(scrapy.Spider):
@@ -21,7 +21,7 @@ class TotalEquipmentSpider(scrapy.Spider):
                     "overwrite" : True
                 }
             },
-        "LOG_SCRAPED_ITEMS": True
+        "LOG_SCRAPED_ITEMS": False
         
     }
     
@@ -233,7 +233,6 @@ class TotalEquipmentSpider(scrapy.Spider):
         EquipSlot = response.xpath("//h1[@id = 'firstHeading']/text()").get().strip('\n\t').split('/')[0]
         tabsTitle = response.xpath("//div[@class='tabber wds-tabber'] //ul[@class='wds-tabs'] //li").css("::text").getall()
         Unobtainable =[i for i, j in enumerate(tabsTitle) if "unobtainable" in j.lower()]
-        #Wikitable = response.xpath("//div[@class='wds-tab__content wds-is-current'] //table[@class='wikitable']")
         
         Wikitable = response.xpath("//div[@class='tabber wds-tabber'][1] //div[contains(@class, 'wds-tab__content')] //table[@class='wikitable']")
         if Wikitable == []:
@@ -253,7 +252,6 @@ class TotalEquipmentSpider(scrapy.Spider):
             pass
     
         
-        #for row in Wikitable.xpath(".//tr //td/a[not(contains(@href, 'png'))]/@href"):
         for i, table in enumerate(Wikitable):
             Category = tabsTitle[i] if tabsTitle != [] else ""
             for row in table.xpath(".//tr"):
@@ -391,13 +389,7 @@ class EquipmentSetSpider(scrapy.Spider):
         'Immortal', 'Eternal','Walker','Anniversary', 
         "Sweetwater", "Commerci", "Gollux", "Alien", "Blackgate", "Glona"]
     
-    PageContentSkip = [
-        "Extra Stats", "Notes", "Sold for", 
-        "Tradability", "Bought from", "Dropped by",
-        "Rewarded from", "Used In", "Used To"
-        "when first equipped", "Crafted via", "EXP"]
 
-    
     def parse(self, response):
 
         EquipmentSet =response.xpath("//span[@id = 'Equipment_Set']/parent::h2/following-sibling::div[@class='tabber wds-tabber'][1]").css("table.wikitable")
@@ -434,57 +426,11 @@ class EquipmentSetSpider(scrapy.Spider):
                 if SetAt not in ItemDict.keys():
                     ItemDict[SetAt] = {}
                 ItemDict[SetAt][SetType] = self.RetrieveByTDContent(SetEffectAt)
-                
+        
+        Eslogger.info(f"Adding {EquipSet}")
         return ItemDict
 
 
-    def RetrieveByPage(self, response, ItemDict):
-        if not response:
-            return
-        PageTitle = response.xpath("//h1[@class='page-header__title']/text()").get()
-        TableTrack = 1
-        AlternateTablesTitles = response.xpath("//div[@class = 'toc'] //ul/li[contains(@class, 'toclevel-2')]/a /span[@class='toctext']/text()").getall()
-            
-        TableContent = response.css("div.mw-parser-output table")
-        if PageTitle.find("Genesis") != -1:
-            TableContent = response.xpath("//h2/span[@id = 'Unsealed']/parent::h2/following-sibling::table")
-        td = []
-        TableCount = 0
-        for ctable in TableContent:
-            
-            if AlternateTablesTitles != []:
-                TableTrack = len(AlternateTablesTitles)
-                H3 = ctable.xpath("./preceding-sibling::*[1][self::h3] //span/text()").get()
-                H2 = ctable.xpath("./preceding-sibling::*[1][self::h2] //span/text()").get()
-                try:
-                    if list(set(AlternateTablesTitles)&set([H3, H2])) == []:
-                        continue
-                except Exception as E:
-                    print(E)
-            TableCount += 1
-            if TableCount > TableTrack:
-                break
-            for t in ctable.xpath('.//tr'):
-                texts = t.css("td ::text").getall()
-                if texts == ['\n']:
-                    continue
-                td.append("".join(texts))
-            td = ["".join(value.css("td ::text").getall()).strip('\n') for value in ctable.css('tr') if value.css("td ::text").getall() != ['\n']]
-            th = [value.strip('\n') for value in ctable.css('tr > th ::text').getall() if value != '\n']
-            ItemDict["EquipName"] = td[0].rstrip(' \n')
-            for key, value in zip(th, td[1:]):
-                
-                if any(value.lower() in key.lower() for value in self.PageContentSkip):
-                    continue
-                
-                try:
-                    ItemDict[key] = value.strip('+%')
-                except:
-                    continue
-            
-            Eslogger.info(f"Adding {ItemDict['EquipName']}")
-            return ItemDict
-    
     def RetrieveByTDContent(self, content, ItemDict = {}):
         
         for stat in content:
@@ -499,8 +445,6 @@ class EquipmentSetSpider(scrapy.Spider):
                     ItemDict[key] = value.rstrip(' \n')
                 except:
                     continue
-        if "EquipName" in ItemDict.keys():
-            Eslogger.info(f"Adding {ItemDict['EquipName']}")
         return ItemDict
 
     def removeBRN(self, List):
