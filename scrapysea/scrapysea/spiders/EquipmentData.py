@@ -136,12 +136,14 @@ class TotalEquipmentSpider(scrapy.Spider):
         
         try:
             pd.set_option("display.max_rows", None, "display.max_columns", None)
+            #Weapon Dataframe
             WDF = pd.concat(self.FinalEquipTrack['Weapon'], ignore_index=True)
             WDF = CleanWeaponDF(WDF)
-
+            #Secondary Dataframe
             SDF = pd.concat(self.FinalEquipTrack['Secondary'], ignore_index=True)
             SDF = CleanSecondaryDF(SDF)
 
+            #Armor, Accessories, Android, Medal Dataframe
             ADF = pd.concat(self.FinalEquipTrack['Armor'], ignore_index=True)
             ADF = CleanArmorDF(ADF)
             AccDF = pd.concat(self.FinalEquipTrack['Accessory'], ignore_index=True)
@@ -164,18 +166,18 @@ class TotalEquipmentSpider(scrapy.Spider):
             finish_time = self.crawler.stats.get_value('finish_time')
             print("Equipment scraped in: ", finish_time-start_time)
 
-    #Implemented
+    
     def HandleWeapon(self, response):
+        
         weaponTablesLinks = response.xpath("//div[@class='wds-tab__content wds-is-current']").css('b > a::attr(href)')
         if weaponTablesLinks == []:
             weaponTablesLinks = response.xpath("//div[@class='mw-parser-output'] //table[@class='wikitable'] //a[not(contains(@class,'image'))]/@href")
         for links in weaponTablesLinks:
+            #Reformat link to retrieve weapon name
             weaponName = " ".join(re.split("%|_|-|#|27s", links.extract().split("/")[-1]))
             if weaponName.find('Sealed') != -1:
                 continue
-            setWName = set(weaponName.split(' '))
-            setTrack = set(self.WeapSetTrack)
-            commonStr = list(setWName&setTrack)
+            commonStr = list(set(weaponName.split(' '))&set(self.WeapSetTrack))
             if commonStr == []:
                 continue
             Nurl = response.urljoin(links.extract())
@@ -187,12 +189,13 @@ class TotalEquipmentSpider(scrapy.Spider):
             }
             yield scrapy.Request(Nurl, callback=self.RetrieveByPage, cb_kwargs = {"ItemDict" : ItemDict})
    
-    #Implemented
+    
     def HandleSecondary(self, response):
         Mdiv = response.css('div.mw-parser-output')
         classType = []
         CStart = False
         WeaponType = response.meta["WeaponType"]
+        #Iterate through header para to get classnames
         for i in Mdiv.css("p"):
             texts = i.css('::text').getall()
             if texts == ['\n']:
@@ -220,6 +223,7 @@ class TotalEquipmentSpider(scrapy.Spider):
             classType.append("Demon")
         HTitle = []
         for i, C in enumerate(classType):
+            #if other server exclusive classes, break
             if C.lower() in list(map(lambda x:x.lower(), self.NonMseaClasses)):
                 break
             for row in tables[i].css('tr'):
@@ -256,7 +260,7 @@ class TotalEquipmentSpider(scrapy.Spider):
                 
                     self.RecordItemDict(ItemDict)
                     yield ItemDict
-    #Implemented    
+      
     
     def HandleEquipment(self, response):
     
@@ -282,7 +286,6 @@ class TotalEquipmentSpider(scrapy.Spider):
             Eqlogger.critical(E)
             pass
         HTitle = []
-        TempL = []
         for i, table in enumerate(Wikitable):
             Category = tabsTitle[i] if tabsTitle != [] else ""
             for row in table.xpath(".//tr"):
@@ -381,7 +384,7 @@ class TotalEquipmentSpider(scrapy.Spider):
                         ItemDict[key] = nvalue
                 except:
                     continue
-            try:
+            if "Equipment Set" in ItemDict.keys():
                 Set = ItemDict['Equipment Set']
                 SetI = Set.find('Set')
                 Set = Set[:SetI]
@@ -389,8 +392,7 @@ class TotalEquipmentSpider(scrapy.Spider):
                 if ClassFound != []:
                     Set = Set.replace(ClassFound[0], '')
                 ItemDict['Equipment Set'] = Set.rstrip(' ')
-            except:
-                pass           
+                       
             self.RecordItemDict(ItemDict=ItemDict)
             yield ItemDict
     
@@ -411,6 +413,7 @@ class TotalEquipmentSpider(scrapy.Spider):
         return ItemDict
     
     def RecordItemDict(self, ItemDict):
+        #Save to respective dataframes
         try:
             EquipSlot = ItemDict['EquipSlot']
             if EquipSlot is not None:
@@ -426,7 +429,6 @@ class TotalEquipmentSpider(scrapy.Spider):
                 Eqlogger.info(f"Adding {ItemDict['EquipName']}")
         except Exception:
             Eqlogger.critical(traceback.format_exc())
-
 
     def removeBRN(self, List):
         return [value.strip('\n') for value in List if value.strip(' ') != '\n']

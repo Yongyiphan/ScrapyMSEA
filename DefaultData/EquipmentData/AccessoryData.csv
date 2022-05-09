@@ -1,422 +1,422 @@
 ,EquipSlot,ClassName,EquipName,EquipSet,Category,EquipLevel,STR,DEX,LUK,INT,All Stats,Max HP,Max MP,Defense,Weapon Attack,Magic Attack,Ignored Enemy Defense,Movement Speed,Jump,Number of Upgrades,Rank
-0,Belt,Any,Tinkerer's Yellow Belt,None,Obtainable,100,0,0,0,0,15,0,0,30,5,5,0,0,0,0,0
-1,Belt,Any,Tinkerer's Green Belt,None,Obtainable,100,0,0,0,0,20,0,0,40,10,10,0,0,0,0,0
-2,Belt,Any,Tinkerer's Blue Belt,None,Obtainable,100,0,0,0,0,30,0,0,50,15,15,0,0,0,0,0
-3,Belt,Any,Tinkerer's Red Belt,None,Obtainable,100,0,0,0,0,75,0,0,75,40,40,0,0,0,0,0
-4,Belt,Any,Tinkerer's Black Belt,None,Obtainable,100,0,0,0,0,100,0,0,100,50,50,0,0,0,0,0
-5,Belt,Any,Saint Wing Knight Belt,None,Obtainable,120,0,0,0,0,5,100,100,86,0,0,0,0,0,0,0
-6,Shoulder,Any,Wise Royal Meister Shoulder,None,Obtainable,130,0,0,0,10,0,0,0,42,6,6,0,0,0,0,0
-7,Shoulder,Any,Sharp Royal Meister Shoulder,None,Obtainable,130,0,10,0,0,0,0,0,42,6,6,0,0,0,0,0
-8,Shoulder,Any,Lucky Royal Meister Shoulder,None,Obtainable,130,0,0,10,0,0,0,0,42,6,6,0,0,0,0,0
-9,Earrings,Any,Rex's Green Earrings,None,Obtainable,75,0,0,3,3,0,0,0,0,0,0,0,0,0,0,0
-10,Earrings,Any,Rex's Red Earrings,None,Obtainable,75,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0
-11,Earrings,Any,Rex's Blue Earrings,None,Obtainable,75,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0
-12,Belt,Any,Tenacious Green Gilded Belt,None,Obtainable,100,7,0,0,0,0,70,70,80,0,0,0,0,0,3,0
-13,Android Heart,Any,Black Heart,Pitched Boss,,120,50,50,50,50,0,100,0,0,77,77,0,0,0,0,5
-14,Android Heart,Any,Outlaw Heart,None,,150,5,5,5,5,0,500,0,0,0,0,0,0,0,10,5
-15,Face Accessory,Warrior,Red Warrior Meister Symbol,None,Obtainable,100,2,1,0,0,0,0,0,20,0,0,0,0,0,0,0
-16,Face Accessory,Magician,Red Magician Meister Symbol,None,Obtainable,100,0,0,1,2,0,0,0,20,0,0,0,0,0,0,0
-17,Face Accessory,Bowman,Red Archer Meister Symbol,None,Obtainable,100,1,2,0,0,0,0,0,20,0,0,0,0,0,0,0
-18,Face Accessory,Thief,Red Thief Meister Symbol,None,Obtainable,100,0,1,2,0,0,0,0,20,0,0,0,0,0,0,0
-19,Face Accessory,Pirate,Red Pirate Meister Symbol,None,Obtainable,100,2,1,0,0,0,0,0,20,0,0,0,0,0,0,0
-20,Face Accessory,Magician,Shiny Red Magician Meister Symbol,None,Obtainable,130,0,0,3,3,0,0,0,26,0,3,0,0,0,0,0
-21,Face Accessory,Bowman,Shiny Red Archer Meister Symbol,None,Obtainable,130,3,3,0,0,0,0,0,26,3,0,0,0,0,0,0
-22,Face Accessory,Thief,Shiny Red Thief Meister Symbol,None,Obtainable,130,0,3,3,0,0,0,0,26,3,0,0,0,0,0,0
-23,Android Heart,Any,Glimmering Wondroid Heart,None,,120,10,10,10,10,0,500,0,0,1,1,0,0,0,9,5
-24,Android Heart,Any,Liquid-Metal Heart,None,,120,3,3,3,3,0,100,0,0,0,0,0,0,0,9,5
-25,Face Accessory,Pirate,Shiny Red Pirate Meister Symbol,None,Obtainable,130,3,3,0,0,0,0,0,26,3,0,0,0,0,0,0
-26,Android Heart,Any,Titanium Heart,None,,100,3,3,3,3,0,50,0,0,0,0,0,0,0,9,5
-27,Face Accessory,Bowman,Shiny Gray Archer Symbol,None,Obtainable,110,2,2,0,0,0,0,0,22,1,0,0,0,0,0,0
-28,Face Accessory,Magician,Shiny Gray Magician Symbol,None,Obtainable,110,0,0,2,2,0,0,0,22,0,1,0,0,0,0,0
-29,Face Accessory,Warrior,Shiny Gray Warrior Symbol,None,Obtainable,110,2,2,0,0,0,0,0,22,1,0,0,0,0,0,0
-30,Face Accessory,Thief,Shiny Gray Thief Symbol,None,Obtainable,110,0,2,2,0,0,0,0,22,1,0,0,0,0,0,0
-31,Face Accessory,Bowman,Red Archer Symbol,None,Obtainable,100,1,2,0,0,0,0,0,20,0,0,0,0,0,0,0
-32,Face Accessory,Pirate,Red Pirate Symbol,None,Obtainable,100,2,1,0,0,0,0,0,20,0,0,0,0,0,0,0
-33,Face Accessory,Thief,Red Thief Symbol,None,Obtainable,100,0,1,2,0,0,0,0,20,0,0,0,0,0,0,0
-34,Face Accessory,Magician,Red Magician Symbol,None,Obtainable,100,0,0,1,2,0,0,0,20,0,0,0,0,0,0,0
-35,Ring,Any,Reboot Awake Ring (Lv. 1),None,Event,120,10,10,10,10,0,"1,000","1,000",0,10,10,0,0,0,0,0
-36,Ring,Any,Reboot Awake Ring (Lv. 2),None,Event,120,20,20,20,20,0,"2,000","2,000",0,15,15,0,0,0,0,0
-37,Ring,Any,Reboot Awake Ring (Lv. 3),None,Event,120,30,30,30,30,0,"3,000","3,000",0,20,20,0,0,0,0,0
-38,Ring,Any,Reboot Awake Ring (Lv. 4),None,Event,120,40,40,40,40,0,"4,000","4,000",0,25,25,0,0,0,0,0
-39,Ring,Any,Adventure Deep Dark Critical Ring,None,Event,130,20,20,20,20,0,"1,000","1,000",0,20,20,0,0,0,0,0
-40,Ring,Any,Grand Adventure Ring,None,Event,130,3,3,3,3,0,300,300,0,3,3,0,0,0,0,0
-41,Ring,Any,Glory Guard Ring: Guardian,None,Event,120,20,20,20,20,0,"2,000","2,000",0,20,20,0,0,0,20,0
-42,Ring,Any,Glory Guard Ring: Master,None,Event,120,20,20,20,20,0,"2,000","2,000",0,20,20,0,0,0,20,0
-43,Ring,Any,Glory Guard Ring: Commander,None,Event,120,20,20,20,20,0,"2,000","2,000",0,20,20,0,0,0,20,0
-44,Ring,Any,Glory Guard Ring: Justicar,None,Event,120,40,40,40,40,0,"4,000","4,000",0,25,25,0,0,0,0,0
-45,Ring,Any,Reboot Tenebris Expedition Ring (Stage 1),None,Event,120,10,10,10,10,0,"1,000","1,000",0,10,10,0,0,0,0,0
-46,Ring,Any,Chaos Ring,None,Event,120,30,30,30,30,0,"3,000","3,000",0,20,20,0,0,0,0,0
+0,Android Heart,Any,Silver Heart,None,,30,0,0,0,0,0,0,0,60,0,0,0,0,0,0,0
+1,Android Heart,Any,Outlaw Heart,None,,150,5,5,5,5,0,500,0,0,0,0,0,0,0,10,5
+2,Android Heart,Any,Black Heart,Pitched Boss,,120,50,50,50,50,0,100,0,0,77,77,0,0,0,0,5
+3,Android Heart,Any,Liquid-Metal Heart,None,,120,3,3,3,3,0,100,0,0,0,0,0,0,0,9,5
+4,Android Heart,Any,Titanium Heart,None,,100,3,3,3,3,0,50,0,0,0,0,0,0,0,9,5
+5,Android Heart,Any,Glimmering Wondroid Heart,None,,120,10,10,10,10,0,500,0,0,1,1,0,0,0,9,5
+6,Android Heart,Any,Wondroid Heart,None,,50,5,5,5,5,0,200,0,0,1,1,0,0,0,5,5
+7,Android Heart,Any,Lidium Heart,None,,30,3,3,3,3,0,50,0,0,0,0,0,0,0,7,5
+8,Android Heart,Any,Garnet Heart,None,,30,0,0,0,0,0,0,0,60,0,0,0,0,0,4,4
+9,Android Heart,Any,Gold Heart,None,,30,0,0,0,0,0,0,0,60,0,0,0,0,0,3,3
+10,Android Heart,Any,Adamantium Heart,None,,30,0,0,0,0,0,0,0,60,0,0,0,0,0,2,2
+11,Android Heart,Any,Iron Heart,None,,30,0,0,0,0,0,0,0,60,0,0,0,0,0,1,1
+12,Android Heart,Any,Fairy Heart,None,,100,0,0,0,0,0,100,0,0,0,0,0,0,0,9,5
+13,Android Heart,Any,Crystal Heart,None,,30,0,0,0,0,0,0,0,60,0,0,0,0,0,5,5
+14,Belt,Any,Tinkerer's Yellow Belt,None,Obtainable,100,0,0,0,0,15,0,0,30,5,5,0,0,0,0,0
+15,Belt,Any,Tinkerer's Green Belt,None,Obtainable,100,0,0,0,0,20,0,0,40,10,10,0,0,0,0,0
+16,Belt,Any,Tinkerer's Blue Belt,None,Obtainable,100,0,0,0,0,30,0,0,50,15,15,0,0,0,0,0
+17,Belt,Any,Tinkerer's Red Belt,None,Obtainable,100,0,0,0,0,75,0,0,75,40,40,0,0,0,0,0
+18,Belt,Any,Tinkerer's Black Belt,None,Obtainable,100,0,0,0,0,100,0,0,100,50,50,0,0,0,0,0
+19,Belt,Any,Saint Wing Knight Belt,None,Obtainable,120,0,0,0,0,5,100,100,86,0,0,0,0,0,0,0
+20,Shoulder,Any,Wise Royal Meister Shoulder,None,Obtainable,130,0,0,0,10,0,0,0,42,6,6,0,0,0,0,0
+21,Shoulder,Any,Sharp Royal Meister Shoulder,None,Obtainable,130,0,10,0,0,0,0,0,42,6,6,0,0,0,0,0
+22,Shoulder,Any,Lucky Royal Meister Shoulder,None,Obtainable,130,0,0,10,0,0,0,0,42,6,6,0,0,0,0,0
+23,Ring,Any,Luck Ring III,None,Obtainable,90,0,0,3,0,0,0,0,20,0,0,0,0,0,0,0
+24,Ring,Any,Dexterity Ring III,None,Obtainable,90,0,3,0,0,0,0,0,20,0,0,0,0,0,0,0
+25,Ring,Any,Intelligence Ring III,None,Obtainable,90,0,0,0,3,0,0,0,20,0,0,0,0,0,0,0
+26,Ring,Any,Strength Ring III,None,Obtainable,90,3,0,0,0,0,0,0,20,0,0,0,0,0,0,0
+27,Ring,Any,Swift Ring IV,None,Obtainable,90,0,0,0,0,0,0,0,20,0,0,0,0,0,0,0
+28,Ring,Any,White Angelic Blessing,None,Obtainable,90,10,10,10,10,0,150,150,0,0,0,0,0,0,0,0
+29,Ring,Any,Nimble Ring III,None,Obtainable,90,0,0,0,0,0,0,0,20,0,0,0,15,9,0,0
+30,Ring,Any,Luck Ring II,None,Obtainable,80,0,0,2,0,0,0,0,18,0,0,0,0,0,0,0
+31,Ring,Any,Dexterity Ring II,None,Obtainable,80,0,2,0,0,0,0,0,18,0,0,0,0,0,0,0
+32,Ring,Any,Strength Ring II,None,Obtainable,80,2,0,0,0,0,0,0,18,0,0,0,0,0,0,0
+33,Ring,Any,MP Ring II,None,Obtainable,80,0,0,0,0,0,0,200,18,0,0,0,0,0,0,0
+34,Ring,Any,Deadshot Ring IV,None,Obtainable,90,0,0,0,0,0,0,0,20,0,0,0,0,0,0,0
+35,Ring,Any,Intelligence Ring II,None,Obtainable,80,0,0,0,2,0,0,0,18,0,0,0,0,0,0,0
+36,Ring,Any,Reboot Awake Ring (Lv. 1),None,Event,120,10,10,10,10,0,"1,000","1,000",0,10,10,0,0,0,0,0
+37,Ring,Any,Adventure Deep Dark Critical Ring,None,Event,130,20,20,20,20,0,"1,000","1,000",0,20,20,0,0,0,0,0
+38,Ring,Any,Reboot Awake Ring (Lv. 2),None,Event,120,20,20,20,20,0,"2,000","2,000",0,15,15,0,0,0,0,0
+39,Ring,Any,Reboot Awake Ring (Lv. 3),None,Event,120,30,30,30,30,0,"3,000","3,000",0,20,20,0,0,0,0,0
+40,Ring,Any,Reboot Awake Ring (Lv. 4),None,Event,120,40,40,40,40,0,"4,000","4,000",0,25,25,0,0,0,0,0
+41,Ring,Any,Grand Adventure Ring,None,Event,130,3,3,3,3,0,300,300,0,3,3,0,0,0,0,0
+42,Ring,Any,Glory Guard Ring: Guardian,None,Event,120,20,20,20,20,0,"2,000","2,000",0,20,20,0,0,0,20,0
+43,Ring,Any,Glory Guard Ring: Master,None,Event,120,20,20,20,20,0,"2,000","2,000",0,20,20,0,0,0,20,0
+44,Ring,Any,Glory Guard Ring: Commander,None,Event,120,20,20,20,20,0,"2,000","2,000",0,20,20,0,0,0,20,0
+45,Ring,Any,Glory Guard Ring: Justicar,None,Event,120,40,40,40,40,0,"4,000","4,000",0,25,25,0,0,0,0,0
+46,Ring,Any,Reboot Tenebris Expedition Ring (Stage 1),None,Event,120,10,10,10,10,0,"1,000","1,000",0,10,10,0,0,0,0,0
 47,Ring,Any,Synergy Ring,None,Event,120,5,5,5,5,0,500,500,0,10,10,0,0,0,0,0
-48,Ring,Any,Reboot Tenebris Expedition Ring (Stage 2),None,Event,120,20,20,20,20,0,"2,000","2,000",0,15,15,0,0,0,0,0
-49,Ring,Any,Reboot Tenebris Expedition Ring (Stage 3),None,Event,120,30,30,30,30,0,"3,000","3,000",0,20,20,0,0,0,0,0
-50,Ring,Any,Reboot Tenebris Expedition Ring (Complete),None,Event,120,40,40,40,40,0,"4,000","4,000",0,25,25,0,0,0,0,0
-51,Ring,Any,Vengeful Ring,None,Event,120,0,0,0,0,0,0,0,0,0,0,0,0,0,20,0
+48,Ring,Any,Vengeful Ring,None,Event,120,0,0,0,0,0,0,0,0,0,0,0,0,0,20,0
+49,Ring,Any,Reboot Tenebris Expedition Ring (Stage 2),None,Event,120,20,20,20,20,0,"2,000","2,000",0,15,15,0,0,0,0,0
+50,Ring,Any,Reboot Tenebris Expedition Ring (Stage 3),None,Event,120,30,30,30,30,0,"3,000","3,000",0,20,20,0,0,0,0,0
+51,Ring,Any,Reboot Tenebris Expedition Ring (Complete),None,Event,120,40,40,40,40,0,"4,000","4,000",0,25,25,0,0,0,0,0
 52,Ring,Any,Master Ring SS,None,Event,120,30,30,30,30,0,"3,000","3,000",0,20,20,0,0,0,0,0
 53,Ring,Any,Cosmos Ring,None,Event,50,0,0,0,0,0,0,0,0,0,0,0,0,0,20,0
-54,Ring,Any,Revealed Sylph Ring,None,Event,30,1,1,1,1,0,10,10,20,0,0,0,0,0,0,0
-55,Ring,Any,Modesty Grand Pew Pew Ring,None,Hyperspace Cube,30,1,1,1,1,0,10,10,0,0,0,0,0,0,0,0
-56,Ring,Any,Modesty Fatal Rawr Ring,None,Hyperspace Cube,30,1,1,1,1,0,10,10,0,0,0,0,0,0,0,0
-57,Ring,Any,Shared Sylph Ring,None,Event,30,2,2,2,2,0,20,20,30,0,0,0,0,0,0,0
-58,Ring,Any,Rather Grand Pew Pew Ring,None,Hyperspace Cube,60,2,2,2,2,0,20,20,0,0,0,0,0,0,0,0
-59,Ring,Any,Quite Grand Pew Pew Ring,None,Hyperspace Cube,90,3,3,3,3,0,30,30,0,0,0,0,0,0,0,0
-60,Ring,Any,Very Grand Pew Pew Ring,None,Hyperspace Cube,120,4,4,4,4,0,40,40,0,0,0,0,0,0,10,0
-61,Ring,Any,Rather Fatal Rawr Ring,None,Hyperspace Cube,60,2,2,2,2,0,20,20,0,0,0,0,0,0,0,0
-62,Ring,Any,Quite Fatal Rawr Ring,None,Hyperspace Cube,90,3,3,3,3,0,30,30,0,0,0,0,0,0,0,0
-63,Ring,Any,Very Fatal Rawr Ring,None,Hyperspace Cube,120,4,4,4,4,0,40,40,0,0,0,0,0,0,10,0
-64,Face Accessory,Any,Berserked,Pitched Boss,Obtainable,160,10,10,10,10,0,0,0,200,10,10,0,0,0,5,0
-65,Face Accessory,Any,Shiny Red Special Symbol,None,Obtainable,130,0,0,0,0,0,0,0,26,5,5,0,0,0,0,0
-66,Ring,Any,Growing Sylph Ring,None,Event,30,3,3,3,3,0,30,30,50,1,1,0,0,0,10,0
-67,Ring,Any,Complete Sylph Ring,None,Event,30,3,3,3,3,0,30,30,50,1,1,0,0,0,10,0
-68,Face Accessory,Pirate,Shiny Red Pirate Symbol,None,Obtainable,130,3,3,0,0,0,0,0,26,3,0,0,0,0,0,0
-69,Ring,Any,Modesty Sturdy Krrr Ring,None,Hyperspace Cube,30,1,1,1,1,0,10,10,0,0,0,0,0,0,0,0
+54,Ring,Any,Chaos Ring,None,Event,120,30,30,30,30,0,"3,000","3,000",0,20,20,0,0,0,0,0
+55,Ring,Any,Revealed Sylph Ring,None,Event,30,1,1,1,1,0,10,10,20,0,0,0,0,0,0,0
+56,Ring,Any,Shared Sylph Ring,None,Event,30,2,2,2,2,0,20,20,30,0,0,0,0,0,0,0
+57,Ring,Any,Growing Sylph Ring,None,Event,30,3,3,3,3,0,30,30,50,1,1,0,0,0,10,0
+58,Ring,Any,Complete Sylph Ring,None,Event,30,3,3,3,3,0,30,30,50,1,1,0,0,0,10,0
+59,Ring,Any,Modesty Grand Pew Pew Ring,None,Hyperspace Cube,30,1,1,1,1,0,10,10,0,0,0,0,0,0,0,0
+60,Ring,Any,Rather Grand Pew Pew Ring,None,Hyperspace Cube,60,2,2,2,2,0,20,20,0,0,0,0,0,0,0,0
+61,Ring,Any,Quite Grand Pew Pew Ring,None,Hyperspace Cube,90,3,3,3,3,0,30,30,0,0,0,0,0,0,0,0
+62,Ring,Any,Very Grand Pew Pew Ring,None,Hyperspace Cube,120,4,4,4,4,0,40,40,0,0,0,0,0,0,10,0
+63,Ring,Any,Modesty Grand Ribbit Ring,None,Hyperspace Cube,30,1,1,1,1,0,10,10,0,0,0,0,0,0,0,0
+64,Ring,Any,Tower Boost Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+65,Ring,Any,Rather Grand Ribbit Ring,None,Hyperspace Cube,60,2,2,2,2,0,20,20,0,0,0,0,0,0,0,0
+66,Ring,Any,Quite Grand Ribbit Ring,None,Hyperspace Cube,90,3,3,3,3,0,30,30,0,0,0,0,0,0,0,0
+67,Ring,Any,Very Grand Ribbit Ring,None,Hyperspace Cube,120,4,4,4,4,0,40,40,0,0,0,0,0,0,10,0
+68,Ring,Any,Modesty Sturdy Krrr Ring,None,Hyperspace Cube,30,1,1,1,1,0,10,10,0,0,0,0,0,0,0,0
+69,Ring,Any,Modesty Fatal Rawr Ring,None,Hyperspace Cube,30,1,1,1,1,0,10,10,0,0,0,0,0,0,0,0
 70,Ring,Any,Rather Sturdy Krrr Ring,None,Hyperspace Cube,60,2,2,2,2,0,20,20,0,0,0,0,0,0,0,0
 71,Ring,Any,Quite Sturdy Krrr Ring,None,Hyperspace Cube,90,3,3,3,3,0,30,30,0,0,0,0,0,0,0,0
 72,Ring,Any,Very Sturdy Krrr Ring,None,Hyperspace Cube,120,4,4,4,4,0,40,40,0,0,0,0,0,0,10,0
-73,Ring,Any,Modesty Grand Ribbit Ring,None,Hyperspace Cube,30,1,1,1,1,0,10,10,0,0,0,0,0,0,0,0
-74,Ring,Any,Tower Boost Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-75,Ring,Any,Clean Defense Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-76,Ring,Any,Rather Grand Ribbit Ring,None,Hyperspace Cube,60,2,2,2,2,0,20,20,0,0,0,0,0,0,0,0
-77,Ring,Any,Quite Grand Ribbit Ring,None,Hyperspace Cube,90,3,3,3,3,0,30,30,0,0,0,0,0,0,0,0
-78,Ring,Any,Very Grand Ribbit Ring,None,Hyperspace Cube,120,4,4,4,4,0,40,40,0,0,0,0,0,0,10,0
-79,Ring,Any,Clean Stance Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-80,Ring,Any,Crisis HM Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-81,Ring,Any,Crisis M Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-82,Ring,Any,Crisis H Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-83,Ring,Any,Risk Taker Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-84,Ring,Any,Cleansing Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-85,Ring,Any,Reflective Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-86,Ring,Any,Berserker Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-87,Ring,Any,Overdrive Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-88,Ring,Any,Swift Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-89,Ring,Any,Weapon Jump L Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-90,Ring,Any,Weapon Jump I Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-91,Ring,Any,Weapon Jump D Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-92,Ring,Any,Weapon Jump S Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+73,Ring,Any,Clean Defense Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+74,Ring,Any,Rather Fatal Rawr Ring,None,Hyperspace Cube,60,2,2,2,2,0,20,20,0,0,0,0,0,0,0,0
+75,Ring,Any,Quite Fatal Rawr Ring,None,Hyperspace Cube,90,3,3,3,3,0,30,30,0,0,0,0,0,0,0,0
+76,Ring,Any,Very Fatal Rawr Ring,None,Hyperspace Cube,120,4,4,4,4,0,40,40,0,0,0,0,0,0,10,0
+77,Ring,Any,Clean Stance Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+78,Ring,Any,Crisis M Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+79,Ring,Any,Berserker Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+80,Ring,Any,Swift Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+81,Ring,Any,Weapon Jump L Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+82,Ring,Any,Overdrive Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+83,Ring,Any,Cleansing Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+84,Ring,Any,Weapon Jump S Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+85,Ring,Any,Weapon Jump I Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+86,Ring,Any,Risk Taker Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+87,Ring,Any,Reflective Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+88,Ring,Any,Crisis HM Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+89,Ring,Any,Weapon Jump D Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+90,Ring,Any,Crisis H Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+91,Ring,Any,Level Jump I Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+92,Ring,Any,Level Jump D Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
 93,Ring,Any,Level Jump L Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-94,Face Accessory,Thief,Shiny Red Thief Symbol,None,Obtainable,130,0,3,3,0,0,0,0,26,3,0,0,0,0,0,0
-95,Face Accessory,Bowman,Shiny Red Archer Symbol,None,Obtainable,130,3,3,0,0,0,0,0,26,3,0,0,0,0,0,0
-96,Face Accessory,Magician,Shiny Red Magician Symbol,None,Obtainable,130,0,0,3,3,0,0,0,26,0,3,0,0,0,0,0
-97,Face Accessory,Any,Shiny Red Warrior Meister Symbol,None,Obtainable,130,3,3,0,0,0,0,0,26,3,0,0,0,0,1,0
-98,Face Accessory,Warrior,Shiny Red Warrior Symbol,None,Obtainable,130,3,3,0,0,0,0,0,26,3,0,0,0,0,0,0
-99,Face Accessory,Any,Treasure Hunter Jack's Scar,Masteria Explorer,Obtainable,125,3,3,3,3,0,0,0,0,3,3,0,0,0,1,0
-100,Face Accessory,Any,Bright Golden Symbol,Golden Flower Accessory,Obtainable,120,3,3,3,3,0,0,0,50,4,4,0,0,0,5,0
-101,Face Accessory,Pirate,Shiny Blue Pirate Symbol,None,Obtainable,120,3,2,0,0,0,0,0,24,2,0,0,0,0,0,0
-102,Face Accessory,Thief,Shiny Blue Thief Symbol,None,Obtainable,120,0,2,3,0,0,0,0,24,2,0,0,0,0,0,0
-103,Face Accessory,Bowman,Shiny Blue Archer Symbol,None,Obtainable,120,2,3,0,0,0,0,0,24,2,0,0,0,0,0,0
-104,Face Accessory,Magician,Shiny Blue Magician Symbol,None,Obtainable,120,0,0,2,3,0,0,0,24,0,2,0,0,0,0,0
-105,Face Accessory,Warrior,Shiny Blue Warrior Symbol,None,Obtainable,120,3,2,0,0,0,0,0,24,2,0,0,0,0,0,0
-106,Face Accessory,Any,Mystic Face Accessory,Mystic,Obtainable,115,1,1,1,1,0,0,0,20,2,2,0,0,0,1,0
-107,Face Accessory,Any,Condensed Power Crystal,Boss Accessory,Obtainable,110,5,5,5,5,0,0,0,100,5,5,0,0,0,5,0
-108,Face Accessory,Pirate,Shiny Gray Pirate Symbol,None,Obtainable,110,2,2,0,0,0,0,0,22,1,0,0,0,0,0,0
-109,Ring,Any,Level Jump I Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-110,Ring,Any,Level Jump D Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-111,Ring,Any,Level Jump S Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-112,Ring,Any,Totalling Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-113,Ring,Any,Stance Shift Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-114,Ring,Any,Critical Defense Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-115,Ring,Any,Critical Shift Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-116,Ring,Any,Critical Damage Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-117,Ring,Any,Mana Cut Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-118,Ring,Any,Health Cut Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-119,Ring,Any,Durability Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-120,Ring,Any,Limit Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-121,Ring,Any,Ultimatum Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-122,Ring,Any,Endless Terror,Pitched Boss,Obtainable,200,5,5,5,5,0,250,250,0,4,4,0,0,0,2,0
-123,Ring,Any,Guardian Angel Ring,Boss Accessory,Obtainable,160,5,5,5,5,0,200,200,0,2,2,0,0,0,2,0
-124,Ring,Any,Breath of Divinity,None,Obtainable,150,15,15,15,15,0,200,200,0,25,25,0,18,10,1,0
-125,Ring,Any,Ring of Restraint,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
-126,Ring,Any,Kanna's Treasure,Sengoku Treasure,Obtainable,140,5,5,5,5,0,200,200,150,1,1,0,0,0,1,0
-127,Ring,Any,Meister Ring,Ardentmill,Obtainable,140,5,5,5,5,0,200,200,150,1,1,0,0,0,1,0
-128,Ring,Any,Cygnus Kohinoor Ring,None,Obtainable,140,5,5,5,5,0,200,200,150,5,5,0,10,10,0,0
-129,Ring,Any,Scarlet Ring,None,Obtainable,135,4,4,4,4,0,150,150,100,1,1,0,0,0,1,0
-130,Ring,Any,Mighty Ring IV,None,Obtainable,130,0,0,0,0,0,0,0,28,4,4,0,0,0,0,0
-131,Ring,Any,Luck Ring VII,None,Obtainable,130,0,0,8,0,0,0,0,28,0,0,0,0,0,0,0
-132,Ring,Any,Dexterity Ring VII,None,Obtainable,130,0,8,0,0,0,0,0,28,0,0,0,0,0,0,0
-133,Ring,Any,Intelligence Ring VII,None,Obtainable,130,0,0,0,8,0,0,0,28,0,0,0,0,0,0,0
-134,Ring,Any,Strength Ring VII,None,Obtainable,130,8,0,0,0,0,0,0,28,0,0,0,0,0,0,0
-135,Ring,Any,VIP Ring,None,Obtainable,127,5,5,5,5,0,80,80,120,0,0,0,0,0,0,0
-136,Ring,Any,Treasure Hunter John's Ring,Masteria Explorer,Obtainable,125,3,3,3,3,0,0,0,0,3,3,0,0,0,1,0
-137,Ring,Any,Golden Flower Ring,Golden Flower Accessory,Obtainable,120,7,7,7,7,0,100,100,50,1,1,0,0,0,2,0
-138,Ring,Any,Platinum Cross Ring,None,Obtainable,120,3,3,3,3,0,75,75,60,1,1,0,5,0,2,0
-139,Ring,Any,Mighty Ring III,None,Obtainable,120,0,0,0,0,0,0,0,26,3,3,0,0,0,0,0
-140,Ring,Any,Luck Ring VI,None,Obtainable,120,0,0,7,0,0,0,0,26,0,0,0,0,0,0,0
-141,Ring,Any,Dexterity Ring VI,None,Obtainable,120,0,7,0,0,0,0,0,26,0,0,0,0,0,0,0
-142,Ring,Any,Noble Ifia's Ring,Boss Accessory,Obtainable,120,5,5,5,5,0,200,200,0,2,2,0,0,0,2,0
-143,Ring,Any,Intelligence Ring VI,None,Obtainable,120,0,0,0,7,0,0,0,26,0,0,0,0,0,0,0
-144,Pendant,Any,Legacy of Darkness,Masteria's Legac,Obtainable,180,15,15,15,15,0,0,0,100,5,5,0,0,0,5,0
-145,Pendant,Any,Legacy of Light,Masteria's Legac,Obtainable,180,20,20,20,20,0,0,0,100,0,0,0,0,0,5,0
-146,Pendant,Any,Equip,None,Obtainable,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-147,Pendant,Any,VIP Necklace,None,Obtainable,145,10,10,10,10,0,0,0,150,0,0,0,0,0,3,0
-148,Pendant,Any,Reaper's Pendant,None,Obtainable,144,4,4,4,4,0,0,0,0,4,4,0,0,0,11,0
-149,Pendant,Any,Dominator Pendant,Boss Accessory,Obtainable,140,20,20,20,20,0,10,10,100,3,3,0,0,0,5,0
-150,Pendant,Any,Purple Peacock Pendant,None,Obtainable,130,0,0,16,0,0,180,180,185,0,0,0,0,0,3,0
-151,Pendant,Any,Purple Wolf Pendant,None,Obtainable,130,0,16,0,0,0,180,180,185,0,0,0,0,0,3,0
-152,Pendant,Any,Purple Owl Pendant,None,Obtainable,130,0,0,0,16,0,180,180,185,0,0,0,0,0,3,0
-153,Pendant,Any,Purple Bear Pendant,None,Obtainable,130,16,0,0,0,0,180,180,185,0,0,0,0,0,3,0
-154,Pendant,Any,Subani's Pendant,Masteria Explorer,Obtainable,125,16,16,16,16,0,0,0,0,2,2,0,0,0,3,0
-155,Pendant,Any,Golden Flower Pendant,Golden Flower Accessory,Obtainable,120,18,18,18,18,0,0,0,100,2,2,0,0,0,3,0
-156,Pendant,Any,Mechanator Pendant,Boss Accessory,Obtainable,120,10,10,10,10,0,250,250,100,1,1,0,0,0,2,0
-157,Face Accessory,Warrior,Red Warrior Symbol,None,Obtainable,100,2,1,0,0,0,0,0,20,0,0,0,0,0,0,0
-158,Ring,Any,Strength Ring VI,None,Obtainable,120,7,0,0,0,0,0,0,26,0,0,0,0,0,0,0
-159,Ring,Any,Swift Deadshot Ring II,None,Obtainable,120,0,0,0,0,0,0,0,26,0,0,0,0,0,0,0
-160,Ring,Any,Silver Blossom Ring,Boss Accessory,Obtainable,110,5,5,5,5,0,0,0,0,2,2,0,0,0,2,0
-161,Ring,Any,Ifia's Ring,Ifia's Treasure,Obtainable,110,3,3,3,3,0,100,100,140,1,1,0,0,0,1,0
-162,Ring,Any,Mighty Ring II,None,Obtainable,110,0,0,0,0,0,0,0,24,2,2,0,0,0,0,0
-163,Ring,Any,Luck Ring V,None,Obtainable,110,0,0,5,0,0,0,0,24,0,0,0,0,0,0,0
-164,Ring,Any,Dexterity Ring V,None,Obtainable,110,0,5,0,0,0,0,0,24,0,0,0,0,0,0,0
-165,Ring,Any,Intelligence Ring V,None,Obtainable,110,0,0,0,5,0,0,0,24,0,0,0,0,0,0,0
-166,Ring,Any,Strength Ring V,None,Obtainable,110,5,0,0,0,0,0,0,24,0,0,0,0,0,0,0
-167,Ring,Any,Hyper Ring I,None,Obtainable,110,0,0,0,0,0,200,200,24,0,0,0,0,0,0,0
-168,Ring,Any,Nimble Ring IV,None,Obtainable,110,0,0,0,0,0,0,0,24,0,0,0,20,12,0,0
-169,Ring,Any,Ephenia's Ring,None,Obtainable,105,2,2,2,2,0,50,50,45,1,1,0,0,0,0,0
-170,Ring,Any,Gold Cross Ring,None,Obtainable,105,2,2,2,2,0,50,50,45,1,1,0,0,0,0,0
-171,Ring,Any,Lightning God Ring,None,Obtainable,100,12,12,12,12,0,150,150,0,0,0,0,18,10,1,0
-172,Ring,Any,Mighty Ring I,None,Obtainable,100,0,0,0,0,0,0,0,22,1,1,0,0,0,0,0
-173,Ring,Any,Luck Ring IV,None,Obtainable,100,0,0,4,0,0,0,0,22,0,0,0,0,0,0,0
-174,Ring,Any,Dexterity Ring IV,None,Obtainable,100,0,4,0,0,0,0,0,22,0,0,0,0,0,0,0
-175,Ring,Any,Intelligence Ring IV,None,Obtainable,100,0,0,0,4,0,0,0,22,0,0,0,0,0,0,0
-176,Badge,Any,Crystal Ventus Badge,Boss Accessory,Obtainable,130,10,10,10,10,0,0,0,0,5,5,0,10,10,0,0
-177,Badge,Any,Golden Flower Badge,Golden Flower Accessory,Obtainable,120,9,9,9,9,0,0,0,0,5,5,0,0,0,0,0
-178,Badge,Any,Seven Days Badge,Seven Days,Obtainable,100,7,7,7,7,0,0,0,0,7,7,10,0,0,0,0
-179,Badge,Any,Badge of Junna,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0,0
-180,Badge,Any,Badge of Saturnus,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0,0
-181,Badge,Any,Badge of Pruba,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0,0
-182,Badge,Any,Badge of Donarr,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0,0
-183,Badge,Any,Badge of Wodan,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0,0
-184,Badge,Any,Badge of Chiu,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0,0
-185,Pendant,Any,Pink Peacock Pendant,None,Obtainable,120,0,0,12,0,0,135,135,145,0,0,0,0,0,3,0
-186,Pendant,Any,Pink Wolf Pendant,None,Obtainable,120,0,12,0,0,0,135,135,145,0,0,0,0,0,3,0
-187,Pendant,Any,Pink Owl Pendant,None,Obtainable,120,0,0,0,12,0,135,135,145,0,0,0,0,0,3,0
-188,Pendant,Any,Pink Bear Pendant,None,Obtainable,120,12,0,0,0,0,135,135,145,0,0,0,0,0,3,0
-189,Pendant,Any,Chaos Horntail Necklace,Boss Accessory,Obtainable,120,10,10,10,10,0,10,10,140,2,2,0,0,0,3,0
-190,Pendant,Any,Horntail Necklace,Boss Accessory,Obtainable,120,7,7,7,7,0,0,0,108,0,0,0,0,0,2,0
-191,Pendant,Any,Mystic Pendant,Mystic,Obtainable,115,5,5,5,5,0,0,0,50,1,1,0,0,0,4,0
-192,Pendant,Any,Red Peacock Pendant,None,Obtainable,110,0,0,8,0,0,90,90,105,0,0,0,0,0,3,0
-193,Pendant,Any,Red Wolf Pendant,None,Obtainable,110,0,8,0,0,0,90,90,105,0,0,0,0,0,3,0
-194,Pendant,Any,Red Owl Pendant,None,Obtainable,110,0,0,0,8,0,90,90,105,0,0,0,0,0,3,0
-195,Pendant,Any,Red Bear Pendant,None,Obtainable,110,8,0,0,0,0,90,90,105,0,0,0,0,0,3,0
-196,Pendant,Any,Ifia's Necklace,Ifia's Treasure,Obtainable,110,5,5,5,5,0,150,150,108,1,1,0,0,0,1,0
-197,Pendant,Any,Green Peacock Pendant,None,Obtainable,100,0,0,4,0,0,45,45,65,0,0,0,0,0,3,0
-198,Pendant,Any,Veteran Crusader Pendant,None,Obtainable,105,5,5,5,5,0,0,0,50,1,1,0,0,0,4,0
-199,Pendant,Any,Green Wolf Pendant,None,Obtainable,100,0,4,0,0,0,45,45,65,0,0,0,0,0,3,0
-200,Pendant,Any,Green Owl Pendant,None,Obtainable,100,0,0,0,4,0,45,45,65,0,0,0,0,0,3,0
-201,Pendant,Any,Green Bear Pendant,None,Obtainable,100,4,0,0,0,0,45,45,65,0,0,0,0,0,3,0
-202,Pendant,Any,Juliet's Pendant,Party Quest,Obtainable,85,6,6,6,6,0,0,0,85,0,0,0,0,0,3,0
-203,Pendant,Any,Romeo's Pendant,Party Quest,Obtainable,85,6,6,6,6,0,0,0,85,0,0,0,0,0,3,0
-204,Earrings,Any,Commanding Force Earring,Pitched Boss,Obtainable,200,7,7,7,7,0,500,500,0,5,5,0,0,0,6,0
-205,Earrings,Any,Numenal's Willpower,Masteria's Legac,Obtainable,180,1,1,1,1,0,150,150,100,5,5,0,0,0,3,0
-206,Earrings,Any,Ocean Glow Earrings,None,Obtainable,150,7,7,7,7,0,750,750,75,5,5,0,0,0,7,0
-207,Earrings,Any,Inverse Jewel Earring,Kritias,Obtainable,150,6,6,6,6,0,600,600,80,4,4,0,0,0,6,0
-208,Earrings,Any,Meister Earring,Ardentmill,Obtainable,140,5,5,5,5,0,500,500,70,4,4,0,0,0,6,0
-209,Earrings,Any,Shaman Earrings,None,Obtainable,140,5,5,5,5,0,150,150,70,0,0,0,0,0,6,0
-210,Earrings,Any,Scarlet Earring,None,Obtainable,135,6,6,6,6,0,200,200,100,3,3,0,0,0,6,0
-211,Earrings,Any,Will o' the Wisps,Boss Accessory,Obtainable,130,7,7,7,7,0,100,100,100,2,2,0,0,0,5,0
-212,Earrings,Any,Dea Sidus Earring,Boss Accessory,Obtainable,130,5,5,5,5,0,0,0,50,2,2,0,0,0,6,0
-213,Earrings,Any,Nimble Hound Earrings,None,Obtainable,130,4,4,4,4,0,0,0,30,0,0,0,0,0,5,0
-214,Earrings,Any,Hyper Hound Earrings,None,Obtainable,130,4,4,4,4,0,100,100,45,0,0,0,0,0,5,0
-215,Earrings,Any,MP Hound Earrings,None,Obtainable,130,4,4,4,4,0,0,200,30,0,0,0,0,0,5,0
-216,Earrings,Any,HP Hound Earrings,None,Obtainable,130,4,4,4,4,0,200,0,60,0,0,0,0,0,5,0
-217,Earrings,Any,VIP Earrings,None,Obtainable,127,5,5,5,5,0,0,80,55,0,0,0,0,0,5,0
-218,Earrings,Any,Sheriff Lita's Earrings,Masteria Explorer,Obtainable,125,4,4,4,4,0,0,0,0,2,2,0,0,0,5,0
-219,Ring,Any,Strength Ring IV,None,Obtainable,100,4,0,0,0,0,0,0,22,0,0,0,0,0,0,0
-220,Ring,Any,Silver Cross Ring,None,Obtainable,90,1,1,1,1,0,25,25,30,0,0,0,0,0,0,0
-221,Ring,Any,White Angelic Blessing,None,Obtainable,90,10,10,10,10,0,150,150,0,0,0,0,0,0,0,0
-222,Ring,Any,Luck Ring III,None,Obtainable,90,0,0,3,0,0,0,0,20,0,0,0,0,0,0,0
-223,Ring,Any,Dexterity Ring III,None,Obtainable,90,0,3,0,0,0,0,0,20,0,0,0,0,0,0,0
-224,Ring,Any,Intelligence Ring III,None,Obtainable,90,0,0,0,3,0,0,0,20,0,0,0,0,0,0,0
-225,Ring,Any,Strength Ring III,None,Obtainable,90,3,0,0,0,0,0,0,20,0,0,0,0,0,0,0
-226,Ring,Any,Swift Ring IV,None,Obtainable,90,0,0,0,0,0,0,0,20,0,0,0,0,0,0,0
-227,Ring,Any,Deadshot Ring IV,None,Obtainable,90,0,0,0,0,0,0,0,20,0,0,0,0,0,0,0
-228,Ring,Any,Nimble Ring III,None,Obtainable,90,0,0,0,0,0,0,0,20,0,0,0,15,9,0,0
-229,Ring,Any,Luck Ring II,None,Obtainable,80,0,0,2,0,0,0,0,18,0,0,0,0,0,0,0
-230,Ring,Any,Dexterity Ring II,None,Obtainable,80,0,2,0,0,0,0,0,18,0,0,0,0,0,0,0
-231,Ring,Any,Intelligence Ring II,None,Obtainable,80,0,0,0,2,0,0,0,18,0,0,0,0,0,0,0
-232,Ring,Any,Strength Ring II,None,Obtainable,80,2,0,0,0,0,0,0,18,0,0,0,0,0,0,0
-233,Ring,Any,MP Ring II,None,Obtainable,80,0,0,0,0,0,0,200,18,0,0,0,0,0,0,0
-234,Ring,Any,HP Ring II,None,Obtainable,80,0,0,0,0,0,200,0,18,0,0,0,0,0,0,0
-235,Ring,Any,Bronze Cross Ring,None,Obtainable,90,1,1,1,1,0,25,25,15,0,0,0,0,0,0,0
-236,Ring,Any,Meister Almighty Ring,None,Obtainable,75,6,6,6,6,0,0,0,28,0,0,0,0,0,2,0
-237,Ring,Any,Champion Ring,None,Obtainable,70,5,5,5,5,0,0,0,20,10,10,0,0,0,0,0
-238,Badge,Any,Badge of Mano,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0,0
-239,Pendant,Any,Greed Pendant,None,Obtainable,75,3,3,3,3,0,0,0,100,0,0,0,0,0,6,0
-240,Earrings,Any,Rex's Perfect Blue Earrings,Party Quest,Obtainable,125,0,8,8,0,0,10,0,100,1,1,0,0,0,6,0
-241,Earrings,Any,Rex's Perfect Red Earrings,Party Quest,Obtainable,125,8,8,0,0,0,10,0,100,1,1,0,0,0,6,0
-242,Earrings,Any,Rex's Perfect Green Earrings,Party Quest,Obtainable,125,0,0,8,8,0,10,0,100,1,1,0,0,0,6,0
-243,Earrings,Any,Golden Flower Earring,Golden Flower Accessory,Obtainable,120,4,4,4,4,0,0,0,50,2,2,0,0,0,5,0
-244,Earrings,Any,Mystic Earrings,Mystic,Obtainable,115,4,4,4,4,0,0,0,35,0,0,0,0,0,5,0
-245,Earrings,Any,Ifia's Earrings,Ifia's Treasure,Obtainable,110,1,1,1,1,0,150,150,120,0,0,0,0,0,1,0
-246,Earrings,Any,Bright Altaire Earrings,Party Quest,Obtainable,100,7,7,7,7,0,0,250,0,0,0,0,7,0,5,0
-247,Earrings,Any,Silver Earrings,None,Obtainable,100,0,0,0,0,0,30,0,0,0,0,0,0,0,5,0
-248,Earrings,Any,Rose Earrings,None,Obtainable,90,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0
-249,Earrings,Any,Brilliant Altaire Earrings,Party Quest,Obtainable,85,5,5,5,5,0,0,250,0,0,0,0,5,0,5,0
-250,Earrings,Any,Strawberry Earrings,None,Obtainable,85,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0
-251,Earrings,Any,Gold Emerald Earrings,None,Obtainable,80,0,2,0,5,0,0,0,0,0,0,0,0,0,5,0
-252,Earrings,Any,Metal Heart Earrings,None,Obtainable,80,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0
-253,Eye Accessory,Any,Magic Eyepatch,Pitched Boss,Obtainable,160,15,15,15,15,0,0,0,300,3,3,0,0,0,3,0
-254,Eye Accessory,Any,Papulatus Mark,Boss Accessory,Obtainable,145,8,8,8,8,0,0,0,150,1,1,0,0,0,5,0
-255,Eye Accessory,Any,Black Bean Mark,Boss Accessory,Obtainable,135,7,7,7,7,0,0,0,120,1,1,0,0,0,5,0
-256,Eye Accessory,Any,Professor Foxwit's Glasses,Masteria Explorer,Obtainable,125,3,3,3,3,0,200,200,0,2,2,0,0,0,3,0
-257,Eye Accessory,Any,Kenta's New Goggles,Party Quest,Obtainable,125,6,6,6,6,0,100,100,90,0,0,0,0,0,3,0
-258,Eye Accessory,Any,Golden Pearl Shadow,Golden Flower Accessory,Obtainable,120,3,3,3,3,0,0,0,60,1,1,0,0,0,5,0
-259,Eye Accessory,Any,Mystic Eye Accessory,Mystic,Obtainable,115,0,0,0,0,0,0,0,120,1,1,0,0,0,1,0
-260,Ring,Any,Dark Angelic Blessing,None,Obtainable,70,6,6,6,6,0,100,100,0,0,0,0,0,0,0,0
-261,Ring,Any,Luck Ring I,None,Obtainable,70,0,0,1,0,0,0,0,16,0,0,0,0,0,0,0
-262,Ring,Any,Dexterity Ring I,None,Obtainable,70,0,1,0,0,0,0,0,16,0,0,0,0,0,0,0
-263,Ring,Any,Intelligence Ring I,None,Obtainable,70,0,0,0,1,0,0,0,16,0,0,0,0,0,0,0
-264,Ring,Any,Strength Ring I,None,Obtainable,70,1,0,0,0,0,0,0,16,0,0,0,0,0,0,0
-265,Ring,Any,Nimble Ring II,None,Obtainable,70,0,0,0,0,0,0,0,16,0,0,0,10,6,0,0
-266,Ring,Any,Curbrock's Ring,None,Obtainable,60,2,2,2,2,0,0,0,0,3,3,0,0,0,0,0
-267,Ring,Any,Swift Ring III,None,Obtainable,60,0,0,0,0,0,0,0,14,0,0,0,0,0,0,0
-268,Ring,Any,Deadshot Ring III,None,Obtainable,60,0,0,0,0,0,0,0,14,0,0,0,0,0,0,0
-269,Ring,Any,MP Ring I,None,Obtainable,60,0,0,0,0,0,0,100,14,0,0,0,0,0,0,0
-270,Ring,Any,HP Ring I,None,Obtainable,60,0,0,0,0,0,100,0,14,0,0,0,0,0,0,0
-271,Ring,Any,Nimble Ring I,None,Obtainable,60,0,0,0,0,0,0,0,14,0,0,0,5,3,0,0
-272,Ring,Any,Swift Ring II,None,Obtainable,50,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0
-273,Ring,Any,Deadshot Ring II,None,Obtainable,50,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0
-274,Ring,Any,Defense Ring II,None,Obtainable,50,0,0,0,0,0,0,0,160,0,0,0,0,0,0,0
-275,Ring,Any,Swift Ring I,None,Obtainable,40,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0
-276,Ring,Any,Deadshot Ring I,None,Obtainable,40,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0
-277,Ring,Any,Defense Ring I,None,Obtainable,40,0,0,0,0,0,0,0,80,0,0,0,0,0,0,0
-278,Ring,Any,Almighty Ring,None,Obtainable,30,2,2,2,2,0,0,0,28,0,0,0,0,0,2,0
-279,Belt,Any,Dreamy Belt,Pitched Boss,Obtainable,200,50,50,50,50,0,150,150,150,6,6,0,0,0,3,0
-280,Belt,Any,Delgrund's Honor,Masteria's Legac,Obtainable,180,15,15,15,15,0,150,150,100,5,5,0,0,0,1,0
-281,Shoulder,Pirate,Arcane Umbra Pirate Shoulder,Arcane Umbra,Obtainable,200,35,35,35,35,0,0,0,300,20,20,0,0,0,1,0
-282,Shoulder,Thief,Arcane Umbra Thief Shoulder,Arcane Umbra,Obtainable,200,35,35,35,35,0,0,0,300,20,20,0,0,0,1,0
-283,Shoulder,Magician,Arcane Umbra Mage Shoulder,Arcane Umbra,Obtainable,200,35,35,35,35,0,0,0,300,20,20,0,0,0,1,0
-284,Shoulder,Bowman,Arcane Umbra Archer Shoulder,Arcane Umbra,Obtainable,200,35,35,35,35,0,0,0,300,20,20,0,0,0,1,0
-285,Shoulder,Warrior,Arcane Umbra Knight Shoulder,Arcane Umbra,Obtainable,200,35,35,35,35,0,0,0,300,20,20,0,0,0,1,0
-286,Shoulder,Pirate,AbsoLab Pirate Shoulder,AbsoLab,Obtainable,160,14,14,14,14,0,0,0,100,10,10,0,0,0,1,0
-287,Shoulder,Thief,AbsoLab Thief Shoulder,AbsoLab,Obtainable,160,14,14,14,14,0,0,0,100,10,10,0,0,0,1,0
-288,Shoulder,Bowman,AbsoLab Archer Shoulder,AbsoLab,Obtainable,160,14,14,14,14,0,0,0,100,10,10,0,0,0,1,0
-289,Shoulder,Magician,AbsoLab Mage Shoulder,AbsoLab,Obtainable,160,14,14,14,14,0,0,0,100,10,10,0,0,0,1,0
-290,Shoulder,Warrior,AbsoLab Knight Shoulder,AbsoLab,Obtainable,160,14,14,14,14,0,0,0,100,10,10,0,0,0,1,0
-291,Shoulder,Any,Hayato's Treasure,Sengoku Treasure,Obtainable,140,11,11,11,11,0,0,0,100,7,7,0,0,0,1,0
-292,Shoulder,Any,Inverse Metal Shoulder,Kritias,Obtainable,150,10,10,10,10,0,0,0,180,10,10,0,0,0,1,0
-293,Shoulder,Any,Meister Shoulder,Ardentmill,Obtainable,140,13,13,13,13,0,0,0,150,9,9,0,0,0,1,0
-294,Shoulder,Pirate,Shark Tooth Skipper Shoulder,Shark Tooth,Obtainable,140,11,11,11,11,0,0,0,100,7,7,0,0,0,1,0
-295,Shoulder,Thief,Raven Horn Chaser Shoulder,Raven Horn,Obtainable,140,11,11,11,11,0,0,0,100,7,7,0,0,0,1,0
-296,Shoulder,Bowman,Falcon Wing Sentinel Shoulder,Falcon Wing,Obtainable,140,11,11,11,11,0,0,0,100,7,7,0,0,0,1,0
-297,Shoulder,Magician,Dragon Tail Mage Shoulder,Dragon Tail,Obtainable,140,11,11,11,11,0,0,0,100,7,7,0,0,0,1,0
-298,Shoulder,Warrior,Lionheart Battle Shoulder,Lionheart,Obtainable,140,11,11,11,11,0,0,0,100,7,7,0,0,0,1,0
-299,Earrings,Any,Half Earrings,None,Obtainable,75,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0
-300,Eye Accessory,Any,Aquatic Letter Eye Accessory,Boss Accessory,Obtainable,100,6,6,6,6,0,0,0,100,1,1,0,0,0,3,0
-301,Ring,Any,Angelic Blessing,None,Obtainable,30,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
-302,Pocket Item,Any,Cursed Yellow Spellbook,Pitched Boss,Obtainable,160,10,10,20,10,0,100,100,0,10,10,0,0,0,0,0
-303,Belt,Any,Kaede Conqueror Belt,None,Obtainable,180,7,7,7,7,0,200,200,100,2,2,0,5,5,3,0
-304,Belt,Any,Enraged Zakum Belt,Boss Accessory,Obtainable,150,18,18,18,18,0,150,150,150,1,1,0,0,0,3,0
-305,Belt,Pirate,Tyrant Altair Belt,None,Obtainable,150,50,50,50,50,0,0,0,105,25,25,0,0,0,1,0
-306,Belt,Thief,Tyrant Lycaon Belt,None,Obtainable,150,50,50,50,50,0,0,0,105,25,25,0,0,0,1,0
-307,Belt,Bowman,Tyrant Charon Belt,None,Obtainable,150,50,50,50,50,0,0,0,105,25,25,0,0,0,1,0
-308,Belt,Warrior,Tyrant Hyades Belt,None,Obtainable,150,50,50,50,50,0,0,0,105,25,25,0,0,0,1,0
-309,Belt,Magician,Tyrant Hermes Belt,None,Obtainable,150,50,50,50,50,0,0,0,105,25,25,0,0,0,1,0
-310,Belt,Pirate,Susano-o's Belt,Susano-o,Obtainable,150,11,11,0,0,0,115,115,110,3,0,0,0,0,3,0
-311,Belt,Thief,Tsukuyomi's Belt,Tsukuyomi,Obtainable,150,0,11,11,0,0,115,115,110,3,0,0,0,0,3,0
-312,Belt,Bowman,Oyamatsumi's Belt,Oyamatsumi,Obtainable,150,11,11,0,0,0,115,115,110,3,0,0,0,0,3,0
-313,Belt,Magician,Ame-no-Uzume's Belt,Ame-no-Uzume,Obtainable,150,0,0,11,11,0,40,190,5,0,3,0,0,0,3,0
-314,Belt,Warrior,Amaterasu's Belt,Amaterasu,Obtainable,150,11,11,0,0,0,190,40,185,3,0,0,0,0,3,0
-315,Belt,Any,Ayame's Treasure,Sengoku Treasure,Obtainable,140,10,10,10,10,0,200,200,100,1,1,0,0,0,3,0
-316,Belt,Any,Golden Clover Belt,Boss Accessory,Obtainable,140,15,15,15,15,0,150,150,150,1,1,0,0,0,3,0
-317,Belt,Zero,Gold Label Knight Belt,Gold Label,Obtainable,140,10,10,10,10,0,300,300,150,0,0,0,0,0,3,0
-318,Belt,Any,Lucky Exquisite Belt,None,Obtainable,130,0,0,10,0,0,100,100,110,0,0,0,0,0,3,0
-319,Shoulder,Zero,Gold Label Knight Shoulder,Gold Label,Obtainable,140,15,15,15,15,0,0,0,150,9,9,0,0,0,0,0
-320,Shoulder,Any,Scarlet Shoulder,None,Obtainable,135,12,12,12,12,0,400,0,125,7,7,0,0,0,1,0
-321,Belt,Any,Sharp Exquisite Belt,None,Obtainable,130,0,10,0,0,0,100,100,110,0,0,0,0,0,3,0
-322,Shoulder,Any,Hearty Royal Meister Shoulder,None,Obtainable,130,10,0,0,0,0,0,0,42,6,6,0,0,0,1,0
-323,Shoulder,Any,Lucky Grand Pauldron,None,Obtainable,130,0,0,10,0,0,0,0,42,6,6,0,0,0,0,0
-324,Shoulder,Any,Sharp Grand Pauldron,None,Obtainable,130,0,10,0,0,0,0,0,42,6,6,0,0,0,0,0
-325,Shoulder,Any,Wise Grand Pauldron,None,Obtainable,130,0,0,0,10,0,0,0,42,6,6,0,0,0,0,0
-326,Shoulder,Any,Lukan's Pauldron,Masteria Explorer,Obtainable,125,8,8,8,8,0,0,0,42,4,4,0,0,0,1,0
-327,Shoulder,Any,Royal Black Metal Shoulder,Boss Accessory,Obtainable,120,10,10,10,10,0,0,0,100,6,6,0,0,0,1,0
-328,Shoulder,Any,Golden Flower Shoulder,Golden Flower Accessory,Obtainable,120,10,10,10,10,0,0,0,50,4,4,0,0,0,1,0
-329,Shoulder,Any,Lucky Royal Pauldron,None,Obtainable,120,0,0,9,0,0,0,0,39,5,5,0,0,0,0,0
-330,Shoulder,Any,Wise Royal Pauldron,None,Obtainable,120,0,0,0,9,0,0,0,39,5,5,0,0,0,0,0
-331,Shoulder,Any,Sharp Royal Pauldron,None,Obtainable,120,0,9,0,0,0,0,0,39,5,5,0,0,0,0,0
-332,Pocket Item,Any,Cursed Green Spellbook,Pitched Boss,Obtainable,160,10,20,10,10,0,100,100,0,10,10,0,0,0,0,0
-333,Pocket Item,Any,Cursed Blue Spellbook,Pitched Boss,Obtainable,160,10,10,10,20,0,100,100,0,10,10,0,0,0,0,0
-334,Pocket Item,Any,Cursed Red Spellbook,Pitched Boss,Obtainable,160,20,10,10,10,0,100,100,0,10,10,0,0,0,0,0
-335,Pocket Item,Any,Pink Holy Cup,Boss Accessory,Obtainable,140,5,5,5,5,0,50,50,0,5,5,0,0,0,0,0
-336,Pocket Item,Any,Inverse Codex,Kritias,Obtainable,150,2,2,2,2,0,0,0,0,2,2,0,0,0,0,0
-337,Pocket Item,Any,Golden Flower,Golden Flower Accessory,Obtainable,120,6,6,6,6,0,0,0,0,4,4,0,0,0,0,0
-338,Pocket Item,Any,Jadeite Charm,None,Obtainable,120,4,4,4,4,0,200,200,0,4,4,0,0,0,0,0
-339,Pocket Item,Any,Rat Charm,None,Obtainable,120,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0
-340,Shoulder,Any,Tenacious Grand Pauldron,None,Obtainable,130,10,0,0,0,0,0,0,42,6,6,0,0,0,0,0
-341,Pocket Item,Any,Chicken Charm,None,Obtainable,120,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0
-342,Pocket Item,Any,Pig Charm,None,Obtainable,120,0,0,0,0,0,100,100,0,0,0,0,0,0,0,0
-343,Pocket Item,Any,Dog Charm,None,Obtainable,120,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0
-344,Pocket Item,Any,Dragon Charm,None,Obtainable,120,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0
-345,Pocket Item,Any,Snake Charm,None,Obtainable,120,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0
-346,Pocket Item,Any,Monkey Charm,None,Obtainable,120,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-347,Pocket Item,Any,ES Square,None,Obtainable,100,2,2,2,2,0,0,0,0,2,2,0,0,0,0,0
-348,Pocket Item,Any,Spiegelmann's Autograph,None,Obtainable,30,3,3,3,3,0,0,0,0,2,2,0,0,0,0,0
-349,Pocket Item,Any,Rose,None,Obtainable,10,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0
-350,Pocket Item,Any,Poem Collection,None,Obtainable,10,0,0,0,0,0,0,0,0,0,0,0,3,3,0,0
-351,Pocket Item,Any,Scissorhands,None,Obtainable,10,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0
-352,Pocket Item,Any,House Key,None,Obtainable,0,0,0,0,0,0,200,200,0,0,0,0,0,0,0,0
-353,Pocket Item,Any,Pocket Watch,None,Obtainable,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0
-354,Belt,Any,Wise Exquisite Belt,None,Obtainable,130,0,0,0,10,0,100,100,110,0,0,0,0,0,3,0
-355,Belt,Any,Tenacious Exquisite Belt,None,Obtainable,130,10,0,0,0,0,100,100,110,0,0,0,0,0,3,0
-356,Belt,Any,VIP Belt,None,Obtainable,127,8,8,8,8,0,0,0,80,0,0,0,0,0,3,0
-357,Belt,Any,Elpam's Belt,Masteria Explorer,Obtainable,125,8,8,8,8,0,0,0,100,2,2,0,0,0,3,0
-358,Belt,Any,Golden Flower Belt,Golden Flower Accessory,Obtainable,120,10,10,10,10,0,100,100,50,3,3,0,0,0,3,0
-359,Belt,Any,Cora Von Leon War Belt,Party Quest,Obtainable,120,7,7,0,0,0,100,100,100,2,0,0,0,0,3,0
-360,Belt,Any,Nox Von Leon War Belt,Party Quest,Obtainable,120,0,7,7,0,0,100,100,100,2,0,0,0,0,3,0
-361,Belt,Any,Fox Von Leon War Belt,Party Quest,Obtainable,120,7,7,0,0,0,100,100,100,2,0,0,0,0,3,0
-362,Belt,Any,Alma Von Leon War Belt,Party Quest,Obtainable,120,0,0,7,7,0,50,150,30,0,2,0,0,0,3,0
-363,Belt,Any,Marx Von Leon War Belt,Party Quest,Obtainable,120,7,7,0,0,0,150,50,150,2,0,0,0,0,3,0
-364,Belt,Any,Lucky Brown Gilded Belt,None,Obtainable,120,0,0,9,0,0,90,90,100,0,0,0,0,0,3,0
-365,Belt,Any,Sharp Brown Gilded Belt,None,Obtainable,120,9,0,0,0,0,90,90,100,0,0,0,0,0,3,0
-366,Belt,Any,Wise Brown Gilded Belt,None,Obtainable,120,0,0,0,9,0,90,90,100,0,0,0,0,0,3,0
-367,Belt,Any,Tenacious Brown Gilded Belt,None,Obtainable,120,9,0,0,0,0,90,90,100,0,0,0,0,0,3,0
-368,Belt,Any,Mystic Belt,Mystic,Obtainable,115,7,7,7,7,0,0,0,86,0,0,0,0,0,3,0
-369,Belt,Pirate,Nova Altair Belt,None,Obtainable,110,22,22,22,22,0,0,0,46,10,10,0,0,0,1,0
-370,Shoulder,Any,Tenacious Royal Pauldron,None,Obtainable,120,9,0,0,0,0,0,0,39,5,5,0,0,0,0,0
-371,Pocket Item,Any,Black Wallet,None,Obtainable,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-372,Belt,Thief,Nova Lycaon Belt,None,Obtainable,110,22,22,22,22,0,0,0,46,10,10,0,0,0,1,0
-373,Belt,Bowman,Nova Charon Belt,None,Obtainable,110,22,22,22,22,0,0,0,46,10,10,0,0,0,1,0
-374,Belt,Magician,Nova Hermes Belt,None,Obtainable,110,22,22,22,22,0,0,0,46,10,10,0,0,0,1,0
-375,Belt,Warrior,Nova Hyades Belt,None,Obtainable,110,22,22,22,22,0,0,0,46,10,10,0,0,0,1,0
-376,Belt,Any,Lucky Blue Gilded Belt,None,Obtainable,110,0,0,8,0,0,80,80,90,0,0,0,0,0,3,0
-377,Belt,Any,Sharp Blue Gilded Belt,None,Obtainable,110,0,8,0,0,0,80,80,90,0,0,0,0,0,3,0
-378,Belt,Any,Wise Blue Gilded Belt,None,Obtainable,110,0,0,0,8,0,80,80,90,0,0,0,0,0,3,0
-379,Belt,Any,Tenacious Blue Gilded Belt,None,Obtainable,110,8,0,0,0,0,80,80,90,0,0,0,0,0,3,0
-380,Belt,Any,Lucky Green Gilded Belt,None,Obtainable,100,0,0,7,0,0,70,70,80,0,0,0,0,0,3,0
-381,Belt,Any,Sharp Green Gilded Belt,None,Obtainable,100,0,7,0,0,0,70,70,80,0,0,0,0,0,3,0
-382,Belt,Any,Wise Green Gilded Belt,None,Obtainable,100,0,0,0,7,0,70,70,80,0,0,0,0,0,3,0
-383,Android Heart,Any,Fairy Heart,None,,100,0,0,0,0,0,100,0,0,0,0,0,0,0,9,5
-384,Android Heart,Any,Wondroid Heart,None,,50,5,5,5,5,0,200,0,0,1,1,0,0,0,5,5
-385,Android Heart,Any,Lidium Heart,None,,30,3,3,3,3,0,50,0,0,0,0,0,0,0,7,5
-386,Android Heart,Any,Crystal Heart,None,,30,0,0,0,0,0,0,0,60,0,0,0,0,0,5,5
-387,Android Heart,Any,Garnet Heart,None,,30,0,0,0,0,0,0,0,60,0,0,0,0,0,4,4
-388,Android Heart,Any,Iron Heart,None,,30,0,0,0,0,0,0,0,60,0,0,0,0,0,1,1
-389,Android Heart,Any,Gold Heart,None,,30,0,0,0,0,0,0,0,60,0,0,0,0,0,3,3
-390,Android Heart,Any,Adamantium Heart,None,,30,0,0,0,0,0,0,0,60,0,0,0,0,0,2,2
-391,Android Heart,Any,Silver Heart,None,,30,0,0,0,0,0,0,0,60,0,0,0,0,0,0,0
-392,Emblem,Thief,Mitra's Rage: Thief,Pitched Boss,Obtainable,200,0,40,40,0,0,0,0,0,5,5,0,0,0,0,0
-393,Emblem,Magician,Mitra's Rage: Magician,Pitched Boss,Obtainable,200,0,0,40,40,0,0,0,0,5,5,0,0,0,0,0
-394,Emblem,Pirate,Mitra's Rage: Pirate,Pitched Boss,Obtainable,200,40,40,0,0,0,0,0,0,5,5,0,0,0,0,0
-395,Emblem,Bowman,Mitra's Rage: Bowman,Pitched Boss,Obtainable,200,40,40,0,0,0,0,0,0,5,5,0,0,0,0,0
-396,Emblem,Warrior,Mitra's Rage: Warrior,Pitched Boss,Obtainable,200,40,40,0,0,0,700,0,0,5,5,0,0,0,0,0
-397,Emblem,Cygnus Knights,Gold Cygnus Emblem,None,Cygnus Knights,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
-398,Emblem,Explorers,Gold Maple Leaf Emblem,None,Explorers,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
-399,Emblem,Xenon,Hybrid Heart,None,Xenon,100,0,0,0,0,0,300,100,100,2,2,0,0,0,0,0
-400,Emblem,Resistance,Gold Resistance Emblem,None,Resistance,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
-401,Emblem,Kain,Gold Hitman Emblem,None,Kain,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
-402,Emblem,Kaiser,Dragon Emblem,None,Kaiser,100,10,10,0,0,0,0,0,0,2,2,0,0,0,0,0
-403,Emblem,Kinesis,Gold Kinesis Emblem,None,Kinesis,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
-404,Emblem,Any,Gold Demon Emblem,None,Demon,100,10,10,10,10,0,500,0,0,2,2,0,0,0,0,0
-405,Emblem,Beast Tamer,Gold Forest Emblem,None,Beast Tamer,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
-406,Emblem,Kanna,Gold Blossom Emblem,None,Kanna,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
-407,Emblem,Hayato,Gold Crescent Emblem,None,Hayato,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
-408,Emblem,Jett,Gold Astro Emblem,None,Jett,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
-409,Emblem,Aran,Gold Heroes Emblem,None,Aran,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
-410,Emblem,Hoyoung,Gold Three Paths Emblem,None,Hoyoung,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
-411,Emblem,Lara,Gold Earthseer Emblem,None,Lara,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
-412,Emblem,Illium,Gold Crystal Emblem,None,Illium,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
-413,Emblem,Adele,Gold Knight's Emblem,None,Adele,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
-414,Emblem,Angelic Buster,Angel Emblem,None,Angelic Buster,100,10,10,0,0,0,400,0,0,2,2,0,0,0,0,0
-415,Emblem,Aran,Gold Heroes Emblem,None,Aran,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
-416,Emblem,Aran,Gold Heroes Emblem,None,Aran,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
-417,Emblem,Aran,Gold Heroes Emblem,None,Aran,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
-418,Emblem,Aran,Gold Heroes Emblem,None,Aran,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
-419,Emblem,Cadena,Gold Agent Emblem,None,Cadena,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
-420,Emblem,Aran,Gold Heroes Emblem,None,Aran,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
+94,Ring,Any,Level Jump S Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+95,Ring,Any,Totalling Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+96,Ring,Any,Stance Shift Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+97,Ring,Any,Critical Defense Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+98,Ring,Any,Critical Shift Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+99,Ring,Any,Limit Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+100,Ring,Any,Ultimatum Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+101,Ring,Any,Ring of Restraint,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+102,Ring,Any,Guardian Angel Ring,Boss Accessory,Obtainable,160,5,5,5,5,0,200,200,0,2,2,0,0,0,2,0
+103,Ring,Any,Endless Terror,Pitched Boss,Obtainable,200,5,5,5,5,0,250,250,0,4,4,0,0,0,2,0
+104,Ring,Any,Kanna's Treasure,Sengoku Treasure,Obtainable,140,5,5,5,5,0,200,200,150,1,1,0,0,0,1,0
+105,Ring,Any,Meister Ring,Ardentmill,Obtainable,140,5,5,5,5,0,200,200,150,1,1,0,0,0,1,0
+106,Ring,Any,Critical Damage Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+107,Ring,Any,Durability Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+108,Ring,Any,Mana Cut Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+109,Ring,Any,Health Cut Ring,None,Tower of Oz,110,4,4,4,4,0,0,0,0,4,4,0,0,0,0,0
+110,Ring,Any,Breath of Divinity,None,Obtainable,150,15,15,15,15,0,200,200,0,25,25,0,18,10,1,0
+111,Ring,Any,Cygnus Kohinoor Ring,None,Obtainable,140,5,5,5,5,0,200,200,150,5,5,0,10,10,0,0
+112,Ring,Any,Scarlet Ring,None,Obtainable,135,4,4,4,4,0,150,150,100,1,1,0,0,0,1,0
+113,Ring,Any,Mighty Ring IV,None,Obtainable,130,0,0,0,0,0,0,0,28,4,4,0,0,0,0,0
+114,Ring,Any,Luck Ring VII,None,Obtainable,130,0,0,8,0,0,0,0,28,0,0,0,0,0,0,0
+115,Ring,Any,Dexterity Ring VII,None,Obtainable,130,0,8,0,0,0,0,0,28,0,0,0,0,0,0,0
+116,Ring,Any,Intelligence Ring VII,None,Obtainable,130,0,0,0,8,0,0,0,28,0,0,0,0,0,0,0
+117,Ring,Any,Strength Ring VII,None,Obtainable,130,8,0,0,0,0,0,0,28,0,0,0,0,0,0,0
+118,Ring,Any,Noble Ifia's Ring,Boss Accessory,Obtainable,120,5,5,5,5,0,200,200,0,2,2,0,0,0,2,0
+119,Ring,Any,Mighty Ring III,None,Obtainable,120,0,0,0,0,0,0,0,26,3,3,0,0,0,0,0
+120,Ring,Any,Luck Ring VI,None,Obtainable,120,0,0,7,0,0,0,0,26,0,0,0,0,0,0,0
+121,Ring,Any,Intelligence Ring VI,None,Obtainable,120,0,0,0,7,0,0,0,26,0,0,0,0,0,0,0
+122,Ring,Any,Strength Ring VI,None,Obtainable,120,7,0,0,0,0,0,0,26,0,0,0,0,0,0,0
+123,Ring,Any,Treasure Hunter John's Ring,Masteria Explorer,Obtainable,125,3,3,3,3,0,0,0,0,3,3,0,0,0,1,0
+124,Ring,Any,VIP Ring,None,Obtainable,127,5,5,5,5,0,80,80,120,0,0,0,0,0,0,0
+125,Ring,Any,Golden Flower Ring,Golden Flower Accessory,Obtainable,120,7,7,7,7,0,100,100,50,1,1,0,0,0,2,0
+126,Ring,Any,Platinum Cross Ring,None,Obtainable,120,3,3,3,3,0,75,75,60,1,1,0,5,0,2,0
+127,Ring,Any,Dexterity Ring VI,None,Obtainable,120,0,7,0,0,0,0,0,26,0,0,0,0,0,0,0
+128,Ring,Any,Silver Blossom Ring,Boss Accessory,Obtainable,110,5,5,5,5,0,0,0,0,2,2,0,0,0,2,0
+129,Ring,Any,Ifia's Ring,Ifia's Treasure,Obtainable,110,3,3,3,3,0,100,100,140,1,1,0,0,0,1,0
+130,Ring,Any,Swift Deadshot Ring II,None,Obtainable,120,0,0,0,0,0,0,0,26,0,0,0,0,0,0,0
+131,Ring,Any,Luck Ring V,None,Obtainable,110,0,0,5,0,0,0,0,24,0,0,0,0,0,0,0
+132,Ring,Any,Dexterity Ring V,None,Obtainable,110,0,5,0,0,0,0,0,24,0,0,0,0,0,0,0
+133,Ring,Any,Strength Ring V,None,Obtainable,110,5,0,0,0,0,0,0,24,0,0,0,0,0,0,0
+134,Ring,Any,Intelligence Ring V,None,Obtainable,110,0,0,0,5,0,0,0,24,0,0,0,0,0,0,0
+135,Ring,Any,Hyper Ring I,None,Obtainable,110,0,0,0,0,0,200,200,24,0,0,0,0,0,0,0
+136,Ring,Any,Nimble Ring IV,None,Obtainable,110,0,0,0,0,0,0,0,24,0,0,0,20,12,0,0
+137,Ring,Any,Lightning God Ring,None,Obtainable,100,12,12,12,12,0,150,150,0,0,0,0,18,10,1,0
+138,Ring,Any,Luck Ring IV,None,Obtainable,100,0,0,4,0,0,0,0,22,0,0,0,0,0,0,0
+139,Ring,Any,Dexterity Ring IV,None,Obtainable,100,0,4,0,0,0,0,0,22,0,0,0,0,0,0,0
+140,Ring,Any,Intelligence Ring IV,None,Obtainable,100,0,0,0,4,0,0,0,22,0,0,0,0,0,0,0
+141,Ring,Any,Mighty Ring II,None,Obtainable,110,0,0,0,0,0,0,0,24,2,2,0,0,0,0,0
+142,Ring,Any,Strength Ring IV,None,Obtainable,100,4,0,0,0,0,0,0,22,0,0,0,0,0,0,0
+143,Ring,Any,Ephenia's Ring,None,Obtainable,105,2,2,2,2,0,50,50,45,1,1,0,0,0,0,0
+144,Ring,Any,HP Ring II,None,Obtainable,80,0,0,0,0,0,200,0,18,0,0,0,0,0,0,0
+145,Ring,Any,Meister Almighty Ring,None,Obtainable,75,6,6,6,6,0,0,0,28,0,0,0,0,0,2,0
+146,Ring,Any,Champion Ring,None,Obtainable,70,5,5,5,5,0,0,0,20,10,10,0,0,0,0,0
+147,Ring,Any,Gold Cross Ring,None,Obtainable,105,2,2,2,2,0,50,50,45,1,1,0,0,0,0,0
+148,Ring,Any,Mighty Ring I,None,Obtainable,100,0,0,0,0,0,0,0,22,1,1,0,0,0,0,0
+149,Ring,Any,Bronze Cross Ring,None,Obtainable,90,1,1,1,1,0,25,25,15,0,0,0,0,0,0,0
+150,Ring,Any,Silver Cross Ring,None,Obtainable,90,1,1,1,1,0,25,25,30,0,0,0,0,0,0,0
+151,Ring,Any,Dark Angelic Blessing,None,Obtainable,70,6,6,6,6,0,100,100,0,0,0,0,0,0,0,0
+152,Ring,Any,Luck Ring I,None,Obtainable,70,0,0,1,0,0,0,0,16,0,0,0,0,0,0,0
+153,Ring,Any,Dexterity Ring I,None,Obtainable,70,0,1,0,0,0,0,0,16,0,0,0,0,0,0,0
+154,Ring,Any,Intelligence Ring I,None,Obtainable,70,0,0,0,1,0,0,0,16,0,0,0,0,0,0,0
+155,Ring,Any,Strength Ring I,None,Obtainable,70,1,0,0,0,0,0,0,16,0,0,0,0,0,0,0
+156,Ring,Any,Nimble Ring II,None,Obtainable,70,0,0,0,0,0,0,0,16,0,0,0,10,6,0,0
+157,Ring,Any,Deadshot Ring III,None,Obtainable,60,0,0,0,0,0,0,0,14,0,0,0,0,0,0,0
+158,Ring,Any,MP Ring I,None,Obtainable,60,0,0,0,0,0,0,100,14,0,0,0,0,0,0,0
+159,Ring,Any,Curbrock's Ring,None,Obtainable,60,2,2,2,2,0,0,0,0,3,3,0,0,0,0,0
+160,Ring,Any,Swift Ring III,None,Obtainable,60,0,0,0,0,0,0,0,14,0,0,0,0,0,0,0
+161,Ring,Any,HP Ring I,None,Obtainable,60,0,0,0,0,0,100,0,14,0,0,0,0,0,0,0
+162,Ring,Any,Nimble Ring I,None,Obtainable,60,0,0,0,0,0,0,0,14,0,0,0,5,3,0,0
+163,Ring,Any,Swift Ring II,None,Obtainable,50,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0
+164,Ring,Any,Deadshot Ring II,None,Obtainable,50,0,0,0,0,0,0,0,12,0,0,0,0,0,0,0
+165,Ring,Any,Defense Ring II,None,Obtainable,50,0,0,0,0,0,0,0,160,0,0,0,0,0,0,0
+166,Ring,Any,Deadshot Ring I,None,Obtainable,40,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0
+167,Ring,Any,Defense Ring I,None,Obtainable,40,0,0,0,0,0,0,0,80,0,0,0,0,0,0,0
+168,Ring,Any,Swift Ring I,None,Obtainable,40,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0
+169,Ring,Any,Almighty Ring,None,Obtainable,30,2,2,2,2,0,0,0,28,0,0,0,0,0,2,0
+170,Shoulder,Pirate,Arcane Umbra Pirate Shoulder,Arcane Umbra,Obtainable,200,35,35,35,35,0,0,0,300,20,20,0,0,0,1,0
+171,Shoulder,Bowman,Arcane Umbra Archer Shoulder,Arcane Umbra,Obtainable,200,35,35,35,35,0,0,0,300,20,20,0,0,0,1,0
+172,Shoulder,Magician,Arcane Umbra Mage Shoulder,Arcane Umbra,Obtainable,200,35,35,35,35,0,0,0,300,20,20,0,0,0,1,0
+173,Shoulder,Magician,AbsoLab Mage Shoulder,AbsoLab,Obtainable,160,14,14,14,14,0,0,0,100,10,10,0,0,0,1,0
+174,Shoulder,Pirate,AbsoLab Pirate Shoulder,AbsoLab,Obtainable,160,14,14,14,14,0,0,0,100,10,10,0,0,0,1,0
+175,Shoulder,Bowman,AbsoLab Archer Shoulder,AbsoLab,Obtainable,160,14,14,14,14,0,0,0,100,10,10,0,0,0,1,0
+176,Shoulder,Thief,AbsoLab Thief Shoulder,AbsoLab,Obtainable,160,14,14,14,14,0,0,0,100,10,10,0,0,0,1,0
+177,Shoulder,Any,Inverse Metal Shoulder,Kritias,Obtainable,150,10,10,10,10,0,0,0,180,10,10,0,0,0,1,0
+178,Shoulder,Any,Hayato's Treasure,Sengoku Treasure,Obtainable,140,11,11,11,11,0,0,0,100,7,7,0,0,0,1,0
+179,Shoulder,Pirate,Shark Tooth Skipper Shoulder,Shark Tooth,Obtainable,140,11,11,11,11,0,0,0,100,7,7,0,0,0,1,0
+180,Shoulder,Thief,Arcane Umbra Thief Shoulder,Arcane Umbra,Obtainable,200,35,35,35,35,0,0,0,300,20,20,0,0,0,1,0
+181,Shoulder,Thief,Raven Horn Chaser Shoulder,Raven Horn,Obtainable,140,11,11,11,11,0,0,0,100,7,7,0,0,0,1,0
+182,Shoulder,Warrior,AbsoLab Knight Shoulder,AbsoLab,Obtainable,160,14,14,14,14,0,0,0,100,10,10,0,0,0,1,0
+183,Shoulder,Any,Meister Shoulder,Ardentmill,Obtainable,140,13,13,13,13,0,0,0,150,9,9,0,0,0,1,0
+184,Shoulder,Warrior,Lionheart Battle Shoulder,Lionheart,Obtainable,140,11,11,11,11,0,0,0,100,7,7,0,0,0,1,0
+185,Shoulder,Zero,Gold Label Knight Shoulder,Gold Label,Obtainable,140,15,15,15,15,0,0,0,150,9,9,0,0,0,0,0
+186,Shoulder,Warrior,Arcane Umbra Knight Shoulder,Arcane Umbra,Obtainable,200,35,35,35,35,0,0,0,300,20,20,0,0,0,1,0
+187,Shoulder,Any,Scarlet Shoulder,None,Obtainable,135,12,12,12,12,0,400,0,125,7,7,0,0,0,1,0
+188,Shoulder,Magician,Dragon Tail Mage Shoulder,Dragon Tail,Obtainable,140,11,11,11,11,0,0,0,100,7,7,0,0,0,1,0
+189,Shoulder,Bowman,Falcon Wing Sentinel Shoulder,Falcon Wing,Obtainable,140,11,11,11,11,0,0,0,100,7,7,0,0,0,1,0
+190,Ring,Any,Angelic Blessing,None,Obtainable,30,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0
+191,Shoulder,Any,Sharp Grand Pauldron,None,Obtainable,130,0,10,0,0,0,0,0,42,6,6,0,0,0,0,0
+192,Shoulder,Any,Wise Grand Pauldron,None,Obtainable,130,0,0,0,10,0,0,0,42,6,6,0,0,0,0,0
+193,Shoulder,Any,Hearty Royal Meister Shoulder,None,Obtainable,130,10,0,0,0,0,0,0,42,6,6,0,0,0,1,0
+194,Shoulder,Any,Lucky Grand Pauldron,None,Obtainable,130,0,0,10,0,0,0,0,42,6,6,0,0,0,0,0
+195,Shoulder,Any,Tenacious Grand Pauldron,None,Obtainable,130,10,0,0,0,0,0,0,42,6,6,0,0,0,0,0
+196,Shoulder,Any,Royal Black Metal Shoulder,Boss Accessory,Obtainable,120,10,10,10,10,0,0,0,100,6,6,0,0,0,1,0
+197,Shoulder,Any,Golden Flower Shoulder,Golden Flower Accessory,Obtainable,120,10,10,10,10,0,0,0,50,4,4,0,0,0,1,0
+198,Shoulder,Any,Lucky Royal Pauldron,None,Obtainable,120,0,0,9,0,0,0,0,39,5,5,0,0,0,0,0
+199,Shoulder,Any,Sharp Royal Pauldron,None,Obtainable,120,0,9,0,0,0,0,0,39,5,5,0,0,0,0,0
+200,Shoulder,Any,Wise Royal Pauldron,None,Obtainable,120,0,0,0,9,0,0,0,39,5,5,0,0,0,0,0
+201,Belt,Any,Dreamy Belt,Pitched Boss,Obtainable,200,50,50,50,50,0,150,150,150,6,6,0,0,0,3,0
+202,Belt,Any,Kaede Conqueror Belt,None,Obtainable,180,7,7,7,7,0,200,200,100,2,2,0,5,5,3,0
+203,Shoulder,Any,Lukan's Pauldron,Masteria Explorer,Obtainable,125,8,8,8,8,0,0,0,42,4,4,0,0,0,1,0
+204,Belt,Pirate,Tyrant Altair Belt,None,Obtainable,150,50,50,50,50,0,0,0,105,25,25,0,0,0,1,0
+205,Belt,Thief,Tyrant Lycaon Belt,None,Obtainable,150,50,50,50,50,0,0,0,105,25,25,0,0,0,1,0
+206,Shoulder,Any,Tenacious Royal Pauldron,None,Obtainable,120,9,0,0,0,0,0,0,39,5,5,0,0,0,0,0
+207,Belt,Magician,Tyrant Hermes Belt,None,Obtainable,150,50,50,50,50,0,0,0,105,25,25,0,0,0,1,0
+208,Belt,Bowman,Tyrant Charon Belt,None,Obtainable,150,50,50,50,50,0,0,0,105,25,25,0,0,0,1,0
+209,Belt,Any,Delgrund's Honor,Masteria's Legac,Obtainable,180,15,15,15,15,0,150,150,100,5,5,0,0,0,1,0
+210,Belt,Warrior,Tyrant Hyades Belt,None,Obtainable,150,50,50,50,50,0,0,0,105,25,25,0,0,0,1,0
+211,Belt,Pirate,Susano-o's Belt,Susano-o,Obtainable,150,11,11,0,0,0,115,115,110,3,0,0,0,0,3,0
+212,Belt,Thief,Tsukuyomi's Belt,Tsukuyomi,Obtainable,150,0,11,11,0,0,115,115,110,3,0,0,0,0,3,0
+213,Belt,Any,Enraged Zakum Belt,Boss Accessory,Obtainable,150,18,18,18,18,0,150,150,150,1,1,0,0,0,3,0
+214,Belt,Magician,Ame-no-Uzume's Belt,Ame-no-Uzume,Obtainable,150,0,0,11,11,0,40,190,5,0,3,0,0,0,3,0
+215,Belt,Any,Ayame's Treasure,Sengoku Treasure,Obtainable,140,10,10,10,10,0,200,200,100,1,1,0,0,0,3,0
+216,Belt,Any,Golden Clover Belt,Boss Accessory,Obtainable,140,15,15,15,15,0,150,150,150,1,1,0,0,0,3,0
+217,Belt,Bowman,Oyamatsumi's Belt,Oyamatsumi,Obtainable,150,11,11,0,0,0,115,115,110,3,0,0,0,0,3,0
+218,Belt,Zero,Gold Label Knight Belt,Gold Label,Obtainable,140,10,10,10,10,0,300,300,150,0,0,0,0,0,3,0
+219,Belt,Any,Lucky Exquisite Belt,None,Obtainable,130,0,0,10,0,0,100,100,110,0,0,0,0,0,3,0
+220,Belt,Any,Sharp Exquisite Belt,None,Obtainable,130,0,10,0,0,0,100,100,110,0,0,0,0,0,3,0
+221,Belt,Warrior,Amaterasu's Belt,Amaterasu,Obtainable,150,11,11,0,0,0,190,40,185,3,0,0,0,0,3,0
+222,Belt,Any,Wise Exquisite Belt,None,Obtainable,130,0,0,0,10,0,100,100,110,0,0,0,0,0,3,0
+223,Belt,Any,VIP Belt,None,Obtainable,127,8,8,8,8,0,0,0,80,0,0,0,0,0,3,0
+224,Belt,Any,Cora Von Leon War Belt,Party Quest,Obtainable,120,7,7,0,0,0,100,100,100,2,0,0,0,0,3,0
+225,Belt,Any,Elpam's Belt,Masteria Explorer,Obtainable,125,8,8,8,8,0,0,0,100,2,2,0,0,0,3,0
+226,Belt,Any,Golden Flower Belt,Golden Flower Accessory,Obtainable,120,10,10,10,10,0,100,100,50,3,3,0,0,0,3,0
+227,Pocket Item,Any,Cursed Yellow Spellbook,Pitched Boss,Obtainable,160,10,10,20,10,0,100,100,0,10,10,0,0,0,0,0
+228,Belt,Any,Fox Von Leon War Belt,Party Quest,Obtainable,120,7,7,0,0,0,100,100,100,2,0,0,0,0,3,0
+229,Belt,Any,Tenacious Exquisite Belt,None,Obtainable,130,10,0,0,0,0,100,100,110,0,0,0,0,0,3,0
+230,Belt,Any,Alma Von Leon War Belt,Party Quest,Obtainable,120,0,0,7,7,0,50,150,30,0,2,0,0,0,3,0
+231,Belt,Any,Nox Von Leon War Belt,Party Quest,Obtainable,120,0,7,7,0,0,100,100,100,2,0,0,0,0,3,0
+232,Belt,Any,Marx Von Leon War Belt,Party Quest,Obtainable,120,7,7,0,0,0,150,50,150,2,0,0,0,0,3,0
+233,Belt,Any,Lucky Brown Gilded Belt,None,Obtainable,120,0,0,9,0,0,90,90,100,0,0,0,0,0,3,0
+234,Belt,Any,Sharp Brown Gilded Belt,None,Obtainable,120,9,0,0,0,0,90,90,100,0,0,0,0,0,3,0
+235,Belt,Any,Wise Brown Gilded Belt,None,Obtainable,120,0,0,0,9,0,90,90,100,0,0,0,0,0,3,0
+236,Belt,Any,Tenacious Brown Gilded Belt,None,Obtainable,120,9,0,0,0,0,90,90,100,0,0,0,0,0,3,0
+237,Belt,Any,Mystic Belt,Mystic,Obtainable,115,7,7,7,7,0,0,0,86,0,0,0,0,0,3,0
+238,Belt,Pirate,Nova Altair Belt,None,Obtainable,110,22,22,22,22,0,0,0,46,10,10,0,0,0,1,0
+239,Pocket Item,Any,Cursed Green Spellbook,Pitched Boss,Obtainable,160,10,20,10,10,0,100,100,0,10,10,0,0,0,0,0
+240,Belt,Bowman,Nova Charon Belt,None,Obtainable,110,22,22,22,22,0,0,0,46,10,10,0,0,0,1,0
+241,Belt,Magician,Nova Hermes Belt,None,Obtainable,110,22,22,22,22,0,0,0,46,10,10,0,0,0,1,0
+242,Pocket Item,Any,Cursed Red Spellbook,Pitched Boss,Obtainable,160,20,10,10,10,0,100,100,0,10,10,0,0,0,0,0
+243,Belt,Thief,Nova Lycaon Belt,None,Obtainable,110,22,22,22,22,0,0,0,46,10,10,0,0,0,1,0
+244,Pocket Item,Any,Golden Flower,Golden Flower Accessory,Obtainable,120,6,6,6,6,0,0,0,0,4,4,0,0,0,0,0
+245,Pocket Item,Any,Jadeite Charm,None,Obtainable,120,4,4,4,4,0,200,200,0,4,4,0,0,0,0,0
+246,Pocket Item,Any,Rat Charm,None,Obtainable,120,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0
+247,Pocket Item,Any,Cursed Blue Spellbook,Pitched Boss,Obtainable,160,10,10,10,20,0,100,100,0,10,10,0,0,0,0,0
+248,Pocket Item,Any,Chicken Charm,None,Obtainable,120,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0
+249,Pocket Item,Any,Inverse Codex,Kritias,Obtainable,150,2,2,2,2,0,0,0,0,2,2,0,0,0,0,0
+250,Pocket Item,Any,Pig Charm,None,Obtainable,120,0,0,0,0,0,100,100,0,0,0,0,0,0,0,0
+251,Pocket Item,Any,Dog Charm,None,Obtainable,120,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0
+252,Pocket Item,Any,Dragon Charm,None,Obtainable,120,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0
+253,Pocket Item,Any,Monkey Charm,None,Obtainable,120,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+254,Pocket Item,Any,Spiegelmann's Autograph,None,Obtainable,30,3,3,3,3,0,0,0,0,2,2,0,0,0,0,0
+255,Pocket Item,Any,Pink Holy Cup,Boss Accessory,Obtainable,140,5,5,5,5,0,50,50,0,5,5,0,0,0,0,0
+256,Pocket Item,Any,ES Square,None,Obtainable,100,2,2,2,2,0,0,0,0,2,2,0,0,0,0,0
+257,Pocket Item,Any,Rose,None,Obtainable,10,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0
+258,Pocket Item,Any,Poem Collection,None,Obtainable,10,0,0,0,0,0,0,0,0,0,0,0,3,3,0,0
+259,Pocket Item,Any,Scissorhands,None,Obtainable,10,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0
+260,Pocket Item,Any,House Key,None,Obtainable,0,0,0,0,0,0,200,200,0,0,0,0,0,0,0,0
+261,Pocket Item,Any,Pocket Watch,None,Obtainable,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0
+262,Belt,Warrior,Nova Hyades Belt,None,Obtainable,110,22,22,22,22,0,0,0,46,10,10,0,0,0,1,0
+263,Belt,Any,Sharp Blue Gilded Belt,None,Obtainable,110,0,8,0,0,0,80,80,90,0,0,0,0,0,3,0
+264,Belt,Any,Wise Blue Gilded Belt,None,Obtainable,110,0,0,0,8,0,80,80,90,0,0,0,0,0,3,0
+265,Pocket Item,Any,Snake Charm,None,Obtainable,120,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0
+266,Belt,Any,Tenacious Blue Gilded Belt,None,Obtainable,110,8,0,0,0,0,80,80,90,0,0,0,0,0,3,0
+267,Belt,Any,Lucky Green Gilded Belt,None,Obtainable,100,0,0,7,0,0,70,70,80,0,0,0,0,0,3,0
+268,Belt,Any,Lucky Blue Gilded Belt,None,Obtainable,110,0,0,8,0,0,80,80,90,0,0,0,0,0,3,0
+269,Belt,Any,Sharp Green Gilded Belt,None,Obtainable,100,0,7,0,0,0,70,70,80,0,0,0,0,0,3,0
+270,Belt,Any,Wise Green Gilded Belt,None,Obtainable,100,0,0,0,7,0,70,70,80,0,0,0,0,0,3,0
+271,Pocket Item,Any,Black Wallet,None,Obtainable,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+272,Belt,Any,Tenacious Green Gilded Belt,None,Obtainable,100,7,0,0,0,0,70,70,80,0,0,0,0,0,3,0
+273,Earrings,Any,Rex's Green Earrings,None,Obtainable,75,0,0,3,3,0,0,0,0,0,0,0,0,0,0,0
+274,Earrings,Any,Rex's Red Earrings,None,Obtainable,75,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0
+275,Earrings,Any,Rex's Blue Earrings,None,Obtainable,75,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+276,Face Accessory,Warrior,Red Warrior Meister Symbol,None,Obtainable,100,2,1,0,0,0,0,0,20,0,0,0,0,0,0,0
+277,Face Accessory,Magician,Red Magician Meister Symbol,None,Obtainable,100,0,0,1,2,0,0,0,20,0,0,0,0,0,0,0
+278,Face Accessory,Bowman,Red Archer Meister Symbol,None,Obtainable,100,1,2,0,0,0,0,0,20,0,0,0,0,0,0,0
+279,Face Accessory,Thief,Red Thief Meister Symbol,None,Obtainable,100,0,1,2,0,0,0,0,20,0,0,0,0,0,0,0
+280,Face Accessory,Pirate,Red Pirate Meister Symbol,None,Obtainable,100,2,1,0,0,0,0,0,20,0,0,0,0,0,0,0
+281,Face Accessory,Magician,Shiny Red Magician Meister Symbol,None,Obtainable,130,0,0,3,3,0,0,0,26,0,3,0,0,0,0,0
+282,Face Accessory,Bowman,Shiny Red Archer Meister Symbol,None,Obtainable,130,3,3,0,0,0,0,0,26,3,0,0,0,0,0,0
+283,Face Accessory,Thief,Shiny Red Thief Meister Symbol,None,Obtainable,130,0,3,3,0,0,0,0,26,3,0,0,0,0,0,0
+284,Face Accessory,Pirate,Shiny Red Pirate Meister Symbol,None,Obtainable,130,3,3,0,0,0,0,0,26,3,0,0,0,0,0,0
+285,Earrings,Any,Mystic Earrings,Mystic,Obtainable,115,4,4,4,4,0,0,0,35,0,0,0,0,0,5,0
+286,Earrings,Any,Silver Earrings,None,Obtainable,100,0,0,0,0,0,30,0,0,0,0,0,0,0,5,0
+287,Earrings,Any,Rex's Perfect Green Earrings,Party Quest,Obtainable,125,0,0,8,8,0,10,0,100,1,1,0,0,0,6,0
+288,Earrings,Any,Ifia's Earrings,Ifia's Treasure,Obtainable,110,1,1,1,1,0,150,150,120,0,0,0,0,0,1,0
+289,Earrings,Any,Bright Altaire Earrings,Party Quest,Obtainable,100,7,7,7,7,0,0,250,0,0,0,0,7,0,5,0
+290,Earrings,Any,Golden Flower Earring,Golden Flower Accessory,Obtainable,120,4,4,4,4,0,0,0,50,2,2,0,0,0,5,0
+291,Earrings,Any,Brilliant Altaire Earrings,Party Quest,Obtainable,85,5,5,5,5,0,0,250,0,0,0,0,5,0,5,0
+292,Earrings,Any,Rose Earrings,None,Obtainable,90,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0
+293,Earrings,Any,Strawberry Earrings,None,Obtainable,85,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0
+294,Earrings,Any,Metal Heart Earrings,None,Obtainable,80,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0
+295,Eye Accessory,Any,Aquatic Letter Eye Accessory,Boss Accessory,Obtainable,100,6,6,6,6,0,0,0,100,1,1,0,0,0,3,0
+296,Emblem,Thief,Mitra's Rage: Thief,Pitched Boss,Obtainable,200,0,40,40,0,0,0,0,0,5,5,0,0,0,0,0
+297,Earrings,Any,Numenal's Willpower,Masteria's Legac,Obtainable,180,1,1,1,1,0,150,150,100,5,5,0,0,0,3,0
+298,Emblem,Magician,Mitra's Rage: Magician,Pitched Boss,Obtainable,200,0,0,40,40,0,0,0,0,5,5,0,0,0,0,0
+299,Earrings,Any,Gold Emerald Earrings,None,Obtainable,80,0,2,0,5,0,0,0,0,0,0,0,0,0,5,0
+300,Earrings,Any,Half Earrings,None,Obtainable,75,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0
+301,Emblem,Bowman,Mitra's Rage: Bowman,Pitched Boss,Obtainable,200,40,40,0,0,0,0,0,0,5,5,0,0,0,0,0
+302,Face Accessory,Thief,Shiny Red Thief Symbol,None,Obtainable,130,0,3,3,0,0,0,0,26,3,0,0,0,0,0,0
+303,Pendant,Any,Greed Pendant,None,Obtainable,75,3,3,3,3,0,0,0,100,0,0,0,0,0,6,0
+304,Earrings,Any,Commanding Force Earring,Pitched Boss,Obtainable,200,7,7,7,7,0,500,500,0,5,5,0,0,0,6,0
+305,Face Accessory,Any,Berserked,Pitched Boss,Obtainable,160,10,10,10,10,0,0,0,200,10,10,0,0,0,5,0
+306,Face Accessory,Bowman,Shiny Red Archer Symbol,None,Obtainable,130,3,3,0,0,0,0,0,26,3,0,0,0,0,0,0
+307,Face Accessory,Magician,Shiny Red Magician Symbol,None,Obtainable,130,0,0,3,3,0,0,0,26,0,3,0,0,0,0,0
+308,Emblem,Pirate,Mitra's Rage: Pirate,Pitched Boss,Obtainable,200,40,40,0,0,0,0,0,0,5,5,0,0,0,0,0
+309,Face Accessory,Warrior,Shiny Red Warrior Symbol,None,Obtainable,130,3,3,0,0,0,0,0,26,3,0,0,0,0,0,0
+310,Face Accessory,Any,Shiny Red Warrior Meister Symbol,None,Obtainable,130,3,3,0,0,0,0,0,26,3,0,0,0,0,1,0
+311,Face Accessory,Any,Shiny Red Special Symbol,None,Obtainable,130,0,0,0,0,0,0,0,26,5,5,0,0,0,0,0
+312,Emblem,Warrior,Mitra's Rage: Warrior,Pitched Boss,Obtainable,200,40,40,0,0,0,700,0,0,5,5,0,0,0,0,0
+313,Face Accessory,Any,Bright Golden Symbol,Golden Flower Accessory,Obtainable,120,3,3,3,3,0,0,0,50,4,4,0,0,0,5,0
+314,Face Accessory,Pirate,Shiny Blue Pirate Symbol,None,Obtainable,120,3,2,0,0,0,0,0,24,2,0,0,0,0,0,0
+315,Face Accessory,Thief,Shiny Blue Thief Symbol,None,Obtainable,120,0,2,3,0,0,0,0,24,2,0,0,0,0,0,0
+316,Face Accessory,Bowman,Shiny Blue Archer Symbol,None,Obtainable,120,2,3,0,0,0,0,0,24,2,0,0,0,0,0,0
+317,Face Accessory,Pirate,Shiny Red Pirate Symbol,None,Obtainable,130,3,3,0,0,0,0,0,26,3,0,0,0,0,0,0
+318,Face Accessory,Magician,Shiny Blue Magician Symbol,None,Obtainable,120,0,0,2,3,0,0,0,24,0,2,0,0,0,0,0
+319,Face Accessory,Warrior,Shiny Blue Warrior Symbol,None,Obtainable,120,3,2,0,0,0,0,0,24,2,0,0,0,0,0,0
+320,Face Accessory,Any,Mystic Face Accessory,Mystic,Obtainable,115,1,1,1,1,0,0,0,20,2,2,0,0,0,1,0
+321,Face Accessory,Any,Treasure Hunter Jack's Scar,Masteria Explorer,Obtainable,125,3,3,3,3,0,0,0,0,3,3,0,0,0,1,0
+322,Face Accessory,Pirate,Shiny Gray Pirate Symbol,None,Obtainable,110,2,2,0,0,0,0,0,22,1,0,0,0,0,0,0
+323,Face Accessory,Thief,Shiny Gray Thief Symbol,None,Obtainable,110,0,2,2,0,0,0,0,22,1,0,0,0,0,0,0
+324,Face Accessory,Any,Condensed Power Crystal,Boss Accessory,Obtainable,110,5,5,5,5,0,0,0,100,5,5,0,0,0,5,0
+325,Face Accessory,Bowman,Shiny Gray Archer Symbol,None,Obtainable,110,2,2,0,0,0,0,0,22,1,0,0,0,0,0,0
+326,Face Accessory,Magician,Shiny Gray Magician Symbol,None,Obtainable,110,0,0,2,2,0,0,0,22,0,1,0,0,0,0,0
+327,Face Accessory,Warrior,Shiny Gray Warrior Symbol,None,Obtainable,110,2,2,0,0,0,0,0,22,1,0,0,0,0,0,0
+328,Emblem,Kanna,Gold Blossom Emblem,None,Kanna,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
+329,Face Accessory,Thief,Red Thief Symbol,None,Obtainable,100,0,1,2,0,0,0,0,20,0,0,0,0,0,0,0
+330,Emblem,Hayato,Gold Crescent Emblem,None,Hayato,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
+331,Emblem,Beast Tamer,Gold Forest Emblem,None,Beast Tamer,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
+332,Face Accessory,Bowman,Red Archer Symbol,None,Obtainable,100,1,2,0,0,0,0,0,20,0,0,0,0,0,0,0
+333,Emblem,Jett,Gold Astro Emblem,None,Jett,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
+334,Face Accessory,Pirate,Red Pirate Symbol,None,Obtainable,100,2,1,0,0,0,0,0,20,0,0,0,0,0,0,0
+335,Face Accessory,Magician,Red Magician Symbol,None,Obtainable,100,0,0,1,2,0,0,0,20,0,0,0,0,0,0,0
+336,Emblem,Kinesis,Gold Kinesis Emblem,None,Kinesis,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
+337,Badge,Any,Badge of Junna,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0,0
+338,Badge,Any,Seven Days Badge,Seven Days,Obtainable,100,7,7,7,7,0,0,0,0,7,7,10,0,0,0,0
+339,Emblem,Xenon,Hybrid Heart,None,Xenon,100,0,0,0,0,0,300,100,100,2,2,0,0,0,0,0
+340,Badge,Any,Golden Flower Badge,Golden Flower Accessory,Obtainable,120,9,9,9,9,0,0,0,0,5,5,0,0,0,0,0
+341,Emblem,Lara,Gold Earthseer Emblem,None,Lara,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
+342,Badge,Any,Crystal Ventus Badge,Boss Accessory,Obtainable,130,10,10,10,10,0,0,0,0,5,5,0,10,10,0,0
+343,Emblem,Hoyoung,Gold Three Paths Emblem,None,Hoyoung,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
+344,Face Accessory,Warrior,Red Warrior Symbol,None,Obtainable,100,2,1,0,0,0,0,0,20,0,0,0,0,0,0,0
+345,Emblem,Resistance,Gold Resistance Emblem,None,Resistance,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
+346,Emblem,Adele,Gold Knight's Emblem,None,Adele,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
+347,Emblem,Cadena,Gold Agent Emblem,None,Cadena,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
+348,Emblem,Kain,Gold Hitman Emblem,None,Kain,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
+349,Emblem,Kaiser,Dragon Emblem,None,Kaiser,100,10,10,0,0,0,0,0,0,2,2,0,0,0,0,0
+350,Emblem,Illium,Gold Crystal Emblem,None,Illium,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
+351,Badge,Any,Badge of Pruba,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0,0
+352,Emblem,Any,Gold Demon Emblem,None,Demon,100,10,10,10,10,0,500,0,0,2,2,0,0,0,0,0
+353,Badge,Any,Badge of Saturnus,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0,0
+354,Badge,Any,Badge of Donarr,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0,0
+355,Badge,Any,Badge of Wodan,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0,0
+356,Emblem,Cygnus Knights,Gold Cygnus Emblem,None,Cygnus Knights,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
+357,Emblem,Explorers,Gold Maple Leaf Emblem,None,Explorers,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
+358,Emblem,Aran,Gold Heroes Emblem,None,Aran,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
+359,Emblem,Angelic Buster,Angel Emblem,None,Angelic Buster,100,10,10,0,0,0,400,0,0,2,2,0,0,0,0,0
+360,Emblem,Aran,Gold Heroes Emblem,None,Aran,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
+361,Emblem,Aran,Gold Heroes Emblem,None,Aran,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
+362,Emblem,Aran,Gold Heroes Emblem,None,Aran,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
+363,Emblem,Aran,Gold Heroes Emblem,None,Aran,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
+364,Badge,Any,Badge of Chiu,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0,0
+365,Pendant,Any,Legacy of Darkness,Masteria's Legac,Obtainable,180,15,15,15,15,0,0,0,100,5,5,0,0,0,5,0
+366,Emblem,Aran,Gold Heroes Emblem,None,Aran,100,10,10,10,10,0,0,0,0,2,2,0,0,0,0,0
+367,Pendant,Any,Legacy of Light,Masteria's Legac,Obtainable,180,20,20,20,20,0,0,0,100,0,0,0,0,0,5,0
+368,Pendant,Any,Equip,None,Obtainable,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+369,Pendant,Any,VIP Necklace,None,Obtainable,145,10,10,10,10,0,0,0,150,0,0,0,0,0,3,0
+370,Pendant,Any,Dominator Pendant,Boss Accessory,Obtainable,140,20,20,20,20,0,10,10,100,3,3,0,0,0,5,0
+371,Pendant,Any,Purple Peacock Pendant,None,Obtainable,130,0,0,16,0,0,180,180,185,0,0,0,0,0,3,0
+372,Pendant,Any,Purple Wolf Pendant,None,Obtainable,130,0,16,0,0,0,180,180,185,0,0,0,0,0,3,0
+373,Pendant,Any,Purple Owl Pendant,None,Obtainable,130,0,0,0,16,0,180,180,185,0,0,0,0,0,3,0
+374,Pendant,Any,Purple Bear Pendant,None,Obtainable,130,16,0,0,0,0,180,180,185,0,0,0,0,0,3,0
+375,Pendant,Any,Golden Flower Pendant,Golden Flower Accessory,Obtainable,120,18,18,18,18,0,0,0,100,2,2,0,0,0,3,0
+376,Pendant,Any,Mechanator Pendant,Boss Accessory,Obtainable,120,10,10,10,10,0,250,250,100,1,1,0,0,0,2,0
+377,Pendant,Any,Pink Peacock Pendant,None,Obtainable,120,0,0,12,0,0,135,135,145,0,0,0,0,0,3,0
+378,Pendant,Any,Subani's Pendant,Masteria Explorer,Obtainable,125,16,16,16,16,0,0,0,0,2,2,0,0,0,3,0
+379,Earrings,Any,Shaman Earrings,None,Obtainable,140,5,5,5,5,0,150,150,70,0,0,0,0,0,6,0
+380,Pendant,Any,Reaper's Pendant,None,Obtainable,144,4,4,4,4,0,0,0,0,4,4,0,0,0,11,0
+381,Earrings,Any,Scarlet Earring,None,Obtainable,135,6,6,6,6,0,200,200,100,3,3,0,0,0,6,0
+382,Earrings,Any,Ocean Glow Earrings,None,Obtainable,150,7,7,7,7,0,750,750,75,5,5,0,0,0,7,0
+383,Earrings,Any,Inverse Jewel Earring,Kritias,Obtainable,150,6,6,6,6,0,600,600,80,4,4,0,0,0,6,0
+384,Earrings,Any,Dea Sidus Earring,Boss Accessory,Obtainable,130,5,5,5,5,0,0,0,50,2,2,0,0,0,6,0
+385,Earrings,Any,Nimble Hound Earrings,None,Obtainable,130,4,4,4,4,0,0,0,30,0,0,0,0,0,5,0
+386,Earrings,Any,MP Hound Earrings,None,Obtainable,130,4,4,4,4,0,0,200,30,0,0,0,0,0,5,0
+387,Earrings,Any,VIP Earrings,None,Obtainable,127,5,5,5,5,0,0,80,55,0,0,0,0,0,5,0
+388,Earrings,Any,Will o' the Wisps,Boss Accessory,Obtainable,130,7,7,7,7,0,100,100,100,2,2,0,0,0,5,0
+389,Earrings,Any,Rex's Perfect Blue Earrings,Party Quest,Obtainable,125,0,8,8,0,0,10,0,100,1,1,0,0,0,6,0
+390,Earrings,Any,Meister Earring,Ardentmill,Obtainable,140,5,5,5,5,0,500,500,70,4,4,0,0,0,6,0
+391,Earrings,Any,Sheriff Lita's Earrings,Masteria Explorer,Obtainable,125,4,4,4,4,0,0,0,0,2,2,0,0,0,5,0
+392,Earrings,Any,Rex's Perfect Red Earrings,Party Quest,Obtainable,125,8,8,0,0,0,10,0,100,1,1,0,0,0,6,0
+393,Badge,Any,Badge of Mano,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0,0
+394,Pendant,Any,Pink Wolf Pendant,None,Obtainable,120,0,12,0,0,0,135,135,145,0,0,0,0,0,3,0
+395,Pendant,Any,Pink Owl Pendant,None,Obtainable,120,0,0,0,12,0,135,135,145,0,0,0,0,0,3,0
+396,Pendant,Any,Pink Bear Pendant,None,Obtainable,120,12,0,0,0,0,135,135,145,0,0,0,0,0,3,0
+397,Pendant,Any,Chaos Horntail Necklace,Boss Accessory,Obtainable,120,10,10,10,10,0,10,10,140,2,2,0,0,0,3,0
+398,Earrings,Any,Hyper Hound Earrings,None,Obtainable,130,4,4,4,4,0,100,100,45,0,0,0,0,0,5,0
+399,Earrings,Any,HP Hound Earrings,None,Obtainable,130,4,4,4,4,0,200,0,60,0,0,0,0,0,5,0
+400,Pendant,Any,Mystic Pendant,Mystic,Obtainable,115,5,5,5,5,0,0,0,50,1,1,0,0,0,4,0
+401,Pendant,Any,Red Peacock Pendant,None,Obtainable,110,0,0,8,0,0,90,90,105,0,0,0,0,0,3,0
+402,Pendant,Any,Red Wolf Pendant,None,Obtainable,110,0,8,0,0,0,90,90,105,0,0,0,0,0,3,0
+403,Pendant,Any,Red Owl Pendant,None,Obtainable,110,0,0,0,8,0,90,90,105,0,0,0,0,0,3,0
+404,Pendant,Any,Red Bear Pendant,None,Obtainable,110,8,0,0,0,0,90,90,105,0,0,0,0,0,3,0
+405,Pendant,Any,Ifia's Necklace,Ifia's Treasure,Obtainable,110,5,5,5,5,0,150,150,108,1,1,0,0,0,1,0
+406,Pendant,Any,Horntail Necklace,Boss Accessory,Obtainable,120,7,7,7,7,0,0,0,108,0,0,0,0,0,2,0
+407,Pendant,Any,Veteran Crusader Pendant,None,Obtainable,105,5,5,5,5,0,0,0,50,1,1,0,0,0,4,0
+408,Pendant,Any,Green Peacock Pendant,None,Obtainable,100,0,0,4,0,0,45,45,65,0,0,0,0,0,3,0
+409,Pendant,Any,Green Wolf Pendant,None,Obtainable,100,0,4,0,0,0,45,45,65,0,0,0,0,0,3,0
+410,Pendant,Any,Green Owl Pendant,None,Obtainable,100,0,0,0,4,0,45,45,65,0,0,0,0,0,3,0
+411,Pendant,Any,Green Bear Pendant,None,Obtainable,100,4,0,0,0,0,45,45,65,0,0,0,0,0,3,0
+412,Pendant,Any,Juliet's Pendant,Party Quest,Obtainable,85,6,6,6,6,0,0,0,85,0,0,0,0,0,3,0
+413,Pendant,Any,Romeo's Pendant,Party Quest,Obtainable,85,6,6,6,6,0,0,0,85,0,0,0,0,0,3,0
+414,Eye Accessory,Any,Magic Eyepatch,Pitched Boss,Obtainable,160,15,15,15,15,0,0,0,300,3,3,0,0,0,3,0
+415,Eye Accessory,Any,Professor Foxwit's Glasses,Masteria Explorer,Obtainable,125,3,3,3,3,0,200,200,0,2,2,0,0,0,3,0
+416,Eye Accessory,Any,Kenta's New Goggles,Party Quest,Obtainable,125,6,6,6,6,0,100,100,90,0,0,0,0,0,3,0
+417,Eye Accessory,Any,Golden Pearl Shadow,Golden Flower Accessory,Obtainable,120,3,3,3,3,0,0,0,60,1,1,0,0,0,5,0
+418,Eye Accessory,Any,Mystic Eye Accessory,Mystic,Obtainable,115,0,0,0,0,0,0,0,120,1,1,0,0,0,1,0
+419,Eye Accessory,Any,Papulatus Mark,Boss Accessory,Obtainable,145,8,8,8,8,0,0,0,150,1,1,0,0,0,5,0
+420,Eye Accessory,Any,Black Bean Mark,Boss Accessory,Obtainable,135,7,7,7,7,0,0,0,120,1,1,0,0,0,5,0

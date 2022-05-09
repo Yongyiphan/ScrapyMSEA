@@ -26,9 +26,9 @@ newsettings = {
 
 def exec_Crawler():
     runner = CrawlerRunner(settings=sett)
-    #runner.crawl(EquipmentData.TotalEquipmentSpider)
+    runner.crawl(EquipmentData.TotalEquipmentSpider)
     runner.crawl(EquipmentData.EquipmentSetSpider)
-    #runner.crawl(CharacterData.CharacterSpider)
+    runner.crawl(CharacterData.CharacterSpider)
     d = runner.join()
     d.addBoth(lambda _: reactor.stop())
     reactor.run()

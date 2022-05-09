@@ -1,62 +1,19 @@
 ,ClassName,Weapon
-0,Xenon,Whip Blade
-1,Luminous,Shining Rod
-2,Battle Mage,Staff
-3,Evan,Wand
-4,Evan,Staff
-5,Mechanic,Gun
-6,Shade,Knuckle
-7,Phantom,Cane
-8,Wild Hunter,Crossbow
-9,Blaster,Arm Cannon
-10,Aran,Polearm
-11,Mihile,One Handed Sword
-12,Mercedes,Dual Bowguns
-13,Wind Archer,Bow
-14,Zero,Long Sword
-15,Lara,Wand
-16,Kinesis,Psy Limiter
-17,Night Walker,Claw
-18,Blaze Wizard,Wand
-19,Blaze Wizard,Staff
-20,Hoyoung,Buchae
-21,Illium,Magic Gauntlet
-22,Ark,Knuckle
-23,Adele,Tuner
-24,Hayato,Katana
-25,Kanna,Fan
-26,Cadena,Chain
-27,Kain,Whispershot
-28,Kaiser,Two Handed Sword
-29,Angelic Buster,Soul Shooter
-30,Demon Avenger,Desperado
-31,Demon Slayer,One Handed Blunt Weapon
-32,Demon Slayer,One Handed Axe
-33,Dawn Warrior,One Handed Sword
-34,Dawn Warrior,Two Handed Sword
-35,Thunder Breaker,Knuckle
-36,Buccaneer,Knuckle
-37,Corsair,Gun
-38,Cannoneer,Hand Cannon
-39,Bowmaster,Bow
-40,Marksman,Crossbow
-41,Pathfinder,Ancient Bow
-42,Night Lord,Claw
-43,Shadower,Dagger
-44,"Arch Mage (Ice, Lightning)",Wand
-45,"Arch Mage (Ice, Lightning)",Staff
-46,Dual Blade,Dagger
-47,"Arch Mage (Fire, Poison)",Wand
-48,"Arch Mage (Fire, Poison)",Staff
-49,Bishop,Wand
-50,Bishop,Staff
-51,Hero,One Handed Sword
-52,Hero,Two Handed Sword
-53,Hero,One Handed Axe
-54,Hero,Two Handed Axe
-55,Paladin,One Handed Sword
-56,Paladin,Two Handed Sword
-57,Paladin,One Handed Blunt Weapon
-58,Paladin,Two Handed Blunt Weapon
-59,Dark Knight,Spear
-60,Dark Knight,Polearm
+0,Phantom,Cane
+1,Evan,Wand
+2,Evan,Staff
+3,Mihile,One Handed Sword
+4,Hoyoung,Buchae
+5,Adele,Tuner
+6,Demon Slayer,One Handed Blunt Weapon
+7,Demon Slayer,One Handed Axe
+8,Dawn Warrior,One Handed Sword
+9,Dawn Warrior,Two Handed Sword
+10,Cannoneer,Hand Cannon
+11,Night Lord,Claw
+12,Bishop,Wand
+13,Bishop,Staff
+14,Paladin,One Handed Sword
+15,Paladin,Two Handed Sword
+16,Paladin,One Handed Blunt Weapon
+17,Paladin,Two Handed Blunt Weapon
