@@ -6,6 +6,7 @@ from scrapy.crawler import CrawlerRunner
 from scrapy.utils.project import get_project_settings
 from scrapy.utils.log import configure_logging
 
+from scrapysea.spiders import CalculationsData
 from scrapysea.spiders import EquipmentData
 from scrapysea.spiders import CharacterData
 import ComFunc
@@ -26,8 +27,8 @@ newsettings = {
 
 def exec_Crawler():
     runner = CrawlerRunner(settings=sett)
-    runner.crawl(EquipmentData.TotalEquipmentSpider)
-    runner.crawl(EquipmentData.EquipmentSetSpider)
+    #runner.crawl(EquipmentData.TotalEquipmentSpider)
+    #runner.crawl(EquipmentData.EquipmentSetSpider)
     runner.crawl(CharacterData.CharacterSpider)
     d = runner.join()
     d.addBoth(lambda _: reactor.stop())

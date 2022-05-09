@@ -23,18 +23,10 @@ class CharacterSpider(scrapy.Spider):
     name = "CharacterData"
     allowed_domains = ['grandislibrary.com/']
     start_urls = ['https://grandislibrary.com/classes']
-    jsonKey = "https://www.grandislibrary.com/_next/data/LWjTFX_xiHjbIHQLG3ZN5" #/explorers/hero.json"
+    jsonKey = "https://www.grandislibrary.com/_next/data/" #/explorers/hero.json"
 
     custom_settings = {
-        "FEEDS":
-            {
-                "./DefaultData/Results.json":{
-                    "format":"json", 
-                    "overwrite" : True
-                }
-            },
         "LOG_SCRAPED_ITEMS": False
-        
     }
 
     CharacterDF = []
@@ -64,8 +56,9 @@ class CharacterSpider(scrapy.Spider):
                 CLogger.info(link)
                 ClassesLinks.append(link)
             browser.close()
+            buildID = json.loads(response.xpath("//script[@id='__NEXT_DATA__'] /text()").get())['buildId']
             for i, link in enumerate(ClassesLinks):
-                nurl = self.jsonKey + "/" + link
+                nurl = self.jsonKey + buildID + "/" + link
                 self.logger.info(f"{i}: {nurl}")
                 yield scrapy.Request(nurl, callback=self.JsonResponseData, dont_filter=True)
         except Exception:
@@ -75,7 +68,7 @@ class CharacterSpider(scrapy.Spider):
         body = browser.find_element_by_tag_name("body") 
         while noOfScrollDown >=0:
             body.send_keys(Keys.PAGE_DOWN)
-            sleep(0.1)
+            sleep(0.3)
             noOfScrollDown -=1
             
         return browser
