@@ -1,7 +1,9 @@
 
 from inspect import trace
 import logging
+from msilib.schema import tables
 from pipes import Template
+from subprocess import call
 from tkinter.tix import Tree
 import traceback
 from typing import final
@@ -434,17 +436,13 @@ class EquipmentSetSpider(scrapy.Spider):
     allowed_domains = ['maplestory.fandom.com']
     start_urls = ['https://maplestory.fandom.com/wiki/Equipment']
     custom_settings = {
-        "FEEDS":
-            {
-                "./DefaultData/EquipmentSetData.json":{
-                    "format":"json", 
-                    "overwrite" : True
-                }
-            },
         "LOG_SCRAPED_ITEMS": False
         
     }
-    TrackEquipSets = []
+    TrackEquipSets = {
+        "Set" : [],
+        "Cumulative" : []
+    }
     
     EquipSetTrack = [
         'Sengoku', 'Boss Accessory', 'Pitched Boss', 'Seven Days', "Ifia's Treasure",'Mystic','Ardentmill','Blazing Sun'
@@ -460,17 +458,27 @@ class EquipmentSetSpider(scrapy.Spider):
 
     def parse(self, response):
 
-        EquipmentSet =response.xpath("//span[@id = 'Equipment_Set']/parent::h2/following-sibling::div[@class='tabber wds-tabber'][1]").css("table.wikitable")
-
-        for equipLinks in EquipmentSet.xpath(".//a[not(descendant::img)]/@href"):
-            setName = " ".join(re.split("%|_|-|#|27s", equipLinks.extract().split("/")[-1])).replace("Set", '').rstrip(" ")
-            if any(value in setName for value in self.EquipSetTrack):
-                if any(value in setName for value in self.ignoreSet):
-                    continue
-                nurl = response.urljoin(equipLinks.extract())
-                yield scrapy.Request(nurl, callback=self.HandleEquipmentSet, meta = {"EquipSet" : setName})
+        EquipmentSet =response.xpath("//span[@id = 'Equipment_Set']/parent::h2/following-sibling::div[@class='tabber wds-tabber'][1] //table[@class='wikitable']")
+        ClassHeaders = response.xpath("//span[@id = 'Equipment_Set']/parent::h2/following-sibling::div[@class='tabber wds-tabber'][1] //li[contains(@class,'wds-tabs__tab')] //text()").getall()
+        #TempL = []
+        for ix, tables in enumerate(EquipmentSet):
+            ClassType = "Any" if ClassHeaders[ix] == "Common" else ClassHeaders[ix]
+            for equipLinks in tables.xpath(".//a[not(descendant::img)]/@href"):
+                setName = " ".join(re.split("%|_|-|#|27s", equipLinks.extract().split("/")[-1])).replace("Set", '').replace(ClassType, '').rstrip()
+                if if_In_String(setName, '('):
+                    setName = setName.split('(')[0].rstrip()
+                if any(value in setName for value in self.EquipSetTrack):
+                    if any(value in setName for value in self.ignoreSet):
+                        continue
+                    nurl = response.urljoin(equipLinks.extract())
+                    #TempL.append((nurl, setName))
+                    yield scrapy.Request(nurl, callback=self.HandleEquipmentSet, meta = {"EquipSet" : setName, "ClassType":ClassType})
             
-                    
+
+        
+        #CU = TempL[1]
+        #yield scrapy.Request(CU[0], callback=self.HandleEquipmentSet, meta={"EquipSet" : CU[1]})
+            
         print("Donezo")
         pass
 
@@ -478,29 +486,46 @@ class EquipmentSetSpider(scrapy.Spider):
         start_time = self.crawler.stats.get_value('start_time')
         finish_time = self.crawler.stats.get_value('finish_time')
         print("Set Effects scraped in: ", finish_time-start_time)
+        SetDF = pd.concat(self.TrackEquipSets["Set"], ignore_index=True)
+        SetDF = CleanSetEffect(SetDF)
+        CulDF = pd.concat(self.TrackEquipSets['Cumulative'], ignore_index=True)
+        CulDF = CleanSetEffect(CulDF)
+        
+        SetDF.to_csv("./DefaultData/EquipmentData/EquipSetData.csv")
+        CulDF.to_csv("./DefaultData/EquipmentData/EquipSetCulData.csv")
+        
         
 
     def HandleEquipmentSet(self, response):
 
         Wikitable = response.xpath("//div[@class='mw-parser-output'] //table[@class='wikitable'][1]")
         EquipSet = response.meta["EquipSet"]
-        ItemDict = {
-            "EquipSet" : EquipSet,
-        }
+        ClassType = response.meta['ClassType']
         TRRows = Wikitable.xpath(".//tr")
         Header =  self.removeBRN(TRRows.xpath(".//th /text()").getall())
-        for i, SetType in enumerate(Header):
-            for row in TRRows: 
-                SetAt = row.xpath(".//td[1] /b/text()").getall()
-                if SetAt == []:
-                    continue
-                else:
-                    SetAt = SetAt[0].split(' ')[0]
-                SetEffectAt  = row.xpath(f".//td[{i+1}] /text()").getall()
-                if SetAt not in ItemDict.keys():
-                    ItemDict[SetAt] = {}
-                ItemDict[SetAt][SetType] = self.RetrieveByTDContent(SetEffectAt)
-        
+        try:
+            for i, SetType in enumerate(Header):
+                
+                if "Set" in SetType:
+                    SetType = "Set"
+                if "Cumulative" in SetType:
+                    SetType = "Cumulative"
+                for row in TRRows: 
+                    
+                    SetAt = row.xpath(".//td[1] /b/text()").getall()
+                    if SetAt == []:
+                        continue
+                    else:
+                        SetAt = SetAt[0].split(' ')[0]
+                    ItemDict = {
+                        "EquipSet" : EquipSet,
+                        "ClassType" : ClassType,
+                        "Set At" : SetAt
+                    }
+                    SetEffectAt  = self.removeBRN(row.xpath(f".//td[{i+1}] /text()").getall())
+                    self.TrackEquipSets[SetType].append(DataFrame(self.RetrieveByTDContent(SetEffectAt, ItemDict), index=[0]))
+        except:
+            Eslogger.critical(traceback.format_exc())
         Eslogger.info(f"Adding {EquipSet}")
         return ItemDict
 
@@ -508,18 +533,23 @@ class EquipmentSetSpider(scrapy.Spider):
     def RetrieveByTDContent(self, content, ItemDict = {}):
         
         for stat in content:
-            if stat.find(':') != -1:
+            if if_In_String(stat, ["Max", "%"], mode="All"):
                 key, value = stat.split(':')
-                if value.strip(' ') == "":
-                    continue
-                ItemDict[key] = value.strip(' +\n')
+                ItemDict["Perc " + key] = value.strip(' +%\n')
+                continue
+            if if_In_String(stat, ":"):
+                key, value = stat.split(':')
+                if if_In_String(value, "("):
+                    value = value.split('(')[0]
+                ItemDict[key] = value.strip(' +%\n').replace(",", '')
             else:
                 try:                   
-                    key, value = stat.split(' ')
-                    ItemDict[key] = value.rstrip(' \n')
+                    splitvalue = stat.split(' ')
+                    value = splitvalue[-1]
+                    key = " ".join(splitvalue[:-1])
+                    ItemDict[key] = value.rstrip(' +%\n').replace(',', '')
                 except:
                     continue
-        self.TrackEquipSets.append(ItemDict)
         return ItemDict
 
     def removeBRN(self, List):
@@ -638,5 +668,23 @@ def CleanMedalDF(CDF):
     CDF.drop("Number of Upgrades", axis=1, inplace=True)
     CDF = CDF.fillna(0) 
 
+
+    return CDF
+
+def CleanSetEffect(CDF):
+    try:
+        ColumnOrder = [
+            "EquipSet","ClassType","Set At",
+            "STR","DEX","LUK","INT","All Stats","Max HP","Max MP","Perc Max HP","Perc Max MP","Defense",
+            "Weapon Attack","Magic Attack","Ignored Enemy Defense","Boss Damage",
+            "Critical Damage", "Damage","All Skills","Damage Against Normal Monsters","Abnormal Status Resistance"
+        ]
+
+        
+        CDF = CDF[ColumnOrder]
+        
+        CDF = CDF.fillna(0) 
+    except:
+        Eslogger.critical(traceback.format_exc())
 
     return CDF
