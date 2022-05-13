@@ -9,7 +9,6 @@ from scrapy.utils.log import configure_logging
 from scrapysea.spiders import CalculationsData
 from scrapysea.spiders import EquipmentData
 from scrapysea.spiders import CharacterData
-import ComFunc
 
 
 import time
@@ -29,7 +28,8 @@ def exec_Crawler():
     runner = CrawlerRunner(settings=sett)
     #runner.crawl(EquipmentData.TotalEquipmentSpider)
     #runner.crawl(EquipmentData.EquipmentSetSpider)
-    runner.crawl(CharacterData.CharacterSpider)
+    #runner.crawl(CharacterData.CharacterSpider)
+    runner.crawl(CalculationsData.PotentialSpider)
     d = runner.join()
     d.addBoth(lambda _: reactor.stop())
     reactor.run()

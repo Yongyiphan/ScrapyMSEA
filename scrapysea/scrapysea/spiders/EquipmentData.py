@@ -1,6 +1,4 @@
 
-import logging
-from tkinter.tix import Tree
 import traceback
 import pandas as pd
 from pandas import DataFrame
@@ -15,9 +13,9 @@ from ComFunc import if_In_String
 #ClassType = Warrior, Magician, etc
 
 
-
 Eqlogger = CustomLogger.Set_Custom_Logger("EquipmentAllSpider", logTo ="./Logs/Equipment.log", propagate=False)
 Eslogger = CustomLogger.Set_Custom_Logger("EquipmentSetSpider", logTo ="./Logs/EquipmentSet.log", propagate=False)
+
 #configure_logging(install_root_handler=False)
 
 class TotalEquipmentSpider(scrapy.Spider):

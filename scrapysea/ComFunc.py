@@ -6,20 +6,83 @@ import pandas as pd
 import CustomLogger
 
 
-def if_In_String(string, paramater, mode="Any"):
-    if isinstance(paramater, str):
-        if paramater in string:
+def if_In_String(string, parameter, mode="Any"):
+    if isinstance(parameter, str):
+        if parameter in string:
             return True
     
-    if isinstance(paramater, list):
+    if isinstance(parameter, list):
         if mode == "Any":
-            if any(para in string for para in paramater):
+            if any(para in string for para in parameter):
                 return True
         if mode == "All":
-            if all(para in string for para in paramater):
+            if all(para in string for para in parameter):
                 return True
     
     return False
+
+def replaceN(string, parameter, repalcement = ''):
+    if isinstance(parameter, list):
+        for p in parameter:
+            string = string.replace(p,repalcement)
+    if isinstance(parameter, str):
+        string = string.replace(p, repalcement)
+    
+    return string
+
+def removeB(list):
+    return [value.strip('\n') for value in list if value.strip(' ') != '\n']
+
+
+def returnPotLevel(lvl):
+    lvl = int(lvl)
+    if lvl in range(0, 21):
+        return 1
+    elif lvl in range(21, 41):
+        return 2
+    elif lvl in range(41, 51):
+        return 3
+    elif lvl in range(51,71):
+        return 4
+    elif lvl in range(71, 91):
+        return 5
+    elif lvl >= 91:
+        return 6
+
+def returnSFLevelRank(mode, level):
+    
+    level = int(level)
+    if mode != "Tyrant" :
+        if level >= 128 and level <= 137:
+            return 5
+        elif level >= 138 and level <= 149:
+            return 4
+        elif level >= 150 and level <= 159:
+            return 3
+        elif level >= 160 and level <= 199:
+            return 2
+        elif level >= 200:
+            return 1
+    else:
+        if level >= 0 and level <= 77:
+            return 9
+        elif level >= 78 and level <= 87:
+            return 8
+        elif level >= 88 and level <= 97:	
+            return 7
+        elif level >= 98 and level <= 107:
+            return 6
+        elif level >= 108 and level <= 117:	
+            return 5
+        elif level >= 118 and level <= 127:	
+            return 4
+        elif level >= 128 and level <= 137:
+            return 3
+        elif level >= 138 and level <= 149:
+            return 2
+        elif level >= 150:
+            return 1
+    
 
 
 
