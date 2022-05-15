@@ -1,6 +1,6 @@
 
-from dataclasses import replace
 import traceback
+from numpy import Infinity
 from pandas import DataFrame
 import scrapy
 import CustomLogger
@@ -206,61 +206,84 @@ class PotentialSpider(scrapy.Spider):
             
         return
     def TestTwo(self, PotentialGrades):
+        Clist = {}
+        TempL = []
+        StatIncrease = None
         for PTableGrade in PotentialGrades:
             try:
+
                 divRefPoint = PTableGrade.xpath("./ancestor::div[contains(@class, 'collapsible')]")
                 h2Title = divRefPoint.xpath("./preceding-sibling::h2[1]/span[contains(@class, 'headline')] /text()").get()
                 PotentialType = "Bonus" if "bonus" in h2Title.lower() else "Potential"
-                if PotentialType == "Bonus":
-                    break
                 EquipSlots = divRefPoint.xpath("./preceding-sibling::h3[1]/span[contains(@class,'headline')] /text()").get()
-                EquipSlots = self.formatEquipSlots(EquipSlots)
-                StatIncrease = ""
+                EList = self.formatEquipSlots(EquipSlots)   
                 GradeT = divRefPoint.xpath("./preceding-sibling::h4[1]/span[contains(@class,'headline')] /text()").get()
                 if "/" in GradeT:
                     GradeT = GradeT.split("/")[0].strip(' ')
                 GradeT = GradeT.split("(")
                 Grade = GradeT[0].strip(' ')
-                PDict = {}
-                Clist = []
                 Prime = GradeT[1].strip(')').replace('-', ' ')
+                PDict = {
+                    "Slot" : EList,
+                    "Type" : PotentialType,
+                    "Grade" : Grade,
+                    "Prime" : Prime
+                }
+                CDict = {key: value for key, value in PDict.items()}
                 for child in PTableGrade.xpath("./child::node()"):
                     childName = child.xpath("name()").get()
                     if childName == None:
                         continue
-                    if childName == 'h5':
-                        #If dict is filled, add to list, else continue
-                        if PDict != {}:
-                            Clist.append(PDict)
-                        DisStat = child.xpath(".//span[contains(@class, 'headline')] /text()").get().encode("ascii", "ignore").decode()
-                        StatT =  "Perc" if if_In_String(DisStat, '%') else "Flat"
-                            
-                        StatIncrease = DisStat
-                        PDict = {
-                            "Slot" : EquipSlots,
-                            "Grade" : Grade,
-                            "Prime" : Prime,
-                            "DisplayStat" : DisStat,
-                            "StatIncrease" : StatIncrease,
-                            "StatType" : StatT
-                        }
-                    if childName == "p":
-                        #PLogger.info(f"{[EquipSlots]} Set: {[StatIncrease]} at {Grade}: {Prime}")
-                        P = child.xpath("./text()").get()
-                        PDict = self.HandleP(P, PDict)
+                    if childName == "h5":
+                        DisplayStat = child.xpath(".//span[contains(@class, 'headline')] /text()").get().encode("ascii", "ignore").decode()
+                        StatIncrease = DisplayStat
+                        CDict["DisplayStat"] = DisplayStat
+                        CDict["Stat"] = StatIncrease
+                        CDict = self.reformatDisplayStat(CDict)
+                    if childName == 'p':
+                        ptext = child.xpath("./text()").get()
+                        if if_In_String(ptext.lower(), 'level requirement') == False:
+                            continue
+                        l = ptext.split(":")[-1].strip().split(' ')[0]
+                        CDict["MinLvl"] = int(l)
+                        CDict["MaxLvl"] = self.maxLvl
+                        CStat = CDict['Stat']
+                        if not if_In_String(CStat, 'Increase') and if_In_String(CStat, '%'):
+                            fv = CStat.split('%')[0].strip().split(' ')[-1]
+                            CStat = ' '.join([value.strip() for value in replaceN(CStat, [f"{fv}%", "of", "+"]).split(' ') if value != ''])
+                            CDict['Stat value'] = int(fv)
+                            CDict['Stat'] = CStat.strip()
+                            PLogger.info(CStat)
+
                         
-                        pass
+
+                    if childName == 'div':
+                        continue
+                        
+                    
                     if childName == "table":
-                        prevSibling  =  child.xpath()
-                        pass
-                    if childName == "":
-                        pass
-                    if childName == "p":
-                        pass
+                        prevSib = child.xpath("./preceding-sibling::*[1]")
+                        if prevSib.xpath("name()").get() == "dl":
+                            #Resets CDict
+                            CDict = {key: value for key, value in PDict.items()}
+                            pass
+                        else:
+                            pass
+                    TempL.append(childName)
+
+                    
+
+                    
             except Exception as E:
                 PLogger.critical(traceback.format_exc())    
+        PLogger.info([k for k in Clist.keys()])
+        for key, value in Clist.items():
+            if key == "h5 table dl table":
+                continue
+            PLogger.info(f"Types {key}: {value['C']}")        
+            for v in value["Stat"]:
+                PLogger.info(f"Slot: {v[0]} at {[v[1], v[2], v[3]]} Stat: {v[4]} ")
                 
-        
         return   
     def HandleP(self, p, PDcopy):
         #PDict is a dict deepcopy
@@ -314,6 +337,39 @@ class PotentialSpider(scrapy.Spider):
         return Result
 
     def reformatDisplayStat(self, PDict):
+        try:
+            DS = PDict['DisplayStat']
+            SI = PDict['Stat']
+            ToRemove = {
+                'chance to': "Chance",
+                "second" : "Duration"
+            }
+            if if_In_String(DS, 'when'):
+                SI = SI.split('when')[0].strip()  
+            for R in ToRemove.keys():
+                if if_In_String(DS, R):
+                    idx = DS.index(R)
+                    t = DS[:idx].strip().split(' ')
+                    fv = t[-1]
+                    if 'every' in t:
+                        PDict['Tick'] = int(fv.strip(" -%"))
+                        SI = replaceN(SI, 'every')
+                    else:
+                        PDict[ToRemove[R]] = int(fv.strip(" -%"))
+                    if if_In_String(DS, 'seconds') and R == "second":
+                        SI = replaceN(SI, ['seconds', fv]).strip()
+                    else:
+                        SI = replaceN(SI, [R, fv]).strip()
+                        if R == 'chance to':
+                            PDict["StatT"] = "Perc" if if_In_String(SI, "%") else "Flat"
+            
+            SI = replaceN(SI, ['for']).strip()
+            SI = SI[0].upper() + SI[1:]
+            PDict['Stat'] = SI
+        except Exception as E:
+            PLogger.info(traceback.format_exc())        
+
+
         return PDict
     
     def formatEquipSlots(self, EquipStr):

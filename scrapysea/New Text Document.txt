@@ -1,0 +1,189 @@
+'h5 table dl table', 
+'h5 p dl table', 
+'h5 p table dl table', 
+'h5 p p dl table', 
+'h5 p p p dl table', 
+'h5 p p table dl table', 
+'h5 p div div dl table', 
+'h5 p dl p dl p table dl table']
+
+
+Types h5 p table dl table: 74
+Slot: ['Secondary Weapon'] at ['Epic', 'Prime', 'Potential'] Stat: 20% chance to ignore monster damage dealt 
+Slot: ['Secondary Weapon'] at ['Epic', 'Prime', 'Potential'] Stat: 20% chance to ignore monster damage dealt 
+Slot: ['Secondary Weapon'] at ['Epic', 'Prime', 'Potential'] Stat: 30% chance to ignore monster damage dealt 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Epic', 'Prime', 'Potential'] Stat: 20% chance to ignore monster damage dealt 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Epic', 'Prime', 'Potential'] Stat: 20% chance to ignore monster damage dealt 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Epic', 'Prime', 'Potential'] Stat: 30% chance to ignore monster damage dealt 
+Slot: ['Mechanical Heart', 'Badge'] at ['Unique', 'Prime', 'Potential'] Stat: Skills and Potion HP Recovery% Increase 
+Slot: ['Mechanical Heart', 'Badge'] at ['Legendary', 'Prime', 'Potential'] Stat: Skills and Potion HP Recovery% Increase 
+Slot: ['Hat'] at ['Unique', 'Prime', 'Bonus'] Stat: Skills and Potion HP Recovery Increase 
+Slot: ['Hat'] at ['Legendary', 'Prime', 'Bonus'] Stat: Mesos Obtained% Increase 
+Slot: ['Hat'] at ['Legendary', 'Prime', 'Bonus'] Stat: Skills and Potion HP Recovery Increase 
+Slot: ['Top', 'Overall', 'Bottom', 'Shoes', 'Cape', 'Belt', 'Shoulderpad'] at ['Unique', 'Prime', 'Bonus'] Stat: Skills and Potion HP Recovery Increase 
+Slot: ['Top', 'Overall', 'Bottom', 'Shoes', 'Cape', 'Belt', 'Shoulderpad'] at ['Legendary', 'Prime', 'Bonus'] Stat: Mesos Obtained% Increase 
+Slot: ['Top', 'Overall', 'Bottom', 'Shoes', 'Cape', 'Belt', 'Shoulderpad'] at ['Legendary', 'Prime', 'Bonus'] Stat: Skills and Potion HP Recovery Increase 
+Slot: ['Gloves'] at ['Unique', 'Prime', 'Bonus'] Stat: Skills and Potion HP Recovery Increase 
+Slot: ['Gloves'] at ['Legendary', 'Prime', 'Bonus'] Stat: Mesos Obtained% Increase 
+Slot: ['Gloves'] at ['Legendary', 'Prime', 'Bonus'] Stat: Skills and Potion HP Recovery Increase 
+Slot: ['Face Accessory', 'Eye Accessory', 'Ring', 'Earring', 'Pendant'] at ['Unique', 'Prime', 'Bonus'] Stat: Skills and Potion HP Recovery Increase 
+Slot: ['Face Accessory', 'Eye Accessory', 'Ring', 'Earring', 'Pendant'] at ['Legendary', 'Prime', 'Bonus'] Stat: Mesos Obtained% Increase 
+Slot: ['Face Accessory', 'Eye Accessory', 'Ring', 'Earring', 'Pendant'] at ['Legendary', 'Prime', 'Bonus'] Stat: Skills and Potion HP Recovery Increase 
+Slot: ['Mechanical Heart', 'Badge'] at ['Unique', 'Prime', 'Bonus'] Stat: Skills and Potion HP Recovery Increase 
+Slot: ['Mechanical Heart', 'Badge'] at ['Legendary', 'Prime', 'Bonus'] Stat: Mesos Obtained% Increase 
+Slot: ['Mechanical Heart', 'Badge'] at ['Legendary', 'Prime', 'Bonus'] Stat: Skills and Potion HP Recovery Increase 
+Slot: ['Weapon'] at ['Epic', 'Prime', 'Bonus'] Stat: 3% chance to recover HP when attacking. 
+Slot: ['Weapon'] at ['Epic', 'Prime', 'Bonus'] Stat: 3% chance to recover MP when attacking. 
+Slot: ['Weapon'] at ['Unique', 'Prime', 'Bonus'] Stat: 15% chance to recover HP when attacking. 
+Slot: ['Weapon'] at ['Unique', 'Prime', 'Bonus'] Stat: 15% chance to recover MP when attacking. 
+Slot: ['Emblem'] at ['Epic', 'Prime', 'Bonus'] Stat: 3% chance to recover HP when attacking. 
+Slot: ['Emblem'] at ['Epic', 'Prime', 'Bonus'] Stat: 3% chance to recover MP when attacking. 
+Slot: ['Emblem'] at ['Unique', 'Prime', 'Bonus'] Stat: 15% chance to recover HP when attacking. 
+Slot: ['Emblem'] at ['Unique', 'Prime', 'Bonus'] Stat: 15% chance to recover MP when attacking. 
+Slot: ['Secondary Weapon'] at ['Epic', 'Prime', 'Bonus'] Stat: 3% chance to recover HP when attacking. 
+Slot: ['Secondary Weapon'] at ['Epic', 'Prime', 'Bonus'] Stat: 3% chance to recover MP when attacking. 
+Slot: ['Secondary Weapon'] at ['Unique', 'Prime', 'Bonus'] Stat: 15% chance to recover HP when attacking. 
+Slot: ['Secondary Weapon'] at ['Unique', 'Prime', 'Bonus'] Stat: 15% chance to recover MP when attacking. 
+Types h5 p p dl table: 77
+Slot: ['Hat'] at ['Unique', 'Prime', 'Potential'] Stat: 5% chance to ignore 20% of monster damage dealt 
+Slot: ['Hat'] at ['Unique', 'Prime', 'Potential'] Stat: 5% chance to ignore 40% of monster damage dealt 
+Slot: ['Hat'] at ['Legendary', 'Prime', 'Potential'] Stat: 10% chance to ignore 20% of monster damage dealt 
+Slot: ['Hat'] at ['Legendary', 'Prime', 'Potential'] Stat: 10% chance to ignore 40% of monster damage dealt 
+Slot: ['Top', 'Overall'] at ['Unique', 'Prime', 'Potential'] Stat: 5% chance to ignore 20% of monster damage dealt 
+Slot: ['Top', 'Overall'] at ['Unique', 'Prime', 'Potential'] Stat: 5% chance to ignore 40% of monster damage dealt 
+Slot: ['Top', 'Overall'] at ['Legendary', 'Prime', 'Potential'] Stat: 10% chance to ignore 20% of monster damage dealt 
+Slot: ['Top', 'Overall'] at ['Legendary', 'Prime', 'Potential'] Stat: 10% chance to ignore 40% of monster damage dealt 
+Slot: ['Bottom'] at ['Unique', 'Prime', 'Potential'] Stat: 5% chance to ignore 20% of monster damage dealt 
+Slot: ['Bottom'] at ['Unique', 'Prime', 'Potential'] Stat: 5% chance to ignore 40% of monster damage dealt 
+Slot: ['Bottom'] at ['Legendary', 'Prime', 'Potential'] Stat: 10% chance to ignore 20% of monster damage dealt 
+Slot: ['Bottom'] at ['Legendary', 'Prime', 'Potential'] Stat: 10% chance to ignore 40% of monster damage dealt 
+Slot: ['Gloves'] at ['Unique', 'Prime', 'Potential'] Stat: 5% chance to ignore 20% of monster damage dealt 
+Slot: ['Gloves'] at ['Unique', 'Prime', 'Potential'] Stat: 5% chance to ignore 40% of monster damage dealt 
+Slot: ['Gloves'] at ['Legendary', 'Prime', 'Potential'] Stat: 10% chance to ignore 20% of monster damage dealt 
+Slot: ['Gloves'] at ['Legendary', 'Prime', 'Potential'] Stat: 10% chance to ignore 40% of monster damage dealt 
+Slot: ['Shoes'] at ['Unique', 'Prime', 'Potential'] Stat: 5% chance to ignore 20% of monster damage dealt 
+Slot: ['Shoes'] at ['Unique', 'Prime', 'Potential'] Stat: 5% chance to ignore 40% of monster damage dealt 
+Slot: ['Shoes'] at ['Legendary', 'Prime', 'Potential'] Stat: 10% chance to ignore 20% of monster damage dealt 
+Slot: ['Shoes'] at ['Legendary', 'Prime', 'Potential'] Stat: 10% chance to ignore 40% of monster damage dealt 
+Slot: ['Cape', 'Belt', 'Shoulderpad'] at ['Unique', 'Prime', 'Potential'] Stat: 5% chance to ignore 20% of monster damage dealt 
+Slot: ['Cape', 'Belt', 'Shoulderpad'] at ['Unique', 'Prime', 'Potential'] Stat: 5% chance to ignore 40% of monster damage dealt 
+Slot: ['Cape', 'Belt', 'Shoulderpad'] at ['Legendary', 'Prime', 'Potential'] Stat: 10% chance to ignore 20% of monster damage dealt 
+Slot: ['Cape', 'Belt', 'Shoulderpad'] at ['Legendary', 'Prime', 'Potential'] Stat: 10% chance to ignore 40% of monster damage dealt 
+Slot: ['Weapon'] at ['Rare', 'Prime', 'Potential'] Stat: Ignores 15% of Monster's DEF when attacking 
+Slot: ['Weapon'] at ['Epic', 'Prime', 'Potential'] Stat: Ignore 15% of Monster's DEF when attacking 
+Slot: ['Weapon'] at ['Unique', 'Prime', 'Potential'] Stat: Ignore 30% of Monster's DEF when attacking 
+Slot: ['Weapon'] at ['Unique', 'Prime', 'Potential'] Stat: Damage to Boss Monsters +30% 
+Slot: ['Weapon'] at ['Legendary', 'Prime', 'Potential'] Stat: Ignore 35% of Monster's DEF when attacking 
+Slot: ['Weapon'] at ['Legendary', 'Prime', 'Potential'] Stat: Ignore 40% of Monster's DEF when attacking 
+Slot: ['Weapon'] at ['Legendary', 'Prime', 'Potential'] Stat: Damage to Boss Monsters +30% 
+Slot: ['Weapon'] at ['Legendary', 'Prime', 'Potential'] Stat: Damage to Boss Monsters +35% 
+Slot: ['Weapon'] at ['Legendary', 'Prime', 'Potential'] Stat: Damage to Boss Monsters +40% 
+Slot: ['Secondary Weapon'] at ['Rare', 'Prime', 'Potential'] Stat: Ignores 15% of Monster's DEF when attacking 
+Slot: ['Secondary Weapon'] at ['Epic', 'Prime', 'Potential'] Stat: Ignore 15% of Monster's DEF when attacking 
+Slot: ['Secondary Weapon'] at ['Unique', 'Prime', 'Potential'] Stat: Ignore 30% of Monster's DEF when attacking 
+Slot: ['Secondary Weapon'] at ['Unique', 'Prime', 'Potential'] Stat: 5% chance to ignore 20% of monster damage dealt 
+Slot: ['Secondary Weapon'] at ['Unique', 'Prime', 'Potential'] Stat: 5% chance to ignore 40% of monster damage dealt 
+Slot: ['Secondary Weapon'] at ['Unique', 'Prime', 'Potential'] Stat: Damage to Boss Monsters +30% 
+Slot: ['Secondary Weapon'] at ['Legendary', 'Prime', 'Potential'] Stat: Ignore 35% of Monster's DEF when attacking 
+Slot: ['Secondary Weapon'] at ['Legendary', 'Prime', 'Potential'] Stat: Ignore 40% of Monster's DEF when attacking 
+Slot: ['Secondary Weapon'] at ['Legendary', 'Prime', 'Potential'] Stat: 10% chance to ignore 20% of monster damage dealt 
+Slot: ['Secondary Weapon'] at ['Legendary', 'Prime', 'Potential'] Stat: 10% chance to ignore 40% of monster damage dealt 
+Slot: ['Secondary Weapon'] at ['Legendary', 'Prime', 'Potential'] Stat: Damage to Boss Monsters +30% 
+Slot: ['Secondary Weapon'] at ['Legendary', 'Prime', 'Potential'] Stat: Damage to Boss Monsters +35% 
+Slot: ['Secondary Weapon'] at ['Legendary', 'Prime', 'Potential'] Stat: Damage to Boss Monsters +40% 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Rare', 'Prime', 'Potential'] Stat: Ignores 15% of Monster's DEF when attacking 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Epic', 'Prime', 'Potential'] Stat: Ignore 15% of Monster's DEF when attacking 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Unique', 'Prime', 'Potential'] Stat: Ignore 30% of Monster's DEF when attacking 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Unique', 'Prime', 'Potential'] Stat: 5% chance to ignore 20% of monster damage dealt 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Unique', 'Prime', 'Potential'] Stat: 5% chance to ignore 40% of monster damage dealt 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Unique', 'Prime', 'Potential'] Stat: Damage to Boss Monsters +30% 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Legendary', 'Prime', 'Potential'] Stat: Ignore 35% of Monster's DEF when attacking 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Legendary', 'Prime', 'Potential'] Stat: Ignore 40% of Monster's DEF when attacking 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Legendary', 'Prime', 'Potential'] Stat: 10% chance to ignore 20% of monster damage dealt 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Legendary', 'Prime', 'Potential'] Stat: 10% chance to ignore 40% of monster damage dealt 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Legendary', 'Prime', 'Potential'] Stat: Damage to Boss Monsters +30% 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Legendary', 'Prime', 'Potential'] Stat: Damage to Boss Monsters +35% 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Legendary', 'Prime', 'Potential'] Stat: Damage to Boss Monsters +40% 
+Slot: ['Emblem'] at ['Rare', 'Prime', 'Potential'] Stat: Ignores 15% of Monster's DEF when attacking 
+Slot: ['Emblem'] at ['Epic', 'Prime', 'Potential'] Stat: Ignore 15% of Monster's DEF when attacking 
+Slot: ['Emblem'] at ['Unique', 'Prime', 'Potential'] Stat: Ignore 30% of Monster's DEF when attacking 
+Slot: ['Emblem'] at ['Legendary', 'Prime', 'Potential'] Stat: Ignore 35% of Monster's DEF when attacking 
+Slot: ['Emblem'] at ['Legendary', 'Prime', 'Potential'] Stat: Ignore 40% of Monster's DEF when attacking 
+Slot: ['Weapon'] at ['Epic', 'Prime', 'Bonus'] Stat: Ignore 3% of Monster's DEF when attacking. 
+Slot: ['Weapon'] at ['Unique', 'Prime', 'Bonus'] Stat: Damage to Boss Monsters +12% 
+Slot: ['Weapon'] at ['Unique', 'Prime', 'Bonus'] Stat: Ignore 4% of Monster's DEF when attacking. 
+Slot: ['Weapon'] at ['Legendary', 'Prime', 'Bonus'] Stat: Damage to Boss Monsters +18% 
+Slot: ['Weapon'] at ['Legendary', 'Prime', 'Bonus'] Stat: Ignores 5% of Monster's DEF when attacking. 
+Slot: ['Emblem'] at ['Epic', 'Prime', 'Bonus'] Stat: Ignore 3% of Monster's DEF when attacking. 
+Slot: ['Emblem'] at ['Unique', 'Prime', 'Bonus'] Stat: Ignore 4% of Monster's DEF when attacking. 
+Slot: ['Emblem'] at ['Legendary', 'Prime', 'Bonus'] Stat: Ignores 5% of Monster's DEF when attacking. 
+Slot: ['Secondary Weapon'] at ['Epic', 'Prime', 'Bonus'] Stat: Ignore 3% of Monster's DEF when attacking. 
+Slot: ['Secondary Weapon'] at ['Unique', 'Prime', 'Bonus'] Stat: Damage to Boss Monsters +12% 
+Slot: ['Secondary Weapon'] at ['Unique', 'Prime', 'Bonus'] Stat: Ignore 4% of Monster's DEF when attacking. 
+Slot: ['Secondary Weapon'] at ['Legendary', 'Prime', 'Bonus'] Stat: Damage to Boss Monsters +18% 
+Slot: ['Secondary Weapon'] at ['Legendary', 'Prime', 'Bonus'] Stat: Ignores 5% of Monster's DEF when attacking. 
+Types h5 p p p dl table: 13
+Slot: ['Hat'] at ['Unique', 'Prime', 'Potential'] Stat: Decent Mystic Door enabled 
+Slot: ['Hat'] at ['Legendary', 'Prime', 'Potential'] Stat: Skill Cooldown -1 second 
+Slot: ['Hat'] at ['Legendary', 'Prime', 'Potential'] Stat: Skill Cooldown -2 seconds 
+Slot: ['Hat'] at ['Legendary', 'Prime', 'Potential'] Stat: Decent Advanced Bless enabled 
+Slot: ['Top', 'Overall'] at ['Epic', 'Prime', 'Potential'] Stat: Invincibility Time +1 second 
+Slot: ['Top', 'Overall'] at ['Unique', 'Prime', 'Potential'] Stat: Invincibility Time +2 seconds 
+Slot: ['Top', 'Overall'] at ['Legendary', 'Prime', 'Potential'] Stat: Invincibility Time +3 seconds 
+Slot: ['Bottom'] at ['Unique', 'Prime', 'Potential'] Stat: Decent Hyper Body enabled 
+Slot: ['Gloves'] at ['Unique', 'Prime', 'Potential'] Stat: Decent Sharp Eyes enabled 
+Slot: ['Gloves'] at ['Legendary', 'Prime', 'Potential'] Stat: Decent Speed Infusion enabled 
+Slot: ['Shoes'] at ['Unique', 'Prime', 'Potential'] Stat: Decent Haste enabled 
+Slot: ['Shoes'] at ['Legendary', 'Prime', 'Potential'] Stat: Decent Combat Orders enabled 
+Slot: ['Hat'] at ['Legendary', 'Prime', 'Bonus'] Stat: Skill Cooldown -1 second 
+Types h5 p p table dl table: 8
+Slot: ['Top', 'Overall'] at ['Unique', 'Prime', 'Potential'] Stat: 2% chance to be invincible when attacked 
+Slot: ['Top', 'Overall'] at ['Legendary', 'Prime', 'Potential'] Stat: 4% chance to become invincible when attacked 
+Slot: ['Face Accessory', 'Eye Accessory', 'Ring', 'Earring', 'Pendant'] at ['Legendary', 'Prime', 'Potential'] Stat: Item Drop Rate% Increase 
+Slot: ['Hat'] at ['Legendary', 'Prime', 'Bonus'] Stat: Item Drop Rate% Increase 
+Slot: ['Top', 'Overall', 'Bottom', 'Shoes', 'Cape', 'Belt', 'Shoulderpad'] at ['Legendary', 'Prime', 'Bonus'] Stat: Item Drop Rate% Increase 
+Slot: ['Gloves'] at ['Legendary', 'Prime', 'Bonus'] Stat: Item Drop Rate% Increase 
+Slot: ['Face Accessory', 'Eye Accessory', 'Ring', 'Earring', 'Pendant'] at ['Legendary', 'Prime', 'Bonus'] Stat: Item Drop Rate% Increase 
+Slot: ['Mechanical Heart', 'Badge'] at ['Legendary', 'Prime', 'Bonus'] Stat: Item Drop Rate% Increase 
+Types h5 p div div dl table: 16
+Slot: ['Weapon'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to recover HP when attacking 
+Slot: ['Weapon'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to recover MP when attacking 
+Slot: ['Weapon'] at ['Epic', 'Prime', 'Potential'] Stat: Chance to recover HP when attacking 
+Slot: ['Weapon'] at ['Epic', 'Prime', 'Potential'] Stat: Chance to recover MP when attacking 
+Slot: ['Secondary Weapon'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to recover HP when attacking 
+Slot: ['Secondary Weapon'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to recover MP when attacking 
+Slot: ['Secondary Weapon'] at ['Epic', 'Prime', 'Potential'] Stat: Chance to recover HP when attacking 
+Slot: ['Secondary Weapon'] at ['Epic', 'Prime', 'Potential'] Stat: Chance to recover MP when attacking 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to recover HP when attacking 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to recover MP when attacking 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Epic', 'Prime', 'Potential'] Stat: Chance to recover HP when attacking 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Epic', 'Prime', 'Potential'] Stat: Chance to recover MP when attacking 
+Slot: ['Emblem'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to recover HP when attacking 
+Slot: ['Emblem'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to recover MP when attacking 
+Slot: ['Emblem'] at ['Epic', 'Prime', 'Potential'] Stat: Chance to recover HP when attacking 
+Slot: ['Emblem'] at ['Epic', 'Prime', 'Potential'] Stat: Chance to recover MP when attacking 
+Types h5 p dl p dl p table dl table: 24
+Slot: ['Weapon'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to inflict darkness when attacking 
+Slot: ['Weapon'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to inflict slow when attacking 
+Slot: ['Weapon'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to inflict poison when attacking 
+Slot: ['Weapon'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to inflict stun when attacking 
+Slot: ['Weapon'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to inflict seal when attacking 
+Slot: ['Weapon'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to inflict freeze when attacking 
+Slot: ['Secondary Weapon'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to inflict darkness when attacking 
+Slot: ['Secondary Weapon'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to inflict slow when attacking 
+Slot: ['Secondary Weapon'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to inflict poison when attacking 
+Slot: ['Secondary Weapon'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to inflict stun when attacking 
+Slot: ['Secondary Weapon'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to inflict seal when attacking 
+Slot: ['Secondary Weapon'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to inflict freeze when attacking 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to inflict darkness when attacking 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to inflict slow when attacking 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to inflict poison when attacking 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to inflict stun when attacking 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to inflict seal when attacking 
+Slot: ['Demon Aegis', 'Soul Rings'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to inflict freeze when attacking 
+Slot: ['Emblem'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to inflict darkness when attacking 
+Slot: ['Emblem'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to inflict slow when attacking 
+Slot: ['Emblem'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to inflict poison when attacking 
+Slot: ['Emblem'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to inflict stun when attacking 
+Slot: ['Emblem'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to inflict seal when attacking 
+Slot: ['Emblem'] at ['Rare', 'Prime', 'Potential'] Stat: Chance to inflict freeze when attacking 

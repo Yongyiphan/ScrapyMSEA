@@ -21,12 +21,13 @@ def if_In_String(string, parameter, mode="Any"):
     
     return False
 
-def replaceN(string, parameter, repalcement = ''):
+def replaceN(string, parameter, replacement = ''):
     if isinstance(parameter, list):
         for p in parameter:
-            string = string.replace(p,repalcement)
+            string = string.replace(p,replacement)
     if isinstance(parameter, str):
-        string = string.replace(p, repalcement)
+        string = string.replace(parameter, replacement)
+
     
     return string
 

@@ -1,0 +1,1648 @@
+Types h5 p dl table: 100
+StatIncrease => 
+	split('chance to') => get Chance
+	split('seconds') => get Duration
+
+
+
+p = check for 'level requirement => get MinLvl, MaxLvl
+
+2.1	Hat
+2.1.1	Rare (Non-prime)
+2.1.1.1	STR Increase
+2.1.1.2	DEX Increase
+2.1.1.3	INT Increase
+2.1.1.4	LUK Increase
+2.1.1.5	MaxHP Increase
+2.1.1.6	MaxMP Increase
+2.1.1.7	DEF Increase
+2.1.1.8	10% chance to show rage for 10 seconds when being attacked
+2.1.1.9	10% chance to show happy for 10 seconds when being attacked
+2.1.1.10	10% chance to fall in love for 10 seconds when being attacked
+2.1.1.11	10% chance to feel deeply moved for 10 seconds when being attacked
+2.1.1.12	10% chance to show angry for 10 seconds when being attacked
+2.1.2	Rare (Prime) / Epic (Non-prime)
+2.1.2.1	STR Increase
+2.1.2.2	DEX Increase
+2.1.2.3	INT Increase
+2.1.2.4	LUK Increase
+2.1.2.5	MaxHP Increase
+2.1.2.6	MaxMP Increase
+2.1.2.7	DEF Increase
+2.1.2.8	STR % Increase
+2.1.2.9	DEX % Increase
+2.1.2.10	INT % Increase
+2.1.2.11	LUK % Increase
+2.1.2.12	MaxHP % Increase
+2.1.2.13	MaxMP % Increase
+2.1.2.14	DEF % Increase
+2.1.2.15	All Stats Increase
+2.1.3	Epic (Prime) / Unique (Non-prime)
+2.1.3.1	STR % Increase
+2.1.3.2	DEX % Increase
+2.1.3.3	INT % Increase
+2.1.3.4	LUK % Increase
+2.1.3.5	MaxHP % Increase
+2.1.3.6	MaxMP % Increase
+2.1.3.7	DEF % Increase
+2.1.3.8	All Stats % Increase
+2.1.3.9	20% chance to ignore monster damage dealt
+2.1.3.10	20% chance to ignore monster damage dealt
+2.1.3.11	30% chance to ignore monster damage dealt
+2.1.4	Unique (Prime) / Legendary (Non-prime)
+2.1.4.1	STR % Increase
+2.1.4.2	DEX % Increase
+2.1.4.3	INT % Increase
+2.1.4.4	LUK % Increase
+2.1.4.5	MaxHP % Increase
+2.1.4.6	MaxMP % Increase
+2.1.4.7	DEF % Increase
+2.1.4.8	All Stats % Increase
+2.1.4.9	5% chance to ignore 20% of monster damage dealt
+2.1.4.10	5% chance to ignore 40% of monster damage dealt
+2.1.4.11	Skills and Potion HP Recovery % Increase
+2.1.4.12	Decent Mystic Door enabled
+2.1.5	Legendary (Prime)
+2.1.5.1	STR % Increase
+2.1.5.2	DEX % Increase
+2.1.5.3	INT % Increase
+2.1.5.4	LUK % Increase
+2.1.5.5	MaxHP % Increase
+2.1.5.6	MaxMP % Increase
+2.1.5.7	DEF % Increase
+2.1.5.8	All Stats % Increase
+2.1.5.9	10% chance to ignore 20% of monster damage dealt
+2.1.5.10	10% chance to ignore 40% of monster damage dealt
+2.1.5.11	Skills and Potion HP Recovery % Increase
+2.1.5.12	Skill Cooldown -1 second
+2.1.5.13	Skill Cooldown -2 seconds
+2.1.5.14	Decent Advanced Bless enabled
+2.2	Top and Overall
+2.2.1	Rare (Non-prime)
+2.2.1.1	STR Increase
+2.2.1.2	DEX Increase
+2.2.1.3	INT Increase
+2.2.1.4	LUK Increase
+2.2.1.5	MaxHP Increase
+2.2.1.6	MaxMP Increase
+2.2.1.7	DEF Increase
+2.2.2	Rare (Prime) / Epic (Non-prime)
+2.2.2.1	STR Increase
+2.2.2.2	DEX Increase
+2.2.2.3	INT Increase
+2.2.2.4	LUK Increase
+2.2.2.5	MaxHP Increase
+2.2.2.6	MaxMP Increase
+2.2.2.7	DEF Increase
+2.2.2.8	STR % Increase
+2.2.2.9	DEX % Increase
+2.2.2.10	INT % Increase
+2.2.2.11	LUK % Increase
+2.2.2.12	MaxHP % Increase
+2.2.2.13	MaxMP % Increase
+2.2.2.14	DEF % Increase
+2.2.2.15	All Stats Increase
+2.2.3	Epic (Prime) / Unique (Non-prime)
+2.2.3.1	STR % Increase
+2.2.3.2	DEX % Increase
+2.2.3.3	INT % Increase
+2.2.3.4	LUK % Increase
+2.2.3.5	MaxHP % Increase
+2.2.3.6	MaxMP % Increase
+2.2.3.7	DEF % Increase
+2.2.3.8	All Stats % Increase
+2.2.3.9	20% chance to ignore monster damage dealt
+2.2.3.10	20% chance to ignore monster damage dealt
+2.2.3.11	30% chance to ignore monster damage dealt
+2.2.3.12	Invincibility Time +1 second
+2.2.4	Unique (Prime) / Legendary (Non-prime)
+2.2.4.1	STR % Increase
+2.2.4.2	DEX % Increase
+2.2.4.3	INT % Increase
+2.2.4.4	LUK % Increase
+2.2.4.5	MaxHP % Increase
+2.2.4.6	MaxMP % Increase
+2.2.4.7	DEF % Increase
+2.2.4.8	All Stats % Increase
+2.2.4.9	5% chance to ignore 20% of monster damage dealt
+2.2.4.10	5% chance to ignore 40% of monster damage dealt
+2.2.4.11	Invincibility Time +2 seconds
+2.2.4.12	2% chance to be invincible when attacked
+2.2.4.13	Reflect damage at a chance
+2.2.4.14	Reflect damage at a chance
+2.2.4.15	Skills and Potion HP Recovery % Increase
+2.2.5	Legendary (Prime)
+2.2.5.1	STR % Increase
+2.2.5.2	DEX % Increase
+2.2.5.3	INT % Increase
+2.2.5.4	LUK % Increase
+2.2.5.5	MaxHP % Increase
+2.2.5.6	MaxMP % Increase
+2.2.5.7	DEF % Increase
+2.2.5.8	All Stats % Increase
+2.2.5.9	10% chance to ignore 20% of monster damage dealt
+2.2.5.10	10% chance to ignore 40% of monster damage dealt
+2.2.5.11	Invincibility Time +3 seconds
+2.2.5.12	4% chance to become invincible when attacked
+2.2.5.13	Skills and Potion HP Recovery % Increase
+2.3	Bottom
+2.3.1	Rare (Non-prime)
+2.3.1.1	STR Increase
+2.3.1.2	DEX Increase
+2.3.1.3	INT Increase
+2.3.1.4	LUK Increase
+2.3.1.5	MaxHP Increase
+2.3.1.6	MaxMP Increase
+2.3.1.7	DEF Increase
+2.3.2	Rare (Prime) / Epic (Non-prime)
+2.3.2.1	STR Increase
+2.3.2.2	DEX Increase
+2.3.2.3	INT Increase
+2.3.2.4	LUK Increase
+2.3.2.5	MaxHP Increase
+2.3.2.6	MaxMP Increase
+2.3.2.7	DEF Increase
+2.3.2.8	STR % Increase
+2.3.2.9	DEX % Increase
+2.3.2.10	INT % Increase
+2.3.2.11	LUK % Increase
+2.3.2.12	MaxHP % Increase
+2.3.2.13	MaxMP % Increase
+2.3.2.14	DEF % Increase
+2.3.2.15	All Stats Increase
+2.3.3	Epic (Prime) / Unique (Non-prime)
+2.3.3.1	STR % Increase
+2.3.3.2	DEX % Increase
+2.3.3.3	INT % Increase
+2.3.3.4	LUK % Increase
+2.3.3.5	MaxHP % Increase
+2.3.3.6	MaxMP % Increase
+2.3.3.7	DEF % Increase
+2.3.3.8	All Stats % Increase
+2.3.3.9	20% chance to ignore monster damage dealt
+2.3.3.10	20% chance to ignore monster damage dealt
+2.3.3.11	30% chance to ignore monster damage dealt
+2.3.4	Unique (Prime) / Legendary (Non-prime)
+2.3.4.1	STR % Increase
+2.3.4.2	DEX % Increase
+2.3.4.3	INT % Increase
+2.3.4.4	LUK % Increase
+2.3.4.5	MaxHP % Increase
+2.3.4.6	MaxMP % Increase
+2.3.4.7	DEF % Increase
+2.3.4.8	All Stats % Increase
+2.3.4.9	5% chance to ignore 20% of monster damage dealt
+2.3.4.10	5% chance to ignore 40% of monster damage dealt
+2.3.4.11	Skills and Potion HP Recovery % Increase
+2.3.4.12	Decent Hyper Body enabled
+2.3.5	Legendary (Prime)
+2.3.5.1	STR % Increase
+2.3.5.2	DEX % Increase
+2.3.5.3	INT % Increase
+2.3.5.4	LUK % Increase
+2.3.5.5	MaxHP % Increase
+2.3.5.6	MaxMP % Increase
+2.3.5.7	DEF % Increase
+2.3.5.8	All Stats % Increase
+2.3.5.9	10% chance to ignore 20% of monster damage dealt
+2.3.5.10	10% chance to ignore 40% of monster damage dealt
+2.3.5.11	Reflect damage at a chance
+2.3.5.12	Reflect damage at a chance
+2.3.5.13	Skills and Potion HP Recovery % Increase
+2.4	Gloves
+2.4.1	Rare (Non-prime)
+2.4.1.1	STR Increase
+2.4.1.2	DEX Increase
+2.4.1.3	INT Increase
+2.4.1.4	LUK Increase
+2.4.1.5	MaxHP Increase
+2.4.1.6	MaxMP Increase
+2.4.1.7	DEF Increase
+2.4.2	Rare (Prime) / Epic (Non-prime)
+2.4.2.1	STR Increase
+2.4.2.2	DEX Increase
+2.4.2.3	INT Increase
+2.4.2.4	LUK Increase
+2.4.2.5	MaxHP Increase
+2.4.2.6	MaxMP Increase
+2.4.2.7	DEF Increase
+2.4.2.8	STR % Increase
+2.4.2.9	DEX % Increase
+2.4.2.10	INT % Increase
+2.4.2.11	LUK % Increase
+2.4.2.12	MaxHP % Increase
+2.4.2.13	MaxMP % Increase
+2.4.2.14	DEF % Increase
+2.4.2.15	All Stats Increase
+2.4.3	Epic (Prime) / Unique (Non-prime)
+2.4.3.1	STR % Increase
+2.4.3.2	DEX % Increase
+2.4.3.3	INT % Increase
+2.4.3.4	LUK % Increase
+2.4.3.5	MaxHP % Increase
+2.4.3.6	MaxMP % Increase
+2.4.3.7	DEF % Increase
+2.4.3.8	All Stats % Increase
+2.4.3.9	20% chance to ignore monster damage dealt
+2.4.3.10	20% chance to ignore monster damage dealt
+2.4.3.11	30% chance to ignore monster damage dealt
+2.4.3.12	15% chance to recover HP when you killed a monster
+2.4.3.13	15% chance to recover MP when you killed a monster
+2.4.4	Unique (Prime) / Legendary (Non-prime)
+2.4.4.1	STR % Increase
+2.4.4.2	DEX % Increase
+2.4.4.3	INT % Increase
+2.4.4.4	LUK % Increase
+2.4.4.5	MaxHP % Increase
+2.4.4.6	MaxMP % Increase
+2.4.4.7	DEF % Increase
+2.4.4.8	All Stats % Increase
+2.4.4.9	STR +1 per 10 Character Levels
+2.4.4.10	DEX +1 per 10 Character Levels
+2.4.4.11	INT +1 per 10 Character Levels
+2.4.4.12	LUK +1 per 10 Character Levels
+2.4.4.13	5% chance to ignore 20% of monster damage dealt
+2.4.4.14	5% chance to ignore 40% of monster damage dealt
+2.4.4.15	Skills and Potion HP Recovery % Increase
+2.4.4.16	1% Auto Steal Chance
+2.4.4.17	2% Auto Steal Chance
+2.4.4.18	Decent Sharp Eyes enabled
+2.4.5	Legendary (Prime)
+2.4.5.1	STR % Increase
+2.4.5.2	DEX % Increase
+2.4.5.3	INT % Increase
+2.4.5.4	LUK % Increase
+2.4.5.5	MaxHP % Increase
+2.4.5.6	MaxMP % Increase
+2.4.5.7	DEF % Increase
+2.4.5.8	Critical Damage % Increase
+2.4.5.9	All Stats % Increase
+2.4.5.10	10% chance to ignore 20% of monster damage dealt
+2.4.5.11	10% chance to ignore 40% of monster damage dealt
+2.4.5.12	Skills and Potion HP Recovery % Increase
+2.4.5.13	3% Auto Steal Chance
+2.4.5.14	5% Auto Steal Chance
+2.4.5.15	7% Auto Steal Chance
+2.4.5.16	Decent Speed Infusion enabled
+2.5	Shoes
+2.5.1	Rare (Non-prime)
+2.5.1.1	STR Increase
+2.5.1.2	DEX Increase
+2.5.1.3	INT Increase
+2.5.1.4	LUK Increase
+2.5.1.5	MaxHP Increase
+2.5.1.6	MaxMP Increase
+2.5.1.7	Speed Increase
+2.5.1.8	Jump Increase
+2.5.1.9	DEF Increase
+2.5.2	Rare (Prime) / Epic (Non-prime)
+2.5.2.1	STR Increase
+2.5.2.2	DEX Increase
+2.5.2.3	INT Increase
+2.5.2.4	LUK Increase
+2.5.2.5	MaxHP Increase
+2.5.2.6	MaxMP Increase
+2.5.2.7	Speed Increase
+2.5.2.8	Jump Increase
+2.5.2.9	DEF Increase
+2.5.2.10	STR % Increase
+2.5.2.11	DEX % Increase
+2.5.2.12	INT % Increase
+2.5.2.13	LUK % Increase
+2.5.2.14	MaxHP % Increase
+2.5.2.15	MaxMP % Increase
+2.5.2.16	DEF % Increase
+2.5.2.17	All Stats Increase
+2.5.3	Epic (Prime) / Unique (Non-prime)
+2.5.3.1	STR % Increase
+2.5.3.2	DEX % Increase
+2.5.3.3	INT % Increase
+2.5.3.4	LUK % Increase
+2.5.3.5	MaxHP % Increase
+2.5.3.6	MaxMP % Increase
+2.5.3.7	DEF % Increase
+2.5.3.8	All Stats % Increase
+2.5.3.9	20% chance to ignore monster damage dealt
+2.5.3.10	20% chance to ignore monster damage dealt
+2.5.3.11	30% chance to ignore monster damage dealt
+2.5.4	Unique (Prime) / Legendary (Non-prime)
+2.5.4.1	STR % Increase
+2.5.4.2	DEX % Increase
+2.5.4.3	INT % Increase
+2.5.4.4	LUK % Increase
+2.5.4.5	MaxHP % Increase
+2.5.4.6	MaxMP % Increase
+2.5.4.7	DEF % Increase
+2.5.4.8	All Stats % Increase
+2.5.4.9	5% chance to ignore 20% of monster damage dealt
+2.5.4.10	5% chance to ignore 40% of monster damage dealt
+2.5.4.11	Skills and Potion HP Recovery % Increase
+2.5.4.12	Decent Haste enabled
+2.5.5	Legendary (Prime)
+2.5.5.1	STR % Increase
+2.5.5.2	DEX % Increase
+2.5.5.3	INT % Increase
+2.5.5.4	LUK % Increase
+2.5.5.5	MaxHP % Increase
+2.5.5.6	MaxMP % Increase
+2.5.5.7	DEF % Increase
+2.5.5.8	All Stats % Increase
+2.5.5.9	10% chance to ignore 20% of monster damage dealt
+2.5.5.10	10% chance to ignore 40% of monster damage dealt
+2.5.5.11	Skills and Potion HP Recovery % Increase
+2.5.5.12	Decent Combat Orders enabled
+2.6	Cape, Belt, Shoulderpad
+2.6.1	Rare (Non-prime)
+2.6.1.1	STR Increase
+2.6.1.2	DEX Increase
+2.6.1.3	INT Increase
+2.6.1.4	LUK Increase
+2.6.1.5	MaxHP Increase
+2.6.1.6	MaxMP Increase
+2.6.1.7	DEF Increase
+2.6.2	Rare (Prime) / Epic (Non-prime)
+2.6.2.1	STR Increase
+2.6.2.2	DEX Increase
+2.6.2.3	INT Increase
+2.6.2.4	LUK Increase
+2.6.2.5	MaxHP Increase
+2.6.2.6	MaxMP Increase
+2.6.2.7	DEF Increase
+2.6.2.8	STR % Increase
+2.6.2.9	DEX % Increase
+2.6.2.10	INT % Increase
+2.6.2.11	LUK % Increase
+2.6.2.12	MaxHP % Increase
+2.6.2.13	MaxMP % Increase
+2.6.2.14	DEF % Increase
+2.6.2.15	All Stats Increase
+2.6.3	Epic (Prime) / Unique (Non-prime)
+2.6.3.1	STR % Increase
+2.6.3.2	DEX % Increase
+2.6.3.3	INT % Increase
+2.6.3.4	LUK % Increase
+2.6.3.5	MaxHP % Increase
+2.6.3.6	MaxMP % Increase
+2.6.3.7	DEF % Increase
+2.6.3.8	All Stats % Increase
+2.6.3.9	20% chance to ignore monster damage dealt
+2.6.3.10	20% chance to ignore monster damage dealt
+2.6.3.11	30% chance to ignore monster damage dealt
+2.6.4	Unique (Prime) / Legendary (Non-prime)
+2.6.4.1	STR % Increase
+2.6.4.2	DEX % Increase
+2.6.4.3	INT % Increase
+2.6.4.4	LUK % Increase
+2.6.4.5	MaxHP % Increase
+2.6.4.6	MaxMP % Increase
+2.6.4.7	DEF % Increase
+2.6.4.8	All Stats % Increase
+2.6.4.9	5% chance to ignore 20% of monster damage dealt
+2.6.4.10	5% chance to ignore 40% of monster damage dealt
+2.6.4.11	Skills and Potion HP Recovery % Increase
+2.6.5	Legendary (Prime)
+2.6.5.1	STR % Increase
+2.6.5.2	DEX % Increase
+2.6.5.3	INT % Increase
+2.6.5.4	LUK % Increase
+2.6.5.5	MaxHP % Increase
+2.6.5.6	MaxMP % Increase
+2.6.5.7	DEF % Increase
+2.6.5.8	All Stats % Increase
+2.6.5.9	10% chance to ignore 20% of monster damage dealt
+2.6.5.10	10% chance to ignore 40% of monster damage dealt
+2.6.5.11	Skills and Potion HP Recovery % Increase
+2.7	Face Accessory, Eye Accessory, Ring, Earring, Pendant
+2.7.1	Rare (Non-prime)
+2.7.1.1	STR Increase
+2.7.1.2	DEX Increase
+2.7.1.3	INT Increase
+2.7.1.4	LUK Increase
+2.7.1.5	MaxHP Increase
+2.7.1.6	MaxMP Increase
+2.7.1.7	DEF Increase
+2.7.2	Rare (Prime) / Epic (Non-prime)
+2.7.2.1	STR Increase
+2.7.2.2	DEX Increase
+2.7.2.3	INT Increase
+2.7.2.4	LUK Increase
+2.7.2.5	MaxHP Increase
+2.7.2.6	MaxMP Increase
+2.7.2.7	DEF Increase
+2.7.2.8	STR % Increase
+2.7.2.9	DEX % Increase
+2.7.2.10	INT % Increase
+2.7.2.11	LUK % Increase
+2.7.2.12	MaxHP % Increase
+2.7.2.13	MaxMP % Increase
+2.7.2.14	DEF % Increase
+2.7.2.15	All Stats Increase
+2.7.2.16	Recover HP every 4 seconds
+2.7.2.17	Recover MP every 4 seconds
+2.7.3	Epic (Prime) / Unique (Non-prime)
+2.7.3.1	STR % Increase
+2.7.3.2	DEX % Increase
+2.7.3.3	INT % Increase
+2.7.3.4	LUK % Increase
+2.7.3.5	MaxHP % Increase
+2.7.3.6	MaxMP % Increase
+2.7.3.7	DEF % Increase
+2.7.3.8	All Stats % Increase
+2.7.4	Unique (Prime) / Legendary (Non-prime)
+2.7.4.1	STR % Increase
+2.7.4.2	DEX % Increase
+2.7.4.3	INT % Increase
+2.7.4.4	LUK % Increase
+2.7.4.5	MaxHP % Increase
+2.7.4.6	MaxMP % Increase
+2.7.4.7	DEF % Increase
+2.7.4.8	All Stats % Increase
+2.7.4.9	Skills and Potion HP Recovery % Increase
+2.7.5	Legendary (Prime)
+2.7.5.1	STR % Increase
+2.7.5.2	DEX % Increase
+2.7.5.3	INT % Increase
+2.7.5.4	LUK % Increase
+2.7.5.5	MaxHP % Increase
+2.7.5.6	MaxMP % Increase
+2.7.5.7	DEF % Increase
+2.7.5.8	All Stats % Increase
+2.7.5.9	MP Cost Reduction
+2.7.5.10	MP Cost Reduction
+2.7.5.11	Skills and Potion HP Recovery % Increase
+2.7.5.12	Mesos Obtained % Increase
+2.7.5.13	Item Drop Rate % Increase
+2.8	Weapon
+2.8.1	Rare (Non-prime)
+2.8.1.1	STR Increase
+2.8.1.2	DEX Increase
+2.8.1.3	INT Increase
+2.8.1.4	LUK Increase
+2.8.1.5	MaxHP Increase
+2.8.1.6	MaxMP Increase
+2.8.1.7	Weapon ATT Increase
+2.8.1.8	Magic ATT Increase
+2.8.2	Rare (Prime) / Epic (Non-prime)
+2.8.2.1	STR Increase
+2.8.2.2	DEX Increase
+2.8.2.3	INT Increase
+2.8.2.4	LUK Increase
+2.8.2.5	MaxHP Increase
+2.8.2.6	MaxMP Increase
+2.8.2.7	Weapon ATT Increase
+2.8.2.8	Magic ATT Increase
+2.8.2.9	STR % Increase
+2.8.2.10	DEX % Increase
+2.8.2.11	INT % Increase
+2.8.2.12	LUK % Increase
+2.8.2.13	Weapon ATT % Increase
+2.8.2.14	Magic ATT % Increase
+2.8.2.15	Critical Rate +4%
+2.8.2.16	Damage % Increase
+2.8.2.17	All Stats Increase
+2.8.2.18	Chance to recover HP when attacking
+2.8.2.19	Chance to recover MP when attacking
+2.8.2.20	Chance to inflict darkness when attacking
+2.8.2.21	Chance to inflict slow when attacking
+2.8.2.22	Chance to inflict poison when attacking
+2.8.2.23	Chance to inflict stun when attacking
+2.8.2.24	Chance to inflict seal when attacking
+2.8.2.25	Chance to inflict freeze when attacking
+2.8.2.26	Ignores 15% of Monster's DEF when attacking
+2.8.3	Epic (Prime) / Unique (Non-prime)
+2.8.3.1	STR % Increase
+2.8.3.2	DEX % Increase
+2.8.3.3	INT % Increase
+2.8.3.4	LUK % Increase
+2.8.3.5	MaxHP % Increase
+2.8.3.6	MaxMP % Increase
+2.8.3.7	Weapon ATT % Increase
+2.8.3.8	Magic ATT % Increase
+2.8.3.9	Critical Rate +8%
+2.8.3.10	Damage % Increase
+2.8.3.11	All Stats % Increase
+2.8.3.12	Chance to recover HP when attacking
+2.8.3.13	Chance to recover MP when attacking
+2.8.3.14	Ignore 15% of Monster's DEF when attacking
+2.8.4	Unique (Prime) / Legendary (Non-prime)
+2.8.4.1	STR % Increase
+2.8.4.2	DEX % Increase
+2.8.4.3	INT % Increase
+2.8.4.4	LUK % Increase
+2.8.4.5	Weapon ATT % Increase
+2.8.4.6	Magic ATT % Increase
+2.8.4.7	Critical Rate % Increase
+2.8.4.8	Damage % Increase
+2.8.4.9	All Stats % Increase
+2.8.4.10	Ignore 30% of Monster's DEF when attacking
+2.8.4.11	Damage to Boss Monsters +30%
+2.8.5	Legendary (Prime)
+2.8.5.1	STR % Increase
+2.8.5.2	DEX % Increase
+2.8.5.3	INT % Increase
+2.8.5.4	LUK % Increase
+2.8.5.5	Weapon ATT % Increase
+2.8.5.6	Magic ATT % Increase
+2.8.5.7	Critical Rate % Increase
+2.8.5.8	Damage % Increase
+2.8.5.9	All Stats % Increase
+2.8.5.10	Weapon ATT +1 per 10 Character Levels
+2.8.5.11	Magic ATT +1 per 10 Character Levels
+2.8.5.12	Ignore 35% of Monster's DEF when attacking
+2.8.5.13	Ignore 40% of Monster's DEF when attacking
+2.8.5.14	Damage to Boss Monsters +30%
+2.8.5.15	Damage to Boss Monsters +35%
+2.8.5.16	Damage to Boss Monsters +40%
+2.9	Secondary Weapon (excluding Demon Aegis and Soul Rings)
+2.9.1	Rare (Non-prime)
+2.9.1.1	STR Increase
+2.9.1.2	DEX Increase
+2.9.1.3	INT Increase
+2.9.1.4	LUK Increase
+2.9.1.5	MaxHP Increase
+2.9.1.6	MaxMP Increase
+2.9.1.7	Weapon ATT Increase
+2.9.1.8	Magic ATT Increase
+2.9.2	Rare (Prime) / Epic (Non-prime)
+2.9.2.1	STR Increase
+2.9.2.2	DEX Increase
+2.9.2.3	INT Increase
+2.9.2.4	LUK Increase
+2.9.2.5	MaxHP Increase
+2.9.2.6	MaxMP Increase
+2.9.2.7	Weapon ATT Increase
+2.9.2.8	Magic ATT Increase
+2.9.2.9	STR % Increase
+2.9.2.10	DEX % Increase
+2.9.2.11	INT % Increase
+2.9.2.12	LUK % Increase
+2.9.2.13	Weapon ATT % Increase
+2.9.2.14	Magic ATT % Increase
+2.9.2.15	Critical Rate +4%
+2.9.2.16	Damage % Increase
+2.9.2.17	All Stats Increase
+2.9.2.18	Chance to recover HP when attacking
+2.9.2.19	Chance to recover MP when attacking
+2.9.2.20	Chance to inflict darkness when attacking
+2.9.2.21	Chance to inflict slow when attacking
+2.9.2.22	Chance to inflict poison when attacking
+2.9.2.23	Chance to inflict stun when attacking
+2.9.2.24	Chance to inflict seal when attacking
+2.9.2.25	Chance to inflict freeze when attacking
+2.9.2.26	Ignores 15% of Monster's DEF when attacking
+2.9.3	Epic (Prime) / Unique (Non-prime)
+2.9.3.1	STR % Increase
+2.9.3.2	DEX % Increase
+2.9.3.3	INT % Increase
+2.9.3.4	LUK % Increase
+2.9.3.5	MaxHP % Increase
+2.9.3.6	MaxMP % Increase
+2.9.3.7	Weapon ATT % Increase
+2.9.3.8	Magic ATT % Increase
+2.9.3.9	Critical Rate +8%
+2.9.3.10	Damage % Increase
+2.9.3.11	All Stats % Increase
+2.9.3.12	Chance to recover HP when attacking
+2.9.3.13	Chance to recover MP when attacking
+2.9.3.14	Ignore 15% of Monster's DEF when attacking
+2.9.3.15	20% chance to ignore monster damage dealt
+2.9.3.16	20% chance to ignore monster damage dealt
+2.9.3.17	30% chance to ignore monster damage dealt
+2.9.4	Unique (Prime) / Legendary (Non-prime)
+2.9.4.1	STR % Increase
+2.9.4.2	DEX % Increase
+2.9.4.3	INT % Increase
+2.9.4.4	LUK % Increase
+2.9.4.5	Weapon ATT % Increase
+2.9.4.6	Magic ATT % Increase
+2.9.4.7	Critical Rate % Increase
+2.9.4.8	Damage % Increase
+2.9.4.9	All Stats % Increase
+2.9.4.10	Ignore 30% of Monster's DEF when attacking
+2.9.4.11	5% chance to ignore 20% of monster damage dealt
+2.9.4.12	5% chance to ignore 40% of monster damage dealt
+2.9.4.13	Damage to Boss Monsters +30%
+2.9.5	Legendary (Prime)
+2.9.5.1	STR % Increase
+2.9.5.2	DEX % Increase
+2.9.5.3	INT % Increase
+2.9.5.4	LUK % Increase
+2.9.5.5	Weapon ATT % Increase
+2.9.5.6	Magic ATT % Increase
+2.9.5.7	Critical Rate % Increase
+2.9.5.8	Damage % Increase
+2.9.5.9	All Stats % Increase
+2.9.5.10	Weapon ATT +1 per 10 Character Levels
+2.9.5.11	Magic ATT +1 per 10 Character Levels
+2.9.5.12	Ignore 35% of Monster's DEF when attacking
+2.9.5.13	Ignore 40% of Monster's DEF when attacking
+2.9.5.14	10% chance to ignore 20% of monster damage dealt
+2.9.5.15	10% chance to ignore 40% of monster damage dealt
+2.9.5.16	Damage to Boss Monsters +30%
+2.9.5.17	Damage to Boss Monsters +35%
+2.9.5.18	Damage to Boss Monsters +40%
+2.10	Demon Aegis and Soul Rings
+2.10.1	Rare (Non-prime)
+2.10.1.1	STR Increase
+2.10.1.2	DEX Increase
+2.10.1.3	INT Increase
+2.10.1.4	LUK Increase
+2.10.1.5	MaxHP Increase
+2.10.1.6	Weapon ATT Increase
+2.10.1.7	Magic ATT Increase
+2.10.2	Rare (Prime) / Epic (Non-prime)
+2.10.2.1	STR Increase
+2.10.2.2	DEX Increase
+2.10.2.3	INT Increase
+2.10.2.4	LUK Increase
+2.10.2.5	MaxHP Increase
+2.10.2.6	Weapon ATT Increase
+2.10.2.7	Magic ATT Increase
+2.10.2.8	STR % Increase
+2.10.2.9	DEX % Increase
+2.10.2.10	INT % Increase
+2.10.2.11	LUK % Increase
+2.10.2.12	Weapon ATT % Increase
+2.10.2.13	Magic ATT % Increase
+2.10.2.14	Critical Rate +4%
+2.10.2.15	Damage % Increase
+2.10.2.16	All Stats Increase
+2.10.2.17	Chance to recover HP when attacking
+2.10.2.18	Chance to recover MP when attacking
+2.10.2.19	Chance to inflict darkness when attacking
+2.10.2.20	Chance to inflict slow when attacking
+2.10.2.21	Chance to inflict poison when attacking
+2.10.2.22	Chance to inflict stun when attacking
+2.10.2.23	Chance to inflict seal when attacking
+2.10.2.24	Chance to inflict freeze when attacking
+2.10.2.25	Ignores 15% of Monster's DEF when attacking
+2.10.3	Epic (Prime) / Unique (Non-prime)
+2.10.3.1	STR % Increase
+2.10.3.2	DEX % Increase
+2.10.3.3	INT % Increase
+2.10.3.4	LUK % Increase
+2.10.3.5	MaxHP % Increase
+2.10.3.6	Weapon ATT % Increase
+2.10.3.7	Magic ATT % Increase
+2.10.3.8	Critical Rate +8%
+2.10.3.9	Damage % Increase
+2.10.3.10	All Stats % Increase
+2.10.3.11	Chance to recover HP when attacking
+2.10.3.12	Chance to recover MP when attacking
+2.10.3.13	Ignore 15% of Monster's DEF when attacking
+2.10.3.14	20% chance to ignore monster damage dealt
+2.10.3.15	20% chance to ignore monster damage dealt
+2.10.3.16	30% chance to ignore monster damage dealt
+2.10.4	Unique (Prime) / Legendary (Non-prime)
+2.10.4.1	STR % Increase
+2.10.4.2	DEX % Increase
+2.10.4.3	INT % Increase
+2.10.4.4	LUK % Increase
+2.10.4.5	Weapon ATT % Increase
+2.10.4.6	Magic ATT % Increase
+2.10.4.7	Critical Rate % Increase
+2.10.4.8	Damage % Increase
+2.10.4.9	All Stats % Increase
+2.10.4.10	Ignore 30% of Monster's DEF when attacking
+2.10.4.11	5% chance to ignore 20% of monster damage dealt
+2.10.4.12	5% chance to ignore 40% of monster damage dealt
+2.10.4.13	Damage to Boss Monsters +30%
+2.10.5	Legendary (Prime)
+2.10.5.1	STR % Increase
+2.10.5.2	DEX % Increase
+2.10.5.3	INT % Increase
+2.10.5.4	LUK % Increase
+2.10.5.5	Weapon ATT % Increase
+2.10.5.6	Magic ATT % Increase
+2.10.5.7	Critical Rate % Increase
+2.10.5.8	Damage % Increase
+2.10.5.9	All Stats % Increase
+2.10.5.10	Weapon ATT +1 per 10 Character Levels
+2.10.5.11	Magic ATT +1 per 10 Character Levels
+2.10.5.12	Ignore 35% of Monster's DEF when attacking
+2.10.5.13	Ignore 40% of Monster's DEF when attacking
+2.10.5.14	10% chance to ignore 20% of monster damage dealt
+2.10.5.15	10% chance to ignore 40% of monster damage dealt
+2.10.5.16	Damage to Boss Monsters +30%
+2.10.5.17	Damage to Boss Monsters +35%
+2.10.5.18	Damage to Boss Monsters +40%
+2.11	Emblem
+2.11.1	Rare (Non-prime)
+2.11.1.1	STR Increase
+2.11.1.2	DEX Increase
+2.11.1.3	INT Increase
+2.11.1.4	LUK Increase
+2.11.1.5	MaxHP Increase
+2.11.1.6	MaxMP Increase
+2.11.1.7	Weapon ATT Increase
+2.11.1.8	Magic ATT Increase
+2.11.2	Rare (Prime) / Epic (Non-prime)
+2.11.2.1	STR Increase
+2.11.2.2	DEX Increase
+2.11.2.3	INT Increase
+2.11.2.4	LUK Increase
+2.11.2.5	MaxHP Increase
+2.11.2.6	MaxMP Increase
+2.11.2.7	Weapon ATT Increase
+2.11.2.8	Magic ATT Increase
+2.11.2.9	STR % Increase
+2.11.2.10	DEX % Increase
+2.11.2.11	INT % Increase
+2.11.2.12	LUK % Increase
+2.11.2.13	Weapon ATT % Increase
+2.11.2.14	Magic ATT % Increase
+2.11.2.15	Critical Rate +4%
+2.11.2.16	Damage % Increase
+2.11.2.17	All Stats Increase
+2.11.2.18	Chance to recover HP when attacking
+2.11.2.19	Chance to recover MP when attacking
+2.11.2.20	Chance to inflict darkness when attacking
+2.11.2.21	Chance to inflict slow when attacking
+2.11.2.22	Chance to inflict poison when attacking
+2.11.2.23	Chance to inflict stun when attacking
+2.11.2.24	Chance to inflict seal when attacking
+2.11.2.25	Chance to inflict freeze when attacking
+2.11.2.26	Ignores 15% of Monster's DEF when attacking
+2.11.3	Epic (Prime) / Unique (Non-prime)
+2.11.3.1	STR % Increase
+2.11.3.2	DEX % Increase
+2.11.3.3	INT % Increase
+2.11.3.4	LUK % Increase
+2.11.3.5	MaxHP % Increase
+2.11.3.6	MaxMP % Increase
+2.11.3.7	Weapon ATT % Increase
+2.11.3.8	Magic ATT % Increase
+2.11.3.9	Critical Rate +8%
+2.11.3.10	Damage % Increase
+2.11.3.11	All Stats % Increase
+2.11.3.12	Chance to recover HP when attacking
+2.11.3.13	Chance to recover MP when attacking
+2.11.3.14	Ignore 15% of Monster's DEF when attacking
+2.11.4	Unique (Prime) / Legendary (Non-prime)
+2.11.4.1	STR % Increase
+2.11.4.2	DEX % Increase
+2.11.4.3	INT % Increase
+2.11.4.4	LUK % Increase
+2.11.4.5	Weapon ATT % Increase
+2.11.4.6	Magic ATT % Increase
+2.11.4.7	Critical Rate % Increase
+2.11.4.8	Damage % Increase
+2.11.4.9	All Stats % Increase
+2.11.4.10	Ignore 30% of Monster's DEF when attacking
+2.11.5	Legendary (Prime)
+2.11.5.1	STR % Increase
+2.11.5.2	DEX % Increase
+2.11.5.3	INT % Increase
+2.11.5.4	LUK % Increase
+2.11.5.5	Weapon ATT % Increase
+2.11.5.6	Magic ATT % Increase
+2.11.5.7	Critical Rate % Increase
+2.11.5.8	Damage % Increase
+2.11.5.9	All Stats % Increase
+2.11.5.10	Weapon ATT +1 per 10 Character Levels
+2.11.5.11	Magic ATT +1 per 10 Character Levels
+2.11.5.12	Ignore 35% of Monster's DEF when attacking
+2.11.5.13	Ignore 40% of Monster's DEF when attacking
+2.12	Mechanical Heart and Badge
+2.12.1	Rare (Non-prime)
+2.12.1.1	STR Increase
+2.12.1.2	DEX Increase
+2.12.1.3	INT Increase
+2.12.1.4	LUK Increase
+2.12.1.5	MaxHP Increase
+2.12.1.6	MaxMP Increase
+2.12.1.7	DEF Increase
+2.12.2	Rare (Prime) / Epic (Non-prime)
+2.12.2.1	STR Increase
+2.12.2.2	DEX Increase
+2.12.2.3	INT Increase
+2.12.2.4	LUK Increase
+2.12.2.5	MaxHP Increase
+2.12.2.6	MaxMP Increase
+2.12.2.7	DEF Increase
+2.12.2.8	STR % Increase
+2.12.2.9	DEX % Increase
+2.12.2.10	INT % Increase
+2.12.2.11	LUK % Increase
+2.12.2.12	MaxHP % Increase
+2.12.2.13	MaxMP % Increase
+2.12.2.14	DEF % Increase
+2.12.2.15	All Stats Increase
+2.12.3	Epic (Prime) / Unique (Non-prime)
+2.12.3.1	STR % Increase
+2.12.3.2	DEX % Increase
+2.12.3.3	INT % Increase
+2.12.3.4	LUK % Increase
+2.12.3.5	MaxHP % Increase
+2.12.3.6	MaxMP % Increase
+2.12.3.7	DEF % Increase
+2.12.3.8	All Stats % Increase
+2.12.4	Unique (Prime) / Legendary (Non-prime)
+2.12.4.1	STR % Increase
+2.12.4.2	DEX % Increase
+2.12.4.3	INT % Increase
+2.12.4.4	LUK % Increase
+2.12.4.5	MaxHP % Increase
+2.12.4.6	MaxMP % Increase
+2.12.4.7	DEF % Increase
+2.12.4.8	All Stats % Increase
+2.12.4.9	Skills and Potion HP Recovery % Increase
+2.12.5	Legendary (Prime)
+2.12.5.1	STR % Increase
+2.12.5.2	DEX % Increase
+2.12.5.3	INT % Increase
+2.12.5.4	LUK % Increase
+2.12.5.5	MaxHP % Increase
+2.12.5.6	MaxMP % Increase
+2.12.5.7	DEF % Increase
+2.12.5.8	All Stats % Increase
+2.12.5.9	Skills and Potion HP Recovery % Increase
+3	Bonus Potential
+3.1	Tiers
+3.2	Bonus Potential Scrolls
+3.3	Increasing Lines
+3.4	Resetting Bonus Potential
+4	Bonus Potential Stat List
+4.1	Hat
+4.1.1	Rare (Non-prime)
+4.1.1.1	STR Increase
+4.1.1.2	DEX Increase
+4.1.1.3	INT Increase
+4.1.1.4	LUK Increase
+4.1.1.5	Weapon ATT Increase
+4.1.1.6	Magic ATT Increase
+4.1.1.7	Speed Increase
+4.1.1.8	Jump Increase
+4.1.1.9	MaxHP Increase
+4.1.1.10	MaxMP Increase
+4.1.1.11	DEF Increase
+4.1.2	Rare (Prime) / Epic (Non-prime)
+4.1.2.1	STR Increase
+4.1.2.2	DEX Increase
+4.1.2.3	INT Increase
+4.1.2.4	LUK Increase
+4.1.2.5	Weapon ATT Increase
+4.1.2.6	Magic ATT Increase
+4.1.2.7	MaxHP Increase
+4.1.2.8	MaxMP Increase
+4.1.2.9	DEF Increase
+4.1.2.10	Speed Increase
+4.1.2.11	Jump Increase
+4.1.2.12	STR % Increase
+4.1.2.13	DEX % Increase
+4.1.2.14	INT % Increase
+4.1.2.15	LUK % Increase
+4.1.2.16	DEF % Increase
+4.1.2.17	MaxHP % Increase
+4.1.2.18	MaxMP % Increase
+4.1.2.19	All Stats Increase
+4.1.3	Epic (Prime) / Unique (Non-prime)
+4.1.3.1	STR Increase
+4.1.3.2	DEX Increase
+4.1.3.3	INT Increase
+4.1.3.4	LUK Increase
+4.1.3.5	Weapon ATT Increase
+4.1.3.6	Magic ATT Increase
+4.1.3.7	MaxHP Increase
+4.1.3.8	MaxMP Increase
+4.1.3.9	DEF Increase
+4.1.3.10	Speed Increase
+4.1.3.11	Jump Increase
+4.1.3.12	STR % Increase
+4.1.3.13	DEX % Increase
+4.1.3.14	INT % Increase
+4.1.3.15	LUK % Increase
+4.1.3.16	MaxHP % Increase
+4.1.3.17	MaxMP % Increase
+4.1.3.18	DEF % Increase
+4.1.3.19	All Stats % Increase
+4.1.4	Unique (Prime) / Legendary (Non-prime)
+4.1.4.1	STR Increase
+4.1.4.2	DEX Increase
+4.1.4.3	INT Increase
+4.1.4.4	LUK Increase
+4.1.4.5	Weapon ATT Increase
+4.1.4.6	Magic ATT Increase
+4.1.4.7	DEF Increase
+4.1.4.8	MaxHP Increase
+4.1.4.9	MaxMP Increase
+4.1.4.10	STR % Increase
+4.1.4.11	DEX % Increase
+4.1.4.12	INT % Increase
+4.1.4.13	LUK % Increase
+4.1.4.14	MaxHP % Increase
+4.1.4.15	MaxMP % Increase
+4.1.4.16	DEF % Increase
+4.1.4.17	All Stats % Increase
+4.1.4.18	Skills and Potion HP Recovery Increase
+4.1.4.19	STR +1 per 10 Character Levels
+4.1.4.20	DEX +1 per 10 Character Levels
+4.1.4.21	INT +1 per 10 Character Levels
+4.1.4.22	LUK +1 per 10 Character Levels
+4.1.5	Legendary (Prime)
+4.1.5.1	STR Increase
+4.1.5.2	DEX Increase
+4.1.5.3	INT Increase
+4.1.5.4	LUK Increase
+4.1.5.5	Weapon ATT Increase
+4.1.5.6	Magic ATT Increase
+4.1.5.7	DEF Increase
+4.1.5.8	MaxHP Increase
+4.1.5.9	MaxMP Increase
+4.1.5.10	STR % Increase
+4.1.5.11	DEX % Increase
+4.1.5.12	INT % Increase
+4.1.5.13	LUK % Increase
+4.1.5.14	MaxHP % Increase
+4.1.5.15	MaxMP % Increase
+4.1.5.16	DEF % Increase
+4.1.5.17	Critical Damage % Increase
+4.1.5.18	All Stats % Increase
+4.1.5.19	STR +2 per 10 Character Levels
+4.1.5.20	DEX +2 per 10 Character Levels
+4.1.5.21	INT +2 per 10 Character Levels
+4.1.5.22	LUK +2 per 10 Character Levels
+4.1.5.23	Skill Cooldown -1 second
+4.1.5.24	Mesos Obtained % Increase
+4.1.5.25	Item Drop Rate % Increase
+4.1.5.26	Skills and Potion HP Recovery Increase
+4.2	Top, Overall, Bottom, Shoes, Cape, Belt, Shoulderpad
+4.2.1	Rare (Non-prime)
+4.2.1.1	STR Increase
+4.2.1.2	DEX Increase
+4.2.1.3	INT Increase
+4.2.1.4	LUK Increase
+4.2.1.5	Weapon ATT Increase
+4.2.1.6	Magic ATT Increase
+4.2.1.7	Speed Increase
+4.2.1.8	Jump Increase
+4.2.1.9	MaxHP Increase
+4.2.1.10	MaxMP Increase
+4.2.1.11	DEF Increase
+4.2.2	Rare (Prime) / Epic (Non-prime)
+4.2.2.1	STR Increase
+4.2.2.2	DEX Increase
+4.2.2.3	INT Increase
+4.2.2.4	LUK Increase
+4.2.2.5	Weapon ATT Increase
+4.2.2.6	Magic ATT Increase
+4.2.2.7	MaxHP Increase
+4.2.2.8	MaxMP Increase
+4.2.2.9	DEF Increase
+4.2.2.10	Speed Increase
+4.2.2.11	Jump Increase
+4.2.2.12	STR % Increase
+4.2.2.13	DEX % Increase
+4.2.2.14	INT % Increase
+4.2.2.15	LUK % Increase
+4.2.2.16	DEF % Increase
+4.2.2.17	MaxHP % Increase
+4.2.2.18	MaxMP % Increase
+4.2.2.19	All Stats Increase
+4.2.3	Epic (Prime) / Unique (Non-prime)
+4.2.3.1	STR Increase
+4.2.3.2	DEX Increase
+4.2.3.3	INT Increase
+4.2.3.4	LUK Increase
+4.2.3.5	Weapon ATT Increase
+4.2.3.6	Magic ATT Increase
+4.2.3.7	MaxHP Increase
+4.2.3.8	MaxMP Increase
+4.2.3.9	DEF Increase
+4.2.3.10	Speed Increase
+4.2.3.11	Jump Increase
+4.2.3.12	STR % Increase
+4.2.3.13	DEX % Increase
+4.2.3.14	INT % Increase
+4.2.3.15	LUK % Increase
+4.2.3.16	MaxHP % Increase
+4.2.3.17	MaxMP % Increase
+4.2.3.18	DEF % Increase
+4.2.3.19	All Stats % Increase
+4.2.4	Unique (Prime) / Legendary (Non-prime)
+4.2.4.1	STR Increase
+4.2.4.2	DEX Increase
+4.2.4.3	INT Increase
+4.2.4.4	LUK Increase
+4.2.4.5	Weapon ATT Increase
+4.2.4.6	Magic ATT Increase
+4.2.4.7	DEF Increase
+4.2.4.8	MaxHP Increase
+4.2.4.9	MaxMP Increase
+4.2.4.10	STR % Increase
+4.2.4.11	DEX % Increase
+4.2.4.12	INT % Increase
+4.2.4.13	LUK % Increase
+4.2.4.14	MaxHP % Increase
+4.2.4.15	MaxMP % Increase
+4.2.4.16	DEF % Increase
+4.2.4.17	All Stats % Increase
+4.2.4.18	Skills and Potion HP Recovery Increase
+4.2.4.19	STR +1 per 10 Character Levels
+4.2.4.20	DEX +1 per 10 Character Levels
+4.2.4.21	INT +1 per 10 Character Levels
+4.2.4.22	LUK +1 per 10 Character Levels
+4.2.5	Legendary (Prime)
+4.2.5.1	STR Increase
+4.2.5.2	DEX Increase
+4.2.5.3	INT Increase
+4.2.5.4	LUK Increase
+4.2.5.5	Weapon ATT Increase
+4.2.5.6	Magic ATT Increase
+4.2.5.7	DEF Increase
+4.2.5.8	MaxHP Increase
+4.2.5.9	MaxMP Increase
+4.2.5.10	STR % Increase
+4.2.5.11	DEX % Increase
+4.2.5.12	INT % Increase
+4.2.5.13	LUK % Increase
+4.2.5.14	MaxHP % Increase
+4.2.5.15	MaxMP % Increase
+4.2.5.16	DEF % Increase
+4.2.5.17	Critical Damage % Increase
+4.2.5.18	All Stats % Increase
+4.2.5.19	STR +2 per 10 Character Levels
+4.2.5.20	DEX +2 per 10 Character Levels
+4.2.5.21	INT +2 per 10 Character Levels
+4.2.5.22	LUK +2 per 10 Character Levels
+4.2.5.23	Mesos Obtained % Increase
+4.2.5.24	Item Drop Rate % Increase
+4.2.5.25	Skills and Potion HP Recovery Increase
+4.3	Gloves
+4.3.1	Rare (Non-prime)
+4.3.1.1	STR Increase
+4.3.1.2	DEX Increase
+4.3.1.3	INT Increase
+4.3.1.4	LUK Increase
+4.3.1.5	Weapon ATT Increase
+4.3.1.6	Magic ATT Increase
+4.3.1.7	Speed Increase
+4.3.1.8	Jump Increase
+4.3.1.9	MaxHP Increase
+4.3.1.10	MaxMP Increase
+4.3.1.11	DEF Increase
+4.3.2	Rare (Prime) / Epic (Non-prime)
+4.3.2.1	STR Increase
+4.3.2.2	DEX Increase
+4.3.2.3	INT Increase
+4.3.2.4	LUK Increase
+4.3.2.5	Weapon ATT Increase
+4.3.2.6	Magic ATT Increase
+4.3.2.7	MaxHP Increase
+4.3.2.8	MaxMP Increase
+4.3.2.9	DEF Increase
+4.3.2.10	Speed Increase
+4.3.2.11	Jump Increase
+4.3.2.12	STR % Increase
+4.3.2.13	DEX % Increase
+4.3.2.14	INT % Increase
+4.3.2.15	LUK % Increase
+4.3.2.16	DEF % Increase
+4.3.2.17	MaxHP % Increase
+4.3.2.18	MaxMP % Increase
+4.3.2.19	All Stats Increase
+4.3.3	Epic (Prime) / Unique (Non-prime)
+4.3.3.1	STR Increase
+4.3.3.2	DEX Increase
+4.3.3.3	INT Increase
+4.3.3.4	LUK Increase
+4.3.3.5	Weapon ATT Increase
+4.3.3.6	Magic ATT Increase
+4.3.3.7	MaxHP Increase
+4.3.3.8	MaxMP Increase
+4.3.3.9	DEF Increase
+4.3.3.10	Speed Increase
+4.3.3.11	Jump Increase
+4.3.3.12	STR % Increase
+4.3.3.13	DEX % Increase
+4.3.3.14	INT % Increase
+4.3.3.15	LUK % Increase
+4.3.3.16	MaxHP % Increase
+4.3.3.17	MaxMP % Increase
+4.3.3.18	DEF % Increase
+4.3.3.19	All Stats % Increase
+4.3.4	Unique (Prime) / Legendary (Non-prime)
+4.3.4.1	STR Increase
+4.3.4.2	DEX Increase
+4.3.4.3	INT Increase
+4.3.4.4	LUK Increase
+4.3.4.5	Weapon ATT Increase
+4.3.4.6	Magic ATT Increase
+4.3.4.7	DEF Increase
+4.3.4.8	MaxHP Increase
+4.3.4.9	MaxMP Increase
+4.3.4.10	STR % Increase
+4.3.4.11	DEX % Increase
+4.3.4.12	INT % Increase
+4.3.4.13	LUK % Increase
+4.3.4.14	MaxHP % Increase
+4.3.4.15	MaxMP % Increase
+4.3.4.16	DEF % Increase
+4.3.4.17	All Stats % Increase
+4.3.4.18	Skills and Potion HP Recovery Increase
+4.3.4.19	STR +1 per 10 Character Levels
+4.3.4.20	DEX +1 per 10 Character Levels
+4.3.4.21	INT +1 per 10 Character Levels
+4.3.4.22	LUK +1 per 10 Character Levels
+4.3.5	Legendary (Prime)
+4.3.5.1	STR Increase
+4.3.5.2	DEX Increase
+4.3.5.3	INT Increase
+4.3.5.4	LUK Increase
+4.3.5.5	Weapon ATT Increase
+4.3.5.6	Magic ATT Increase
+4.3.5.7	DEF Increase
+4.3.5.8	MaxHP Increase
+4.3.5.9	MaxMP Increase
+4.3.5.10	STR % Increase
+4.3.5.11	DEX % Increase
+4.3.5.12	INT % Increase
+4.3.5.13	LUK % Increase
+4.3.5.14	MaxHP % Increase
+4.3.5.15	MaxMP % Increase
+4.3.5.16	DEF % Increase
+4.3.5.17	Critical Damage % Increase
+4.3.5.18	Critical Damage % Increase
+4.3.5.19	All Stats % Increase
+4.3.5.20	STR +2 per 10 Character Levels
+4.3.5.21	DEX +2 per 10 Character Levels
+4.3.5.22	INT +2 per 10 Character Levels
+4.3.5.23	LUK +2 per 10 Character Levels
+4.3.5.24	Mesos Obtained % Increase
+4.3.5.25	Item Drop Rate % Increase
+4.3.5.26	Skills and Potion HP Recovery Increase
+4.4	Face Accessory, Eye Accessory, Ring, Earring, Pendant
+4.4.1	Rare (Non-prime)
+4.4.1.1	STR Increase
+4.4.1.2	DEX Increase
+4.4.1.3	INT Increase
+4.4.1.4	LUK Increase
+4.4.1.5	Weapon ATT Increase
+4.4.1.6	Magic ATT Increase
+4.4.1.7	Speed Increase
+4.4.1.8	Jump Increase
+4.4.1.9	MaxHP Increase
+4.4.1.10	MaxMP Increase
+4.4.1.11	DEF Increase
+4.4.2	Rare (Prime) / Epic (Non-prime)
+4.4.2.1	STR Increase
+4.4.2.2	DEX Increase
+4.4.2.3	INT Increase
+4.4.2.4	LUK Increase
+4.4.2.5	Weapon ATT Increase
+4.4.2.6	Magic ATT Increase
+4.4.2.7	MaxHP Increase
+4.4.2.8	MaxMP Increase
+4.4.2.9	DEF Increase
+4.4.2.10	Speed Increase
+4.4.2.11	Jump Increase
+4.4.2.12	STR % Increase
+4.4.2.13	DEX % Increase
+4.4.2.14	INT % Increase
+4.4.2.15	LUK % Increase
+4.4.2.16	DEF % Increase
+4.4.2.17	MaxHP % Increase
+4.4.2.18	MaxMP % Increase
+4.4.2.19	All Stats Increase
+4.4.3	Epic (Prime) / Unique (Non-prime)
+4.4.3.1	STR Increase
+4.4.3.2	DEX Increase
+4.4.3.3	INT Increase
+4.4.3.4	LUK Increase
+4.4.3.5	Weapon ATT Increase
+4.4.3.6	Magic ATT Increase
+4.4.3.7	MaxHP Increase
+4.4.3.8	MaxMP Increase
+4.4.3.9	DEF Increase
+4.4.3.10	Speed Increase
+4.4.3.11	Jump Increase
+4.4.3.12	STR % Increase
+4.4.3.13	DEX % Increase
+4.4.3.14	INT % Increase
+4.4.3.15	LUK % Increase
+4.4.3.16	MaxHP % Increase
+4.4.3.17	MaxMP % Increase
+4.4.3.18	DEF % Increase
+4.4.3.19	All Stats % Increase
+4.4.4	Unique (Prime) / Legendary (Non-prime)
+4.4.4.1	STR Increase
+4.4.4.2	DEX Increase
+4.4.4.3	INT Increase
+4.4.4.4	LUK Increase
+4.4.4.5	Weapon ATT Increase
+4.4.4.6	Magic ATT Increase
+4.4.4.7	DEF Increase
+4.4.4.8	MaxHP Increase
+4.4.4.9	MaxMP Increase
+4.4.4.10	STR % Increase
+4.4.4.11	DEX % Increase
+4.4.4.12	INT % Increase
+4.4.4.13	LUK % Increase
+4.4.4.14	MaxHP % Increase
+4.4.4.15	MaxMP % Increase
+4.4.4.16	DEF % Increase
+4.4.4.17	All Stats % Increase
+4.4.4.18	Skills and Potion HP Recovery Increase
+4.4.4.19	STR +1 per 10 Character Levels
+4.4.4.20	DEX +1 per 10 Character Levels
+4.4.4.21	INT +1 per 10 Character Levels
+4.4.4.22	LUK +1 per 10 Character Levels
+4.4.5	Legendary (Prime)
+4.4.5.1	STR Increase
+4.4.5.2	DEX Increase
+4.4.5.3	INT Increase
+4.4.5.4	LUK Increase
+4.4.5.5	Weapon ATT Increase
+4.4.5.6	Magic ATT Increase
+4.4.5.7	DEF Increase
+4.4.5.8	MaxHP Increase
+4.4.5.9	MaxMP Increase
+4.4.5.10	STR % Increase
+4.4.5.11	DEX % Increase
+4.4.5.12	INT % Increase
+4.4.5.13	LUK % Increase
+4.4.5.14	MaxHP % Increase
+4.4.5.15	MaxMP % Increase
+4.4.5.16	DEF % Increase
+4.4.5.17	All Stats % Increase
+4.4.5.18	Skill MP Cost Reduction
+4.4.5.19	STR +2 per 10 Character Levels
+4.4.5.20	DEX +2 per 10 Character Levels
+4.4.5.21	INT +2 per 10 Character Levels
+4.4.5.22	LUK +2 per 10 Character Levels
+4.4.5.23	Mesos Obtained % Increase
+4.4.5.24	Item Drop Rate % Increase
+4.4.5.25	Skills and Potion HP Recovery Increase
+4.5	Mechanical Heart, Badge
+4.5.1	Rare (Non-prime)
+4.5.1.1	STR Increase
+4.5.1.2	DEX Increase
+4.5.1.3	INT Increase
+4.5.1.4	LUK Increase
+4.5.1.5	Weapon ATT Increase
+4.5.1.6	Magic ATT Increase
+4.5.1.7	Speed Increase
+4.5.1.8	Jump Increase
+4.5.1.9	MaxHP Increase
+4.5.1.10	MaxMP Increase
+4.5.1.11	DEF Increase
+4.5.2	Rare (Prime) / Epic (Non-prime)
+4.5.2.1	STR Increase
+4.5.2.2	DEX Increase
+4.5.2.3	INT Increase
+4.5.2.4	LUK Increase
+4.5.2.5	Weapon ATT Increase
+4.5.2.6	Magic ATT Increase
+4.5.2.7	MaxHP Increase
+4.5.2.8	MaxMP Increase
+4.5.2.9	DEF Increase
+4.5.2.10	Speed Increase
+4.5.2.11	Jump Increase
+4.5.2.12	STR % Increase
+4.5.2.13	DEX % Increase
+4.5.2.14	INT % Increase
+4.5.2.15	LUK % Increase
+4.5.2.16	DEF % Increase
+4.5.2.17	MaxHP % Increase
+4.5.2.18	MaxMP % Increase
+4.5.2.19	All Stats Increase
+4.5.3	Epic (Prime) / Unique (Non-prime)
+4.5.3.1	STR Increase
+4.5.3.2	DEX Increase
+4.5.3.3	INT Increase
+4.5.3.4	LUK Increase
+4.5.3.5	Weapon ATT Increase
+4.5.3.6	Magic ATT Increase
+4.5.3.7	MaxHP Increase
+4.5.3.8	MaxMP Increase
+4.5.3.9	DEF Increase
+4.5.3.10	Speed Increase
+4.5.3.11	Jump Increase
+4.5.3.12	STR % Increase
+4.5.3.13	DEX % Increase
+4.5.3.14	INT % Increase
+4.5.3.15	LUK % Increase
+4.5.3.16	MaxHP % Increase
+4.5.3.17	MaxMP % Increase
+4.5.3.18	DEF % Increase
+4.5.3.19	All Stats % Increase
+4.5.4	Unique (Prime) / Legendary (Non-prime)
+4.5.4.1	STR Increase
+4.5.4.2	DEX Increase
+4.5.4.3	INT Increase
+4.5.4.4	LUK Increase
+4.5.4.5	Weapon ATT Increase
+4.5.4.6	Magic ATT Increase
+4.5.4.7	DEF Increase
+4.5.4.8	MaxHP Increase
+4.5.4.9	MaxMP Increase
+4.5.4.10	STR % Increase
+4.5.4.11	DEX % Increase
+4.5.4.12	INT % Increase
+4.5.4.13	LUK % Increase
+4.5.4.14	MaxHP % Increase
+4.5.4.15	MaxMP % Increase
+4.5.4.16	DEF % Increase
+4.5.4.17	All Stats % Increase
+4.5.4.18	Skills and Potion HP Recovery Increase
+4.5.4.19	STR +1 per 10 Character Levels
+4.5.4.20	DEX +1 per 10 Character Levels
+4.5.4.21	INT +1 per 10 Character Levels
+4.5.4.22	LUK +1 per 10 Character Levels
+4.5.5	Legendary (Prime)
+4.5.5.1	STR Increase
+4.5.5.2	DEX Increase
+4.5.5.3	INT Increase
+4.5.5.4	LUK Increase
+4.5.5.5	Weapon ATT Increase
+4.5.5.6	Magic ATT Increase
+4.5.5.7	DEF Increase
+4.5.5.8	MaxHP Increase
+4.5.5.9	MaxMP Increase
+4.5.5.10	STR % Increase
+4.5.5.11	DEX % Increase
+4.5.5.12	INT % Increase
+4.5.5.13	LUK % Increase
+4.5.5.14	MaxHP % Increase
+4.5.5.15	MaxMP % Increase
+4.5.5.16	DEF % Increase
+4.5.5.17	All Stats % Increase
+4.5.5.18	STR +2 per 10 Character Levels
+4.5.5.19	DEX +2 per 10 Character Levels
+4.5.5.20	INT +2 per 10 Character Levels
+4.5.5.21	LUK +2 per 10 Character Levels
+4.5.5.22	Mesos Obtained % Increase
+4.5.5.23	Item Drop Rate % Increase
+4.5.5.24	Skills and Potion HP Recovery Increase
+4.6	Weapon
+4.6.1	Rare (Non-prime)
+4.6.1.1	STR Increase
+4.6.1.2	DEX Increase
+4.6.1.3	INT Increase
+4.6.1.4	LUK Increase
+4.6.1.5	Weapon ATT Increase
+4.6.1.6	Magic ATT Increase
+4.6.1.7	Speed Increase
+4.6.1.8	Jump Increase
+4.6.1.9	MaxHP Increase
+4.6.1.10	MaxMP Increase
+4.6.1.11	DEF Increase
+4.6.2	Rare (Prime) / Epic (Non-prime)
+4.6.2.1	STR Increase
+4.6.2.2	DEX Increase
+4.6.2.3	INT Increase
+4.6.2.4	LUK Increase
+4.6.2.5	Weapon ATT Increase
+4.6.2.6	Magic ATT Increase
+4.6.2.7	MaxHP Increase
+4.6.2.8	MaxMP Increase
+4.6.2.9	DEF Increase
+4.6.2.10	Speed Increase
+4.6.2.11	Jump Increase
+4.6.2.12	STR % Increase
+4.6.2.13	DEX % Increase
+4.6.2.14	INT % Increase
+4.6.2.15	LUK % Increase
+4.6.2.16	Weapon ATT % Increase
+4.6.2.17	Magic ATT % Increase
+4.6.2.18	Damage % Increase
+4.6.2.19	MaxHP % Increase
+4.6.2.20	MaxMP % Increase
+4.6.2.21	Critical Rate % Increase
+4.6.2.22	All Stats Increase
+4.6.3	Epic (Prime) / Unique (Non-prime)
+4.6.3.1	STR % Increase
+4.6.3.2	DEX % Increase
+4.6.3.3	INT % Increase
+4.6.3.4	LUK % Increase
+4.6.3.5	Weapon ATT % Increase
+4.6.3.6	Magic ATT % Increase
+4.6.3.7	Damage % Increase
+4.6.3.8	Critical Rate % Increase
+4.6.3.9	MaxHP % Increase
+4.6.3.10	MaxMP % Increase
+4.6.3.11	All Stats % Increase
+4.6.3.12	3% chance to recover HP when attacking.
+4.6.3.13	3% chance to recover MP when attacking.
+4.6.3.14	Ignore 3% of Monster's DEF when attacking.
+4.6.4	Unique (Prime) / Legendary (Non-prime)
+4.6.4.1	STR % Increase
+4.6.4.2	DEX % Increase
+4.6.4.3	INT % Increase
+4.6.4.4	LUK % Increase
+4.6.4.5	Weapon ATT % Increase
+4.6.4.6	Magic ATT % Increase
+4.6.4.7	Damage % Increase
+4.6.4.8	Critical Rate % Increase
+4.6.4.9	MaxHP % Increase
+4.6.4.10	MaxMP % Increase
+4.6.4.11	All Stats % Increase
+4.6.4.12	Damage to Boss Monsters +12%
+4.6.4.13	Ignore 4% of Monster's DEF when attacking.
+4.6.4.14	15% chance to recover HP when attacking.
+4.6.4.15	15% chance to recover MP when attacking.
+4.6.4.16	STR +1 per 10 Character Levels
+4.6.4.17	DEX +1 per 10 Character Levels
+4.6.4.18	INT +1 per 10 Character Levels
+4.6.4.19	LUK +1 per 10 Character Levels
+4.6.5	Legendary (Prime)
+4.6.5.1	STR % Increase
+4.6.5.2	DEX % Increase
+4.6.5.3	INT % Increase
+4.6.5.4	LUK % Increase
+4.6.5.5	Weapon ATT % Increase
+4.6.5.6	Magic ATT % Increase
+4.6.5.7	Damage % Increase
+4.6.5.8	Critical Rate % Increase
+4.6.5.9	MaxHP % Increase
+4.6.5.10	MaxMP % Increase
+4.6.5.11	All Stats % Increase
+4.6.5.12	Damage to Boss Monsters +18%
+4.6.5.13	Ignores 5% of Monster's DEF when attacking.
+4.6.5.14	STR +2 per 10 Character Levels
+4.6.5.15	DEX +2 per 10 Character Levels
+4.6.5.16	INT +2 per 10 Character Levels
+4.6.5.17	LUK +2 per 10 Character Levels
+4.6.5.18	Weapon ATT +1 per 10 Character Levels
+4.6.5.19	Magic ATT +1 per 10 Character Levels
+4.7	Emblem
+4.7.1	Rare (Non-prime)
+4.7.1.1	STR Increase
+4.7.1.2	DEX Increase
+4.7.1.3	INT Increase
+4.7.1.4	LUK Increase
+4.7.1.5	Weapon ATT Increase
+4.7.1.6	Magic ATT Increase
+4.7.1.7	Speed Increase
+4.7.1.8	Jump Increase
+4.7.1.9	MaxHP Increase
+4.7.1.10	MaxMP Increase
+4.7.1.11	DEF Increase
+4.7.2	Rare (Prime) / Epic (Non-prime)
+4.7.2.1	STR Increase
+4.7.2.2	DEX Increase
+4.7.2.3	INT Increase
+4.7.2.4	LUK Increase
+4.7.2.5	Weapon ATT Increase
+4.7.2.6	Magic ATT Increase
+4.7.2.7	MaxHP Increase
+4.7.2.8	MaxMP Increase
+4.7.2.9	DEF Increase
+4.7.2.10	Speed Increase
+4.7.2.11	Jump Increase
+4.7.2.12	STR % Increase
+4.7.2.13	DEX % Increase
+4.7.2.14	INT % Increase
+4.7.2.15	LUK % Increase
+4.7.2.16	Weapon ATT % Increase
+4.7.2.17	Magic ATT % Increase
+4.7.2.18	Damage % Increase
+4.7.2.19	MaxHP % Increase
+4.7.2.20	MaxMP % Increase
+4.7.2.21	Critical Rate % Increase
+4.7.2.22	All Stats Increase
+4.7.3	Epic (Prime) / Unique (Non-prime)
+4.7.3.1	STR % Increase
+4.7.3.2	DEX % Increase
+4.7.3.3	INT % Increase
+4.7.3.4	LUK % Increase
+4.7.3.5	Weapon ATT % Increase
+4.7.3.6	Magic ATT % Increase
+4.7.3.7	Damage % Increase
+4.7.3.8	Critical Rate % Increase
+4.7.3.9	MaxHP % Increase
+4.7.3.10	MaxMP % Increase
+4.7.3.11	All Stats % Increase
+4.7.3.12	3% chance to recover HP when attacking.
+4.7.3.13	3% chance to recover MP when attacking.
+4.7.3.14	Ignore 3% of Monster's DEF when attacking.
+4.7.4	Unique (Prime) / Legendary (Non-prime)
+4.7.4.1	STR % Increase
+4.7.4.2	DEX % Increase
+4.7.4.3	INT % Increase
+4.7.4.4	LUK % Increase
+4.7.4.5	Weapon ATT % Increase
+4.7.4.6	Magic ATT % Increase
+4.7.4.7	Damage % Increase
+4.7.4.8	Critical Rate % Increase
+4.7.4.9	MaxHP % Increase
+4.7.4.10	MaxMP % Increase
+4.7.4.11	All Stats % Increase
+4.7.4.12	Ignore 4% of Monster's DEF when attacking.
+4.7.4.13	15% chance to recover HP when attacking.
+4.7.4.14	15% chance to recover MP when attacking.
+4.7.4.15	STR +1 per 10 Character Levels
+4.7.4.16	DEX +1 per 10 Character Levels
+4.7.4.17	INT +1 per 10 Character Levels
+4.7.4.18	LUK +1 per 10 Character Levels
+4.7.5	Legendary (Prime)
+4.7.5.1	STR % Increase
+4.7.5.2	DEX % Increase
+4.7.5.3	INT % Increase
+4.7.5.4	LUK % Increase
+4.7.5.5	Weapon ATT % Increase
+4.7.5.6	Magic ATT % Increase
+4.7.5.7	Damage % Increase
+4.7.5.8	Critical Rate % Increase
+4.7.5.9	MaxHP % Increase
+4.7.5.10	MaxMP % Increase
+4.7.5.11	All Stats % Increase
+4.7.5.12	Ignores 5% of Monster's DEF when attacking.
+4.7.5.13	STR +2 per 10 Character Levels
+4.7.5.14	DEX +2 per 10 Character Levels
+4.7.5.15	INT +2 per 10 Character Levels
+4.7.5.16	LUK +2 per 10 Character Levels
+4.7.5.17	Weapon ATT +1 per 10 Character Levels
+4.7.5.18	Magic ATT +1 per 10 Character Levels
+4.8	Secondary Weapon
+4.8.1	Rare (Non-prime)
+4.8.1.1	STR Increase
+4.8.1.2	DEX Increase
+4.8.1.3	INT Increase
+4.8.1.4	LUK Increase
+4.8.1.5	Weapon ATT Increase
+4.8.1.6	Magic ATT Increase
+4.8.1.7	Speed Increase
+4.8.1.8	Jump Increase
+4.8.1.9	MaxHP Increase
+4.8.1.10	MaxMP Increase
+4.8.1.11	DEF Increase
+4.8.2	Rare (Prime) / Epic (Non-prime)
+4.8.2.1	STR Increase
+4.8.2.2	DEX Increase
+4.8.2.3	INT Increase
+4.8.2.4	LUK Increase
+4.8.2.5	Weapon ATT Increase
+4.8.2.6	Magic ATT Increase
+4.8.2.7	MaxHP Increase
+4.8.2.8	MaxMP Increase
+4.8.2.9	DEF Increase
+4.8.2.10	Speed Increase
+4.8.2.11	Jump Increase
+4.8.2.12	STR % Increase
+4.8.2.13	DEX % Increase
+4.8.2.14	INT % Increase
+4.8.2.15	LUK % Increase
+4.8.2.16	Weapon ATT % Increase
+4.8.2.17	Magic ATT % Increase
+4.8.2.18	Damage % Increase
+4.8.2.19	MaxHP % Increase
+4.8.2.20	MaxMP % Increase
+4.8.2.21	Critical Rate % Increase
+4.8.2.22	All Stats Increase
+4.8.3	Epic (Prime) / Unique (Non-prime)
+4.8.3.1	STR % Increase
+4.8.3.2	DEX % Increase
+4.8.3.3	INT % Increase
+4.8.3.4	LUK % Increase
+4.8.3.5	Weapon ATT % Increase
+4.8.3.6	Magic ATT % Increase
+4.8.3.7	Damage % Increase
+4.8.3.8	Critical Rate % Increase
+4.8.3.9	MaxHP % Increase
+4.8.3.10	MaxMP % Increase
+4.8.3.11	All Stats % Increase
+4.8.3.12	3% chance to recover HP when attacking.
+4.8.3.13	3% chance to recover MP when attacking.
+4.8.3.14	Ignore 3% of Monster's DEF when attacking.
+4.8.4	Unique (Prime) / Legendary (Non-prime)
+4.8.4.1	STR % Increase
+4.8.4.2	DEX % Increase
+4.8.4.3	INT % Increase
+4.8.4.4	LUK % Increase
+4.8.4.5	Weapon ATT % Increase
+4.8.4.6	Magic ATT % Increase
+4.8.4.7	Damage % Increase
+4.8.4.8	Critical Rate % Increase
+4.8.4.9	MaxHP % Increase
+4.8.4.10	MaxMP % Increase
+4.8.4.11	All Stats % Increase
+4.8.4.12	Damage to Boss Monsters +12%
+4.8.4.13	Ignore 4% of Monster's DEF when attacking.
+4.8.4.14	15% chance to recover HP when attacking.
+4.8.4.15	15% chance to recover MP when attacking.
+4.8.4.16	STR +1 per 10 Character Levels
+4.8.4.17	DEX +1 per 10 Character Levels
+4.8.4.18	INT +1 per 10 Character Levels
+4.8.4.19	LUK +1 per 10 Character Levels
+4.8.5	Legendary (Prime)
+4.8.5.1	STR % Increase
+4.8.5.2	DEX % Increase
+4.8.5.3	INT % Increase
+4.8.5.4	LUK % Increase
+4.8.5.5	Weapon ATT % Increase
+4.8.5.6	Magic ATT % Increase
+4.8.5.7	Damage % Increase
+4.8.5.8	Critical Rate % Increase
+4.8.5.9	MaxHP % Increase
+4.8.5.10	MaxMP % Increase
+4.8.5.11	All Stats % Increase
+4.8.5.12	Critical Damage % Increase
+4.8.5.13	Damage to Boss Monsters +18%
+4.8.5.14	Ignores 5% of Monster's DEF when attacking.
+4.8.5.15	STR +2 per 10 Character Levels
+4.8.5.16	DEX +2 per 10 Character Levels
+4.8.5.17	INT +2 per 10 Character Levels
+4.8.5.18	LUK +2 per 10 Character Levels
+4.8.5.19	Weapon ATT +1 per 10 Character Levels
+4.8.5.20	Magic ATT +1 per 10 Character Levels
