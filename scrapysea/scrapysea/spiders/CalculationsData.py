@@ -1,6 +1,5 @@
 
 import traceback
-from numpy import Infinity
 from pandas import DataFrame
 import scrapy
 import CustomLogger
@@ -206,7 +205,7 @@ class PotentialSpider(scrapy.Spider):
             
         return
     def TestTwo(self, PotentialGrades):
-        Clist = {}
+        Clist = []
         TempL = []
         StatIncrease = None
         for PTableGrade in PotentialGrades:
@@ -264,10 +263,13 @@ class PotentialSpider(scrapy.Spider):
                     if childName == "table":
                         prevSib = child.xpath("./preceding-sibling::*[1]")
                         if prevSib.xpath("name()").get() == "dl":
+                            Clist.append(DataFrame(CDict, index=[0]))
+                            
                             #Resets CDict
                             CDict = {key: value for key, value in PDict.items()}
                             pass
                         else:
+                            Clist.append(self.HandleTables(child, CDict))
                             pass
                     TempL.append(childName)
 
