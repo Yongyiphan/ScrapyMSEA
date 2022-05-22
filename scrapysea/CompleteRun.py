@@ -29,18 +29,18 @@ newsettings = {
 
 def exec_Crawler():
     runner = CrawlerRunner(settings=sett)
-    runner.crawl(CharacterData.CharacterSpider)
-    EquipmentSpiders = dict([(name, cls) for name, cls in EquipmentData.__dict__.items() if isinstance(cls, type)])
-    for name, s in EquipmentSpiders.items():
-        if if_In_String(name.lower(), "dataframe"):
-            continue
-        runner.crawl(s)
+    #runner.crawl(CharacterData.CharacterSpider)
+    #EquipmentSpiders = dict([(name, cls) for name, cls in EquipmentData.__dict__.items() if isinstance(cls, type)])
+    #for name, s in EquipmentSpiders.items():
+    #    if if_In_String(name.lower(), "dataframe"):
+    #        continue
+    #    runner.crawl(s)
 
-    CalculationSpiders = dict([(name, cls) for name, cls in CalculationsData.__dict__.items() if isinstance(cls, type)])
-    for name, s in CalculationSpiders.items():
-        if if_In_String(name.lower(), "dataframe"):
-            continue
-        runner.crawl(s)
+    #CalculationSpiders = dict([(name, cls) for name, cls in CalculationsData.__dict__.items() if isinstance(cls, type)])
+    #for name, s in CalculationSpiders.items():
+    #    if if_In_String(name.lower(), "dataframe"):
+    #        continue
+    #    runner.crawl(s)
     #runner.crawl(CalculationsData.PotentialSpider)
     d = runner.join()
     d.addBoth(lambda _: reactor.stop())

@@ -276,3 +276,8 @@ class PotentialSpider(scrapy.Spider):
         except Exception as E:
             PLogger.critical(traceback.format_exc())
 
+#class StarforceSpider(scrapy.Spider):
+
+#class HyperStatSpider(scrapy.Spider):
+
+#class FormulaSpider(scrapy.Spider):
