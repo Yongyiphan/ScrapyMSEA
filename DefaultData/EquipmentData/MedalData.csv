@@ -18,348 +18,348 @@
 16,Medal,Any,Spring Flower Corsage,None,Obtainable,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0
 17,Medal,Any,Ace of the Alliance,None,Epics,60,0,0,0,0,2,100,100,50,0,0,0,0,0,0
 18,Medal,Any,Maple World Savior,None,Epics,120,0,0,0,0,7,475,475,175,3,3,0,0,0,0
-19,Medal,Any,Bearded Ambition,None,Obtainable,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0
-20,Medal,Any,Humble Honor,None,Obtainable,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0
-21,Medal,Any,Ursus Defeater,None,Obtainable,100,5,5,5,5,0,0,0,0,1,1,0,0,0,0
-22,Medal,Any,Danger Seeker,None,"Towns, Theme Dungeons, and Bosses",65,3,3,3,3,0,150,150,20,0,0,0,0,0,0
-23,Medal,Any,Final Hitter,None,Epics,100,4,4,4,4,0,0,0,0,0,0,0,0,0,0
-24,Medal,Any,One with the Labyrinth,None,"Towns, Theme Dungeons, and Bosses",200,15,15,15,15,0,"1,000","1,000",0,5,5,0,0,0,0
-25,Medal,Any,Slow and Steady,None,"Towns, Theme Dungeons, and Bosses",200,0,0,0,0,0,0,0,0,3,3,0,0,0,0
-26,Medal,Any,Ursus Defeater King,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0
-27,Medal,Any,Salvation In Your Own Hands,None,"Towns, Theme Dungeons, and Bosses",200,0,0,0,0,0,0,0,0,3,3,0,0,0,0
-28,Medal,Any,Vanquisher Of Nightmares,None,"Towns, Theme Dungeons, and Bosses",200,15,15,15,15,0,"1,000","1,000",0,4,4,0,0,0,0
-29,Medal,Any,Tentaslapped!,None,Epics,33,3,3,3,3,0,0,0,0,0,0,0,0,0,0
-30,Medal,Any,One Who Has Godly Control,None,Obtainable,100,8,8,8,8,0,0,0,0,8,8,0,0,0,0
-31,Medal,Any,Nuclear Tentaslapped!,None,Epics,33,7,7,7,7,0,0,0,0,0,0,0,0,0,0
-32,Medal,Any,Icebreaker,None,Epics,100,4,4,4,4,0,0,0,0,0,0,0,0,0,0
-33,Medal,Any,Antellion Guardian,None,Epics,33,15,15,15,15,0,500,500,0,8,8,0,0,0,0
-34,Medal,Any,Moth of Skuas,None,Epics,33,0,0,0,0,0,0,0,0,3,3,0,0,0,0
-35,Medal,Any,Out of My Way,None,Epics,100,4,4,4,4,0,0,0,0,0,0,0,0,0,0
-36,Medal,Any,Mission Possible,None,Epics,100,4,4,4,4,0,0,0,0,0,0,0,0,0,0
-37,Medal,Any,Before the Pink Snow Falls,None,Epics,33,4,4,4,4,0,150,150,150,1,1,0,0,0,0
-38,Medal,Any,Shattering Pot,None,Epics,100,4,4,4,4,0,0,0,0,0,0,0,0,0,0
-39,Medal,Any,Mercedes's Speed,None,Epics,100,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-40,Medal,Any,World Tree Conqueror,None,Epics,100,4,4,4,4,0,0,0,0,0,0,0,0,0,0
-41,Medal,Any,Aran's Strength,None,Epics,100,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-42,Medal,Any,Herbicider,None,Epics,100,4,4,4,4,0,0,0,0,0,0,0,0,0,0
-43,Medal,Any,Master of Disguise,None,Epics,100,4,4,4,4,0,0,0,0,0,0,0,0,0,0
-44,Medal,Any,Phantom's Freedom,None,Epics,100,0,4,4,0,0,0,0,0,0,0,0,0,0,0
-45,Medal,Any,Damien's Nemesis,None,Epics,100,4,4,4,4,0,0,0,0,0,0,0,0,0,0
-46,Medal,Any,Shade's Compassion,None,Epics,100,4,4,0,0,0,0,0,0,0,0,0,0,0,0
-47,Medal,Any,Freud's Leadership,None,Epics,100,0,0,4,4,0,0,0,0,0,0,0,0,0,0
-48,Medal,Any,Luminous's Focus,None,Epics,100,0,0,4,4,0,0,0,0,0,0,0,0,0,0
-49,Medal,Any,A Proper Hero,None,Epics,100,4,4,4,4,0,0,0,0,0,0,0,0,0,0
-50,Medal,Any,Ignorant of the Truth,None,Epics,100,4,4,4,4,0,0,0,0,0,0,0,0,0,0
-51,Medal,Any,Waiting for the Sword's Owner,None,"Towns, Theme Dungeons, and Bosses",200,0,0,0,0,0,0,0,0,3,3,0,0,0,0
-52,Medal,Any,Defying Destiny,None,"Towns, Theme Dungeons, and Bosses",200,0,0,0,0,0,0,0,0,3,3,0,0,0,0
-53,Medal,Any,Void Vanquisher,None,"Towns, Theme Dungeons, and Bosses",200,0,0,0,0,0,0,0,0,3,3,0,0,0,0
-54,Medal,Any,Emblem of the Alliance,None,"Towns, Theme Dungeons, and Bosses",200,0,0,0,0,0,0,0,0,3,3,0,0,0,0
-55,Medal,Any,Butterfly Dreams,None,"Towns, Theme Dungeons, and Bosses",200,0,0,0,0,0,0,0,0,3,3,0,0,0,0
+19,Medal,Any,Ludibrium Sheriff,None,"Towns, Theme Dungeons, and Bosses",110,5,5,5,5,0,250,250,100,1,1,0,0,0,0
+20,Medal,Any,Damien's Nemesis,None,Epics,100,4,4,4,4,0,0,0,0,0,0,0,0,0,0
+21,Medal,Any,Heart of a Lion,None,"Towns, Theme Dungeons, and Bosses",110,5,5,5,5,0,300,300,100,1,1,0,0,0,0
+22,Medal,Any,Moth of Skuas,None,Epics,33,0,0,0,0,0,0,0,0,3,3,0,0,0,0
+23,Medal,Any,Nuclear Tentaslapped!,None,Epics,33,7,7,7,7,0,0,0,0,0,0,0,0,0,0
+24,Medal,Any,Antellion Guardian,None,Epics,33,15,15,15,15,0,500,500,0,8,8,0,0,0,0
+25,Medal,Any,Tentaslapped!,None,Epics,33,3,3,3,3,0,0,0,0,0,0,0,0,0,0
+26,Medal,Any,World Tree Conqueror,None,Epics,100,4,4,4,4,0,0,0,0,0,0,0,0,0,0
+27,Medal,Any,Before the Pink Snow Falls,None,Epics,33,4,4,4,4,0,150,150,150,1,1,0,0,0,0
+28,Medal,Any,Master of Disguise,None,Epics,100,4,4,4,4,0,0,0,0,0,0,0,0,0,0
+29,Medal,Any,Herbicider,None,Epics,100,4,4,4,4,0,0,0,0,0,0,0,0,0,0
+30,Medal,Any,Mercedes's Speed,None,Epics,100,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+31,Medal,Any,Ignorant of the Truth,None,Epics,100,4,4,4,4,0,0,0,0,0,0,0,0,0,0
+32,Medal,Any,Out of My Way,None,Epics,100,4,4,4,4,0,0,0,0,0,0,0,0,0,0
+33,Medal,Any,Mission Possible,None,Epics,100,4,4,4,4,0,0,0,0,0,0,0,0,0,0
+34,Medal,Any,Shattering Pot,None,Epics,100,4,4,4,4,0,0,0,0,0,0,0,0,0,0
+35,Medal,Any,Phantom's Freedom,None,Epics,100,0,4,4,0,0,0,0,0,0,0,0,0,0,0
+36,Medal,Any,Aran's Strength,None,Epics,100,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+37,Medal,Any,A Proper Hero,None,Epics,100,4,4,4,4,0,0,0,0,0,0,0,0,0,0
+38,Medal,Any,Icebreaker,None,Epics,100,4,4,4,4,0,0,0,0,0,0,0,0,0,0
+39,Medal,Any,Final Hitter,None,Epics,100,4,4,4,4,0,0,0,0,0,0,0,0,0,0
+40,Medal,Any,Shade's Compassion,None,Epics,100,4,4,0,0,0,0,0,0,0,0,0,0,0,0
+41,Medal,Any,Luminous's Focus,None,Epics,100,0,0,4,4,0,0,0,0,0,0,0,0,0,0
+42,Medal,Any,Freud's Leadership,None,Epics,100,0,0,4,4,0,0,0,0,0,0,0,0,0,0
+43,Medal,Any,Defying Destiny,None,"Towns, Theme Dungeons, and Bosses",200,0,0,0,0,0,0,0,0,3,3,0,0,0,0
+44,Medal,Any,Slow and Steady,None,"Towns, Theme Dungeons, and Bosses",200,0,0,0,0,0,0,0,0,3,3,0,0,0,0
+45,Medal,Any,Vanquisher Of Nightmares,None,"Towns, Theme Dungeons, and Bosses",200,15,15,15,15,0,"1,000","1,000",0,4,4,0,0,0,0
+46,Medal,Any,Salvation In Your Own Hands,None,"Towns, Theme Dungeons, and Bosses",200,0,0,0,0,0,0,0,0,3,3,0,0,0,0
+47,Medal,Any,One with the Labyrinth,None,"Towns, Theme Dungeons, and Bosses",200,15,15,15,15,0,"1,000","1,000",0,5,5,0,0,0,0
+48,Medal,Any,Void Vanquisher,None,"Towns, Theme Dungeons, and Bosses",200,0,0,0,0,0,0,0,0,3,3,0,0,0,0
+49,Medal,Any,Astral Whale,None,"Towns, Theme Dungeons, and Bosses",200,0,0,0,0,0,0,0,0,3,3,0,0,0,0
+50,Medal,Any,Waiting for the Sword's Owner,None,"Towns, Theme Dungeons, and Bosses",200,0,0,0,0,0,0,0,0,3,3,0,0,0,0
+51,Medal,Any,Emblem of the Alliance,None,"Towns, Theme Dungeons, and Bosses",200,0,0,0,0,0,0,0,0,3,3,0,0,0,0
+52,Medal,Any,Sengoku Guardian,None,"Towns, Theme Dungeons, and Bosses",200,6,6,6,6,0,"1,000","1,000",0,3,3,0,0,0,0
+53,Medal,Any,Twilight Warrior,None,"Towns, Theme Dungeons, and Bosses",180,9,9,9,9,0,450,450,200,1,1,0,0,0,0
+54,Medal,Any,Butterfly Dreams,None,"Towns, Theme Dungeons, and Bosses",200,0,0,0,0,0,0,0,0,3,3,0,0,0,0
+55,Medal,Any,Legend of Crimsonwood Mountain,None,"Towns, Theme Dungeons, and Bosses",180,8,8,8,8,0,400,400,100,1,1,0,0,0,0
 56,Medal,Any,Naricain's Revival,None,"Towns, Theme Dungeons, and Bosses",190,9,9,9,9,0,450,450,300,1,1,0,0,0,0
-57,Medal,Any,Legend of Crimsonwood Mountain,None,"Towns, Theme Dungeons, and Bosses",180,8,8,8,8,0,400,400,100,1,1,0,0,0,0
-58,Medal,Any,Astral Whale,None,"Towns, Theme Dungeons, and Bosses",200,0,0,0,0,0,0,0,0,3,3,0,0,0,0
-59,Medal,Any,Fox Point Ranger,None,"Towns, Theme Dungeons, and Bosses",180,9,9,9,9,0,450,450,200,1,1,0,0,0,0
-60,Medal,Any,Detective Rave's Honorary Assistant,None,"Towns, Theme Dungeons, and Bosses",175,9,9,9,9,0,200,200,200,1,1,0,0,0,0
+57,Medal,Any,Fox Point Ranger,None,"Towns, Theme Dungeons, and Bosses",180,9,9,9,9,0,450,450,200,1,1,0,0,0,0
+58,Medal,Any,Hilla Specialist,None,"Towns, Theme Dungeons, and Bosses",170,6,6,6,6,0,0,0,120,2,2,0,0,0,0
+59,Medal,Any,Detective Rave's Honorary Assistant,None,"Towns, Theme Dungeons, and Bosses",175,9,9,9,9,0,200,200,200,1,1,0,0,0,0
+60,Medal,Any,Phoenix of Azwan,None,"Towns, Theme Dungeons, and Bosses",170,5,5,5,5,0,0,0,150,1,1,0,0,0,0
 61,Medal,Any,Krakian Chaser,None,"Towns, Theme Dungeons, and Bosses",170,9,9,9,9,0,400,400,200,1,1,0,0,0,0
-62,Medal,Any,Sengoku Guardian,None,"Towns, Theme Dungeons, and Bosses",200,6,6,6,6,0,"1,000","1,000",0,3,3,0,0,0,0
-63,Medal,Any,Light of Azwan,None,"Towns, Theme Dungeons, and Bosses",170,5,5,5,5,0,0,0,170,1,1,0,0,0,0
-64,Medal,Any,Hilla Specialist,None,"Towns, Theme Dungeons, and Bosses",170,6,6,6,6,0,0,0,120,2,2,0,0,0,0
-65,Medal,Any,Phoenix of Azwan,None,"Towns, Theme Dungeons, and Bosses",170,5,5,5,5,0,0,0,150,1,1,0,0,0,0
-66,Medal,Any,Jackpot Entertainment Co-CEO,None,"Towns, Theme Dungeons, and Bosses",150,8,8,8,8,0,400,400,0,1,1,0,0,0,0
-67,Medal,Any,Shaolin Temple Savior,None,"Towns, Theme Dungeons, and Bosses",140,5,5,5,5,0,300,300,100,3,3,0,0,0,0
-68,Medal,Any,White M-Forcer,None,"Towns, Theme Dungeons, and Bosses",140,7,7,7,7,0,350,350,0,1,1,0,0,0,0
-69,Medal,Any,Twilight Warrior,None,"Towns, Theme Dungeons, and Bosses",180,9,9,9,9,0,450,450,200,1,1,0,0,0,0
-70,Medal,Any,Sage Asceticism,None,"Towns, Theme Dungeons, and Bosses",135,7,7,7,7,0,350,350,120,1,1,0,0,0,0
-71,Medal,Any,Crimsonheart Savior,None,"Towns, Theme Dungeons, and Bosses",130,7,7,7,7,0,0,400,100,1,1,0,0,0,0
-72,Medal,Any,Blazing Hot,None,"Towns, Theme Dungeons, and Bosses",135,7,7,7,7,0,300,300,150,1,1,0,0,0,0
-73,Medal,Any,Rise from Ruins,None,"Towns, Theme Dungeons, and Bosses",160,8,8,8,8,0,400,400,200,1,1,0,0,0,0
-74,Medal,Any,Like Clouds and Winds,None,"Towns, Theme Dungeons, and Bosses",130,7,7,7,7,0,200,200,100,1,1,0,0,0,0
-75,Medal,Any,101st Time's the Charm,None,"Towns, Theme Dungeons, and Bosses",125,5,5,5,5,0,100,200,100,1,1,0,0,0,0
-76,Medal,Any,Seeker of Gilded Truth,None,"Towns, Theme Dungeons, and Bosses",120,5,5,5,5,0,350,350,100,1,1,0,0,0,0
-77,Medal,Any,Colossal,None,"Towns, Theme Dungeons, and Bosses",150,8,8,8,8,0,0,400,200,1,1,0,0,0,0
-78,Medal,Any,Savior of Azwan,None,"Towns, Theme Dungeons, and Bosses",120,4,4,4,4,0,0,0,100,1,1,0,0,0,0
-79,Medal,Any,Heart of a Lion,None,"Towns, Theme Dungeons, and Bosses",110,5,5,5,5,0,300,300,100,1,1,0,0,0,0
-80,Medal,Any,Ludibrium Sheriff,None,"Towns, Theme Dungeons, and Bosses",110,5,5,5,5,0,250,250,100,1,1,0,0,0,0
-81,Medal,Any,Ellin Forest Guardian,None,"Towns, Theme Dungeons, and Bosses",105,4,4,4,4,0,160,160,90,1,1,0,0,7,0
-82,Medal,Any,Bookworm,None,"Towns, Theme Dungeons, and Bosses",100,4,4,4,4,0,175,175,90,1,1,0,0,0,0
-83,Medal,Any,Shadow Alchemist,None,"Towns, Theme Dungeons, and Bosses",100,4,4,4,4,0,170,170,85,0,0,0,0,0,0
+62,Medal,Any,Light of Azwan,None,"Towns, Theme Dungeons, and Bosses",170,5,5,5,5,0,0,0,170,1,1,0,0,0,0
+63,Medal,Any,Rise from Ruins,None,"Towns, Theme Dungeons, and Bosses",160,8,8,8,8,0,400,400,200,1,1,0,0,0,0
+64,Medal,Any,Shaolin Temple Savior,None,"Towns, Theme Dungeons, and Bosses",140,5,5,5,5,0,300,300,100,3,3,0,0,0,0
+65,Medal,Any,Jackpot Entertainment Co-CEO,None,"Towns, Theme Dungeons, and Bosses",150,8,8,8,8,0,400,400,0,1,1,0,0,0,0
+66,Medal,Any,Colossal,None,"Towns, Theme Dungeons, and Bosses",150,8,8,8,8,0,0,400,200,1,1,0,0,0,0
+67,Medal,Any,White M-Forcer,None,"Towns, Theme Dungeons, and Bosses",140,7,7,7,7,0,350,350,0,1,1,0,0,0,0
+68,Medal,Any,Sage Asceticism,None,"Towns, Theme Dungeons, and Bosses",135,7,7,7,7,0,350,350,120,1,1,0,0,0,0
+69,Medal,Any,101st Time's the Charm,None,"Towns, Theme Dungeons, and Bosses",125,5,5,5,5,0,100,200,100,1,1,0,0,0,0
+70,Medal,Any,Blazing Hot,None,"Towns, Theme Dungeons, and Bosses",135,7,7,7,7,0,300,300,150,1,1,0,0,0,0
+71,Medal,Any,Like Clouds and Winds,None,"Towns, Theme Dungeons, and Bosses",130,7,7,7,7,0,200,200,100,1,1,0,0,0,0
+72,Medal,Any,Crimsonheart Savior,None,"Towns, Theme Dungeons, and Bosses",130,7,7,7,7,0,0,400,100,1,1,0,0,0,0
+73,Medal,Any,Savior of Azwan,None,"Towns, Theme Dungeons, and Bosses",120,4,4,4,4,0,0,0,100,1,1,0,0,0,0
+74,Medal,Any,World Tree Guardian,None,"Towns, Theme Dungeons, and Bosses",110,3,3,3,3,0,200,200,0,1,1,0,0,5,5
+75,Medal,Any,Seeker of Gilded Truth,None,"Towns, Theme Dungeons, and Bosses",120,5,5,5,5,0,350,350,100,1,1,0,0,0,0
+76,Medal,Any,Ellin Forest Guardian,None,"Towns, Theme Dungeons, and Bosses",105,4,4,4,4,0,160,160,90,1,1,0,0,7,0
+77,Medal,Any,Phantom Forest Guardian,None,"Towns, Theme Dungeons, and Bosses",110,5,5,5,5,0,200,200,0,2,2,0,0,5,5
+78,Medal,Any,Rose Knight,None,"Towns, Theme Dungeons, and Bosses",110,0,0,0,0,0,400,0,140,0,0,0,0,0,0
+79,Medal,Any,Bookworm,None,"Towns, Theme Dungeons, and Bosses",100,4,4,4,4,0,175,175,90,1,1,0,0,0,0
+80,Medal,Any,Magatia's Alchemist,None,"Towns, Theme Dungeons, and Bosses",95,3,3,3,3,0,150,150,60,0,0,0,0,0,0
+81,Medal,Any,Sharenian Knight,None,"Towns, Theme Dungeons, and Bosses",100,4,4,4,4,0,170,170,85,0,0,0,0,0,0
+82,Medal,Any,Shadow Alchemist,None,"Towns, Theme Dungeons, and Bosses",100,4,4,4,4,0,170,170,85,0,0,0,0,0,0
+83,Medal,Any,Ariant Culture Expert,None,"Towns, Theme Dungeons, and Bosses",90,3,3,3,3,0,150,150,50,0,0,0,0,0,0
 84,Medal,Any,Winter Bard,None,"Towns, Theme Dungeons, and Bosses",100,4,4,4,4,0,170,170,85,0,0,0,0,0,0
-85,Medal,Any,Phantom Forest Guardian,None,"Towns, Theme Dungeons, and Bosses",110,5,5,5,5,0,200,200,0,2,2,0,0,5,5
-86,Medal,Any,World Tree Guardian,None,"Towns, Theme Dungeons, and Bosses",110,3,3,3,3,0,200,200,0,1,1,0,0,5,5
-87,Medal,Any,White Mage Minion,None,"Towns, Theme Dungeons, and Bosses",100,4,4,4,4,0,160,160,70,0,0,0,0,0,0
-88,Medal,Any,Rose Knight,None,"Towns, Theme Dungeons, and Bosses",110,0,0,0,0,0,400,0,140,0,0,0,0,0,0
-89,Medal,Any,Magatia's Alchemist,None,"Towns, Theme Dungeons, and Bosses",95,3,3,3,3,0,150,150,60,0,0,0,0,0,0
-90,Medal,Any,Ariant Culture Expert,None,"Towns, Theme Dungeons, and Bosses",90,3,3,3,3,0,150,150,50,0,0,0,0,0,0
-91,Medal,Any,Snowfield Explorer,None,"Towns, Theme Dungeons, and Bosses",77,3,3,3,3,0,150,150,30,0,0,0,0,0,0
-92,Medal,Any,Violetta's Knight,None,"Towns, Theme Dungeons, and Bosses",65,2,2,2,2,0,300,300,0,0,0,0,0,0,0
-93,Medal,Any,Sharenian Knight,None,"Towns, Theme Dungeons, and Bosses",100,4,4,4,4,0,170,170,85,0,0,0,0,0,0
-94,Medal,Any,Rocky Mountain Hunter,None,"Towns, Theme Dungeons, and Bosses",55,3,3,3,3,0,150,150,15,0,0,0,0,0,0
-95,Medal,Any,Swamp Region Troubleshooter,None,"Towns, Theme Dungeons, and Bosses",45,2,2,2,2,0,150,150,15,0,0,0,0,0,0
-96,Medal,Any,Empress Maker,None,"Towns, Theme Dungeons, and Bosses",100,4,4,4,4,0,160,160,80,0,0,0,0,0,0
-97,Medal,Any,Helper in the Clouds,None,"Towns, Theme Dungeons, and Bosses",70,3,3,3,3,0,150,150,30,0,0,0,0,0,0
-98,Medal,Any,Beach Bum,None,"Towns, Theme Dungeons, and Bosses",30,3,3,3,3,0,150,150,15,0,0,0,0,0,0
-99,Medal,Any,Honorary Fairy Professor,None,"Towns, Theme Dungeons, and Bosses",30,3,3,3,3,0,150,150,15,0,0,0,0,0,0
-100,Medal,Any,Savior of the Empress,None,"Towns, Theme Dungeons, and Bosses",0,5,5,5,5,0,300,300,0,2,2,5,0,0,0
-101,Medal,Any,Chaos Crimson Queen Crusher,None,"Towns, Theme Dungeons, and Bosses",0,0,0,0,0,0,0,0,0,3,3,0,0,0,0
-102,Medal,Any,Chaos Pierre Crusher,None,"Towns, Theme Dungeons, and Bosses",0,8,8,8,8,0,0,0,0,0,0,0,0,0,0
-103,Medal,Any,Chaos Von Bon Crusher,None,"Towns, Theme Dungeons, and Bosses",0,0,0,0,0,0,0,0,0,0,0,5,0,0,0
-104,Medal,Any,Elodin Bird Dog,None,"Towns, Theme Dungeons, and Bosses",30,3,3,3,3,0,150,150,15,0,0,0,0,0,0
-105,Medal,Any,Deckhand,None,"Towns, Theme Dungeons, and Bosses",30,3,3,3,3,0,150,150,15,0,0,0,0,0,0
-106,Medal,Any,Fire Raccoon Finance Auditor,None,"Towns, Theme Dungeons, and Bosses",0,9,9,9,9,0,300,300,0,4,4,0,0,10,0
-107,Medal,Any,"By Land, Sea, and Air",None,Party Quests and Dungeons,140,7,7,7,7,0,0,0,0,3,3,0,0,0,0
-108,Medal,Any,Bold Indifference,None,Party Quests and Dungeons,140,0,0,0,0,0,300,300,150,0,0,0,0,0,0
-109,Medal,Any,Magnus's Pride,None,Party Quests and Dungeons,140,0,0,0,0,0,0,0,0,1,1,0,0,0,0
-110,Medal,Any,Chaos Vellum Crusher,None,"Towns, Theme Dungeons, and Bosses",0,0,0,0,0,0,0,0,0,0,0,0,5,0,0
-111,Medal,Any,Dimension Master,None,Party Quests and Dungeons,140,7,7,7,7,0,0,0,0,4,4,0,0,0,0
-112,Medal,Any,Dimension Defender,None,Party Quests and Dungeons,140,5,5,5,5,0,0,0,0,2,2,0,0,0,0
-113,Medal,Any,No Place Like Home,None,Party Quests and Dungeons,110,10,10,10,10,0,300,300,100,10,10,0,0,0,0
-114,Medal,Any,Brainy,None,Party Quests and Dungeons,110,1,1,1,1,0,300,300,100,0,0,0,0,0,0
-115,Medal,Any,Hilla's Dignity,None,Party Quests and Dungeons,140,0,0,0,0,0,0,0,0,1,1,0,0,0,0
-116,Medal,Any,Master of Oz,None,Party Quests and Dungeons,110,2,2,2,2,0,300,300,100,0,0,0,0,0,0
-117,Medal,Any,Traveler of Oz,None,Party Quests and Dungeons,110,0,0,0,0,0,300,300,0,0,0,0,0,0,0
-118,Medal,Any,Have a Heart,None,Party Quests and Dungeons,110,0,0,0,0,0,200,200,0,0,0,0,0,0,0
-119,Medal,Any,Camper of Oz,None,Party Quests and Dungeons,110,0,0,0,0,0,150,150,0,0,0,0,0,0,0
-120,Medal,Any,Courageous,None,Party Quests and Dungeons,110,0,0,0,0,0,300,300,50,0,0,0,0,0,0
-121,Medal,Any,Good Cook,None,Party Quests and Dungeons,60,0,0,0,0,0,0,0,15,1,1,0,0,0,0
-122,Medal,Any,Taa Daa,None,Obtainable,130,9,9,9,9,0,0,0,0,6,6,0,0,0,0
-123,Medal,Any,Webmaster,None,Party Quests and Dungeons,110,0,0,0,0,0,100,100,0,0,0,0,0,0,0
-124,Medal,Any,Expert of Oz,None,Party Quests and Dungeons,110,0,0,0,0,0,300,300,100,0,0,0,0,0,0
-125,Medal,Any,Tourist of Oz,None,Party Quests and Dungeons,110,0,0,0,0,0,50,50,0,0,0,0,0,0,0
-126,Medal,Any,Party Quest Legendary Collector,None,Party Quests and Dungeons,70,2,2,2,2,0,300,300,0,1,1,0,0,0,0
-127,Medal,Any,Hurray That's Good!,None,Obtainable,130,4,4,4,4,0,0,0,0,4,4,0,0,0,0
-128,Medal,Any,All Aboard the Funk Train,None,Obtainable,130,8,8,8,8,0,0,0,0,5,5,0,0,0,0
-129,Medal,Any,Silent Crusade Champion,None,Obtainable,120,5,5,5,5,0,200,200,120,1,1,0,0,10,0
-130,Medal,Any,Silent Crusade Commander,None,Obtainable,105,4,4,4,4,0,160,160,90,1,1,0,0,7,0
-131,Medal,Any,Seven Day Monster Parker,Seven Days,Obtainable,100,7,7,7,7,0,0,0,0,7,7,10,0,0,0
-132,Medal,Any,Saturday Monster Park,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0
-133,Medal,Any,Friday Monster Park,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0
-134,Medal,Any,Sunday Monster Park,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0
-135,Medal,Any,Thursday Monster Park,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0
-136,Medal,Any,Wednesday Monster Park,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0
-137,Medal,Any,Tuesday Monster Park,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0
-138,Medal,Any,Monday Monster Park,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0
-139,Medal,Any,Master of Assists,None,Obtainable,100,2,2,2,2,0,0,0,0,2,2,0,0,0,0
-140,Medal,Any,Ursus Handgrip,None,Obtainable,100,2,2,2,2,0,0,0,0,2,2,0,0,0,0
-141,Medal,Any,Ursus Mouth Wash,None,Obtainable,100,2,2,2,2,0,0,0,0,2,2,0,0,0,0
-142,Medal,Any,Ursus SSS Super Collector,None,Obtainable,100,8,8,8,8,0,0,0,0,8,8,0,0,0,0
-143,Medal,Any,Ursus SSS Collector,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0
-144,Medal,Any,Ursus SSS Procurer,None,Obtainable,100,3,3,3,3,0,0,0,0,3,3,0,0,0,0
-145,Medal,Any,Evolution Master,None,Obtainable,100,6,6,6,6,0,0,0,0,5,5,0,0,0,0
-146,Medal,Any,Saint Exorcist,None,Obtainable,100,3,3,3,3,0,0,99,25,0,0,0,0,0,0
-147,Medal,Any,The Will to Survive,None,Obtainable,100,4,4,4,4,0,0,0,0,2,2,0,0,0,0
-148,Medal,Any,Silent Crusade Recruit,None,Obtainable,75,2,2,2,2,0,80,80,30,0,0,0,0,3,0
-149,Medal,Any,Soul Guardian,None,Obtainable,75,2,2,2,2,0,0,77,20,0,0,0,0,0,0
-150,Medal,Any,Silent Crusade Officer,None,Obtainable,90,3,3,3,3,0,120,120,60,0,0,0,0,5,0
-151,Medal,Any,Minar Forest Explorer,None,Obtainable,70,0,0,0,0,0,150,150,0,0,0,0,0,0,0
-152,Medal,Any,Nihal Desert Explorer,None,Obtainable,70,0,0,0,0,0,150,150,0,0,0,0,0,0,0
-153,Medal,Any,Soul Conjurer,None,Obtainable,62,1,1,1,1,0,0,55,15,0,0,0,0,0,0
-154,Medal,Any,A Member of The Maple Alliance,None,Obtainable,70,0,0,0,0,0,500,500,0,0,0,0,0,0,0
-155,Medal,Any,Maple Explorer,None,Obtainable,70,1,1,1,1,0,180,180,0,0,0,0,0,0,0
-156,Medal,Any,Ossyria Explorer,None,Obtainable,70,1,1,1,1,0,150,150,0,0,0,0,0,0,0
+85,Medal,Any,White Mage Minion,None,"Towns, Theme Dungeons, and Bosses",100,4,4,4,4,0,160,160,70,0,0,0,0,0,0
+86,Medal,Any,Snowfield Explorer,None,"Towns, Theme Dungeons, and Bosses",77,3,3,3,3,0,150,150,30,0,0,0,0,0,0
+87,Medal,Any,Empress Maker,None,"Towns, Theme Dungeons, and Bosses",100,4,4,4,4,0,160,160,80,0,0,0,0,0,0
+88,Medal,Any,Helper in the Clouds,None,"Towns, Theme Dungeons, and Bosses",70,3,3,3,3,0,150,150,30,0,0,0,0,0,0
+89,Medal,Any,Elodin Bird Dog,None,"Towns, Theme Dungeons, and Bosses",30,3,3,3,3,0,150,150,15,0,0,0,0,0,0
+90,Medal,Any,Danger Seeker,None,"Towns, Theme Dungeons, and Bosses",65,3,3,3,3,0,150,150,20,0,0,0,0,0,0
+91,Medal,Any,Rocky Mountain Hunter,None,"Towns, Theme Dungeons, and Bosses",55,3,3,3,3,0,150,150,15,0,0,0,0,0,0
+92,Medal,Any,Swamp Region Troubleshooter,None,"Towns, Theme Dungeons, and Bosses",45,2,2,2,2,0,150,150,15,0,0,0,0,0,0
+93,Medal,Any,Violetta's Knight,None,"Towns, Theme Dungeons, and Bosses",65,2,2,2,2,0,300,300,0,0,0,0,0,0,0
+94,Medal,Any,Deckhand,None,"Towns, Theme Dungeons, and Bosses",30,3,3,3,3,0,150,150,15,0,0,0,0,0,0
+95,Medal,Any,Honorary Fairy Professor,None,"Towns, Theme Dungeons, and Bosses",30,3,3,3,3,0,150,150,15,0,0,0,0,0,0
+96,Medal,Any,Beach Bum,None,"Towns, Theme Dungeons, and Bosses",30,3,3,3,3,0,150,150,15,0,0,0,0,0,0
+97,Medal,Any,Chaos Vellum Crusher,None,"Towns, Theme Dungeons, and Bosses",0,0,0,0,0,0,0,0,0,0,0,0,5,0,0
+98,Medal,Any,Savior of the Empress,None,"Towns, Theme Dungeons, and Bosses",0,5,5,5,5,0,300,300,0,2,2,5,0,0,0
+99,Medal,Any,Chaos Crimson Queen Crusher,None,"Towns, Theme Dungeons, and Bosses",0,0,0,0,0,0,0,0,0,3,3,0,0,0,0
+100,Medal,Any,Chaos Von Bon Crusher,None,"Towns, Theme Dungeons, and Bosses",0,0,0,0,0,0,0,0,0,0,0,5,0,0,0
+101,Medal,Any,Chaos Pierre Crusher,None,"Towns, Theme Dungeons, and Bosses",0,8,8,8,8,0,0,0,0,0,0,0,0,0,0
+102,Medal,Any,Fire Raccoon Finance Auditor,None,"Towns, Theme Dungeons, and Bosses",0,9,9,9,9,0,300,300,0,4,4,0,0,10,0
+103,Medal,Any,Bold Indifference,None,Party Quests and Dungeons,140,0,0,0,0,0,300,300,150,0,0,0,0,0,0
+104,Medal,Any,No Place Like Home,None,Party Quests and Dungeons,110,10,10,10,10,0,300,300,100,10,10,0,0,0,0
+105,Medal,Any,"By Land, Sea, and Air",None,Party Quests and Dungeons,140,7,7,7,7,0,0,0,0,3,3,0,0,0,0
+106,Medal,Any,Magnus's Pride,None,Party Quests and Dungeons,140,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+107,Medal,Any,Hilla's Dignity,None,Party Quests and Dungeons,140,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+108,Medal,Any,Dimension Master,None,Party Quests and Dungeons,140,7,7,7,7,0,0,0,0,4,4,0,0,0,0
+109,Medal,Any,Dimension Defender,None,Party Quests and Dungeons,140,5,5,5,5,0,0,0,0,2,2,0,0,0,0
+110,Medal,Any,Brainy,None,Party Quests and Dungeons,110,1,1,1,1,0,300,300,100,0,0,0,0,0,0
+111,Medal,Any,Courageous,None,Party Quests and Dungeons,110,0,0,0,0,0,300,300,50,0,0,0,0,0,0
+112,Medal,Any,Expert of Oz,None,Party Quests and Dungeons,110,0,0,0,0,0,300,300,100,0,0,0,0,0,0
+113,Medal,Any,Have a Heart,None,Party Quests and Dungeons,110,0,0,0,0,0,200,200,0,0,0,0,0,0,0
+114,Medal,Any,Webmaster,None,Party Quests and Dungeons,110,0,0,0,0,0,100,100,0,0,0,0,0,0,0
+115,Medal,Any,Traveler of Oz,None,Party Quests and Dungeons,110,0,0,0,0,0,300,300,0,0,0,0,0,0,0
+116,Medal,Any,Camper of Oz,None,Party Quests and Dungeons,110,0,0,0,0,0,150,150,0,0,0,0,0,0,0
+117,Medal,Any,Master of Oz,None,Party Quests and Dungeons,110,2,2,2,2,0,300,300,100,0,0,0,0,0,0
+118,Medal,Any,Tourist of Oz,None,Party Quests and Dungeons,110,0,0,0,0,0,50,50,0,0,0,0,0,0,0
+119,Medal,Any,Party Quest Legendary Collector,None,Party Quests and Dungeons,70,2,2,2,2,0,300,300,0,1,1,0,0,0,0
+120,Medal,Any,Taa Daa,None,Obtainable,130,9,9,9,9,0,0,0,0,6,6,0,0,0,0
+121,Medal,Any,All Aboard the Funk Train,None,Obtainable,130,8,8,8,8,0,0,0,0,5,5,0,0,0,0
+122,Medal,Any,Seven Day Monster Parker,Seven Days,Obtainable,100,7,7,7,7,0,0,0,0,7,7,10,0,0,0
+123,Medal,Any,Sunday Monster Park,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0
+124,Medal,Any,Good Cook,None,Party Quests and Dungeons,60,0,0,0,0,0,0,0,15,1,1,0,0,0,0
+125,Medal,Any,Hurray That's Good!,None,Obtainable,130,4,4,4,4,0,0,0,0,4,4,0,0,0,0
+126,Medal,Any,Silent Crusade Champion,None,Obtainable,120,5,5,5,5,0,200,200,120,1,1,0,0,10,0
+127,Medal,Any,Saturday Monster Park,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0
+128,Medal,Any,Silent Crusade Commander,None,Obtainable,105,4,4,4,4,0,160,160,90,1,1,0,0,7,0
+129,Medal,Any,Friday Monster Park,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0
+130,Medal,Any,Tuesday Monster Park,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0
+131,Medal,Any,Master of Assists,None,Obtainable,100,2,2,2,2,0,0,0,0,2,2,0,0,0,0
+132,Medal,Any,Monday Monster Park,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0
+133,Medal,Any,Wednesday Monster Park,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0
+134,Medal,Any,Thursday Monster Park,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0
+135,Medal,Any,Ursus Handgrip,None,Obtainable,100,2,2,2,2,0,0,0,0,2,2,0,0,0,0
+136,Medal,Any,Ursus Mouth Wash,None,Obtainable,100,2,2,2,2,0,0,0,0,2,2,0,0,0,0
+137,Medal,Any,Ursus SSS Super Collector,None,Obtainable,100,8,8,8,8,0,0,0,0,8,8,0,0,0,0
+138,Medal,Any,Ursus SSS Procurer,None,Obtainable,100,3,3,3,3,0,0,0,0,3,3,0,0,0,0
+139,Medal,Any,Ursus SSS Collector,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0
+140,Medal,Any,The Will to Survive,None,Obtainable,100,4,4,4,4,0,0,0,0,2,2,0,0,0,0
+141,Medal,Any,Ursus Defeater,None,Obtainable,100,5,5,5,5,0,0,0,0,1,1,0,0,0,0
+142,Medal,Any,One Who Has Godly Control,None,Obtainable,100,8,8,8,8,0,0,0,0,8,8,0,0,0,0
+143,Medal,Any,Ursus Defeater King,None,Obtainable,100,7,7,7,7,0,0,0,0,7,7,0,0,0,0
+144,Medal,Any,Evolution Master,None,Obtainable,100,6,6,6,6,0,0,0,0,5,5,0,0,0,0
+145,Medal,Any,Saint Exorcist,None,Obtainable,100,3,3,3,3,0,0,99,25,0,0,0,0,0,0
+146,Medal,Any,Silent Crusade Recruit,None,Obtainable,75,2,2,2,2,0,80,80,30,0,0,0,0,3,0
+147,Medal,Any,Soul Guardian,None,Obtainable,75,2,2,2,2,0,0,77,20,0,0,0,0,0,0
+148,Medal,Any,Silent Crusade Officer,None,Obtainable,90,3,3,3,3,0,120,120,60,0,0,0,0,5,0
+149,Medal,Any,A Member of The Maple Alliance,None,Obtainable,70,0,0,0,0,0,500,500,0,0,0,0,0,0,0
+150,Medal,Any,Maple Explorer,None,Obtainable,70,1,1,1,1,0,180,180,0,0,0,0,0,0,0
+151,Medal,Any,Ossyria Explorer,None,Obtainable,70,1,1,1,1,0,150,150,0,0,0,0,0,0,0
+152,Medal,Any,Minar Forest Explorer,None,Obtainable,70,0,0,0,0,0,150,150,0,0,0,0,0,0,0
+153,Medal,Any,Nihal Desert Explorer,None,Obtainable,70,0,0,0,0,0,150,150,0,0,0,0,0,0,0
+154,Medal,Any,Mu Lung Explorer,None,Obtainable,50,0,0,0,0,0,120,120,0,0,0,0,0,0,0
+155,Medal,Any,Sleepywood Explorer,None,Obtainable,50,0,0,0,0,0,120,120,0,0,0,0,0,0,0
+156,Medal,Any,Soul Conjurer,None,Obtainable,62,1,1,1,1,0,0,55,15,0,0,0,0,0,0
 157,Medal,Any,Victoria Explorer,None,Obtainable,50,0,0,0,0,0,125,125,0,0,0,0,0,0,0
-158,Medal,Any,Sleepywood Explorer,None,Obtainable,50,0,0,0,0,0,120,120,0,0,0,0,0,0,0
-159,Medal,Any,Mu Lung Explorer,None,Obtainable,50,0,0,0,0,0,120,120,0,0,0,0,0,0,0
-160,Medal,Any,El Nath Explorer,None,Obtainable,50,0,0,0,0,0,120,120,0,0,0,0,0,0,0
+158,Medal,Any,El Nath Explorer,None,Obtainable,50,0,0,0,0,0,120,120,0,0,0,0,0,0,0
+159,Medal,Any,Undersea Explorer,None,Obtainable,40,0,0,0,0,0,110,110,0,0,0,0,0,0,0
+160,Medal,Any,Ludus Lake Explorer,None,Obtainable,40,0,0,0,0,0,110,110,0,0,0,0,0,0,0
 161,Medal,Any,Spirit Diviner,None,Obtainable,40,0,0,0,0,0,0,33,10,0,0,0,0,0,0
-162,Medal,Any,Undersea Explorer,None,Obtainable,40,0,0,0,0,0,110,110,0,0,0,0,0,0,0
-163,Medal,Any,Ludus Lake Explorer,None,Obtainable,40,0,0,0,0,0,110,110,0,0,0,0,0,0,0
-164,Medal,Any,Champion Dream Defender,None,Obtainable,33,15,15,15,15,0,"1,000","1,000",0,3,3,0,0,0,0
+162,Medal,Any,Champion Dream Defender,None,Obtainable,33,15,15,15,15,0,"1,000","1,000",0,3,3,0,0,0,0
+163,Medal,Any,Dream Defender Stage 80 Conqueror,None,Obtainable,33,8,8,8,8,0,800,800,0,2,2,0,0,0,0
+164,Medal,Any,Dream Defender Stage 70 Conqueror,None,Obtainable,33,7,7,7,7,0,700,700,0,1,1,0,0,0,0
 165,Medal,Any,Dream Defender Stage 90 Conqueror,None,Obtainable,33,10,10,10,10,0,900,900,0,2,2,0,0,0,0
-166,Medal,Any,Dream Defender Stage 80 Conqueror,None,Obtainable,33,8,8,8,8,0,800,800,0,2,2,0,0,0,0
-167,Medal,Any,Dream Defender Stage 70 Conqueror,None,Obtainable,33,7,7,7,7,0,700,700,0,1,1,0,0,0,0
-168,Medal,Any,Dream Defender Stage 60 Conqueror,None,Obtainable,33,6,6,6,6,0,600,600,0,1,1,0,0,0,0
-169,Medal,Any,Dream Defender Stage 50 Conqueror,None,Obtainable,33,5,5,5,5,0,500,500,0,0,0,0,0,0,0
-170,Medal,Any,Dream Defender Stage 30 Conqueror,None,Obtainable,33,3,3,3,3,0,300,300,0,0,0,0,0,0,0
-171,Medal,Any,Dream Defender Stage 40 Conqueror,None,Obtainable,33,4,4,4,4,0,400,400,0,0,0,0,0,0,0
-172,Medal,Any,Deep Sea Monster Collector,None,Obtainable,33,2,2,2,2,0,300,300,0,1,1,0,0,0,0
-173,Medal,Any,Island Explorer,None,Obtainable,33,2,2,2,2,0,300,300,0,1,1,0,0,0,0
+166,Medal,Any,Dream Defender Stage 60 Conqueror,None,Obtainable,33,6,6,6,6,0,600,600,0,1,1,0,0,0,0
+167,Medal,Any,Dream Defender Stage 50 Conqueror,None,Obtainable,33,5,5,5,5,0,500,500,0,0,0,0,0,0,0
+168,Medal,Any,Dream Defender Stage 30 Conqueror,None,Obtainable,33,3,3,3,3,0,300,300,0,0,0,0,0,0,0
+169,Medal,Any,Dream Defender Stage 40 Conqueror,None,Obtainable,33,4,4,4,4,0,400,400,0,0,0,0,0,0,0
+170,Medal,Any,Arcane River Collector,None,Obtainable,33,2,2,2,2,0,300,300,0,1,1,0,0,0,0
+171,Medal,Any,Deep Sea Monster Collector,None,Obtainable,33,2,2,2,2,0,300,300,0,1,1,0,0,0,0
+172,Medal,Any,Island Explorer,None,Obtainable,33,2,2,2,2,0,300,300,0,1,1,0,0,0,0
+173,Medal,Any,Temple's Collector,None,Obtainable,33,2,2,2,2,0,300,300,0,1,1,0,0,0,0
 174,Medal,Any,Otherworld's Collector,None,Obtainable,33,2,2,2,2,0,300,300,0,1,1,0,0,0,0
 175,Medal,Any,Minar Forest Monster Collector,None,Obtainable,33,2,2,2,2,0,300,300,0,1,1,0,0,0,0
 176,Medal,Any,Mu Lung Garden Monster Collector,None,Obtainable,33,2,2,2,2,0,300,300,0,1,1,0,0,0,0
 177,Medal,Any,Nihal's Collector,None,Obtainable,33,2,2,2,2,0,300,300,0,1,1,0,0,0,0
-178,Medal,Any,El Nath Monster Collector,None,Obtainable,33,2,2,2,2,0,300,300,0,1,1,0,0,0,0
-179,Medal,Any,Temple's Collector,None,Obtainable,33,2,2,2,2,0,300,300,0,1,1,0,0,0,0
-180,Medal,Any,Ludibrium's Collector,None,Obtainable,33,2,2,2,2,0,300,300,0,1,1,0,0,0,0
-181,Medal,Any,Arcane River Collector,None,Obtainable,33,2,2,2,2,0,300,300,0,1,1,0,0,0,0
+178,Medal,Any,Ludibrium's Collector,None,Obtainable,33,2,2,2,2,0,300,300,0,1,1,0,0,0,0
+179,Medal,Any,Beginner Explorer,None,Obtainable,15,0,0,0,0,0,60,60,0,0,0,0,0,0,0
+180,Medal,Any,The One Who's Touched the Sky,None,Obtainable,20,0,0,0,0,0,0,0,0,0,0,0,0,5,5
+181,Medal,Any,Victoria Monster Collector,None,Obtainable,33,2,2,2,2,0,300,300,0,1,1,0,0,0,0
 182,Medal,Any,Edelstein Monster Collector,None,Obtainable,33,2,2,2,2,0,300,300,0,1,1,0,0,0,0
-183,Medal,Any,Victoria Monster Master,None,Obtainable,33,2,2,2,2,0,300,300,0,1,1,0,0,0,0
-184,Medal,Any,Victoria Monster Collector,None,Obtainable,33,2,2,2,2,0,300,300,0,1,1,0,0,0,0
-185,Medal,Any,The One Who's Touched the Sky,None,Obtainable,20,0,0,0,0,0,0,0,0,0,0,0,0,5,5
-186,Medal,Any,Epitome of Beauty,None,Obtainable,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0
-187,Medal,Any,The Hotness,None,Obtainable,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0
-188,Medal,Any,Eyes on Me,None,Obtainable,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0
-189,Medal,Any,Troubled Youth,None,Obtainable,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3
-190,Medal,Any,Beginner Explorer,None,Obtainable,15,0,0,0,0,0,60,60,0,0,0,0,0,0,0
-191,Medal,Any,Midas's Touch,None,Obtainable,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0
-192,Medal,Any,Dynamic Hair,None,Obtainable,10,0,0,0,0,0,80,80,0,0,0,0,0,5,5
-193,Medal,Any,Pollo's Friend,None,Obtainable,0,15,15,15,15,0,"1,000","1,000",0,5,5,0,0,0,0
-194,Medal,Any,Expert's Heart,None,Obtainable,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0
+183,Medal,Any,El Nath Monster Collector,None,Obtainable,33,2,2,2,2,0,300,300,0,1,1,0,0,0,0
+184,Medal,Any,Victoria Monster Master,None,Obtainable,33,2,2,2,2,0,300,300,0,1,1,0,0,0,0
+185,Medal,Any,Dynamic Hair,None,Obtainable,10,0,0,0,0,0,80,80,0,0,0,0,0,5,5
+186,Medal,Any,Bard,None,Obtainable,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7
+187,Medal,Any,Pollo's Friend,None,Obtainable,0,15,15,15,15,0,"1,000","1,000",0,5,5,0,0,0,0
+188,Medal,Any,Fritto's Friend,None,Obtainable,0,10,10,10,10,0,500,500,0,3,3,0,0,0,0
+189,Medal,Any,The Hotness,None,Obtainable,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0
+190,Medal,Any,Eyes on Me,None,Obtainable,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0
+191,Medal,Any,Epitome of Beauty,None,Obtainable,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0
+192,Medal,Any,Human Enough,None,Obtainable,0,0,0,0,0,0,0,0,0,0,0,0,0,10,10
+193,Medal,Any,Midas's Touch,None,Obtainable,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0
+194,Medal,Any,Troubled Youth,None,Obtainable,0,0,0,0,0,0,0,0,0,0,0,0,0,3,3
 195,Medal,Any,Hand of the Family,None,Obtainable,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0
-196,Medal,Any,Fritto's Friend,None,Obtainable,0,10,10,10,10,0,500,500,0,3,3,0,0,0,0
-197,Medal,Any,Patience Incarnate,None,Obtainable,0,0,0,0,0,0,700,700,0,0,0,0,0,0,0
-198,Medal,Any,Beauty of Patience,None,Obtainable,0,0,0,0,0,0,500,500,0,0,0,0,0,0,0
-199,Medal,Any,"No Pain, No Gain",None,Obtainable,0,0,0,0,0,0,300,300,0,0,0,0,0,0,0
-200,Medal,Any,Human Enough,None,Obtainable,0,0,0,0,0,0,0,0,0,0,0,0,0,10,10
-201,Medal,Any,Bard,None,Obtainable,0,0,0,0,0,0,0,0,0,0,0,0,0,7,7
-202,Medal,Any,Hawk's Eyes,None,Obtainable,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0
-203,Medal,Any,Clairvoyant,None,Obtainable,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0
-204,Medal,Any,Fairy's Pupil,None,Obtainable,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0
-205,Medal,Any,King's Dignity,None,Obtainable,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0
-206,Medal,Any,Wonderful Pet Owner,None,Obtainable,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-207,Medal,Any,Outstanding Citizen,None,Obtainable,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-208,Medal,Any,Tristan's Successor,None,Obtainable,0,2,2,2,2,0,0,0,0,0,0,0,0,0,0
-209,Medal,Any,Veteran Hunter,None,Obtainable,0,1,1,1,1,0,0,0,0,0,0,0,0,5,2
-210,Medal,Any,Quest Specialist,None,Obtainable,0,3,3,3,3,0,0,0,0,0,0,0,0,0,10
+196,Medal,Any,Patience Incarnate,None,Obtainable,0,0,0,0,0,0,700,700,0,0,0,0,0,0,0
+197,Medal,Any,Hawk's Eyes,None,Obtainable,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0
+198,Medal,Any,Expert's Heart,None,Obtainable,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0
+199,Medal,Any,Beauty of Patience,None,Obtainable,0,0,0,0,0,0,500,500,0,0,0,0,0,0,0
+200,Medal,Any,Clairvoyant,None,Obtainable,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0
+201,Medal,Any,Fairy's Pupil,None,Obtainable,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0
+202,Medal,Any,"No Pain, No Gain",None,Obtainable,0,0,0,0,0,0,300,300,0,0,0,0,0,0,0
+203,Medal,Any,King's Dignity,None,Obtainable,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0
+204,Medal,Any,Bearded Ambition,None,Obtainable,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0
+205,Medal,Any,Humble Honor,None,Obtainable,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0
+206,Medal,Any,Tristan's Successor,None,Obtainable,0,2,2,2,2,0,0,0,0,0,0,0,0,0,0
+207,Medal,Any,Wonderful Pet Owner,None,Obtainable,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+208,Medal,Any,Outstanding Citizen,None,Obtainable,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+209,Medal,Any,Celebrity,None,Obtainable,0,1,1,1,1,0,5,0,0,0,0,0,0,0,0
+210,Medal,Any,Veteran Hunter,None,Obtainable,0,1,1,1,1,0,0,0,0,0,0,0,0,5,2
 211,Medal,Any,Diligent Explorer,None,Obtainable,0,1,1,1,1,0,20,0,0,0,0,0,0,0,0
-212,Medal,Any,Mystic Von Leon's Nightmare,None,Event,75,10,0,0,0,0,0,0,0,2,2,0,0,0,0
-213,Medal,Any,Mystic Arkarium's Nightmare,None,Event,75,0,0,0,10,0,0,0,0,2,2,0,0,0,0
-214,Medal,Any,Mystic Hilla's Nightmare,None,Event,75,0,10,0,0,0,0,0,0,2,2,0,0,0,0
-215,Medal,Any,Mystic Zakum's Nightmare,None,Event,75,0,0,10,0,0,0,0,0,2,2,0,0,0,0
-216,Medal,Any,Mystic Horntail's Nightmare,None,Event,75,0,0,0,0,0,500,500,0,2,2,0,0,0,0
-217,Medal,Any,Mystic Gate Researcher,None,Event,75,0,0,0,0,5,0,0,0,3,3,0,0,0,0
-218,Medal,Any,Blooming Maple,None,Event,0,0,0,0,0,18 (KMS only),950,950,0,7,7,0,0,0,0
-219,Medal,Any,Celebrity,None,Obtainable,0,1,1,1,1,0,5,0,0,0,0,0,0,0,0
-220,Medal,Any,14th Street Celeb,None,Event,0,14,14,14,14,0,750,750,0,7,7,0,0,0,0
-221,Medal,Any,Maple Treasure Medal,Maple Treasure,Event,110,10,10,10,10,0,200,200,80,7,7,0,0,0,0
-222,Medal,Any,Hotel Maple VIP Member,None,Event,0,16,16,16,16,0,850,850,0,7,7,0,0,0,0
-223,Medal,Any,Pixel Hero,None,Event,0,15,15,15,15,0,750,750,0,7,7,0,0,0,0
-224,Medal,Resistance,Special Training Superior,None,Resistance,200,0,0,0,0,0,50,0,0,3,8,0,0,0,0
-225,Medal,Kanna,Yin and Yang,None,Kanna,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
-226,Medal,Resistance,Special Training Superior,None,Resistance,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
-227,Medal,Any,Future Warrior,None,Event,33,15,15,15,15,0,500,500,0,8,8,0,0,0,0
-228,Medal,Kinesis,Rook: Challenge Without Retreat,None,Kinesis,60,3,3,3,3,0,150,0,0,0,0,0,0,0,0
-229,Medal,Kinesis,Knight: Move of Agony,None,Kinesis,30,0,0,0,0,0,100,0,0,0,0,0,0,0,0
-230,Medal,Kinesis,Pawn: First Step,None,Kinesis,10,0,0,0,0,0,50,0,0,0,0,0,0,0,0
-231,Medal,Zero,Child of the Goddess,None,Zero,180,0,0,0,0,0,0,0,0,2,2,0,0,0,0
-232,Medal,Zero,Shadow Knight,None,Zero,100,0,0,0,0,0,0,0,0,1,1,0,0,0,0
-233,Medal,Kinesis,King: Master of Space and Time,None,Kinesis,200,0,0,0,0,0,50,0,0,0,3,0,0,0,0
-234,Medal,Hoyoung,Indomitable Spirit,None,Hoyoung,200,0,0,0,0,0,0,0,0,3,0,0,0,0,0
-235,Medal,Hoyoung,Taoist Mage,None,Hoyoung,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
-236,Medal,Hoyoung,Sly Sage,None,Hoyoung,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
-237,Medal,Hoyoung,Way of Three Paths,None,Hoyoung,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
-238,Medal,Hoyoung,Dreaming of Blue Clouds,None,Hoyoung,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
-239,Medal,Lara,Hope Bringer,None,Lara,200,0,0,0,0,0,0,0,0,0,3,0,0,0,0
-240,Medal,Lara,Protector of the Precious,None,Lara,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
-241,Medal,Lara,Friend of the Land Spirits,None,Lara,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
-242,Medal,Kinesis,Queen: The Dominator,None,Kinesis,100,4,4,4,4,0,200,0,0,0,0,0,0,0,0
-243,Medal,Lara,Reader of Dragon Veins,None,Lara,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
-244,Medal,Lara,Apprentice Earthseer,None,Lara,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
-245,Medal,Illium,Wings of Brilliance,None,Illium,200,0,0,0,0,0,0,0,0,0,3,0,0,0,0
-246,Medal,Illium,Sanctuary's Hope,None,Illium,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
-247,Medal,Illium,Feeble Newcomer,None,Illium,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
-248,Medal,Adele,Sword of the Light,None,Adele,200,0,0,0,0,0,0,0,0,3,0,0,0,0,0
-249,Medal,Adele,Voidbreaker,None,Adele,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
-250,Medal,Adele,Steadfast,None,Adele,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
-251,Medal,Adele,Oathbound,None,Adele,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
-252,Medal,Angelic Buster,Superstar,None,Angelic Buster,200,0,0,0,0,0,300,0,0,3,0,0,0,0,0
-253,Medal,Illium,Chosen Promise,None,Illium,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
-254,Medal,Illium,Wanderer,None,Illium,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
-255,Medal,Angelic Buster,Battleground Idol,None,Angelic Buster,100,2,2,2,2,0,250,0,0,0,0,0,0,0,0
-256,Medal,Angelic Buster,Pink Angel,None,Angelic Buster,60,1,1,1,1,0,200,0,0,0,0,0,0,0,0
-257,Medal,Angelic Buster,Agent of Justice,None,Angelic Buster,30,0,0,0,0,0,150,0,0,0,0,0,0,0,0
-258,Medal,Xenon,Last One Home,None,Xenon,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
-259,Medal,Xenon,Border Patrol,None,Xenon,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
-260,Medal,Xenon,Captain Freedom,None,Xenon,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
-261,Medal,Xenon,Secret Agent,None,Xenon,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
-262,Medal,Demon Avenger,Ultimate Avenger,None,Demon Avenger,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
-263,Medal,Xenon,Memory Seeker,None,Xenon,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
-264,Medal,Demon Avenger,Fury Incarnate,None,Demon Avenger,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
-265,Medal,Demon Avenger,Rage Master,None,Demon Avenger,100,2,2,2,2,0,200,0,0,0,0,0,0,0,0
-266,Medal,Demon Avenger,Rage Acolyte,None,Demon Avenger,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
-267,Medal,Demon Slayer,Vengeance Incarnate,None,Demon Slayer,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
-268,Medal,Demon Slayer,Dark Hero,None,Demon Slayer,100,2,2,2,2,0,200,0,0,0,0,0,0,0,0
-269,Medal,Adele,Legendary Knight,None,Adele,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
-270,Medal,Demon Slayer,Awakened Demon,None,Demon Slayer,60,1,1,1,1,0,150,0,0,0,0,0,0,0,0
-271,Medal,Demon Slayer,Dark Warrior,None,Demon Slayer,30,0,0,0,0,0,100,0,0,0,0,0,0,0,0
-272,Medal,Demon Slayer,Demon Reborn,None,Demon Slayer,10,0,0,0,0,0,50,0,0,0,0,0,0,0,0
-273,Medal,Angelic Buster,Nova Contractor,None,Angelic Buster,10,0,0,0,0,0,100,0,0,0,0,0,0,0,0
-274,Medal,Cadena,Pioneer of Destiny,None,Cadena,200,0,0,0,0,0,0,0,0,3,0,0,0,0,0
-275,Medal,Cadena,Shadow of Two Worlds,None,Cadena,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
-276,Medal,Cadena,Grandis Shadow,None,Cadena,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
-277,Medal,Cadena,Back Alley Shadow,None,Cadena,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
-278,Medal,Cadena,Big City Shadow,None,Cadena,10,0,0,0,0,0,100,100,0,0,0,0,0,0,0
-279,Medal,Kain,Darkness Chaser,None,Kain,200,0,0,0,0,0,0,0,0,3,0,0,0,0,0
-280,Medal,Kain,Successor of Malice,None,Kain,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
-281,Medal,Kain,Memory Chaser,None,Kain,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
-282,Medal,Kain,Judge of Anger,None,Kain,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
-283,Medal,Kain,Night Seeker,None,Kain,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
-284,Medal,Kaiser,Kaiser's Successor,None,Kaiser,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
-285,Medal,Kaiser,Awakened Kaiser,None,Kaiser,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
-286,Medal,Kaiser,Kaiser's Fated Path,None,Kaiser,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
-287,Medal,Kaiser,Kaiser Reborn,None,Kaiser,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
-288,Medal,Resistance,Special Training Graduate,None,Resistance,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
-289,Medal,Resistance,Special Training Intermediate,None,Resistance,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
-290,Medal,Resistance,Special Training Beginner,None,Resistance,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
-291,Medal,Kaiser,Ascendant,None,Kaiser,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
-292,Medal,Beast Tamer,SQUEEEE!!,None,Beast Tamer,115,0,0,0,0,0,50,0,25,0,3,0,0,0,0
-293,Medal,Beast Tamer,Maple World's Next Top Model,None,Beast Tamer,115,0,0,0,0,0,50,0,0,0,0,0,0,0,0
-294,Medal,Beast Tamer,"Pretentious, Much?",None,Beast Tamer,115,0,0,0,0,0,50,0,0,0,6,0,0,0,0
-295,Medal,Beast Tamer,This Charming Man,None,Beast Tamer,115,0,0,0,0,0,50,0,0,0,3,0,3,0,0
-296,Medal,Beast Tamer,Nature Guardian,None,Beast Tamer,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
-297,Medal,Beast Tamer,Forest Protector,None,Beast Tamer,50,1,1,1,1,0,150,150,0,0,0,0,0,0,0
-298,Medal,Beast Tamer,Tree Fairy,None,Beast Tamer,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
-299,Medal,Beast Tamer,Sprout Guardian,None,Beast Tamer,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
-300,Medal,Kanna,Master of Onmyoudou,None,Kanna,200,0,0,0,0,0,50,0,0,0,3,0,0,0,0
-301,Medal,Kanna,Onmyouji,None,Kanna,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
-302,Medal,Kanna,All-Seer,None,Kanna,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
-303,Medal,Hayato,Master of Wind and Steel,None,Hayato,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
-304,Medal,Hayato,Master of the Razor Gale,None,Hayato,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
-305,Medal,Hayato,Master of the Morning Moon,None,Hayato,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
-306,Medal,Hayato,The Bladed Falcon,None,Hayato,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
-307,Medal,Hayato,Master of Bushido,None,Hayato,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
-308,Medal,Jett,Awakened Jett,None,Jett,100,2,2,2,2,0,250,0,0,0,0,0,0,0,0
-309,Medal,Jett,A Ready Hunter,None,Jett,60,1,1,1,1,0,200,0,0,0,0,0,0,0,0
-310,Medal,Jett,With Strength Renewed,None,Jett,30,0,0,0,0,0,150,0,0,0,0,0,0,0,0
-311,Medal,Kanna,Cacophonous Kanna,None,Kanna,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
-312,Medal,Pathfinder,Dark Delver,None,Pathfinder,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
-313,Medal,Pathfinder,Daring Explorer,None,Pathfinder,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
-314,Medal,Pathfinder,Cursed Seeker,None,Pathfinder,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
-315,Medal,Explorer Pirate + Jett,King Pirate,None,Explorers,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
-316,Medal,Explorer Bowman,Lord Sniper,None,Explorers,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
-317,Medal,Luminous,Adversary of Destiny,None,Luminous,200,0,0,0,0,0,50,0,0,0,3,0,0,0,0
-318,Medal,Luminous,Guardian of Equilibrium,None,Luminous,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
-319,Medal,Luminous,Master of Darkness,None,Luminous,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
-320,Medal,Explorer Thief,Legendary Thief,None,Explorers,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
-321,Medal,Luminous,Conquerer of Darkness,None,Luminous,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
-322,Medal,Luminous,In both Darkness and Light,None,Luminous,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
-323,Medal,Luminous,Bastion of Light,None,Luminous,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
-324,Medal,Shade,Forgotten Hero,None,Shade,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
-325,Medal,Shade,Foxy,None,Shade,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
-326,Medal,Phantom,Master Thief Phantom,None,Phantom,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
-327,Medal,Phantom,The Mind of the Raven,None,Phantom,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
-328,Medal,Phantom,Without a Trace,None,Phantom,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
-329,Medal,Mercedes,Ruler of Elves,None,Mercedes,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
-330,Medal,Mercedes,Elven Hero,None,Mercedes,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
-331,Medal,Mercedes,Elven Noble,None,Mercedes,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
-332,Medal,Mercedes,Elf of Elluel,None,Mercedes,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
-333,Medal,Mercedes,"A Hero, No More",None,Mercedes,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
-334,Medal,Evan,Hero's Successor,None,Evan,200,0,0,0,0,0,50,0,0,0,8,0,0,0,0
-335,Medal,Evan,Secret Organization Temporary Member,None,Evan,46,0,0,0,0,0,120,120,0,0,0,0,0,0,0
-336,Medal,Phantom,The One Who Remembers,None,Phantom,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
-337,Medal,Evan,Perion Guard,None,Evan,21,0,0,0,0,0,80,80,0,0,0,0,0,0,0
-338,Medal,Evan,Well-Behaved Child,None,Evan,14,0,0,0,0,0,50,50,0,0,0,0,0,0,0
-339,Medal,Evan,Kerning City Honorary Citizen,None,Evan,32,0,0,0,0,0,100,100,0,0,0,0,0,0,0
-340,Medal,Aran,Aran in Hope,None,Aran,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
-341,Medal,Evan,Dragon Master,None,Evan,60,1,1,1,1,0,160,160,0,0,0,0,0,0,0
-342,Medal,Aran,Aran in Misery,None,Aran,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
-343,Medal,Aran,Aran in Memory,None,Aran,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
-344,Medal,Aran,Aran the Hero,None,Aran,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
-345,Medal,Aran,Awakened Aran,None,Aran,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
-346,Medal,Mihile,True Knight of Light,None,Mihile,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
-347,Medal,Mihile,Chief Knight of Light,None,Mihile,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
-348,Medal,Mihile,Official Knight of Light,None,Mihile,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
-349,Medal,Mihile,Apprentice Knight of Light,None,Mihile,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
-350,Medal,Cygnus Knights,Captain Knight,None,Cygnus,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
-351,Medal,Mihile,Newborn Light,None,Mihile,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
-352,Medal,Cygnus Knights,Advanced Knight,None,Cygnus,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
-353,Medal,Cygnus Knights,Official Knight,None,Cygnus,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
-354,Medal,Cygnus Knights,Training Knight,None,Cygnus,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
-355,Medal,Pathfinder,Heir of the Ancients,None,Pathfinder,200,0,0,0,0,0,0,0,0,3,0,0,0,0,0
-356,Medal,Pathfinder,Bold Trailblazer,None,Pathfinder,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
-357,Medal,Explorer Magician,Wiseman,None,Explorers,200,0,0,0,0,0,50,0,0,0,3,0,0,0,0
-358,Medal,Explorers,Master Adventurer,None,Explorers,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
-359,Medal,Explorers,Veteran Adventurer,None,Explorers,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
-360,Medal,Cygnus Knights,Cygnus Constellation,None,Cygnus,200,0,0,0,0,0,200,200,0,3,3,0,0,0,0
-361,Medal,Explorers,Junior Adventurer,None,Explorers,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
-362,Medal,Explorers,Beginner Adventurer,None,Explorers,8,0,0,0,0,0,50,50,0,0,0,0,0,0,0
-363,Medal,Explorer Warrior,Gallant Warrior,None,Explorers,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
+212,Medal,Any,Quest Specialist,None,Obtainable,0,3,3,3,3,0,0,0,0,0,0,0,0,0,10
+213,Medal,Any,Mystic Von Leon's Nightmare,None,Event,75,10,0,0,0,0,0,0,0,2,2,0,0,0,0
+214,Medal,Any,Mystic Arkarium's Nightmare,None,Event,75,0,0,0,10,0,0,0,0,2,2,0,0,0,0
+215,Medal,Any,Mystic Hilla's Nightmare,None,Event,75,0,10,0,0,0,0,0,0,2,2,0,0,0,0
+216,Medal,Any,Mystic Zakum's Nightmare,None,Event,75,0,0,10,0,0,0,0,0,2,2,0,0,0,0
+217,Medal,Any,Mystic Horntail's Nightmare,None,Event,75,0,0,0,0,0,500,500,0,2,2,0,0,0,0
+218,Medal,Any,Mystic Gate Researcher,None,Event,75,0,0,0,0,5,0,0,0,3,3,0,0,0,0
+219,Medal,Any,Blooming Maple,None,Event,0,0,0,0,0,18 (KMS only),950,950,0,7,7,0,0,0,0
+220,Medal,Beast Tamer,SQUEEEE!!,None,Beast Tamer,115,0,0,0,0,0,50,0,25,0,3,0,0,0,0
+221,Medal,Beast Tamer,Forest Protector,None,Beast Tamer,50,1,1,1,1,0,150,150,0,0,0,0,0,0,0
+222,Medal,Beast Tamer,Tree Fairy,None,Beast Tamer,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
+223,Medal,Beast Tamer,"Pretentious, Much?",None,Beast Tamer,115,0,0,0,0,0,50,0,0,0,6,0,0,0,0
+224,Medal,Beast Tamer,This Charming Man,None,Beast Tamer,115,0,0,0,0,0,50,0,0,0,3,0,3,0,0
+225,Medal,Kanna,Master of Onmyoudou,None,Kanna,200,0,0,0,0,0,50,0,0,0,3,0,0,0,0
+226,Medal,Beast Tamer,Nature Guardian,None,Beast Tamer,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
+227,Medal,Beast Tamer,Sprout Guardian,None,Beast Tamer,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
+228,Medal,Aran,Aran the Hero,None,Aran,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
+229,Medal,Evan,Well-Behaved Child,None,Evan,14,0,0,0,0,0,50,50,0,0,0,0,0,0,0
+230,Medal,Aran,Aran in Hope,None,Aran,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
+231,Medal,Pathfinder,Cursed Seeker,None,Pathfinder,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
+232,Medal,Explorer Pirate + Jett,King Pirate,None,Explorers,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
+233,Medal,Pathfinder,Dark Delver,None,Pathfinder,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
+234,Medal,Pathfinder,Daring Explorer,None,Pathfinder,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
+235,Medal,Beast Tamer,Maple World's Next Top Model,None,Beast Tamer,115,0,0,0,0,0,50,0,0,0,0,0,0,0,0
+236,Medal,Aran,Aran in Misery,None,Aran,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
+237,Medal,Luminous,Adversary of Destiny,None,Luminous,200,0,0,0,0,0,50,0,0,0,3,0,0,0,0
+238,Medal,Shade,Forgotten Hero,None,Shade,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
+239,Medal,Luminous,Guardian of Equilibrium,None,Luminous,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
+240,Medal,Luminous,Master of Darkness,None,Luminous,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
+241,Medal,Luminous,Bastion of Light,None,Luminous,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
+242,Medal,Shade,Foxy,None,Shade,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
+243,Medal,Luminous,In both Darkness and Light,None,Luminous,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
+244,Medal,Phantom,The One Who Remembers,None,Phantom,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
+245,Medal,Phantom,Master Thief Phantom,None,Phantom,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
+246,Medal,Phantom,The Mind of the Raven,None,Phantom,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
+247,Medal,Phantom,Without a Trace,None,Phantom,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
+248,Medal,Mercedes,Elven Hero,None,Mercedes,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
+249,Medal,Mercedes,Ruler of Elves,None,Mercedes,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
+250,Medal,Mercedes,"A Hero, No More",None,Mercedes,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
+251,Medal,Mercedes,Elven Noble,None,Mercedes,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
+252,Medal,Mercedes,Elf of Elluel,None,Mercedes,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
+253,Medal,Evan,Hero's Successor,None,Evan,200,0,0,0,0,0,50,0,0,0,8,0,0,0,0
+254,Medal,Evan,Dragon Master,None,Evan,60,1,1,1,1,0,160,160,0,0,0,0,0,0,0
+255,Medal,Luminous,Conquerer of Darkness,None,Luminous,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
+256,Medal,Evan,Secret Organization Temporary Member,None,Evan,46,0,0,0,0,0,120,120,0,0,0,0,0,0,0
+257,Medal,Evan,Kerning City Honorary Citizen,None,Evan,32,0,0,0,0,0,100,100,0,0,0,0,0,0,0
+258,Medal,Hoyoung,Indomitable Spirit,None,Hoyoung,200,0,0,0,0,0,0,0,0,3,0,0,0,0,0
+259,Medal,Hoyoung,Sly Sage,None,Hoyoung,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
+260,Medal,Hoyoung,Taoist Mage,None,Hoyoung,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
+261,Medal,Evan,Perion Guard,None,Evan,21,0,0,0,0,0,80,80,0,0,0,0,0,0,0
+262,Medal,Hoyoung,Way of Three Paths,None,Hoyoung,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
+263,Medal,Aran,Awakened Aran,None,Aran,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
+264,Medal,Hoyoung,Dreaming of Blue Clouds,None,Hoyoung,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
+265,Medal,Lara,Hope Bringer,None,Lara,200,0,0,0,0,0,0,0,0,0,3,0,0,0,0
+266,Medal,Lara,Protector of the Precious,None,Lara,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
+267,Medal,Lara,Reader of Dragon Veins,None,Lara,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
+268,Medal,Lara,Friend of the Land Spirits,None,Lara,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
+269,Medal,Aran,Aran in Memory,None,Aran,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
+270,Medal,Mihile,True Knight of Light,None,Mihile,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
+271,Medal,Mihile,Chief Knight of Light,None,Mihile,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
+272,Medal,Mihile,Official Knight of Light,None,Mihile,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
+273,Medal,Mihile,Apprentice Knight of Light,None,Mihile,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
+274,Medal,Cygnus Knights,Captain Knight,None,Cygnus,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
+275,Medal,Mihile,Newborn Light,None,Mihile,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
+276,Medal,Cygnus Knights,Cygnus Constellation,None,Cygnus,200,0,0,0,0,0,200,200,0,3,3,0,0,0,0
+277,Medal,Illium,Wings of Brilliance,None,Illium,200,0,0,0,0,0,0,0,0,0,3,0,0,0,0
+278,Medal,Cygnus Knights,Training Knight,None,Cygnus,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
+279,Medal,Pathfinder,Heir of the Ancients,None,Pathfinder,200,0,0,0,0,0,0,0,0,3,0,0,0,0,0
+280,Medal,Pathfinder,Bold Trailblazer,None,Pathfinder,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
+281,Medal,Cygnus Knights,Official Knight,None,Cygnus,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
+282,Medal,Lara,Apprentice Earthseer,None,Lara,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
+283,Medal,Cygnus Knights,Advanced Knight,None,Cygnus,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
+284,Medal,Illium,Sanctuary's Hope,None,Illium,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
+285,Medal,Illium,Chosen Promise,None,Illium,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
+286,Medal,Illium,Wanderer,None,Illium,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
+287,Medal,Illium,Feeble Newcomer,None,Illium,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
+288,Medal,Adele,Voidbreaker,None,Adele,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
+289,Medal,Adele,Sword of the Light,None,Adele,200,0,0,0,0,0,0,0,0,3,0,0,0,0,0
+290,Medal,Adele,Steadfast,None,Adele,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
+291,Medal,Adele,Oathbound,None,Adele,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
+292,Medal,Adele,Legendary Knight,None,Adele,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
+293,Medal,Angelic Buster,Superstar,None,Angelic Buster,200,0,0,0,0,0,300,0,0,3,0,0,0,0,0
+294,Medal,Angelic Buster,Battleground Idol,None,Angelic Buster,100,2,2,2,2,0,250,0,0,0,0,0,0,0,0
+295,Medal,Angelic Buster,Agent of Justice,None,Angelic Buster,30,0,0,0,0,0,150,0,0,0,0,0,0,0,0
+296,Medal,Angelic Buster,Pink Angel,None,Angelic Buster,60,1,1,1,1,0,200,0,0,0,0,0,0,0,0
+297,Medal,Explorer Thief,Legendary Thief,None,Explorers,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
+298,Medal,Kinesis,King: Master of Space and Time,None,Kinesis,200,0,0,0,0,0,50,0,0,0,3,0,0,0,0
+299,Medal,Kinesis,Queen: The Dominator,None,Kinesis,100,4,4,4,4,0,200,0,0,0,0,0,0,0,0
+300,Medal,Kinesis,Rook: Challenge Without Retreat,None,Kinesis,60,3,3,3,3,0,150,0,0,0,0,0,0,0,0
+301,Medal,Kinesis,Knight: Move of Agony,None,Kinesis,30,0,0,0,0,0,100,0,0,0,0,0,0,0,0
+302,Medal,Kinesis,Pawn: First Step,None,Kinesis,10,0,0,0,0,0,50,0,0,0,0,0,0,0,0
+303,Medal,Explorer Bowman,Lord Sniper,None,Explorers,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
+304,Medal,Explorer Magician,Wiseman,None,Explorers,200,0,0,0,0,0,50,0,0,0,3,0,0,0,0
+305,Medal,Explorers,Master Adventurer,None,Explorers,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
+306,Medal,Explorers,Veteran Adventurer,None,Explorers,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
+307,Medal,Explorer Warrior,Gallant Warrior,None,Explorers,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
+308,Medal,Explorers,Junior Adventurer,None,Explorers,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
+309,Medal,Explorers,Beginner Adventurer,None,Explorers,8,0,0,0,0,0,50,50,0,0,0,0,0,0,0
+310,Medal,Angelic Buster,Nova Contractor,None,Angelic Buster,10,0,0,0,0,0,100,0,0,0,0,0,0,0,0
+311,Medal,Cadena,Pioneer of Destiny,None,Cadena,200,0,0,0,0,0,0,0,0,3,0,0,0,0,0
+312,Medal,Kain,Darkness Chaser,None,Kain,200,0,0,0,0,0,0,0,0,3,0,0,0,0,0
+313,Medal,Cadena,Shadow of Two Worlds,None,Cadena,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
+314,Medal,Cadena,Grandis Shadow,None,Cadena,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
+315,Medal,Cadena,Back Alley Shadow,None,Cadena,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
+316,Medal,Cadena,Big City Shadow,None,Cadena,10,0,0,0,0,0,100,100,0,0,0,0,0,0,0
+317,Medal,Kain,Successor of Malice,None,Kain,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
+318,Medal,Kain,Judge of Anger,None,Kain,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
+319,Medal,Kain,Memory Chaser,None,Kain,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
+320,Medal,Kain,Night Seeker,None,Kain,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
+321,Medal,Kaiser,Ascendant,None,Kaiser,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
+322,Medal,Kaiser,Kaiser's Successor,None,Kaiser,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
+323,Medal,Kaiser,Awakened Kaiser,None,Kaiser,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
+324,Medal,Kaiser,Kaiser Reborn,None,Kaiser,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
+325,Medal,Kaiser,Kaiser's Fated Path,None,Kaiser,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
+326,Medal,Xenon,Last One Home,None,Xenon,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
+327,Medal,Zero,Child of the Goddess,None,Zero,180,0,0,0,0,0,0,0,0,2,2,0,0,0,0
+328,Medal,Xenon,Border Patrol,None,Xenon,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
+329,Medal,Zero,Shadow Knight,None,Zero,100,0,0,0,0,0,0,0,0,1,1,0,0,0,0
+330,Medal,Xenon,Memory Seeker,None,Xenon,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
+331,Medal,Demon Avenger,Ultimate Avenger,None,Demon Avenger,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
+332,Medal,Demon Slayer,Vengeance Incarnate,None,Demon Slayer,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
+333,Medal,Xenon,Captain Freedom,None,Xenon,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
+334,Medal,Xenon,Secret Agent,None,Xenon,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
+335,Medal,Demon Avenger,Rage Master,None,Demon Avenger,100,2,2,2,2,0,200,0,0,0,0,0,0,0,0
+336,Medal,Demon Avenger,Fury Incarnate,None,Demon Avenger,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
+337,Medal,Demon Avenger,Rage Acolyte,None,Demon Avenger,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
+338,Medal,Demon Slayer,Dark Hero,None,Demon Slayer,100,2,2,2,2,0,200,0,0,0,0,0,0,0,0
+339,Medal,Demon Slayer,Demon Reborn,None,Demon Slayer,10,0,0,0,0,0,50,0,0,0,0,0,0,0,0
+340,Medal,Demon Slayer,Awakened Demon,None,Demon Slayer,60,1,1,1,1,0,150,0,0,0,0,0,0,0,0
+341,Medal,Demon Slayer,Dark Warrior,None,Demon Slayer,30,0,0,0,0,0,100,0,0,0,0,0,0,0,0
+342,Medal,Resistance,Special Training Superior,None,Resistance,200,0,0,0,0,0,50,0,0,3,8,0,0,0,0
+343,Medal,Resistance,Special Training Superior,None,Resistance,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
+344,Medal,Resistance,Special Training Intermediate,None,Resistance,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
+345,Medal,Resistance,Special Training Graduate,None,Resistance,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
+346,Medal,Any,Pixel Hero,None,Event,0,15,15,15,15,0,750,750,0,7,7,0,0,0,0
+347,Medal,Resistance,Special Training Beginner,None,Resistance,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
+348,Medal,Any,Hotel Maple VIP Member,None,Event,0,16,16,16,16,0,850,850,0,7,7,0,0,0,0
+349,Medal,Any,14th Street Celeb,None,Event,0,14,14,14,14,0,750,750,0,7,7,0,0,0,0
+350,Medal,Any,Future Warrior,None,Event,33,15,15,15,15,0,500,500,0,8,8,0,0,0,0
+351,Medal,Kanna,All-Seer,None,Kanna,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
+352,Medal,Hayato,Master of the Morning Moon,None,Hayato,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
+353,Medal,Kanna,Yin and Yang,None,Kanna,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
+354,Medal,Kanna,Onmyouji,None,Kanna,60,1,1,1,1,0,150,150,0,0,0,0,0,0,0
+355,Medal,Kanna,Cacophonous Kanna,None,Kanna,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
+356,Medal,Hayato,Master of Wind and Steel,None,Hayato,100,2,2,2,2,0,200,200,0,0,0,0,0,0,0
+357,Medal,Any,Maple Treasure Medal,Maple Treasure,Event,110,10,10,10,10,0,200,200,80,7,7,0,0,0,0
+358,Medal,Hayato,Master of the Razor Gale,None,Hayato,200,0,0,0,0,0,50,0,0,3,0,0,0,0,0
+359,Medal,Hayato,The Bladed Falcon,None,Hayato,30,0,0,0,0,0,100,100,0,0,0,0,0,0,0
+360,Medal,Jett,With Strength Renewed,None,Jett,30,0,0,0,0,0,150,0,0,0,0,0,0,0,0
+361,Medal,Jett,Awakened Jett,None,Jett,100,2,2,2,2,0,250,0,0,0,0,0,0,0,0
+362,Medal,Hayato,Master of Bushido,None,Hayato,10,0,0,0,0,0,50,50,0,0,0,0,0,0,0
+363,Medal,Jett,A Ready Hunter,None,Jett,60,1,1,1,1,0,200,0,0,0,0,0,0,0,0

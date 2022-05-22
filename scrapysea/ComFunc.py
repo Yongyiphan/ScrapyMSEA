@@ -34,6 +34,8 @@ def replaceN(string, parameter, replacement = ''):
 def removeB(list):
     return [value.strip('\n') for value in list if value.strip(' ') != '\n']
 
+def DeepCopyDict(Base):
+        return {key: value for key, value in Base.items()}
 
 def returnPotLevel(lvl):
     lvl = int(lvl)

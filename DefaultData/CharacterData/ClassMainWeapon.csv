@@ -1,62 +1,62 @@
 ,ClassName,Weapon
-0,"Arch Mage (Fire, Poison)",Wand
-1,"Arch Mage (Fire, Poison)",Staff
-2,Hero,One Handed Sword
-3,Hero,Two Handed Sword
-4,Hero,One Handed Axe
-5,Hero,Two Handed Axe
-6,Marksman,Crossbow
-7,Shadower,Dagger
-8,Dual Blade,Dagger
-9,Pathfinder,Ancient Bow
-10,Bowmaster,Bow
-11,Night Lord,Claw
-12,"Arch Mage (Ice, Lightning)",Wand
-13,"Arch Mage (Ice, Lightning)",Staff
-14,Bishop,Wand
-15,Bishop,Staff
-16,Dark Knight,Spear
-17,Dark Knight,Polearm
-18,Paladin,One Handed Sword
-19,Paladin,Two Handed Sword
-20,Paladin,One Handed Blunt Weapon
-21,Paladin,Two Handed Blunt Weapon
-22,Thunder Breaker,Knuckle
-23,Zero,Long Sword
-24,Dawn Warrior,One Handed Sword
-25,Dawn Warrior,Two Handed Sword
-26,Corsair,Gun
-27,Buccaneer,Knuckle
-28,Kinesis,Psy Limiter
-29,Lara,Wand
-30,Hoyoung,Buchae
-31,Illium,Magic Gauntlet
-32,Ark,Knuckle
-33,Adele,Tuner
-34,Hayato,Katana
-35,Kanna,Fan
-36,Kain,Whispershot
-37,Cadena,Chain
-38,Kaiser,Two Handed Sword
-39,Angelic Buster,Soul Shooter
-40,Demon Avenger,Desperado
-41,Demon Slayer,One Handed Blunt Weapon
-42,Demon Slayer,One Handed Axe
-43,Xenon,Whip Blade
-44,Wild Hunter,Crossbow
-45,Mechanic,Gun
-46,Blaster,Arm Cannon
-47,Battle Mage,Staff
-48,Shade,Knuckle
-49,Evan,Wand
-50,Evan,Staff
-51,Luminous,Shining Rod
-52,Aran,Polearm
-53,Phantom,Cane
-54,Mercedes,Dual Bowguns
-55,Mihile,One Handed Sword
-56,Blaze Wizard,Wand
-57,Blaze Wizard,Staff
-58,Wind Archer,Bow
-59,Night Walker,Claw
-60,Cannoneer,Hand Cannon
+0,Hero,One Handed Sword
+1,Hero,Two Handed Sword
+2,Hero,One Handed Axe
+3,Hero,Two Handed Axe
+4,Aran,Polearm
+5,Luminous,Shining Rod
+6,Mechanic,Gun
+7,Evan,Wand
+8,Evan,Staff
+9,Battle Mage,Staff
+10,Phantom,Cane
+11,Blaster,Arm Cannon
+12,Shade,Knuckle
+13,Mercedes,Dual Bowguns
+14,Mihile,One Handed Sword
+15,Blaze Wizard,Wand
+16,Blaze Wizard,Staff
+17,Wind Archer,Bow
+18,Night Walker,Claw
+19,Thunder Breaker,Knuckle
+20,Zero,Long Sword
+21,Kinesis,Psy Limiter
+22,Lara,Wand
+23,Hoyoung,Buchae
+24,Ark,Knuckle
+25,Adele,Tuner
+26,Kanna,Fan
+27,Illium,Magic Gauntlet
+28,Kain,Whispershot
+29,Hayato,Katana
+30,Cadena,Chain
+31,Kaiser,Two Handed Sword
+32,Angelic Buster,Soul Shooter
+33,Demon Avenger,Desperado
+34,Xenon,Whip Blade
+35,Dawn Warrior,One Handed Sword
+36,Dawn Warrior,Two Handed Sword
+37,Corsair,Gun
+38,Demon Slayer,One Handed Blunt Weapon
+39,Demon Slayer,One Handed Axe
+40,Wild Hunter,Crossbow
+41,Buccaneer,Knuckle
+42,Cannoneer,Hand Cannon
+43,Bowmaster,Bow
+44,Marksman,Crossbow
+45,Pathfinder,Ancient Bow
+46,Shadower,Dagger
+47,Night Lord,Claw
+48,Dual Blade,Dagger
+49,"Arch Mage (Fire, Poison)",Wand
+50,"Arch Mage (Fire, Poison)",Staff
+51,"Arch Mage (Ice, Lightning)",Wand
+52,"Arch Mage (Ice, Lightning)",Staff
+53,Bishop,Wand
+54,Bishop,Staff
+55,Dark Knight,Spear
+56,Dark Knight,Polearm
+57,Paladin,One Handed Sword
+58,Paladin,Two Handed Sword
+59,Paladin,One Handed Blunt Weapon
+60,Paladin,Two Handed Blunt Weapon
