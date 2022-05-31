@@ -41,7 +41,7 @@ def exec_Crawler():
     #    if if_In_String(name.lower(), "dataframe"):
     #        continue
     #    runner.crawl(s)
-    runner.crawl(CalculationsData.StarforceSpider)
+    runner.crawl(CalculationsData.HyperStatSpider)
     d = runner.join()
     d.addBoth(lambda _: reactor.stop())
     reactor.run()

@@ -7,7 +7,7 @@ from ComFunc import *
 from ComFunc import DeepCopyDict
 from ComFunc import DATABASENAME
 
-PLogger = CustomLogger.Set_Custom_Logger("PotentialSpider", logTo="./Logs/Potential.log", propagate=False)
+PLogger = CustomLogger.Set_Custom_Logger("PotentialSpider", logTo="./Logs/Calculation.log", propagate=False)
 
 class PotentialSpider(scrapy.Spider):
     
@@ -39,7 +39,7 @@ class PotentialSpider(scrapy.Spider):
         except Exception as E:
             PLogger.critical(traceback.format_exc())
         
-    def close(self, reason):
+    def close(self):
         try:
             PDF = pd.concat(self.PotentialTable['Potential'], ignore_index=True)
             CDF = pd.concat(self.CubeRates["Potential"], ignore_index=True)
@@ -279,7 +279,7 @@ class PotentialSpider(scrapy.Spider):
             PLogger.critical(traceback.format_exc())
 
 
-SFLogger = CustomLogger.Set_Custom_Logger("StarforceSpider",logTo="./Logs/Starforce.log",propagate=False )
+SFLogger = CustomLogger.Set_Custom_Logger("StarforceSpider",logTo="./Logs/Calculation.log",propagate=False )
 class StarforceSpider(scrapy.Spider):
     name = "StarforceSpider"
     start_urls = ["https://strategywiki.org/wiki/MapleStory/Spell_Trace_and_Star_Force"]
@@ -314,6 +314,7 @@ class StarforceSpider(scrapy.Spider):
         NormalDF.to_csv( "./DefaultData/CalculationData/NormalEquipSF.csv")
         SuperiorDF.to_csv( "./DefaultData/CalculationData/SuperiorItemsSF.csv")
 
+        SFLogger.info("Completed CSV export for Starforce tables")
         pass
 
     def GetStarforce(self, content):
@@ -326,14 +327,12 @@ class StarforceSpider(scrapy.Spider):
             cid = element.xpath(".//span[@class='mw-headline']/@id").get()
             if cName == "h3":
                 CurrentRecord = cid
-                SFLogger.info(CurrentRecord)
                 continue
             if cName == "h4":
                 CurrentKey = "".join(cid.split('_')[:2])
                 if if_In_String(cid, IgnoreTable):
                     SkipValue = True
                     continue
-                SFLogger.info(cid)
                 SkipValue = False
             if SkipValue:
                 continue
@@ -375,7 +374,7 @@ class StarforceSpider(scrapy.Spider):
                     continue
                 CRow[key] = ctext.strip(" \n")
             ConsolTable.append(DataFrame(CRow, index=[0]))
-
+        SFLogger.info(f"Adding StarLimit Table for {title}")
         return pd.concat(ConsolTable, ignore_index=True)
 
     def SuccessRatesTable(self, CurrentRecord, content):
@@ -405,6 +404,7 @@ class StarforceSpider(scrapy.Spider):
         
             ConsolTable.append(DataFrame(CRow, index=[0]))
 
+        SFLogger.info(f"Adding Success Rates for {CurrentRecord}")
         return pd.concat(ConsolTable, ignore_index=True)
 
     def StatsBoostsTable(self,CurrentRecord, content):
@@ -416,7 +416,6 @@ class StarforceSpider(scrapy.Spider):
             if removeB(row.xpath(".//text()").getall()) == Header:
                 continue      
             Attempt = row.xpath(".//td[1]/text()").get()
-            test = row.xpath(".//text()").getall()
             if Attempt == None:
                 continue
             SFIDs = replaceN(Attempt, ['★','→'])
@@ -457,8 +456,9 @@ class StarforceSpider(scrapy.Spider):
                         Stats = removeB(subrow.xpath(".//td[2] //text()").getall())
                         DCopy.update(self.ReturnStatDict(Stats))
                         ConsolTable.append(DataFrame(DCopy, index=[0]))
-                    pass
-        
+                SFLogger.info(f"Adding Starforce stat at {ids} for {CurrentRecord}")
+
+        SFLogger.info(f"Adding SF Stats for {CurrentRecord}")
         return pd.concat(ConsolTable, ignore_index=True)
 
     def ReturnStatDict(self, StatList):
@@ -471,9 +471,51 @@ class StarforceSpider(scrapy.Spider):
         return RDict
 
 
+#Unuser whether implementation is necessary
+class SpellTraceSpider(scrapy.Spider):
+    name = "SpellTraceSpider"
+    start_urls = ["https://strategywiki.org/wiki/MapleStory/Spell_Trace_and_Star_Force"]
+    custom_settings = {
+        "LOG_SCRAPED_ITEMS" : False
+    }
+    def parse(self, response):
+        pass
+    def close(self):
+        pass
+
 #class BonusStatSpider(scrapy.Spider):
-#class HyperStatSpider(scrapy.Spider):
 
+STLogger = CustomLogger.Set_Custom_Logger("SpellTraceSpider",logTo="./Logs/Calculation.log",propagate=False )
+class HyperStatSpider(scrapy.Spider):
+    name = "HyperStatSpider"
+    start_urls = ["https://strategywiki.org/wiki/MapleStory/Hyper_Stats"]
+    custom_settings = {
+        "LOG_SCRAPED_ITEMS" : False
+    }
+    def parse(self, response):
 
+        HyperStatDistContent =  response.xpath("//span[@id='Hyper_Stats_Points_Distribution']/parent::*/following-sibling::div[1]//table")
+        yield self.HyperStatDistribution(HyperStatDistContent)
+        pass
+    def close(self):
+        pass
+    
+    def HyperStatDistribution(self, content):
+        Header = sorted(list(set(removeB(content.xpath(".//tr //th/text()").getall()))))
+        for row in content.xpath(".//tr"):
+            t = removeB(row.xpath(".//text()").getall())
+            if sorted(t) == Header:
+                continue
+            CDict = {}
+            for i, key in enumerate(Header):
+                if if_In_String(key, "Level"):
+                    key = key.split('(')[0].strip()
+                CDict[key] = t[i]
+
+            pass
+        pass
+
+    def HyperStat(self, content):
+        pass
 
 #class FormulaSpider(scrapy.Spider):
