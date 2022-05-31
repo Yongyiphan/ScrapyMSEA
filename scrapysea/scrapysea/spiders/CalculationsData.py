@@ -1,9 +1,11 @@
+
 import traceback
 from pandas import DataFrame
 import scrapy
 import CustomLogger
 from ComFunc import *
 from ComFunc import DeepCopyDict
+from ComFunc import DATABASENAME
 
 PLogger = CustomLogger.Set_Custom_Logger("PotentialSpider", logTo="./Logs/Potential.log", propagate=False)
 
@@ -276,8 +278,202 @@ class PotentialSpider(scrapy.Spider):
         except Exception as E:
             PLogger.critical(traceback.format_exc())
 
-#class StarforceSpider(scrapy.Spider):
 
+SFLogger = CustomLogger.Set_Custom_Logger("StarforceSpider",logTo="./Logs/Starforce.log",propagate=False )
+class StarforceSpider(scrapy.Spider):
+    name = "StarforceSpider"
+    start_urls = ["https://strategywiki.org/wiki/MapleStory/Spell_Trace_and_Star_Force"]
+    custom_settings = {
+        "LOG_SCRAPED_ITEMS" : False
+    }
+
+    FinalDict = {
+        "StarLimit" : [],
+        "SuccessRates":[],
+        #StatsBoost
+        "Normal_Equips" : None,
+        "Superior_Items" : None
+        
+    }
+    MaxLvl = 300
+    def parse(self, response):
+        try:
+            StartRecords = response.xpath("//span[@id='Normal_Equip']/parent::h3/following-sibling::*")
+            yield self.GetStarforce(StartRecords)
+        except Exception as E:
+            SFLogger.critical(traceback.format_exc())
+    
+    def close(self):
+        StarLimitDF = pd.concat(self.FinalDict["StarLimit"],ignore_index=True)
+        SuccessDF = pd.concat(self.FinalDict["SuccessRates"],ignore_index=True)
+        NormalDF = self.FinalDict["Normal_Equips"].fillna(0)
+        SuperiorDF = self.FinalDict['Superior_Items'].fillna(0)
+
+        StarLimitDF.to_csv( "./DefaultData/CalculationData/StarLimit.csv")
+        SuccessDF.to_csv( "./DefaultData/CalculationData/SFSuccessRates.csv")
+        NormalDF.to_csv( "./DefaultData/CalculationData/NormalEquipSF.csv")
+        SuperiorDF.to_csv( "./DefaultData/CalculationData/SuperiorItemsSF.csv")
+
+        pass
+
+    def GetStarforce(self, content):
+        CurrentKey = None
+        SkipValue = False
+        IgnoreTable = ['Total_Stats', 'Meso_Cost']
+        CurrentRecord = "Normal_Equips"
+        for element in content:
+            cName = element.xpath("name()").get()
+            cid = element.xpath(".//span[@class='mw-headline']/@id").get()
+            if cName == "h3":
+                CurrentRecord = cid
+                SFLogger.info(CurrentRecord)
+                continue
+            if cName == "h4":
+                CurrentKey = "".join(cid.split('_')[:2])
+                if if_In_String(cid, IgnoreTable):
+                    SkipValue = True
+                    continue
+                SFLogger.info(cid)
+                SkipValue = False
+            if SkipValue:
+                continue
+            #Skip Condition
+            if cName == 'h5':
+                SkipValue = True
+                if if_In_String(cid, "Total_Stats") and CurrentRecord == "Superior_Items":
+                    break
+                continue
+            if cName == "table":
+                if CurrentKey == "StarLimit":
+                    self.FinalDict[CurrentKey].append(self.StarLimitTable(CurrentRecord, element))
+                elif CurrentKey == "SuccessRates":
+                    self.FinalDict[CurrentKey].append(self.SuccessRatesTable(CurrentRecord, element))
+                elif CurrentKey == "StatsBoost":
+                    self.FinalDict[CurrentRecord]= self.StatsBoostsTable(CurrentRecord, element)
+                
+        return
+
+    def StarLimitTable(self, title, content):
+        Header = removeB(content.xpath(".//tr/th/text()").getall())
+        ConsolTable = []
+        for row in content.xpath(".//tr"):
+            if removeB(row.xpath(".//text()").getall()) == Header:
+                continue
+            CRow = {
+                "Title" : title
+            }
+            for i, key in enumerate(Header):
+                ctext = row.xpath(f".//td[{i+1}]/text()").get()
+                if if_In_String(key, "Level"):
+                    splitv = removeB(replaceN(ctext, ['~', " "], ";").split(";"))
+                    if if_In_String(ctext, "and above"):
+                        CRow["MinLvl"] =splitv[0]
+                        CRow["MaxLvl"] =self.MaxLvl
+                        continue
+                    CRow["MinLvl"] = splitv[0]
+                    CRow["MaxLvl"] = splitv[-1]
+                    continue
+                CRow[key] = ctext.strip(" \n")
+            ConsolTable.append(DataFrame(CRow, index=[0]))
+
+        return pd.concat(ConsolTable, ignore_index=True)
+
+    def SuccessRatesTable(self, CurrentRecord, content):
+        Header = removeB(content.xpath(".//tr/th/text()").getall())
+        ConsolTable = []
+        for row in content.xpath(".//tr"):
+            if removeB(row.xpath(".//text()").getall()) == Header:
+                continue
+            CRow = {
+                "Title" :  CurrentRecord
+            }
+            for i, key in enumerate(Header):
+                if if_In_String(key, "("):
+                    key = replaceN(key.split('(')[1], ")").strip()
+                ctext = row.xpath(f".//td[{i+1}]/text()").get()
+                if ctext == None:
+                    CRow[key] = "0"
+                    continue
+                value = ctext
+                if if_In_String(ctext, '★'):
+                    splitv = ctext.split('★')
+                    value = splitv[0].strip()
+                elif if_In_String(ctext, "%"):
+                    value = ctext.split("%")[0].strip()
+                
+                CRow[key] = value
+        
+            ConsolTable.append(DataFrame(CRow, index=[0]))
+
+        return pd.concat(ConsolTable, ignore_index=True)
+
+    def StatsBoostsTable(self,CurrentRecord, content):
+
+        
+        Header = removeB(content.xpath(".//tr/th/text()").getall())
+        ConsolTable = []
+        for row in content.xpath("./tbody/tr"):
+            if removeB(row.xpath(".//text()").getall()) == Header:
+                continue      
+            Attempt = row.xpath(".//td[1]/text()").get()
+            test = row.xpath(".//text()").getall()
+            if Attempt == None:
+                continue
+            SFIDs = replaceN(Attempt, ['★','→'])
+            try:
+                if if_In_String(SFIDs, ','):
+                    splitv = SFIDs.split(',')
+                    SFIDs = [max([int(value.strip()) for value in pair.split(' ') if value != '']) for pair in splitv]
+                else:
+                    SFIDs = [max(int(value.strip()) for value in SFIDs.split(' ') if value != '')]
+            except:
+                SFLogger.critical(traceback.format_exc())
+            for ids in SFIDs:
+                SFat = {
+                    "SFID" : ids,
+                    "MinLvl" : 0,
+                    "MaxLvl" : self.MaxLvl
+                }
+                if ids <=15 and CurrentRecord == "Normal_Equips":
+                    Stats = removeB(row.xpath(".//td[2] //ul //text()").getall())
+                    SFat.update(self.ReturnStatDict(Stats))   
+                    ConsolTable.append(DataFrame(SFat, index=[0]))
+                else:
+                    NewPoint = row.xpath(".//td[2]")
+                    CommonStats = removeB(NewPoint.xpath("./child::*[2] //text()").getall())
+                    SFat.update(self.ReturnStatDict(CommonStats))
+                    for subrow in NewPoint.xpath("./child::*[1] //tr"):
+                        DCopy = DeepCopyDict(SFat)
+                        MinMaxLvl = subrow.xpath(".//td[1] //text()").get()
+                        if MinMaxLvl == None:
+                            continue
+                        if if_In_String(MinMaxLvl, "~"):
+                            Min, Max = MinMaxLvl.split("~")
+                            DCopy["MinLvl"] = int(Min)
+                            DCopy["MaxLvl"] = int(Max)
+                        else:
+                            DCopy["MinLvl"] = int(MinMaxLvl.strip(" +"))
+                            DCopy["MaxLvl"] = self.MaxLvl
+                        Stats = removeB(subrow.xpath(".//td[2] //text()").getall())
+                        DCopy.update(self.ReturnStatDict(Stats))
+                        ConsolTable.append(DataFrame(DCopy, index=[0]))
+                    pass
+        
+        return pd.concat(ConsolTable, ignore_index=True)
+
+    def ReturnStatDict(self, StatList):
+        RDict = {}
+        for s in StatList:
+            key, value = s.split("+")
+            key = replaceN(key, ["'s", "'"]).strip()
+            RDict[key] =  int(value.strip(" %"))
+        
+        return RDict
+
+
+#class BonusStatSpider(scrapy.Spider):
 #class HyperStatSpider(scrapy.Spider):
+
+
 
 #class FormulaSpider(scrapy.Spider):

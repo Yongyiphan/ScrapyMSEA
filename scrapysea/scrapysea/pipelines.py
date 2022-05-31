@@ -5,9 +5,17 @@
 
 
 # useful for handling different item types with a single interface
+import traceback
 from itemadapter import ItemAdapter
+import sqlite3
+import CustomLogger
+
 
 
 class ScrapyseaPipeline:
     def process_item(self, item, spider):
         return item
+
+
+
+

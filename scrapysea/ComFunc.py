@@ -4,6 +4,7 @@ from operator import mod
 import traceback
 import pandas as pd
 import CustomLogger
+DATABASENAME = "MapleSeaDB"
 
 
 def if_In_String(string, parameter, mode="Any"):
