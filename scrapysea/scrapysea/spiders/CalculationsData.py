@@ -492,16 +492,20 @@ class HyperStatSpider(scrapy.Spider):
     custom_settings = {
         "LOG_SCRAPED_ITEMS" : False
     }
+
+    
     def parse(self, response):
 
         HyperStatDistContent =  response.xpath("//span[@id='Hyper_Stats_Points_Distribution']/parent::*/following-sibling::div[1]//table")
         yield self.HyperStatDistribution(HyperStatDistContent)
-        pass
+
+        
     def close(self):
         pass
     
     def HyperStatDistribution(self, content):
         Header = sorted(list(set(removeB(content.xpath(".//tr //th/text()").getall()))))
+        ConsolTable = []
         for row in content.xpath(".//tr"):
             t = removeB(row.xpath(".//text()").getall())
             if sorted(t) == Header:
@@ -511,9 +515,9 @@ class HyperStatSpider(scrapy.Spider):
                 if if_In_String(key, "Level"):
                     key = key.split('(')[0].strip()
                 CDict[key] = t[i]
+            ConsolTable.append(DataFrame(CDict, index=[0]))
 
-            pass
-        pass
+        return pd.concat(ConsolTable, ignore_index=True)
 
     def HyperStat(self, content):
         pass
