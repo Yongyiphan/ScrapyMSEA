@@ -1,5 +1,7 @@
 
+from email.header import Header
 import traceback
+from numpy import ndenumerate
 from pandas import DataFrame
 import scrapy
 import CustomLogger
@@ -485,12 +487,17 @@ class SpellTraceSpider(scrapy.Spider):
 
 #class BonusStatSpider(scrapy.Spider):
 
-STLogger = CustomLogger.Set_Custom_Logger("SpellTraceSpider",logTo="./Logs/Calculation.log",propagate=False )
+HSLogger = CustomLogger.Set_Custom_Logger("HyperStatSpider",logTo="./Logs/Calculation.log",propagate=False )
 class HyperStatSpider(scrapy.Spider):
     name = "HyperStatSpider"
     start_urls = ["https://strategywiki.org/wiki/MapleStory/Hyper_Stats"]
     custom_settings = {
         "LOG_SCRAPED_ITEMS" : False
+    }
+    FinalDict = {
+        "Distribution" : None,
+        "HyperStats" : [],
+        "Cost" : None
     }
 
     
@@ -498,9 +505,17 @@ class HyperStatSpider(scrapy.Spider):
 
         HyperStatDistContent =  response.xpath("//span[@id='Hyper_Stats_Points_Distribution']/parent::*/following-sibling::div[1]//table")
         yield self.HyperStatDistribution(HyperStatDistContent)
-
+        HyperStatContent = response.xpath("//span[@id='Hyper_Stats']/parent::*/following-sibling::table")
+        yield self.HyperStat(HyperStatContent)
         
     def close(self):
+        DisDF = self.FinalDict["Distribution"]
+        HDF = pd.concat(self.FinalDict["HyperStats"], ignore_index=True)
+        CDF = self.FinalDict["Cost"]
+
+        DisDF.to_csv( "./DefaultData/CalculationData/HyperStatDistribution.csv")
+        HDF.to_csv( "./DefaultData/CalculationData/HyperStat.csv")
+        CDF.to_csv( "./DefaultData/CalculationData/HyperStatCost.csv")
         pass
     
     def HyperStatDistribution(self, content):
@@ -514,12 +529,47 @@ class HyperStatSpider(scrapy.Spider):
             for i, key in enumerate(Header):
                 if if_In_String(key, "Level"):
                     key = key.split('(')[0].strip()
-                CDict[key] = t[i]
+                CDict[key] = replaceN(t[i], ",")
             ConsolTable.append(DataFrame(CDict, index=[0]))
-
-        return pd.concat(ConsolTable, ignore_index=True)
+        self.FinalDict["Distribution"] = pd.concat(ConsolTable, ignore_index=True)
+        return
 
     def HyperStat(self, content):
-        pass
+        try:
+            for i, table in enumerate(content):
+                StatType = table.xpath("./preceding-sibling::h3[1]/span[@class='mw-headline']/text()").get()
+                CStat = {}
+                if StatType is not None:
+                    StatType = replaceN(StatType.encode("ascii","ignore").decode(), ["%", "Weapon and Magic"]).strip()
+                    CStat["StatIncrease"] = replaceN(StatType, "Increase").strip()
+
+                Header = removeB(table.xpath(".//tr/th/text()").getall())
+                ConsolTable = []
+                for row in table.xpath(".//tr"):
+                    DCopy = DeepCopyDict(CStat)
+                    Ctext = removeB(row.xpath(".//text()").getall())
+                    if Ctext == Header or Ctext is None:
+                        continue
+                    for i, td in enumerate(Header):
+                        if if_In_String(td, 'Cost'):
+                            td = td.split("Cost")[0].strip() + " Cost"
+                        t = row.xpath(f"./td[{1+i}]/text()").get()
+                        if if_In_String(t, "+"):
+                            t = t.split("+")[-1]
+                        if td == "Overall Stat":
+                            td = "Overall Effect"
+                        DCopy[td] = t.strip(" %\n")
+                    ConsolTable.append(DataFrame(DCopy, index=[0]))
+                Result = pd.concat(ConsolTable, ignore_index=True)
+                if StatType is None:
+                    self.FinalDict["Cost"] = Result
+                else:
+                    self.FinalDict["HyperStats"].append(Result)
+                
+                    
+        except:
+            HSLogger.critical(traceback.format_exc())
+            
+        return
 
 #class FormulaSpider(scrapy.Spider):
