@@ -1,14 +1,10 @@
 
-from dataclasses import replace
 import traceback
 
 from pandas import DataFrame
 import scrapy
 import CustomLogger
 from ComFunc import *
-from ComFunc import DeepCopyDict
-from ComFunc import TimeTaken
-from ComFunc import DATABASENAME
 
 PLogger  = CustomLogger.Set_Custom_Logger("PotentialSpider", logTo="./Logs/Calculation.log", propagate=False)
 SFLogger = CustomLogger.Set_Custom_Logger("StarforceSpider",logTo="./Logs/Calculation.log",propagate=False )
@@ -282,8 +278,6 @@ class PotentialSpider(scrapy.Spider):
         except Exception as E:
             PLogger.critical(traceback.format_exc())
 
-
-
 class StarforceSpider(scrapy.Spider):
     name = "StarforceSpider"
     start_urls = ["https://strategywiki.org/wiki/MapleStory/Spell_Trace_and_Star_Force"]
@@ -475,7 +469,6 @@ class StarforceSpider(scrapy.Spider):
         
         return RDict
 
-
 #Unuser whether implementation is necessary
 class SpellTraceSpider(scrapy.Spider):
     name = "SpellTraceSpider"
@@ -494,11 +487,6 @@ class BonusStatSpider(scrapy.Spider):
     custom_settings = {
         "LOG_SCRAPED_ITEMS" : False
     }
-
-    FinalDict = {
-
-    }
-    MaxLvl = 300
 
     def parse(self, response):
         StatTablesContent = response.xpath("//h2//span[@id='Stats']/parent::*/following-sibling::table")
@@ -594,7 +582,6 @@ class BonusStatSpider(scrapy.Spider):
         Stat = replaceN(Stat, ["%"])
 
         return Stat, EquipGrp
-
 
 class HyperStatSpider(scrapy.Spider):
     name = "HyperStatSpider"
