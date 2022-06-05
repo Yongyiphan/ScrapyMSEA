@@ -7,6 +7,7 @@ import scrapy
 import re
 
 from ComFunc import if_In_String
+from ComFunc import TimeTaken
 
 #Naming Convention
 #ClassName = Hero, Ark, etc
@@ -123,10 +124,7 @@ class TotalEquipmentSpider(scrapy.Spider):
             else:
                 yield scrapy.Request(nurl, callback=self.HandleSecondary, meta={"WeaponType":weaponType})
 
-    def close(self, reason):
-        start_time = self.crawler.stats.get_value('start_time')
-        
-        
+    def close(self):
         try:
             pd.set_option("display.max_rows", None, "display.max_columns", None)
             #Weapon Dataframe
@@ -156,8 +154,7 @@ class TotalEquipmentSpider(scrapy.Spider):
         except Exception:
             Eqlogger.warn(traceback.format_exc())
         finally:
-            finish_time = self.crawler.stats.get_value('finish_time')
-            print("Equipment scraped in: ", finish_time-start_time)
+            TimeTaken(self)
 
     
     def HandleWeapon(self, response):
@@ -478,9 +475,6 @@ class EquipmentSetSpider(scrapy.Spider):
         pass
 
     def close(self):
-        start_time = self.crawler.stats.get_value('start_time')
-        finish_time = self.crawler.stats.get_value('finish_time')
-        print("Set Effects scraped in: ", finish_time-start_time)
         SetDF = pd.concat(self.TrackEquipSets["Set"], ignore_index=True)
         SetDF = CleanSetEffect(SetDF)
         CulDF = pd.concat(self.TrackEquipSets['Cumulative'], ignore_index=True)
@@ -489,7 +483,7 @@ class EquipmentSetSpider(scrapy.Spider):
         SetDF.to_csv("./DefaultData/EquipmentData/EquipSetData.csv")
         CulDF.to_csv("./DefaultData/EquipmentData/EquipSetCulData.csv")
         
-        
+        TimeTaken(self)
 
     def HandleEquipmentSet(self, response):
 

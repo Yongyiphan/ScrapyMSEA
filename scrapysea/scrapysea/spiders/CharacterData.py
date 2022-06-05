@@ -73,10 +73,7 @@ class CharacterSpider(scrapy.Spider):
             
         return browser
 
-    def close(self, reason):
-        start_time = self.crawler.stats.get_value('start_time')
-        finish_time = self.crawler.stats.get_value('finish_time')
-        print("Character scraped in: ", finish_time-start_time)
+    def close(self):
         try:
             CDF = pandas.concat(self.CharacterDF, ignore_index=True)
 
@@ -94,6 +91,7 @@ class CharacterSpider(scrapy.Spider):
             WDF.to_csv('./DefaultData/CharacterData/ClassMainWeapon.csv')
             SDF.to_csv('./DefaultData/CharacterData/ClassSecWeapon.csv')
 
+            TimeTaken(self)
         except Exception:
             CLogger.warn(traceback.format_exc())
 

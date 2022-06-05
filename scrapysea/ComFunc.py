@@ -5,6 +5,8 @@ import traceback
 import pandas as pd
 import CustomLogger
 DATABASENAME = "MapleSeaDB"
+MAXLVL = 300
+MINLVL = 0
 
 
 def if_In_String(string, parameter, mode="Any"):
@@ -87,7 +89,10 @@ def returnSFLevelRank(mode, level):
         elif level >= 150:
             return 1
     
-
+def TimeTaken(self):
+    start_time = self.crawler.stats.get_value('start_time')
+    finish_time = self.crawler.stats.get_value('finish_time')
+    print(f"{self.name} crawled in: {finish_time - start_time}")
 
 
 def main():

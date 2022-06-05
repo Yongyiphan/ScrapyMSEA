@@ -1,15 +1,20 @@
 
-from email.header import Header
+from dataclasses import replace
 import traceback
-from numpy import ndenumerate
+
 from pandas import DataFrame
 import scrapy
 import CustomLogger
 from ComFunc import *
 from ComFunc import DeepCopyDict
+from ComFunc import TimeTaken
 from ComFunc import DATABASENAME
 
-PLogger = CustomLogger.Set_Custom_Logger("PotentialSpider", logTo="./Logs/Calculation.log", propagate=False)
+PLogger  = CustomLogger.Set_Custom_Logger("PotentialSpider", logTo="./Logs/Calculation.log", propagate=False)
+SFLogger = CustomLogger.Set_Custom_Logger("StarforceSpider",logTo="./Logs/Calculation.log",propagate=False )
+BSLogger = CustomLogger.Set_Custom_Logger("BonusSpider",logTo="./Logs/Calculation.log",propagate=False )
+HSLogger = CustomLogger.Set_Custom_Logger("HyperStatSpider",logTo="./Logs/Calculation.log",propagate=False )
+
 
 class PotentialSpider(scrapy.Spider):
     
@@ -45,14 +50,10 @@ class PotentialSpider(scrapy.Spider):
         try:
             PDF = pd.concat(self.PotentialTable['Potential'], ignore_index=True)
             CDF = pd.concat(self.CubeRates["Potential"], ignore_index=True)
-
             BPDF = pd.concat(self.PotentialTable["Bonus"], ignore_index=True)
             BCDF = pd.concat(self.CubeRates["Bonus"], ignore_index=True)            
-
-
             PDF = PDF.fillna(0)
             CDF = CDF.fillna(0)
-
             BPDF = BPDF.fillna(0)
             BCDF = BCDF.fillna(0)
 
@@ -63,7 +64,8 @@ class PotentialSpider(scrapy.Spider):
             BCDF.to_csv("./DefaultData/calculationData/BonusCubeRatesData.csv")
         except:
             PLogger.critical(traceback.format_exc())
-            
+        
+        TimeTaken(self)
         pass
    
     def Execute(self, PotentialGrades):
@@ -281,7 +283,7 @@ class PotentialSpider(scrapy.Spider):
             PLogger.critical(traceback.format_exc())
 
 
-SFLogger = CustomLogger.Set_Custom_Logger("StarforceSpider",logTo="./Logs/Calculation.log",propagate=False )
+
 class StarforceSpider(scrapy.Spider):
     name = "StarforceSpider"
     start_urls = ["https://strategywiki.org/wiki/MapleStory/Spell_Trace_and_Star_Force"]
@@ -317,6 +319,7 @@ class StarforceSpider(scrapy.Spider):
         SuperiorDF.to_csv( "./DefaultData/CalculationData/SuperiorItemsSF.csv")
 
         SFLogger.info("Completed CSV export for Starforce tables")
+        TimeTaken(self)
         pass
 
     def GetStarforce(self, content):
@@ -485,9 +488,114 @@ class SpellTraceSpider(scrapy.Spider):
     def close(self):
         pass
 
-#class BonusStatSpider(scrapy.Spider):
+class BonusStatSpider(scrapy.Spider):
+    name = "BonusStatSpider"
+    start_urls = ["https://strategywiki.org/wiki/MapleStory/Bonus_Stats"]
+    custom_settings = {
+        "LOG_SCRAPED_ITEMS" : False
+    }
 
-HSLogger = CustomLogger.Set_Custom_Logger("HyperStatSpider",logTo="./Logs/Calculation.log",propagate=False )
+    FinalDict = {
+
+    }
+    MaxLvl = 300
+
+    def parse(self, response):
+        StatTablesContent = response.xpath("//h2//span[@id='Stats']/parent::*/following-sibling::table")
+        yield self.GetFlames(StatTablesContent)
+        pass
+
+    def close(self):
+        TimeTaken(self)
+        pass
+
+    def GetFlames(self, content):
+        try:
+            TrackKey = []
+            SpecialConsideration = ["Attack Power", "Magic Attack", "Special Bonus Stats"]
+            ConsolTable = []
+            for tables in content:
+                CDict = {}
+                Stat, CDict["EquipGrp"] = self.CleanStat(tables.xpath("./preceding-sibling::h3[1] /span[@class='mw-headline']/text()").get())
+                if (Stat, CDict["EquipGrp"]) in TrackKey:
+                    continue
+                CDict["EquipType"] = "Common"
+                if Stat in SpecialConsideration:
+                    if if_In_String(Stat, "Attack"):
+                        dl = tables.xpath("./preceding-sibling::dl[1] //text()").get()
+                        if CDict["EquipGrp"] == "Weapons":
+                            if if_In_String(dl, "Normal"):
+                                CDict["EquipType"] = "Normal"
+                            else:
+                                CDict["EquipType"] = "Special"
+                    else:
+                        Stat, CDict["EquipGrp"] = self.CleanStat(tables.xpath("./preceding-sibling::h4[1] /span[@class='mw-headline']/text()").get())
+                CDict['Stat'] = Stat
+                ConsolTable.append(self.ReturnTable(tables, CDict))
+                
+                if CDict["EquipType"] != "Normal":
+                    TrackKey.append((Stat, CDict["EquipGrp"]))
+                
+            Result = pd.concat(ConsolTable, ignore_index=True)
+            Result.to_csv("./DefaultData/CalculationData/FlameData.csv")
+        except:
+            BSLogger.critical(traceback.format_exc())
+
+    
+    def ReturnTable(self, tables, CDict):
+        ConsolRow = []
+        Header = removeB(tables.xpath(".//th/text()").getall())
+        if "Equip level" not in Header:
+            p = tables.xpath("./preceding-sibling::p[1]/text()").get()
+            splitv = p.split('at least level')[-1].strip().split(' ')[0]
+            if if_In_String(p, "Not affected") and if_In_String(p, "at least") == False:
+                CDict["MinLvl"] = 0
+            else:
+                CDict["MinLvl"] = int(splitv.strip(" .\n"))
+            CDict["MaxLvl"] = MAXLVL
+
+        for row in tables.xpath(".//tr"):
+            CRow = DeepCopyDict(CDict)
+            CText = removeB(row.xpath(".//text()").getall())
+            if CText == Header or CText is None:
+                continue
+
+            for i, th in enumerate(Header):
+                textAt = row.xpath(f"./td[{1+i}]/text()").get()
+                if textAt is None:
+                    continue
+                if if_In_String(th, "level"):
+                    CRow["MinLvl"], CRow["MaxLvl"] = textAt.split("-")
+                    continue
+                
+                CRow[th] = replaceN(textAt, ",").strip(" %\n")
+            ConsolRow.append(DataFrame(CRow, index=[0]))
+        
+        return pd.concat(ConsolRow, ignore_index=True)
+
+
+
+    def CleanStat(self, Stat):
+        MainStat = ["STR", "DEX", "INT", "LUK"]
+        Stat = Stat.encode("ASCII", "ignore").decode()
+        Stat = " ".join([ele.strip() for ele in Stat.split("increase")]).strip()
+                
+        if if_In_String(Stat, "and"):
+            Stat = "Mixed Stats"
+        if if_In_String(Stat, MainStat):
+            Stat = "Main Stats"
+
+        if if_In_String(Stat, "("):
+            splitv = Stat.split("(")
+            EquipGrp = replaceN(splitv[-1], ")").strip()
+            Stat = splitv[0].strip()
+        else:
+            EquipGrp = "Common"
+        Stat = replaceN(Stat, ["%"])
+
+        return Stat, EquipGrp
+
+
 class HyperStatSpider(scrapy.Spider):
     name = "HyperStatSpider"
     start_urls = ["https://strategywiki.org/wiki/MapleStory/Hyper_Stats"]
@@ -516,6 +624,7 @@ class HyperStatSpider(scrapy.Spider):
         DisDF.to_csv( "./DefaultData/CalculationData/HyperStatDistribution.csv")
         HDF.to_csv( "./DefaultData/CalculationData/HyperStat.csv")
         CDF.to_csv( "./DefaultData/CalculationData/HyperStatCost.csv")
+        TimeTaken(self)
         pass
     
     def HyperStatDistribution(self, content):
