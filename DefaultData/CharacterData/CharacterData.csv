@@ -1,48 +1,48 @@
 ,ClassName,Faction,ClassType,MainStat,SecStat,UnionEffect,UnionStatType
 0,Hero,Explorers,Warrior,STR,DEX,Grants flat STR,Flat
-1,Luminous,Heroes,Magician,INT,LUK,Grants flat INT,Flat
-2,Xenon,Resistance,SPECIAL,SPECIAL,-,Grants flat STR DEX and LUK,Flat
-3,Battle Mage,Resistance,Magician,INT,LUK,Grants flat INT,Flat
-4,Wild Hunter,Resistance,Archer,DEX,STR,Chance for attack to deal increased Damage,Perc
-5,Blaster,Resistance,Warrior,STR,DEX,Increases Ignore DEF,Perc
-6,Shade,Heroes,Pirate,STR,DEX,Increases Crit Damage,Perc
-7,Mechanic,Resistance,Pirate,DEX,STR,Increases Buff Duration,Perc
-8,Phantom,Heroes,Thief,LUK,DEX,Increases Mesos Obtained,Perc
-9,Evan,Heroes,Magician,INT,LUK,Chance to recover Max MP while attacking ,Perc
-10,Aran,Heroes,Warrior,STR,DEX,Chance to recover Max HP while attacking ,Perc
-11,Mercedes,Heroes,Archer,DEX,STR,Reduces skill cooldowns,Perc
-12,Mihile,Cygnus Knights,Warrior,STR,DEX,Grants flat Max HP,Flat
-13,Blaze Wizard,Cygnus Knights,Magician,INT,LUK,Grants flat INT,Flat
-14,Zero,Other,Warrior,STR,DEX,Increases EXP Obtained from monsters,Perc
-15,Wind Archer,Cygnus Knights,Archer,DEX,STR,Grants flat DEX,Flat
-16,Kinesis,Other,Magician,INT,LUK,Grants flat INT,Flat
-17,Lara,Anima,Magician,INT,LUK,Grants flat INT,Flat
-18,Hoyoung,Anima,Thief,LUK,DEX,Grants flat LUK,Flat
-19,Illium,Flora,Magician,INT,LUK,Grants flat INT,Flat
-20,Ark,Flora,Pirate,STR,DEX,Grants flat STR,Flat
-21,Adele,Flora,Warrior,STR,DEX,Grants flat STR,Flat
-22,Hayato,Sengoku,Warrior,STR,DEX,Increases Crit Damage,Perc
-23,Kanna,Sengoku,Magician,INT,LUK,Increases Boss Damage,Perc
-24,Kain,Nova,Archer,DEX,STR,Grants flat DEX,Flat
-25,Cadena,Nova,Thief,LUK,SPECIAL,Grants flat LUK,Flat
-26,Kaiser,Nova,Warrior,STR,DEX,Grants flat STR,Flat
+1,Cannoneer,Explorers,Pirate,STR,DEX,Grants flat STR,Flat
+2,Night Lord,Explorers,Thief,LUK,DEX,Increases Crit Rate,Perc
+3,Pathfinder,Explorers,Archer,DEX,STR,Grants flat DEX,Flat
+4,Dual Blade,Explorers,Thief,LUK,SPECIAL,Grants flat LUK,Flat
+5,Bowmaster,Explorers,Archer,DEX,STR,Grants flat DEX,Flat
+6,Marksman,Explorers,Archer,DEX,STR,Increases Crit Rate,Perc
+7,Shadower,Explorers,Thief,LUK,SPECIAL,Grants flat LUK,Flat
+8,"Arch Mage (Fire, Poison)",Explorers,Magician,INT,LUK,Increases Max MP,Perc
+9,"Arch Mage (Ice, Lightning)",Explorers,Magician,INT,LUK,Grants flat INT,Flat
+10,Dark Knight,Explorers,Warrior,STR,DEX,Increases Max HP,Perc
+11,Paladin,Explorers,Warrior,STR,DEX,Grants flat STR,Flat
+12,Luminous,Heroes,Magician,INT,LUK,Grants flat INT,Flat
+13,Bishop,Explorers,Magician,INT,LUK,Grants flat INT,Flat
+14,Aran,Heroes,Warrior,STR,DEX,Chance to recover Max HP while attacking ,Perc
+15,Zero,Other,Warrior,STR,DEX,Increases EXP Obtained from monsters,Perc
+16,Phantom,Heroes,Thief,LUK,DEX,Increases Mesos Obtained,Perc
+17,Kinesis,Other,Magician,INT,LUK,Grants flat INT,Flat
+18,Adele,Flora,Warrior,STR,DEX,Grants flat STR,Flat
+19,Hayato,Sengoku,Warrior,STR,DEX,Increases Crit Damage,Perc
+20,Lara,Anima,Magician,INT,LUK,Grants flat INT,Flat
+21,Hoyoung,Anima,Thief,LUK,DEX,Grants flat LUK,Flat
+22,Illium,Flora,Magician,INT,LUK,Grants flat INT,Flat
+23,Ark,Flora,Pirate,STR,DEX,Grants flat STR,Flat
+24,Kanna,Sengoku,Magician,INT,LUK,Increases Boss Damage,Perc
+25,Kain,Nova,Archer,DEX,STR,Grants flat DEX,Flat
+26,Cadena,Nova,Thief,LUK,SPECIAL,Grants flat LUK,Flat
 27,Angelic Buster,Nova,Pirate,DEX,STR,Grants flat DEX,Flat
-28,Demon Avenger,Resistance,Warrior,HP,-,Increases Boss Damage,Perc
-29,Demon Slayer,Resistance,Warrior,STR,DEX,Increases Abnormal Status Resistance,Perc
-30,Thunder Breaker,Cygnus Knights,Pirate,STR,DEX,Grants flat STR,Flat
-31,Night Walker,Cygnus Knights,Thief,LUK,DEX,Grants flat LUK,Flat
-32,Dawn Warrior,Cygnus Knights,Warrior,STR,DEX,Grants flat Max HP,Flat
-33,Corsair,Explorers,Pirate,DEX,STR,Increases Summon Duration,Perc
-34,Buccaneer,Explorers,Pirate,STR,DEX,Grants flat STR,Flat
-35,Cannoneer,Explorers,Pirate,STR,DEX,Grants flat STR,Flat
-36,Bowmaster,Explorers,Archer,DEX,STR,Grants flat DEX,Flat
-37,Marksman,Explorers,Archer,DEX,STR,Increases Crit Rate,Perc
-38,Pathfinder,Explorers,Archer,DEX,STR,Grants flat DEX,Flat
-39,Night Lord,Explorers,Thief,LUK,DEX,Increases Crit Rate,Perc
-40,Shadower,Explorers,Thief,LUK,SPECIAL,Grants flat LUK,Flat
-41,Dual Blade,Explorers,Thief,LUK,SPECIAL,Grants flat LUK,Flat
-42,Paladin,Explorers,Warrior,STR,DEX,Grants flat STR,Flat
-43,"Arch Mage (Fire, Poison)",Explorers,Magician,INT,LUK,Increases Max MP,Perc
-44,"Arch Mage (Ice, Lightning)",Explorers,Magician,INT,LUK,Grants flat INT,Flat
-45,Bishop,Explorers,Magician,INT,LUK,Grants flat INT,Flat
-46,Dark Knight,Explorers,Warrior,STR,DEX,Increases Max HP,Perc
+28,Kaiser,Nova,Warrior,STR,DEX,Grants flat STR,Flat
+29,Demon Avenger,Resistance,Warrior,HP,-,Increases Boss Damage,Perc
+30,Demon Slayer,Resistance,Warrior,STR,DEX,Increases Abnormal Status Resistance,Perc
+31,Xenon,Resistance,SPECIAL,SPECIAL,-,Grants flat STR DEX and LUK,Flat
+32,Wild Hunter,Resistance,Archer,DEX,STR,Chance for attack to deal increased Damage,Perc
+33,Mechanic,Resistance,Pirate,DEX,STR,Increases Buff Duration,Perc
+34,Blaster,Resistance,Warrior,STR,DEX,Increases Ignore DEF,Perc
+35,Battle Mage,Resistance,Magician,INT,LUK,Grants flat INT,Flat
+36,Shade,Heroes,Pirate,STR,DEX,Increases Crit Damage,Perc
+37,Evan,Heroes,Magician,INT,LUK,Chance to recover Max MP while attacking ,Perc
+38,Mercedes,Heroes,Archer,DEX,STR,Reduces skill cooldowns,Perc
+39,Mihile,Cygnus Knights,Warrior,STR,DEX,Grants flat Max HP,Flat
+40,Blaze Wizard,Cygnus Knights,Magician,INT,LUK,Grants flat INT,Flat
+41,Night Walker,Cygnus Knights,Thief,LUK,DEX,Grants flat LUK,Flat
+42,Wind Archer,Cygnus Knights,Archer,DEX,STR,Grants flat DEX,Flat
+43,Thunder Breaker,Cygnus Knights,Pirate,STR,DEX,Grants flat STR,Flat
+44,Dawn Warrior,Cygnus Knights,Warrior,STR,DEX,Grants flat Max HP,Flat
+45,Corsair,Explorers,Pirate,DEX,STR,Increases Summon Duration,Perc
+46,Buccaneer,Explorers,Pirate,STR,DEX,Grants flat STR,Flat

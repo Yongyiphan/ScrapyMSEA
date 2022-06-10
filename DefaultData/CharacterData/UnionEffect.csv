@@ -1,22 +1,22 @@
 ,Effect,EffectType,B,A,S,SS,SSS
 0,Grants flat STR,Flat,10,20,40,80,100
-1,Grants flat INT,Flat,10,20,40,80,100
-2,Grants flat STR DEX and LUK,Flat,5,10,20,40,50
-4,Chance for attack to deal increased Damage,Perc,4,8,12,16,20
-5,Increases Ignore DEF,Perc,1,2,3,5,6
-6,Increases Crit Damage,Perc,1,2,3,5,6
-7,Increases Buff Duration,Perc,5,10,15,20,25
-8,Increases Mesos Obtained,Perc,1,2,3,4,5
-9,Chance to recover Max MP while attacking ,Perc,2,4,6,8,10
-10,Chance to recover Max HP while attacking ,Perc,2,4,6,8,10
-11,Reduces skill cooldowns,Perc,2,3,4,5,6
-12,Grants flat Max HP,Flat,250,500,1000,2000,2500
-14,Increases EXP Obtained from monsters,Perc,4,6,8,10,12
-15,Grants flat DEX,Flat,10,20,40,80,100
-18,Grants flat LUK,Flat,10,20,40,80,100
-23,Increases Boss Damage,Perc,1,2,3,5,6
-29,Increases Abnormal Status Resistance,Perc,1,2,3,4,5
-33,Increases Summon Duration,Perc,4,6,8,10,12
-37,Increases Crit Rate,Perc,1,2,3,4,5
-43,Increases Max MP,Perc,2,3,4,5,6
-46,Increases Max HP,Perc,2,3,4,5,6
+2,Increases Crit Rate,Perc,1,2,3,4,5
+3,Grants flat DEX,Flat,10,20,40,80,100
+4,Grants flat LUK,Flat,10,20,40,80,100
+8,Increases Max MP,Perc,2,3,4,5,6
+9,Grants flat INT,Flat,10,20,40,80,100
+10,Increases Max HP,Perc,2,3,4,5,6
+14,Chance to recover Max HP while attacking ,Perc,2,4,6,8,10
+15,Increases EXP Obtained from monsters,Perc,4,6,8,10,12
+16,Increases Mesos Obtained,Perc,1,2,3,4,5
+19,Increases Crit Damage,Perc,1,2,3,5,6
+24,Increases Boss Damage,Perc,1,2,3,5,6
+30,Increases Abnormal Status Resistance,Perc,1,2,3,4,5
+31,Grants flat STR DEX and LUK,Flat,5,10,20,40,50
+32,Chance for attack to deal increased Damage,Perc,4,8,12,16,20
+33,Increases Buff Duration,Perc,5,10,15,20,25
+34,Increases Ignore DEF,Perc,1,2,3,5,6
+37,Chance to recover Max MP while attacking ,Perc,2,4,6,8,10
+38,Reduces skill cooldowns,Perc,2,3,4,5,6
+39,Grants flat Max HP,Flat,250,500,1000,2000,2500
+45,Increases Summon Duration,Perc,4,6,8,10,12
