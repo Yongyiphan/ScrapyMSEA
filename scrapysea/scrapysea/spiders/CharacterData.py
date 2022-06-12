@@ -1,3 +1,5 @@
+from msilib.schema import Class
+from pydoc import classname
 from time import sleep
 import pandas
 from pandas import DataFrame
@@ -101,7 +103,7 @@ class CharacterSpider(scrapy.Spider):
             PostData = data['pageProps']['post']
             PostContentData = PostData['content']
 
-            ClassName = PostData['class']
+            ClassName = replaceN(PostData['class'], ',').strip()
             UnionE = PostContentData['legion']
             UnionStatType = "Flat" if 'flat' in UnionE else "Perc"
             for value in ['%', ',']:
@@ -145,7 +147,7 @@ class CharacterSpider(scrapy.Spider):
             for weap in WeaponList:
                 self.WeaponDF.append(
                     DataFrame({
-                        "ClassName": ClassName, 
+                        "ClassName": ClassName,
                         "Weapon" : weap.capitalize() }, 
                         index=[0]))
             SecondaryList = Equipments[1]['secondary']

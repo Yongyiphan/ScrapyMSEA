@@ -9,6 +9,7 @@
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}\\scrapysea/CompleteRun.py",
+            
             "console": "integratedTerminal"
         }
     ]

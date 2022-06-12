@@ -134,13 +134,16 @@ class TotalEquipmentSpider(scrapy.Spider):
             SDF = pd.concat(self.FinalEquipTrack['Secondary'], ignore_index=True)
             SDF = CleanSecondaryDF(SDF)
 
-            #Armor, Accessories, Android, Medal Dataframe
+            #Armor
             ADF = pd.concat(self.FinalEquipTrack['Armor'], ignore_index=True)
             ADF = CleanArmorDF(ADF)
+            #Accessories
             AccDF = pd.concat(self.FinalEquipTrack['Accessory'], ignore_index=True)
             AccDF = CleanAccessoryDF(AccDF)
+            #Android
             AndroidDF = pd.concat(self.FinalEquipTrack['Android'], ignore_index=True)
             AndroidDF = CleanAndroidDF(AndroidDF)
+            #Medals
             MDF = pd.concat(self.FinalEquipTrack['Medal'], ignore_index=True)
             MDF = CleanMedalDF(MDF)
 
@@ -150,7 +153,12 @@ class TotalEquipmentSpider(scrapy.Spider):
             AccDF.to_csv('./DefaultData/EquipmentData/AccessoryData.csv')
             AndroidDF.to_csv('./DefaultData/EquipmentData/AndroidData.csv')
             MDF.to_csv('./DefaultData/EquipmentData/MedalData.csv')
-
+            Eqlogger.info(f"Scraped {len(WDF)} Weapons")
+            Eqlogger.info(f"Scraped {len(SDF)} Secondaries")
+            Eqlogger.info(f"Scraped {len(ADF)} Armors")
+            Eqlogger.info(f"Scraped {len(AccDF)} Accessories")
+            Eqlogger.info(f"Scraped {len(AndroidDF)} Androids")
+            Eqlogger.info(f"Scraped {len(MDF)} Medals")
         except Exception:
             Eqlogger.warn(traceback.format_exc())
         finally:
@@ -381,7 +389,8 @@ class TotalEquipmentSpider(scrapy.Spider):
                 ClassFound = list(set(Set.split(' '))&set(self.Mclasses))
                 if ClassFound != []:
                     Set = Set.replace(ClassFound[0], '')
-                ItemDict['Equipment Set'] = Set.rstrip(' ')
+                ItemDict['EquipSet'] = Set.rstrip(' ')
+                
                        
             self.RecordItemDict(ItemDict=ItemDict)
             yield ItemDict
@@ -482,7 +491,9 @@ class EquipmentSetSpider(scrapy.Spider):
         
         SetDF.to_csv("./DefaultData/EquipmentData/EquipSetData.csv")
         CulDF.to_csv("./DefaultData/EquipmentData/EquipSetCulData.csv")
-        
+        Eslogger.info(f"Scraped {len(SetDF)} Set Effects")
+        Eslogger.info(f"Scraped {len(CulDF)} Culmulative Set Effects")
+
         TimeTaken(self)
 
     def HandleEquipmentSet(self, response):
@@ -547,23 +558,26 @@ class EquipmentSetSpider(scrapy.Spider):
 
 
 def CleanWeaponDF(CDF):
+    CDF.drop(['Equipment Set'], axis = 1, inplace = True)
     ColumnOrder = [
         "EquipSlot","EquipSet","EquipName","WeaponType",
-        "Level","STR","DEX","LUK","INT","Max HP","Defense",
+        "Level","STR","DEX","INT", "LUK","Max HP","Defense",
         "Weapon Attack","Magic Attack","Attack Speed","Boss Damage","Ignored Enemy Defense",
-        "Movement Speed","Knockback Chance", "Number of Upgrades","Equipment Set"
+        "Movement Speed","Knockback Chance", "Number of Upgrades"
     ]
     CDF = CDF[ColumnOrder]
     CDF = CDF.rename(columns={
         'Level' : 'EquipLevel'
     })
+    CDF.loc[CDF['EquipSet'].isnull(), "EquipSet"] = "None"    
+
     CDF = CDF.fillna(0)
     return CDF
 
 def CleanSecondaryDF(CDF):
     ColumnOrder =[
         "EquipSlot","ClassName","EquipName","WeaponType",
-        "Level", "STR","DEX","LUK","INT","All Stats","Max HP","Max MP","Defense",
+        "Level", "STR","DEX","INT", "LUK","All Stats","Max HP","Max MP","Defense",
         "Weapon Attack","Magic Attack","Attack Speed",
         "Max DF"     
     ]
@@ -580,7 +594,7 @@ def CleanArmorDF(CDF):
     CDF.drop("Category", axis=1, inplace=True)
     ColumnOrder = [
         "EquipSlot","ClassName","EquipName","Equipment Set",
-        "Level","STR","DEX","LUK","INT","Max HP","Max MP","Defense",
+        "Level","STR","DEX","INT","LUK","Max HP","Max MP","Defense",
         "Weapon Attack","Magic Attack", "Ignored Enemy Defense",
         "Movement Speed","Jump", 
         "Number of Upgrades"
@@ -590,7 +604,6 @@ def CleanArmorDF(CDF):
     CDF = CDF.rename(columns={
         "Level" : "EquipLevel",
         "Equipment Set" : "EquipSet",
-        "Defense" : "DEF",
         "ClassName" : "ClassType"
     })
 
@@ -606,7 +619,7 @@ def CleanAccessoryDF(CDF):
     ColumnOrder = [
     "EquipSlot","ClassName","EquipName","Equipment Set",
     "Category",
-    "Level","STR","DEX","LUK","INT","All Stats","Max HP","Max MP","Defense",
+    "Level","STR","DEX","INT","LUK","All Stats","Max HP","Max MP","Defense",
     "Weapon Attack","Magic Attack","Ignored Enemy Defense",
     "Movement Speed","Jump",
     "Number of Upgrades",
@@ -634,6 +647,11 @@ def CleanAccessoryDF(CDF):
 
 def CleanAndroidDF(CDF):
     CDF.drop(['Appearance', '[1]'], axis = 1, inplace = True)
+
+    CDF = CDF.rename(columns={
+        "Level" :"EquipLevel"
+    }) 
+    CDF.drop_duplicates(keep="first", inplace=True)
     return CDF
 
 def CleanMedalDF(CDF):
@@ -641,7 +659,7 @@ def CleanMedalDF(CDF):
     ColumnOrder = [
         "EquipSlot","ClassName","EquipName","Equipment Set",
         "Category",
-        "Level","STR","DEX","LUK","INT","All Stats","Max HP","Max MP","Defense",
+        "Level","STR","DEX","INT","LUK","All Stats","Max HP","Max MP","Defense",
         "Weapon Attack","Magic Attack","Ignored Enemy Defense","Boss Damage",
         "Movement Speed","Jump","Number of Upgrades"
     ]
@@ -664,7 +682,7 @@ def CleanSetEffect(CDF):
     try:
         ColumnOrder = [
             "EquipSet","ClassType","Set At",
-            "STR","DEX","LUK","INT","All Stats","Max HP","Max MP","Perc Max HP","Perc Max MP","Defense",
+            "STR","DEX","INT","LUK","All Stats","Max HP","Max MP","Perc Max HP","Perc Max MP","Defense",
             "Weapon Attack","Magic Attack","Ignored Enemy Defense","Boss Damage",
             "Critical Damage", "Damage","All Skills","Damage Against Normal Monsters","Abnormal Status Resistance"
         ]

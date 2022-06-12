@@ -100,21 +100,15 @@ def main():
 
     try:
         pd.set_option("display.max_rows", None, "display.max_columns", 50)
-        CDF = pd.read_csv('./DefaultData/EquipmentData/EquipSetData.csv')
-        ColumnOrder = [
-            "EquipSet","ClassType","Set At",
-            "STR","DEX","LUK","INT","All Stats","Max HP","Max MP","Perc Max HP","Perc Max MP","Defense",
-            "Weapon Attack","Magic Attack","Ignored Enemy Defense","Boss Damage",
-            "Critical Damage", "Damage","All Skills","Damage Against Normal Monsters","Abnormal Status Resistance"]
-
+        CDF = pd.read_csv('./DefaultData/EquipmentData/WeaponData.csv')
         
         
-        CDF = CDF[ColumnOrder]
-        
-        CDF.fillna(0, inplace=True) 
+        CDF.loc[CDF["EquipSet"] == "Genesis", "Equipment Set"] = "Lucky"
+        CDF.loc[CDF["Equipment Set"] == "0", "Equipment Set"] = "None"
         CDF.to_csv("TestResult.csv")
 
     except:
         Rlog.warn(traceback.format_exc())        
-    
+
+
 
