@@ -1,248 +1,263 @@
-,EquipSlot,ClassType,EquipName,EquipSet,EquipLevel,STR,DEX,INT,LUK,Max HP,Max MP,DEF,Weapon Attack,Magic Attack,Ignored Enemy Defense,Movement Speed,Jump,Number of Upgrades
-0,Gloves,Any,Antique Root Gloves,None,150,12,12,12,12,300,0,40,3,3,0,0,0,6
-1,Gloves,Any,High Quality Dimension Gloves,None,140,18,18,18,18,0,0,150,12,12,0,0,0,7
-2,Gloves,Any,Dimension Gloves,None,140,12,12,12,12,0,0,120,8,8,0,0,0,7
-3,Shoes,Warrior,Arcane Umbra Knight Shoes,Arcane Umbra Set,200,40,40,0,0,0,0,250,9,0,0,10,7,7
-4,Shoes,Warrior,AbsoLab Knight Shoes,AbsoLab Set,160,20,20,0,0,0,0,150,5,0,0,10,7,7
-5,Shoes,Warrior,Amaterasu's Shoes,Amaterasu Set,150,21,21,0,0,0,0,183,2,0,0,10,7,7
-6,Shoes,Warrior,Tyrant Hyades Boots,None,150,50,50,50,50,0,0,130,30,30,0,0,0,2
-7,Shoes,Zero,Gold Label Knight Shoes,Gold Label Knight Set,140,20,20,0,0,0,0,200,1,0,0,10,7,7
-8,Shoes,Warrior,Lionheart Battle Boots,Lionheart Set,140,15,15,0,0,0,0,150,1,0,0,10,5,7
-9,Shoes,Warrior,Pensalir Battle Boots,8th Warrior Set,140,15,9,0,0,0,0,120,1,0,0,5,0,6
-10,Shoes,Warrior,Royal Von Leon Warrior Boots,Royal Von Leon Warrior Set,130,9,4,0,0,0,15,120,0,0,0,5,0,7
-11,Shoes,Warrior,Muspell Warrior Shoes,7th Warrior Set,130,6,3,0,0,0,0,96,0,0,0,0,0,6
-12,Shoes,Warrior,Necromancer Warrior Shoes,Necromancer Warrior Set,120,5,3,0,0,0,0,84,0,0,0,0,0,6
-13,Hat,Any,Enraged Zakum Helmet,None,150,45,45,45,45,400,400,300,2,2,0,0,0,11
-14,Hat,Any,Chaos Vellum's Helm,None,140,23,23,23,23,0,0,350,1,1,0,5,0,11
-15,Hat,Any,Aquarius Crown,None,150,1,1,1,1,0,0,0,1,1,0,0,0,22
-16,Hat,Any,Chaos Queen's Tiara,None,140,23,23,23,23,0,0,300,1,1,0,5,0,10
-17,Hat,Any,Chaos Von Bon Helmet,None,140,23,23,23,23,0,0,300,1,1,0,5,0,10
-18,Hat,Any,Chaos Pierre Hat,None,140,23,23,23,23,0,0,300,1,1,0,5,0,10
-19,Hat,Any,Black Bean Hat,Black Bean Set,135,27,27,27,27,0,0,200,1,1,0,0,0,10
-20,Hat,Any,Chaos Pink Bean Hat,Chaos Pink Bean Set I,135,27,27,27,27,0,0,200,1,1,0,0,0,10
-21,Hat,Any,Greedy Lord Pirate Hat,Party Quest Set,125,15,15,15,15,250,250,110,3,3,0,10,5,7
-22,Hat,Magician,Arcane Umbra Mage Hat,Arcane Umbra Set,200,0,0,65,65,0,0,600,0,7,15,0,0,11
-23,Hat,Magician,AbsoLab Mage Crown,AbsoLab Set,160,0,0,45,45,0,0,400,0,3,10,0,0,11
-24,Hat,Magician,Royal Dunwitch Hat,Root Abyss Set,150,0,0,40,40,360,360,180,0,2,10,0,0,11
-25,Hat,Magician,Ame-no-Uzume's Helm,Ame-no-Uzume Set,150,0,0,36,36,300,300,190,0,2,0,0,0,10
-26,Hat,Magician,Pensalir Mage Sallet,8th Magician Set,140,0,0,16,15,150,150,110,0,0,0,0,0,9
-27,Hat,Magician,Muspell Magician Hat,7th Magician Set,130,0,0,7,5,0,25,70,0,0,0,0,0,9
-28,Hat,Magician,Dragon Tail Mage Sallet,Dragon Tail Set,140,0,0,25,25,300,300,150,0,1,0,0,0,10
-29,Hat,Magician,Royal Von Leon Magician Helm,Royal Von Leon Magician Set,130,0,0,11,7,0,50,105,0,0,0,0,0,10
-30,Hat,Bowman,Arcane Umbra Archer Hat,Arcane Umbra Set,200,65,65,0,0,0,0,600,7,0,15,0,0,11
-31,Hat,Bowman,AbsoLab Archer Hood,AbsoLab Set,160,45,45,0,0,0,0,400,3,0,10,0,0,11
-32,Hat,Bowman,Royal Ranger Beret,Root Abyss Set,150,40,40,0,0,360,360,300,2,0,10,0,0,11
-33,Hat,Bowman,Oyamatsumi's Helm,Oyamatsumi Set,150,36,36,0,0,300,300,333,2,0,0,0,0,10
-34,Hat,Bowman,Falcon Wing Sentinel Cap,Falcon Wing Set,140,25,25,0,0,300,300,250,1,0,0,0,0,10
-35,Hat,Bowman,Pensalir Sentinel Cap,8th Bowman Set,140,15,16,0,0,150,150,165,0,0,0,0,0,9
-36,Hat,Thief,Royal Assassin Hood,Root Abyss Set,150,0,40,0,40,360,360,300,2,0,10,0,0,11
-37,Hat,Bowman,Royal Von Leon Sentinel Helm,Royal Von Leon Bowman Set,130,5,11,0,0,50,0,128,0,0,0,0,0,10
-38,Hat,Thief,Arcane Umbra Thief Hat,Arcane Umbra Set,200,0,65,0,65,0,0,600,7,0,15,0,0,11
-39,Hat,Thief,AbsoLab Bandit Cap,AbsoLab Set,160,0,45,0,45,0,0,400,3,0,10,0,0,11
-40,Hat,Bowman,Muspell Bowman Hat,7th Bowman Set,130,3,7,0,0,25,0,85,0,0,0,0,0,9
-41,Hat,Thief,Tsukuyomi's Helm,Tsukuyomi Set,150,0,36,0,36,300,300,333,2,0,0,0,0,10
-42,Hat,Thief,Pensalir Chaser Hat,8th Thief Set,140,0,15,0,15,150,150,165,0,0,0,0,0,9
-43,Hat,Thief,Royal Von Leon Chaser Helm,Royal Von Leon Thief Set,130,0,6,0,10,50,0,128,0,0,0,0,0,10
-44,Hat,Pirate,AbsoLab Pirate Fedora,AbsoLab Set,160,45,45,0,0,0,0,400,3,0,10,0,0,11
-45,Hat,Thief,Muspell Thief Hat,7th Thief Set,130,0,4,0,6,25,0,85,0,0,0,0,0,9
-46,Hat,Thief,Raven Horn Chaser Hat,Raven Horn Set,140,0,25,0,25,300,300,250,1,0,0,0,0,10
-47,Hat,Pirate,Arcane Umbra Pirate Hat,Arcane Umbra Set,200,65,65,0,0,0,0,600,7,0,15,0,0,11
-48,Hat,Magician,Necromancer Magician Hat,Necromancer Magician Set,120,0,0,6,5,0,25,60,0,0,0,0,0,8
-49,Hat,Bowman,Necromancer Sentinel Hat,Necromancer Bowman Set,120,3,6,0,0,20,0,75,0,0,0,0,0,8
-50,Hat,Pirate,Royal Wanderer Hat,Root Abyss Set,150,40,40,0,0,360,360,300,2,0,10,0,0,11
-51,Hat,Pirate,Susano-o's Helm,Susano-o Set,150,36,36,0,0,300,300,333,2,0,0,0,0,10
-52,Hat,Pirate,Shark Tooth Skipper Hat,Shark Tooth Set,140,25,25,0,0,300,300,250,1,0,0,0,0,10
-53,Hat,Pirate,Pensalir Skipper Hat,8th Pirate Set,140,15,15,0,0,150,150,165,0,0,0,0,0,9
-54,Hat,Pirate,Royal Von Leon Skipper Helm,Royal Von Leon Pirate Set,130,9,9,0,0,0,0,128,0,0,0,0,0,10
-55,Hat,Pirate,Muspell Pirate Hat,7th Pirate Set,130,6,6,0,0,0,0,85,0,0,0,0,0,9
-56,Hat,Pirate,Necromancer Skipper Hat,Necromancer Pirate Set,120,5,5,0,0,0,0,75,0,0,0,0,0,8
-57,Hat,Thief,Necromancer Chaser Hat,Necromancer Thief Set,120,0,4,0,5,20,0,75,0,0,0,0,0,8
-58,Hat,Warrior,Necromancer Warrior Hat,Necromancer Warrior Set,120,6,0,0,0,0,0,120,0,0,0,0,0,8
-59,Hat,Warrior,Arcane Umbra Knight Hat,Arcane Umbra Set,200,65,65,0,0,0,0,600,7,0,15,0,0,11
-60,Hat,Warrior,AbsoLab Knight Helm,AbsoLab Set,160,45,45,0,0,0,0,400,3,0,10,0,0,11
-61,Hat,Warrior,Royal Warrior Helm,Root Abyss Set,150,40,40,0,0,360,360,390,2,0,10,0,0,11
-62,Hat,Warrior,Muspell Warrior Hat,7th Warrior Set,130,7,0,0,0,0,0,130,0,0,0,0,0,9
-63,Hat,Warrior,Amaterasu's Helm,Amaterasu Set,150,36,36,0,0,300,300,423,2,0,0,0,0,10
-64,Hat,Zero,Gold Label Knight Hat,Gold Label Knight Set,140,30,30,0,0,330,330,350,1,0,0,0,0,10
-65,Hat,Warrior,Lionheart Battle Helm,Lionheart Set,140,25,25,0,0,300,300,325,1,0,0,0,0,10
-66,Hat,Warrior,Pensalir Battle Helm,8th Warrior Set,140,16,10,0,0,150,150,225,0,0,0,0,0,9
-67,Hat,Warrior,Royal Von Leon Warrior Helm,Royal Von Leon Warrior Set,130,11,0,0,0,0,0,195,0,0,0,0,0,10
-68,Cape,Any,Enraged Zakum Cape,None,150,12,12,12,12,0,0,150,1,1,0,10,5,7
-69,Cape,Any,Shroud of Zakum,None,120,3,3,3,3,0,0,50,0,0,0,0,0,7
-70,Overall,Xenon,Proton Suit (Male),None,120,20,20,0,20,0,0,155,1,0,0,0,0,10
-71,Overall,Any,Black Bean Suit,Black Bean Set,135,32,32,32,32,30,0,350,2,2,0,0,0,12
-72,Overall,Any,Chaos Pink Bean Suit,Chaos Pink Bean Set I,135,32,32,32,32,30,0,350,2,2,0,0,0,12
-73,Cape,Pirate,Arcane Umbra Pirate Cape,Arcane Umbra Set,200,35,35,35,35,0,0,450,6,6,0,0,0,7
-74,Cape,Thief,Arcane Umbra Thief Cape,Arcane Umbra Set,200,35,35,35,35,0,0,450,6,6,0,0,0,7
-75,Cape,Thief,Tyrant Lycaon Cloak,None,150,50,50,50,50,0,0,150,30,30,0,0,0,2
-76,Cape,Thief,Tsukuyomi's Cape,Tsukuyomi Set,150,0,10,0,10,0,0,198,2,0,0,10,5,7
-77,Cape,Thief,AbsoLab Bandit Cape,AbsoLab Set,160,15,15,15,15,0,0,250,2,2,0,0,0,7
-78,Cape,Thief,Raven Horn Chaser Cape,Raven Horn Set,140,0,7,0,7,0,0,150,1,0,0,10,5,7
-79,Cape,Thief,Pensalir Chaser Cape,8th Thief Set,140,4,4,4,4,0,0,150,0,0,0,0,4,7
-80,Cape,Thief,Royal Von Leon Chaser Cape,Royal Von Leon Thief Set,130,3,3,3,3,50,0,120,0,0,0,0,0,7
-81,Overall,Thief,Arcane Umbra Thief Suit,Arcane Umbra Set,200,0,85,0,85,0,0,500,9,0,10,0,0,12
-82,Overall,Bowman,Arcane Umbra Archer Suit,Arcane Umbra Set,200,85,85,0,0,0,0,500,9,0,10,0,0,12
-83,Overall,Bowman,Falcon Wing Sentinel Suit,Falcon Wing Set,140,30,30,0,0,0,0,225,2,0,0,0,0,12
-84,Overall,Bowman,AbsoLab Archer Suit,AbsoLab Set,160,65,65,0,0,0,0,300,5,0,0,0,0,12
-85,Overall,Bowman,Oyamatsumi's Armor,Oyamatsumi Set,150,43,43,0,0,0,0,270,3,0,0,0,0,12
-86,Overall,Magician,Arcane Umbra Mage Suit,Arcane Umbra Set,200,0,0,85,85,0,0,500,0,9,10,0,0,12
-87,Overall,Magician,AbsoLab Mage Suit,AbsoLab Set,160,0,0,65,65,0,0,300,0,5,0,0,0,12
-88,Overall,Magician,Ame-no-Uzume's Armor,Ame-no-Uzume Set,150,0,0,43,43,0,0,245,0,3,0,0,0,12
-89,Overall,Magician,Dragon Tail Mage Robe,Dragon Tail Set,140,0,0,30,30,0,0,200,0,2,0,0,0,12
-90,Overall,Magician,Pensalir Mage Robe,8th Magician Set,140,0,0,20,20,0,60,150,0,1,0,0,0,10
-91,Overall,Magician,Royal Von Leon Mage Suit,Royal Von Leon Magician Set,130,0,0,13,7,0,100,150,0,0,0,0,0,10
-92,Overall,Magician,Necromancer Magician Suit,Necromancer Magician Set,120,0,0,8,4,0,50,100,0,0,0,0,0,10
-93,Overall,Bowman,Pensalir Sentinel Suit,8th Bowman Set,140,18,20,0,0,0,0,180,1,0,0,0,0,10
-94,Overall,Bowman,Royal Von Leon Sentinel Suit,Royal Von Leon Bowman Set,130,8,13,0,0,0,0,190,0,0,0,0,0,10
-95,Overall,Bowman,Muspell Bowman Suit,7th Bowman Set,130,6,9,0,0,0,0,160,0,0,0,0,0,10
-96,Overall,Magician,Muspell Magician Suit,7th Magician Set,130,0,0,9,5,0,50,130,0,0,0,0,0,10
-97,Overall,Bowman,Necromancer Sentinel Suit,Necromancer Bowman Set,120,6,8,0,0,0,0,130,0,0,0,0,0,10
-98,Overall,Pirate,Arcane Umbra Pirate Suit,Arcane Umbra Set,200,85,85,0,0,0,0,500,9,0,10,0,0,12
-99,Overall,Thief,Tsukuyomi's Armor,Tsukuyomi Set,150,0,43,0,43,0,0,270,3,0,0,0,0,12
-100,Overall,Thief,AbsoLab Bandit Suit,AbsoLab Set,160,0,65,0,65,0,0,300,5,0,0,0,0,12
-101,Overall,Thief,Raven Horn Chaser Armor,Raven Horn Set,140,0,30,0,30,0,0,225,2,0,0,0,0,12
-102,Overall,Thief,Pensalir Chaser Armor,8th Thief Set,140,0,18,0,20,0,0,180,1,0,0,0,0,10
-103,Overall,Thief,Royal Von Leon Chaser Suit,Royal Von Leon Thief Set,130,0,7,0,12,0,0,190,0,0,0,0,0,10
-104,Overall,Thief,Necromancer Chaser Suit,Necromancer Thief Set,120,0,5,0,7,0,0,130,0,0,0,0,0,10
-105,Overall,Thief,Muspell Thief Suit,7th Thief Set,130,0,5,0,8,0,0,160,0,0,0,0,0,10
-106,Overall,Pirate,AbsoLab Pirate Suit,AbsoLab Set,160,65,65,0,65,0,0,300,5,0,0,0,0,12
-107,Overall,Pirate,Susano-o's Armor,Susano-o Set,150,43,43,0,0,0,0,270,3,0,0,0,0,12
-108,Overall,Pirate,Shark Tooth Skipper Coat,Shark Tooth Set,140,30,30,0,0,0,0,225,2,0,0,0,0,12
-109,Overall,Pirate,Pensalir Skipper Coat,8th Pirate Set,140,20,20,0,0,0,0,180,1,0,0,0,0,10
-110,Overall,Pirate,Royal Von Leon Skipper Suit,Royal Von Leon Pirate Set,130,11,11,0,0,100,0,190,0,0,0,0,0,10
-111,Overall,Pirate,Muspell Pirate Suit,7th Pirate Set,130,8,8,0,0,0,0,160,0,0,0,0,0,10
-112,Overall,Pirate,Necromancer Skipper Suit,Necromancer Pirate Set,120,7,7,0,0,0,0,130,0,0,0,0,0,10
-113,Cape,Magician,Arcane Umbra Mage Cape,Arcane Umbra Set,200,35,35,35,35,0,0,450,6,6,0,0,0,7
-114,Cape,Magician,AbsoLab Mage Cape,AbsoLab Set,160,15,15,15,15,0,0,250,2,2,0,0,0,7
-115,Cape,Magician,Ame-no-Uzume's Cape,Ame-no-Uzume Set,150,0,0,10,10,0,0,124,0,2,0,10,5,7
-116,Cape,Magician,Tyrant Hermes Cloak,None,150,50,50,50,50,0,0,150,30,30,0,0,0,2
-117,Cape,Magician,Dragon Tail Mage Cape,Dragon Tail Set,140,0,0,7,7,0,0,100,0,1,0,10,5,7
-118,Cape,Magician,Pensalir Mage Cape,8th Magician Set,140,4,4,4,4,0,0,150,0,0,0,0,4,7
-119,Cape,Magician,Royal Von Leon Mage Cape,Royal Von Leon Magician Set,130,3,3,3,3,50,0,120,0,0,0,0,0,7
-120,Cape,Bowman,Arcane Umbra Archer Cape,Arcane Umbra Set,200,35,35,35,35,0,0,450,6,6,0,0,0,7
-121,Cape,Bowman,Tyrant Charon Cloak,None,150,50,50,50,50,0,0,150,30,30,0,0,0,2
-122,Cape,Bowman,Oyamatsumi's Cape,Oyamatsumi Set,150,10,10,0,0,0,0,198,2,0,0,10,5,7
-123,Cape,Bowman,AbsoLab Archer Cape,AbsoLab Set,160,15,15,15,15,0,0,250,2,2,0,0,0,7
-124,Cape,Bowman,Falcon Wing Sentinel Cape,Falcon Wing Set,140,7,7,0,0,0,0,150,1,0,0,10,5,7
-125,Cape,Bowman,Pensalir Sentinel Cape,8th Bowman Set,140,4,4,4,4,0,0,150,0,0,0,0,4,7
-126,Cape,Bowman,Royal Von Leon Sentinel Cape,Royal Von Leon Bowman Set,130,3,3,3,3,50,0,120,0,0,0,0,0,7
-127,Cape,Pirate,AbsoLab Pirate Cape,AbsoLab Set,160,15,15,15,15,0,0,250,2,2,0,0,0,7
-128,Cape,Pirate,Tyrant Altair Cloak,None,150,50,50,50,50,0,0,150,30,30,0,0,0,2
-129,Cape,Pirate,Susano-o's Cape,Susano-o Set,150,10,10,0,0,0,0,198,2,0,0,10,5,7
-130,Cape,Pirate,Pensalir Skipper Cape,8th Pirate Set,140,4,4,4,4,0,0,150,0,0,0,0,4,7
-131,Cape,Pirate,Royal Von Leon Skipper Cape,Royal Von Leon Pirate Set,130,3,3,3,3,50,0,120,0,0,0,0,0,7
-132,Cape,Pirate,Shark Tooth Skipper Cape,Shark Tooth Set,140,7,7,0,0,0,0,150,1,0,0,10,5,7
-133,Top,Pirate,Eagle Eye Wanderer Coat,Root Abyss Set,150,30,30,0,0,0,0,135,2,0,5,0,0,7
-134,Overall,Warrior,Arcane Umbra Knight Suit,Arcane Umbra Set,200,85,85,0,0,0,0,500,9,0,10,0,0,12
-135,Overall,Warrior,AbsoLab Knight Suit,AbsoLab Set,160,65,65,0,0,0,0,300,5,0,0,0,0,12
-136,Top,Magician,Eagle Eye Dunwitch Robe,Root Abyss Set,150,30,30,0,0,0,0,120,0,2,5,0,0,7
-137,Top,Bowman,Eagle Eye Ranger Cowl,Root Abyss Set,150,30,30,0,0,0,0,135,2,0,5,0,0,7
-138,Overall,Warrior,Amaterasu's Armor,Amaterasu Set,150,43,43,0,0,0,0,422,3,0,0,0,0,12
-139,Overall,Zero,Gold Label Knight Suit,Gold Label Knight Set,140,35,35,0,0,0,0,400,2,0,0,0,0,12
-140,Top,Thief,Eagle Eye Assassin Shirt,Root Abyss Set,150,0,30,0,30,0,0,135,2,0,5,0,0,7
-141,Overall,Warrior,Lionheart Battle Mail,Lionheart Set,140,30,30,0,0,0,0,350,2,0,0,0,0,12
-142,Overall,Warrior,Pensalir Battle Mail,8th Warrior Set,140,20,20,0,0,0,0,325,1,0,0,0,0,10
-143,Overall,Warrior,Royal Von Leon Warrior Suit,Royal Von Leon Warrior Set,130,13,9,0,0,0,0,300,0,0,0,0,0,10
-144,Overall,Warrior,Muspell Warrior Suit,7th Warrior Set,130,9,7,0,0,0,0,250,0,0,0,0,0,10
-145,Overall,Warrior,Necromancer Warrior Suit,Necromancer Warrior Set,120,8,7,0,0,0,0,200,0,0,0,0,0,10
-146,Cape,Warrior,Tyrant Hyades Cloak,None,150,50,50,50,50,0,0,150,30,30,0,0,0,2
-147,Cape,Warrior,Arcane Umbra Knight Cape,Arcane Umbra Set,200,35,35,35,35,0,0,450,6,6,0,0,0,7
-148,Cape,Warrior,AbsoLab Knight Cape,AbsoLab Set,160,15,15,15,15,0,0,250,2,2,0,0,0,7
-149,Cape,Warrior,Amaterasu's Cape,Amaterasu Set,150,10,10,0,0,0,0,273,2,0,0,10,5,7
-150,Cape,Zero,Gold Label Knight Cape,Gold Label Knight Set,140,12,12,0,0,0,0,250,1,0,0,10,5,7
-151,Cape,Warrior,Lionheart Battle Cape,Lionheart Set,140,7,7,0,0,0,0,200,1,0,0,10,5,7
-152,Cape,Warrior,Pensalir Battle Cape,8th Warrior Set,140,4,4,4,4,0,0,150,0,0,0,0,4,7
-153,Cape,Warrior,Royal Von Leon Warrior Cape,Royal Von Leon Warrior Set,130,3,3,3,3,50,0,120,0,0,0,0,0,7
-154,Gloves,Any,Mu Gong's Gloves,None,120,25,25,25,25,0,0,200,15,15,0,0,0,0
-155,Gloves,Any,Hero's Gloves,None,120,30,30,30,30,0,0,250,20,20,0,0,0,0
-156,Gloves,Any,So Gong's Gloves,None,120,20,20,20,20,0,0,150,10,10,0,0,0,0
-157,Shoes,Any,Antique Root Boots,None,150,12,12,12,12,0,0,70,1,1,0,5,0,6
-158,Shoes,Xenon,Proton Boots,None,120,10,10,0,10,0,0,60,1,0,0,8,5,5
-159,Bottom,Thief,Trixter Assassin Pants,Root Abyss Set,150,0,30,0,30,0,0,135,2,0,5,0,0,7
-160,Bottom,Pirate,Trixter Wanderer Pants,Root Abyss Set,150,30,30,0,0,0,0,135,2,0,5,0,0,7
-161,Bottom,Bowman,Trixter Ranger Pants,Root Abyss Set,150,30,30,0,0,0,0,135,2,0,5,0,0,7
-162,Bottom,Magician,Trixter Dunwitch Pants,Root Abyss Set,150,0,0,30,30,0,0,120,0,2,5,0,0,7
-163,Gloves,Thief,Necromancer Chaser Gloves,Necromancer Thief Set,120,0,6,0,6,0,0,46,0,0,0,0,0,6
-164,Gloves,Magician,Arcane Umbra Mage Gloves,Arcane Umbra Set,200,0,0,40,40,0,0,250,0,9,0,0,0,7
-165,Gloves,Magician,AbsoLab Mage Gloves,AbsoLab Set,160,0,0,20,20,0,0,150,0,5,0,0,0,7
-166,Gloves,Magician,Tyrant Hermes Gloves,None,150,0,0,12,12,0,300,0,0,15,0,0,0,2
-167,Gloves,Magician,Ame-no-Uzume's Gloves,Ame-no-Uzume Set,150,0,0,21,21,350,0,20,0,8,0,0,0,7
-168,Gloves,Thief,Arcane Umbra Thief Gloves,Arcane Umbra Set,200,0,40,0,40,0,0,250,9,0,0,0,0,7
-169,Gloves,Thief,Tyrant Lycaon Gloves,None,150,12,12,0,0,0,0,60,15,0,0,0,0,2
-170,Gloves,Thief,AbsoLab Bandit Gloves,AbsoLab Set,160,0,20,0,20,0,0,150,5,0,0,0,0,7
-171,Gloves,Warrior,Muspell Warrior Gloves,7th Warrior Set,130,7,4,0,0,0,0,56,0,0,0,0,0,6
-172,Bottom,Warrior,Trixter Warrior Pants,Root Abyss Set,150,30,30,0,0,0,0,210,0,2,5,0,0,7
-173,Gloves,Thief,Tsukuyomi's Gloves,Tsukuyomi Set,150,0,21,0,21,350,0,52,8,0,0,0,0,7
-174,Gloves,Warrior,Necromancer Warrior Gloves,Necromancer Warrior Set,120,6,4,0,0,0,0,51,0,0,0,0,0,6
-175,Gloves,Warrior,Arcane Umbra Knight Gloves,Arcane Umbra Set,200,40,40,0,0,0,0,250,9,0,0,0,0,7
-176,Shoes,Magician,Necromancer Magician Shoes,Necromancer Magician Set,120,0,0,4,4,0,0,47,0,1,0,0,0,6
-177,Shoes,Thief,Arcane Umbra Thief Shoes,Arcane Umbra Set,200,0,40,0,40,0,0,250,9,0,0,10,7,7
-178,Shoes,Thief,AbsoLab Bandit Shoes,AbsoLab Set,160,0,20,0,20,0,0,150,5,0,0,10,7,7
-179,Shoes,Thief,Tyrant Lycaon Boots,None,150,50,50,50,50,0,0,130,30,30,0,0,0,2
-180,Shoes,Thief,Tsukuyomi's Shoes,Tsukuyomi Set,150,0,21,0,21,0,0,93,2,0,0,10,7,7
-181,Shoes,Thief,Raven Horn Chaser Boots,Raven Horn Set,140,0,15,0,15,0,0,85,1,0,0,10,7,7
-182,Shoes,Thief,Pensalir Chaser Boots,8th Thief Set,140,0,10,0,10,0,0,80,1,0,0,5,0,6
-183,Shoes,Magician,Arcane Umbra Mage Shoes,Arcane Umbra Set,200,0,0,40,40,0,0,250,0,9,0,10,7,7
-184,Shoes,Thief,Royal Von Leon Chaser Boots,Royal Von Leon Thief Set,130,0,5,0,8,0,15,90,0,0,0,5,0,7
-185,Shoes,Magician,Tyrant Hermes Boots,None,150,50,50,50,50,0,0,130,30,30,0,0,0,2
-186,Shoes,Magician,AbsoLab Mage Shoes,AbsoLab Set,160,0,0,20,20,0,0,150,0,5,0,10,7,7
-187,Shoes,Magician,Ame-no-Uzume's Shoes,Ame-no-Uzume Set,150,0,0,21,21,0,0,52,0,2,0,10,7,7
-188,Shoes,Magician,Dragon Tail Mage Shoes,Dragon Tail Set,140,0,0,15,15,0,0,50,0,1,0,10,7,7
-189,Shoes,Magician,Pensalir Mage Boots,8th Magician Set,140,0,0,11,10,0,0,50,0,1,0,5,0,6
-190,Shoes,Magician,Royal Von Leon Mage Boots,Royal Von Leon Magician Set,130,0,0,8,5,0,15,60,0,0,0,5,0,7
-191,Shoes,Magician,Muspell Magician Shoes,7th Magician Set,130,0,0,7,4,0,0,51,0,0,0,0,0,6
-192,Shoes,Thief,Muspell Thief Shoes,7th Thief Set,130,0,4,0,5,0,0,76,0,0,0,0,0,6
-193,Shoes,Bowman,Arcane Umbra Archer Shoes,Arcane Umbra Set,200,40,40,0,0,0,0,250,9,0,0,10,7,7
-194,Shoes,Bowman,AbsoLab Archer Shoes,AbsoLab Set,160,20,20,0,0,0,0,150,5,0,0,10,7,7
-195,Shoes,Bowman,Pensalir Sentinel Boots,8th Bowman Set,140,9,10,0,0,0,0,80,1,0,0,5,0,6
-196,Shoes,Bowman,Tyrant Charon Boots,None,150,50,50,50,50,0,0,130,30,30,0,0,0,2
-197,Shoes,Bowman,Oyamatsumi's Shoes,Oyamatsumi Set,150,21,21,0,0,0,0,93,2,0,0,10,7,7
-198,Shoes,Bowman,Falcon Wing Sentinel Boots,Falcon Wing Set,140,15,15,0,0,0,0,85,1,0,0,10,7,7
-199,Shoes,Bowman,Royal Von Leon Sentinel Boots,Royal Von Leon Bowman Set,130,4,9,0,0,0,15,90,0,0,0,5,0,7
-200,Shoes,Bowman,Muspell Bowman Shoes,7th Bowman Set,130,3,6,0,0,0,0,76,0,0,0,0,0,6
-201,Shoes,Bowman,Necromancer Sentinel Shoes,Necromancer Bowman Set,120,3,5,0,0,0,0,70,0,0,0,0,0,6
-202,Shoes,Thief,Necromancer Chaser Shoes,Necromancer Thief Set,120,0,4,0,4,0,0,70,0,0,0,0,0,6
-203,Shoes,Pirate,AbsoLab Pirate Shoes,AbsoLab Set,160,20,20,0,0,0,0,150,5,0,0,10,7,7
-204,Shoes,Pirate,Arcane Umbra Pirate Shoes,Arcane Umbra Set,200,40,40,0,0,0,0,250,9,0,0,10,7,7
-205,Shoes,Pirate,Tyrant Altair Boots,None,150,50,50,50,50,0,0,130,30,30,0,0,0,2
-206,Shoes,Pirate,Susano-o's Shoes,Susano-o Set,150,21,21,0,0,0,0,93,2,0,0,10,7,7
-207,Shoes,Pirate,Shark Tooth Skipper Boots,Shark Tooth Set,140,0,15,0,15,0,0,85,1,0,0,10,7,7
-208,Shoes,Pirate,Pensalir Skipper Boots,8th Pirate Set,140,10,10,0,0,0,0,80,1,0,0,5,0,6
-209,Shoes,Pirate,Muspell Pirate Shoes,7th Pirate Set,130,5,5,0,0,0,0,76,0,0,0,0,0,6
-210,Shoes,Pirate,Royal Von Leon Skipper Boots,Royal Von Leon Pirate Set,130,7,7,0,0,0,15,90,0,0,0,5,0,7
-211,Shoes,Pirate,Necromancer Skipper Shoes,Necromancer Pirate Set,120,4,4,0,0,0,0,70,0,0,0,0,0,6
-212,Gloves,Warrior,AbsoLab Knight Gloves,AbsoLab Set,160,20,20,0,0,0,0,150,5,0,0,0,0,7
-213,Gloves,Warrior,Tyrant Hyades Gloves,None,150,12,12,0,0,0,0,160,15,0,0,0,0,2
-214,Gloves,Warrior,Amaterasu's Gloves,Amaterasu Set,150,21,21,0,0,350,0,95,8,0,0,0,0,7
-215,Gloves,Zero,Gold Label Knight Gloves,Gold Label Knight Set,140,20,20,0,0,380,0,100,5,0,0,0,0,7
-216,Gloves,Warrior,Lionheart Battle Bracers,Lionheart Set,140,16,16,0,0,350,0,200,5,0,0,0,0,12
-217,Gloves,Warrior,Pensalir Battle Gloves,8th Warrior Set,140,11,10,0,0,0,0,65,2,0,0,0,0,6
-218,Gloves,Warrior,Royal Von Leon Warrior Hands,Royal Von Leon Warrior Set,130,9,5,0,0,60,0,80,1,0,0,0,0,7
-219,Gloves,Thief,Raven Horn Chaser Gloves,Raven Horn Set,140,0,16,0,16,350,0,50,5,0,0,0,0,7
-220,Gloves,Thief,Pensalir Chaser Gloves,8th Thief Set,140,0,11,0,11,200,0,50,2,0,0,0,0,6
-221,Gloves,Thief,Royal Von Leon Chaser Hands,Royal Von Leon Thief Set,130,0,7,0,9,0,40,64,1,0,0,0,0,7
-222,Gloves,Thief,Muspell Thief Gloves,7th Thief Set,130,0,6,0,7,0,0,49,0,0,0,0,0,6
-223,Top,Warrior,Eagle Eye Warrior Armor,Root Abyss Set,150,30,30,0,0,0,0,210,2,0,5,0,0,7
-224,Gloves,Magician,Dragon Tail Mage Gloves,Dragon Tail Set,140,0,0,16,16,350,0,30,0,5,0,0,0,7
-225,Gloves,Magician,Pensalir Mage Gloves,8th Magician Set,140,0,0,11,11,200,0,40,0,2,0,0,0,6
-226,Gloves,Magician,Royal Von Leon Mage Hands,Royal Von Leon Magician Set,130,0,0,8,7,0,40,65,0,1,0,0,0,7
-227,Gloves,Magician,Muspell Magician Gloves,7th Magician Set,130,0,0,6,6,0,0,55,0,0,0,0,0,6
-228,Gloves,Bowman,Arcane Umbra Archer Gloves,Arcane Umbra Set,200,40,40,0,0,0,0,250,9,0,0,0,0,7
-229,Gloves,Bowman,AbsoLab Archer Gloves,AbsoLab Set,160,20,20,0,0,0,0,150,5,0,0,0,0,7
-230,Gloves,Bowman,Tyrant Charon Gloves,None,150,12,12,0,0,0,0,80,15,0,0,0,0,2
-231,Gloves,Bowman,Oyamatsumi's Gloves,Oyamatsumi Set,150,21,21,0,0,350,0,52,8,0,0,0,0,7
-232,Gloves,Bowman,Falcon Wing Sentinel Gloves,Falcon Wing Set,140,16,16,0,0,350,0,50,5,0,0,0,0,7
-233,Gloves,Bowman,Pensalir Sentinel Gloves,8th Bowman Set,140,10,11,0,0,200,0,50,2,0,0,0,0,6
-234,Gloves,Magician,Necromancer Magician Gloves,Necromancer Magician Set,120,0,0,5,5,0,0,50,0,0,0,0,0,6
-235,Gloves,Bowman,Royal Von Leon Sentinel Hands,Royal Von Leon Bowman Set,130,6,9,0,0,0,40,60,1,0,0,0,0,7
-236,Gloves,Bowman,Muspell Bowman Gloves,7th Bowman Set,130,5,7,0,0,0,0,52,0,0,0,0,0,6
-237,Gloves,Bowman,Necromancer Sentinel Gloves,Necromancer Bowman Set,120,5,6,0,0,0,0,48,0,0,0,0,0,6
-238,Gloves,Pirate,Arcane Umbra Pirate Gloves,Arcane Umbra Set,200,40,40,0,0,0,0,250,9,0,0,0,0,7
-239,Gloves,Pirate,AbsoLab Pirate Gloves,AbsoLab Set,160,20,20,0,0,0,0,150,5,0,0,0,0,7
-240,Gloves,Pirate,Tyrant Altair Gloves,None,150,12,12,0,0,0,0,100,15,0,0,0,0,2
-241,Gloves,Pirate,Shark Tooth Skipper Gloves,Shark Tooth Set,140,0,16,0,16,350,0,50,5,0,0,0,0,7
-242,Gloves,Pirate,Susano-o's Gloves,Susano-o Set,150,21,21,0,0,350,0,52,8,0,0,0,0,7
-243,Gloves,Pirate,Pensalir Skipper Gloves,8th Pirate Set,140,11,11,0,0,200,0,50,2,0,0,0,0,6
-244,Gloves,Pirate,Royal Von Leon Skipper Hands,Royal Von Leon Pirate Set,130,8,8,0,0,60,0,55,1,0,0,0,0,7
-245,Gloves,Pirate,Muspell Pirate Gloves,7th Pirate Set,130,6,6,0,0,0,0,52,0,0,0,0,0,6
-246,Gloves,Pirate,Necromancer Skipper Gloves,Necromancer Pirate Set,120,5,5,0,0,0,0,48,0,0,0,0,0,6
+,EquipSlot,ClassType,EquipName,EquipSet,EquipLevel,STR,DEX,INT,LUK,Max HP,Max MP,Defense,Weapon Attack,Magic Attack,Ignored Enemy Defense,Movement Speed,Jump,Number of Upgrades
+0,Hat,Any,Greedy Lord Pirate Hat,Party Quest Set,125,15,15,15,15,250,250,110,3,3,0,10,5,7
+1,Hat,Any,Enraged Zakum Helmet,None,150,45,45,45,45,400,400,300,2,2,0,0,0,11
+2,Hat,Any,Aquarius Crown,None,150,1,1,1,1,0,0,0,1,1,0,0,0,22
+3,Hat,Any,Chaos Vellum's Helm,None,140,23,23,23,23,0,0,350,1,1,0,5,0,11
+4,Hat,Any,Chaos Queen's Tiara,None,140,23,23,23,23,0,0,300,1,1,0,5,0,10
+5,Hat,Any,Chaos Von Bon Helmet,None,140,23,23,23,23,0,0,300,1,1,0,5,0,10
+6,Gloves,Any,Antique Root Gloves,None,150,12,12,12,12,300,0,40,3,3,0,0,0,6
+7,Gloves,Any,High Quality Dimension Gloves,None,140,18,18,18,18,0,0,150,12,12,0,0,0,7
+8,Gloves,Any,Dimension Gloves,None,140,12,12,12,12,0,0,120,8,8,0,0,0,7
+9,Gloves,Any,So Gong's Gloves,None,120,20,20,20,20,0,0,150,10,10,0,0,0,0
+10,Gloves,Any,Hero's Gloves,None,120,30,30,30,30,0,0,250,20,20,0,0,0,0
+11,Gloves,Any,Mu Gong's Gloves,None,120,25,25,25,25,0,0,200,15,15,0,0,0,0
+12,Hat,Thief,Necromancer Chaser Hat,Necromancer Thief Set,120,0,4,0,5,20,0,75,0,0,0,0,0,8
+13,Cape,Any,Enraged Zakum Cape,None,150,12,12,12,12,0,0,150,1,1,0,10,5,7
+14,Hat,Pirate,Eternal Pirate Hat,Eternal Set,250,80,80,0,0,0,0,750,10,0,15,0,0,11
+15,Hat,Pirate,Arcane Umbra Pirate Hat,Arcane Umbra Set,200,65,65,0,0,0,0,600,7,0,15,0,0,11
+16,Hat,Pirate,AbsoLab Pirate Fedora,AbsoLab Set,160,45,45,0,0,0,0,400,3,0,10,0,0,11
+17,Hat,Pirate,Royal Wanderer Hat,Root Abyss Set,150,40,40,0,0,360,360,300,2,0,10,0,0,11
+18,Hat,Pirate,Susano-o's Helm,Susano-o Set,150,36,36,0,0,300,300,333,2,0,0,0,0,10
+19,Hat,Pirate,Shark Tooth Skipper Hat,Shark Tooth Set,140,25,25,0,0,300,300,250,1,0,0,0,0,10
+20,Hat,Pirate,Pensalir Skipper Hat,8th Pirate Set,140,15,15,0,0,150,150,165,0,0,0,0,0,9
+21,Hat,Pirate,Royal Von Leon Skipper Helm,Royal Von Leon Pirate Set,130,9,9,0,0,0,0,128,0,0,0,0,0,10
+22,Hat,Pirate,Muspell Pirate Hat,7th Pirate Set,130,6,6,0,0,0,0,85,0,0,0,0,0,9
+23,Hat,Thief,Arcane Umbra Thief Hat,Arcane Umbra Set,200,0,65,0,65,0,0,600,7,0,15,0,0,11
+24,Hat,Thief,Eternal Thief Bandana,Eternal Set,250,0,80,0,80,0,0,750,10,0,15,0,0,11
+25,Hat,Thief,AbsoLab Bandit Cap,AbsoLab Set,160,0,45,0,45,0,0,400,3,0,10,0,0,11
+26,Hat,Thief,Royal Assassin Hood,Root Abyss Set,150,0,40,0,40,360,360,300,2,0,10,0,0,11
+27,Hat,Pirate,Necromancer Skipper Hat,Necromancer Pirate Set,120,5,5,0,0,0,0,75,0,0,0,0,0,8
+28,Cape,Warrior,Arcane Umbra Knight Cape,Arcane Umbra Set,200,35,35,35,35,0,0,450,6,6,0,0,0,7
+29,Cape,Warrior,AbsoLab Knight Cape,AbsoLab Set,160,15,15,15,15,0,0,250,2,2,0,0,0,7
+30,Gloves,Warrior,Arcane Umbra Knight Gloves,Arcane Umbra Set,200,40,40,0,0,0,0,250,9,0,0,0,0,7
+31,Gloves,Warrior,AbsoLab Knight Gloves,AbsoLab Set,160,20,20,0,0,0,0,150,5,0,0,0,0,7
+32,Gloves,Warrior,Tyrant Hyades Gloves,None,150,12,12,0,0,0,0,160,15,0,0,0,0,2
+33,Gloves,Warrior,Amaterasu's Gloves,Amaterasu Set,150,21,21,0,0,350,0,95,8,0,0,0,0,7
+34,Gloves,Zero,Gold Label Knight Gloves,Gold Label Knight Set,140,20,20,0,0,380,0,100,5,0,0,0,0,7
+35,Gloves,Warrior,Lionheart Battle Bracers,Lionheart Set,140,16,16,0,0,350,0,200,5,0,0,0,0,12
+36,Gloves,Warrior,Pensalir Battle Gloves,8th Warrior Set,140,11,10,0,0,0,0,65,2,0,0,0,0,6
+37,Cape,Warrior,Tyrant Hyades Cloak,None,150,50,50,50,50,0,0,150,30,30,0,0,0,2
+38,Cape,Zero,Gold Label Knight Cape,Gold Label Knight Set,140,12,12,0,0,0,0,250,1,0,0,10,5,7
+39,Cape,Warrior,Amaterasu's Cape,Amaterasu Set,150,10,10,0,0,0,0,273,2,0,0,10,5,7
+40,Cape,Warrior,Lionheart Battle Cape,Lionheart Set,140,7,7,0,0,0,0,200,1,0,0,10,5,7
+41,Cape,Warrior,Pensalir Battle Cape,8th Warrior Set,140,4,4,4,4,0,0,150,0,0,0,0,4,7
+42,Cape,Warrior,Royal Von Leon Warrior Cape,Royal Von Leon Warrior Set,130,3,3,3,3,50,0,120,0,0,0,0,0,7
+43,Gloves,Warrior,Royal Von Leon Warrior Hands,Royal Von Leon Warrior Set,130,9,5,0,0,60,0,80,1,0,0,0,0,7
+44,Gloves,Warrior,Muspell Warrior Gloves,7th Warrior Set,130,7,4,0,0,0,0,56,0,0,0,0,0,6
+45,Gloves,Warrior,Necromancer Warrior Gloves,Necromancer Warrior Set,120,6,4,0,0,0,0,51,0,0,0,0,0,6
+46,Hat,Thief,Tsukuyomi's Helm,Tsukuyomi Set,150,0,36,0,36,300,300,333,2,0,0,0,0,10
+47,Hat,Thief,Pensalir Chaser Hat,8th Thief Set,140,0,15,0,15,150,150,165,0,0,0,0,0,9
+48,Hat,Thief,Raven Horn Chaser Hat,Raven Horn Set,140,0,25,0,25,300,300,250,1,0,0,0,0,10
+49,Hat,Thief,Royal Von Leon Chaser Helm,Royal Von Leon Thief Set,130,0,6,0,10,50,0,128,0,0,0,0,0,10
+50,Hat,Thief,Muspell Thief Hat,7th Thief Set,130,0,4,0,6,25,0,85,0,0,0,0,0,9
+51,Shoes,Any,Antique Root Boots,None,150,12,12,12,12,0,0,70,1,1,0,5,0,6
+52,Cape,Any,Shroud of Zakum,None,120,3,3,3,3,0,0,50,0,0,0,0,0,7
+53,Shoes,Xenon,Proton Boots,None,120,10,10,0,10,0,0,60,1,0,0,8,5,5
+54,Gloves,Thief,Muspell Thief Gloves,7th Thief Set,130,0,6,0,7,0,0,49,0,0,0,0,0,6
+55,Gloves,Thief,Tyrant Lycaon Gloves,None,150,12,12,0,0,0,0,60,15,0,0,0,0,2
+56,Gloves,Thief,Arcane Umbra Thief Gloves,Arcane Umbra Set,200,0,40,0,40,0,0,250,9,0,0,0,0,7
+57,Gloves,Thief,AbsoLab Bandit Gloves,AbsoLab Set,160,0,20,0,20,0,0,150,5,0,0,0,0,7
+58,Cape,Thief,Arcane Umbra Thief Cape,Arcane Umbra Set,200,35,35,35,35,0,0,450,6,6,0,0,0,7
+59,Cape,Thief,AbsoLab Bandit Cape,AbsoLab Set,160,15,15,15,15,0,0,250,2,2,0,0,0,7
+60,Cape,Thief,Tyrant Lycaon Cloak,None,150,50,50,50,50,0,0,150,30,30,0,0,0,2
+61,Cape,Thief,Tsukuyomi's Cape,Tsukuyomi Set,150,0,10,0,10,0,0,198,2,0,0,10,5,7
+62,Gloves,Magician,Arcane Umbra Mage Gloves,Arcane Umbra Set,200,0,0,40,40,0,0,250,0,9,0,0,0,7
+63,Shoes,Pirate,Tyrant Altair Boots,None,150,50,50,50,50,0,0,130,30,30,0,0,0,2
+64,Shoes,Pirate,Susano-o's Shoes,Susano-o Set,150,21,21,0,0,0,0,93,2,0,0,10,7,7
+65,Shoes,Pirate,AbsoLab Pirate Shoes,AbsoLab Set,160,20,20,0,0,0,0,150,5,0,0,10,7,7
+66,Shoes,Magician,Arcane Umbra Mage Shoes,Arcane Umbra Set,200,0,0,40,40,0,0,250,0,9,0,10,7,7
+67,Shoes,Magician,AbsoLab Mage Shoes,AbsoLab Set,160,0,0,20,20,0,0,150,0,5,0,10,7,7
+68,Shoes,Magician,Tyrant Hermes Boots,None,150,50,50,50,50,0,0,130,30,30,0,0,0,2
+69,Shoes,Magician,Ame-no-Uzume's Shoes,Ame-no-Uzume Set,150,0,0,21,21,0,0,52,0,2,0,10,7,7
+70,Shoes,Magician,Dragon Tail Mage Shoes,Dragon Tail Set,140,0,0,15,15,0,0,50,0,1,0,10,7,7
+71,Shoes,Magician,Pensalir Mage Boots,8th Magician Set,140,0,0,11,10,0,0,50,0,1,0,5,0,6
+72,Shoes,Magician,Royal Von Leon Mage Boots,Royal Von Leon Magician Set,130,0,0,8,5,0,15,60,0,0,0,5,0,7
+73,Shoes,Magician,Muspell Magician Shoes,7th Magician Set,130,0,0,7,4,0,0,51,0,0,0,0,0,6
+74,Shoes,Warrior,Tyrant Hyades Boots,None,150,50,50,50,50,0,0,130,30,30,0,0,0,2
+75,Shoes,Warrior,Amaterasu's Shoes,Amaterasu Set,150,21,21,0,0,0,0,183,2,0,0,10,7,7
+76,Shoes,Warrior,Arcane Umbra Knight Shoes,Arcane Umbra Set,200,40,40,0,0,0,0,250,9,0,0,10,7,7
+77,Shoes,Warrior,AbsoLab Knight Shoes,AbsoLab Set,160,20,20,0,0,0,0,150,5,0,0,10,7,7
+78,Shoes,Zero,Gold Label Knight Shoes,Gold Label Knight Set,140,20,20,0,0,0,0,200,1,0,0,10,7,7
+79,Shoes,Warrior,Lionheart Battle Boots,Lionheart Set,140,15,15,0,0,0,0,150,1,0,0,10,5,7
+80,Shoes,Thief,Arcane Umbra Thief Shoes,Arcane Umbra Set,200,0,40,0,40,0,0,250,9,0,0,10,7,7
+81,Shoes,Thief,AbsoLab Bandit Shoes,AbsoLab Set,160,0,20,0,20,0,0,150,5,0,0,10,7,7
+82,Shoes,Thief,Raven Horn Chaser Boots,Raven Horn Set,140,0,15,0,15,0,0,85,1,0,0,10,7,7
+83,Shoes,Thief,Pensalir Chaser Boots,8th Thief Set,140,0,10,0,10,0,0,80,1,0,0,5,0,6
+84,Shoes,Thief,Tyrant Lycaon Boots,None,150,50,50,50,50,0,0,130,30,30,0,0,0,2
+85,Shoes,Thief,Tsukuyomi's Shoes,Tsukuyomi Set,150,0,21,0,21,0,0,93,2,0,0,10,7,7
+86,Shoes,Thief,Royal Von Leon Chaser Boots,Royal Von Leon Thief Set,130,0,5,0,8,0,15,90,0,0,0,5,0,7
+87,Shoes,Bowman,AbsoLab Archer Shoes,AbsoLab Set,160,20,20,0,0,0,0,150,5,0,0,10,7,7
+88,Shoes,Thief,Muspell Thief Shoes,7th Thief Set,130,0,4,0,5,0,0,76,0,0,0,0,0,6
+89,Shoes,Bowman,Arcane Umbra Archer Shoes,Arcane Umbra Set,200,40,40,0,0,0,0,250,9,0,0,10,7,7
+90,Shoes,Bowman,Tyrant Charon Boots,None,150,50,50,50,50,0,0,130,30,30,0,0,0,2
+91,Shoes,Bowman,Oyamatsumi's Shoes,Oyamatsumi Set,150,21,21,0,0,0,0,93,2,0,0,10,7,7
+92,Shoes,Bowman,Falcon Wing Sentinel Boots,Falcon Wing Set,140,15,15,0,0,0,0,85,1,0,0,10,7,7
+93,Shoes,Bowman,Pensalir Sentinel Boots,8th Bowman Set,140,9,10,0,0,0,0,80,1,0,0,5,0,6
+94,Shoes,Bowman,Royal Von Leon Sentinel Boots,Royal Von Leon Bowman Set,130,4,9,0,0,0,15,90,0,0,0,5,0,7
+95,Shoes,Magician,Necromancer Magician Shoes,Necromancer Magician Set,120,0,0,4,4,0,0,47,0,1,0,0,0,6
+96,Shoes,Bowman,Muspell Bowman Shoes,7th Bowman Set,130,3,6,0,0,0,0,76,0,0,0,0,0,6
+97,Shoes,Warrior,Pensalir Battle Boots,8th Warrior Set,140,15,9,0,0,0,0,120,1,0,0,5,0,6
+98,Shoes,Warrior,Royal Von Leon Warrior Boots,Royal Von Leon Warrior Set,130,9,4,0,0,0,15,120,0,0,0,5,0,7
+99,Shoes,Warrior,Muspell Warrior Shoes,7th Warrior Set,130,6,3,0,0,0,0,96,0,0,0,0,0,6
+100,Shoes,Warrior,Necromancer Warrior Shoes,Necromancer Warrior Set,120,5,3,0,0,0,0,84,0,0,0,0,0,6
+101,Shoes,Thief,Necromancer Chaser Shoes,Necromancer Thief Set,120,0,4,0,4,0,0,70,0,0,0,0,0,6
+102,Shoes,Bowman,Necromancer Sentinel Shoes,Necromancer Bowman Set,120,3,5,0,0,0,0,70,0,0,0,0,0,6
+103,Shoes,Pirate,Arcane Umbra Pirate Shoes,Arcane Umbra Set,200,40,40,0,0,0,0,250,9,0,0,10,7,7
+104,Shoes,Pirate,Shark Tooth Skipper Boots,Shark Tooth Set,140,0,15,0,15,0,0,85,1,0,0,10,7,7
+105,Shoes,Pirate,Pensalir Skipper Boots,8th Pirate Set,140,10,10,0,0,0,0,80,1,0,0,5,0,6
+106,Shoes,Pirate,Royal Von Leon Skipper Boots,Royal Von Leon Pirate Set,130,7,7,0,0,0,15,90,0,0,0,5,0,7
+107,Shoes,Pirate,Muspell Pirate Shoes,7th Pirate Set,130,5,5,0,0,0,0,76,0,0,0,0,0,6
+108,Shoes,Pirate,Necromancer Skipper Shoes,Necromancer Pirate Set,120,4,4,0,0,0,0,70,0,0,0,0,0,6
+109,Cape,Magician,Arcane Umbra Mage Cape,Arcane Umbra Set,200,35,35,35,35,0,0,450,6,6,0,0,0,7
+110,Cape,Magician,Ame-no-Uzume's Cape,Ame-no-Uzume Set,150,0,0,10,10,0,0,124,0,2,0,10,5,7
+111,Cape,Magician,Tyrant Hermes Cloak,None,150,50,50,50,50,0,0,150,30,30,0,0,0,2
+112,Cape,Magician,AbsoLab Mage Cape,AbsoLab Set,160,15,15,15,15,0,0,250,2,2,0,0,0,7
+113,Cape,Magician,Dragon Tail Mage Cape,Dragon Tail Set,140,0,0,7,7,0,0,100,0,1,0,10,5,7
+114,Cape,Magician,Pensalir Mage Cape,8th Magician Set,140,4,4,4,4,0,0,150,0,0,0,0,4,7
+115,Cape,Magician,Royal Von Leon Mage Cape,Royal Von Leon Magician Set,130,3,3,3,3,50,0,120,0,0,0,0,0,7
+116,Cape,Bowman,Arcane Umbra Archer Cape,Arcane Umbra Set,200,35,35,35,35,0,0,450,6,6,0,0,0,7
+117,Cape,Bowman,AbsoLab Archer Cape,AbsoLab Set,160,15,15,15,15,0,0,250,2,2,0,0,0,7
+118,Cape,Bowman,Tyrant Charon Cloak,None,150,50,50,50,50,0,0,150,30,30,0,0,0,2
+119,Cape,Bowman,Oyamatsumi's Cape,Oyamatsumi Set,150,10,10,0,0,0,0,198,2,0,0,10,5,7
+120,Cape,Bowman,Falcon Wing Sentinel Cape,Falcon Wing Set,140,7,7,0,0,0,0,150,1,0,0,10,5,7
+121,Cape,Bowman,Pensalir Sentinel Cape,8th Bowman Set,140,4,4,4,4,0,0,150,0,0,0,0,4,7
+122,Cape,Bowman,Royal Von Leon Sentinel Cape,Royal Von Leon Bowman Set,130,3,3,3,3,50,0,120,0,0,0,0,0,7
+123,Gloves,Magician,AbsoLab Mage Gloves,AbsoLab Set,160,0,0,20,20,0,0,150,0,5,0,0,0,7
+124,Gloves,Magician,Tyrant Hermes Gloves,None,150,0,0,12,12,0,300,0,0,15,0,0,0,2
+125,Gloves,Magician,Ame-no-Uzume's Gloves,Ame-no-Uzume Set,150,0,0,21,21,350,0,20,0,8,0,0,0,7
+126,Gloves,Magician,Pensalir Mage Gloves,8th Magician Set,140,0,0,11,11,200,0,40,0,2,0,0,0,6
+127,Gloves,Bowman,Arcane Umbra Archer Gloves,Arcane Umbra Set,200,40,40,0,0,0,0,250,9,0,0,0,0,7
+128,Gloves,Magician,Dragon Tail Mage Gloves,Dragon Tail Set,140,0,0,16,16,350,0,30,0,5,0,0,0,7
+129,Gloves,Bowman,AbsoLab Archer Gloves,AbsoLab Set,160,20,20,0,0,0,0,150,5,0,0,0,0,7
+130,Gloves,Bowman,Tyrant Charon Gloves,None,150,12,12,0,0,0,0,80,15,0,0,0,0,2
+131,Gloves,Bowman,Oyamatsumi's Gloves,Oyamatsumi Set,150,21,21,0,0,350,0,52,8,0,0,0,0,7
+132,Gloves,Bowman,Falcon Wing Sentinel Gloves,Falcon Wing Set,140,16,16,0,0,350,0,50,5,0,0,0,0,7
+133,Gloves,Bowman,Pensalir Sentinel Gloves,8th Bowman Set,140,10,11,0,0,200,0,50,2,0,0,0,0,6
+134,Cape,Thief,Raven Horn Chaser Cape,Raven Horn Set,140,0,7,0,7,0,0,150,1,0,0,10,5,7
+135,Cape,Thief,Pensalir Chaser Cape,8th Thief Set,140,4,4,4,4,0,0,150,0,0,0,0,4,7
+136,Gloves,Magician,Royal Von Leon Mage Hands,Royal Von Leon Magician Set,130,0,0,8,7,0,40,65,0,1,0,0,0,7
+137,Cape,Thief,Royal Von Leon Chaser Cape,Royal Von Leon Thief Set,130,3,3,3,3,50,0,120,0,0,0,0,0,7
+138,Gloves,Magician,Muspell Magician Gloves,7th Magician Set,130,0,0,6,6,0,0,55,0,0,0,0,0,6
+139,Gloves,Magician,Necromancer Magician Gloves,Necromancer Magician Set,120,0,0,5,5,0,0,50,0,0,0,0,0,6
+140,Cape,Pirate,Arcane Umbra Pirate Cape,Arcane Umbra Set,200,35,35,35,35,0,0,450,6,6,0,0,0,7
+141,Cape,Pirate,AbsoLab Pirate Cape,AbsoLab Set,160,15,15,15,15,0,0,250,2,2,0,0,0,7
+142,Cape,Pirate,Pensalir Skipper Cape,8th Pirate Set,140,4,4,4,4,0,0,150,0,0,0,0,4,7
+143,Cape,Pirate,Tyrant Altair Cloak,None,150,50,50,50,50,0,0,150,30,30,0,0,0,2
+144,Cape,Pirate,Susano-o's Cape,Susano-o Set,150,10,10,0,0,0,0,198,2,0,0,10,5,7
+145,Cape,Pirate,Shark Tooth Skipper Cape,Shark Tooth Set,140,7,7,0,0,0,0,150,1,0,0,10,5,7
+146,Cape,Pirate,Royal Von Leon Skipper Cape,Royal Von Leon Pirate Set,130,3,3,3,3,50,0,120,0,0,0,0,0,7
+147,Gloves,Bowman,Royal Von Leon Sentinel Hands,Royal Von Leon Bowman Set,130,6,9,0,0,0,40,60,1,0,0,0,0,7
+148,Gloves,Bowman,Muspell Bowman Gloves,7th Bowman Set,130,5,7,0,0,0,0,52,0,0,0,0,0,6
+149,Gloves,Bowman,Necromancer Sentinel Gloves,Necromancer Bowman Set,120,5,6,0,0,0,0,48,0,0,0,0,0,6
+150,Gloves,Thief,Raven Horn Chaser Gloves,Raven Horn Set,140,0,16,0,16,350,0,50,5,0,0,0,0,7
+151,Gloves,Thief,Pensalir Chaser Gloves,8th Thief Set,140,0,11,0,11,200,0,50,2,0,0,0,0,6
+152,Gloves,Thief,Royal Von Leon Chaser Hands,Royal Von Leon Thief Set,130,0,7,0,9,0,40,64,1,0,0,0,0,7
+153,Gloves,Thief,Tsukuyomi's Gloves,Tsukuyomi Set,150,0,21,0,21,350,0,52,8,0,0,0,0,7
+154,Gloves,Thief,Necromancer Chaser Gloves,Necromancer Thief Set,120,0,6,0,6,0,0,46,0,0,0,0,0,6
+155,Gloves,Pirate,Arcane Umbra Pirate Gloves,Arcane Umbra Set,200,40,40,0,0,0,0,250,9,0,0,0,0,7
+156,Gloves,Pirate,AbsoLab Pirate Gloves,AbsoLab Set,160,20,20,0,0,0,0,150,5,0,0,0,0,7
+157,Gloves,Pirate,Tyrant Altair Gloves,None,150,12,12,0,0,0,0,100,15,0,0,0,0,2
+158,Gloves,Pirate,Shark Tooth Skipper Gloves,Shark Tooth Set,140,0,16,0,16,350,0,50,5,0,0,0,0,7
+159,Gloves,Pirate,Pensalir Skipper Gloves,8th Pirate Set,140,11,11,0,0,200,0,50,2,0,0,0,0,6
+160,Gloves,Pirate,Royal Von Leon Skipper Hands,Royal Von Leon Pirate Set,130,8,8,0,0,60,0,55,1,0,0,0,0,7
+161,Gloves,Pirate,Muspell Pirate Gloves,7th Pirate Set,130,6,6,0,0,0,0,52,0,0,0,0,0,6
+162,Gloves,Pirate,Necromancer Skipper Gloves,Necromancer Pirate Set,120,5,5,0,0,0,0,48,0,0,0,0,0,6
+163,Gloves,Pirate,Susano-o's Gloves,Susano-o Set,150,21,21,0,0,350,0,52,8,0,0,0,0,7
+164,Hat,Any,Chaos Pierre Hat,None,140,23,23,23,23,0,0,300,1,1,0,5,0,10
+165,Hat,Any,Black Bean Hat,Black Bean Set,135,27,27,27,27,0,0,200,1,1,0,0,0,10
+166,Hat,Any,Chaos Pink Bean Hat,Chaos Pink Bean Set I,135,27,27,27,27,0,0,200,1,1,0,0,0,10
+167,Hat,Magician,Necromancer Magician Hat,Necromancer Magician Set,120,0,0,6,5,0,25,60,0,0,0,0,0,8
+168,Hat,Warrior,Necromancer Warrior Hat,Necromancer Warrior Set,120,6,0,0,0,0,0,120,0,0,0,0,0,8
+169,Hat,Warrior,Eternal Knight Helm,Eternal Set,250,80,80,0,0,0,0,750,10,0,15,0,0,11
+170,Hat,Warrior,Arcane Umbra Knight Hat,Arcane Umbra Set,200,65,65,0,0,0,0,600,7,0,15,0,0,11
+171,Hat,Warrior,AbsoLab Knight Helm,AbsoLab Set,160,45,45,0,0,0,0,400,3,0,10,0,0,11
+172,Hat,Warrior,Royal Warrior Helm,Root Abyss Set,150,40,40,0,0,360,360,390,2,0,10,0,0,11
+173,Hat,Warrior,Amaterasu's Helm,Amaterasu Set,150,36,36,0,0,300,300,423,2,0,0,0,0,10
+174,Hat,Zero,Gold Label Knight Hat,Gold Label Knight Set,140,30,30,0,0,330,330,350,1,0,0,0,0,10
+175,Hat,Warrior,Pensalir Battle Helm,8th Warrior Set,140,16,10,0,0,150,150,225,0,0,0,0,0,9
+176,Hat,Warrior,Lionheart Battle Helm,Lionheart Set,140,25,25,0,0,300,300,325,1,0,0,0,0,10
+177,Hat,Warrior,Royal Von Leon Warrior Helm,Royal Von Leon Warrior Set,130,11,0,0,0,0,0,195,0,0,0,0,0,10
+178,Hat,Warrior,Muspell Warrior Hat,7th Warrior Set,130,7,0,0,0,0,0,130,0,0,0,0,0,9
+179,Hat,Magician,Eternal Mage Hat,Eternal Set,250,0,0,80,80,0,0,750,0,10,15,0,0,11
+180,Hat,Magician,Arcane Umbra Mage Hat,Arcane Umbra Set,200,0,0,65,65,0,0,600,0,7,15,0,0,11
+181,Hat,Magician,AbsoLab Mage Crown,AbsoLab Set,160,0,0,45,45,0,0,400,0,3,10,0,0,11
+182,Hat,Magician,Royal Dunwitch Hat,Root Abyss Set,150,0,0,40,40,360,360,180,0,2,10,0,0,11
+183,Hat,Magician,Ame-no-Uzume's Helm,Ame-no-Uzume Set,150,0,0,36,36,300,300,190,0,2,0,0,0,10
+184,Hat,Magician,Dragon Tail Mage Sallet,Dragon Tail Set,140,0,0,25,25,300,300,150,0,1,0,0,0,10
+185,Hat,Magician,Pensalir Mage Sallet,8th Magician Set,140,0,0,16,15,150,150,110,0,0,0,0,0,9
+186,Hat,Magician,Royal Von Leon Magician Helm,Royal Von Leon Magician Set,130,0,0,11,7,0,50,105,0,0,0,0,0,10
+187,Hat,Magician,Muspell Magician Hat,7th Magician Set,130,0,0,7,5,0,25,70,0,0,0,0,0,9
+188,Hat,Bowman,Eternal Archer Hat,Eternal Set,250,80,80,0,0,0,0,750,10,0,15,0,0,11
+189,Hat,Bowman,Arcane Umbra Archer Hat,Arcane Umbra Set,200,65,65,0,0,0,0,600,7,0,15,0,0,11
+190,Hat,Bowman,Oyamatsumi's Helm,Oyamatsumi Set,150,36,36,0,0,300,300,333,2,0,0,0,0,10
+191,Hat,Bowman,AbsoLab Archer Hood,AbsoLab Set,160,45,45,0,0,0,0,400,3,0,10,0,0,11
+192,Hat,Bowman,Royal Ranger Beret,Root Abyss Set,150,40,40,0,0,360,360,300,2,0,10,0,0,11
+193,Hat,Bowman,Falcon Wing Sentinel Cap,Falcon Wing Set,140,25,25,0,0,300,300,250,1,0,0,0,0,10
+194,Hat,Bowman,Pensalir Sentinel Cap,8th Bowman Set,140,15,16,0,0,150,150,165,0,0,0,0,0,9
+195,Hat,Bowman,Royal Von Leon Sentinel Helm,Royal Von Leon Bowman Set,130,5,11,0,0,50,0,128,0,0,0,0,0,10
+196,Hat,Bowman,Muspell Bowman Hat,7th Bowman Set,130,3,7,0,0,25,0,85,0,0,0,0,0,9
+197,Hat,Bowman,Necromancer Sentinel Hat,Necromancer Bowman Set,120,3,6,0,0,20,0,75,0,0,0,0,0,8
+198,Bottom,Pirate,Eternal Pirate Pants,Eternal Set,250,50,50,0,0,0,0,325,6,0,5,0,0,7
+199,Bottom,Pirate,Trixter Wanderer Pants,Root Abyss Set,150,30,30,0,0,0,0,135,2,0,5,0,0,7
+200,Bottom,Bowman,Eternal Archer Pants,Eternal Set,250,50,50,0,0,0,0,325,6,0,5,0,0,7
+201,Bottom,Magician,Eternal Mage Pants,Eternal Set,250,50,50,0,0,0,0,325,0,6,5,0,0,7
+202,Bottom,Magician,Trixter Dunwitch Pants,Root Abyss Set,150,0,0,30,30,0,0,120,0,2,5,0,0,7
+203,Bottom,Bowman,Trixter Ranger Pants,Root Abyss Set,150,30,30,0,0,0,0,135,2,0,5,0,0,7
+204,Bottom,Thief,Eternal Thief Pants,Eternal Set,250,0,50,0,50,0,0,325,6,0,5,0,0,7
+205,Bottom,Thief,Trixter Assassin Pants,Root Abyss Set,150,0,30,0,30,0,0,135,2,0,5,0,0,7
+206,Overall,Xenon,Proton Suit (Male),None,120,20,20,0,20,0,0,155,1,0,0,0,0,10
+207,Overall,Any,Black Bean Suit,Black Bean Set,135,32,32,32,32,30,0,350,2,2,0,0,0,12
+208,Overall,Any,Chaos Pink Bean Suit,Chaos Pink Bean Set I,135,32,32,32,32,30,0,350,2,2,0,0,0,12
+209,Overall,Bowman,Arcane Umbra Archer Suit,Arcane Umbra Set,200,85,85,0,0,0,0,500,9,0,10,0,0,12
+210,Overall,Bowman,AbsoLab Archer Suit,AbsoLab Set,160,65,65,0,0,0,0,300,5,0,0,0,0,12
+211,Overall,Thief,Arcane Umbra Thief Suit,Arcane Umbra Set,200,0,85,0,85,0,0,500,9,0,10,0,0,12
+212,Top,Magician,Eternal Mage Robe,Eternal Set,250,50,50,0,0,0,0,325,0,6,5,0,0,7
+213,Top,Magician,Eagle Eye Dunwitch Robe,Root Abyss Set,150,30,30,0,0,0,0,120,0,2,5,0,0,7
+214,Top,Bowman,Eternal Archer Hood,Eternal Set,250,50,50,0,0,0,0,325,6,0,5,0,0,7
+215,Top,Bowman,Eagle Eye Ranger Cowl,Root Abyss Set,150,30,30,0,0,0,0,135,2,0,5,0,0,7
+216,Top,Thief,Eternal Thief Shirt,Eternal Set,250,0,50,0,50,0,0,325,6,0,5,0,0,7
+217,Top,Thief,Eagle Eye Assassin Shirt,Root Abyss Set,150,0,30,0,30,0,0,135,2,0,5,0,0,7
+218,Top,Pirate,Eternal Pirate Coat,Eternal Set,250,50,50,0,0,0,0,325,6,0,5,0,0,7
+219,Top,Pirate,Eagle Eye Wanderer Coat,Root Abyss Set,150,30,30,0,0,0,0,135,2,0,5,0,0,7
+220,Overall,Magician,Arcane Umbra Mage Suit,Arcane Umbra Set,200,0,0,85,85,0,0,500,0,9,10,0,0,12
+221,Overall,Magician,AbsoLab Mage Suit,AbsoLab Set,160,0,0,65,65,0,0,300,0,5,0,0,0,12
+222,Overall,Magician,Ame-no-Uzume's Armor,Ame-no-Uzume Set,150,0,0,43,43,0,0,245,0,3,0,0,0,12
+223,Overall,Magician,Dragon Tail Mage Robe,Dragon Tail Set,140,0,0,30,30,0,0,200,0,2,0,0,0,12
+224,Overall,Magician,Pensalir Mage Robe,8th Magician Set,140,0,0,20,20,0,60,150,0,1,0,0,0,10
+225,Overall,Magician,Royal Von Leon Mage Suit,Royal Von Leon Magician Set,130,0,0,13,7,0,100,150,0,0,0,0,0,10
+226,Overall,Magician,Muspell Magician Suit,7th Magician Set,130,0,0,9,5,0,50,130,0,0,0,0,0,10
+227,Overall,Magician,Necromancer Magician Suit,Necromancer Magician Set,120,0,0,8,4,0,50,100,0,0,0,0,0,10
+228,Overall,Bowman,Oyamatsumi's Armor,Oyamatsumi Set,150,43,43,0,0,0,0,270,3,0,0,0,0,12
+229,Overall,Bowman,Falcon Wing Sentinel Suit,Falcon Wing Set,140,30,30,0,0,0,0,225,2,0,0,0,0,12
+230,Overall,Bowman,Pensalir Sentinel Suit,8th Bowman Set,140,18,20,0,0,0,0,180,1,0,0,0,0,10
+231,Overall,Bowman,Royal Von Leon Sentinel Suit,Royal Von Leon Bowman Set,130,8,13,0,0,0,0,190,0,0,0,0,0,10
+232,Overall,Bowman,Muspell Bowman Suit,7th Bowman Set,130,6,9,0,0,0,0,160,0,0,0,0,0,10
+233,Overall,Bowman,Necromancer Sentinel Suit,Necromancer Bowman Set,120,6,8,0,0,0,0,130,0,0,0,0,0,10
+234,Overall,Thief,AbsoLab Bandit Suit,AbsoLab Set,160,0,65,0,65,0,0,300,5,0,0,0,0,12
+235,Overall,Thief,Tsukuyomi's Armor,Tsukuyomi Set,150,0,43,0,43,0,0,270,3,0,0,0,0,12
+236,Overall,Thief,Raven Horn Chaser Armor,Raven Horn Set,140,0,30,0,30,0,0,225,2,0,0,0,0,12
+237,Overall,Thief,Pensalir Chaser Armor,8th Thief Set,140,0,18,0,20,0,0,180,1,0,0,0,0,10
+238,Overall,Thief,Royal Von Leon Chaser Suit,Royal Von Leon Thief Set,130,0,7,0,12,0,0,190,0,0,0,0,0,10
+239,Overall,Thief,Muspell Thief Suit,7th Thief Set,130,0,5,0,8,0,0,160,0,0,0,0,0,10
+240,Overall,Thief,Necromancer Chaser Suit,Necromancer Thief Set,120,0,5,0,7,0,0,130,0,0,0,0,0,10
+241,Overall,Pirate,Arcane Umbra Pirate Suit,Arcane Umbra Set,200,85,85,0,0,0,0,500,9,0,10,0,0,12
+242,Overall,Pirate,AbsoLab Pirate Suit,AbsoLab Set,160,65,65,0,65,0,0,300,5,0,0,0,0,12
+243,Overall,Pirate,Susano-o's Armor,Susano-o Set,150,43,43,0,0,0,0,270,3,0,0,0,0,12
+244,Overall,Pirate,Shark Tooth Skipper Coat,Shark Tooth Set,140,30,30,0,0,0,0,225,2,0,0,0,0,12
+245,Overall,Pirate,Pensalir Skipper Coat,8th Pirate Set,140,20,20,0,0,0,0,180,1,0,0,0,0,10
+246,Overall,Pirate,Royal Von Leon Skipper Suit,Royal Von Leon Pirate Set,130,11,11,0,0,100,0,190,0,0,0,0,0,10
+247,Overall,Pirate,Muspell Pirate Suit,7th Pirate Set,130,8,8,0,0,0,0,160,0,0,0,0,0,10
+248,Overall,Pirate,Necromancer Skipper Suit,Necromancer Pirate Set,120,7,7,0,0,0,0,130,0,0,0,0,0,10
+249,Overall,Warrior,Arcane Umbra Knight Suit,Arcane Umbra Set,200,85,85,0,0,0,0,500,9,0,10,0,0,12
+250,Overall,Warrior,AbsoLab Knight Suit,AbsoLab Set,160,65,65,0,0,0,0,300,5,0,0,0,0,12
+251,Overall,Warrior,Amaterasu's Armor,Amaterasu Set,150,43,43,0,0,0,0,422,3,0,0,0,0,12
+252,Top,Warrior,Eternal Knight Armor,Eternal Set,250,50,50,0,0,0,0,325,6,0,5,0,0,7
+253,Top,Warrior,Eagle Eye Warrior Armor,Root Abyss Set,150,30,30,0,0,0,0,210,2,0,5,0,0,7
+254,Overall,Zero,Gold Label Knight Suit,Gold Label Knight Set,140,35,35,0,0,0,0,400,2,0,0,0,0,12
+255,Overall,Warrior,Lionheart Battle Mail,Lionheart Set,140,30,30,0,0,0,0,350,2,0,0,0,0,12
+256,Overall,Warrior,Pensalir Battle Mail,8th Warrior Set,140,20,20,0,0,0,0,325,1,0,0,0,0,10
+257,Overall,Warrior,Muspell Warrior Suit,7th Warrior Set,130,9,7,0,0,0,0,250,0,0,0,0,0,10
+258,Overall,Warrior,Royal Von Leon Warrior Suit,Royal Von Leon Warrior Set,130,13,9,0,0,0,0,300,0,0,0,0,0,10
+259,Overall,Warrior,Necromancer Warrior Suit,Necromancer Warrior Set,120,8,7,0,0,0,0,200,0,0,0,0,0,10
+260,Bottom,Warrior,Eternal Knight Pants,Eternal Set,250,50,50,0,0,0,0,325,6,0,5,0,0,7
+261,Bottom,Warrior,Trixter Warrior Pants,Root Abyss Set,150,30,30,0,0,0,0,210,0,2,5,0,0,7

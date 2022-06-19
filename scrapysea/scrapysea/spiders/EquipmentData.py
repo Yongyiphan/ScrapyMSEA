@@ -6,6 +6,7 @@ import CustomLogger
 import scrapy
 import re
 
+from ComFunc import *
 from ComFunc import if_In_String
 from ComFunc import TimeTaken
 
@@ -63,12 +64,12 @@ class TotalEquipmentSpider(scrapy.Spider):
         "Shield" : 110
     }
 
-    EquipSetTrack = [
-        'Sengoku', 'Boss Accessory', 'Pitched Boss', 'Seven Days', "Ifia's Treasure",'Mystic','Ardentmill','Blazing Sun'
-        ,'8th', 'Root Abyss','AbsoLab', 'Arcane'
-        ,'Lionheart', 'Dragon Tail','Falcon Wing','Raven Horn','Shark Tooth'
-        ,'Gold Parts','Pure Gold Parts'
-    ]
+    #EquipSetTrack = [
+    #    'Sengoku', 'Boss Accessory', 'Pitched Boss', 'Seven Days', "Ifia's Treasure",'Mystic','Ardentmill','Blazing Sun'
+    #    ,'8th', 'Root Abyss','AbsoLab', 'Arcane','Eternal'
+    #    ,'Lionheart', 'Dragon Tail','Falcon Wing','Raven Horn','Shark Tooth'
+    #    ,'Gold Parts','Pure Gold Parts'
+    #]
     
     WeapSetTrack = [
         'Utgard', 'Lapis','Lazuli'
@@ -79,7 +80,7 @@ class TotalEquipmentSpider(scrapy.Spider):
     ignoreSecondary = ["evolving", "frozen"]
     
     ignoreSet = [
-        'Immortal', 'Eternal','Walker','Anniversary', 
+        'Immortal', 'Walker','Anniversary', 
         "Sweetwater", "Commerci", "Gollux", "Alien", "Blackgate", "Glona",
         "Abyss", "Fearless", "Eclectic", "Reverse", "Timeless"]
     
@@ -241,9 +242,9 @@ class TotalEquipmentSpider(scrapy.Spider):
 
                     ItemDict = {
                         "EquipSlot" : "Secondary",
-                        "ClassName" : C,
+                        "ClassName" : replaceN(C, ','),
                         "WeaponType" : WeaponType,
-                        "EquipName" : FirstEle
+                        "EquipName" : replaceN(FirstEle, [',','<','>']).strip()
                         
                     }
                     for i, col in enumerate(HTitle):
@@ -285,7 +286,7 @@ class TotalEquipmentSpider(scrapy.Spider):
             pass
         HTitle = []
         for i, table in enumerate(Wikitable):
-            Category = tabsTitle[i] if tabsTitle != [] else ""
+            Category = replaceN(tabsTitle[i],',',";") if tabsTitle != [] else ""
             for row in table.xpath(".//tr"):
                 
                 link =  row.xpath(".//a[not(contains(@class,'image')) and not(contains(@href,'redlink'))] //@href").get()
@@ -295,13 +296,19 @@ class TotalEquipmentSpider(scrapy.Spider):
                 if if_In_String(EquipName.lower(),'picture'): 
                     HTitle = td
                     continue
-                if not EquipName.isascii() or any(value in EquipName for value in self.ignoreSet):
+                # 
+                if not EquipName.isascii():
                     continue
                 LevelT = [value for value in td if "Level" in value or "None" in value]
                 clvl = 0 if "None" in LevelT[0] else int(LevelT[0].split(" ")[1])
                 if EquipSlot in self.EquipLevelMin.keys():
                     if clvl < self.EquipLevelMin[EquipSlot]:
                         continue
+                if any(value in EquipName for value in self.ignoreSet):
+                    continue
+                
+
+                EquipName = replaceN(EquipName, [',','<','>'])
                 if link == None or EquipSlot == "Android":
                     ItemDict = {
                         "EquipSlot" :EquipSlot,
@@ -319,7 +326,7 @@ class TotalEquipmentSpider(scrapy.Spider):
                             except:
                                 continue
                     self.RecordItemDict(ItemDict)
-                    yield ItemDict
+                    #yield ItemDict
                 else:
                     nurl = response.urljoin(link)
                     ItemDict = {
@@ -360,7 +367,7 @@ class TotalEquipmentSpider(scrapy.Spider):
                 break
             td = ["".join(value.css("td ::text").getall()).strip('\n') for value in ctable.css('tr') if value.css("td ::text").getall() != ['\n']]
             th = self.removeBRN(ctable.css('tr > th ::text').getall())
-            ItemDict["EquipName"] = td[0].rstrip(' \n')
+            ItemDict["EquipName"] = replaceN(td[0].rstrip(' \n'), ",")
             for key, value in zip(th, td[1:]):
                 if any(value.lower() in key.lower() for value in self.PageContentSkip):
                     continue
@@ -379,7 +386,7 @@ class TotalEquipmentSpider(scrapy.Spider):
                         else:
                             continue
                     else:
-                        ItemDict[key] = nvalue
+                        ItemDict[key] = replaceN(nvalue,",")
                 except:
                     continue
             if "Equipment Set" in ItemDict.keys():
@@ -402,11 +409,11 @@ class TotalEquipmentSpider(scrapy.Spider):
                 key, value = stat.split(':')
                 if value.strip(' ') == "":
                     continue
-                ItemDict[key] = value.strip(' +\n')
+                ItemDict[key] = replaceN(value.strip(' +\n'), ",")
             else:
                 try:                   
                     key, value = stat.split(' ')
-                    ItemDict[key] = value.rstrip(' \n')
+                    ItemDict[key] = replaceN(value.rstrip(' \n'),",")
                 except:
                     continue
         return ItemDict
@@ -446,14 +453,14 @@ class EquipmentSetSpider(scrapy.Spider):
     }
     
     EquipSetTrack = [
-        'Sengoku', 'Boss Accessory', 'Pitched Boss', 'Seven Days', "Ifia's Treasure",'Mystic','Ardentmill','Blazing Sun'
-        ,'8th', 'Root Abyss','AbsoLab', 'Arcane'
+        'Sengoku', 'Boss Accessory','Dawn Boss', 'Pitched Boss', 'Seven Days', "Ifia's Treasure",'Mystic','Ardentmill','Blazing Sun'
+        ,'8th', 'Root Abyss','AbsoLab', 'Arcane', "Eternal"
         ,'Lionheart', 'Dragon Tail','Falcon Wing','Raven Horn','Shark Tooth'
         ,'Gold Parts','Pure Gold Parts'
     ]
     
     ignoreSet = [
-        'Immortal', 'Eternal','Walker','Anniversary', 
+        'Immortal' ,'Walker','Anniversary', 
         "Sweetwater", "Commerci", "Gollux", "Alien", "Blackgate", "Glona"]
     
 
@@ -461,18 +468,19 @@ class EquipmentSetSpider(scrapy.Spider):
 
         EquipmentSet =response.xpath("//span[@id = 'Equipment_Set']/parent::h2/following-sibling::div[@class='tabber wds-tabber'][1] //table[@class='wikitable']")
         ClassHeaders = response.xpath("//span[@id = 'Equipment_Set']/parent::h2/following-sibling::div[@class='tabber wds-tabber'][1] //li[contains(@class,'wds-tabs__tab')] //text()").getall()
-        #TempL = []
+        TempL = []
         for ix, tables in enumerate(EquipmentSet):
             ClassType = "Any" if ClassHeaders[ix] == "Common" else ClassHeaders[ix]
             for equipLinks in tables.xpath(".//a[not(descendant::img)]/@href"):
                 setName = " ".join(re.split("%|_|-|#|27s", equipLinks.extract().split("/")[-1])).replace("Set", '').replace(ClassType, '').rstrip()
+                TempL.append(setName)
                 if if_In_String(setName, '('):
                     setName = setName.split('(')[0].rstrip()
                 if any(value in setName for value in self.EquipSetTrack):
                     if any(value in setName for value in self.ignoreSet):
                         continue
                     nurl = response.urljoin(equipLinks.extract())
-                    #TempL.append((nurl, setName))
+                    
                     yield scrapy.Request(nurl, callback=self.HandleEquipmentSet, meta = {"EquipSet" : setName, "ClassType":ClassType})
             
 
@@ -512,7 +520,7 @@ class EquipmentSetSpider(scrapy.Spider):
                     SetType = "Cumulative"
                 for row in TRRows: 
                     
-                    SetAt = row.xpath(".//td[1] /b/text()").getall()
+                    SetAt = row.xpath(".//td /b/text()").getall()
                     if SetAt == []:
                         continue
                     else:
@@ -587,6 +595,7 @@ def CleanSecondaryDF(CDF):
     })
     CDF.loc[CDF["WeaponType"] == 'Arrowhead', 'WeaponType'] = "Arrow Head"
     CDF.loc[CDF["WeaponType"] == 'Bladebinder', 'WeaponType'] = "Bracelet"
+    CDF.loc[CDF['WeaponType'].isnull(), "WeaponType"] = CDF["EquipSlot"]
     CDF = CDF.fillna(0)
     return CDF
 
@@ -656,23 +665,23 @@ def CleanAndroidDF(CDF):
 
 def CleanMedalDF(CDF):
 
+    CDF.drop(["Number of Upgrades","Equipment Set"], axis=1, inplace=True)
     ColumnOrder = [
-        "EquipSlot","ClassName","EquipName","Equipment Set",
+        "EquipSlot","ClassName","EquipName","EquipSet",
         "Category",
         "Level","STR","DEX","INT","LUK","All Stats","Max HP","Max MP","Defense",
         "Weapon Attack","Magic Attack","Ignored Enemy Defense","Boss Damage",
-        "Movement Speed","Jump","Number of Upgrades"
+        "Movement Speed","Jump"
     ]
 
     CDF = CDF[ColumnOrder]
-    CDF.rename(columns ={
-        "Equipment Set" :"EquipSet",
+    CDF = CDF.rename(columns ={
         "Level" : "EquipLevel"
-    }, inplace = True) 
-    CDF['ClassName'] = CDF['ClassName'].fillna("Any")
-    CDF['EquipSet'] = CDF['EquipSet'].fillna("None")
+    })
+
+    CDF.loc[CDF['ClassName'].isnull(),"ClassName"] = "Any"
+    CDF.loc[CDF['EquipSet'].isnull(),"EquipSet"] = "None"
     CDF.loc[CDF['Category'] == "Uncategorized", "Category"] = "Obtainable"
-    CDF.drop("Number of Upgrades", axis=1, inplace=True)
     CDF = CDF.fillna(0) 
 
 

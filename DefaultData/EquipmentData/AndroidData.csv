@@ -1,4 +1,4 @@
-,EquipSlot,EquipName,Category,Level,Rank,Special Functions
+,EquipSlot,EquipName,Category,EquipLevel,Rank,Special Functions
 0,Android,Android (M),Regular Androids,30,3,None
 1,Android,Android (F),Regular Androids,30,3,None
 2,Android,Deluxe Android (M),Regular Androids,70,8,None
@@ -13,7 +13,7 @@
 11,Android,Secret Android (F),Regular Androids,10,9,None
 12,Android,Schooldroid (M),Regular Androids,10,9,None
 13,Android,Schooldroid (F),Regular Androids,10,9,None
-14,Android,"Neville, the Legend (M)",Regular Androids,10,9,None
+14,Android,Neville the Legend (M),Regular Androids,10,9,None
 15,Android,Clobber (M),Regular Androids,10,9,None
 16,Android,Summeroid (M),Regular Androids,10,9,None
 17,Android,Futuroid (M),Regular Androids,10,9,None
@@ -71,15 +71,16 @@
 69,Android,Gooroid,Regular Androids,10,9,General Store
 70,Android,Superstar Pink Beanroid,Regular Androids,10,9,General Store
 71,Android,Small Mutoroid,Regular Androids,10,9,General Store
-72,Android,Aster-oid,Wondroids,10,9,None
-73,Android,Rhearoid,Wondroids,10,9,None
-74,Android,Katroid,Wondroids,10,9,None
-75,Android,Anastasioid,Wondroids,10,9,None
-76,Android,Roxxyroid,Wondroids,10,9,None
-77,Android,Apolloid,Wondroids,10,9,None
-78,Android,Jaxoid,Wondroids,10,9,None
-79,Android,Sarimroid,Wondroids,10,9,None
-80,Android,Adam Wondroid,Wondroids,10,9,None
-81,Android,Eve Wondroid,Wondroids,10,9,None
-82,Android,Aloraroid,Wondroids,10,9,"General Store Casts the   buff, granting Weapon Attack +5 and Magic Attack +5"
-83,Android,Skyroid,Wondroids,10,9,"General Store Casts the   buff, granting Weapon Attack +5 and Magic Attack +5"
+72,Android,Stellaroid,Regular Androids,10,9,General Store
+73,Android,Aster-oid,Wondroids,10,9,None
+74,Android,Rhearoid,Wondroids,10,9,None
+75,Android,Katroid,Wondroids,10,9,None
+76,Android,Anastasioid,Wondroids,10,9,None
+77,Android,Roxxyroid,Wondroids,10,9,None
+78,Android,Apolloid,Wondroids,10,9,None
+79,Android,Jaxoid,Wondroids,10,9,None
+80,Android,Sarimroid,Wondroids,10,9,None
+81,Android,Adam Wondroid,Wondroids,10,9,None
+82,Android,Eve Wondroid,Wondroids,10,9,None
+83,Android,Aloraroid,Wondroids,10,9,"General Store Casts the   buff, granting Weapon Attack +5 and Magic Attack +5"
+84,Android,Skyroid,Wondroids,10,9,"General Store Casts the   buff, granting Weapon Attack +5 and Magic Attack +5"

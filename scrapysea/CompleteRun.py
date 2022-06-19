@@ -38,7 +38,7 @@ def exec_Crawler():
             os.makedirs(LogPath)
     
     runner = CrawlerRunner(settings=sett)
-    runner.crawl(CharacterData.CharacterSpider)
+    #runner.crawl(CharacterData.CharacterSpider)
     #EquipmentSpiders = dict([(name, cls) for name, cls in EquipmentData.__dict__.items() if isinstance(cls, type)])
     #for name, s in EquipmentSpiders.items():
     #    if if_In_String(name.lower(), "dataframe"):
@@ -51,7 +51,7 @@ def exec_Crawler():
     #        continue
     #    runner.crawl(s)
 
-    #runner.crawl(CalculationsData.BonusStatSpider)
+    runner.crawl(EquipmentData.EquipmentSetSpider)
     d = runner.join()
     d.addBoth(lambda _: reactor.stop())
     reactor.run()
