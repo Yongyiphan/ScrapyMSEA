@@ -1,1294 +1,1276 @@
-,Slot,Type,Grade,Prime,MinLvl,MaxLvl,Initial,In-game cube,Cash cube
-0,Hat,Potential,Rare,Non prime,0,300,6.25,6.25,14.2857
-1,Hat,Potential,Rare,Non prime,0,300,6.25,6.25,14.2857
-2,Hat,Potential,Rare,Non prime,0,300,6.25,6.25,14.2857
-3,Hat,Potential,Rare,Non prime,0,300,6.25,6.25,14.2857
-4,Hat,Potential,Rare,Non prime,0,300,9.375,9.375,14.2857
-5,Hat,Potential,Rare,Non prime,0,300,9.375,9.375,14.2857
-6,Hat,Potential,Rare,Non prime,0,300,9.375,9.375,14.2857
-7,Hat,Potential,Rare,Non prime,0,300,9.375,9.375,0
-8,Hat,Potential,Rare,Non prime,0,300,9.375,9.375,0
-9,Hat,Potential,Rare,Non prime,0,300,9.375,9.375,0
-10,Hat,Potential,Rare,Non prime,0,300,9.375,9.375,0
-11,Hat,Potential,Rare,Non prime,0,300,9.375,9.375,0
-12,Hat,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-13,Hat,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-14,Hat,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-15,Hat,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-16,Hat,Potential,Rare,Prime,0,300,8.3333,8.3333,7.5
-17,Hat,Potential,Rare,Prime,0,300,8.3333,8.3333,7.5
-18,Hat,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-19,Hat,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-20,Hat,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-21,Hat,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-22,Hat,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-23,Hat,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-24,Hat,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-25,Hat,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-26,Hat,Potential,Rare,Prime,0,300,5.5555,5.5555,5
-27,Hat,Potential,Epic,Prime,0,300,7.4074,7.4074,14.2857
-28,Hat,Potential,Epic,Prime,0,300,7.4074,7.4074,14.2857
-29,Hat,Potential,Epic,Prime,0,300,7.4074,7.4074,14.2857
-30,Hat,Potential,Epic,Prime,0,300,7.4074,7.4074,14.2857
-31,Hat,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-32,Hat,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-33,Hat,Potential,Epic,Prime,0,300,11.1111,11.1111,8.5714
-34,Hat,Potential,Epic,Prime,0,300,3.7037,3.7037,5.7142
-35,Hat,Potential,Epic,Prime,0,300,11.1111,11.1111,0
-36,Hat,Potential,Epic,Prime,0,300,11.1111,11.1111,0
-37,Hat,Potential,Epic,Prime,0,300,11.1111,11.1111,0
-38,Hat,Potential,Unique,Prime,70,300,6.8965,6.8965,8.9285
-39,Hat,Potential,Unique,Prime,70,300,6.8965,6.8965,8.9285
-40,Hat,Potential,Unique,Prime,70,300,6.8965,6.8965,8.9285
-41,Hat,Potential,Unique,Prime,70,300,6.8965,6.8965,8.9285
-42,Hat,Potential,Unique,Prime,70,300,10.3448,10.3448,10.7142
-43,Hat,Potential,Unique,Prime,70,300,10.3448,10.3448,10.7142
-44,Hat,Potential,Unique,Prime,70,300,10.3448,10.3448,7.1428
-45,Hat,Potential,Unique,Prime,70,300,3.4482,3.4482,7.1428
-46,Hat,Potential,Unique,Prime,70,300,10.3448,10.3448,7.1428
-47,Hat,Potential,Unique,Prime,70,300,10.3448,10.3448,7.1428
-48,Hat,Potential,Unique,Prime,70,300,10.3448,10.3448,7.1428
-49,Hat,Potential,Unique,Prime,70,300,6.8965,6.8965,7.1428
-50,Hat,Potential,Legendary,Prime,120,300,5.5555,5.5555,8.8888
-51,Hat,Potential,Legendary,Prime,120,300,5.5555,5.5555,8.8888
-52,Hat,Potential,Legendary,Prime,120,300,5.5555,5.5555,8.8888
-53,Hat,Potential,Legendary,Prime,120,300,5.5555,5.5555,8.8888
-54,Hat,Potential,Legendary,Prime,120,300,8.3333,8.3333,8.8888
-55,Hat,Potential,Legendary,Prime,120,300,8.3333,8.3333,8.8888
-56,Hat,Potential,Legendary,Prime,120,300,8.3333,8.3333,8.8888
-57,Hat,Potential,Legendary,Prime,120,300,5.5555,5.5555,6.6666
-58,Hat,Potential,Legendary,Prime,120,300,8.3333,8.3333,6.6666
-59,Hat,Potential,Legendary,Prime,120,300,8.3333,8.3333,6.6666
-60,Hat,Potential,Legendary,Prime,120,300,8.3333,8.3333,0
-61,Hat,Potential,Legendary,Prime,120,300,8.3333,8.3333,6.6666
-62,Hat,Potential,Legendary,Prime,120,300,5.5555,5.5555,4.4444
-63,Hat,Potential,Legendary,Prime,120,300,8.3333,8.3333,6.6666
-64,Top,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-65,Overall,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-66,Top,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-67,Overall,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-68,Top,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-69,Overall,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-70,Top,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-71,Overall,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-72,Top,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-73,Overall,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-74,Top,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-75,Overall,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-76,Top,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-77,Overall,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-78,Top,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-79,Overall,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-80,Top,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-81,Overall,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-82,Top,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-83,Overall,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-84,Top,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-85,Overall,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-86,Top,Potential,Rare,Prime,0,300,8.3333,8.3333,7.5
-87,Overall,Potential,Rare,Prime,0,300,8.3333,8.3333,7.5
-88,Top,Potential,Rare,Prime,0,300,8.3333,8.3333,7.5
-89,Overall,Potential,Rare,Prime,0,300,8.3333,8.3333,7.5
-90,Top,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-91,Overall,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-92,Top,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-93,Overall,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-94,Top,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-95,Overall,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-96,Top,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-97,Overall,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-98,Top,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-99,Overall,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-100,Top,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-101,Overall,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-102,Top,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-103,Overall,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-104,Top,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-105,Overall,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-106,Top,Potential,Rare,Prime,0,300,5.5555,5.5555,5
-107,Overall,Potential,Rare,Prime,0,300,5.5555,5.5555,5
-108,Top,Potential,Epic,Prime,0,300,6.6666,6.6666,13.1578
-109,Overall,Potential,Epic,Prime,0,300,6.6666,6.6666,13.1578
-110,Top,Potential,Epic,Prime,0,300,6.6666,6.6666,13.1578
-111,Overall,Potential,Epic,Prime,0,300,6.6666,6.6666,13.1578
-112,Top,Potential,Epic,Prime,0,300,6.6666,6.6666,13.1578
-113,Overall,Potential,Epic,Prime,0,300,6.6666,6.6666,13.1578
-114,Top,Potential,Epic,Prime,0,300,6.6666,6.6666,13.1578
-115,Overall,Potential,Epic,Prime,0,300,6.6666,6.6666,13.1578
-116,Top,Potential,Epic,Prime,0,300,10,10,13.1578
-117,Overall,Potential,Epic,Prime,0,300,10,10,13.1578
-118,Top,Potential,Epic,Prime,0,300,10,10,13.1578
-119,Overall,Potential,Epic,Prime,0,300,10,10,13.1578
-120,Top,Potential,Epic,Prime,0,300,10,10,7.8947
-121,Overall,Potential,Epic,Prime,0,300,10,10,7.8947
-122,Top,Potential,Epic,Prime,0,300,3.3333,3.3333,5.2631
-123,Overall,Potential,Epic,Prime,0,300,3.3333,3.3333,5.2631
-124,Top,Potential,Epic,Prime,0,300,10,10,0
-125,Overall,Potential,Epic,Prime,0,300,10,10,0
-126,Top,Potential,Epic,Prime,0,300,10,10,0
-127,Overall,Potential,Epic,Prime,0,300,10,10,0
-128,Top,Potential,Epic,Prime,0,300,10,10,0
-129,Overall,Potential,Epic,Prime,0,300,10,10,0
-130,Top,Potential,Epic,Prime,0,300,10,10,7.8947
-131,Overall,Potential,Epic,Prime,0,300,10,10,7.8947
-132,Top,Potential,Unique,Prime,40,300,5.1282,6.0606,7.5757
-133,Overall,Potential,Unique,Prime,40,300,5.1282,6.0606,7.5757
-134,Top,Potential,Unique,Prime,40,300,5.1282,6.0606,7.5757
-135,Overall,Potential,Unique,Prime,40,300,5.1282,6.0606,7.5757
-136,Top,Potential,Unique,Prime,40,300,5.1282,6.0606,7.5757
-137,Overall,Potential,Unique,Prime,40,300,5.1282,6.0606,7.5757
-138,Top,Potential,Unique,Prime,40,300,5.1282,6.0606,7.5757
-139,Overall,Potential,Unique,Prime,40,300,5.1282,6.0606,7.5757
-140,Top,Potential,Unique,Prime,40,300,7.6923,9.0909,9.0909
-141,Overall,Potential,Unique,Prime,40,300,7.6923,9.0909,9.0909
-142,Top,Potential,Unique,Prime,40,300,7.6923,9.0909,9.0909
-143,Overall,Potential,Unique,Prime,40,300,7.6923,9.0909,9.0909
-144,Top,Potential,Unique,Prime,40,300,7.6923,9.0909,6.0606
-145,Overall,Potential,Unique,Prime,40,300,7.6923,9.0909,6.0606
-146,Top,Potential,Unique,Prime,40,300,2.5641,3.0303,6.0606
-147,Overall,Potential,Unique,Prime,40,300,2.5641,3.0303,6.0606
-148,Top,Potential,Unique,Prime,40,300,7.6923,9.0909,6.0606
-149,Overall,Potential,Unique,Prime,40,300,7.6923,9.0909,6.0606
-150,Top,Potential,Unique,Prime,40,300,7.6923,9.0909,6.0606
-151,Overall,Potential,Unique,Prime,40,300,7.6923,9.0909,6.0606
-152,Top,Potential,Unique,Prime,40,300,7.6923,9.0909,6.0606
-153,Overall,Potential,Unique,Prime,40,300,7.6923,9.0909,6.0606
-154,Top,Potential,Unique,Prime,40,300,7.6923,9.0909,6.0606
-155,Overall,Potential,Unique,Prime,40,300,7.6923,9.0909,6.0606
-156,Top,Potential,Unique,Prime,40,300,7.6923,0,6.0606
-157,Overall,Potential,Unique,Prime,40,300,7.6923,0,6.0606
-158,Top,Potential,Unique,Prime,40,300,7.6923,0,3.0303
-159,Overall,Potential,Unique,Prime,40,300,7.6923,0,3.0303
-160,Top,Potential,Unique,Prime,40,300,7.6923,9.0909,6.0606
-161,Overall,Potential,Unique,Prime,40,300,7.6923,9.0909,6.0606
-162,Top,Potential,Legendary,Prime,70,300,5.8823,5.8823,9.3023
-163,Overall,Potential,Legendary,Prime,70,300,5.8823,5.8823,9.3023
-164,Top,Potential,Legendary,Prime,70,300,5.8823,5.8823,9.3023
-165,Overall,Potential,Legendary,Prime,70,300,5.8823,5.8823,9.3023
-166,Top,Potential,Legendary,Prime,70,300,5.8823,5.8823,9.3023
-167,Overall,Potential,Legendary,Prime,70,300,5.8823,5.8823,9.3023
-168,Top,Potential,Legendary,Prime,70,300,5.8823,5.8823,9.3023
-169,Overall,Potential,Legendary,Prime,70,300,5.8823,5.8823,9.3023
-170,Top,Potential,Legendary,Prime,70,300,8.8235,8.8235,9.3023
-171,Overall,Potential,Legendary,Prime,70,300,8.8235,8.8235,9.3023
-172,Top,Potential,Legendary,Prime,70,300,8.8235,8.8235,9.3023
-173,Overall,Potential,Legendary,Prime,70,300,8.8235,8.8235,9.3023
-174,Top,Potential,Legendary,Prime,70,300,8.8235,8.8235,9.3023
-175,Overall,Potential,Legendary,Prime,70,300,8.8235,8.8235,9.3023
-176,Top,Potential,Legendary,Prime,70,300,5.8823,5.8823,6.9767
-177,Overall,Potential,Legendary,Prime,70,300,5.8823,5.8823,6.9767
-178,Top,Potential,Legendary,Prime,70,300,8.8235,8.8235,6.9767
-179,Overall,Potential,Legendary,Prime,70,300,8.8235,8.8235,6.9767
-180,Top,Potential,Legendary,Prime,70,300,8.8235,8.8235,6.9767
-181,Overall,Potential,Legendary,Prime,70,300,8.8235,8.8235,6.9767
-182,Top,Potential,Legendary,Prime,70,300,8.8235,8.8235,6.9767
-183,Overall,Potential,Legendary,Prime,70,300,8.8235,8.8235,6.9767
-184,Top,Potential,Legendary,Prime,70,300,8.8235,8.8235,6.9767
-185,Overall,Potential,Legendary,Prime,70,300,8.8235,8.8235,6.9767
-186,Top,Potential,Legendary,Prime,70,300,8.8235,8.8235,0
-187,Overall,Potential,Legendary,Prime,70,300,8.8235,8.8235,0
-188,Bottom,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-189,Bottom,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-190,Bottom,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-191,Bottom,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-192,Bottom,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-193,Bottom,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-194,Bottom,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-195,Bottom,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-196,Bottom,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-197,Bottom,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-198,Bottom,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-199,Bottom,Potential,Rare,Prime,0,300,8.3333,8.3333,7.5
-200,Bottom,Potential,Rare,Prime,0,300,8.3333,8.3333,7.5
-201,Bottom,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-202,Bottom,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-203,Bottom,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-204,Bottom,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-205,Bottom,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-206,Bottom,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-207,Bottom,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-208,Bottom,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-209,Bottom,Potential,Rare,Prime,0,300,5.5555,5.5555,5
-210,Bottom,Potential,Epic,Prime,0,300,7.4074,7.4074,14.2857
-211,Bottom,Potential,Epic,Prime,0,300,7.4074,7.4074,14.2857
-212,Bottom,Potential,Epic,Prime,0,300,7.4074,7.4074,14.2857
-213,Bottom,Potential,Epic,Prime,0,300,7.4074,7.4074,14.2857
-214,Bottom,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-215,Bottom,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-216,Bottom,Potential,Epic,Prime,0,300,11.1111,11.1111,8.5714
-217,Bottom,Potential,Epic,Prime,0,300,3.7037,3.7037,5.7142
-218,Bottom,Potential,Epic,Prime,0,300,11.1111,11.1111,0
-219,Bottom,Potential,Epic,Prime,0,300,11.1111,11.1111,0
-220,Bottom,Potential,Epic,Prime,0,300,11.1111,11.1111,0
-221,Bottom,Potential,Unique,Prime,70,300,6.8965,6.8965,8.9285
-222,Bottom,Potential,Unique,Prime,70,300,6.8965,6.8965,8.9285
-223,Bottom,Potential,Unique,Prime,70,300,6.8965,6.8965,8.9285
-224,Bottom,Potential,Unique,Prime,70,300,6.8965,6.8965,8.9285
-225,Bottom,Potential,Unique,Prime,70,300,10.3448,10.3448,10.7142
-226,Bottom,Potential,Unique,Prime,70,300,10.3448,10.3448,10.7142
-227,Bottom,Potential,Unique,Prime,70,300,10.3448,10.3448,7.1428
-228,Bottom,Potential,Unique,Prime,70,300,3.4482,3.4482,7.1428
-229,Bottom,Potential,Unique,Prime,70,300,10.3448,10.3448,7.1428
-230,Bottom,Potential,Unique,Prime,70,300,10.3448,10.3448,7.1428
-231,Bottom,Potential,Unique,Prime,70,300,10.3448,10.3448,7.1428
-232,Bottom,Potential,Unique,Prime,70,300,6.8965,6.8965,7.1428
-233,Bottom,Potential,Legendary,Prime,70,300,5.8823,5.8823,10.8108
-234,Bottom,Potential,Legendary,Prime,70,300,5.8823,5.8823,10.8108
-235,Bottom,Potential,Legendary,Prime,70,300,5.8823,5.8823,10.8108
-236,Bottom,Potential,Legendary,Prime,70,300,5.8823,5.8823,10.8108
-237,Bottom,Potential,Legendary,Prime,70,300,8.8235,8.8235,10.8108
-238,Bottom,Potential,Legendary,Prime,70,300,8.8235,8.8235,10.8108
-239,Bottom,Potential,Legendary,Prime,70,300,8.8235,8.8235,10.8108
-240,Bottom,Potential,Legendary,Prime,70,300,5.8823,5.8823,8.1081
-241,Bottom,Potential,Legendary,Prime,70,300,8.8235,8.8235,8.1081
-242,Bottom,Potential,Legendary,Prime,70,300,8.8235,8.8235,8.1081
-243,Bottom,Potential,Legendary,Prime,70,300,8.8235,8.8235,0
-244,Bottom,Potential,Legendary,Prime,70,300,8.8235,8.8235,0
-245,Bottom,Potential,Legendary,Prime,70,300,8.8235,8.8235,0
-246,Gloves,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-247,Gloves,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-248,Gloves,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-249,Gloves,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-250,Gloves,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-251,Gloves,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-252,Gloves,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-253,Gloves,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-254,Gloves,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-255,Gloves,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-256,Gloves,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-257,Gloves,Potential,Rare,Prime,0,300,8.3333,8.3333,7.5
-258,Gloves,Potential,Rare,Prime,0,300,8.3333,8.3333,7.5
-259,Gloves,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-260,Gloves,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-261,Gloves,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-262,Gloves,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-263,Gloves,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-264,Gloves,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-265,Gloves,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-266,Gloves,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-267,Gloves,Potential,Rare,Prime,0,300,5.5555,5.5555,5
-268,Gloves,Potential,Epic,Prime,0,300,6.0606,6.0606,12.1951
-269,Gloves,Potential,Epic,Prime,0,300,6.0606,6.0606,12.1951
-270,Gloves,Potential,Epic,Prime,0,300,6.0606,6.0606,12.1951
-271,Gloves,Potential,Epic,Prime,0,300,6.0606,6.0606,12.1951
-272,Gloves,Potential,Epic,Prime,0,300,9.0909,9.0909,12.1951
-273,Gloves,Potential,Epic,Prime,0,300,9.0909,9.0909,12.1951
-274,Gloves,Potential,Epic,Prime,0,300,9.0909,9.0909,7.317
-275,Gloves,Potential,Epic,Prime,0,300,3.0303,3.0303,4.878
-276,Gloves,Potential,Epic,Prime,0,300,9.0909,9.0909,0
-277,Gloves,Potential,Epic,Prime,0,300,9.0909,9.0909,0
-278,Gloves,Potential,Epic,Prime,0,300,9.0909,9.0909,0
-279,Gloves,Potential,Epic,Prime,0,300,9.0909,9.0909,7.317
-280,Gloves,Potential,Epic,Prime,0,300,9.0909,9.0909,7.317
-281,Gloves,Potential,Unique,Prime,120,300,4.2553,5.7142,8.3333
-282,Gloves,Potential,Unique,Prime,120,300,4.2553,5.7142,8.3333
-283,Gloves,Potential,Unique,Prime,120,300,4.2553,5.7142,8.3333
-284,Gloves,Potential,Unique,Prime,120,300,4.2553,5.7142,8.3333
-285,Gloves,Potential,Unique,Prime,120,300,6.3829,8.5714,10
-286,Gloves,Potential,Unique,Prime,120,300,6.3829,8.5714,10
-287,Gloves,Potential,Unique,Prime,120,300,6.3829,8.5714,6.6666
-288,Gloves,Potential,Unique,Prime,120,300,2.1276,2.8571,6.6666
-289,Gloves,Potential,Unique,Prime,120,300,6.3829,0,1.6666
-290,Gloves,Potential,Unique,Prime,120,300,6.3829,0,1.6666
-291,Gloves,Potential,Unique,Prime,120,300,6.3829,0,1.6666
-292,Gloves,Potential,Unique,Prime,120,300,6.3829,0,1.6666
-293,Gloves,Potential,Unique,Prime,120,300,6.3829,8.5714,6.6666
-294,Gloves,Potential,Unique,Prime,120,300,6.3829,8.5714,6.6666
-295,Gloves,Potential,Unique,Prime,120,300,6.3829,8.5714,6.6666
-296,Gloves,Potential,Unique,Prime,120,300,6.3829,8.5714,0
-297,Gloves,Potential,Unique,Prime,120,300,6.3829,8.5714,0
-298,Gloves,Potential,Unique,Prime,120,300,4.2553,5.7142,6.6666
-299,Gloves,Potential,Legendary,Prime,120,300,4.5454,4.5454,9.0909
-300,Gloves,Potential,Legendary,Prime,120,300,4.5454,4.5454,9.0909
-301,Gloves,Potential,Legendary,Prime,120,300,4.5454,4.5454,9.0909
-302,Gloves,Potential,Legendary,Prime,120,300,4.5454,4.5454,9.0909
-303,Gloves,Potential,Legendary,Prime,120,300,6.8181,6.8181,9.0909
-304,Gloves,Potential,Legendary,Prime,120,300,6.8181,6.8181,9.0909
-305,Gloves,Potential,Legendary,Prime,120,300,6.8181,6.8181,9.0909
-306,Gloves,Potential,Legendary,Prime,120,300,9.0909,9.0909,9.0909
-307,Gloves,Potential,Legendary,Prime,120,300,4.5454,4.5454,6.8181
-308,Gloves,Potential,Legendary,Prime,120,300,6.8181,6.8181,6.8181
-309,Gloves,Potential,Legendary,Prime,120,300,6.8181,6.8181,6.8181
-310,Gloves,Potential,Legendary,Prime,120,300,6.8181,6.8181,0
-311,Gloves,Potential,Legendary,Prime,120,300,6.8181,6.8181,0
-312,Gloves,Potential,Legendary,Prime,120,300,6.8181,6.8181,0
-313,Gloves,Potential,Legendary,Prime,120,300,6.8181,6.8181,0
-314,Gloves,Potential,Legendary,Prime,120,300,6.8181,6.8181,6.8181
-315,Shoes,Potential,Rare,Non prime,0,300,8.6956,8.6956,12
-316,Shoes,Potential,Rare,Non prime,0,300,8.6956,8.6956,12
-317,Shoes,Potential,Rare,Non prime,0,300,8.6956,8.6956,12
-318,Shoes,Potential,Rare,Non prime,0,300,8.6956,8.6956,12
-319,Shoes,Potential,Rare,Non prime,0,300,13.0434,13.0434,12
-320,Shoes,Potential,Rare,Non prime,0,300,13.0434,13.0434,12
-321,Shoes,Potential,Rare,Non prime,0,300,13.0434,13.0434,8
-322,Shoes,Potential,Rare,Non prime,0,300,13.0434,13.0434,8
-323,Shoes,Potential,Rare,Non prime,0,300,13.0434,13.0434,12
-324,Shoes,Potential,Rare,Prime,0,300,4.7619,4.7619,6.8181
-325,Shoes,Potential,Rare,Prime,0,300,4.7619,4.7619,6.8181
-326,Shoes,Potential,Rare,Prime,0,300,4.7619,4.7619,6.8181
-327,Shoes,Potential,Rare,Prime,0,300,4.7619,4.7619,6.8181
-328,Shoes,Potential,Rare,Prime,0,300,7.1428,7.1428,6.8181
-329,Shoes,Potential,Rare,Prime,0,300,7.1428,7.1428,6.8181
-330,Shoes,Potential,Rare,Prime,0,300,7.1428,7.1428,4.5454
-331,Shoes,Potential,Rare,Prime,0,300,7.1428,7.1428,4.5454
-332,Shoes,Potential,Rare,Prime,0,300,7.1428,7.1428,4.5454
-333,Shoes,Potential,Rare,Prime,0,300,4.7619,4.7619,6.8181
-334,Shoes,Potential,Rare,Prime,0,300,4.7619,4.7619,6.8181
-335,Shoes,Potential,Rare,Prime,0,300,4.7619,4.7619,6.8181
-336,Shoes,Potential,Rare,Prime,0,300,4.7619,4.7619,6.8181
-337,Shoes,Potential,Rare,Prime,0,300,7.1428,7.1428,4.5454
-338,Shoes,Potential,Rare,Prime,0,300,7.1428,7.1428,4.5454
-339,Shoes,Potential,Rare,Prime,0,300,7.1428,7.1428,4.5454
-340,Shoes,Potential,Rare,Prime,0,300,4.7619,4.7619,4.5454
-341,Shoes,Potential,Epic,Prime,0,300,7.4074,7.4074,14.2857
-342,Shoes,Potential,Epic,Prime,0,300,7.4074,7.4074,14.2857
-343,Shoes,Potential,Epic,Prime,0,300,7.4074,7.4074,14.2857
-344,Shoes,Potential,Epic,Prime,0,300,7.4074,7.4074,14.2857
-345,Shoes,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-346,Shoes,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-347,Shoes,Potential,Epic,Prime,0,300,11.1111,11.1111,8.5714
-348,Shoes,Potential,Epic,Prime,0,300,3.7037,3.7037,5.7142
-349,Shoes,Potential,Epic,Prime,0,300,11.1111,11.1111,0
-350,Shoes,Potential,Epic,Prime,0,300,11.1111,11.1111,0
-351,Shoes,Potential,Epic,Prime,0,300,11.1111,11.1111,0
-352,Shoes,Potential,Unique,Prime,70,300,6.8965,6.8965,8.9285
-353,Shoes,Potential,Unique,Prime,70,300,6.8965,6.8965,8.9285
-354,Shoes,Potential,Unique,Prime,70,300,6.8965,6.8965,8.9285
-355,Shoes,Potential,Unique,Prime,70,300,6.8965,6.8965,8.9285
-356,Shoes,Potential,Unique,Prime,70,300,10.3448,10.3448,10.7142
-357,Shoes,Potential,Unique,Prime,70,300,10.3448,10.3448,10.7142
-358,Shoes,Potential,Unique,Prime,70,300,10.3448,10.3448,7.1428
-359,Shoes,Potential,Unique,Prime,70,300,3.4482,3.4482,7.1428
-360,Shoes,Potential,Unique,Prime,70,300,10.3448,10.3448,7.1428
-361,Shoes,Potential,Unique,Prime,70,300,10.3448,10.3448,7.1428
-362,Shoes,Potential,Unique,Prime,70,300,10.3448,10.3448,7.1428
-363,Shoes,Potential,Unique,Prime,70,300,6.8965,6.8965,7.1428
-364,Shoes,Potential,Legendary,Prime,70,300,6.4516,6.4516,10
-365,Shoes,Potential,Legendary,Prime,70,300,6.4516,6.4516,10
-366,Shoes,Potential,Legendary,Prime,70,300,6.4516,6.4516,10
-367,Shoes,Potential,Legendary,Prime,70,300,6.4516,6.4516,10
-368,Shoes,Potential,Legendary,Prime,70,300,9.6774,9.6774,10
-369,Shoes,Potential,Legendary,Prime,70,300,9.6774,9.6774,10
-370,Shoes,Potential,Legendary,Prime,70,300,9.6774,9.6774,10
-371,Shoes,Potential,Legendary,Prime,70,300,6.4516,6.4516,7.5
-372,Shoes,Potential,Legendary,Prime,70,300,9.6774,9.6774,7.5
-373,Shoes,Potential,Legendary,Prime,70,300,9.6774,9.6774,7.5
-374,Shoes,Potential,Legendary,Prime,70,300,9.6774,9.6774,0
-375,Shoes,Potential,Legendary,Prime,70,300,9.6774,9.6774,7.5
-376,Cape,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-377,Belt,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-378,Shoulderpad,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-379,Cape,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-380,Belt,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-381,Shoulderpad,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-382,Cape,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-383,Belt,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-384,Shoulderpad,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-385,Cape,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-386,Belt,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-387,Shoulderpad,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-388,Cape,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-389,Belt,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-390,Shoulderpad,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-391,Cape,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-392,Belt,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-393,Shoulderpad,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-394,Cape,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-395,Belt,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-396,Shoulderpad,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-397,Cape,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-398,Belt,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-399,Shoulderpad,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-400,Cape,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-401,Belt,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-402,Shoulderpad,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-403,Cape,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-404,Belt,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-405,Shoulderpad,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-406,Cape,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-407,Belt,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-408,Shoulderpad,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-409,Cape,Potential,Rare,Prime,0,300,8.3333,8.3333,7.5
-410,Belt,Potential,Rare,Prime,0,300,8.3333,8.3333,7.5
-411,Shoulderpad,Potential,Rare,Prime,0,300,8.3333,8.3333,7.5
-412,Cape,Potential,Rare,Prime,0,300,8.3333,8.3333,7.5
-413,Belt,Potential,Rare,Prime,0,300,8.3333,8.3333,7.5
-414,Shoulderpad,Potential,Rare,Prime,0,300,8.3333,8.3333,7.5
-415,Cape,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-416,Belt,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-417,Shoulderpad,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-418,Cape,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-419,Belt,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-420,Shoulderpad,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-421,Cape,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-422,Belt,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-423,Shoulderpad,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-424,Cape,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-425,Belt,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-426,Shoulderpad,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-427,Cape,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-428,Belt,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-429,Shoulderpad,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-430,Cape,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-431,Belt,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-432,Shoulderpad,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-433,Cape,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-434,Belt,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-435,Shoulderpad,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-436,Cape,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-437,Belt,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-438,Shoulderpad,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-439,Cape,Potential,Rare,Prime,0,300,5.5555,5.5555,5
-440,Belt,Potential,Rare,Prime,0,300,5.5555,5.5555,5
-441,Shoulderpad,Potential,Rare,Prime,0,300,5.5555,5.5555,5
-442,Cape,Potential,Epic,Prime,0,300,7.4074,7.4074,14.2857
-443,Belt,Potential,Epic,Prime,0,300,7.4074,7.4074,14.2857
-444,Shoulderpad,Potential,Epic,Prime,0,300,7.4074,7.4074,14.2857
-445,Cape,Potential,Epic,Prime,0,300,7.4074,7.4074,14.2857
-446,Belt,Potential,Epic,Prime,0,300,7.4074,7.4074,14.2857
-447,Shoulderpad,Potential,Epic,Prime,0,300,7.4074,7.4074,14.2857
-448,Cape,Potential,Epic,Prime,0,300,7.4074,7.4074,14.2857
-449,Belt,Potential,Epic,Prime,0,300,7.4074,7.4074,14.2857
-450,Shoulderpad,Potential,Epic,Prime,0,300,7.4074,7.4074,14.2857
-451,Cape,Potential,Epic,Prime,0,300,7.4074,7.4074,14.2857
-452,Belt,Potential,Epic,Prime,0,300,7.4074,7.4074,14.2857
-453,Shoulderpad,Potential,Epic,Prime,0,300,7.4074,7.4074,14.2857
-454,Cape,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-455,Belt,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-456,Shoulderpad,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-457,Cape,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-458,Belt,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-459,Shoulderpad,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-460,Cape,Potential,Epic,Prime,0,300,11.1111,11.1111,8.5714
-461,Belt,Potential,Epic,Prime,0,300,11.1111,11.1111,8.5714
-462,Shoulderpad,Potential,Epic,Prime,0,300,11.1111,11.1111,8.5714
-463,Cape,Potential,Epic,Prime,0,300,3.7037,3.7037,5.7142
-464,Belt,Potential,Epic,Prime,0,300,3.7037,3.7037,5.7142
-465,Shoulderpad,Potential,Epic,Prime,0,300,3.7037,3.7037,5.7142
-466,Cape,Potential,Epic,Prime,0,300,11.1111,11.1111,0
-467,Belt,Potential,Epic,Prime,0,300,11.1111,11.1111,0
-468,Shoulderpad,Potential,Epic,Prime,0,300,11.1111,11.1111,0
-469,Cape,Potential,Epic,Prime,0,300,11.1111,11.1111,0
-470,Belt,Potential,Epic,Prime,0,300,11.1111,11.1111,0
-471,Shoulderpad,Potential,Epic,Prime,0,300,11.1111,11.1111,0
-472,Cape,Potential,Epic,Prime,0,300,11.1111,11.1111,0
-473,Belt,Potential,Epic,Prime,0,300,11.1111,11.1111,0
-474,Shoulderpad,Potential,Epic,Prime,0,300,11.1111,11.1111,0
-475,Cape,Potential,Unique,Prime,40,300,7.4074,7.4074,9.6153
-476,Belt,Potential,Unique,Prime,40,300,7.4074,7.4074,9.6153
-477,Shoulderpad,Potential,Unique,Prime,40,300,7.4074,7.4074,9.6153
-478,Cape,Potential,Unique,Prime,40,300,7.4074,7.4074,9.6153
-479,Belt,Potential,Unique,Prime,40,300,7.4074,7.4074,9.6153
-480,Shoulderpad,Potential,Unique,Prime,40,300,7.4074,7.4074,9.6153
-481,Cape,Potential,Unique,Prime,40,300,7.4074,7.4074,9.6153
-482,Belt,Potential,Unique,Prime,40,300,7.4074,7.4074,9.6153
-483,Shoulderpad,Potential,Unique,Prime,40,300,7.4074,7.4074,9.6153
-484,Cape,Potential,Unique,Prime,40,300,7.4074,7.4074,9.6153
-485,Belt,Potential,Unique,Prime,40,300,7.4074,7.4074,9.6153
-486,Shoulderpad,Potential,Unique,Prime,40,300,7.4074,7.4074,9.6153
-487,Cape,Potential,Unique,Prime,40,300,11.1111,11.1111,11.5384
-488,Belt,Potential,Unique,Prime,40,300,11.1111,11.1111,11.5384
-489,Shoulderpad,Potential,Unique,Prime,40,300,11.1111,11.1111,11.5384
-490,Cape,Potential,Unique,Prime,40,300,11.1111,11.1111,11.5384
-491,Belt,Potential,Unique,Prime,40,300,11.1111,11.1111,11.5384
-492,Shoulderpad,Potential,Unique,Prime,40,300,11.1111,11.1111,11.5384
-493,Cape,Potential,Unique,Prime,40,300,11.1111,11.1111,7.6923
-494,Belt,Potential,Unique,Prime,40,300,11.1111,11.1111,7.6923
-495,Shoulderpad,Potential,Unique,Prime,40,300,11.1111,11.1111,7.6923
-496,Cape,Potential,Unique,Prime,40,300,3.7037,3.7037,7.6923
-497,Belt,Potential,Unique,Prime,40,300,3.7037,3.7037,7.6923
-498,Shoulderpad,Potential,Unique,Prime,40,300,3.7037,3.7037,7.6923
-499,Cape,Potential,Unique,Prime,40,300,11.1111,11.1111,7.6923
-500,Belt,Potential,Unique,Prime,40,300,11.1111,11.1111,7.6923
-501,Shoulderpad,Potential,Unique,Prime,40,300,11.1111,11.1111,7.6923
-502,Cape,Potential,Unique,Prime,40,300,11.1111,11.1111,7.6923
-503,Belt,Potential,Unique,Prime,40,300,11.1111,11.1111,7.6923
-504,Shoulderpad,Potential,Unique,Prime,40,300,11.1111,11.1111,7.6923
-505,Cape,Potential,Unique,Prime,40,300,11.1111,11.1111,7.6923
-506,Belt,Potential,Unique,Prime,40,300,11.1111,11.1111,7.6923
-507,Shoulderpad,Potential,Unique,Prime,40,300,11.1111,11.1111,7.6923
-508,Cape,Potential,Legendary,Prime,40,300,7.1428,7.1428,10.8108
-509,Belt,Potential,Legendary,Prime,40,300,7.1428,7.1428,10.8108
-510,Shoulderpad,Potential,Legendary,Prime,40,300,7.1428,7.1428,10.8108
-511,Cape,Potential,Legendary,Prime,40,300,7.1428,7.1428,10.8108
-512,Belt,Potential,Legendary,Prime,40,300,7.1428,7.1428,10.8108
-513,Shoulderpad,Potential,Legendary,Prime,40,300,7.1428,7.1428,10.8108
-514,Cape,Potential,Legendary,Prime,40,300,7.1428,7.1428,10.8108
-515,Belt,Potential,Legendary,Prime,40,300,7.1428,7.1428,10.8108
-516,Shoulderpad,Potential,Legendary,Prime,40,300,7.1428,7.1428,10.8108
-517,Cape,Potential,Legendary,Prime,40,300,7.1428,7.1428,10.8108
-518,Belt,Potential,Legendary,Prime,40,300,7.1428,7.1428,10.8108
-519,Shoulderpad,Potential,Legendary,Prime,40,300,7.1428,7.1428,10.8108
-520,Cape,Potential,Legendary,Prime,40,300,10.7142,10.7142,10.8108
-521,Belt,Potential,Legendary,Prime,40,300,10.7142,10.7142,10.8108
-522,Shoulderpad,Potential,Legendary,Prime,40,300,10.7142,10.7142,10.8108
-523,Cape,Potential,Legendary,Prime,40,300,10.7142,10.7142,10.8108
-524,Belt,Potential,Legendary,Prime,40,300,10.7142,10.7142,10.8108
-525,Shoulderpad,Potential,Legendary,Prime,40,300,10.7142,10.7142,10.8108
-526,Cape,Potential,Legendary,Prime,40,300,10.7142,10.7142,10.8108
-527,Belt,Potential,Legendary,Prime,40,300,10.7142,10.7142,10.8108
-528,Shoulderpad,Potential,Legendary,Prime,40,300,10.7142,10.7142,10.8108
-529,Cape,Potential,Legendary,Prime,40,300,7.1428,7.1428,8.1081
-530,Belt,Potential,Legendary,Prime,40,300,7.1428,7.1428,8.1081
-531,Shoulderpad,Potential,Legendary,Prime,40,300,7.1428,7.1428,8.1081
-532,Cape,Potential,Legendary,Prime,40,300,10.7142,10.7142,8.1081
-533,Belt,Potential,Legendary,Prime,40,300,10.7142,10.7142,8.1081
-534,Shoulderpad,Potential,Legendary,Prime,40,300,10.7142,10.7142,8.1081
-535,Cape,Potential,Legendary,Prime,40,300,10.7142,10.7142,8.1081
-536,Belt,Potential,Legendary,Prime,40,300,10.7142,10.7142,8.1081
-537,Shoulderpad,Potential,Legendary,Prime,40,300,10.7142,10.7142,8.1081
-538,Cape,Potential,Legendary,Prime,40,300,10.7142,10.7142,0
-539,Belt,Potential,Legendary,Prime,40,300,10.7142,10.7142,0
-540,Shoulderpad,Potential,Legendary,Prime,40,300,10.7142,10.7142,0
-541,Face Accessory,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-542,Eye Accessory,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-543,Ring,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-544,Earring,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-545,Pendant,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-546,Face Accessory,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-547,Eye Accessory,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-548,Ring,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-549,Earring,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-550,Pendant,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-551,Face Accessory,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-552,Eye Accessory,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-553,Ring,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-554,Earring,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-555,Pendant,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-556,Face Accessory,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-557,Eye Accessory,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-558,Ring,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-559,Earring,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-560,Pendant,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-561,Face Accessory,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-562,Eye Accessory,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-563,Ring,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-564,Earring,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-565,Pendant,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-566,Face Accessory,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-567,Eye Accessory,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-568,Ring,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-569,Earring,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-570,Pendant,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-571,Face Accessory,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-572,Eye Accessory,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-573,Ring,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-574,Earring,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-575,Pendant,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-576,Face Accessory,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-577,Eye Accessory,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-578,Ring,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-579,Earring,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-580,Pendant,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-581,Face Accessory,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-582,Eye Accessory,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-583,Ring,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-584,Earring,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-585,Pendant,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-586,Face Accessory,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-587,Eye Accessory,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-588,Ring,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-589,Earring,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-590,Pendant,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-591,Face Accessory,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-592,Eye Accessory,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-593,Ring,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-594,Earring,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-595,Pendant,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-596,Face Accessory,Potential,Rare,Prime,0,300,7.1428,7.1428,7.5
-597,Eye Accessory,Potential,Rare,Prime,0,300,7.1428,7.1428,7.5
-598,Ring,Potential,Rare,Prime,0,300,7.1428,7.1428,7.5
-599,Earring,Potential,Rare,Prime,0,300,7.1428,7.1428,7.5
-600,Pendant,Potential,Rare,Prime,0,300,7.1428,7.1428,7.5
-601,Face Accessory,Potential,Rare,Prime,0,300,7.1428,7.1428,7.5
-602,Eye Accessory,Potential,Rare,Prime,0,300,7.1428,7.1428,7.5
-603,Ring,Potential,Rare,Prime,0,300,7.1428,7.1428,7.5
-604,Earring,Potential,Rare,Prime,0,300,7.1428,7.1428,7.5
-605,Pendant,Potential,Rare,Prime,0,300,7.1428,7.1428,7.5
-606,Face Accessory,Potential,Rare,Prime,0,300,7.1428,7.1428,5
-607,Eye Accessory,Potential,Rare,Prime,0,300,7.1428,7.1428,5
-608,Ring,Potential,Rare,Prime,0,300,7.1428,7.1428,5
-609,Earring,Potential,Rare,Prime,0,300,7.1428,7.1428,5
-610,Pendant,Potential,Rare,Prime,0,300,7.1428,7.1428,5
-611,Face Accessory,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-612,Eye Accessory,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-613,Ring,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-614,Earring,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-615,Pendant,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-616,Face Accessory,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-617,Eye Accessory,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-618,Ring,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-619,Earring,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-620,Pendant,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-621,Face Accessory,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-622,Eye Accessory,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-623,Ring,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-624,Earring,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-625,Pendant,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-626,Face Accessory,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-627,Eye Accessory,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-628,Ring,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-629,Earring,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-630,Pendant,Potential,Rare,Prime,0,300,4.7619,4.7619,7.5
-631,Face Accessory,Potential,Rare,Prime,0,300,7.1428,7.1428,5
-632,Eye Accessory,Potential,Rare,Prime,0,300,7.1428,7.1428,5
-633,Ring,Potential,Rare,Prime,0,300,7.1428,7.1428,5
-634,Earring,Potential,Rare,Prime,0,300,7.1428,7.1428,5
-635,Pendant,Potential,Rare,Prime,0,300,7.1428,7.1428,5
-636,Face Accessory,Potential,Rare,Prime,0,300,7.1428,7.1428,5
-637,Eye Accessory,Potential,Rare,Prime,0,300,7.1428,7.1428,5
-638,Ring,Potential,Rare,Prime,0,300,7.1428,7.1428,5
-639,Earring,Potential,Rare,Prime,0,300,7.1428,7.1428,5
-640,Pendant,Potential,Rare,Prime,0,300,7.1428,7.1428,5
-641,Face Accessory,Potential,Rare,Prime,0,300,7.1428,7.1428,5
-642,Eye Accessory,Potential,Rare,Prime,0,300,7.1428,7.1428,5
-643,Ring,Potential,Rare,Prime,0,300,7.1428,7.1428,5
-644,Earring,Potential,Rare,Prime,0,300,7.1428,7.1428,5
-645,Pendant,Potential,Rare,Prime,0,300,7.1428,7.1428,5
-646,Face Accessory,Potential,Rare,Prime,0,300,4.7619,4.7619,5
-647,Eye Accessory,Potential,Rare,Prime,0,300,4.7619,4.7619,5
-648,Ring,Potential,Rare,Prime,0,300,4.7619,4.7619,5
-649,Earring,Potential,Rare,Prime,0,300,4.7619,4.7619,5
-650,Pendant,Potential,Rare,Prime,0,300,4.7619,4.7619,5
-651,Face Accessory,Potential,Rare,Prime,0,300,7.1428,7.1428,0
-652,Eye Accessory,Potential,Rare,Prime,0,300,7.1428,7.1428,0
-653,Ring,Potential,Rare,Prime,0,300,7.1428,7.1428,0
-654,Earring,Potential,Rare,Prime,0,300,7.1428,7.1428,0
-655,Pendant,Potential,Rare,Prime,0,300,7.1428,7.1428,0
-656,Face Accessory,Potential,Rare,Prime,0,300,7.1428,7.1428,0
-657,Eye Accessory,Potential,Rare,Prime,0,300,7.1428,7.1428,0
-658,Ring,Potential,Rare,Prime,0,300,7.1428,7.1428,0
-659,Earring,Potential,Rare,Prime,0,300,7.1428,7.1428,0
-660,Pendant,Potential,Rare,Prime,0,300,7.1428,7.1428,0
-661,Face Accessory,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-662,Eye Accessory,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-663,Ring,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-664,Earring,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-665,Pendant,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-666,Face Accessory,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-667,Eye Accessory,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-668,Ring,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-669,Earring,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-670,Pendant,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-671,Face Accessory,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-672,Eye Accessory,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-673,Ring,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-674,Earring,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-675,Pendant,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-676,Face Accessory,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-677,Eye Accessory,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-678,Ring,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-679,Earring,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-680,Pendant,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-681,Face Accessory,Potential,Epic,Prime,0,300,16.6666,16.6666,14.2857
-682,Eye Accessory,Potential,Epic,Prime,0,300,16.6666,16.6666,14.2857
-683,Ring,Potential,Epic,Prime,0,300,16.6666,16.6666,14.2857
-684,Earring,Potential,Epic,Prime,0,300,16.6666,16.6666,14.2857
-685,Pendant,Potential,Epic,Prime,0,300,16.6666,16.6666,14.2857
-686,Face Accessory,Potential,Epic,Prime,0,300,16.6666,16.6666,14.2857
-687,Eye Accessory,Potential,Epic,Prime,0,300,16.6666,16.6666,14.2857
-688,Ring,Potential,Epic,Prime,0,300,16.6666,16.6666,14.2857
-689,Earring,Potential,Epic,Prime,0,300,16.6666,16.6666,14.2857
-690,Pendant,Potential,Epic,Prime,0,300,16.6666,16.6666,14.2857
-691,Face Accessory,Potential,Epic,Prime,0,300,16.6666,16.6666,8.5714
-692,Eye Accessory,Potential,Epic,Prime,0,300,16.6666,16.6666,8.5714
-693,Ring,Potential,Epic,Prime,0,300,16.6666,16.6666,8.5714
-694,Earring,Potential,Epic,Prime,0,300,16.6666,16.6666,8.5714
-695,Pendant,Potential,Epic,Prime,0,300,16.6666,16.6666,8.5714
-696,Face Accessory,Potential,Epic,Prime,0,300,5.5555,5.5555,5.7142
-697,Eye Accessory,Potential,Epic,Prime,0,300,5.5555,5.5555,5.7142
-698,Ring,Potential,Epic,Prime,0,300,5.5555,5.5555,5.7142
-699,Earring,Potential,Epic,Prime,0,300,5.5555,5.5555,5.7142
-700,Pendant,Potential,Epic,Prime,0,300,5.5555,5.5555,5.7142
-701,Face Accessory,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-702,Eye Accessory,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-703,Ring,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-704,Earring,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-705,Pendant,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-706,Face Accessory,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-707,Eye Accessory,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-708,Ring,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-709,Earring,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-710,Pendant,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-711,Face Accessory,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-712,Eye Accessory,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-713,Ring,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-714,Earring,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-715,Pendant,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-716,Face Accessory,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-717,Eye Accessory,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-718,Ring,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-719,Earring,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-720,Pendant,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-721,Face Accessory,Potential,Unique,Prime,0,300,14.2857,14.2857,13.6363
-722,Eye Accessory,Potential,Unique,Prime,0,300,14.2857,14.2857,13.6363
-723,Ring,Potential,Unique,Prime,0,300,14.2857,14.2857,13.6363
-724,Earring,Potential,Unique,Prime,0,300,14.2857,14.2857,13.6363
-725,Pendant,Potential,Unique,Prime,0,300,14.2857,14.2857,13.6363
-726,Face Accessory,Potential,Unique,Prime,0,300,14.2857,14.2857,13.6363
-727,Eye Accessory,Potential,Unique,Prime,0,300,14.2857,14.2857,13.6363
-728,Ring,Potential,Unique,Prime,0,300,14.2857,14.2857,13.6363
-729,Earring,Potential,Unique,Prime,0,300,14.2857,14.2857,13.6363
-730,Pendant,Potential,Unique,Prime,0,300,14.2857,14.2857,13.6363
-731,Face Accessory,Potential,Unique,Prime,0,300,14.2857,14.2857,9.0909
-732,Eye Accessory,Potential,Unique,Prime,0,300,14.2857,14.2857,9.0909
-733,Ring,Potential,Unique,Prime,0,300,14.2857,14.2857,9.0909
-734,Earring,Potential,Unique,Prime,0,300,14.2857,14.2857,9.0909
-735,Pendant,Potential,Unique,Prime,0,300,14.2857,14.2857,9.0909
-736,Face Accessory,Potential,Unique,Prime,0,300,4.7619,4.7619,9.0909
-737,Eye Accessory,Potential,Unique,Prime,0,300,4.7619,4.7619,9.0909
-738,Ring,Potential,Unique,Prime,0,300,4.7619,4.7619,9.0909
-739,Earring,Potential,Unique,Prime,0,300,4.7619,4.7619,9.0909
-740,Pendant,Potential,Unique,Prime,0,300,4.7619,4.7619,9.0909
-741,Face Accessory,Potential,Unique,Prime,0,300,14.2857,14.2857,9.0909
-742,Eye Accessory,Potential,Unique,Prime,0,300,14.2857,14.2857,9.0909
-743,Ring,Potential,Unique,Prime,0,300,14.2857,14.2857,9.0909
-744,Earring,Potential,Unique,Prime,0,300,14.2857,14.2857,9.0909
-745,Pendant,Potential,Unique,Prime,0,300,14.2857,14.2857,9.0909
-746,Face Accessory,Potential,Legendary,Prime,0,300,5.8823,5.8823,9.3023
-747,Eye Accessory,Potential,Legendary,Prime,0,300,5.8823,5.8823,9.3023
-748,Ring,Potential,Legendary,Prime,0,300,5.8823,5.8823,9.3023
-749,Earring,Potential,Legendary,Prime,0,300,5.8823,5.8823,9.3023
-750,Pendant,Potential,Legendary,Prime,0,300,5.8823,5.8823,9.3023
-751,Face Accessory,Potential,Legendary,Prime,0,300,5.8823,5.8823,9.3023
-752,Eye Accessory,Potential,Legendary,Prime,0,300,5.8823,5.8823,9.3023
-753,Ring,Potential,Legendary,Prime,0,300,5.8823,5.8823,9.3023
-754,Earring,Potential,Legendary,Prime,0,300,5.8823,5.8823,9.3023
-755,Pendant,Potential,Legendary,Prime,0,300,5.8823,5.8823,9.3023
-756,Face Accessory,Potential,Legendary,Prime,0,300,5.8823,5.8823,9.3023
-757,Eye Accessory,Potential,Legendary,Prime,0,300,5.8823,5.8823,9.3023
-758,Ring,Potential,Legendary,Prime,0,300,5.8823,5.8823,9.3023
-759,Earring,Potential,Legendary,Prime,0,300,5.8823,5.8823,9.3023
-760,Pendant,Potential,Legendary,Prime,0,300,5.8823,5.8823,9.3023
-761,Face Accessory,Potential,Legendary,Prime,0,300,5.8823,5.8823,9.3023
-762,Eye Accessory,Potential,Legendary,Prime,0,300,5.8823,5.8823,9.3023
-763,Ring,Potential,Legendary,Prime,0,300,5.8823,5.8823,9.3023
-764,Earring,Potential,Legendary,Prime,0,300,5.8823,5.8823,9.3023
-765,Pendant,Potential,Legendary,Prime,0,300,5.8823,5.8823,9.3023
-766,Face Accessory,Potential,Legendary,Prime,0,300,8.8235,8.8235,9.3023
-767,Eye Accessory,Potential,Legendary,Prime,0,300,8.8235,8.8235,9.3023
-768,Ring,Potential,Legendary,Prime,0,300,8.8235,8.8235,9.3023
-769,Earring,Potential,Legendary,Prime,0,300,8.8235,8.8235,9.3023
-770,Pendant,Potential,Legendary,Prime,0,300,8.8235,8.8235,9.3023
-771,Face Accessory,Potential,Legendary,Prime,0,300,8.8235,8.8235,9.3023
-772,Eye Accessory,Potential,Legendary,Prime,0,300,8.8235,8.8235,9.3023
-773,Ring,Potential,Legendary,Prime,0,300,8.8235,8.8235,9.3023
-774,Earring,Potential,Legendary,Prime,0,300,8.8235,8.8235,9.3023
-775,Pendant,Potential,Legendary,Prime,0,300,8.8235,8.8235,9.3023
-776,Face Accessory,Potential,Legendary,Prime,0,300,8.8235,8.8235,9.3023
-777,Eye Accessory,Potential,Legendary,Prime,0,300,8.8235,8.8235,9.3023
-778,Ring,Potential,Legendary,Prime,0,300,8.8235,8.8235,9.3023
-779,Earring,Potential,Legendary,Prime,0,300,8.8235,8.8235,9.3023
-780,Pendant,Potential,Legendary,Prime,0,300,8.8235,8.8235,9.3023
-781,Face Accessory,Potential,Legendary,Prime,0,300,5.8823,5.8823,6.9767
-782,Eye Accessory,Potential,Legendary,Prime,0,300,5.8823,5.8823,6.9767
-783,Ring,Potential,Legendary,Prime,0,300,5.8823,5.8823,6.9767
-784,Earring,Potential,Legendary,Prime,0,300,5.8823,5.8823,6.9767
-785,Pendant,Potential,Legendary,Prime,0,300,5.8823,5.8823,6.9767
-786,Face Accessory,Potential,Legendary,Prime,0,300,8.8235,8.8235,6.9767
-787,Eye Accessory,Potential,Legendary,Prime,0,300,8.8235,8.8235,6.9767
-788,Ring,Potential,Legendary,Prime,0,300,8.8235,8.8235,6.9767
-789,Earring,Potential,Legendary,Prime,0,300,8.8235,8.8235,6.9767
-790,Pendant,Potential,Legendary,Prime,0,300,8.8235,8.8235,6.9767
-791,Face Accessory,Potential,Legendary,Prime,0,300,8.8235,8.8235,6.9767
-792,Eye Accessory,Potential,Legendary,Prime,0,300,8.8235,8.8235,6.9767
-793,Ring,Potential,Legendary,Prime,0,300,8.8235,8.8235,6.9767
-794,Earring,Potential,Legendary,Prime,0,300,8.8235,8.8235,6.9767
-795,Pendant,Potential,Legendary,Prime,0,300,8.8235,8.8235,6.9767
-796,Face Accessory,Potential,Legendary,Prime,0,300,8.8235,8.8235,0
-797,Eye Accessory,Potential,Legendary,Prime,0,300,8.8235,8.8235,0
-798,Ring,Potential,Legendary,Prime,0,300,8.8235,8.8235,0
-799,Earring,Potential,Legendary,Prime,0,300,8.8235,8.8235,0
-800,Pendant,Potential,Legendary,Prime,0,300,8.8235,8.8235,0
-801,Face Accessory,Potential,Legendary,Prime,0,300,8.8235,8.8235,6.9767
-802,Eye Accessory,Potential,Legendary,Prime,0,300,8.8235,8.8235,6.9767
-803,Ring,Potential,Legendary,Prime,0,300,8.8235,8.8235,6.9767
-804,Earring,Potential,Legendary,Prime,0,300,8.8235,8.8235,6.9767
-805,Pendant,Potential,Legendary,Prime,0,300,8.8235,8.8235,6.9767
-806,Face Accessory,Potential,Legendary,Prime,0,300,8.8235,8.8235,6.9767
-807,Eye Accessory,Potential,Legendary,Prime,0,300,8.8235,8.8235,6.9767
-808,Ring,Potential,Legendary,Prime,0,300,8.8235,8.8235,6.9767
-809,Earring,Potential,Legendary,Prime,0,300,8.8235,8.8235,6.9767
-810,Pendant,Potential,Legendary,Prime,0,300,8.8235,8.8235,6.9767
-811,Weapon,Potential,Rare,Non prime,0,300,12.5,12.5,13.6363
-812,Weapon,Potential,Rare,Non prime,0,300,12.5,12.5,13.6363
-813,Weapon,Potential,Rare,Non prime,0,300,12.5,12.5,13.6363
-814,Weapon,Potential,Rare,Non prime,0,300,12.5,12.5,13.6363
-815,Weapon,Potential,Rare,Non prime,0,300,18.75,18.75,13.6363
-816,Weapon,Potential,Rare,Non prime,0,300,18.75,18.75,13.6363
-817,Weapon,Potential,Rare,Non prime,0,300,6.25,6.25,9.0909
-818,Weapon,Potential,Rare,Non prime,0,300,6.25,6.25,9.0909
-819,Weapon,Potential,Rare,Prime,30,300,3.5087,3.5087,6.1224
-820,Weapon,Potential,Rare,Prime,30,300,3.5087,3.5087,6.1224
-821,Weapon,Potential,Rare,Prime,30,300,3.5087,3.5087,6.1224
-822,Weapon,Potential,Rare,Prime,30,300,3.5087,3.5087,6.1224
-823,Weapon,Potential,Rare,Prime,30,300,5.2631,5.2631,6.1224
-824,Weapon,Potential,Rare,Prime,30,300,5.2631,5.2631,6.1224
-825,Weapon,Potential,Rare,Prime,30,300,3.5087,3.5087,4.0816
-826,Weapon,Potential,Rare,Prime,30,300,3.5087,3.5087,4.0816
-827,Weapon,Potential,Rare,Prime,30,300,3.5087,3.5087,6.1224
-828,Weapon,Potential,Rare,Prime,30,300,3.5087,3.5087,6.1224
-829,Weapon,Potential,Rare,Prime,30,300,3.5087,3.5087,6.1224
-830,Weapon,Potential,Rare,Prime,30,300,3.5087,3.5087,6.1224
-831,Weapon,Potential,Rare,Prime,30,300,1.7543,1.7543,2.0408
-832,Weapon,Potential,Rare,Prime,30,300,1.7543,1.7543,2.0408
-833,Weapon,Potential,Rare,Prime,30,300,1.7543,1.7543,2.0408
-834,Weapon,Potential,Rare,Prime,30,300,1.7543,1.7543,2.0408
-835,Weapon,Potential,Rare,Prime,30,300,3.5087,3.5087,4.0816
-836,Weapon,Potential,Rare,Prime,30,300,5.2631,5.2631,2.0408
-837,Weapon,Potential,Rare,Prime,30,300,5.2631,5.2631,2.0408
-838,Weapon,Potential,Rare,Prime,30,300,5.2631,5.2631,2.0408
-839,Weapon,Potential,Rare,Prime,30,300,5.2631,5.2631,2.0408
-840,Weapon,Potential,Rare,Prime,30,300,5.2631,5.2631,2.0408
-841,Weapon,Potential,Rare,Prime,30,300,5.2631,5.2631,2.0408
-842,Weapon,Potential,Rare,Prime,30,300,5.2631,5.2631,2.0408
-843,Weapon,Potential,Rare,Prime,30,300,5.2631,5.2631,2.0408
-844,Weapon,Potential,Rare,Prime,30,300,1.7543,1.7543,2.0408
-845,Weapon,Potential,Epic,Prime,50,300,7.6923,7.6923,10.8695
-846,Weapon,Potential,Epic,Prime,50,300,7.6923,7.6923,10.8695
-847,Weapon,Potential,Epic,Prime,50,300,7.6923,7.6923,10.8695
-848,Weapon,Potential,Epic,Prime,50,300,7.6923,7.6923,10.8695
-849,Weapon,Potential,Epic,Prime,50,300,11.5384,11.5384,10.8695
-850,Weapon,Potential,Epic,Prime,50,300,11.5384,11.5384,10.8695
-851,Weapon,Potential,Epic,Prime,50,300,3.8461,3.8461,4.3478
-852,Weapon,Potential,Epic,Prime,50,300,3.8461,3.8461,4.3478
-853,Weapon,Potential,Epic,Prime,50,300,3.8461,3.8461,4.3478
-854,Weapon,Potential,Epic,Prime,50,300,3.8461,3.8461,4.3478
-855,Weapon,Potential,Epic,Prime,50,300,3.8461,3.8461,4.3478
-856,Weapon,Potential,Epic,Prime,50,300,11.5384,11.5384,4.3478
-857,Weapon,Potential,Epic,Prime,50,300,11.5384,11.5384,4.3478
-858,Weapon,Potential,Epic,Prime,50,300,3.8461,3.8461,4.3478
-859,Weapon,Potential,Unique,Prime,100,300,13.3333,13.3333,11.6279
-860,Weapon,Potential,Unique,Prime,100,300,13.3333,13.3333,11.6279
-861,Weapon,Potential,Unique,Prime,100,300,13.3333,13.3333,11.6279
-862,Weapon,Potential,Unique,Prime,100,300,13.3333,13.3333,11.6279
-863,Weapon,Potential,Unique,Prime,100,300,6.6666,6.6666,6.9767
-864,Weapon,Potential,Unique,Prime,100,300,6.6666,6.6666,6.9767
-865,Weapon,Potential,Unique,Prime,100,300,6.6666,6.6666,9.3023
-866,Weapon,Potential,Unique,Prime,100,300,6.6666,6.6666,6.9767
-867,Weapon,Potential,Unique,Prime,100,300,6.6666,6.6666,9.3023
-868,Weapon,Potential,Unique,Prime,100,300,6.6666,6.6666,6.9767
-869,Weapon,Potential,Unique,Prime,100,300,6.6666,6.6666,6.9767
-870,Weapon,Potential,Legendary,Prime,100,300,8,11.1111,9.756
-871,Weapon,Potential,Legendary,Prime,100,300,8,11.1111,9.756
-872,Weapon,Potential,Legendary,Prime,100,300,8,11.1111,9.756
-873,Weapon,Potential,Legendary,Prime,100,300,8,11.1111,9.756
-874,Weapon,Potential,Legendary,Prime,100,300,4,5.5555,4.878
-875,Weapon,Potential,Legendary,Prime,100,300,4,5.5555,4.878
-876,Weapon,Potential,Legendary,Prime,100,300,4,5.5555,4.878
-877,Weapon,Potential,Legendary,Prime,100,300,4,5.5555,4.878
-878,Weapon,Potential,Legendary,Prime,100,300,8,11.1111,7.317
-879,Weapon,Potential,Legendary,Prime,100,300,12,0,4.878
-880,Weapon,Potential,Legendary,Prime,100,300,12,0,4.878
-881,Weapon,Potential,Legendary,Prime,100,300,4,5.5555,4.878
-882,Weapon,Potential,Legendary,Prime,100,300,4,2.7777,4.878
-883,Weapon,Potential,Legendary,Prime,100,300,4,5.5555,4.878
-884,Weapon,Potential,Legendary,Prime,100,300,4,5.5555,4.878
-885,Weapon,Potential,Legendary,Prime,100,300,4,2.7777,4.878
-886,Secondary Weapon,Potential,Rare,Non prime,0,300,12.5,12.5,13.6363
-887,Secondary Weapon,Potential,Rare,Non prime,0,300,12.5,12.5,13.6363
-888,Secondary Weapon,Potential,Rare,Non prime,0,300,12.5,12.5,13.6363
-889,Secondary Weapon,Potential,Rare,Non prime,0,300,12.5,12.5,13.6363
-890,Secondary Weapon,Potential,Rare,Non prime,0,300,18.75,18.75,13.6363
-891,Secondary Weapon,Potential,Rare,Non prime,0,300,18.75,18.75,13.6363
-892,Secondary Weapon,Potential,Rare,Non prime,0,300,6.25,6.25,9.0909
-893,Secondary Weapon,Potential,Rare,Non prime,0,300,6.25,6.25,9.0909
-894,Secondary Weapon,Potential,Rare,Prime,30,300,3.5087,3.5087,6.1224
-895,Secondary Weapon,Potential,Rare,Prime,30,300,3.5087,3.5087,6.1224
-896,Secondary Weapon,Potential,Rare,Prime,30,300,3.5087,3.5087,6.1224
-897,Secondary Weapon,Potential,Rare,Prime,30,300,3.5087,3.5087,6.1224
-898,Secondary Weapon,Potential,Rare,Prime,30,300,5.2631,5.2631,6.1224
-899,Secondary Weapon,Potential,Rare,Prime,30,300,5.2631,5.2631,6.1224
-900,Secondary Weapon,Potential,Rare,Prime,30,300,3.5087,3.5087,4.0816
-901,Secondary Weapon,Potential,Rare,Prime,30,300,3.5087,3.5087,4.0816
-902,Secondary Weapon,Potential,Rare,Prime,30,300,3.5087,3.5087,6.1224
-903,Secondary Weapon,Potential,Rare,Prime,30,300,3.5087,3.5087,6.1224
-904,Secondary Weapon,Potential,Rare,Prime,30,300,3.5087,3.5087,6.1224
-905,Secondary Weapon,Potential,Rare,Prime,30,300,3.5087,3.5087,6.1224
-906,Secondary Weapon,Potential,Rare,Prime,30,300,1.7543,1.7543,2.0408
-907,Secondary Weapon,Potential,Rare,Prime,30,300,1.7543,1.7543,2.0408
-908,Secondary Weapon,Potential,Rare,Prime,30,300,1.7543,1.7543,2.0408
-909,Secondary Weapon,Potential,Rare,Prime,30,300,1.7543,1.7543,2.0408
-910,Secondary Weapon,Potential,Rare,Prime,30,300,3.5087,3.5087,4.0816
-911,Secondary Weapon,Potential,Rare,Prime,30,300,5.2631,5.2631,2.0408
-912,Secondary Weapon,Potential,Rare,Prime,30,300,5.2631,5.2631,2.0408
-913,Secondary Weapon,Potential,Rare,Prime,30,300,5.2631,5.2631,2.0408
-914,Secondary Weapon,Potential,Rare,Prime,30,300,5.2631,5.2631,2.0408
-915,Secondary Weapon,Potential,Rare,Prime,30,300,5.2631,5.2631,2.0408
-916,Secondary Weapon,Potential,Rare,Prime,30,300,5.2631,5.2631,2.0408
-917,Secondary Weapon,Potential,Rare,Prime,30,300,5.2631,5.2631,2.0408
-918,Secondary Weapon,Potential,Rare,Prime,30,300,5.2631,5.2631,2.0408
-919,Secondary Weapon,Potential,Rare,Prime,30,300,1.7543,1.7543,2.0408
-920,Secondary Weapon,Potential,Epic,Prime,50,300,5.7142,5.7142,10.8695
-921,Secondary Weapon,Potential,Epic,Prime,50,300,5.7142,5.7142,10.8695
-922,Secondary Weapon,Potential,Epic,Prime,50,300,5.7142,5.7142,10.8695
-923,Secondary Weapon,Potential,Epic,Prime,50,300,5.7142,5.7142,10.8695
-924,Secondary Weapon,Potential,Epic,Prime,50,300,8.5714,8.5714,10.8695
-925,Secondary Weapon,Potential,Epic,Prime,50,300,8.5714,8.5714,10.8695
-926,Secondary Weapon,Potential,Epic,Prime,50,300,2.8571,2.8571,4.3478
-927,Secondary Weapon,Potential,Epic,Prime,50,300,2.8571,2.8571,4.3478
-928,Secondary Weapon,Potential,Epic,Prime,50,300,2.8571,2.8571,4.3478
-929,Secondary Weapon,Potential,Epic,Prime,50,300,2.8571,2.8571,4.3478
-930,Secondary Weapon,Potential,Epic,Prime,50,300,2.8571,2.8571,4.3478
-931,Secondary Weapon,Potential,Epic,Prime,50,300,8.5714,8.5714,4.3478
-932,Secondary Weapon,Potential,Epic,Prime,50,300,8.5714,8.5714,4.3478
-933,Secondary Weapon,Potential,Epic,Prime,50,300,2.8571,2.8571,4.3478
-934,Secondary Weapon,Potential,Epic,Prime,50,300,8.5714,8.5714,0
-935,Secondary Weapon,Potential,Epic,Prime,50,300,8.5714,8.5714,0
-936,Secondary Weapon,Potential,Epic,Prime,50,300,8.5714,8.5714,0
-937,Secondary Weapon,Potential,Unique,Prime,100,300,9.5238,9.5238,9.8039
-938,Secondary Weapon,Potential,Unique,Prime,100,300,9.5238,9.5238,9.8039
-939,Secondary Weapon,Potential,Unique,Prime,100,300,9.5238,9.5238,9.8039
-940,Secondary Weapon,Potential,Unique,Prime,100,300,9.5238,9.5238,9.8039
-941,Secondary Weapon,Potential,Unique,Prime,100,300,4.7619,4.7619,5.8823
-942,Secondary Weapon,Potential,Unique,Prime,100,300,4.7619,4.7619,5.8823
-943,Secondary Weapon,Potential,Unique,Prime,100,300,4.7619,4.7619,7.8431
-944,Secondary Weapon,Potential,Unique,Prime,100,300,4.7619,4.7619,5.8823
-945,Secondary Weapon,Potential,Unique,Prime,100,300,4.7619,4.7619,7.8431
-946,Secondary Weapon,Potential,Unique,Prime,100,300,4.7619,4.7619,5.8823
-947,Secondary Weapon,Potential,Unique,Prime,100,300,14.2857,14.2857,7.8431
-948,Secondary Weapon,Potential,Unique,Prime,100,300,14.2857,14.2857,7.8431
-949,Secondary Weapon,Potential,Unique,Prime,100,300,4.7619,4.7619,5.8823
-950,Secondary Weapon,Potential,Legendary,Prime,100,300,6.4516,8.3333,8.5106
-951,Secondary Weapon,Potential,Legendary,Prime,100,300,6.4516,8.3333,8.5106
-952,Secondary Weapon,Potential,Legendary,Prime,100,300,6.4516,8.3333,8.5106
-953,Secondary Weapon,Potential,Legendary,Prime,100,300,6.4516,8.3333,8.5106
-954,Secondary Weapon,Potential,Legendary,Prime,100,300,3.2258,4.1666,4.2553
-955,Secondary Weapon,Potential,Legendary,Prime,100,300,3.2258,4.1666,4.2553
-956,Secondary Weapon,Potential,Legendary,Prime,100,300,3.2258,4.1666,4.2553
-957,Secondary Weapon,Potential,Legendary,Prime,100,300,3.2258,4.1666,4.2553
-958,Secondary Weapon,Potential,Legendary,Prime,100,300,6.4516,8.3333,6.3829
-959,Secondary Weapon,Potential,Legendary,Prime,100,300,9.6774,0,4.2553
-960,Secondary Weapon,Potential,Legendary,Prime,100,300,9.6774,0,4.2553
-961,Secondary Weapon,Potential,Legendary,Prime,100,300,3.2258,4.1666,4.2553
-962,Secondary Weapon,Potential,Legendary,Prime,100,300,3.2258,2.0833,4.2553
-963,Secondary Weapon,Potential,Legendary,Prime,100,300,9.6774,12.5,6.3829
-964,Secondary Weapon,Potential,Legendary,Prime,100,300,9.6774,12.5,6.3829
-965,Secondary Weapon,Potential,Legendary,Prime,100,300,3.2258,4.1666,4.2553
-966,Secondary Weapon,Potential,Legendary,Prime,100,300,3.2258,4.1666,4.2553
-967,Secondary Weapon,Potential,Legendary,Prime,100,300,3.2258,2.0833,4.2553
-968,Demon Aegis,Potential,Rare,Non prime,0,300,15.3846,15.3846,15.7894
-969,Soul Rings,Potential,Rare,Non prime,0,300,15.3846,15.3846,15.7894
-970,Demon Aegis,Potential,Rare,Non prime,0,300,15.3846,15.3846,15.7894
-971,Soul Rings,Potential,Rare,Non prime,0,300,15.3846,15.3846,15.7894
-972,Demon Aegis,Potential,Rare,Non prime,0,300,15.3846,15.3846,15.7894
-973,Soul Rings,Potential,Rare,Non prime,0,300,15.3846,15.3846,15.7894
-974,Demon Aegis,Potential,Rare,Non prime,0,300,15.3846,15.3846,15.7894
-975,Soul Rings,Potential,Rare,Non prime,0,300,15.3846,15.3846,15.7894
-976,Demon Aegis,Potential,Rare,Non prime,0,300,23.0769,23.0769,15.7894
-977,Soul Rings,Potential,Rare,Non prime,0,300,23.0769,23.0769,15.7894
-978,Demon Aegis,Potential,Rare,Non prime,0,300,7.6923,7.6923,10.5263
-979,Soul Rings,Potential,Rare,Non prime,0,300,7.6923,7.6923,10.5263
-980,Demon Aegis,Potential,Rare,Non prime,0,300,7.6923,7.6923,10.5263
-981,Soul Rings,Potential,Rare,Non prime,0,300,7.6923,7.6923,10.5263
-982,Demon Aegis,Potential,Rare,Prime,30,300,3.7037,3.9215,6.5217
-983,Soul Rings,Potential,Rare,Prime,30,300,3.7037,3.9215,6.5217
-984,Demon Aegis,Potential,Rare,Prime,30,300,3.7037,3.9215,6.5217
-985,Soul Rings,Potential,Rare,Prime,30,300,3.7037,3.9215,6.5217
-986,Demon Aegis,Potential,Rare,Prime,30,300,3.7037,3.9215,6.5217
-987,Soul Rings,Potential,Rare,Prime,30,300,3.7037,3.9215,6.5217
-988,Demon Aegis,Potential,Rare,Prime,30,300,3.7037,3.9215,6.5217
-989,Soul Rings,Potential,Rare,Prime,30,300,3.7037,3.9215,6.5217
-990,Demon Aegis,Potential,Rare,Prime,30,300,5.5555,5.8823,6.5217
-991,Soul Rings,Potential,Rare,Prime,30,300,5.5555,5.8823,6.5217
-992,Demon Aegis,Potential,Rare,Prime,30,300,3.7037,3.9215,4.3478
-993,Soul Rings,Potential,Rare,Prime,30,300,3.7037,3.9215,4.3478
-994,Demon Aegis,Potential,Rare,Prime,30,300,3.7037,3.9215,4.3478
-995,Soul Rings,Potential,Rare,Prime,30,300,3.7037,3.9215,4.3478
-996,Demon Aegis,Potential,Rare,Prime,30,300,3.7037,3.9215,6.5217
-997,Soul Rings,Potential,Rare,Prime,30,300,3.7037,3.9215,6.5217
-998,Demon Aegis,Potential,Rare,Prime,30,300,3.7037,3.9215,6.5217
-999,Soul Rings,Potential,Rare,Prime,30,300,3.7037,3.9215,6.5217
-1000,Demon Aegis,Potential,Rare,Prime,30,300,3.7037,3.9215,6.5217
-1001,Soul Rings,Potential,Rare,Prime,30,300,3.7037,3.9215,6.5217
-1002,Demon Aegis,Potential,Rare,Prime,30,300,3.7037,3.9215,6.5217
-1003,Soul Rings,Potential,Rare,Prime,30,300,3.7037,3.9215,6.5217
-1004,Demon Aegis,Potential,Rare,Prime,30,300,1.8518,1.9607,2.1739
-1005,Soul Rings,Potential,Rare,Prime,30,300,1.8518,1.9607,2.1739
-1006,Demon Aegis,Potential,Rare,Prime,30,300,1.8518,1.9607,2.1739
-1007,Soul Rings,Potential,Rare,Prime,30,300,1.8518,1.9607,2.1739
-1008,Demon Aegis,Potential,Rare,Prime,30,300,1.8518,1.9607,2.1739
-1009,Soul Rings,Potential,Rare,Prime,30,300,1.8518,1.9607,2.1739
-1010,Demon Aegis,Potential,Rare,Prime,30,300,1.8518,1.9607,2.1739
-1011,Soul Rings,Potential,Rare,Prime,30,300,1.8518,1.9607,2.1739
-1012,Demon Aegis,Potential,Rare,Prime,30,300,3.7037,3.9215,4.3478
-1013,Soul Rings,Potential,Rare,Prime,30,300,3.7037,3.9215,4.3478
-1014,Demon Aegis,Potential,Rare,Prime,30,300,5.5555,5.8823,2.1739
-1015,Soul Rings,Potential,Rare,Prime,30,300,5.5555,5.8823,2.1739
-1016,Demon Aegis,Potential,Rare,Prime,30,300,5.5555,0,2.1739
-1017,Soul Rings,Potential,Rare,Prime,30,300,5.5555,0,2.1739
-1018,Demon Aegis,Potential,Rare,Prime,30,300,5.5555,5.8823,2.1739
-1019,Soul Rings,Potential,Rare,Prime,30,300,5.5555,5.8823,2.1739
-1020,Demon Aegis,Potential,Rare,Prime,30,300,5.5555,5.8823,2.1739
-1021,Soul Rings,Potential,Rare,Prime,30,300,5.5555,5.8823,2.1739
-1022,Demon Aegis,Potential,Rare,Prime,30,300,5.5555,5.8823,2.1739
-1023,Soul Rings,Potential,Rare,Prime,30,300,5.5555,5.8823,2.1739
-1024,Demon Aegis,Potential,Rare,Prime,30,300,5.5555,5.8823,2.1739
-1025,Soul Rings,Potential,Rare,Prime,30,300,5.5555,5.8823,2.1739
-1026,Demon Aegis,Potential,Rare,Prime,30,300,5.5555,5.8823,2.1739
-1027,Soul Rings,Potential,Rare,Prime,30,300,5.5555,5.8823,2.1739
-1028,Demon Aegis,Potential,Rare,Prime,30,300,5.5555,5.8823,2.1739
-1029,Soul Rings,Potential,Rare,Prime,30,300,5.5555,5.8823,2.1739
-1030,Demon Aegis,Potential,Rare,Prime,30,300,1.8518,1.9607,2.1739
-1031,Soul Rings,Potential,Rare,Prime,30,300,1.8518,1.9607,2.1739
-1032,Demon Aegis,Potential,Epic,Prime,50,300,6.25,6.8965,12.1951
-1033,Soul Rings,Potential,Epic,Prime,50,300,6.25,6.8965,12.1951
-1034,Demon Aegis,Potential,Epic,Prime,50,300,6.25,6.8965,12.1951
-1035,Soul Rings,Potential,Epic,Prime,50,300,6.25,6.8965,12.1951
-1036,Demon Aegis,Potential,Epic,Prime,50,300,6.25,6.8965,12.1951
-1037,Soul Rings,Potential,Epic,Prime,50,300,6.25,6.8965,12.1951
-1038,Demon Aegis,Potential,Epic,Prime,50,300,6.25,6.8965,12.1951
-1039,Soul Rings,Potential,Epic,Prime,50,300,6.25,6.8965,12.1951
-1040,Demon Aegis,Potential,Epic,Prime,50,300,9.375,10.3448,12.1951
-1041,Soul Rings,Potential,Epic,Prime,50,300,9.375,10.3448,12.1951
-1042,Demon Aegis,Potential,Epic,Prime,50,300,3.125,3.4482,4.878
-1043,Soul Rings,Potential,Epic,Prime,50,300,3.125,3.4482,4.878
-1044,Demon Aegis,Potential,Epic,Prime,50,300,3.125,3.4482,4.878
-1045,Soul Rings,Potential,Epic,Prime,50,300,3.125,3.4482,4.878
-1046,Demon Aegis,Potential,Epic,Prime,50,300,3.125,3.4482,4.878
-1047,Soul Rings,Potential,Epic,Prime,50,300,3.125,3.4482,4.878
-1048,Demon Aegis,Potential,Epic,Prime,50,300,3.125,3.4482,4.878
-1049,Soul Rings,Potential,Epic,Prime,50,300,3.125,3.4482,4.878
-1050,Demon Aegis,Potential,Epic,Prime,50,300,3.125,3.4482,4.878
-1051,Soul Rings,Potential,Epic,Prime,50,300,3.125,3.4482,4.878
-1052,Demon Aegis,Potential,Epic,Prime,50,300,9.375,10.3448,4.878
-1053,Soul Rings,Potential,Epic,Prime,50,300,9.375,10.3448,4.878
-1054,Demon Aegis,Potential,Epic,Prime,50,300,9.375,0,4.878
-1055,Soul Rings,Potential,Epic,Prime,50,300,9.375,0,4.878
-1056,Demon Aegis,Potential,Epic,Prime,50,300,3.125,3.4482,4.878
-1057,Soul Rings,Potential,Epic,Prime,50,300,3.125,3.4482,4.878
-1058,Demon Aegis,Potential,Epic,Prime,50,300,9.375,10.3448,0
-1059,Soul Rings,Potential,Epic,Prime,50,300,9.375,10.3448,0
-1060,Demon Aegis,Potential,Epic,Prime,50,300,9.375,10.3448,0
-1061,Soul Rings,Potential,Epic,Prime,50,300,9.375,10.3448,0
-1062,Demon Aegis,Potential,Epic,Prime,50,300,9.375,10.3448,0
-1063,Soul Rings,Potential,Epic,Prime,50,300,9.375,10.3448,0
-1064,Demon Aegis,Potential,Unique,Prime,100,300,9.5238,9.5238,9.8039
-1065,Soul Rings,Potential,Unique,Prime,100,300,9.5238,9.5238,9.8039
-1066,Demon Aegis,Potential,Unique,Prime,100,300,9.5238,9.5238,9.8039
-1067,Soul Rings,Potential,Unique,Prime,100,300,9.5238,9.5238,9.8039
-1068,Demon Aegis,Potential,Unique,Prime,100,300,9.5238,9.5238,9.8039
-1069,Soul Rings,Potential,Unique,Prime,100,300,9.5238,9.5238,9.8039
-1070,Demon Aegis,Potential,Unique,Prime,100,300,9.5238,9.5238,9.8039
-1071,Soul Rings,Potential,Unique,Prime,100,300,9.5238,9.5238,9.8039
-1072,Demon Aegis,Potential,Unique,Prime,100,300,4.7619,4.7619,5.8823
-1073,Soul Rings,Potential,Unique,Prime,100,300,4.7619,4.7619,5.8823
-1074,Demon Aegis,Potential,Unique,Prime,100,300,4.7619,4.7619,5.8823
-1075,Soul Rings,Potential,Unique,Prime,100,300,4.7619,4.7619,5.8823
-1076,Demon Aegis,Potential,Unique,Prime,100,300,4.7619,4.7619,7.8431
-1077,Soul Rings,Potential,Unique,Prime,100,300,4.7619,4.7619,7.8431
-1078,Demon Aegis,Potential,Unique,Prime,100,300,4.7619,4.7619,5.8823
-1079,Soul Rings,Potential,Unique,Prime,100,300,4.7619,4.7619,5.8823
-1080,Demon Aegis,Potential,Unique,Prime,100,300,4.7619,4.7619,7.8431
-1081,Soul Rings,Potential,Unique,Prime,100,300,4.7619,4.7619,7.8431
-1082,Demon Aegis,Potential,Unique,Prime,100,300,4.7619,4.7619,5.8823
-1083,Soul Rings,Potential,Unique,Prime,100,300,4.7619,4.7619,5.8823
-1084,Demon Aegis,Potential,Unique,Prime,100,300,14.2857,14.2857,7.8431
-1085,Soul Rings,Potential,Unique,Prime,100,300,14.2857,14.2857,7.8431
-1086,Demon Aegis,Potential,Unique,Prime,100,300,14.2857,14.2857,7.8431
-1087,Soul Rings,Potential,Unique,Prime,100,300,14.2857,14.2857,7.8431
-1088,Demon Aegis,Potential,Unique,Prime,100,300,4.7619,4.7619,5.8823
-1089,Soul Rings,Potential,Unique,Prime,100,300,4.7619,4.7619,5.8823
-1090,Demon Aegis,Potential,Legendary,Prime,100,300,6.4516,8.3333,8.5106
-1091,Soul Rings,Potential,Legendary,Prime,100,300,6.4516,8.3333,8.5106
-1092,Demon Aegis,Potential,Legendary,Prime,100,300,6.4516,8.3333,8.5106
-1093,Soul Rings,Potential,Legendary,Prime,100,300,6.4516,8.3333,8.5106
-1094,Demon Aegis,Potential,Legendary,Prime,100,300,6.4516,8.3333,8.5106
-1095,Soul Rings,Potential,Legendary,Prime,100,300,6.4516,8.3333,8.5106
-1096,Demon Aegis,Potential,Legendary,Prime,100,300,6.4516,8.3333,8.5106
-1097,Soul Rings,Potential,Legendary,Prime,100,300,6.4516,8.3333,8.5106
-1098,Demon Aegis,Potential,Legendary,Prime,100,300,3.2258,4.1666,4.2553
-1099,Soul Rings,Potential,Legendary,Prime,100,300,3.2258,4.1666,4.2553
-1100,Demon Aegis,Potential,Legendary,Prime,100,300,3.2258,4.1666,4.2553
-1101,Soul Rings,Potential,Legendary,Prime,100,300,3.2258,4.1666,4.2553
-1102,Demon Aegis,Potential,Legendary,Prime,100,300,3.2258,4.1666,4.2553
-1103,Soul Rings,Potential,Legendary,Prime,100,300,3.2258,4.1666,4.2553
-1104,Demon Aegis,Potential,Legendary,Prime,100,300,3.2258,4.1666,4.2553
-1105,Soul Rings,Potential,Legendary,Prime,100,300,3.2258,4.1666,4.2553
-1106,Demon Aegis,Potential,Legendary,Prime,100,300,6.4516,8.3333,6.3829
-1107,Soul Rings,Potential,Legendary,Prime,100,300,6.4516,8.3333,6.3829
-1108,Demon Aegis,Potential,Legendary,Prime,100,300,9.6774,0,4.2553
-1109,Soul Rings,Potential,Legendary,Prime,100,300,9.6774,0,4.2553
-1110,Demon Aegis,Potential,Legendary,Prime,100,300,9.6774,0,4.2553
-1111,Soul Rings,Potential,Legendary,Prime,100,300,9.6774,0,4.2553
-1112,Demon Aegis,Potential,Legendary,Prime,100,300,3.2258,4.1666,4.2553
-1113,Soul Rings,Potential,Legendary,Prime,100,300,3.2258,4.1666,4.2553
-1114,Demon Aegis,Potential,Legendary,Prime,100,300,3.2258,2.0833,4.2553
-1115,Soul Rings,Potential,Legendary,Prime,100,300,3.2258,2.0833,4.2553
-1116,Demon Aegis,Potential,Legendary,Prime,100,300,9.6774,12.5,6.3829
-1117,Soul Rings,Potential,Legendary,Prime,100,300,9.6774,12.5,6.3829
-1118,Demon Aegis,Potential,Legendary,Prime,100,300,9.6774,12.5,6.3829
-1119,Soul Rings,Potential,Legendary,Prime,100,300,9.6774,12.5,6.3829
-1120,Demon Aegis,Potential,Legendary,Prime,100,300,3.2258,4.1666,4.2553
-1121,Soul Rings,Potential,Legendary,Prime,100,300,3.2258,4.1666,4.2553
-1122,Demon Aegis,Potential,Legendary,Prime,100,300,3.2258,4.1666,4.2553
-1123,Soul Rings,Potential,Legendary,Prime,100,300,3.2258,4.1666,4.2553
-1124,Demon Aegis,Potential,Legendary,Prime,100,300,3.2258,2.0833,4.2553
-1125,Soul Rings,Potential,Legendary,Prime,100,300,3.2258,2.0833,4.2553
-1126,Emblem,Potential,Rare,Non prime,0,300,12.5,12.5,13.6363
-1127,Emblem,Potential,Rare,Non prime,0,300,12.5,12.5,13.6363
-1128,Emblem,Potential,Rare,Non prime,0,300,12.5,12.5,13.6363
-1129,Emblem,Potential,Rare,Non prime,0,300,12.5,12.5,13.6363
-1130,Emblem,Potential,Rare,Non prime,0,300,18.75,18.75,13.6363
-1131,Emblem,Potential,Rare,Non prime,0,300,18.75,18.75,13.6363
-1132,Emblem,Potential,Rare,Non prime,0,300,6.25,6.25,9.0909
-1133,Emblem,Potential,Rare,Non prime,0,300,6.25,6.25,9.0909
-1134,Emblem,Potential,Rare,Prime,30,300,3.5087,3.5087,6.1224
-1135,Emblem,Potential,Rare,Prime,30,300,3.5087,3.5087,6.1224
-1136,Emblem,Potential,Rare,Prime,30,300,3.5087,3.5087,6.1224
-1137,Emblem,Potential,Rare,Prime,30,300,3.5087,3.5087,6.1224
-1138,Emblem,Potential,Rare,Prime,30,300,5.2631,5.2631,6.1224
-1139,Emblem,Potential,Rare,Prime,30,300,5.2631,5.2631,6.1224
-1140,Emblem,Potential,Rare,Prime,30,300,3.5087,3.5087,4.0816
-1141,Emblem,Potential,Rare,Prime,30,300,3.5087,3.5087,4.0816
-1142,Emblem,Potential,Rare,Prime,30,300,3.5087,3.5087,6.1224
-1143,Emblem,Potential,Rare,Prime,30,300,3.5087,3.5087,6.1224
-1144,Emblem,Potential,Rare,Prime,30,300,3.5087,3.5087,6.1224
-1145,Emblem,Potential,Rare,Prime,30,300,3.5087,3.5087,6.1224
-1146,Emblem,Potential,Rare,Prime,30,300,1.7543,1.7543,2.0408
-1147,Emblem,Potential,Rare,Prime,30,300,1.7543,1.7543,2.0408
-1148,Emblem,Potential,Rare,Prime,30,300,1.7543,1.7543,2.0408
-1149,Emblem,Potential,Rare,Prime,30,300,1.7543,1.7543,2.0408
-1150,Emblem,Potential,Rare,Prime,30,300,3.5087,3.5087,4.0816
-1151,Emblem,Potential,Rare,Prime,30,300,5.2631,5.2631,2.0408
-1152,Emblem,Potential,Rare,Prime,30,300,5.2631,5.2631,2.0408
-1153,Emblem,Potential,Rare,Prime,30,300,5.2631,5.2631,2.0408
-1154,Emblem,Potential,Rare,Prime,30,300,5.2631,5.2631,2.0408
-1155,Emblem,Potential,Rare,Prime,30,300,5.2631,5.2631,2.0408
-1156,Emblem,Potential,Rare,Prime,30,300,5.2631,5.2631,2.0408
-1157,Emblem,Potential,Rare,Prime,30,300,5.2631,5.2631,2.0408
-1158,Emblem,Potential,Rare,Prime,30,300,5.2631,5.2631,2.0408
-1159,Emblem,Potential,Rare,Prime,30,300,1.7543,1.7543,2.0408
-1160,Emblem,Potential,Epic,Prime,50,300,7.6923,7.6923,10.8695
-1161,Emblem,Potential,Epic,Prime,50,300,7.6923,7.6923,10.8695
-1162,Emblem,Potential,Epic,Prime,50,300,7.6923,7.6923,10.8695
-1163,Emblem,Potential,Epic,Prime,50,300,7.6923,7.6923,10.8695
-1164,Emblem,Potential,Epic,Prime,50,300,11.5384,11.5384,10.8695
-1165,Emblem,Potential,Epic,Prime,50,300,11.5384,11.5384,10.8695
-1166,Emblem,Potential,Epic,Prime,50,300,3.8461,3.8461,4.3478
-1167,Emblem,Potential,Epic,Prime,50,300,3.8461,3.8461,4.3478
-1168,Emblem,Potential,Epic,Prime,50,300,3.8461,3.8461,4.3478
-1169,Emblem,Potential,Epic,Prime,50,300,3.8461,3.8461,4.3478
-1170,Emblem,Potential,Epic,Prime,50,300,3.8461,3.8461,4.3478
-1171,Emblem,Potential,Epic,Prime,50,300,11.5384,11.5384,4.3478
-1172,Emblem,Potential,Epic,Prime,50,300,11.5384,11.5384,4.3478
-1173,Emblem,Potential,Epic,Prime,50,300,3.8461,3.8461,4.3478
-1174,Emblem,Potential,Unique,Prime,50,300,14.2857,14.2857,12.5
-1175,Emblem,Potential,Unique,Prime,50,300,14.2857,14.2857,12.5
-1176,Emblem,Potential,Unique,Prime,50,300,14.2857,14.2857,12.5
-1177,Emblem,Potential,Unique,Prime,50,300,14.2857,14.2857,12.5
-1178,Emblem,Potential,Unique,Prime,50,300,7.1428,7.1428,7.5
-1179,Emblem,Potential,Unique,Prime,50,300,7.1428,7.1428,7.5
-1180,Emblem,Potential,Unique,Prime,50,300,7.1428,7.1428,10
-1181,Emblem,Potential,Unique,Prime,50,300,7.1428,7.1428,7.5
-1182,Emblem,Potential,Unique,Prime,50,300,7.1428,7.1428,10
-1183,Emblem,Potential,Unique,Prime,50,300,7.1428,7.1428,7.5
-1184,Emblem,Potential,Legendary,Prime,100,300,9.0909,12.9032,11.4285
-1185,Emblem,Potential,Legendary,Prime,100,300,9.0909,12.9032,11.4285
-1186,Emblem,Potential,Legendary,Prime,100,300,9.0909,12.9032,11.4285
-1187,Emblem,Potential,Legendary,Prime,100,300,9.0909,12.9032,11.4285
-1188,Emblem,Potential,Legendary,Prime,100,300,4.5454,6.4516,5.7142
-1189,Emblem,Potential,Legendary,Prime,100,300,4.5454,6.4516,5.7142
-1190,Emblem,Potential,Legendary,Prime,100,300,4.5454,6.4516,5.7142
-1191,Emblem,Potential,Legendary,Prime,100,300,4.5454,6.4516,5.7142
-1192,Emblem,Potential,Legendary,Prime,100,300,9.0909,12.9032,8.5714
-1193,Emblem,Potential,Legendary,Prime,100,300,13.6363,0,5.7142
-1194,Emblem,Potential,Legendary,Prime,100,300,13.6363,0,5.7142
-1195,Emblem,Potential,Legendary,Prime,100,300,4.5454,6.4516,5.7142
-1196,Emblem,Potential,Legendary,Prime,100,300,4.5454,3.2258,5.7142
-1197,Mechanical Heart,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-1198,Badge,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-1199,Mechanical Heart,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-1200,Badge,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-1201,Mechanical Heart,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-1202,Badge,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-1203,Mechanical Heart,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-1204,Badge,Potential,Rare,Non prime,0,300,11.7647,11.7647,14.2857
-1205,Mechanical Heart,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-1206,Badge,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-1207,Mechanical Heart,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-1208,Badge,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-1209,Mechanical Heart,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-1210,Badge,Potential,Rare,Non prime,0,300,17.647,17.647,14.2857
-1211,Mechanical Heart,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-1212,Badge,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-1213,Mechanical Heart,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-1214,Badge,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-1215,Mechanical Heart,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-1216,Badge,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-1217,Mechanical Heart,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-1218,Badge,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-1219,Mechanical Heart,Potential,Rare,Prime,0,300,8.3333,8.3333,7.5
-1220,Badge,Potential,Rare,Prime,0,300,8.3333,8.3333,7.5
-1221,Mechanical Heart,Potential,Rare,Prime,0,300,8.3333,8.3333,7.5
-1222,Badge,Potential,Rare,Prime,0,300,8.3333,8.3333,7.5
-1223,Mechanical Heart,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-1224,Badge,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-1225,Mechanical Heart,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-1226,Badge,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-1227,Mechanical Heart,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-1228,Badge,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-1229,Mechanical Heart,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-1230,Badge,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-1231,Mechanical Heart,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-1232,Badge,Potential,Rare,Prime,0,300,5.5555,5.5555,7.5
-1233,Mechanical Heart,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-1234,Badge,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-1235,Mechanical Heart,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-1236,Badge,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-1237,Mechanical Heart,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-1238,Badge,Potential,Rare,Prime,0,300,8.3333,8.3333,5
-1239,Mechanical Heart,Potential,Rare,Prime,0,300,5.5555,5.5555,5
-1240,Badge,Potential,Rare,Prime,0,300,5.5555,5.5555,5
-1241,Mechanical Heart,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-1242,Badge,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-1243,Mechanical Heart,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-1244,Badge,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-1245,Mechanical Heart,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-1246,Badge,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-1247,Mechanical Heart,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-1248,Badge,Potential,Epic,Prime,0,300,11.1111,11.1111,14.2857
-1249,Mechanical Heart,Potential,Epic,Prime,0,300,16.6666,16.6666,14.2857
-1250,Badge,Potential,Epic,Prime,0,300,16.6666,16.6666,14.2857
-1251,Mechanical Heart,Potential,Epic,Prime,0,300,16.6666,16.6666,14.2857
-1252,Badge,Potential,Epic,Prime,0,300,16.6666,16.6666,14.2857
-1253,Mechanical Heart,Potential,Epic,Prime,0,300,16.6666,16.6666,8.5714
-1254,Badge,Potential,Epic,Prime,0,300,16.6666,16.6666,8.5714
-1255,Mechanical Heart,Potential,Epic,Prime,0,300,5.5555,5.5555,5.7142
-1256,Badge,Potential,Epic,Prime,0,300,5.5555,5.5555,5.7142
-1257,Mechanical Heart,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-1258,Badge,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-1259,Mechanical Heart,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-1260,Badge,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-1261,Mechanical Heart,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-1262,Badge,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-1263,Mechanical Heart,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-1264,Badge,Potential,Unique,Prime,0,300,9.5238,9.5238,11.3636
-1265,Mechanical Heart,Potential,Unique,Prime,0,300,14.2857,14.2857,13.6363
-1266,Badge,Potential,Unique,Prime,0,300,14.2857,14.2857,13.6363
-1267,Mechanical Heart,Potential,Unique,Prime,0,300,14.2857,14.2857,13.6363
-1268,Badge,Potential,Unique,Prime,0,300,14.2857,14.2857,13.6363
-1269,Mechanical Heart,Potential,Unique,Prime,0,300,14.2857,14.2857,9.0909
-1270,Badge,Potential,Unique,Prime,0,300,14.2857,14.2857,9.0909
-1271,Mechanical Heart,Potential,Unique,Prime,0,300,4.7619,4.7619,9.0909
-1272,Badge,Potential,Unique,Prime,0,300,4.7619,4.7619,9.0909
-1273,Mechanical Heart,Potential,Unique,Prime,0,300,14.2857,14.2857,9.0909
-1274,Badge,Potential,Unique,Prime,0,300,14.2857,14.2857,9.0909
-1275,Mechanical Heart,Potential,Legendary,Prime,0,300,9.0909,9.0909,12.9032
-1276,Badge,Potential,Legendary,Prime,0,300,9.0909,9.0909,12.9032
-1277,Mechanical Heart,Potential,Legendary,Prime,0,300,9.0909,9.0909,12.9032
-1278,Badge,Potential,Legendary,Prime,0,300,9.0909,9.0909,12.9032
-1279,Mechanical Heart,Potential,Legendary,Prime,0,300,9.0909,9.0909,12.9032
-1280,Badge,Potential,Legendary,Prime,0,300,9.0909,9.0909,12.9032
-1281,Mechanical Heart,Potential,Legendary,Prime,0,300,9.0909,9.0909,12.9032
-1282,Badge,Potential,Legendary,Prime,0,300,9.0909,9.0909,12.9032
-1283,Mechanical Heart,Potential,Legendary,Prime,0,300,13.6363,13.6363,12.9032
-1284,Badge,Potential,Legendary,Prime,0,300,13.6363,13.6363,12.9032
-1285,Mechanical Heart,Potential,Legendary,Prime,0,300,13.6363,13.6363,12.9032
-1286,Badge,Potential,Legendary,Prime,0,300,13.6363,13.6363,12.9032
-1287,Mechanical Heart,Potential,Legendary,Prime,0,300,13.6363,13.6363,12.9032
-1288,Badge,Potential,Legendary,Prime,0,300,13.6363,13.6363,12.9032
-1289,Mechanical Heart,Potential,Legendary,Prime,0,300,9.0909,9.0909,9.6774
-1290,Badge,Potential,Legendary,Prime,0,300,9.0909,9.0909,9.6774
-1291,Mechanical Heart,Potential,Legendary,Prime,0,300,13.6363,13.6363,0
-1292,Badge,Potential,Legendary,Prime,0,300,13.6363,13.6363,0
+,Slot,Grade,Prime,DisplayStat,MinLvl,MaxLvl,Initial,In-game cube,Cash cube
+0,Hat,Rare,Non prime,STR Increase,0,300,6.25%,6.25%,14.2857%
+1,Hat,Rare,Non prime,DEX Increase,0,300,6.25%,6.25%,14.2857%
+2,Hat,Rare,Non prime,INT Increase,0,300,6.25%,6.25%,14.2857%
+3,Hat,Rare,Non prime,LUK Increase,0,300,6.25%,6.25%,14.2857%
+4,Hat,Rare,Non prime,MaxHP Increase,0,300,9.375%,9.375%,14.2857%
+5,Hat,Rare,Non prime,MaxMP Increase,0,300,9.375%,9.375%,14.2857%
+6,Hat,Rare,Non prime,DEF Increase,0,300,9.375%,9.375%,14.2857%
+7,Hat,Rare,Non prime,10% chance to show rage for 10 seconds when being attacked,0,300,9.375%,9.375%,0%
+8,Hat,Rare,Non prime,10% chance to show happy for 10 seconds when being attacked,0,300,9.375%,9.375%,0%
+9,Hat,Rare,Non prime,10% chance to fall in love for 10 seconds when being attacked,0,300,9.375%,9.375%,0%
+10,Hat,Rare,Non prime,10% chance to feel deeply moved for 10 seconds when being attacked,0,300,9.375%,9.375%,0%
+11,Hat,Rare,Non prime,10% chance to show angry for 10 seconds when being attacked,0,300,9.375%,9.375%,0%
+12,Hat,Rare,Prime,STR Increase,0,300,5.5555%,5.5555%,7.5%
+13,Hat,Rare,Prime,DEX Increase,0,300,5.5555%,5.5555%,7.5%
+14,Hat,Rare,Prime,INT Increase,0,300,5.5555%,5.5555%,7.5%
+15,Hat,Rare,Prime,LUK Increase,0,300,5.5555%,5.5555%,7.5%
+16,Hat,Rare,Prime,MaxHP Increase,0,300,8.3333%,8.3333%,7.5%
+17,Hat,Rare,Prime,MaxMP Increase,0,300,8.3333%,8.3333%,7.5%
+18,Hat,Rare,Prime,DEF Increase,0,300,8.3333%,8.3333%,5%
+19,Hat,Rare,Prime,STR% Increase,0,300,5.5555%,5.5555%,7.5%
+20,Hat,Rare,Prime,DEX% Increase,0,300,5.5555%,5.5555%,7.5%
+21,Hat,Rare,Prime,INT% Increase,0,300,5.5555%,5.5555%,7.5%
+22,Hat,Rare,Prime,LUK% Increase,0,300,5.5555%,5.5555%,7.5%
+23,Hat,Rare,Prime,MaxHP% Increase,0,300,8.3333%,8.3333%,5%
+24,Hat,Rare,Prime,MaxMP% Increase,0,300,8.3333%,8.3333%,5%
+25,Hat,Rare,Prime,DEF% Increase,0,300,8.3333%,8.3333%,5%
+26,Hat,Rare,Prime,All Stats Increase,0,300,5.5555%,5.5555%,5%
+27,Hat,Epic,Prime,STR% Increase,0,300,7.4074%,7.4074%,14.2857%
+28,Hat,Epic,Prime,DEX% Increase,0,300,7.4074%,7.4074%,14.2857%
+29,Hat,Epic,Prime,INT% Increase,0,300,7.4074%,7.4074%,14.2857%
+30,Hat,Epic,Prime,LUK% Increase,0,300,7.4074%,7.4074%,14.2857%
+31,Hat,Epic,Prime,MaxHP% Increase,0,300,11.1111%,11.1111%,14.2857%
+32,Hat,Epic,Prime,MaxMP% Increase,0,300,11.1111%,11.1111%,14.2857%
+33,Hat,Epic,Prime,DEF% Increase,0,300,11.1111%,11.1111%,8.5714%
+34,Hat,Epic,Prime,All Stats% Increase,0,300,3.7037%,3.7037%,5.7142%
+35,Hat,Epic,Prime,20% chance to ignore monster damage dealt,0,300,11.1111%,11.1111%,0%
+37,Hat,Epic,Prime,30% chance to ignore monster damage dealt,0,300,11.1111%,11.1111%,0%
+38,Hat,Unique,Prime,STR% Increase,70,300,6.8965%,6.8965%,8.9285%
+39,Hat,Unique,Prime,DEX% Increase,70,300,6.8965%,6.8965%,8.9285%
+40,Hat,Unique,Prime,INT% Increase,70,300,6.8965%,6.8965%,8.9285%
+41,Hat,Unique,Prime,LUK% Increase,70,300,6.8965%,6.8965%,8.9285%
+42,Hat,Unique,Prime,MaxHP% Increase,70,300,10.3448%,10.3448%,10.7142%
+43,Hat,Unique,Prime,MaxMP% Increase,70,300,10.3448%,10.3448%,10.7142%
+44,Hat,Unique,Prime,DEF% Increase,70,300,10.3448%,10.3448%,7.1428%
+45,Hat,Unique,Prime,All Stats% Increase,70,300,3.4482%,3.4482%,7.1428%
+46,Hat,Unique,Prime,5% chance to ignore 20% of monster damage dealt,70,300,10.3448%,10.3448%,7.1428%
+47,Hat,Unique,Prime,5% chance to ignore 40% of monster damage dealt,70,300,10.3448%,10.3448%,7.1428%
+48,Hat,Unique,Prime,Skills and Potion HP Recovery% Increase,70,300,10.3448%,10.3448%,7.1428%
+49,Hat,Unique,Prime,Decent Mystic Door enabled,70,300,6.8965%,6.8965%,7.1428%
+50,Hat,Legendary,Prime,STR% Increase,120,300,5.5555%,5.5555%,8.8888%
+51,Hat,Legendary,Prime,DEX% Increase,120,300,5.5555%,5.5555%,8.8888%
+52,Hat,Legendary,Prime,INT% Increase,120,300,5.5555%,5.5555%,8.8888%
+53,Hat,Legendary,Prime,LUK% Increase,120,300,5.5555%,5.5555%,8.8888%
+54,Hat,Legendary,Prime,MaxHP% Increase,120,300,8.3333%,8.3333%,8.8888%
+55,Hat,Legendary,Prime,MaxMP% Increase,120,300,8.3333%,8.3333%,8.8888%
+56,Hat,Legendary,Prime,DEF% Increase,120,300,8.3333%,8.3333%,8.8888%
+57,Hat,Legendary,Prime,All Stats% Increase,120,300,5.5555%,5.5555%,6.6666%
+58,Hat,Legendary,Prime,10% chance to ignore 20% of monster damage dealt,120,300,8.3333%,8.3333%,6.6666%
+59,Hat,Legendary,Prime,10% chance to ignore 40% of monster damage dealt,120,300,8.3333%,8.3333%,6.6666%
+60,Hat,Legendary,Prime,Skills and Potion HP Recovery% Increase,120,300,8.3333%,8.3333%,0%
+61,Hat,Legendary,Prime,Skill Cooldown -1 second,120,300,8.3333%,8.3333%,6.6666%
+62,Hat,Legendary,Prime,Skill Cooldown -2 seconds,120,300,5.5555%,5.5555%,4.4444%
+63,Hat,Legendary,Prime,Decent Advanced Bless enabled,120,300,8.3333%,8.3333%,6.6666%
+64,Top,Rare,Non prime,STR Increase,0,300,11.7647%,11.7647%,14.2857%
+65,Overall,Rare,Non prime,STR Increase,0,300,11.7647%,11.7647%,14.2857%
+66,Top,Rare,Non prime,DEX Increase,0,300,11.7647%,11.7647%,14.2857%
+67,Overall,Rare,Non prime,DEX Increase,0,300,11.7647%,11.7647%,14.2857%
+68,Top,Rare,Non prime,INT Increase,0,300,11.7647%,11.7647%,14.2857%
+69,Overall,Rare,Non prime,INT Increase,0,300,11.7647%,11.7647%,14.2857%
+70,Top,Rare,Non prime,LUK Increase,0,300,11.7647%,11.7647%,14.2857%
+71,Overall,Rare,Non prime,LUK Increase,0,300,11.7647%,11.7647%,14.2857%
+72,Top,Rare,Non prime,MaxHP Increase,0,300,17.647%,17.647%,14.2857%
+73,Overall,Rare,Non prime,MaxHP Increase,0,300,17.647%,17.647%,14.2857%
+74,Top,Rare,Non prime,MaxMP Increase,0,300,17.647%,17.647%,14.2857%
+75,Overall,Rare,Non prime,MaxMP Increase,0,300,17.647%,17.647%,14.2857%
+76,Top,Rare,Non prime,DEF Increase,0,300,17.647%,17.647%,14.2857%
+77,Overall,Rare,Non prime,DEF Increase,0,300,17.647%,17.647%,14.2857%
+78,Top,Rare,Prime,STR Increase,0,300,5.5555%,5.5555%,7.5%
+79,Overall,Rare,Prime,STR Increase,0,300,5.5555%,5.5555%,7.5%
+80,Top,Rare,Prime,DEX Increase,0,300,5.5555%,5.5555%,7.5%
+81,Overall,Rare,Prime,DEX Increase,0,300,5.5555%,5.5555%,7.5%
+82,Top,Rare,Prime,INT Increase,0,300,5.5555%,5.5555%,7.5%
+83,Overall,Rare,Prime,INT Increase,0,300,5.5555%,5.5555%,7.5%
+84,Top,Rare,Prime,LUK Increase,0,300,5.5555%,5.5555%,7.5%
+85,Overall,Rare,Prime,LUK Increase,0,300,5.5555%,5.5555%,7.5%
+86,Top,Rare,Prime,MaxHP Increase,0,300,8.3333%,8.3333%,7.5%
+87,Overall,Rare,Prime,MaxHP Increase,0,300,8.3333%,8.3333%,7.5%
+88,Top,Rare,Prime,MaxMP Increase,0,300,8.3333%,8.3333%,7.5%
+89,Overall,Rare,Prime,MaxMP Increase,0,300,8.3333%,8.3333%,7.5%
+90,Top,Rare,Prime,DEF Increase,0,300,8.3333%,8.3333%,5%
+91,Overall,Rare,Prime,DEF Increase,0,300,8.3333%,8.3333%,5%
+92,Top,Rare,Prime,STR% Increase,0,300,5.5555%,5.5555%,7.5%
+93,Overall,Rare,Prime,STR% Increase,0,300,5.5555%,5.5555%,7.5%
+94,Top,Rare,Prime,DEX% Increase,0,300,5.5555%,5.5555%,7.5%
+95,Overall,Rare,Prime,DEX% Increase,0,300,5.5555%,5.5555%,7.5%
+96,Top,Rare,Prime,INT% Increase,0,300,5.5555%,5.5555%,7.5%
+97,Overall,Rare,Prime,INT% Increase,0,300,5.5555%,5.5555%,7.5%
+98,Top,Rare,Prime,LUK% Increase,0,300,5.5555%,5.5555%,7.5%
+99,Overall,Rare,Prime,LUK% Increase,0,300,5.5555%,5.5555%,7.5%
+100,Top,Rare,Prime,MaxHP% Increase,0,300,8.3333%,8.3333%,5%
+101,Overall,Rare,Prime,MaxHP% Increase,0,300,8.3333%,8.3333%,5%
+102,Top,Rare,Prime,MaxMP% Increase,0,300,8.3333%,8.3333%,5%
+103,Overall,Rare,Prime,MaxMP% Increase,0,300,8.3333%,8.3333%,5%
+104,Top,Rare,Prime,DEF% Increase,0,300,8.3333%,8.3333%,5%
+105,Overall,Rare,Prime,DEF% Increase,0,300,8.3333%,8.3333%,5%
+106,Top,Rare,Prime,All Stats Increase,0,300,5.5555%,5.5555%,5%
+107,Overall,Rare,Prime,All Stats Increase,0,300,5.5555%,5.5555%,5%
+108,Top,Epic,Prime,STR% Increase,0,300,6.6666%,6.6666%,13.1578%
+109,Overall,Epic,Prime,STR% Increase,0,300,6.6666%,6.6666%,13.1578%
+110,Top,Epic,Prime,DEX% Increase,0,300,6.6666%,6.6666%,13.1578%
+111,Overall,Epic,Prime,DEX% Increase,0,300,6.6666%,6.6666%,13.1578%
+112,Top,Epic,Prime,INT% Increase,0,300,6.6666%,6.6666%,13.1578%
+113,Overall,Epic,Prime,INT% Increase,0,300,6.6666%,6.6666%,13.1578%
+114,Top,Epic,Prime,LUK% Increase,0,300,6.6666%,6.6666%,13.1578%
+115,Overall,Epic,Prime,LUK% Increase,0,300,6.6666%,6.6666%,13.1578%
+116,Top,Epic,Prime,MaxHP% Increase,0,300,10%,10%,13.1578%
+117,Overall,Epic,Prime,MaxHP% Increase,0,300,10%,10%,13.1578%
+118,Top,Epic,Prime,MaxMP% Increase,0,300,10%,10%,13.1578%
+119,Overall,Epic,Prime,MaxMP% Increase,0,300,10%,10%,13.1578%
+120,Top,Epic,Prime,DEF% Increase,0,300,10%,10%,7.8947%
+121,Overall,Epic,Prime,DEF% Increase,0,300,10%,10%,7.8947%
+122,Top,Epic,Prime,All Stats% Increase,0,300,3.3333%,3.3333%,5.2631%
+123,Overall,Epic,Prime,All Stats% Increase,0,300,3.3333%,3.3333%,5.2631%
+124,Top,Epic,Prime,20% chance to ignore monster damage dealt,0,300,10%,10%,0%
+125,Overall,Epic,Prime,20% chance to ignore monster damage dealt,0,300,10%,10%,0%
+128,Top,Epic,Prime,30% chance to ignore monster damage dealt,0,300,10%,10%,0%
+129,Overall,Epic,Prime,30% chance to ignore monster damage dealt,0,300,10%,10%,0%
+130,Top,Epic,Prime,Invincibility Time +1 second,0,300,10%,10%,7.8947%
+131,Overall,Epic,Prime,Invincibility Time +1 second,0,300,10%,10%,7.8947%
+132,Top,Unique,Prime,STR% Increase,40,300,5.1282%,6.0606%,7.5757%
+133,Overall,Unique,Prime,STR% Increase,40,300,5.1282%,6.0606%,7.5757%
+134,Top,Unique,Prime,DEX% Increase,40,300,5.1282%,6.0606%,7.5757%
+135,Overall,Unique,Prime,DEX% Increase,40,300,5.1282%,6.0606%,7.5757%
+136,Top,Unique,Prime,INT% Increase,40,300,5.1282%,6.0606%,7.5757%
+137,Overall,Unique,Prime,INT% Increase,40,300,5.1282%,6.0606%,7.5757%
+138,Top,Unique,Prime,LUK% Increase,40,300,5.1282%,6.0606%,7.5757%
+139,Overall,Unique,Prime,LUK% Increase,40,300,5.1282%,6.0606%,7.5757%
+140,Top,Unique,Prime,MaxHP% Increase,40,300,7.6923%,9.0909%,9.0909%
+141,Overall,Unique,Prime,MaxHP% Increase,40,300,7.6923%,9.0909%,9.0909%
+142,Top,Unique,Prime,MaxMP% Increase,40,300,7.6923%,9.0909%,9.0909%
+143,Overall,Unique,Prime,MaxMP% Increase,40,300,7.6923%,9.0909%,9.0909%
+144,Top,Unique,Prime,DEF% Increase,40,300,7.6923%,9.0909%,6.0606%
+145,Overall,Unique,Prime,DEF% Increase,40,300,7.6923%,9.0909%,6.0606%
+146,Top,Unique,Prime,All Stats% Increase,40,300,2.5641%,3.0303%,6.0606%
+147,Overall,Unique,Prime,All Stats% Increase,40,300,2.5641%,3.0303%,6.0606%
+148,Top,Unique,Prime,5% chance to ignore 20% of monster damage dealt,40,300,7.6923%,9.0909%,6.0606%
+149,Overall,Unique,Prime,5% chance to ignore 20% of monster damage dealt,40,300,7.6923%,9.0909%,6.0606%
+150,Top,Unique,Prime,5% chance to ignore 40% of monster damage dealt,40,300,7.6923%,9.0909%,6.0606%
+151,Overall,Unique,Prime,5% chance to ignore 40% of monster damage dealt,40,300,7.6923%,9.0909%,6.0606%
+152,Top,Unique,Prime,Invincibility Time +2 seconds,40,300,7.6923%,9.0909%,6.0606%
+153,Overall,Unique,Prime,Invincibility Time +2 seconds,40,300,7.6923%,9.0909%,6.0606%
+154,Top,Unique,Prime,2% chance to be invincible when attacked,40,300,7.6923%,9.0909%,6.0606%
+155,Overall,Unique,Prime,2% chance to be invincible when attacked,40,300,7.6923%,9.0909%,6.0606%
+156,Top,Unique,Prime,Reflect damage at a chance,40,300,7.6923%,0%,6.0606%
+157,Overall,Unique,Prime,Reflect damage at a chance,40,300,7.6923%,0%,6.0606%
+158,Top,Unique,Prime,Reflect damage at a chance,40,300,7.6923%,0%,3.0303%
+159,Overall,Unique,Prime,Reflect damage at a chance,40,300,7.6923%,0%,3.0303%
+160,Top,Unique,Prime,Skills and Potion HP Recovery% Increase,40,300,7.6923%,9.0909%,6.0606%
+161,Overall,Unique,Prime,Skills and Potion HP Recovery% Increase,40,300,7.6923%,9.0909%,6.0606%
+162,Top,Legendary,Prime,STR% Increase,70,300,5.8823%,5.8823%,9.3023%
+163,Overall,Legendary,Prime,STR% Increase,70,300,5.8823%,5.8823%,9.3023%
+164,Top,Legendary,Prime,DEX% Increase,70,300,5.8823%,5.8823%,9.3023%
+165,Overall,Legendary,Prime,DEX% Increase,70,300,5.8823%,5.8823%,9.3023%
+166,Top,Legendary,Prime,INT% Increase,70,300,5.8823%,5.8823%,9.3023%
+167,Overall,Legendary,Prime,INT% Increase,70,300,5.8823%,5.8823%,9.3023%
+168,Top,Legendary,Prime,LUK% Increase,70,300,5.8823%,5.8823%,9.3023%
+169,Overall,Legendary,Prime,LUK% Increase,70,300,5.8823%,5.8823%,9.3023%
+170,Top,Legendary,Prime,MaxHP% Increase,70,300,8.8235%,8.8235%,9.3023%
+171,Overall,Legendary,Prime,MaxHP% Increase,70,300,8.8235%,8.8235%,9.3023%
+172,Top,Legendary,Prime,MaxMP% Increase,70,300,8.8235%,8.8235%,9.3023%
+173,Overall,Legendary,Prime,MaxMP% Increase,70,300,8.8235%,8.8235%,9.3023%
+174,Top,Legendary,Prime,DEF% Increase,70,300,8.8235%,8.8235%,9.3023%
+175,Overall,Legendary,Prime,DEF% Increase,70,300,8.8235%,8.8235%,9.3023%
+176,Top,Legendary,Prime,All Stats% Increase,70,300,5.8823%,5.8823%,6.9767%
+177,Overall,Legendary,Prime,All Stats% Increase,70,300,5.8823%,5.8823%,6.9767%
+178,Top,Legendary,Prime,10% chance to ignore 20% of monster damage dealt,70,300,8.8235%,8.8235%,6.9767%
+179,Overall,Legendary,Prime,10% chance to ignore 20% of monster damage dealt,70,300,8.8235%,8.8235%,6.9767%
+180,Top,Legendary,Prime,10% chance to ignore 40% of monster damage dealt,70,300,8.8235%,8.8235%,6.9767%
+181,Overall,Legendary,Prime,10% chance to ignore 40% of monster damage dealt,70,300,8.8235%,8.8235%,6.9767%
+182,Top,Legendary,Prime,Invincibility Time +3 seconds,70,300,8.8235%,8.8235%,6.9767%
+183,Overall,Legendary,Prime,Invincibility Time +3 seconds,70,300,8.8235%,8.8235%,6.9767%
+184,Top,Legendary,Prime,4% chance to become invincible when attacked,70,300,8.8235%,8.8235%,6.9767%
+185,Overall,Legendary,Prime,4% chance to become invincible when attacked,70,300,8.8235%,8.8235%,6.9767%
+186,Top,Legendary,Prime,Skills and Potion HP Recovery% Increase,70,300,8.8235%,8.8235%,0%
+187,Overall,Legendary,Prime,Skills and Potion HP Recovery% Increase,70,300,8.8235%,8.8235%,0%
+188,Bottom,Rare,Non prime,STR Increase,0,300,11.7647%,11.7647%,14.2857%
+189,Bottom,Rare,Non prime,DEX Increase,0,300,11.7647%,11.7647%,14.2857%
+190,Bottom,Rare,Non prime,INT Increase,0,300,11.7647%,11.7647%,14.2857%
+191,Bottom,Rare,Non prime,LUK Increase,0,300,11.7647%,11.7647%,14.2857%
+192,Bottom,Rare,Non prime,MaxHP Increase,0,300,17.647%,17.647%,14.2857%
+193,Bottom,Rare,Non prime,MaxMP Increase,0,300,17.647%,17.647%,14.2857%
+194,Bottom,Rare,Non prime,DEF Increase,0,300,17.647%,17.647%,14.2857%
+195,Bottom,Rare,Prime,STR Increase,0,300,5.5555%,5.5555%,7.5%
+196,Bottom,Rare,Prime,DEX Increase,0,300,5.5555%,5.5555%,7.5%
+197,Bottom,Rare,Prime,INT Increase,0,300,5.5555%,5.5555%,7.5%
+198,Bottom,Rare,Prime,LUK Increase,0,300,5.5555%,5.5555%,7.5%
+199,Bottom,Rare,Prime,MaxHP Increase,0,300,8.3333%,8.3333%,7.5%
+200,Bottom,Rare,Prime,MaxMP Increase,0,300,8.3333%,8.3333%,7.5%
+201,Bottom,Rare,Prime,DEF Increase,0,300,8.3333%,8.3333%,5%
+202,Bottom,Rare,Prime,STR% Increase,0,300,5.5555%,5.5555%,7.5%
+203,Bottom,Rare,Prime,DEX% Increase,0,300,5.5555%,5.5555%,7.5%
+204,Bottom,Rare,Prime,INT% Increase,0,300,5.5555%,5.5555%,7.5%
+205,Bottom,Rare,Prime,LUK% Increase,0,300,5.5555%,5.5555%,7.5%
+206,Bottom,Rare,Prime,MaxHP% Increase,0,300,8.3333%,8.3333%,5%
+207,Bottom,Rare,Prime,MaxMP% Increase,0,300,8.3333%,8.3333%,5%
+208,Bottom,Rare,Prime,DEF% Increase,0,300,8.3333%,8.3333%,5%
+209,Bottom,Rare,Prime,All Stats Increase,0,300,5.5555%,5.5555%,5%
+210,Bottom,Epic,Prime,STR% Increase,0,300,7.4074%,7.4074%,14.2857%
+211,Bottom,Epic,Prime,DEX% Increase,0,300,7.4074%,7.4074%,14.2857%
+212,Bottom,Epic,Prime,INT% Increase,0,300,7.4074%,7.4074%,14.2857%
+213,Bottom,Epic,Prime,LUK% Increase,0,300,7.4074%,7.4074%,14.2857%
+214,Bottom,Epic,Prime,MaxHP% Increase,0,300,11.1111%,11.1111%,14.2857%
+215,Bottom,Epic,Prime,MaxMP% Increase,0,300,11.1111%,11.1111%,14.2857%
+216,Bottom,Epic,Prime,DEF% Increase,0,300,11.1111%,11.1111%,8.5714%
+217,Bottom,Epic,Prime,All Stats% Increase,0,300,3.7037%,3.7037%,5.7142%
+218,Bottom,Epic,Prime,20% chance to ignore monster damage dealt,0,300,11.1111%,11.1111%,0%
+220,Bottom,Epic,Prime,30% chance to ignore monster damage dealt,0,300,11.1111%,11.1111%,0%
+221,Bottom,Unique,Prime,STR% Increase,70,300,6.8965%,6.8965%,8.9285%
+222,Bottom,Unique,Prime,DEX% Increase,70,300,6.8965%,6.8965%,8.9285%
+223,Bottom,Unique,Prime,INT% Increase,70,300,6.8965%,6.8965%,8.9285%
+224,Bottom,Unique,Prime,LUK% Increase,70,300,6.8965%,6.8965%,8.9285%
+225,Bottom,Unique,Prime,MaxHP% Increase,70,300,10.3448%,10.3448%,10.7142%
+226,Bottom,Unique,Prime,MaxMP% Increase,70,300,10.3448%,10.3448%,10.7142%
+227,Bottom,Unique,Prime,DEF% Increase,70,300,10.3448%,10.3448%,7.1428%
+228,Bottom,Unique,Prime,All Stats% Increase,70,300,3.4482%,3.4482%,7.1428%
+229,Bottom,Unique,Prime,5% chance to ignore 20% of monster damage dealt,70,300,10.3448%,10.3448%,7.1428%
+230,Bottom,Unique,Prime,5% chance to ignore 40% of monster damage dealt,70,300,10.3448%,10.3448%,7.1428%
+231,Bottom,Unique,Prime,Skills and Potion HP Recovery% Increase,70,300,10.3448%,10.3448%,7.1428%
+232,Bottom,Unique,Prime,Decent Hyper Body enabled,70,300,6.8965%,6.8965%,7.1428%
+233,Bottom,Legendary,Prime,STR% Increase,70,300,5.8823%,5.8823%,10.8108%
+234,Bottom,Legendary,Prime,DEX% Increase,70,300,5.8823%,5.8823%,10.8108%
+235,Bottom,Legendary,Prime,INT% Increase,70,300,5.8823%,5.8823%,10.8108%
+236,Bottom,Legendary,Prime,LUK% Increase,70,300,5.8823%,5.8823%,10.8108%
+237,Bottom,Legendary,Prime,MaxHP% Increase,70,300,8.8235%,8.8235%,10.8108%
+238,Bottom,Legendary,Prime,MaxMP% Increase,70,300,8.8235%,8.8235%,10.8108%
+239,Bottom,Legendary,Prime,DEF% Increase,70,300,8.8235%,8.8235%,10.8108%
+240,Bottom,Legendary,Prime,All Stats% Increase,70,300,5.8823%,5.8823%,8.1081%
+241,Bottom,Legendary,Prime,10% chance to ignore 20% of monster damage dealt,70,300,8.8235%,8.8235%,8.1081%
+242,Bottom,Legendary,Prime,10% chance to ignore 40% of monster damage dealt,70,300,8.8235%,8.8235%,8.1081%
+243,Bottom,Legendary,Prime,Reflect damage at a chance,70,300,8.8235%,8.8235%,0%
+245,Bottom,Legendary,Prime,Skills and Potion HP Recovery% Increase,70,300,8.8235%,8.8235%,0%
+246,Gloves,Rare,Non prime,STR Increase,0,300,11.7647%,11.7647%,14.2857%
+247,Gloves,Rare,Non prime,DEX Increase,0,300,11.7647%,11.7647%,14.2857%
+248,Gloves,Rare,Non prime,INT Increase,0,300,11.7647%,11.7647%,14.2857%
+249,Gloves,Rare,Non prime,LUK Increase,0,300,11.7647%,11.7647%,14.2857%
+250,Gloves,Rare,Non prime,MaxHP Increase,0,300,17.647%,17.647%,14.2857%
+251,Gloves,Rare,Non prime,MaxMP Increase,0,300,17.647%,17.647%,14.2857%
+252,Gloves,Rare,Non prime,DEF Increase,0,300,17.647%,17.647%,14.2857%
+253,Gloves,Rare,Prime,STR Increase,0,300,5.5555%,5.5555%,7.5%
+254,Gloves,Rare,Prime,DEX Increase,0,300,5.5555%,5.5555%,7.5%
+255,Gloves,Rare,Prime,INT Increase,0,300,5.5555%,5.5555%,7.5%
+256,Gloves,Rare,Prime,LUK Increase,0,300,5.5555%,5.5555%,7.5%
+257,Gloves,Rare,Prime,MaxHP Increase,0,300,8.3333%,8.3333%,7.5%
+258,Gloves,Rare,Prime,MaxMP Increase,0,300,8.3333%,8.3333%,7.5%
+259,Gloves,Rare,Prime,DEF Increase,0,300,8.3333%,8.3333%,5%
+260,Gloves,Rare,Prime,STR% Increase,0,300,5.5555%,5.5555%,7.5%
+261,Gloves,Rare,Prime,DEX% Increase,0,300,5.5555%,5.5555%,7.5%
+262,Gloves,Rare,Prime,INT% Increase,0,300,5.5555%,5.5555%,7.5%
+263,Gloves,Rare,Prime,LUK% Increase,0,300,5.5555%,5.5555%,7.5%
+264,Gloves,Rare,Prime,MaxHP% Increase,0,300,8.3333%,8.3333%,5%
+265,Gloves,Rare,Prime,MaxMP% Increase,0,300,8.3333%,8.3333%,5%
+266,Gloves,Rare,Prime,DEF% Increase,0,300,8.3333%,8.3333%,5%
+267,Gloves,Rare,Prime,All Stats Increase,0,300,5.5555%,5.5555%,5%
+268,Gloves,Epic,Prime,STR% Increase,0,300,6.0606%,6.0606%,12.1951%
+269,Gloves,Epic,Prime,DEX% Increase,0,300,6.0606%,6.0606%,12.1951%
+270,Gloves,Epic,Prime,INT% Increase,0,300,6.0606%,6.0606%,12.1951%
+271,Gloves,Epic,Prime,LUK% Increase,0,300,6.0606%,6.0606%,12.1951%
+272,Gloves,Epic,Prime,MaxHP% Increase,0,300,9.0909%,9.0909%,12.1951%
+273,Gloves,Epic,Prime,MaxMP% Increase,0,300,9.0909%,9.0909%,12.1951%
+274,Gloves,Epic,Prime,DEF% Increase,0,300,9.0909%,9.0909%,7.317%
+275,Gloves,Epic,Prime,All Stats% Increase,0,300,3.0303%,3.0303%,4.878%
+276,Gloves,Epic,Prime,20% chance to ignore monster damage dealt,0,300,9.0909%,9.0909%,0%
+278,Gloves,Epic,Prime,30% chance to ignore monster damage dealt,0,300,9.0909%,9.0909%,0%
+279,Gloves,Epic,Prime,15% chance to recover HP when you killed a monster,0,300,9.0909%,9.0909%,7.317%
+280,Gloves,Epic,Prime,15% chance to recover MP when you killed a monster,0,300,9.0909%,9.0909%,7.317%
+281,Gloves,Unique,Prime,STR% Increase,120,300,4.2553%,5.7142%,8.3333%
+282,Gloves,Unique,Prime,DEX% Increase,120,300,4.2553%,5.7142%,8.3333%
+283,Gloves,Unique,Prime,INT% Increase,120,300,4.2553%,5.7142%,8.3333%
+284,Gloves,Unique,Prime,LUK% Increase,120,300,4.2553%,5.7142%,8.3333%
+285,Gloves,Unique,Prime,MaxHP% Increase,120,300,6.3829%,8.5714%,10%
+286,Gloves,Unique,Prime,MaxMP% Increase,120,300,6.3829%,8.5714%,10%
+287,Gloves,Unique,Prime,DEF% Increase,120,300,6.3829%,8.5714%,6.6666%
+288,Gloves,Unique,Prime,All Stats% Increase,120,300,2.1276%,2.8571,6.6666%
+289,Gloves,Unique,Prime,STR +1 per 10 Character Levels,120,300,6.3829%,0%,1.6666%
+290,Gloves,Unique,Prime,DEX +1 per 10 Character Levels,120,300,6.3829%,0%,1.6666%
+291,Gloves,Unique,Prime,INT +1 per 10 Character Levels,120,300,6.3829%,0%,1.6666%
+292,Gloves,Unique,Prime,LUK +1 per 10 Character Levels,120,300,6.3829%,0%,1.6666%
+293,Gloves,Unique,Prime,5% chance to ignore 20% of monster damage dealt,120,300,6.3829%,8.5714%,6.6666%
+294,Gloves,Unique,Prime,5% chance to ignore 40% of monster damage dealt,120,300,6.3829%,8.5714%,6.6666%
+295,Gloves,Unique,Prime,Skills and Potion HP Recovery% Increase,120,300,6.3829%,8.5714%,6.6666%
+296,Gloves,Unique,Prime,1% Auto Steal Chance,120,300,6.3829%,8.5714%,0%
+297,Gloves,Unique,Prime,2% Auto Steal Chance,120,300,6.3829%,8.5714%,0%
+298,Gloves,Unique,Prime,Decent Sharp Eyes enabled,120,300,4.2553%,5.7142%,6.6666%
+299,Gloves,Legendary,Prime,STR% Increase,120,300,4.5454%,4.5454%,9.0909%
+300,Gloves,Legendary,Prime,DEX% Increase,120,300,4.5454%,4.5454%,9.0909%
+301,Gloves,Legendary,Prime,INT% Increase,120,300,4.5454%,4.5454%,9.0909%
+302,Gloves,Legendary,Prime,LUK% Increase,120,300,4.5454%,4.5454%,9.0909%
+303,Gloves,Legendary,Prime,MaxHP% Increase,120,300,6.8181%,6.8181%,9.0909%
+304,Gloves,Legendary,Prime,MaxMP% Increase,120,300,6.8181%,6.8181%,9.0909%
+305,Gloves,Legendary,Prime,DEF% Increase,120,300,6.8181%,6.8181%,9.0909%
+306,Gloves,Legendary,Prime,Critical Damage% Increase,120,300,9.0909%,9.0909%,9.0909%
+307,Gloves,Legendary,Prime,All Stats% Increase,120,300,4.5454%,4.5454%,6.8181%
+308,Gloves,Legendary,Prime,10% chance to ignore 20% of monster damage dealt,120,300,6.8181%,6.8181%,6.8181%
+309,Gloves,Legendary,Prime,10% chance to ignore 40% of monster damage dealt,120,300,6.8181%,6.8181%,6.8181%
+310,Gloves,Legendary,Prime,Skills and Potion HP Recovery% Increase,120,300,6.8181%,6.8181%,0%
+311,Gloves,Legendary,Prime,3% Auto Steal Chance,120,300,6.8181%,6.8181%,0%
+312,Gloves,Legendary,Prime,5% Auto Steal Chance,120,300,6.8181%,6.8181%,0%
+313,Gloves,Legendary,Prime,7% Auto Steal Chance,120,300,6.8181%,6.8181%,0%
+314,Gloves,Legendary,Prime,Decent Speed Infusion enabled,120,300,6.8181%,6.8181%,6.8181%
+315,Shoes,Rare,Non prime,STR Increase,0,300,8.6956%,8.6956%,12%
+316,Shoes,Rare,Non prime,DEX Increase,0,300,8.6956%,8.6956%,12%
+317,Shoes,Rare,Non prime,INT Increase,0,300,8.6956%,8.6956%,12%
+318,Shoes,Rare,Non prime,LUK Increase,0,300,8.6956%,8.6956%,12%
+319,Shoes,Rare,Non prime,MaxHP Increase,0,300,13.0434%,13.0434%,12%
+320,Shoes,Rare,Non prime,MaxMP Increase,0,300,13.0434%,13.0434%,12%
+321,Shoes,Rare,Non prime,Speed Increase,0,300,13.0434%,13.0434%,8%
+322,Shoes,Rare,Non prime,Jump Increase,0,300,13.0434%,13.0434%,8%
+323,Shoes,Rare,Non prime,DEF Increase,0,300,13.0434%,13.0434%,12%
+324,Shoes,Rare,Prime,STR Increase,0,300,4.7619%,4.7619%,6.8181%
+325,Shoes,Rare,Prime,DEX Increase,0,300,4.7619%,4.7619%,6.8181%
+326,Shoes,Rare,Prime,INT Increase,0,300,4.7619%,4.7619%,6.8181%
+327,Shoes,Rare,Prime,LUK Increase,0,300,4.7619%,4.7619%,6.8181%
+328,Shoes,Rare,Prime,MaxHP Increase,0,300,7.1428%,7.1428%,6.8181%
+329,Shoes,Rare,Prime,MaxMP Increase,0,300,7.1428%,7.1428%,6.8181%
+330,Shoes,Rare,Prime,Speed Increase,0,300,7.1428%,7.1428%,4.5454%
+331,Shoes,Rare,Prime,Jump Increase,0,300,7.1428%,7.1428%,4.5454%
+332,Shoes,Rare,Prime,DEF Increase,0,300,7.1428%,7.1428%,4.5454%
+333,Shoes,Rare,Prime,STR% Increase,0,300,4.7619%,4.7619%,6.8181%
+334,Shoes,Rare,Prime,DEX% Increase,0,300,4.7619%,4.7619%,6.8181%
+335,Shoes,Rare,Prime,INT% Increase,0,300,4.7619%,4.7619%,6.8181%
+336,Shoes,Rare,Prime,LUK% Increase,0,300,4.7619%,4.7619%,6.8181%
+337,Shoes,Rare,Prime,MaxHP% Increase,0,300,7.1428%,7.1428%,4.5454%
+338,Shoes,Rare,Prime,MaxMP% Increase,0,300,7.1428%,7.1428%,4.5454%
+339,Shoes,Rare,Prime,DEF% Increase,0,300,7.1428%,7.1428%,4.5454%
+340,Shoes,Rare,Prime,All Stats Increase,0,300,4.7619%,4.7619%,4.5454%
+341,Shoes,Epic,Prime,STR% Increase,0,300,7.4074%,7.4074%,14.2857%
+342,Shoes,Epic,Prime,DEX% Increase,0,300,7.4074%,7.4074%,14.2857%
+343,Shoes,Epic,Prime,INT% Increase,0,300,7.4074%,7.4074%,14.2857%
+344,Shoes,Epic,Prime,LUK% Increase,0,300,7.4074%,7.4074%,14.2857%
+345,Shoes,Epic,Prime,MaxHP% Increase,0,300,11.1111%,11.1111%,14.2857%
+346,Shoes,Epic,Prime,MaxMP% Increase,0,300,11.1111%,11.1111%,14.2857%
+347,Shoes,Epic,Prime,DEF% Increase,0,300,11.1111%,11.1111%,8.5714%
+348,Shoes,Epic,Prime,All Stats% Increase,0,300,3.7037%,3.7037%,5.7142%
+349,Shoes,Epic,Prime,20% chance to ignore monster damage dealt,0,300,11.1111%,11.1111%,0%
+351,Shoes,Epic,Prime,30% chance to ignore monster damage dealt,0,300,11.1111%,11.1111%,0%
+352,Shoes,Unique,Prime,STR% Increase,70,300,6.8965%,6.8965%,8.9285%
+353,Shoes,Unique,Prime,DEX% Increase,70,300,6.8965%,6.8965%,8.9285%
+354,Shoes,Unique,Prime,INT% Increase,70,300,6.8965%,6.8965%,8.9285%
+355,Shoes,Unique,Prime,LUK% Increase,70,300,6.8965%,6.8965%,8.9285%
+356,Shoes,Unique,Prime,MaxHP% Increase,70,300,10.3448%,10.3448%,10.7142%
+357,Shoes,Unique,Prime,MaxMP% Increase,70,300,10.3448%,10.3448%,10.7142%
+358,Shoes,Unique,Prime,DEF% Increase,70,300,10.3448%,10.3448%,7.1428%
+359,Shoes,Unique,Prime,All Stats% Increase,70,300,3.4482%,3.4482%,7.1428%
+360,Shoes,Unique,Prime,5% chance to ignore 20% of monster damage dealt,70,300,10.3448%,10.3448%,7.1428%
+361,Shoes,Unique,Prime,5% chance to ignore 40% of monster damage dealt,70,300,10.3448%,10.3448%,7.1428%
+362,Shoes,Unique,Prime,Skills and Potion HP Recovery% Increase,70,300,10.3448%,10.3448%,7.1428%
+363,Shoes,Unique,Prime,Decent Haste enabled,70,300,6.8965%,6.8965%,7.1428%
+364,Shoes,Legendary,Prime,STR% Increase,70,300,6.4516%,6.4516%,10%
+365,Shoes,Legendary,Prime,DEX% Increase,70,300,6.4516%,6.4516%,10%
+366,Shoes,Legendary,Prime,INT% Increase,70,300,6.4516%,6.4516%,10%
+367,Shoes,Legendary,Prime,LUK% Increase,70,300,6.4516%,6.4516%,10%
+368,Shoes,Legendary,Prime,MaxHP% Increase,70,300,9.6774%,9.6774%,10%
+369,Shoes,Legendary,Prime,MaxMP% Increase,70,300,9.6774%,9.6774%,10%
+370,Shoes,Legendary,Prime,DEF% Increase,70,300,9.6774%,9.6774%,10%
+371,Shoes,Legendary,Prime,All Stats% Increase,70,300,6.4516%,6.4516%,7.5%
+372,Shoes,Legendary,Prime,10% chance to ignore 20% of monster damage dealt,70,300,9.6774%,9.6774%,7.5%
+373,Shoes,Legendary,Prime,10% chance to ignore 40% of monster damage dealt,70,300,9.6774%,9.6774%,7.5%
+374,Shoes,Legendary,Prime,Skills and Potion HP Recovery% Increase,70,300,9.6774%,9.6774%,0%
+375,Shoes,Legendary,Prime,Decent Combat Orders enabled,70,300,9.6774%,9.6774%,7.5%
+376,Cape,Rare,Non prime,STR Increase,0,300,11.7647%,11.7647%,14.2857%
+377,Belt,Rare,Non prime,STR Increase,0,300,11.7647%,11.7647%,14.2857%
+378,Shoulderpad,Rare,Non prime,STR Increase,0,300,11.7647%,11.7647%,14.2857%
+379,Cape,Rare,Non prime,DEX Increase,0,300,11.7647%,11.7647%,14.2857%
+380,Belt,Rare,Non prime,DEX Increase,0,300,11.7647%,11.7647%,14.2857%
+381,Shoulderpad,Rare,Non prime,DEX Increase,0,300,11.7647%,11.7647%,14.2857%
+382,Cape,Rare,Non prime,INT Increase,0,300,11.7647%,11.7647%,14.2857%
+383,Belt,Rare,Non prime,INT Increase,0,300,11.7647%,11.7647%,14.2857%
+384,Shoulderpad,Rare,Non prime,INT Increase,0,300,11.7647%,11.7647%,14.2857%
+385,Cape,Rare,Non prime,LUK Increase,0,300,11.7647%,11.7647%,14.2857%
+386,Belt,Rare,Non prime,LUK Increase,0,300,11.7647%,11.7647%,14.2857%
+387,Shoulderpad,Rare,Non prime,LUK Increase,0,300,11.7647%,11.7647%,14.2857%
+388,Cape,Rare,Non prime,MaxHP Increase,0,300,17.647%,17.647%,14.2857%
+389,Belt,Rare,Non prime,MaxHP Increase,0,300,17.647%,17.647%,14.2857%
+390,Shoulderpad,Rare,Non prime,MaxHP Increase,0,300,17.647%,17.647%,14.2857%
+391,Cape,Rare,Non prime,MaxMP Increase,0,300,17.647%,17.647%,14.2857%
+392,Belt,Rare,Non prime,MaxMP Increase,0,300,17.647%,17.647%,14.2857%
+393,Shoulderpad,Rare,Non prime,MaxMP Increase,0,300,17.647%,17.647%,14.2857%
+394,Cape,Rare,Non prime,DEF Increase,0,300,17.647%,17.647%,14.2857%
+395,Belt,Rare,Non prime,DEF Increase,0,300,17.647%,17.647%,14.2857%
+396,Shoulderpad,Rare,Non prime,DEF Increase,0,300,17.647%,17.647%,14.2857%
+397,Cape,Rare,Prime,STR Increase,0,300,5.5555%,5.5555%,7.5%
+398,Belt,Rare,Prime,STR Increase,0,300,5.5555%,5.5555%,7.5%
+399,Shoulderpad,Rare,Prime,STR Increase,0,300,5.5555%,5.5555%,7.5%
+400,Cape,Rare,Prime,DEX Increase,0,300,5.5555%,5.5555%,7.5%
+401,Belt,Rare,Prime,DEX Increase,0,300,5.5555%,5.5555%,7.5%
+402,Shoulderpad,Rare,Prime,DEX Increase,0,300,5.5555%,5.5555%,7.5%
+403,Cape,Rare,Prime,INT Increase,0,300,5.5555%,5.5555%,7.5%
+404,Belt,Rare,Prime,INT Increase,0,300,5.5555%,5.5555%,7.5%
+405,Shoulderpad,Rare,Prime,INT Increase,0,300,5.5555%,5.5555%,7.5%
+406,Cape,Rare,Prime,LUK Increase,0,300,5.5555%,5.5555%,7.5%
+407,Belt,Rare,Prime,LUK Increase,0,300,5.5555%,5.5555%,7.5%
+408,Shoulderpad,Rare,Prime,LUK Increase,0,300,5.5555%,5.5555%,7.5%
+409,Cape,Rare,Prime,MaxHP Increase,0,300,8.3333%,8.3333%,7.5%
+410,Belt,Rare,Prime,MaxHP Increase,0,300,8.3333%,8.3333%,7.5%
+411,Shoulderpad,Rare,Prime,MaxHP Increase,0,300,8.3333%,8.3333%,7.5%
+412,Cape,Rare,Prime,MaxMP Increase,0,300,8.3333%,8.3333%,7.5%
+413,Belt,Rare,Prime,MaxMP Increase,0,300,8.3333%,8.3333%,7.5%
+414,Shoulderpad,Rare,Prime,MaxMP Increase,0,300,8.3333%,8.3333%,7.5%
+415,Cape,Rare,Prime,DEF Increase,0,300,8.3333%,8.3333%,5%
+416,Belt,Rare,Prime,DEF Increase,0,300,8.3333%,8.3333%,5%
+417,Shoulderpad,Rare,Prime,DEF Increase,0,300,8.3333%,8.3333%,5%
+418,Cape,Rare,Prime,STR% Increase,0,300,5.5555%,5.5555%,7.5%
+419,Belt,Rare,Prime,STR% Increase,0,300,5.5555%,5.5555%,7.5%
+420,Shoulderpad,Rare,Prime,STR% Increase,0,300,5.5555%,5.5555%,7.5%
+421,Cape,Rare,Prime,DEX% Increase,0,300,5.5555%,5.5555%,7.5%
+422,Belt,Rare,Prime,DEX% Increase,0,300,5.5555%,5.5555%,7.5%
+423,Shoulderpad,Rare,Prime,DEX% Increase,0,300,5.5555%,5.5555%,7.5%
+424,Cape,Rare,Prime,INT% Increase,0,300,5.5555%,5.5555%,7.5%
+425,Belt,Rare,Prime,INT% Increase,0,300,5.5555%,5.5555%,7.5%
+426,Shoulderpad,Rare,Prime,INT% Increase,0,300,5.5555%,5.5555%,7.5%
+427,Cape,Rare,Prime,LUK% Increase,0,300,5.5555%,5.5555%,7.5%
+428,Belt,Rare,Prime,LUK% Increase,0,300,5.5555%,5.5555%,7.5%
+429,Shoulderpad,Rare,Prime,LUK% Increase,0,300,5.5555%,5.5555%,7.5%
+430,Cape,Rare,Prime,MaxHP% Increase,0,300,8.3333%,8.3333%,5%
+431,Belt,Rare,Prime,MaxHP% Increase,0,300,8.3333%,8.3333%,5%
+432,Shoulderpad,Rare,Prime,MaxHP% Increase,0,300,8.3333%,8.3333%,5%
+433,Cape,Rare,Prime,MaxMP% Increase,0,300,8.3333%,8.3333%,5%
+434,Belt,Rare,Prime,MaxMP% Increase,0,300,8.3333%,8.3333%,5%
+435,Shoulderpad,Rare,Prime,MaxMP% Increase,0,300,8.3333%,8.3333%,5%
+436,Cape,Rare,Prime,DEF% Increase,0,300,8.3333%,8.3333%,5%
+437,Belt,Rare,Prime,DEF% Increase,0,300,8.3333%,8.3333%,5%
+438,Shoulderpad,Rare,Prime,DEF% Increase,0,300,8.3333%,8.3333%,5%
+439,Cape,Rare,Prime,All Stats Increase,0,300,5.5555%,5.5555%,5%
+440,Belt,Rare,Prime,All Stats Increase,0,300,5.5555%,5.5555%,5%
+441,Shoulderpad,Rare,Prime,All Stats Increase,0,300,5.5555%,5.5555%,5%
+442,Cape,Epic,Prime,STR% Increase,0,300,7.4074%,7.4074%,14.2857%
+443,Belt,Epic,Prime,STR% Increase,0,300,7.4074%,7.4074%,14.2857%
+444,Shoulderpad,Epic,Prime,STR% Increase,0,300,7.4074%,7.4074%,14.2857%
+445,Cape,Epic,Prime,DEX% Increase,0,300,7.4074%,7.4074%,14.2857%
+446,Belt,Epic,Prime,DEX% Increase,0,300,7.4074%,7.4074%,14.2857%
+447,Shoulderpad,Epic,Prime,DEX% Increase,0,300,7.4074%,7.4074%,14.2857%
+448,Cape,Epic,Prime,INT% Increase,0,300,7.4074%,7.4074%,14.2857%
+449,Belt,Epic,Prime,INT% Increase,0,300,7.4074%,7.4074%,14.2857%
+450,Shoulderpad,Epic,Prime,INT% Increase,0,300,7.4074%,7.4074%,14.2857%
+451,Cape,Epic,Prime,LUK% Increase,0,300,7.4074%,7.4074%,14.2857%
+452,Belt,Epic,Prime,LUK% Increase,0,300,7.4074%,7.4074%,14.2857%
+453,Shoulderpad,Epic,Prime,LUK% Increase,0,300,7.4074%,7.4074%,14.2857%
+454,Cape,Epic,Prime,MaxHP% Increase,0,300,11.1111%,11.1111%,14.2857%
+455,Belt,Epic,Prime,MaxHP% Increase,0,300,11.1111%,11.1111%,14.2857%
+456,Shoulderpad,Epic,Prime,MaxHP% Increase,0,300,11.1111%,11.1111%,14.2857%
+457,Cape,Epic,Prime,MaxMP% Increase,0,300,11.1111%,11.1111%,14.2857%
+458,Belt,Epic,Prime,MaxMP% Increase,0,300,11.1111%,11.1111%,14.2857%
+459,Shoulderpad,Epic,Prime,MaxMP% Increase,0,300,11.1111%,11.1111%,14.2857%
+460,Cape,Epic,Prime,DEF% Increase,0,300,11.1111%,11.1111%,8.5714%
+461,Belt,Epic,Prime,DEF% Increase,0,300,11.1111%,11.1111%,8.5714%
+462,Shoulderpad,Epic,Prime,DEF% Increase,0,300,11.1111%,11.1111%,8.5714%
+463,Cape,Epic,Prime,All Stats% Increase,0,300,3.7037%,3.7037%,5.7142%
+464,Belt,Epic,Prime,All Stats% Increase,0,300,3.7037%,3.7037%,5.7142%
+465,Shoulderpad,Epic,Prime,All Stats% Increase,0,300,3.7037%,3.7037%,5.7142%
+466,Cape,Epic,Prime,20% chance to ignore monster damage dealt,0,300,11.1111%,11.1111%,0%
+467,Belt,Epic,Prime,20% chance to ignore monster damage dealt,0,300,11.1111%,11.1111%,0%
+468,Shoulderpad,Epic,Prime,20% chance to ignore monster damage dealt,0,300,11.1111%,11.1111%,0%
+472,Cape,Epic,Prime,30% chance to ignore monster damage dealt,0,300,11.1111%,11.1111%,0%
+473,Belt,Epic,Prime,30% chance to ignore monster damage dealt,0,300,11.1111%,11.1111%,0%
+474,Shoulderpad,Epic,Prime,30% chance to ignore monster damage dealt,0,300,11.1111%,11.1111%,0%
+475,Cape,Unique,Prime,STR% Increase,40,300,7.4074%,7.4074%,9.6153%
+476,Belt,Unique,Prime,STR% Increase,40,300,7.4074%,7.4074%,9.6153%
+477,Shoulderpad,Unique,Prime,STR% Increase,40,300,7.4074%,7.4074%,9.6153%
+478,Cape,Unique,Prime,DEX% Increase,40,300,7.4074%,7.4074%,9.6153%
+479,Belt,Unique,Prime,DEX% Increase,40,300,7.4074%,7.4074%,9.6153%
+480,Shoulderpad,Unique,Prime,DEX% Increase,40,300,7.4074%,7.4074%,9.6153%
+481,Cape,Unique,Prime,INT% Increase,40,300,7.4074%,7.4074%,9.6153%
+482,Belt,Unique,Prime,INT% Increase,40,300,7.4074%,7.4074%,9.6153%
+483,Shoulderpad,Unique,Prime,INT% Increase,40,300,7.4074%,7.4074%,9.6153%
+484,Cape,Unique,Prime,LUK% Increase,40,300,7.4074%,7.4074%,9.6153%
+485,Belt,Unique,Prime,LUK% Increase,40,300,7.4074%,7.4074%,9.6153%
+486,Shoulderpad,Unique,Prime,LUK% Increase,40,300,7.4074%,7.4074%,9.6153%
+487,Cape,Unique,Prime,MaxHP% Increase,40,300,11.1111%,11.1111%,11.5384%
+488,Belt,Unique,Prime,MaxHP% Increase,40,300,11.1111%,11.1111%,11.5384%
+489,Shoulderpad,Unique,Prime,MaxHP% Increase,40,300,11.1111%,11.1111%,11.5384%
+490,Cape,Unique,Prime,MaxMP% Increase,40,300,11.1111%,11.1111%,11.5384%
+491,Belt,Unique,Prime,MaxMP% Increase,40,300,11.1111%,11.1111%,11.5384%
+492,Shoulderpad,Unique,Prime,MaxMP% Increase,40,300,11.1111%,11.1111%,11.5384%
+493,Cape,Unique,Prime,DEF% Increase,40,300,11.1111%,11.1111%,7.6923%
+494,Belt,Unique,Prime,DEF% Increase,40,300,11.1111%,11.1111%,7.6923%
+495,Shoulderpad,Unique,Prime,DEF% Increase,40,300,11.1111%,11.1111%,7.6923%
+496,Cape,Unique,Prime,All Stats% Increase,40,300,3.7037%,3.7037%,7.6923%
+497,Belt,Unique,Prime,All Stats% Increase,40,300,3.7037%,3.7037%,7.6923%
+498,Shoulderpad,Unique,Prime,All Stats% Increase,40,300,3.7037%,3.7037%,7.6923%
+499,Cape,Unique,Prime,5% chance to ignore 20% of monster damage dealt,40,300,11.1111%,11.1111%,7.6923%
+500,Belt,Unique,Prime,5% chance to ignore 20% of monster damage dealt,40,300,11.1111%,11.1111%,7.6923%
+501,Shoulderpad,Unique,Prime,5% chance to ignore 20% of monster damage dealt,40,300,11.1111%,11.1111%,7.6923%
+502,Cape,Unique,Prime,5% chance to ignore 40% of monster damage dealt,40,300,11.1111%,11.1111%,7.6923%
+503,Belt,Unique,Prime,5% chance to ignore 40% of monster damage dealt,40,300,11.1111%,11.1111%,7.6923%
+504,Shoulderpad,Unique,Prime,5% chance to ignore 40% of monster damage dealt,40,300,11.1111%,11.1111%,7.6923%
+505,Cape,Unique,Prime,Skills and Potion HP Recovery% Increase,40,300,11.1111%,11.1111%,7.6923%
+506,Belt,Unique,Prime,Skills and Potion HP Recovery% Increase,40,300,11.1111%,11.1111%,7.6923%
+507,Shoulderpad,Unique,Prime,Skills and Potion HP Recovery% Increase,40,300,11.1111%,11.1111%,7.6923%
+508,Cape,Legendary,Prime,STR% Increase,40,300,7.1428%,7.1428%,10.8108%
+509,Belt,Legendary,Prime,STR% Increase,40,300,7.1428%,7.1428%,10.8108%
+510,Shoulderpad,Legendary,Prime,STR% Increase,40,300,7.1428%,7.1428%,10.8108%
+511,Cape,Legendary,Prime,DEX% Increase,40,300,7.1428%,7.1428%,10.8108%
+512,Belt,Legendary,Prime,DEX% Increase,40,300,7.1428%,7.1428%,10.8108%
+513,Shoulderpad,Legendary,Prime,DEX% Increase,40,300,7.1428%,7.1428%,10.8108%
+514,Cape,Legendary,Prime,INT% Increase,40,300,7.1428%,7.1428%,10.8108%
+515,Belt,Legendary,Prime,INT% Increase,40,300,7.1428%,7.1428%,10.8108%
+516,Shoulderpad,Legendary,Prime,INT% Increase,40,300,7.1428%,7.1428%,10.8108%
+517,Cape,Legendary,Prime,LUK% Increase,40,300,7.1428%,7.1428%,10.8108%
+518,Belt,Legendary,Prime,LUK% Increase,40,300,7.1428%,7.1428%,10.8108%
+519,Shoulderpad,Legendary,Prime,LUK% Increase,40,300,7.1428%,7.1428%,10.8108%
+520,Cape,Legendary,Prime,MaxHP% Increase,40,300,10.7142%,10.7142%,10.8108%
+521,Belt,Legendary,Prime,MaxHP% Increase,40,300,10.7142%,10.7142%,10.8108%
+522,Shoulderpad,Legendary,Prime,MaxHP% Increase,40,300,10.7142%,10.7142%,10.8108%
+523,Cape,Legendary,Prime,MaxMP% Increase,40,300,10.7142%,10.7142%,10.8108%
+524,Belt,Legendary,Prime,MaxMP% Increase,40,300,10.7142%,10.7142%,10.8108%
+525,Shoulderpad,Legendary,Prime,MaxMP% Increase,40,300,10.7142%,10.7142%,10.8108%
+526,Cape,Legendary,Prime,DEF% Increase,40,300,10.7142%,10.7142%,10.8108%
+527,Belt,Legendary,Prime,DEF% Increase,40,300,10.7142%,10.7142%,10.8108%
+528,Shoulderpad,Legendary,Prime,DEF% Increase,40,300,10.7142%,10.7142%,10.8108%
+529,Cape,Legendary,Prime,All Stats% Increase,40,300,7.1428%,7.1428%,8.1081%
+530,Belt,Legendary,Prime,All Stats% Increase,40,300,7.1428%,7.1428%,8.1081%
+531,Shoulderpad,Legendary,Prime,All Stats% Increase,40,300,7.1428%,7.1428%,8.1081%
+532,Cape,Legendary,Prime,10% chance to ignore 20% of monster damage dealt,40,300,10.7142%,10.7142%,8.1081%
+533,Belt,Legendary,Prime,10% chance to ignore 20% of monster damage dealt,40,300,10.7142%,10.7142%,8.1081%
+534,Shoulderpad,Legendary,Prime,10% chance to ignore 20% of monster damage dealt,40,300,10.7142%,10.7142%,8.1081%
+535,Cape,Legendary,Prime,10% chance to ignore 40% of monster damage dealt,40,300,10.7142%,10.7142%,8.1081%
+536,Belt,Legendary,Prime,10% chance to ignore 40% of monster damage dealt,40,300,10.7142%,10.7142%,8.1081%
+537,Shoulderpad,Legendary,Prime,10% chance to ignore 40% of monster damage dealt,40,300,10.7142%,10.7142%,8.1081%
+538,Cape,Legendary,Prime,Skills and Potion HP Recovery% Increase,40,300,10.7142%,10.7142%,0%
+539,Belt,Legendary,Prime,Skills and Potion HP Recovery% Increase,40,300,10.7142%,10.7142%,0%
+540,Shoulderpad,Legendary,Prime,Skills and Potion HP Recovery% Increase,40,300,10.7142%,10.7142%,0%
+541,Face Accessory,Rare,Non prime,STR Increase,0,300,11.7647%,11.7647%,14.2857%
+542,Eye Accessory,Rare,Non prime,STR Increase,0,300,11.7647%,11.7647%,14.2857%
+543,Ring,Rare,Non prime,STR Increase,0,300,11.7647%,11.7647%,14.2857%
+544,Earring,Rare,Non prime,STR Increase,0,300,11.7647%,11.7647%,14.2857%
+545,Pendant,Rare,Non prime,STR Increase,0,300,11.7647%,11.7647%,14.2857%
+546,Face Accessory,Rare,Non prime,DEX Increase,0,300,11.7647%,11.7647%,14.2857%
+547,Eye Accessory,Rare,Non prime,DEX Increase,0,300,11.7647%,11.7647%,14.2857%
+548,Ring,Rare,Non prime,DEX Increase,0,300,11.7647%,11.7647%,14.2857%
+549,Earring,Rare,Non prime,DEX Increase,0,300,11.7647%,11.7647%,14.2857%
+550,Pendant,Rare,Non prime,DEX Increase,0,300,11.7647%,11.7647%,14.2857%
+551,Face Accessory,Rare,Non prime,INT Increase,0,300,11.7647%,11.7647%,14.2857%
+552,Eye Accessory,Rare,Non prime,INT Increase,0,300,11.7647%,11.7647%,14.2857%
+553,Ring,Rare,Non prime,INT Increase,0,300,11.7647%,11.7647%,14.2857%
+554,Earring,Rare,Non prime,INT Increase,0,300,11.7647%,11.7647%,14.2857%
+555,Pendant,Rare,Non prime,INT Increase,0,300,11.7647%,11.7647%,14.2857%
+556,Face Accessory,Rare,Non prime,LUK Increase,0,300,11.7647%,11.7647%,14.2857%
+557,Eye Accessory,Rare,Non prime,LUK Increase,0,300,11.7647%,11.7647%,14.2857%
+558,Ring,Rare,Non prime,LUK Increase,0,300,11.7647%,11.7647%,14.2857%
+559,Earring,Rare,Non prime,LUK Increase,0,300,11.7647%,11.7647%,14.2857%
+560,Pendant,Rare,Non prime,LUK Increase,0,300,11.7647%,11.7647%,14.2857%
+561,Face Accessory,Rare,Non prime,MaxHP Increase,0,300,17.647%,17.647%,14.2857%
+562,Eye Accessory,Rare,Non prime,MaxHP Increase,0,300,17.647%,17.647%,14.2857%
+563,Ring,Rare,Non prime,MaxHP Increase,0,300,17.647%,17.647%,14.2857%
+564,Earring,Rare,Non prime,MaxHP Increase,0,300,17.647%,17.647%,14.2857%
+565,Pendant,Rare,Non prime,MaxHP Increase,0,300,17.647%,17.647%,14.2857%
+566,Face Accessory,Rare,Non prime,MaxMP Increase,0,300,17.647%,17.647%,14.2857%
+567,Eye Accessory,Rare,Non prime,MaxMP Increase,0,300,17.647%,17.647%,14.2857%
+568,Ring,Rare,Non prime,MaxMP Increase,0,300,17.647%,17.647%,14.2857%
+569,Earring,Rare,Non prime,MaxMP Increase,0,300,17.647%,17.647%,14.2857%
+570,Pendant,Rare,Non prime,MaxMP Increase,0,300,17.647%,17.647%,14.2857%
+571,Face Accessory,Rare,Non prime,DEF Increase,0,300,17.647%,17.647%,14.2857%
+572,Eye Accessory,Rare,Non prime,DEF Increase,0,300,17.647%,17.647%,14.2857%
+573,Ring,Rare,Non prime,DEF Increase,0,300,17.647%,17.647%,14.2857%
+574,Earring,Rare,Non prime,DEF Increase,0,300,17.647%,17.647%,14.2857%
+575,Pendant,Rare,Non prime,DEF Increase,0,300,17.647%,17.647%,14.2857%
+576,Face Accessory,Rare,Prime,STR Increase,0,300,4.7619%,4.7619%,7.5%
+577,Eye Accessory,Rare,Prime,STR Increase,0,300,4.7619%,4.7619%,7.5%
+578,Ring,Rare,Prime,STR Increase,0,300,4.7619%,4.7619%,7.5%
+579,Earring,Rare,Prime,STR Increase,0,300,4.7619%,4.7619%,7.5%
+580,Pendant,Rare,Prime,STR Increase,0,300,4.7619%,4.7619%,7.5%
+581,Face Accessory,Rare,Prime,DEX Increase,0,300,4.7619%,4.7619%,7.5%
+582,Eye Accessory,Rare,Prime,DEX Increase,0,300,4.7619%,4.7619%,7.5%
+583,Ring,Rare,Prime,DEX Increase,0,300,4.7619%,4.7619%,7.5%
+584,Earring,Rare,Prime,DEX Increase,0,300,4.7619%,4.7619%,7.5%
+585,Pendant,Rare,Prime,DEX Increase,0,300,4.7619%,4.7619%,7.5%
+586,Face Accessory,Rare,Prime,INT Increase,0,300,4.7619%,4.7619%,7.5%
+587,Eye Accessory,Rare,Prime,INT Increase,0,300,4.7619%,4.7619%,7.5%
+588,Ring,Rare,Prime,INT Increase,0,300,4.7619%,4.7619%,7.5%
+589,Earring,Rare,Prime,INT Increase,0,300,4.7619%,4.7619%,7.5%
+590,Pendant,Rare,Prime,INT Increase,0,300,4.7619%,4.7619%,7.5%
+591,Face Accessory,Rare,Prime,LUK Increase,0,300,4.7619%,4.7619%,7.5%
+592,Eye Accessory,Rare,Prime,LUK Increase,0,300,4.7619%,4.7619%,7.5%
+593,Ring,Rare,Prime,LUK Increase,0,300,4.7619%,4.7619%,7.5%
+594,Earring,Rare,Prime,LUK Increase,0,300,4.7619%,4.7619%,7.5%
+595,Pendant,Rare,Prime,LUK Increase,0,300,4.7619%,4.7619%,7.5%
+596,Face Accessory,Rare,Prime,MaxHP Increase,0,300,7.1428%,7.1428%,7.5%
+597,Eye Accessory,Rare,Prime,MaxHP Increase,0,300,7.1428%,7.1428%,7.5%
+598,Ring,Rare,Prime,MaxHP Increase,0,300,7.1428%,7.1428%,7.5%
+599,Earring,Rare,Prime,MaxHP Increase,0,300,7.1428%,7.1428%,7.5%
+600,Pendant,Rare,Prime,MaxHP Increase,0,300,7.1428%,7.1428%,7.5%
+601,Face Accessory,Rare,Prime,MaxMP Increase,0,300,7.1428%,7.1428%,7.5%
+602,Eye Accessory,Rare,Prime,MaxMP Increase,0,300,7.1428%,7.1428%,7.5%
+603,Ring,Rare,Prime,MaxMP Increase,0,300,7.1428%,7.1428%,7.5%
+604,Earring,Rare,Prime,MaxMP Increase,0,300,7.1428%,7.1428%,7.5%
+605,Pendant,Rare,Prime,MaxMP Increase,0,300,7.1428%,7.1428%,7.5%
+606,Face Accessory,Rare,Prime,DEF Increase,0,300,7.1428%,7.1428%,5%
+607,Eye Accessory,Rare,Prime,DEF Increase,0,300,7.1428%,7.1428%,5%
+608,Ring,Rare,Prime,DEF Increase,0,300,7.1428%,7.1428%,5%
+609,Earring,Rare,Prime,DEF Increase,0,300,7.1428%,7.1428%,5%
+610,Pendant,Rare,Prime,DEF Increase,0,300,7.1428%,7.1428%,5%
+611,Face Accessory,Rare,Prime,STR% Increase,0,300,4.7619%,4.7619%,7.5%
+612,Eye Accessory,Rare,Prime,STR% Increase,0,300,4.7619%,4.7619%,7.5%
+613,Ring,Rare,Prime,STR% Increase,0,300,4.7619%,4.7619%,7.5%
+614,Earring,Rare,Prime,STR% Increase,0,300,4.7619%,4.7619%,7.5%
+615,Pendant,Rare,Prime,STR% Increase,0,300,4.7619%,4.7619%,7.5%
+616,Face Accessory,Rare,Prime,DEX% Increase,0,300,4.7619%,4.7619%,7.5%
+617,Eye Accessory,Rare,Prime,DEX% Increase,0,300,4.7619%,4.7619%,7.5%
+618,Ring,Rare,Prime,DEX% Increase,0,300,4.7619%,4.7619%,7.5%
+619,Earring,Rare,Prime,DEX% Increase,0,300,4.7619%,4.7619%,7.5%
+620,Pendant,Rare,Prime,DEX% Increase,0,300,4.7619%,4.7619%,7.5%
+621,Face Accessory,Rare,Prime,INT% Increase,0,300,4.7619%,4.7619%,7.5%
+622,Eye Accessory,Rare,Prime,INT% Increase,0,300,4.7619%,4.7619%,7.5%
+623,Ring,Rare,Prime,INT% Increase,0,300,4.7619%,4.7619%,7.5%
+624,Earring,Rare,Prime,INT% Increase,0,300,4.7619%,4.7619%,7.5%
+625,Pendant,Rare,Prime,INT% Increase,0,300,4.7619%,4.7619%,7.5%
+626,Face Accessory,Rare,Prime,LUK% Increase,0,300,4.7619%,4.7619%,7.5%
+627,Eye Accessory,Rare,Prime,LUK% Increase,0,300,4.7619%,4.7619%,7.5%
+628,Ring,Rare,Prime,LUK% Increase,0,300,4.7619%,4.7619%,7.5%
+629,Earring,Rare,Prime,LUK% Increase,0,300,4.7619%,4.7619%,7.5%
+630,Pendant,Rare,Prime,LUK% Increase,0,300,4.7619%,4.7619%,7.5%
+631,Face Accessory,Rare,Prime,MaxHP% Increase,0,300,7.1428%,7.1428%,5%
+632,Eye Accessory,Rare,Prime,MaxHP% Increase,0,300,7.1428%,7.1428%,5%
+633,Ring,Rare,Prime,MaxHP% Increase,0,300,7.1428%,7.1428%,5%
+634,Earring,Rare,Prime,MaxHP% Increase,0,300,7.1428%,7.1428%,5%
+635,Pendant,Rare,Prime,MaxHP% Increase,0,300,7.1428%,7.1428%,5%
+636,Face Accessory,Rare,Prime,MaxMP% Increase,0,300,7.1428%,7.1428%,5%
+637,Eye Accessory,Rare,Prime,MaxMP% Increase,0,300,7.1428%,7.1428%,5%
+638,Ring,Rare,Prime,MaxMP% Increase,0,300,7.1428%,7.1428%,5%
+639,Earring,Rare,Prime,MaxMP% Increase,0,300,7.1428%,7.1428%,5%
+640,Pendant,Rare,Prime,MaxMP% Increase,0,300,7.1428%,7.1428%,5%
+641,Face Accessory,Rare,Prime,DEF% Increase,0,300,7.1428%,7.1428%,5%
+642,Eye Accessory,Rare,Prime,DEF% Increase,0,300,7.1428%,7.1428%,5%
+643,Ring,Rare,Prime,DEF% Increase,0,300,7.1428%,7.1428%,5%
+644,Earring,Rare,Prime,DEF% Increase,0,300,7.1428%,7.1428%,5%
+645,Pendant,Rare,Prime,DEF% Increase,0,300,7.1428%,7.1428%,5%
+646,Face Accessory,Rare,Prime,All Stats Increase,0,300,4.7619%,4.7619%,5%
+647,Eye Accessory,Rare,Prime,All Stats Increase,0,300,4.7619%,4.7619%,5%
+648,Ring,Rare,Prime,All Stats Increase,0,300,4.7619%,4.7619%,5%
+649,Earring,Rare,Prime,All Stats Increase,0,300,4.7619%,4.7619%,5%
+650,Pendant,Rare,Prime,All Stats Increase,0,300,4.7619%,4.7619%,5%
+651,Face Accessory,Rare,Prime,Recover HP every 4 seconds,0,300,7.1428%,7.1428%,0%
+652,Eye Accessory,Rare,Prime,Recover HP every 4 seconds,0,300,7.1428%,7.1428%,0%
+653,Ring,Rare,Prime,Recover HP every 4 seconds,0,300,7.1428%,7.1428%,0%
+654,Earring,Rare,Prime,Recover HP every 4 seconds,0,300,7.1428%,7.1428%,0%
+655,Pendant,Rare,Prime,Recover HP every 4 seconds,0,300,7.1428%,7.1428%,0%
+656,Face Accessory,Rare,Prime,Recover MP every 4 seconds,0,300,7.1428%,7.1428%,0%
+657,Eye Accessory,Rare,Prime,Recover MP every 4 seconds,0,300,7.1428%,7.1428%,0%
+658,Ring,Rare,Prime,Recover MP every 4 seconds,0,300,7.1428%,7.1428%,0%
+659,Earring,Rare,Prime,Recover MP every 4 seconds,0,300,7.1428%,7.1428%,0%
+660,Pendant,Rare,Prime,Recover MP every 4 seconds,0,300,7.1428%,7.1428%,0%
+661,Face Accessory,Epic,Prime,STR% Increase,0,300,11.1111%,11.1111%,14.2857%
+662,Eye Accessory,Epic,Prime,STR% Increase,0,300,11.1111%,11.1111%,14.2857%
+663,Ring,Epic,Prime,STR% Increase,0,300,11.1111%,11.1111%,14.2857%
+664,Earring,Epic,Prime,STR% Increase,0,300,11.1111%,11.1111%,14.2857%
+665,Pendant,Epic,Prime,STR% Increase,0,300,11.1111%,11.1111%,14.2857%
+666,Face Accessory,Epic,Prime,DEX% Increase,0,300,11.1111%,11.1111%,14.2857%
+667,Eye Accessory,Epic,Prime,DEX% Increase,0,300,11.1111%,11.1111%,14.2857%
+668,Ring,Epic,Prime,DEX% Increase,0,300,11.1111%,11.1111%,14.2857%
+669,Earring,Epic,Prime,DEX% Increase,0,300,11.1111%,11.1111%,14.2857%
+670,Pendant,Epic,Prime,DEX% Increase,0,300,11.1111%,11.1111%,14.2857%
+671,Face Accessory,Epic,Prime,INT% Increase,0,300,11.1111%,11.1111%,14.2857%
+672,Eye Accessory,Epic,Prime,INT% Increase,0,300,11.1111%,11.1111%,14.2857%
+673,Ring,Epic,Prime,INT% Increase,0,300,11.1111%,11.1111%,14.2857%
+674,Earring,Epic,Prime,INT% Increase,0,300,11.1111%,11.1111%,14.2857%
+675,Pendant,Epic,Prime,INT% Increase,0,300,11.1111%,11.1111%,14.2857%
+676,Face Accessory,Epic,Prime,LUK% Increase,0,300,11.1111%,11.1111%,14.2857%
+677,Eye Accessory,Epic,Prime,LUK% Increase,0,300,11.1111%,11.1111%,14.2857%
+678,Ring,Epic,Prime,LUK% Increase,0,300,11.1111%,11.1111%,14.2857%
+679,Earring,Epic,Prime,LUK% Increase,0,300,11.1111%,11.1111%,14.2857%
+680,Pendant,Epic,Prime,LUK% Increase,0,300,11.1111%,11.1111%,14.2857%
+681,Face Accessory,Epic,Prime,MaxHP% Increase,0,300,16.6666%,16.6666%,14.2857%
+682,Eye Accessory,Epic,Prime,MaxHP% Increase,0,300,16.6666%,16.6666%,14.2857%
+683,Ring,Epic,Prime,MaxHP% Increase,0,300,16.6666%,16.6666%,14.2857%
+684,Earring,Epic,Prime,MaxHP% Increase,0,300,16.6666%,16.6666%,14.2857%
+685,Pendant,Epic,Prime,MaxHP% Increase,0,300,16.6666%,16.6666%,14.2857%
+686,Face Accessory,Epic,Prime,MaxMP% Increase,0,300,16.6666%,16.6666%,14.2857%
+687,Eye Accessory,Epic,Prime,MaxMP% Increase,0,300,16.6666%,16.6666%,14.2857%
+688,Ring,Epic,Prime,MaxMP% Increase,0,300,16.6666%,16.6666%,14.2857%
+689,Earring,Epic,Prime,MaxMP% Increase,0,300,16.6666%,16.6666%,14.2857%
+690,Pendant,Epic,Prime,MaxMP% Increase,0,300,16.6666%,16.6666%,14.2857%
+691,Face Accessory,Epic,Prime,DEF% Increase,0,300,16.6666%,16.6666%,8.5714%
+692,Eye Accessory,Epic,Prime,DEF% Increase,0,300,16.6666%,16.6666%,8.5714%
+693,Ring,Epic,Prime,DEF% Increase,0,300,16.6666%,16.6666%,8.5714%
+694,Earring,Epic,Prime,DEF% Increase,0,300,16.6666%,16.6666%,8.5714%
+695,Pendant,Epic,Prime,DEF% Increase,0,300,16.6666%,16.6666%,8.5714%
+696,Face Accessory,Epic,Prime,All Stats% Increase,0,300,5.5555%,5.5555%,5.7142%
+697,Eye Accessory,Epic,Prime,All Stats% Increase,0,300,5.5555%,5.5555%,5.7142%
+698,Ring,Epic,Prime,All Stats% Increase,0,300,5.5555%,5.5555%,5.7142%
+699,Earring,Epic,Prime,All Stats% Increase,0,300,5.5555%,5.5555%,5.7142%
+700,Pendant,Epic,Prime,All Stats% Increase,0,300,5.5555%,5.5555%,5.7142%
+701,Face Accessory,Unique,Prime,STR% Increase,0,300,9.5238%,9.5238%,11.3636%
+702,Eye Accessory,Unique,Prime,STR% Increase,0,300,9.5238%,9.5238%,11.3636%
+703,Ring,Unique,Prime,STR% Increase,0,300,9.5238%,9.5238%,11.3636%
+704,Earring,Unique,Prime,STR% Increase,0,300,9.5238%,9.5238%,11.3636%
+705,Pendant,Unique,Prime,STR% Increase,0,300,9.5238%,9.5238%,11.3636%
+706,Face Accessory,Unique,Prime,DEX% Increase,0,300,9.5238%,9.5238%,11.3636%
+707,Eye Accessory,Unique,Prime,DEX% Increase,0,300,9.5238%,9.5238%,11.3636%
+708,Ring,Unique,Prime,DEX% Increase,0,300,9.5238%,9.5238%,11.3636%
+709,Earring,Unique,Prime,DEX% Increase,0,300,9.5238%,9.5238%,11.3636%
+710,Pendant,Unique,Prime,DEX% Increase,0,300,9.5238%,9.5238%,11.3636%
+711,Face Accessory,Unique,Prime,INT% Increase,0,300,9.5238%,9.5238%,11.3636%
+712,Eye Accessory,Unique,Prime,INT% Increase,0,300,9.5238%,9.5238%,11.3636%
+713,Ring,Unique,Prime,INT% Increase,0,300,9.5238%,9.5238%,11.3636%
+714,Earring,Unique,Prime,INT% Increase,0,300,9.5238%,9.5238%,11.3636%
+715,Pendant,Unique,Prime,INT% Increase,0,300,9.5238%,9.5238%,11.3636%
+716,Face Accessory,Unique,Prime,LUK% Increase,0,300,9.5238%,9.5238%,11.3636%
+717,Eye Accessory,Unique,Prime,LUK% Increase,0,300,9.5238%,9.5238%,11.3636%
+718,Ring,Unique,Prime,LUK% Increase,0,300,9.5238%,9.5238%,11.3636%
+719,Earring,Unique,Prime,LUK% Increase,0,300,9.5238%,9.5238%,11.3636%
+720,Pendant,Unique,Prime,LUK% Increase,0,300,9.5238%,9.5238%,11.3636%
+721,Face Accessory,Unique,Prime,MaxHP% Increase,0,300,14.2857%,14.2857%,13.6363%
+722,Eye Accessory,Unique,Prime,MaxHP% Increase,0,300,14.2857%,14.2857%,13.6363%
+723,Ring,Unique,Prime,MaxHP% Increase,0,300,14.2857%,14.2857%,13.6363%
+724,Earring,Unique,Prime,MaxHP% Increase,0,300,14.2857%,14.2857%,13.6363%
+725,Pendant,Unique,Prime,MaxHP% Increase,0,300,14.2857%,14.2857%,13.6363%
+726,Face Accessory,Unique,Prime,MaxMP% Increase,0,300,14.2857%,14.2857%,13.6363%
+727,Eye Accessory,Unique,Prime,MaxMP% Increase,0,300,14.2857%,14.2857%,13.6363%
+728,Ring,Unique,Prime,MaxMP% Increase,0,300,14.2857%,14.2857%,13.6363%
+729,Earring,Unique,Prime,MaxMP% Increase,0,300,14.2857%,14.2857%,13.6363%
+730,Pendant,Unique,Prime,MaxMP% Increase,0,300,14.2857%,14.2857%,13.6363%
+731,Face Accessory,Unique,Prime,DEF% Increase,0,300,14.2857%,14.2857%,9.0909%
+732,Eye Accessory,Unique,Prime,DEF% Increase,0,300,14.2857%,14.2857%,9.0909%
+733,Ring,Unique,Prime,DEF% Increase,0,300,14.2857%,14.2857%,9.0909%
+734,Earring,Unique,Prime,DEF% Increase,0,300,14.2857%,14.2857%,9.0909%
+735,Pendant,Unique,Prime,DEF% Increase,0,300,14.2857%,14.2857%,9.0909%
+736,Face Accessory,Unique,Prime,All Stats% Increase,0,300,4.7619%,4.7619%,9.0909%
+737,Eye Accessory,Unique,Prime,All Stats% Increase,0,300,4.7619%,4.7619%,9.0909%
+738,Ring,Unique,Prime,All Stats% Increase,0,300,4.7619%,4.7619%,9.0909%
+739,Earring,Unique,Prime,All Stats% Increase,0,300,4.7619%,4.7619%,9.0909%
+740,Pendant,Unique,Prime,All Stats% Increase,0,300,4.7619%,4.7619%,9.0909%
+741,Face Accessory,Unique,Prime,Skills and Potion HP Recovery% Increase,0,300,14.2857%,14.2857%,9.0909%
+742,Eye Accessory,Unique,Prime,Skills and Potion HP Recovery% Increase,0,300,14.2857%,14.2857%,9.0909%
+743,Ring,Unique,Prime,Skills and Potion HP Recovery% Increase,0,300,14.2857%,14.2857%,9.0909%
+744,Earring,Unique,Prime,Skills and Potion HP Recovery% Increase,0,300,14.2857%,14.2857%,9.0909%
+745,Pendant,Unique,Prime,Skills and Potion HP Recovery% Increase,0,300,14.2857%,14.2857%,9.0909%
+746,Face Accessory,Legendary,Prime,STR% Increase,0,300,5.8823%,5.8823%,9.3023%
+747,Eye Accessory,Legendary,Prime,STR% Increase,0,300,5.8823%,5.8823%,9.3023%
+748,Ring,Legendary,Prime,STR% Increase,0,300,5.8823%,5.8823%,9.3023%
+749,Earring,Legendary,Prime,STR% Increase,0,300,5.8823%,5.8823%,9.3023%
+750,Pendant,Legendary,Prime,STR% Increase,0,300,5.8823%,5.8823%,9.3023%
+751,Face Accessory,Legendary,Prime,DEX% Increase,0,300,5.8823%,5.8823%,9.3023%
+752,Eye Accessory,Legendary,Prime,DEX% Increase,0,300,5.8823%,5.8823%,9.3023%
+753,Ring,Legendary,Prime,DEX% Increase,0,300,5.8823%,5.8823%,9.3023%
+754,Earring,Legendary,Prime,DEX% Increase,0,300,5.8823%,5.8823%,9.3023%
+755,Pendant,Legendary,Prime,DEX% Increase,0,300,5.8823%,5.8823%,9.3023%
+756,Face Accessory,Legendary,Prime,INT% Increase,0,300,5.8823%,5.8823%,9.3023%
+757,Eye Accessory,Legendary,Prime,INT% Increase,0,300,5.8823%,5.8823%,9.3023%
+758,Ring,Legendary,Prime,INT% Increase,0,300,5.8823%,5.8823%,9.3023%
+759,Earring,Legendary,Prime,INT% Increase,0,300,5.8823%,5.8823%,9.3023%
+760,Pendant,Legendary,Prime,INT% Increase,0,300,5.8823%,5.8823%,9.3023%
+761,Face Accessory,Legendary,Prime,LUK% Increase,0,300,5.8823%,5.8823%,9.3023%
+762,Eye Accessory,Legendary,Prime,LUK% Increase,0,300,5.8823%,5.8823%,9.3023%
+763,Ring,Legendary,Prime,LUK% Increase,0,300,5.8823%,5.8823%,9.3023%
+764,Earring,Legendary,Prime,LUK% Increase,0,300,5.8823%,5.8823%,9.3023%
+765,Pendant,Legendary,Prime,LUK% Increase,0,300,5.8823%,5.8823%,9.3023%
+766,Face Accessory,Legendary,Prime,MaxHP% Increase,0,300,8.8235%,8.8235%,9.3023%
+767,Eye Accessory,Legendary,Prime,MaxHP% Increase,0,300,8.8235%,8.8235%,9.3023%
+768,Ring,Legendary,Prime,MaxHP% Increase,0,300,8.8235%,8.8235%,9.3023%
+769,Earring,Legendary,Prime,MaxHP% Increase,0,300,8.8235%,8.8235%,9.3023%
+770,Pendant,Legendary,Prime,MaxHP% Increase,0,300,8.8235%,8.8235%,9.3023%
+771,Face Accessory,Legendary,Prime,MaxMP% Increase,0,300,8.8235%,8.8235%,9.3023%
+772,Eye Accessory,Legendary,Prime,MaxMP% Increase,0,300,8.8235%,8.8235%,9.3023%
+773,Ring,Legendary,Prime,MaxMP% Increase,0,300,8.8235%,8.8235%,9.3023%
+774,Earring,Legendary,Prime,MaxMP% Increase,0,300,8.8235%,8.8235%,9.3023%
+775,Pendant,Legendary,Prime,MaxMP% Increase,0,300,8.8235%,8.8235%,9.3023%
+776,Face Accessory,Legendary,Prime,DEF% Increase,0,300,8.8235%,8.8235%,9.3023%
+777,Eye Accessory,Legendary,Prime,DEF% Increase,0,300,8.8235%,8.8235%,9.3023%
+778,Ring,Legendary,Prime,DEF% Increase,0,300,8.8235%,8.8235%,9.3023%
+779,Earring,Legendary,Prime,DEF% Increase,0,300,8.8235%,8.8235%,9.3023%
+780,Pendant,Legendary,Prime,DEF% Increase,0,300,8.8235%,8.8235%,9.3023%
+781,Face Accessory,Legendary,Prime,All Stats% Increase,0,300,5.8823%,5.8823%,6.9767%
+782,Eye Accessory,Legendary,Prime,All Stats% Increase,0,300,5.8823%,5.8823%,6.9767%
+783,Ring,Legendary,Prime,All Stats% Increase,0,300,5.8823%,5.8823%,6.9767%
+784,Earring,Legendary,Prime,All Stats% Increase,0,300,5.8823%,5.8823%,6.9767%
+785,Pendant,Legendary,Prime,All Stats% Increase,0,300,5.8823%,5.8823%,6.9767%
+786,Face Accessory,Legendary,Prime,MP Cost Reduction,0,300,8.8235%,8.8235%,6.9767%
+787,Eye Accessory,Legendary,Prime,MP Cost Reduction,0,300,8.8235%,8.8235%,6.9767%
+788,Ring,Legendary,Prime,MP Cost Reduction,0,300,8.8235%,8.8235%,6.9767%
+789,Earring,Legendary,Prime,MP Cost Reduction,0,300,8.8235%,8.8235%,6.9767%
+790,Pendant,Legendary,Prime,MP Cost Reduction,0,300,8.8235%,8.8235%,6.9767%
+796,Face Accessory,Legendary,Prime,Skills and Potion HP Recovery% Increase,0,300,8.8235%,8.8235%,0%
+797,Eye Accessory,Legendary,Prime,Skills and Potion HP Recovery% Increase,0,300,8.8235%,8.8235%,0%
+798,Ring,Legendary,Prime,Skills and Potion HP Recovery% Increase,0,300,8.8235%,8.8235%,0%
+799,Earring,Legendary,Prime,Skills and Potion HP Recovery% Increase,0,300,8.8235%,8.8235%,0%
+800,Pendant,Legendary,Prime,Skills and Potion HP Recovery% Increase,0,300,8.8235%,8.8235%,0%
+801,Face Accessory,Legendary,Prime,Mesos Obtained% Increase,0,300,8.8235%,8.8235%,6.9767%
+802,Eye Accessory,Legendary,Prime,Mesos Obtained% Increase,0,300,8.8235%,8.8235%,6.9767%
+803,Ring,Legendary,Prime,Mesos Obtained% Increase,0,300,8.8235%,8.8235%,6.9767%
+804,Earring,Legendary,Prime,Mesos Obtained% Increase,0,300,8.8235%,8.8235%,6.9767%
+805,Pendant,Legendary,Prime,Mesos Obtained% Increase,0,300,8.8235%,8.8235%,6.9767%
+806,Face Accessory,Legendary,Prime,Item Drop Rate% Increase,0,300,8.8235%,8.8235%,6.9767%
+807,Eye Accessory,Legendary,Prime,Item Drop Rate% Increase,0,300,8.8235%,8.8235%,6.9767%
+808,Ring,Legendary,Prime,Item Drop Rate% Increase,0,300,8.8235%,8.8235%,6.9767%
+809,Earring,Legendary,Prime,Item Drop Rate% Increase,0,300,8.8235%,8.8235%,6.9767%
+810,Pendant,Legendary,Prime,Item Drop Rate% Increase,0,300,8.8235%,8.8235%,6.9767%
+811,Weapon,Rare,Non prime,STR Increase,0,300,12.5%,12.5%,13.6363%
+812,Weapon,Rare,Non prime,DEX Increase,0,300,12.5%,12.5%,13.6363%
+813,Weapon,Rare,Non prime,INT Increase,0,300,12.5%,12.5%,13.6363%
+814,Weapon,Rare,Non prime,LUK Increase,0,300,12.5%,12.5%,13.6363%
+815,Weapon,Rare,Non prime,MaxHP Increase,0,300,18.75%,18.75%,13.6363%
+816,Weapon,Rare,Non prime,MaxMP Increase,0,300,18.75%,18.75%,13.6363%
+817,Weapon,Rare,Non prime,Weapon ATT Increase,0,300,6.25%,6.25%,9.0909%
+818,Weapon,Rare,Non prime,Magic ATT Increase,0,300,6.25%,6.25%,9.0909%
+819,Weapon,Rare,Prime,STR Increase,30,300,3.5087%,3.5087%,6.1224%
+820,Weapon,Rare,Prime,DEX Increase,30,300,3.5087%,3.5087%,6.1224%
+821,Weapon,Rare,Prime,INT Increase,30,300,3.5087%,3.5087%,6.1224%
+822,Weapon,Rare,Prime,LUK Increase,30,300,3.5087%,3.5087%,6.1224%
+823,Weapon,Rare,Prime,MaxHP Increase,30,300,5.2631%,5.2631%,6.1224%
+824,Weapon,Rare,Prime,MaxMP Increase,30,300,5.2631%,5.2631%,6.1224%
+825,Weapon,Rare,Prime,Weapon ATT Increase,30,300,3.5087%,3.5087%,4.0816%
+826,Weapon,Rare,Prime,Magic ATT Increase,30,300,3.5087%,3.5087%,4.0816%
+827,Weapon,Rare,Prime,STR% Increase,30,300,3.5087%,3.5087%,6.1224%
+828,Weapon,Rare,Prime,DEX% Increase,30,300,3.5087%,3.5087%,6.1224%
+829,Weapon,Rare,Prime,INT% Increase,30,300,3.5087%,3.5087%,6.1224%
+830,Weapon,Rare,Prime,LUK% Increase,30,300,3.5087%,3.5087%,6.1224%
+831,Weapon,Rare,Prime,Weapon ATT% Increase,30,300,1.7543%,1.7543%,2.0408%
+832,Weapon,Rare,Prime,Magic ATT% Increase,30,300,1.7543%,1.7543%,2.0408%
+833,Weapon,Rare,Prime,Critical Rate +4%,30,300,1.7543%,1.7543%,2.0408%
+834,Weapon,Rare,Prime,Damage% Increase,30,300,1.7543%,1.7543%,2.0408%
+835,Weapon,Rare,Prime,All Stats Increase,30,300,3.5087%,3.5087%,4.0816%
+836,Weapon,Rare,Prime,Chance to recover HP when attacking,30,300,5.2631%,5.2631%,2.0408%
+837,Weapon,Rare,Prime,Chance to recover MP when attacking,30,300,5.2631%,5.2631%,2.0408%
+838,Weapon,Rare,Prime,Chance to inflict darkness when attacking,30,300,5.2631%,5.2631%,2.0408%
+839,Weapon,Rare,Prime,Chance to inflict slow when attacking,30,300,5.2631%,5.2631%,2.0408%
+840,Weapon,Rare,Prime,Chance to inflict poison when attacking,30,300,5.2631%,5.2631%,2.0408%
+841,Weapon,Rare,Prime,Chance to inflict stun when attacking,30,300,5.2631%,5.2631%,2.0408%
+842,Weapon,Rare,Prime,Chance to inflict seal when attacking,30,300,5.2631%,5.2631%,2.0408%
+843,Weapon,Rare,Prime,Chance to inflict freeze when attacking,30,300,5.2631%,5.2631%,2.0408%
+844,Weapon,Rare,Prime,Ignores 15% of Monster's DEF when attacking,30,300,1.7543%,1.7543%,2.0408%
+845,Weapon,Epic,Prime,STR% Increase,50,300,7.6923%,7.6923%,10.8695%
+846,Weapon,Epic,Prime,DEX% Increase,50,300,7.6923%,7.6923%,10.8695%
+847,Weapon,Epic,Prime,INT% Increase,50,300,7.6923%,7.6923%,10.8695%
+848,Weapon,Epic,Prime,LUK% Increase,50,300,7.6923%,7.6923%,10.8695%
+849,Weapon,Epic,Prime,MaxHP% Increase,50,300,11.5384%,11.5384%,10.8695%
+850,Weapon,Epic,Prime,MaxMP% Increase,50,300,11.5384%,11.5384%,10.8695%
+851,Weapon,Epic,Prime,Weapon ATT% Increase,50,300,3.8461%,3.8461%,4.3478%
+852,Weapon,Epic,Prime,Magic ATT% Increase,50,300,3.8461%,3.8461%,4.3478%
+853,Weapon,Epic,Prime,Critical Rate +8%,50,300,3.8461%,3.8461%,4.3478%
+854,Weapon,Epic,Prime,Damage% Increase,50,300,3.8461%,3.8461%,4.3478%
+855,Weapon,Epic,Prime,All Stats% Increase,50,300,3.8461%,3.8461%,4.3478%
+856,Weapon,Epic,Prime,Chance to recover HP when attacking,50,300,11.5384%,11.5384%,4.3478%
+857,Weapon,Epic,Prime,Chance to recover MP when attacking,50,300,11.5384%,11.5384%,4.3478%
+858,Weapon,Epic,Prime,Ignore 15% of Monster's DEF when attacking,50,300,3.8461%,3.8461%,4.3478%
+859,Weapon,Unique,Prime,STR% Increase,100,300,13.3333%,13.3333%,11.6279%
+860,Weapon,Unique,Prime,DEX% Increase,100,300,13.3333%,13.3333%,11.6279%
+861,Weapon,Unique,Prime,INT% Increase,100,300,13.3333%,13.3333%,11.6279%
+862,Weapon,Unique,Prime,LUK% Increase,100,300,13.3333%,13.3333%,11.6279%
+863,Weapon,Unique,Prime,Weapon ATT% Increase,100,300,6.6666%,6.6666%,6.9767%
+864,Weapon,Unique,Prime,Magic ATT% Increase,100,300,6.6666%,6.6666%,6.9767%
+865,Weapon,Unique,Prime,Critical Rate% Increase,100,300,6.6666%,6.6666%,9.3023%
+866,Weapon,Unique,Prime,Damage% Increase,100,300,6.6666%,6.6666%,6.9767%
+867,Weapon,Unique,Prime,All Stats% Increase,100,300,6.6666%,6.6666%,9.3023%
+868,Weapon,Unique,Prime,Ignore 30% of Monster's DEF when attacking,100,300,6.6666%,6.6666%,6.9767%
+869,Weapon,Unique,Prime,Damage to Boss Monsters +30%,100,300,6.6666%,6.6666%,6.9767%
+870,Weapon,Legendary,Prime,STR% Increase,100,300,8%,11.1111%,9.756%
+871,Weapon,Legendary,Prime,DEX% Increase,100,300,8%,11.1111%,9.756%
+872,Weapon,Legendary,Prime,INT% Increase,100,300,8%,11.1111%,9.756%
+873,Weapon,Legendary,Prime,LUK% Increase,100,300,8%,11.1111%,9.756%
+874,Weapon,Legendary,Prime,Weapon ATT% Increase,100,300,4%,5.5555%,4.878%
+875,Weapon,Legendary,Prime,Magic ATT% Increase,100,300,4%,5.5555%,4.878%
+876,Weapon,Legendary,Prime,Critical Rate% Increase,100,300,4%,5.5555%,4.878%
+877,Weapon,Legendary,Prime,Damage% Increase,100,300,4%,5.5555%,4.878%
+878,Weapon,Legendary,Prime,All Stats% Increase,100,300,8%,11.1111%,7.317%
+879,Weapon,Legendary,Prime,Weapon ATT +1 per 10 Character Levels,100,300,12%,0%,4.878%
+880,Weapon,Legendary,Prime,Magic ATT +1 per 10 Character Levels,100,300,12%,0%,4.878%
+881,Weapon,Legendary,Prime,Ignore 35% of Monster's DEF when attacking,100,300,4%,5.5555%,4.878%
+882,Weapon,Legendary,Prime,Ignore 40% of Monster's DEF when attacking,100,300,4%,2.7777%,4.878%
+883,Weapon,Legendary,Prime,Damage to Boss Monsters +30%,100,300,4%,5.5555%,4.878%
+884,Weapon,Legendary,Prime,Damage to Boss Monsters +35%,100,300,4%,5.5555%,4.878%
+885,Weapon,Legendary,Prime,Damage to Boss Monsters +40%,100,300,4%,2.7777%,4.878%
+886,Secondary Weapon,Rare,Non prime,STR Increase,0,300,12.5%,12.5%,13.6363%
+887,Secondary Weapon,Rare,Non prime,DEX Increase,0,300,12.5%,12.5%,13.6363%
+888,Secondary Weapon,Rare,Non prime,INT Increase,0,300,12.5%,12.5%,13.6363%
+889,Secondary Weapon,Rare,Non prime,LUK Increase,0,300,12.5%,12.5%,13.6363%
+890,Secondary Weapon,Rare,Non prime,MaxHP Increase,0,300,18.75%,18.75%,13.6363%
+891,Secondary Weapon,Rare,Non prime,MaxMP Increase,0,300,18.75%,18.75%,13.6363%
+892,Secondary Weapon,Rare,Non prime,Weapon ATT Increase,0,300,6.25%,6.25%,9.0909%
+893,Secondary Weapon,Rare,Non prime,Magic ATT Increase,0,300,6.25%,6.25%,9.0909%
+894,Secondary Weapon,Rare,Prime,STR Increase,30,300,3.5087%,3.5087%,6.1224%
+895,Secondary Weapon,Rare,Prime,DEX Increase,30,300,3.5087%,3.5087%,6.1224%
+896,Secondary Weapon,Rare,Prime,INT Increase,30,300,3.5087%,3.5087%,6.1224%
+897,Secondary Weapon,Rare,Prime,LUK Increase,30,300,3.5087%,3.5087%,6.1224%
+898,Secondary Weapon,Rare,Prime,MaxHP Increase,30,300,5.2631%,5.2631%,6.1224%
+899,Secondary Weapon,Rare,Prime,MaxMP Increase,30,300,5.2631%,5.2631%,6.1224%
+900,Secondary Weapon,Rare,Prime,Weapon ATT Increase,30,300,3.5087%,3.5087%,4.0816%
+901,Secondary Weapon,Rare,Prime,Magic ATT Increase,30,300,3.5087%,3.5087%,4.0816%
+902,Secondary Weapon,Rare,Prime,STR% Increase,30,300,3.5087%,3.5087%,6.1224%
+903,Secondary Weapon,Rare,Prime,DEX% Increase,30,300,3.5087%,3.5087%,6.1224%
+904,Secondary Weapon,Rare,Prime,INT% Increase,30,300,3.5087%,3.5087%,6.1224%
+905,Secondary Weapon,Rare,Prime,LUK% Increase,30,300,3.5087%,3.5087%,6.1224%
+906,Secondary Weapon,Rare,Prime,Weapon ATT% Increase,30,300,1.7543%,1.7543%,2.0408%
+907,Secondary Weapon,Rare,Prime,Magic ATT% Increase,30,300,1.7543%,1.7543%,2.0408%
+908,Secondary Weapon,Rare,Prime,Critical Rate +4%,30,300,1.7543%,1.7543%,2.0408%
+909,Secondary Weapon,Rare,Prime,Damage% Increase,30,300,1.7543%,1.7543%,2.0408%
+910,Secondary Weapon,Rare,Prime,All Stats Increase,30,300,3.5087%,3.5087%,4.0816%
+911,Secondary Weapon,Rare,Prime,Chance to recover HP when attacking,30,300,5.2631%,5.2631%,2.0408%
+912,Secondary Weapon,Rare,Prime,Chance to recover MP when attacking,30,300,5.2631%,5.2631%,2.0408%
+913,Secondary Weapon,Rare,Prime,Chance to inflict darkness when attacking,30,300,5.2631%,5.2631%,2.0408%
+914,Secondary Weapon,Rare,Prime,Chance to inflict slow when attacking,30,300,5.2631%,5.2631%,2.0408%
+915,Secondary Weapon,Rare,Prime,Chance to inflict poison when attacking,30,300,5.2631%,5.2631%,2.0408%
+916,Secondary Weapon,Rare,Prime,Chance to inflict stun when attacking,30,300,5.2631%,5.2631%,2.0408%
+917,Secondary Weapon,Rare,Prime,Chance to inflict seal when attacking,30,300,5.2631%,5.2631%,2.0408%
+918,Secondary Weapon,Rare,Prime,Chance to inflict freeze when attacking,30,300,5.2631%,5.2631%,2.0408%
+919,Secondary Weapon,Rare,Prime,Ignores 15% of Monster's DEF when attacking,30,300,1.7543%,1.7543%,2.0408%
+920,Secondary Weapon,Epic,Prime,STR% Increase,50,300,5.7142%,5.7142%,10.8695%
+921,Secondary Weapon,Epic,Prime,DEX% Increase,50,300,5.7142%,5.7142%,10.8695%
+922,Secondary Weapon,Epic,Prime,INT% Increase,50,300,5.7142%,5.7142%,10.8695%
+923,Secondary Weapon,Epic,Prime,LUK% Increase,50,300,5.7142%,5.7142%,10.8695%
+924,Secondary Weapon,Epic,Prime,MaxHP% Increase,50,300,8.5714%,8.5714%,10.8695%
+925,Secondary Weapon,Epic,Prime,MaxMP% Increase,50,300,8.5714%,8.5714%,10.8695%
+926,Secondary Weapon,Epic,Prime,Weapon ATT% Increase,50,300,2.8571%,2.8571%,4.3478%
+927,Secondary Weapon,Epic,Prime,Magic ATT% Increase,50,300,2.8571%,2.8571%,4.3478%
+928,Secondary Weapon,Epic,Prime,Critical Rate +8%,50,300,2.8571%,2.8571%,4.3478%
+929,Secondary Weapon,Epic,Prime,Damage% Increase,50,300,2.8571%,2.8571%,4.3478%
+930,Secondary Weapon,Epic,Prime,All Stats% Increase,50,300,2.8571%,2.8571%,4.3478%
+931,Secondary Weapon,Epic,Prime,Chance to recover HP when attacking,50,300,8.5714%,8.5714%,4.3478%
+932,Secondary Weapon,Epic,Prime,Chance to recover MP when attacking,50,300,8.5714%,8.5714%,4.3478%
+933,Secondary Weapon,Epic,Prime,Ignore 15% of Monster's DEF when attacking,50,300,2.8571%,2.8571%,4.3478%
+934,Secondary Weapon,Epic,Prime,20% chance to ignore monster damage dealt,50,300,8.5714%,8.5714%,0%
+936,Secondary Weapon,Epic,Prime,30% chance to ignore monster damage dealt,50,300,8.5714%,8.5714%,0%
+937,Secondary Weapon,Unique,Prime,STR% Increase,100,300,9.5238%,9.5238%,9.8039%
+938,Secondary Weapon,Unique,Prime,DEX% Increase,100,300,9.5238%,9.5238%,9.8039%
+939,Secondary Weapon,Unique,Prime,INT% Increase,100,300,9.5238%,9.5238%,9.8039%
+940,Secondary Weapon,Unique,Prime,LUK% Increase,100,300,9.5238%,9.5238%,9.8039%
+941,Secondary Weapon,Unique,Prime,Weapon ATT% Increase,100,300,4.7619%,4.7619%,5.8823%
+942,Secondary Weapon,Unique,Prime,Magic ATT% Increase,100,300,4.7619%,4.7619%,5.8823%
+943,Secondary Weapon,Unique,Prime,Critical Rate% Increase,100,300,4.7619%,4.7619%,7.8431%
+944,Secondary Weapon,Unique,Prime,Damage% Increase,100,300,4.7619%,4.7619%,5.8823%
+945,Secondary Weapon,Unique,Prime,All Stats% Increase,100,300,4.7619%,4.7619%,7.8431%
+946,Secondary Weapon,Unique,Prime,Ignore 30% of Monster's DEF when attacking,100,300,4.7619%,4.7619%,5.8823%
+947,Secondary Weapon,Unique,Prime,5% chance to ignore 20% of monster damage dealt,100,300,14.2857%,14.2857%,7.8431%
+948,Secondary Weapon,Unique,Prime,5% chance to ignore 40% of monster damage dealt,100,300,14.2857%,14.2857%,7.8431%
+949,Secondary Weapon,Unique,Prime,Damage to Boss Monsters +30%,100,300,4.7619%,4.7619%,5.8823%
+950,Secondary Weapon,Legendary,Prime,STR% Increase,100,300,6.4516%,8.3333%,8.5106%
+951,Secondary Weapon,Legendary,Prime,DEX% Increase,100,300,6.4516%,8.3333%,8.5106%
+952,Secondary Weapon,Legendary,Prime,INT% Increase,100,300,6.4516%,8.3333%,8.5106%
+953,Secondary Weapon,Legendary,Prime,LUK% Increase,100,300,6.4516%,8.3333%,8.5106%
+954,Secondary Weapon,Legendary,Prime,Weapon ATT% Increase,100,300,3.2258%,4.1666%,4.2553%
+955,Secondary Weapon,Legendary,Prime,Magic ATT% Increase,100,300,3.2258%,4.1666%,4.2553%
+956,Secondary Weapon,Legendary,Prime,Critical Rate% Increase,100,300,3.2258%,4.1666%,4.2553%
+957,Secondary Weapon,Legendary,Prime,Damage% Increase,100,300,3.2258%,4.1666%,4.2553%
+958,Secondary Weapon,Legendary,Prime,All Stats% Increase,100,300,6.4516%,8.3333%,6.3829%
+959,Secondary Weapon,Legendary,Prime,Weapon ATT +1 per 10 Character Levels,100,300,9.6774%,0%,4.2553%
+960,Secondary Weapon,Legendary,Prime,Magic ATT +1 per 10 Character Levels,100,300,9.6774%,0%,4.2553%
+961,Secondary Weapon,Legendary,Prime,Ignore 35% of Monster's DEF when attacking,100,300,3.2258%,4.1666%,4.2553%
+962,Secondary Weapon,Legendary,Prime,Ignore 40% of Monster's DEF when attacking,100,300,3.2258%,2.0833%,4.2553%
+963,Secondary Weapon,Legendary,Prime,10% chance to ignore 20% of monster damage dealt,100,300,9.6774%,12.5%,6.3829%
+964,Secondary Weapon,Legendary,Prime,10% chance to ignore 40% of monster damage dealt,100,300,9.6774%,12.5%,6.3829%
+965,Secondary Weapon,Legendary,Prime,Damage to Boss Monsters +30%,100,300,3.2258%,4.1666%,4.2553%
+966,Secondary Weapon,Legendary,Prime,Damage to Boss Monsters +35%,100,300,3.2258%,4.1666%,4.2553%
+967,Secondary Weapon,Legendary,Prime,Damage to Boss Monsters +40%,100,300,3.2258%,2.0833%,4.2553%
+968,Demon Aegis,Rare,Non prime,STR Increase,0,300,15.3846%,15.3846%,15.7894%
+969,Soul Rings,Rare,Non prime,STR Increase,0,300,15.3846%,15.3846%,15.7894%
+970,Demon Aegis,Rare,Non prime,DEX Increase,0,300,15.3846%,15.3846%,15.7894%
+971,Soul Rings,Rare,Non prime,DEX Increase,0,300,15.3846%,15.3846%,15.7894%
+972,Demon Aegis,Rare,Non prime,INT Increase,0,300,15.3846%,15.3846%,15.7894%
+973,Soul Rings,Rare,Non prime,INT Increase,0,300,15.3846%,15.3846%,15.7894%
+974,Demon Aegis,Rare,Non prime,LUK Increase,0,300,15.3846%,15.3846%,15.7894%
+975,Soul Rings,Rare,Non prime,LUK Increase,0,300,15.3846%,15.3846%,15.7894%
+976,Demon Aegis,Rare,Non prime,MaxHP Increase,0,300,23.0769%,23.0769%,15.7894%
+977,Soul Rings,Rare,Non prime,MaxHP Increase,0,300,23.0769%,23.0769%,15.7894%
+978,Demon Aegis,Rare,Non prime,Weapon ATT Increase,0,300,7.6923%,7.6923%,10.5263%
+979,Soul Rings,Rare,Non prime,Weapon ATT Increase,0,300,7.6923%,7.6923%,10.5263%
+980,Demon Aegis,Rare,Non prime,Magic ATT Increase,0,300,7.6923%,7.6923%,10.5263%
+981,Soul Rings,Rare,Non prime,Magic ATT Increase,0,300,7.6923%,7.6923%,10.5263%
+982,Demon Aegis,Rare,Prime,STR Increase,30,300,3.7037%,3.9215%,6.5217%
+983,Soul Rings,Rare,Prime,STR Increase,30,300,3.7037%,3.9215%,6.5217%
+984,Demon Aegis,Rare,Prime,DEX Increase,30,300,3.7037%,3.9215%,6.5217%
+985,Soul Rings,Rare,Prime,DEX Increase,30,300,3.7037%,3.9215%,6.5217%
+986,Demon Aegis,Rare,Prime,INT Increase,30,300,3.7037%,3.9215%,6.5217%
+987,Soul Rings,Rare,Prime,INT Increase,30,300,3.7037%,3.9215%,6.5217%
+988,Demon Aegis,Rare,Prime,LUK Increase,30,300,3.7037%,3.9215%,6.5217%
+989,Soul Rings,Rare,Prime,LUK Increase,30,300,3.7037%,3.9215%,6.5217%
+990,Demon Aegis,Rare,Prime,MaxHP Increase,30,300,5.5555%,5.8823%,6.5217%
+991,Soul Rings,Rare,Prime,MaxHP Increase,30,300,5.5555%,5.8823%,6.5217%
+992,Demon Aegis,Rare,Prime,Weapon ATT Increase,30,300,3.7037%,3.9215%,4.3478%
+993,Soul Rings,Rare,Prime,Weapon ATT Increase,30,300,3.7037%,3.9215%,4.3478%
+994,Demon Aegis,Rare,Prime,Magic ATT Increase,30,300,3.7037%,3.9215%,4.3478%
+995,Soul Rings,Rare,Prime,Magic ATT Increase,30,300,3.7037%,3.9215%,4.3478%
+996,Demon Aegis,Rare,Prime,STR% Increase,30,300,3.7037%,3.9215%,6.5217%
+997,Soul Rings,Rare,Prime,STR% Increase,30,300,3.7037%,3.9215%,6.5217%
+998,Demon Aegis,Rare,Prime,DEX% Increase,30,300,3.7037%,3.9215%,6.5217%
+999,Soul Rings,Rare,Prime,DEX% Increase,30,300,3.7037%,3.9215%,6.5217%
+1000,Demon Aegis,Rare,Prime,INT% Increase,30,300,3.7037%,3.9215%,6.5217%
+1001,Soul Rings,Rare,Prime,INT% Increase,30,300,3.7037%,3.9215%,6.5217%
+1002,Demon Aegis,Rare,Prime,LUK% Increase,30,300,3.7037%,3.9215%,6.5217%
+1003,Soul Rings,Rare,Prime,LUK% Increase,30,300,3.7037%,3.9215%,6.5217%
+1004,Demon Aegis,Rare,Prime,Weapon ATT% Increase,30,300,1.8518%,1.9607%,2.1739%
+1005,Soul Rings,Rare,Prime,Weapon ATT% Increase,30,300,1.8518%,1.9607%,2.1739%
+1006,Demon Aegis,Rare,Prime,Magic ATT% Increase,30,300,1.8518%,1.9607%,2.1739%
+1007,Soul Rings,Rare,Prime,Magic ATT% Increase,30,300,1.8518%,1.9607%,2.1739%
+1008,Demon Aegis,Rare,Prime,Critical Rate +4%,30,300,1.8518%,1.9607%,2.1739%
+1009,Soul Rings,Rare,Prime,Critical Rate +4%,30,300,1.8518%,1.9607%,2.1739%
+1010,Demon Aegis,Rare,Prime,Damage% Increase,30,300,1.8518%,1.9607%,2.1739%
+1011,Soul Rings,Rare,Prime,Damage% Increase,30,300,1.8518%,1.9607%,2.1739%
+1012,Demon Aegis,Rare,Prime,All Stats Increase,30,300,3.7037%,3.9215%,4.3478%
+1013,Soul Rings,Rare,Prime,All Stats Increase,30,300,3.7037%,3.9215%,4.3478%
+1014,Demon Aegis,Rare,Prime,Chance to recover HP when attacking,30,300,5.5555%,5.8823%,2.1739%
+1015,Soul Rings,Rare,Prime,Chance to recover HP when attacking,30,300,5.5555%,5.8823%,2.1739%
+1016,Demon Aegis,Rare,Prime,Chance to recover MP when attacking,30,300,5.5555%,0%,2.1739%
+1017,Soul Rings,Rare,Prime,Chance to recover MP when attacking,30,300,5.5555%,0%,2.1739%
+1018,Demon Aegis,Rare,Prime,Chance to inflict darkness when attacking,30,300,5.5555%,5.8823%,2.1739%
+1019,Soul Rings,Rare,Prime,Chance to inflict darkness when attacking,30,300,5.5555%,5.8823%,2.1739%
+1020,Demon Aegis,Rare,Prime,Chance to inflict slow when attacking,30,300,5.5555%,5.8823%,2.1739%
+1021,Soul Rings,Rare,Prime,Chance to inflict slow when attacking,30,300,5.5555%,5.8823%,2.1739%
+1022,Demon Aegis,Rare,Prime,Chance to inflict poison when attacking,30,300,5.5555%,5.8823%,2.1739%
+1023,Soul Rings,Rare,Prime,Chance to inflict poison when attacking,30,300,5.5555%,5.8823%,2.1739%
+1024,Demon Aegis,Rare,Prime,Chance to inflict stun when attacking,30,300,5.5555%,5.8823%,2.1739%
+1025,Soul Rings,Rare,Prime,Chance to inflict stun when attacking,30,300,5.5555%,5.8823%,2.1739%
+1026,Demon Aegis,Rare,Prime,Chance to inflict seal when attacking,30,300,5.5555%,5.8823%,2.1739%
+1027,Soul Rings,Rare,Prime,Chance to inflict seal when attacking,30,300,5.5555%,5.8823%,2.1739%
+1028,Demon Aegis,Rare,Prime,Chance to inflict freeze when attacking,30,300,5.5555%,5.8823%,2.1739%
+1029,Soul Rings,Rare,Prime,Chance to inflict freeze when attacking,30,300,5.5555%,5.8823%,2.1739%
+1030,Demon Aegis,Rare,Prime,Ignores 15% of Monster's DEF when attacking,30,300,1.8518%,1.9607%,2.1739%
+1031,Soul Rings,Rare,Prime,Ignores 15% of Monster's DEF when attacking,30,300,1.8518%,1.9607%,2.1739%
+1032,Demon Aegis,Epic,Prime,STR% Increase,50,300,6.25%,6.8965%,12.1951%
+1033,Soul Rings,Epic,Prime,STR% Increase,50,300,6.25%,6.8965%,12.1951%
+1034,Demon Aegis,Epic,Prime,DEX% Increase,50,300,6.25%,6.8965%,12.1951%
+1035,Soul Rings,Epic,Prime,DEX% Increase,50,300,6.25%,6.8965%,12.1951%
+1036,Demon Aegis,Epic,Prime,INT% Increase,50,300,6.25%,6.8965%,12.1951%
+1037,Soul Rings,Epic,Prime,INT% Increase,50,300,6.25%,6.8965%,12.1951%
+1038,Demon Aegis,Epic,Prime,LUK% Increase,50,300,6.25%,6.8965%,12.1951%
+1039,Soul Rings,Epic,Prime,LUK% Increase,50,300,6.25%,6.8965%,12.1951%
+1040,Demon Aegis,Epic,Prime,MaxHP% Increase,50,300,9.375%,10.3448%,12.1951%
+1041,Soul Rings,Epic,Prime,MaxHP% Increase,50,300,9.375%,10.3448%,12.1951%
+1042,Demon Aegis,Epic,Prime,Weapon ATT% Increase,50,300,3.125%,3.4482%,4.878%
+1043,Soul Rings,Epic,Prime,Weapon ATT% Increase,50,300,3.125%,3.4482%,4.878%
+1044,Demon Aegis,Epic,Prime,Magic ATT% Increase,50,300,3.125%,3.4482%,4.878%
+1045,Soul Rings,Epic,Prime,Magic ATT% Increase,50,300,3.125%,3.4482%,4.878%
+1046,Demon Aegis,Epic,Prime,Critical Rate +8%,50,300,3.125%,3.4482%,4.878%
+1047,Soul Rings,Epic,Prime,Critical Rate +8%,50,300,3.125%,3.4482%,4.878%
+1048,Demon Aegis,Epic,Prime,Damage% Increase,50,300,3.125%,3.4482%,4.878%
+1049,Soul Rings,Epic,Prime,Damage% Increase,50,300,3.125%,3.4482%,4.878%
+1050,Demon Aegis,Epic,Prime,All Stats% Increase,50,300,3.125%,3.4482%,4.878%
+1051,Soul Rings,Epic,Prime,All Stats% Increase,50,300,3.125%,3.4482%,4.878%
+1052,Demon Aegis,Epic,Prime,Chance to recover HP when attacking,50,300,9.375%,10.3448%,4.878%
+1053,Soul Rings,Epic,Prime,Chance to recover HP when attacking,50,300,9.375%,10.3448%,4.878%
+1054,Demon Aegis,Epic,Prime,Chance to recover MP when attacking,50,300,9.375%,0%,4.878%
+1055,Soul Rings,Epic,Prime,Chance to recover MP when attacking,50,300,9.375%,0%,4.878%
+1056,Demon Aegis,Epic,Prime,Ignore 15% of Monster's DEF when attacking,50,300,3.125%,3.4482%,4.878%
+1057,Soul Rings,Epic,Prime,Ignore 15% of Monster's DEF when attacking,50,300,3.125%,3.4482%,4.878%
+1058,Demon Aegis,Epic,Prime,20% chance to ignore monster damage dealt,50,300,9.375%,10.3448%,0%
+1059,Soul Rings,Epic,Prime,20% chance to ignore monster damage dealt,50,300,9.375%,10.3448%,0%
+1062,Demon Aegis,Epic,Prime,30% chance to ignore monster damage dealt,50,300,9.375%,10.3448%,0%
+1063,Soul Rings,Epic,Prime,30% chance to ignore monster damage dealt,50,300,9.375%,10.3448%,0%
+1064,Demon Aegis,Unique,Prime,STR% Increase,100,300,9.5238%,9.5238%,9.8039%
+1065,Soul Rings,Unique,Prime,STR% Increase,100,300,9.5238%,9.5238%,9.8039%
+1066,Demon Aegis,Unique,Prime,DEX% Increase,100,300,9.5238%,9.5238%,9.8039%
+1067,Soul Rings,Unique,Prime,DEX% Increase,100,300,9.5238%,9.5238%,9.8039%
+1068,Demon Aegis,Unique,Prime,INT% Increase,100,300,9.5238%,9.5238%,9.8039%
+1069,Soul Rings,Unique,Prime,INT% Increase,100,300,9.5238%,9.5238%,9.8039%
+1070,Demon Aegis,Unique,Prime,LUK% Increase,100,300,9.5238%,9.5238%,9.8039%
+1071,Soul Rings,Unique,Prime,LUK% Increase,100,300,9.5238%,9.5238%,9.8039%
+1072,Demon Aegis,Unique,Prime,Weapon ATT% Increase,100,300,4.7619%,4.7619%,5.8823%
+1073,Soul Rings,Unique,Prime,Weapon ATT% Increase,100,300,4.7619%,4.7619%,5.8823%
+1074,Demon Aegis,Unique,Prime,Magic ATT% Increase,100,300,4.7619%,4.7619%,5.8823%
+1075,Soul Rings,Unique,Prime,Magic ATT% Increase,100,300,4.7619%,4.7619%,5.8823%
+1076,Demon Aegis,Unique,Prime,Critical Rate% Increase,100,300,4.7619%,4.7619%,7.8431%
+1077,Soul Rings,Unique,Prime,Critical Rate% Increase,100,300,4.7619%,4.7619%,7.8431%
+1078,Demon Aegis,Unique,Prime,Damage% Increase,100,300,4.7619%,4.7619%,5.8823%
+1079,Soul Rings,Unique,Prime,Damage% Increase,100,300,4.7619%,4.7619%,5.8823%
+1080,Demon Aegis,Unique,Prime,All Stats% Increase,100,300,4.7619%,4.7619%,7.8431%
+1081,Soul Rings,Unique,Prime,All Stats% Increase,100,300,4.7619%,4.7619%,7.8431%
+1082,Demon Aegis,Unique,Prime,Ignore 30% of Monster's DEF when attacking,100,300,4.7619%,4.7619%,5.8823%
+1083,Soul Rings,Unique,Prime,Ignore 30% of Monster's DEF when attacking,100,300,4.7619%,4.7619%,5.8823%
+1084,Demon Aegis,Unique,Prime,5% chance to ignore 20% of monster damage dealt,100,300,14.2857%,14.2857%,7.8431%
+1085,Soul Rings,Unique,Prime,5% chance to ignore 20% of monster damage dealt,100,300,14.2857%,14.2857%,7.8431%
+1086,Demon Aegis,Unique,Prime,5% chance to ignore 40% of monster damage dealt,100,300,14.2857%,14.2857%,7.8431%
+1087,Soul Rings,Unique,Prime,5% chance to ignore 40% of monster damage dealt,100,300,14.2857%,14.2857%,7.8431%
+1088,Demon Aegis,Unique,Prime,Damage to Boss Monsters +30%,100,300,4.7619%,4.7619%,5.8823%
+1089,Soul Rings,Unique,Prime,Damage to Boss Monsters +30%,100,300,4.7619%,4.7619%,5.8823%
+1090,Demon Aegis,Legendary,Prime,STR% Increase,100,300,6.4516%,8.3333%,8.5106%
+1091,Soul Rings,Legendary,Prime,STR% Increase,100,300,6.4516%,8.3333%,8.5106%
+1092,Demon Aegis,Legendary,Prime,DEX% Increase,100,300,6.4516%,8.3333%,8.5106%
+1093,Soul Rings,Legendary,Prime,DEX% Increase,100,300,6.4516%,8.3333%,8.5106%
+1094,Demon Aegis,Legendary,Prime,INT% Increase,100,300,6.4516%,8.3333%,8.5106%
+1095,Soul Rings,Legendary,Prime,INT% Increase,100,300,6.4516%,8.3333%,8.5106%
+1096,Demon Aegis,Legendary,Prime,LUK% Increase,100,300,6.4516%,8.3333%,8.5106%
+1097,Soul Rings,Legendary,Prime,LUK% Increase,100,300,6.4516%,8.3333%,8.5106%
+1098,Demon Aegis,Legendary,Prime,Weapon ATT% Increase,100,300,3.2258%,4.1666%,4.2553%
+1099,Soul Rings,Legendary,Prime,Weapon ATT% Increase,100,300,3.2258%,4.1666%,4.2553%
+1100,Demon Aegis,Legendary,Prime,Magic ATT% Increase,100,300,3.2258%,4.1666%,4.2553%
+1101,Soul Rings,Legendary,Prime,Magic ATT% Increase,100,300,3.2258%,4.1666%,4.2553%
+1102,Demon Aegis,Legendary,Prime,Critical Rate% Increase,100,300,3.2258%,4.1666%,4.2553%
+1103,Soul Rings,Legendary,Prime,Critical Rate% Increase,100,300,3.2258%,4.1666%,4.2553%
+1104,Demon Aegis,Legendary,Prime,Damage% Increase,100,300,3.2258%,4.1666%,4.2553%
+1105,Soul Rings,Legendary,Prime,Damage% Increase,100,300,3.2258%,4.1666%,4.2553%
+1106,Demon Aegis,Legendary,Prime,All Stats% Increase,100,300,6.4516%,8.3333%,6.3829%
+1107,Soul Rings,Legendary,Prime,All Stats% Increase,100,300,6.4516%,8.3333%,6.3829%
+1108,Demon Aegis,Legendary,Prime,Weapon ATT +1 per 10 Character Levels,100,300,9.6774%,0%,4.2553%
+1109,Soul Rings,Legendary,Prime,Weapon ATT +1 per 10 Character Levels,100,300,9.6774%,0%,4.2553%
+1110,Demon Aegis,Legendary,Prime,Magic ATT +1 per 10 Character Levels,100,300,9.6774%,0%,4.2553%
+1111,Soul Rings,Legendary,Prime,Magic ATT +1 per 10 Character Levels,100,300,9.6774%,0%,4.2553%
+1112,Demon Aegis,Legendary,Prime,Ignore 35% of Monster's DEF when attacking,100,300,3.2258%,4.1666%,4.2553%
+1113,Soul Rings,Legendary,Prime,Ignore 35% of Monster's DEF when attacking,100,300,3.2258%,4.1666%,4.2553%
+1114,Demon Aegis,Legendary,Prime,Ignore 40% of Monster's DEF when attacking,100,300,3.2258%,2.0833%,4.2553%
+1115,Soul Rings,Legendary,Prime,Ignore 40% of Monster's DEF when attacking,100,300,3.2258%,2.0833%,4.2553%
+1116,Demon Aegis,Legendary,Prime,10% chance to ignore 20% of monster damage dealt,100,300,9.6774%,12.5%,6.3829%
+1117,Soul Rings,Legendary,Prime,10% chance to ignore 20% of monster damage dealt,100,300,9.6774%,12.5%,6.3829%
+1118,Demon Aegis,Legendary,Prime,10% chance to ignore 40% of monster damage dealt,100,300,9.6774%,12.5%,6.3829%
+1119,Soul Rings,Legendary,Prime,10% chance to ignore 40% of monster damage dealt,100,300,9.6774%,12.5%,6.3829%
+1120,Demon Aegis,Legendary,Prime,Damage to Boss Monsters +30%,100,300,3.2258%,4.1666%,4.2553%
+1121,Soul Rings,Legendary,Prime,Damage to Boss Monsters +30%,100,300,3.2258%,4.1666%,4.2553%
+1122,Demon Aegis,Legendary,Prime,Damage to Boss Monsters +35%,100,300,3.2258%,4.1666%,4.2553%
+1123,Soul Rings,Legendary,Prime,Damage to Boss Monsters +35%,100,300,3.2258%,4.1666%,4.2553%
+1124,Demon Aegis,Legendary,Prime,Damage to Boss Monsters +40%,100,300,3.2258%,2.0833%,4.2553%
+1125,Soul Rings,Legendary,Prime,Damage to Boss Monsters +40%,100,300,3.2258%,2.0833%,4.2553%
+1126,Emblem,Rare,Non prime,STR Increase,0,300,12.5%,12.5%,13.6363%
+1127,Emblem,Rare,Non prime,DEX Increase,0,300,12.5%,12.5%,13.6363%
+1128,Emblem,Rare,Non prime,INT Increase,0,300,12.5%,12.5%,13.6363%
+1129,Emblem,Rare,Non prime,LUK Increase,0,300,12.5%,12.5%,13.6363%
+1130,Emblem,Rare,Non prime,MaxHP Increase,0,300,18.75%,18.75%,13.6363%
+1131,Emblem,Rare,Non prime,MaxMP Increase,0,300,18.75%,18.75%,13.6363%
+1132,Emblem,Rare,Non prime,Weapon ATT Increase,0,300,6.25%,6.25%,9.0909%
+1133,Emblem,Rare,Non prime,Magic ATT Increase,0,300,6.25%,6.25%,9.0909%
+1134,Emblem,Rare,Prime,STR Increase,30,300,3.5087%,3.5087%,6.1224%
+1135,Emblem,Rare,Prime,DEX Increase,30,300,3.5087%,3.5087%,6.1224%
+1136,Emblem,Rare,Prime,INT Increase,30,300,3.5087%,3.5087%,6.1224%
+1137,Emblem,Rare,Prime,LUK Increase,30,300,3.5087%,3.5087%,6.1224%
+1138,Emblem,Rare,Prime,MaxHP Increase,30,300,5.2631%,5.2631%,6.1224%
+1139,Emblem,Rare,Prime,MaxMP Increase,30,300,5.2631%,5.2631%,6.1224%
+1140,Emblem,Rare,Prime,Weapon ATT Increase,30,300,3.5087%,3.5087%,4.0816%
+1141,Emblem,Rare,Prime,Magic ATT Increase,30,300,3.5087%,3.5087%,4.0816%
+1142,Emblem,Rare,Prime,STR% Increase,30,300,3.5087%,3.5087%,6.1224%
+1143,Emblem,Rare,Prime,DEX% Increase,30,300,3.5087%,3.5087%,6.1224%
+1144,Emblem,Rare,Prime,INT% Increase,30,300,3.5087%,3.5087%,6.1224%
+1145,Emblem,Rare,Prime,LUK% Increase,30,300,3.5087%,3.5087%,6.1224%
+1146,Emblem,Rare,Prime,Weapon ATT% Increase,30,300,1.7543%,1.7543%,2.0408%
+1147,Emblem,Rare,Prime,Magic ATT% Increase,30,300,1.7543%,1.7543%,2.0408%
+1148,Emblem,Rare,Prime,Critical Rate +4%,30,300,1.7543%,1.7543%,2.0408%
+1149,Emblem,Rare,Prime,Damage% Increase,30,300,1.7543%,1.7543%,2.0408%
+1150,Emblem,Rare,Prime,All Stats Increase,30,300,3.5087%,3.5087%,4.0816%
+1151,Emblem,Rare,Prime,Chance to recover HP when attacking,30,300,5.2631%,5.2631%,2.0408%
+1152,Emblem,Rare,Prime,Chance to recover MP when attacking,30,300,5.2631%,5.2631%,2.0408%
+1153,Emblem,Rare,Prime,Chance to inflict darkness when attacking,30,300,5.2631%,5.2631%,2.0408%
+1154,Emblem,Rare,Prime,Chance to inflict slow when attacking,30,300,5.2631%,5.2631%,2.0408%
+1155,Emblem,Rare,Prime,Chance to inflict poison when attacking,30,300,5.2631%,5.2631%,2.0408%
+1156,Emblem,Rare,Prime,Chance to inflict stun when attacking,30,300,5.2631%,5.2631%,2.0408%
+1157,Emblem,Rare,Prime,Chance to inflict seal when attacking,30,300,5.2631%,5.2631%,2.0408%
+1158,Emblem,Rare,Prime,Chance to inflict freeze when attacking,30,300,5.2631%,5.2631%,2.0408%
+1159,Emblem,Rare,Prime,Ignores 15% of Monster's DEF when attacking,30,300,1.7543%,1.7543%,2.0408%
+1160,Emblem,Epic,Prime,STR% Increase,50,300,7.6923%,7.6923%,10.8695%
+1161,Emblem,Epic,Prime,DEX% Increase,50,300,7.6923%,7.6923%,10.8695%
+1162,Emblem,Epic,Prime,INT% Increase,50,300,7.6923%,7.6923%,10.8695%
+1163,Emblem,Epic,Prime,LUK% Increase,50,300,7.6923%,7.6923%,10.8695%
+1164,Emblem,Epic,Prime,MaxHP% Increase,50,300,11.5384%,11.5384%,10.8695%
+1165,Emblem,Epic,Prime,MaxMP% Increase,50,300,11.5384%,11.5384%,10.8695%
+1166,Emblem,Epic,Prime,Weapon ATT% Increase,50,300,3.8461%,3.8461%,4.3478%
+1167,Emblem,Epic,Prime,Magic ATT% Increase,50,300,3.8461%,3.8461%,4.3478%
+1168,Emblem,Epic,Prime,Critical Rate +8%,50,300,3.8461%,3.8461%,4.3478%
+1169,Emblem,Epic,Prime,Damage% Increase,50,300,3.8461%,3.8461%,4.3478%
+1170,Emblem,Epic,Prime,All Stats% Increase,50,300,3.8461%,3.8461%,4.3478%
+1171,Emblem,Epic,Prime,Chance to recover HP when attacking,50,300,11.5384%,11.5384%,4.3478%
+1172,Emblem,Epic,Prime,Chance to recover MP when attacking,50,300,11.5384%,11.5384%,4.3478%
+1173,Emblem,Epic,Prime,Ignore 15% of Monster's DEF when attacking,50,300,3.8461%,3.8461%,4.3478%
+1174,Emblem,Unique,Prime,STR% Increase,50,300,14.2857%,14.2857%,12.5%
+1175,Emblem,Unique,Prime,DEX% Increase,50,300,14.2857%,14.2857%,12.5%
+1176,Emblem,Unique,Prime,INT% Increase,50,300,14.2857%,14.2857%,12.5%
+1177,Emblem,Unique,Prime,LUK% Increase,50,300,14.2857%,14.2857%,12.5%
+1178,Emblem,Unique,Prime,Weapon ATT% Increase,50,300,7.1428%,7.1428%,7.5%
+1179,Emblem,Unique,Prime,Magic ATT% Increase,50,300,7.1428%,7.1428%,7.5%
+1180,Emblem,Unique,Prime,Critical Rate% Increase,50,300,7.1428%,7.1428%,10%
+1181,Emblem,Unique,Prime,Damage% Increase,50,300,7.1428%,7.1428%,7.5%
+1182,Emblem,Unique,Prime,All Stats% Increase,50,300,7.1428%,7.1428%,10%
+1183,Emblem,Unique,Prime,Ignore 30% of Monster's DEF when attacking,50,300,7.1428%,7.1428%,7.5%
+1184,Emblem,Legendary,Prime,STR% Increase,100,300,9.0909%,12.9032%,11.4285%
+1185,Emblem,Legendary,Prime,DEX% Increase,100,300,9.0909%,12.9032%,11.4285%
+1186,Emblem,Legendary,Prime,INT% Increase,100,300,9.0909%,12.9032%,11.4285%
+1187,Emblem,Legendary,Prime,LUK% Increase,100,300,9.0909%,12.9032%,11.4285%
+1188,Emblem,Legendary,Prime,Weapon ATT% Increase,100,300,4.5454%,6.4516%,5.7142%
+1189,Emblem,Legendary,Prime,Magic ATT% Increase,100,300,4.5454%,6.4516%,5.7142%
+1190,Emblem,Legendary,Prime,Critical Rate% Increase,100,300,4.5454%,6.4516%,5.7142%
+1191,Emblem,Legendary,Prime,Damage% Increase,100,300,4.5454%,6.4516%,5.7142%
+1192,Emblem,Legendary,Prime,All Stats% Increase,100,300,9.0909%,12.9032%,8.5714%
+1193,Emblem,Legendary,Prime,Weapon ATT +1 per 10 Character Levels,100,300,13.6363%,0%,5.7142%
+1194,Emblem,Legendary,Prime,Magic ATT +1 per 10 Character Levels,100,300,13.6363%,0%,5.7142%
+1195,Emblem,Legendary,Prime,Ignore 35% of Monster's DEF when attacking,100,300,4.5454%,6.4516%,5.7142%
+1196,Emblem,Legendary,Prime,Ignore 40% of Monster's DEF when attacking,100,300,4.5454%,3.2258%,5.7142%
+1197,Mechanical Heart,Rare,Non prime,STR Increase,0,300,11.7647%,11.7647%,14.2857%
+1198,Badge,Rare,Non prime,STR Increase,0,300,11.7647%,11.7647%,14.2857%
+1199,Mechanical Heart,Rare,Non prime,DEX Increase,0,300,11.7647%,11.7647%,14.2857%
+1200,Badge,Rare,Non prime,DEX Increase,0,300,11.7647%,11.7647%,14.2857%
+1201,Mechanical Heart,Rare,Non prime,INT Increase,0,300,11.7647%,11.7647%,14.2857%
+1202,Badge,Rare,Non prime,INT Increase,0,300,11.7647%,11.7647%,14.2857%
+1203,Mechanical Heart,Rare,Non prime,LUK Increase,0,300,11.7647%,11.7647%,14.2857%
+1204,Badge,Rare,Non prime,LUK Increase,0,300,11.7647%,11.7647%,14.2857%
+1205,Mechanical Heart,Rare,Non prime,MaxHP Increase,0,300,17.647%,17.647%,14.2857%
+1206,Badge,Rare,Non prime,MaxHP Increase,0,300,17.647%,17.647%,14.2857%
+1207,Mechanical Heart,Rare,Non prime,MaxMP Increase,0,300,17.647%,17.647%,14.2857%
+1208,Badge,Rare,Non prime,MaxMP Increase,0,300,17.647%,17.647%,14.2857%
+1209,Mechanical Heart,Rare,Non prime,DEF Increase,0,300,17.647%,17.647%,14.2857%
+1210,Badge,Rare,Non prime,DEF Increase,0,300,17.647%,17.647%,14.2857%
+1211,Mechanical Heart,Rare,Prime,STR Increase,0,300,5.5555%,5.5555%,7.5%
+1212,Badge,Rare,Prime,STR Increase,0,300,5.5555%,5.5555%,7.5%
+1213,Mechanical Heart,Rare,Prime,DEX Increase,0,300,5.5555%,5.5555%,7.5%
+1214,Badge,Rare,Prime,DEX Increase,0,300,5.5555%,5.5555%,7.5%
+1215,Mechanical Heart,Rare,Prime,INT Increase,0,300,5.5555%,5.5555%,7.5%
+1216,Badge,Rare,Prime,INT Increase,0,300,5.5555%,5.5555%,7.5%
+1217,Mechanical Heart,Rare,Prime,LUK Increase,0,300,5.5555%,5.5555%,7.5%
+1218,Badge,Rare,Prime,LUK Increase,0,300,5.5555%,5.5555%,7.5%
+1219,Mechanical Heart,Rare,Prime,MaxHP Increase,0,300,8.3333%,8.3333%,7.5%
+1220,Badge,Rare,Prime,MaxHP Increase,0,300,8.3333%,8.3333%,7.5%
+1221,Mechanical Heart,Rare,Prime,MaxMP Increase,0,300,8.3333%,8.3333%,7.5%
+1222,Badge,Rare,Prime,MaxMP Increase,0,300,8.3333%,8.3333%,7.5%
+1223,Mechanical Heart,Rare,Prime,DEF Increase,0,300,8.3333%,8.3333%,5%
+1224,Badge,Rare,Prime,DEF Increase,0,300,8.3333%,8.3333%,5%
+1225,Mechanical Heart,Rare,Prime,STR% Increase,0,300,5.5555%,5.5555%,7.5%
+1226,Badge,Rare,Prime,STR% Increase,0,300,5.5555%,5.5555%,7.5%
+1227,Mechanical Heart,Rare,Prime,DEX% Increase,0,300,5.5555%,5.5555%,7.5%
+1228,Badge,Rare,Prime,DEX% Increase,0,300,5.5555%,5.5555%,7.5%
+1229,Mechanical Heart,Rare,Prime,INT% Increase,0,300,5.5555%,5.5555%,7.5%
+1230,Badge,Rare,Prime,INT% Increase,0,300,5.5555%,5.5555%,7.5%
+1231,Mechanical Heart,Rare,Prime,LUK% Increase,0,300,5.5555%,5.5555%,7.5%
+1232,Badge,Rare,Prime,LUK% Increase,0,300,5.5555%,5.5555%,7.5%
+1233,Mechanical Heart,Rare,Prime,MaxHP% Increase,0,300,8.3333%,8.3333%,5%
+1234,Badge,Rare,Prime,MaxHP% Increase,0,300,8.3333%,8.3333%,5%
+1235,Mechanical Heart,Rare,Prime,MaxMP% Increase,0,300,8.3333%,8.3333%,5%
+1236,Badge,Rare,Prime,MaxMP% Increase,0,300,8.3333%,8.3333%,5%
+1237,Mechanical Heart,Rare,Prime,DEF% Increase,0,300,8.3333%,8.3333%,5%
+1238,Badge,Rare,Prime,DEF% Increase,0,300,8.3333%,8.3333%,5%
+1239,Mechanical Heart,Rare,Prime,All Stats Increase,0,300,5.5555%,5.5555%,5%
+1240,Badge,Rare,Prime,All Stats Increase,0,300,5.5555%,5.5555%,5%
+1241,Mechanical Heart,Epic,Prime,STR% Increase,0,300,11.1111%,11.1111%,14.2857%
+1242,Badge,Epic,Prime,STR% Increase,0,300,11.1111%,11.1111%,14.2857%
+1243,Mechanical Heart,Epic,Prime,DEX% Increase,0,300,11.1111%,11.1111%,14.2857%
+1244,Badge,Epic,Prime,DEX% Increase,0,300,11.1111%,11.1111%,14.2857%
+1245,Mechanical Heart,Epic,Prime,INT% Increase,0,300,11.1111%,11.1111%,14.2857%
+1246,Badge,Epic,Prime,INT% Increase,0,300,11.1111%,11.1111%,14.2857%
+1247,Mechanical Heart,Epic,Prime,LUK% Increase,0,300,11.1111%,11.1111%,14.2857%
+1248,Badge,Epic,Prime,LUK% Increase,0,300,11.1111%,11.1111%,14.2857%
+1249,Mechanical Heart,Epic,Prime,MaxHP% Increase,0,300,16.6666%,16.6666%,14.2857%
+1250,Badge,Epic,Prime,MaxHP% Increase,0,300,16.6666%,16.6666%,14.2857%
+1251,Mechanical Heart,Epic,Prime,MaxMP% Increase,0,300,16.6666%,16.6666%,14.2857%
+1252,Badge,Epic,Prime,MaxMP% Increase,0,300,16.6666%,16.6666%,14.2857%
+1253,Mechanical Heart,Epic,Prime,DEF% Increase,0,300,16.6666%,16.6666%,8.5714%
+1254,Badge,Epic,Prime,DEF% Increase,0,300,16.6666%,16.6666%,8.5714%
+1255,Mechanical Heart,Epic,Prime,All Stats% Increase,0,300,5.5555%,5.5555%,5.7142%
+1256,Badge,Epic,Prime,All Stats% Increase,0,300,5.5555%,5.5555%,5.7142%
+1257,Mechanical Heart,Unique,Prime,STR% Increase,0,300,9.5238%,9.5238%,11.3636%
+1258,Badge,Unique,Prime,STR% Increase,0,300,9.5238%,9.5238%,11.3636%
+1259,Mechanical Heart,Unique,Prime,DEX% Increase,0,300,9.5238%,9.5238%,11.3636%
+1260,Badge,Unique,Prime,DEX% Increase,0,300,9.5238%,9.5238%,11.3636%
+1261,Mechanical Heart,Unique,Prime,INT% Increase,0,300,9.5238%,9.5238%,11.3636%
+1262,Badge,Unique,Prime,INT% Increase,0,300,9.5238%,9.5238%,11.3636%
+1263,Mechanical Heart,Unique,Prime,LUK% Increase,0,300,9.5238%,9.5238%,11.3636%
+1264,Badge,Unique,Prime,LUK% Increase,0,300,9.5238%,9.5238%,11.3636%
+1265,Mechanical Heart,Unique,Prime,MaxHP% Increase,0,300,14.2857%,14.2857%,13.6363%
+1266,Badge,Unique,Prime,MaxHP% Increase,0,300,14.2857%,14.2857%,13.6363%
+1267,Mechanical Heart,Unique,Prime,MaxMP% Increase,0,300,14.2857%,14.2857%,13.6363%
+1268,Badge,Unique,Prime,MaxMP% Increase,0,300,14.2857%,14.2857%,13.6363%
+1269,Mechanical Heart,Unique,Prime,DEF% Increase,0,300,14.2857%,14.2857%,9.0909%
+1270,Badge,Unique,Prime,DEF% Increase,0,300,14.2857%,14.2857%,9.0909%
+1271,Mechanical Heart,Unique,Prime,All Stats% Increase,0,300,4.7619%,4.7619%,9.0909%
+1272,Badge,Unique,Prime,All Stats% Increase,0,300,4.7619%,4.7619%,9.0909%
+1273,Mechanical Heart,Unique,Prime,Skills and Potion HP Recovery% Increase,0,300,14.2857%,14.2857%,9.0909%
+1274,Badge,Unique,Prime,Skills and Potion HP Recovery% Increase,0,300,14.2857%,14.2857%,9.0909%
+1275,Mechanical Heart,Legendary,Prime,STR% Increase,0,300,9.0909%,9.0909%,12.9032%
+1276,Badge,Legendary,Prime,STR% Increase,0,300,9.0909%,9.0909%,12.9032%
+1277,Mechanical Heart,Legendary,Prime,DEX% Increase,0,300,9.0909%,9.0909%,12.9032%
+1278,Badge,Legendary,Prime,DEX% Increase,0,300,9.0909%,9.0909%,12.9032%
+1279,Mechanical Heart,Legendary,Prime,INT% Increase,0,300,9.0909%,9.0909%,12.9032%
+1280,Badge,Legendary,Prime,INT% Increase,0,300,9.0909%,9.0909%,12.9032%
+1281,Mechanical Heart,Legendary,Prime,LUK% Increase,0,300,9.0909%,9.0909%,12.9032%
+1282,Badge,Legendary,Prime,LUK% Increase,0,300,9.0909%,9.0909%,12.9032%
+1283,Mechanical Heart,Legendary,Prime,MaxHP% Increase,0,300,13.6363%,13.6363%,12.9032%
+1284,Badge,Legendary,Prime,MaxHP% Increase,0,300,13.6363%,13.6363%,12.9032%
+1285,Mechanical Heart,Legendary,Prime,MaxMP% Increase,0,300,13.6363%,13.6363%,12.9032%
+1286,Badge,Legendary,Prime,MaxMP% Increase,0,300,13.6363%,13.6363%,12.9032%
+1287,Mechanical Heart,Legendary,Prime,DEF% Increase,0,300,13.6363%,13.6363%,12.9032%
+1288,Badge,Legendary,Prime,DEF% Increase,0,300,13.6363%,13.6363%,12.9032%
+1289,Mechanical Heart,Legendary,Prime,All Stats% Increase,0,300,9.0909%,9.0909%,9.6774%
+1290,Badge,Legendary,Prime,All Stats% Increase,0,300,9.0909%,9.0909%,9.6774%
+1291,Mechanical Heart,Legendary,Prime,Skills and Potion HP Recovery% Increase,0,300,13.6363%,13.6363%,0%
+1292,Badge,Legendary,Prime,Skills and Potion HP Recovery% Increase,0,300,13.6363%,13.6363%,0%

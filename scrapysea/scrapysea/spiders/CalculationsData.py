@@ -1,4 +1,5 @@
 
+from tempfile import tempdir
 import traceback
 
 from pandas import DataFrame
@@ -48,14 +49,32 @@ class PotentialSpider(scrapy.Spider):
             CDF = pd.concat(self.CubeRates["Potential"], ignore_index=True)
             BPDF = pd.concat(self.PotentialTable["Bonus"], ignore_index=True)
             BCDF = pd.concat(self.CubeRates["Bonus"], ignore_index=True)            
+
+            #CLean Potential DF
             PDF = PDF.fillna(0)
+            PDF.drop(['Duration'], axis=1, inplace=True)
+            PDF[['MinLvl', 'MaxLvl','Chance', 'Tick']] = PDF[['MinLvl', 'MaxLvl','Chance', 'Tick']].astype(int)
+            PDF.drop_duplicates(keep="first", inplace=True)
+
+            #Clean Potential Cube Rates 
             CDF = CDF.fillna(0)
+            CDF.drop_duplicates(keep="first", inplace=True)
+
+            #Clean Bonus Potential DF
             BPDF = BPDF.fillna(0)
-            BCDF = BCDF.fillna(0)
+            BPDF[['MinLvl', 'MaxLvl','Chance']] = BPDF[['MinLvl', 'MaxLvl','Chance']].astype(int)
+            BPDF.drop_duplicates(keep="first", inplace=True)
+
+            #Clean Bonus Potential Cube Rates
+            BCDF = BCDF.fillna(0)      
+            BCDF.drop_duplicates(keep="first", inplace=True)
 
 
+
+            #Upload DF to CSV
             PDF.to_csv( "./DefaultData/CalculationData/PotentialData.csv")
             CDF.to_csv( "./DefaultData/CalculationData/PotentialCubeRatesData.csv")
+
             BPDF.to_csv("./DefaultData/CalculationData/BonusData.csv")
             BCDF.to_csv("./DefaultData/calculationData/BonusCubeRatesData.csv")
         except:
@@ -66,7 +85,6 @@ class PotentialSpider(scrapy.Spider):
    
     def Execute(self, PotentialGrades):
         FromDiv = False
-        StatIncrease = None
         for PTableGrade in PotentialGrades:
             try:
                 divRefPoint = PTableGrade.xpath("./ancestor::div[contains(@class, 'collapsible')]")
@@ -82,7 +100,6 @@ class PotentialSpider(scrapy.Spider):
                 Prime = GradeT[1].strip(')').replace('-', ' ')
                 PDict = {
                     "Slot" : EList,
-                    "Type" : PotentialType,
                     "Grade" : Grade,
                     "Prime" : Prime
                 }
@@ -95,10 +112,11 @@ class PotentialSpider(scrapy.Spider):
                         continue
                     if childName == "h5":
                         DisplayStat = child.xpath(".//span[contains(@class, 'headline')] /text()").get().encode("ascii", "ignore").decode()
-                        StatIncrease = DisplayStat
+                        
                         CDict["DisplayStat"] = DisplayStat
-                        CDict["Stat"] = StatIncrease
+                        #CDict['Stat'] = DisplayStat
                         CDict = self.reformatDisplayStat(CDict)
+                        PDict["DisplayStat"] = CDict["DisplayStat"]
                         continue
                     if childName == 'p':
                         ptext = child.xpath("./text()").get()
@@ -107,12 +125,12 @@ class PotentialSpider(scrapy.Spider):
                         l = ptext.split(":")[-1].strip().split(' ')[0]
                         CDict["MinLvl"] = int(l)
                         CDict["MaxLvl"] = self.maxLvl
-                        CStat = CDict['Stat']
+                        CStat = CDict['DisplayStat']
                         if not if_In_String(CStat, 'Increase') and if_In_String(CStat, '%'):
                             fv = CStat.split('%')[0].strip().split(' ')[-1]
                             CStat = ' '.join([value.strip() for value in replaceN(CStat, [f"{fv}%", "of", "+"]).split(' ') if value != ''])
                             CDict['Stat value'] = int(fv)
-                            CDict['Stat'] = CStat.replace("%", "").strip()
+                            #CDict['Stat'] = CStat.replace("%", "").strip()
                             
                         continue
 
@@ -149,14 +167,16 @@ class PotentialSpider(scrapy.Spider):
                                     for s in CDict['Slot']:
                                         TempD = DeepCopyDict(CDict)
                                         TempD["Slot"] = s
-                                        Clist.append(DataFrame(TempD, index=[0]))
-                                        PLogger.info(f"Grabbing {s}: {CDict['DisplayStat']} => {CDict['Stat']}")
+                                        NTempD = self.ReorgStatValue(TempD)
+                                        Clist.append(DataFrame(NTempD, index=[0]))
+                                        #PLogger.info(f"Grabbing {s}: {CDict['DisplayStat']} => {CDict['Stat']}")
+                                        #PLogger.info(f"Grabbing {s}: {CDict['DisplayStat']}")
                             
                             CDict = DeepCopyDict(PDict)
                             CDict["ChanceTable"] = self.HandleTables(child)
                             ChanceL.append(self.ConsolidateTable(CDict, "ChanceTable"))
 
-                            PLogger.info(f"Adding Chance for {EList}")
+                            #PLogger.info(f"Adding Chance for {EList}: {CDict['DisplayStat']}")
                             #Resets CDict
                             CDict = DeepCopyDict(PDict)
                             FromDiv = False
@@ -190,27 +210,17 @@ class PotentialSpider(scrapy.Spider):
                     ctext = replaceN(ctext, ['seconds'])
                     if if_In_String(ctext, '('):
                         ctext = ctext.split("(")[0]
-                    PDcopy[v] = ctext.strip(" +%\n")
+                    PDcopy[v] = ctext.strip(" +\n")
                 pass
             TableResult.append(PDcopy)
         return TableResult
   
-    def HandleRates(self, context, PDict):
-        header =  removeB(context.xpath(".//th /text()").getall())
-        
-        for i, j in enumerate(header):
-            v = context.xpath(f".//td[{i+1}] /text()").get()
-            v = v.split("(")[0]
-            PDict[j] = v.strip(' +%\n')
-        
-        Result = DataFrame(PDict, index=[0])
-        print(Result)
-        return Result
+
 
     def reformatDisplayStat(self, PDict):
         try:
             DS = PDict['DisplayStat']
-            SI = PDict['Stat']
+            SI = PDict['DisplayStat']
             ToRemove = {
                 'chance to': "Chance",
                 "second" : "Duration"
@@ -235,9 +245,9 @@ class PotentialSpider(scrapy.Spider):
             SI = replaceN(SI, ['for']).strip()
             SI = SI[0].upper() + SI[1:]
             PDict["StatT"] = "Perc" if if_In_String(SI, "%") else "Flat"
-            PDict['Stat'] = SI.strip()
+            #PDict['Stat'] = SI.strip()
         except Exception as E:
-            PLogger.info(traceback.format_exc())        
+            PLogger.critical(traceback.format_exc())        
         return PDict
     
     def formatEquipSlots(self, EquipStr):
@@ -268,15 +278,41 @@ class PotentialSpider(scrapy.Spider):
                         TempD['Slot'] = s
                         TempD = self.UpdateTableDict(TempD, row)
                         del TempD[key]
+                        if key == "StatTable":
+                            TempD = self.ReorgStatValue(TempD)
+                        
+                        if "Stat value" in TempD.keys() and "StatT" in TempD.keys():
+                            if if_In_String(TempD["Stat value"], "%"):
+                                TempD['Stat value'] = replaceN(TempD["Stat value"],'%').strip()
+                                if TempD['StatT'] != "Perc":
+                                    TempD['StatT'] = "Perc"
+                        
                         StatLists.append(DataFrame(TempD, index=[0]))   
-                    try:
-                        PLogger.info(f"Grabbing {s}: {Base['DisplayStat']} => {Base['Stat']}")
-                    except KeyError:
-                        continue
+                try:
+                    #PLogger.info(f"Grabbing {s}: {Base['DisplayStat']} => {Base['Stat']}")
+                    PLogger.info(f"Grabbing {Base['Slot']} - {key} for : {Base['DisplayStat']}")
+                except KeyError:
+                    pass
             R = pd.concat(StatLists, ignore_index=True)
             return R
         except Exception as E:
             PLogger.critical(traceback.format_exc())
+
+    def ReorgStatValue(self, TempD):
+        KeyToD = []
+        if "Stat value" not in TempD.keys() or TempD["Stat value"] == 0:
+            IgnoreCol = ['Slot', 'Grade', 'Prime', 'DisplayStat', 'StatT', 'MinLvl', 'MaxLvl','Chance','Tick', 'CubeType']
+            for k in list(TempD.keys()):
+                if k in IgnoreCol:
+                    continue
+                if TempD[k] != 0:
+                    TempD["Stat value"] = TempD[k]
+                    if k not in KeyToD:
+                        KeyToD.append(k)
+            for d in KeyToD:
+                    del TempD[d]
+        return TempD
+    
 
 class StarforceSpider(scrapy.Spider):
     name = "StarforceSpider"
