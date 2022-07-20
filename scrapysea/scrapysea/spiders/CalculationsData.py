@@ -216,7 +216,6 @@ class PotentialSpider(scrapy.Spider):
         return TableResult
   
 
-
     def reformatDisplayStat(self, PDict):
         try:
             DS = PDict['DisplayStat']
@@ -342,7 +341,10 @@ class StarforceSpider(scrapy.Spider):
         SuccessDF = pd.concat(self.FinalDict["SuccessRates"],ignore_index=True)
         NormalDF = self.FinalDict["Normal_Equips"].fillna(0)
         SuperiorDF = self.FinalDict['Superior_Items'].fillna(0)
-
+        
+        NormalDF = NormalDF.astype(int)
+        SuperiorDF = SuperiorDF.astype(int)
+        
         StarLimitDF.to_csv( "./DefaultData/CalculationData/StarLimit.csv")
         SuccessDF.to_csv( "./DefaultData/CalculationData/SFSuccessRates.csv")
         NormalDF.to_csv( "./DefaultData/CalculationData/NormalEquipSF.csv")
