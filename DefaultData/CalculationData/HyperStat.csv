@@ -1,0 +1,251 @@
+,StatIncrease,Hyper Stat Level,Overall Effect,Effect Increase from previous level
+0,STR,1,30,30
+1,STR,2,60,30
+2,STR,3,90,30
+3,STR,4,120,30
+4,STR,5,150,30
+5,STR,6,180,30
+6,STR,7,210,30
+7,STR,8,240,30
+8,STR,9,270,30
+9,STR,10,300,30
+10,STR,11,330,30
+11,STR,12,360,30
+12,STR,13,390,30
+13,STR,14,420,30
+14,STR,15,450,30
+15,DEX,1,30,30
+16,DEX,2,60,30
+17,DEX,3,90,30
+18,DEX,4,120,30
+19,DEX,5,150,30
+20,DEX,6,180,30
+21,DEX,7,210,30
+22,DEX,8,240,30
+23,DEX,9,270,30
+24,DEX,10,300,30
+25,DEX,11,330,30
+26,DEX,12,360,30
+27,DEX,13,390,30
+28,DEX,14,420,30
+29,DEX,15,450,30
+30,INT,1,30,30
+31,INT,2,60,30
+32,INT,3,90,30
+33,INT,4,120,30
+34,INT,5,150,30
+35,INT,6,180,30
+36,INT,7,210,30
+37,INT,8,240,30
+38,INT,9,270,30
+39,INT,10,300,30
+40,INT,11,330,30
+41,INT,12,360,30
+42,INT,13,390,30
+43,INT,14,420,30
+44,INT,15,450,30
+45,LUK,1,30,30
+46,LUK,2,60,30
+47,LUK,3,90,30
+48,LUK,4,120,30
+49,LUK,5,150,30
+50,LUK,6,180,30
+51,LUK,7,210,30
+52,LUK,8,240,30
+53,LUK,9,270,30
+54,LUK,10,300,30
+55,LUK,11,330,30
+56,LUK,12,360,30
+57,LUK,13,390,30
+58,LUK,14,420,30
+59,LUK,15,450,30
+60,MaxHP,1,2,2
+61,MaxHP,2,4,2
+62,MaxHP,3,6,2
+63,MaxHP,4,8,2
+64,MaxHP,5,10,2
+65,MaxHP,6,12,2
+66,MaxHP,7,14,2
+67,MaxHP,8,16,2
+68,MaxHP,9,18,2
+69,MaxHP,10,20,2
+70,MaxHP,11,22,2
+71,MaxHP,12,24,2
+72,MaxHP,13,26,2
+73,MaxHP,14,28,2
+74,MaxHP,15,30,2
+75,MaxMP,1,2,2
+76,MaxMP,2,4,2
+77,MaxMP,3,6,2
+78,MaxMP,4,8,2
+79,MaxMP,5,10,2
+80,MaxMP,6,12,2
+81,MaxMP,7,14,2
+82,MaxMP,8,16,2
+83,MaxMP,9,18,2
+84,MaxMP,10,20,2
+85,MaxMP,11,22,2
+86,MaxMP,12,24,2
+87,MaxMP,13,26,2
+88,MaxMP,14,28,2
+89,MaxMP,15,30,2
+90,Maximum DF/TF/PP,1,10,10
+91,Maximum DF/TF/PP,2,20,10
+92,Maximum DF/TF/PP,3,30,10
+93,Maximum DF/TF/PP,4,40,10
+94,Maximum DF/TF/PP,5,50,10
+95,Maximum DF/TF/PP,6,60,10
+96,Maximum DF/TF/PP,7,70,10
+97,Maximum DF/TF/PP,8,80,10
+98,Maximum DF/TF/PP,9,90,10
+99,Maximum DF/TF/PP,10,100,10
+100,Critical Rate,1,1,1
+101,Critical Rate,2,2,1
+102,Critical Rate,3,3,1
+103,Critical Rate,4,4,1
+104,Critical Rate,5,5,1
+105,Critical Rate,6,7,2
+106,Critical Rate,7,9,2
+107,Critical Rate,8,11,2
+108,Critical Rate,9,13,2
+109,Critical Rate,10,15,2
+110,Critical Rate,11,17,2
+111,Critical Rate,12,19,2
+112,Critical Rate,13,21,2
+113,Critical Rate,14,23,2
+114,Critical Rate,15,25,2
+115,Critical Damage,1,1,1
+116,Critical Damage,2,2,1
+117,Critical Damage,3,3,1
+118,Critical Damage,4,4,1
+119,Critical Damage,5,5,1
+120,Critical Damage,6,6,1
+121,Critical Damage,7,7,1
+122,Critical Damage,8,8,1
+123,Critical Damage,9,9,1
+124,Critical Damage,10,10,1
+125,Critical Damage,11,11,1
+126,Critical Damage,12,12,1
+127,Critical Damage,13,13,1
+128,Critical Damage,14,14,1
+129,Critical Damage,15,15,1
+130,Ignore DEF,1,3,3
+131,Ignore DEF,2,6,3.0927
+132,Ignore DEF,3,9,3.1914
+133,Ignore DEF,4,12,3.2967
+134,Ignore DEF,5,15,3.4090
+135,Ignore DEF,6,18,3.5294
+136,Ignore DEF,7,21,3.6585
+137,Ignore DEF,8,24,3.7974
+138,Ignore DEF,9,27,3.9473
+139,Ignore DEF,10,30,4.1095
+140,Ignore DEF,11,33,4.2857
+141,Ignore DEF,12,36,4.4776
+142,Ignore DEF,13,39,4.6875
+143,Ignore DEF,14,42,4.9180
+144,Ignore DEF,15,45,5.1724
+145,Damage to Boss Monsters,1,3,3
+146,Damage to Boss Monsters,2,6,3
+147,Damage to Boss Monsters,3,9,3
+148,Damage to Boss Monsters,4,12,3
+149,Damage to Boss Monsters,5,15,3
+150,Damage to Boss Monsters,6,19,4
+151,Damage to Boss Monsters,7,23,4
+152,Damage to Boss Monsters,8,27,4
+153,Damage to Boss Monsters,9,31,4
+154,Damage to Boss Monsters,10,35,4
+155,Damage to Boss Monsters,11,39,4
+156,Damage to Boss Monsters,12,43,4
+157,Damage to Boss Monsters,13,47,4
+158,Damage to Boss Monsters,14,51,4
+159,Damage to Boss Monsters,15,55,4
+160,Damage to Normal Monsters,1,3,3
+161,Damage to Normal Monsters,2,6,3
+162,Damage to Normal Monsters,3,9,3
+163,Damage to Normal Monsters,4,12,3
+164,Damage to Normal Monsters,5,15,3
+165,Damage to Normal Monsters,6,19,4
+166,Damage to Normal Monsters,7,23,4
+167,Damage to Normal Monsters,8,27,4
+168,Damage to Normal Monsters,9,31,4
+169,Damage to Normal Monsters,10,35,4
+170,Damage to Normal Monsters,11,39,4
+171,Damage to Normal Monsters,12,43,4
+172,Damage to Normal Monsters,13,47,4
+173,Damage to Normal Monsters,14,51,4
+174,Damage to Normal Monsters,15,55,4
+175,Damage,1,3,3
+176,Damage,2,6,3
+177,Damage,3,9,3
+178,Damage,4,12,3
+179,Damage,5,15,3
+180,Damage,6,18,3
+181,Damage,7,21,3
+182,Damage,8,24,3
+183,Damage,9,27,3
+184,Damage,10,30,3
+185,Damage,11,33,3
+186,Damage,12,36,3
+187,Damage,13,39,3
+188,Damage,14,42,3
+189,Damage,15,45,3
+190,Abnormal Status Resistance,1,1,1
+191,Abnormal Status Resistance,2,2,1
+192,Abnormal Status Resistance,3,3,1
+193,Abnormal Status Resistance,4,4,1
+194,Abnormal Status Resistance,5,5,1
+195,Abnormal Status Resistance,6,7,2
+196,Abnormal Status Resistance,7,9,2
+197,Abnormal Status Resistance,8,11,2
+198,Abnormal Status Resistance,9,13,2
+199,Abnormal Status Resistance,10,15,2
+200,Abnormal Status Resistance,11,17,2
+201,Abnormal Status Resistance,12,19,2
+202,Abnormal Status Resistance,13,21,2
+203,Abnormal Status Resistance,14,23,2
+204,Abnormal Status Resistance,15,25,2
+205,ATT,1,3,3
+206,ATT,2,6,3
+207,ATT,3,9,3
+208,ATT,4,12,3
+209,ATT,5,15,3
+210,ATT,6,18,3
+211,ATT,7,21,3
+212,ATT,8,24,3
+213,ATT,9,27,3
+214,ATT,10,30,3
+215,ATT,11,33,3
+216,ATT,12,36,3
+217,ATT,13,39,3
+218,ATT,14,42,3
+219,ATT,15,45,3
+220,Bonus EXP,1,0.5,0.5
+221,Bonus EXP,2,1,0.5
+222,Bonus EXP,3,1.5,0.5
+223,Bonus EXP,4,2,0.5
+224,Bonus EXP,5,2.5,0.5
+225,Bonus EXP,6,3,0.5
+226,Bonus EXP,7,3.5,0.5
+227,Bonus EXP,8,4,0.5
+228,Bonus EXP,9,4.5,0.5
+229,Bonus EXP,10,5,0.5
+230,Bonus EXP,11,6,1
+231,Bonus EXP,12,7,1
+232,Bonus EXP,13,8,1
+233,Bonus EXP,14,9,1
+234,Bonus EXP,15,10,1
+235,Arcane Force,1,5,5
+236,Arcane Force,2,10,5
+237,Arcane Force,3,15,5
+238,Arcane Force,4,20,5
+239,Arcane Force,5,25,5
+240,Arcane Force,6,30,5
+241,Arcane Force,7,35,5
+242,Arcane Force,8,40,5
+243,Arcane Force,9,45,5
+244,Arcane Force,10,50,5
+245,Arcane Force,11,60,10
+246,Arcane Force,12,70,10
+247,Arcane Force,13,80,10
+248,Arcane Force,14,90,10
+249,Arcane Force,15,100,10
