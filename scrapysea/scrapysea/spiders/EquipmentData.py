@@ -57,7 +57,7 @@ class TotalEquipmentSpider(scrapy.Spider):
         "Eye Accessory" : 100, 
         "Ring" : 30, "Pendant" : 75, 
         "Earrings" : 75, 
-        "Belt" : 100, 
+        "Belt" : 140, 
         "Pocket Item" : 0, 
         "Android": 0,"Android Heart":30,
         "Emblem" : 100, "Badge": 100, "Medal": 0,
@@ -317,11 +317,13 @@ class TotalEquipmentSpider(scrapy.Spider):
                         "Level" : clvl 
                     }
                     for i, col in enumerate(HTitle):
-                        Ctd = self.removeBRN(row.xpath(f'.//td[{i+2}] /text()').getall())
+                        Ctd = self.removeBRN(row.xpath(f'.//td[{i+1}] /text()').getall())
                         if if_In_String(col.lower(), ['requirements', 'effects']):
                             ItemDict.update(self.RetrieveByTDContent(Ctd, ItemDict))
                         else:
                             try:
+                                if if_In_String(col.lower(),['appearance', 'functions', '[']):
+                                    continue
                                 ItemDict[col] = " ".join(Ctd)
                             except:
                                 continue
@@ -374,7 +376,7 @@ class TotalEquipmentSpider(scrapy.Spider):
                 try:
                     if "(" in value:
                         value = value.split('(')[0]
-                    nvalue = value.strip('+%').rstrip(' ')
+                    nvalue = value.strip('+').rstrip(' ')
                     if "REQ" in key:
                         if "Level" in key:
                             ItemDict["Level"] = nvalue
@@ -385,6 +387,8 @@ class TotalEquipmentSpider(scrapy.Spider):
                                 ItemDict['ClassName'] = nvalue
                         else:
                             continue
+                    if ("HP" in key or "MP" in key) and '%' in nvalue:
+                        ItemDict["Perc " + key] = nvalue.strip('%')
                     else:
                         ItemDict[key] = replaceN(nvalue,",")
                 except:
@@ -628,7 +632,7 @@ def CleanAccessoryDF(CDF):
     ColumnOrder = [
     "EquipSlot","ClassName","EquipName","Equipment Set",
     "Category",
-    "Level","STR","DEX","INT","LUK","All Stats","Max HP","Max MP","Defense",
+    "Level","STR","DEX","INT","LUK","Max HP","Max MP","Perc Max HP", "Perc Max MP","Defense",
     "Weapon Attack","Magic Attack","Ignored Enemy Defense",
     "Movement Speed","Jump",
     "Number of Upgrades",
@@ -655,7 +659,6 @@ def CleanAccessoryDF(CDF):
     return CDF
 
 def CleanAndroidDF(CDF):
-    CDF.drop(['Appearance', '[1]'], axis = 1, inplace = True)
 
     CDF = CDF.rename(columns={
         "Level" :"EquipLevel"
@@ -669,7 +672,7 @@ def CleanMedalDF(CDF):
     ColumnOrder = [
         "EquipSlot","ClassName","EquipName","EquipSet",
         "Category",
-        "Level","STR","DEX","INT","LUK","All Stats","Max HP","Max MP","Defense",
+        "Level","STR","DEX","INT","LUK","Max HP","Max MP","Defense",
         "Weapon Attack","Magic Attack","Ignored Enemy Defense","Boss Damage",
         "Movement Speed","Jump"
     ]
