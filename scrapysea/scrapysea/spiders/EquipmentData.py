@@ -148,12 +148,12 @@ class TotalEquipmentSpider(scrapy.Spider):
             MDF = pd.concat(self.FinalEquipTrack['Medal'], ignore_index=True)
             MDF = CleanMedalDF(MDF)
 
-            WDF.to_csv('./DefaultData/EquipmentData/WeaponData.csv')
-            SDF.to_csv('./DefaultData/EquipmentData/SecondaryData.csv')
-            ADF.to_csv('./DefaultData/EquipmentData/ArmorData.csv')
-            AccDF.to_csv('./DefaultData/EquipmentData/AccessoryData.csv')
-            AndroidDF.to_csv('./DefaultData/EquipmentData/AndroidData.csv')
-            MDF.to_csv('./DefaultData/EquipmentData/MedalData.csv')
+            WDF.to_csv(APPFOLDER + 'EquipmentData\\WeaponData.csv')
+            SDF.to_csv(APPFOLDER + 'EquipmentData\\SecondaryData.csv')
+            ADF.to_csv(APPFOLDER + 'EquipmentData\\ArmorData.csv')
+            AccDF.to_csv(APPFOLDER + 'EquipmentData\\AccessoryData.csv')
+            AndroidDF.to_csv(APPFOLDER + 'EquipmentData\\AndroidData.csv')
+            MDF.to_csv(APPFOLDER + 'EquipmentData\\MedalData.csv')
             Eqlogger.info(f"Scraped {len(WDF)} Weapons")
             Eqlogger.info(f"Scraped {len(SDF)} Secondaries")
             Eqlogger.info(f"Scraped {len(ADF)} Armors")
@@ -350,11 +350,13 @@ class TotalEquipmentSpider(scrapy.Spider):
             AlternateTablesTitles = response.xpath("//div[@class = 'toc'] //ul/li[contains(@class, 'toclevel-1')]/a /span[@class='toctext']/text()").getall()
         
         TableContent = response.css("div.mw-parser-output table")
-        if PageTitle.find("Genesis") != -1:
-            TableContent = response.xpath("//h2/span[@id = 'Unsealed']/parent::h2/following-sibling::table")
-        
+        if PageTitle.find("Genesis") != -1 and ItemDict["EquipSlot"] == "Weapon":
+            if(ItemDict["WeaponType"] == "Long Sword" or ItemDict["WeaponType"] == "Heavy Sword") == False:
+                TableContent = response.xpath("//h2/span[@id = 'Unsealed']/parent::h2/following-sibling::table")
+        TempDict = DeepCopyDict(ItemDict)
         TableCount = 0
         for ctable in TableContent:
+            ItemDict = DeepCopyDict(TempDict)
             if AlternateTablesTitles != []:
                 TableTrack = len(AlternateTablesTitles)
                 H3 = ctable.xpath("./preceding-sibling::*[1][self::h3] //span/text()").get()
@@ -369,7 +371,9 @@ class TotalEquipmentSpider(scrapy.Spider):
                 break
             td = ["".join(value.css("td ::text").getall()).strip('\n') for value in ctable.css('tr') if value.css("td ::text").getall() != ['\n']]
             th = self.removeBRN(ctable.css('tr > th ::text').getall())
+            
             ItemDict["EquipName"] = replaceN(td[0].rstrip(' \n'), ",")
+            ItemDict = DeepCopyDict(ItemDict)
             for key, value in zip(th, td[1:]):
                 if any(value.lower() in key.lower() for value in self.PageContentSkip):
                     continue
@@ -501,8 +505,9 @@ class EquipmentSetSpider(scrapy.Spider):
         CulDF = pd.concat(self.TrackEquipSets['Cumulative'], ignore_index=True)
         CulDF = CleanSetEffect(CulDF)
         
-        SetDF.to_csv("./DefaultData/EquipmentData/EquipSetData.csv")
-        CulDF.to_csv("./DefaultData/EquipmentData/EquipSetCulData.csv")
+        #SetDF.to_csv("./DefaultData/EquipmentData/EquipSetData.csv")
+        SetDF.to_csv(APPFOLDER + "EquipmentData\\EquipSetData.csv")
+        CulDF.to_csv(APPFOLDER + "EquipmentData\\EquipSetCulData.csv")
         Eslogger.info(f"Scraped {len(SetDF)} Set Effects")
         Eslogger.info(f"Scraped {len(CulDF)} Culmulative Set Effects")
 
@@ -643,7 +648,8 @@ def CleanAccessoryDF(CDF):
         "Level" : "EquipLevel",
         "Equipment Set" : "EquipSet"
     })
-    
+
+    CDF.drop_duplicates(keep="first", inplace=True)    
 
     CDF.loc[CDF['Job'].isnull(), "Job"] = "Any"    
     CDF.loc[CDF["ClassName"].isnull(), "ClassName"] = CDF['Job']

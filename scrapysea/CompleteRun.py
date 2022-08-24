@@ -1,6 +1,7 @@
 
 import CustomLogger
 import os
+import sys
 import ComFunc
 from pathlib import Path
 import QuietLogFormatter
@@ -18,6 +19,7 @@ from scrapysea.spiders import CharacterData
 
 import time
 
+APPFOLDER = "C:\\Users\\edgar\\AppData\\Local\\Packages\\MSEA-000f7318-a33f-4024-b59c-7eafe27b8831_h8rqv0gxgvjbt\\LocalState\\ScrapedData\\"
 #logger = CustomLogger.Set_Custom_Logger(__name__, "./Logs/Base.log", propagate=False) 
 
 newsettings = {
@@ -38,20 +40,20 @@ def exec_Crawler():
             os.makedirs(LogPath)
     
     runner = CrawlerRunner(settings=sett)
-    #runner.crawl(CharacterData.CharacterSpider)
-    #EquipmentSpiders = dict([(name, cls) for name, cls in EquipmentData.__dict__.items() if isinstance(cls, type)])
-    #for name, s in EquipmentSpiders.items():
-    #    if if_In_String(name.lower(), "dataframe"):
-    #        continue
-    #    runner.crawl(s)
+    runner.crawl(CharacterData.CharacterSpider)
+    EquipmentSpiders = dict([(name, cls) for name, cls in EquipmentData.__dict__.items() if isinstance(cls, type)])
+    for name, s in EquipmentSpiders.items():
+        if if_In_String(name.lower(), "dataframe"):
+            continue
+        runner.crawl(s)
 
-    #CalculationSpiders = dict([(name, cls) for name, cls in CalculationsData.__dict__.items() if isinstance(cls, type)])
-    #for name, s in CalculationSpiders.items():
-    #    if if_In_String(name.lower(), "dataframe"):
-    #        continue
-    #    runner.crawl(s)
+    CalculationSpiders = dict([(name, cls) for name, cls in CalculationsData.__dict__.items() if isinstance(cls, type)])
+    for name, s in CalculationSpiders.items():
+        if if_In_String(name.lower(), "dataframe"):
+            continue
+        runner.crawl(s)
 
-    runner.crawl(EquipmentData.TotalEquipmentSpider)
+    #runner.crawl(EquipmentData.TotalEquipmentSpider)
     d = runner.join()
     d.addBoth(lambda _: reactor.stop())
     reactor.run()

@@ -72,11 +72,11 @@ class PotentialSpider(scrapy.Spider):
 
 
             #Upload DF to CSV
-            PDF.to_csv( "./DefaultData/CalculationData/PotentialData.csv")
-            CDF.to_csv( "./DefaultData/CalculationData/PotentialCubeRatesData.csv")
+            PDF.to_csv(APPFOLDER + "CalculationData\\PotentialData.csv")
+            CDF.to_csv(APPFOLDER + "CalculationData\\PotentialCubeRatesData.csv")
 
-            BPDF.to_csv("./DefaultData/CalculationData/BonusData.csv")
-            BCDF.to_csv("./DefaultData/calculationData/BonusCubeRatesData.csv")
+            BPDF.to_csv(APPFOLDER + "CalculationData\\BonusData.csv")
+            BCDF.to_csv(APPFOLDER + "CalculationData\\BonusCubeRatesData.csv")
         except:
             PLogger.critical(traceback.format_exc())
         
@@ -345,10 +345,10 @@ class StarforceSpider(scrapy.Spider):
         NormalDF = NormalDF.astype(int)
         SuperiorDF = SuperiorDF.astype(int)
         
-        StarLimitDF.to_csv( "./DefaultData/CalculationData/StarLimit.csv")
-        SuccessDF.to_csv( "./DefaultData/CalculationData/SFSuccessRates.csv")
-        NormalDF.to_csv( "./DefaultData/CalculationData/NormalEquipSF.csv")
-        SuperiorDF.to_csv( "./DefaultData/CalculationData/SuperiorItemsSF.csv")
+        StarLimitDF.to_csv(APPFOLDER + "CalculationData\\StarLimit.csv")
+        SuccessDF.to_csv(  APPFOLDER + "CalculationData\\SFSuccessRates.csv")
+        NormalDF.to_csv(   APPFOLDER + "CalculationData\\NormalEquipSF.csv")
+        SuperiorDF.to_csv( APPFOLDER + "CalculationData\\SuperiorItemsSF.csv")
 
         SFLogger.info("Completed CSV export for Starforce tables")
         TimeTaken(self)
@@ -646,9 +646,9 @@ class HyperStatSpider(scrapy.Spider):
         HDF = pd.concat(self.FinalDict["HyperStats"], ignore_index=True)
         CDF = self.FinalDict["Cost"]
 
-        DisDF.to_csv( "./DefaultData/CalculationData/HyperStatDistribution.csv")
-        HDF.to_csv( "./DefaultData/CalculationData/HyperStat.csv")
-        CDF.to_csv( "./DefaultData/CalculationData/HyperStatCost.csv")
+        DisDF.to_csv(APPFOLDER + "CalculationData\\HyperStatDistribution.csv")
+        HDF.to_csv(  APPFOLDER + "CalculationData\\HyperStat.csv")
+        CDF.to_csv(  APPFOLDER + "CalculationData\\HyperStatCost.csv")
         TimeTaken(self)
         pass
     

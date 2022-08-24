@@ -1,5 +1,3 @@
-from msilib.schema import Class
-from pydoc import classname
 from time import sleep
 import pandas
 from pandas import DataFrame
@@ -9,6 +7,7 @@ import CustomLogger
 import traceback
 
 from ComFunc import *
+from CompleteRun import *
 
 import scrapy
 
@@ -88,10 +87,10 @@ class CharacterSpider(scrapy.Spider):
             SDF = pandas.concat(self.SecondaryDF, ignore_index=True)
             SDF = CleanClassSecWeaponDF(SDF)
 
-            CDF.to_csv('./DefaultData/CharacterData/CharacterData.csv')
-            UDF.to_csv('./DefaultData/CharacterData/UnionEffect.csv')
-            WDF.to_csv('./DefaultData/CharacterData/ClassMainWeapon.csv')
-            SDF.to_csv('./DefaultData/CharacterData/ClassSecWeapon.csv')
+            CDF.to_csv(APPFOLDER + 'CharacterData\\CharacterData.csv')
+            UDF.to_csv(APPFOLDER + 'CharacterData\\UnionEffect.csv')
+            WDF.to_csv(APPFOLDER + 'CharacterData\\ClassMainWeapon.csv')
+            SDF.to_csv(APPFOLDER + 'CharacterData\\ClassSecWeapon.csv')
 
             TimeTaken(self)
         except Exception:
