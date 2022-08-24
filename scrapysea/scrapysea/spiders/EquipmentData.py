@@ -6,6 +6,7 @@ import CustomLogger
 import scrapy
 import re
 
+from CompleteRun import *
 from ComFunc import *
 from ComFunc import if_In_String
 from ComFunc import TimeTaken

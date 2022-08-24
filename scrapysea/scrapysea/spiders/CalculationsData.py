@@ -6,6 +6,7 @@ from pandas import DataFrame
 import scrapy
 import CustomLogger
 from ComFunc import *
+from CompleteRun import *
 
 PLogger  = CustomLogger.Set_Custom_Logger("PotentialSpider", logTo="./Logs/Calculation.log", propagate=False)
 SFLogger = CustomLogger.Set_Custom_Logger("StarforceSpider",logTo="./Logs/Calculation.log",propagate=False )

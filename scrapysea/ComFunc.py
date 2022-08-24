@@ -7,7 +7,6 @@ import CustomLogger
 DATABASENAME = "MapleSeaDB"
 MAXLVL = 300
 MINLVL = 0
-APPFOLDER = "C:\\Users\\edgar\\AppData\\Local\\Packages\\MSEA-000f7318-a33f-4024-b59c-7eafe27b8831_h8rqv0gxgvjbt\\LocalState\\ScrapedData\\"
 
 
 def if_In_String(string, parameter, mode="Any"):
