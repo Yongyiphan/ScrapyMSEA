@@ -1,6 +1,6 @@
 
-
-from operator import mod
+import sys
+import time
 import traceback
 import pandas as pd
 import CustomLogger
@@ -8,6 +8,15 @@ DATABASENAME = "MapleSeaDB"
 MAXLVL = 300
 MINLVL = 0
 
+#APPFOLDER = "C:\\Users\\edgar\\AppData\\Local\\Packages\\MSEA-000f7318-a33f-4024-b59c-7eafe27b8831_h8rqv0gxgvjbt\\LocalState\\ScrapedData\\"
+
+def setPath(destination):
+    global APPFOLDER
+    APPFOLDER = destination 
+
+def setMseaModule(status):
+    global MseaModule
+    MseaModule = bool(status)
 
 def if_In_String(string, parameter, mode="Any"):
     if isinstance(parameter, str):
@@ -40,59 +49,17 @@ def removeB(list):
 def DeepCopyDict(Base):
         return {key: value for key, value in Base.items()}
 
-def returnPotLevel(lvl):
-    lvl = int(lvl)
-    if lvl in range(0, 21):
-        return 1
-    elif lvl in range(21, 41):
-        return 2
-    elif lvl in range(41, 51):
-        return 3
-    elif lvl in range(51,71):
-        return 4
-    elif lvl in range(71, 91):
-        return 5
-    elif lvl >= 91:
-        return 6
 
-def returnSFLevelRank(mode, level):
-    
-    level = int(level)
-    if mode != "Tyrant" :
-        if level >= 128 and level <= 137:
-            return 5
-        elif level >= 138 and level <= 149:
-            return 4
-        elif level >= 150 and level <= 159:
-            return 3
-        elif level >= 160 and level <= 199:
-            return 2
-        elif level >= 200:
-            return 1
-    else:
-        if level >= 0 and level <= 77:
-            return 9
-        elif level >= 78 and level <= 87:
-            return 8
-        elif level >= 88 and level <= 97:	
-            return 7
-        elif level >= 98 and level <= 107:
-            return 6
-        elif level >= 108 and level <= 117:	
-            return 5
-        elif level >= 118 and level <= 127:	
-            return 4
-        elif level >= 128 and level <= 137:
-            return 3
-        elif level >= 138 and level <= 149:
-            return 2
-        elif level >= 150:
-            return 1
+
+
     
 def TimeTaken(self):
     start_time = self.crawler.stats.get_value('start_time')
     finish_time = self.crawler.stats.get_value('finish_time')
-    print(f"{self.name} crawled in: {finish_time - start_time}")
+    print("{0} crawled in: {1}".format(self.name, finish_time-start_time))
+    if(MseaModule):
+        sys.stdout.flush()
+        time.sleep(1)
 
 
 def main():

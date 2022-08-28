@@ -1,13 +1,12 @@
 from time import sleep
-import pandas
-from pandas import DataFrame
+import pandas as pd
 import json
 import re
 import CustomLogger
 import traceback
 
-from ComFunc import *
-from CompleteRun import *
+import ComFunc as CF
+
 
 import scrapy
 
@@ -60,7 +59,7 @@ class CharacterSpider(scrapy.Spider):
             buildID = json.loads(response.xpath("//script[@id='__NEXT_DATA__'] /text()").get())['buildId']
             for i, link in enumerate(ClassesLinks):
                 nurl = self.jsonKey + buildID + "/" + link
-                self.logger.info(f"{i}: {nurl}")
+                self.logger.info("{0}: {1}".format(i, nurl))
                 yield scrapy.Request(nurl, callback=self.JsonResponseData, dont_filter=True)
         except Exception:
             CLogger.warn(traceback.format_exc())
@@ -76,23 +75,24 @@ class CharacterSpider(scrapy.Spider):
 
     def close(self):
         try:
-            CDF = pandas.concat(self.CharacterDF, ignore_index=True)
+            CDF = pd.concat(self.CharacterDF, ignore_index=True)
 
-            UDF = pandas.concat(self.UnionDF, ignore_index=True)
+            UDF = pd.concat(self.UnionDF, ignore_index=True)
             UDF = CleanUnionDF(UDF)
             
-            WDF = pandas.concat(self.WeaponDF, ignore_index=True)
+            WDF = pd.concat(self.WeaponDF, ignore_index=True)
             WDF = CleanClassMainWeaponDF(WDF)
 
-            SDF = pandas.concat(self.SecondaryDF, ignore_index=True)
+            SDF = pd.concat(self.SecondaryDF, ignore_index=True)
             SDF = CleanClassSecWeaponDF(SDF)
+            
+            CDF.to_csv(CF.APPFOLDER + 'CharacterData\\CharacterData.csv')
+            UDF.to_csv(CF.APPFOLDER + 'CharacterData\\UnionEffect.csv')
+            WDF.to_csv(CF.APPFOLDER + 'CharacterData\\ClassMainWeapon.csv')
+            SDF.to_csv(CF.APPFOLDER + 'CharacterData\\ClassSecWeapon.csv')
 
-            CDF.to_csv(APPFOLDER + 'CharacterData\\CharacterData.csv')
-            UDF.to_csv(APPFOLDER + 'CharacterData\\UnionEffect.csv')
-            WDF.to_csv(APPFOLDER + 'CharacterData\\ClassMainWeapon.csv')
-            SDF.to_csv(APPFOLDER + 'CharacterData\\ClassSecWeapon.csv')
-
-            TimeTaken(self)
+            
+            CF.TimeTaken(self)
         except Exception:
             CLogger.warn(traceback.format_exc())
 
@@ -102,33 +102,33 @@ class CharacterSpider(scrapy.Spider):
             PostData = data['pageProps']['post']
             PostContentData = PostData['content']
 
-            ClassName = replaceN(PostData['class'], ',').strip()
+            ClassName = CF.replaceN(PostData['class'], ',').strip()
             UnionE = PostContentData['legion']
             UnionStatType = "Flat" if 'flat' in UnionE else "Perc"
             for value in ['%', ',']:
-                if if_In_String(UnionE, value):
+                if CF.if_In_String(UnionE, value):
                     UnionE = UnionE.replace(value, '')
             
-            if if_In_String(UnionE, "("):
+            if CF.if_In_String(UnionE, "("):
                 UnionE = UnionE.split('(')[0]
             
             CharacterDict = {
                 "ClassName" : ClassName,
                 "Faction" : PostContentData['classGroup'].split('(')[0].rstrip(' '),
-                "ClassType" : "SPECIAL" if if_In_String(PostContentData['jobGroup'],"+") else PostContentData['jobGroup'],
-                "MainStat"  : "SPECIAL" if if_In_String(PostContentData['mainStat'], ',') else PostContentData['mainStat'],
-                "SecStat"   : "SPECIAL" if if_In_String(PostContentData['secondaryStat'], "+") else PostContentData['secondaryStat'],
+                "ClassType" : "SPECIAL" if CF.if_In_String(PostContentData['jobGroup'],"+") else PostContentData['jobGroup'],
+                "MainStat"  : "SPECIAL" if CF.if_In_String(PostContentData['mainStat'], ',') else PostContentData['mainStat'],
+                "SecStat"   : "SPECIAL" if CF.if_In_String(PostContentData['secondaryStat'], "+") else PostContentData['secondaryStat'],
                 "UnionEffect" : UnionE,
                 "UnionStatType" : UnionStatType
             }
-            self.CharacterDF.append(DataFrame(CharacterDict, index=[0]))
+            self.CharacterDF.append(pd.DataFrame(CharacterDict, index=[0]))
             
             LegionValues = PostContentData['legionValue'].split("/")
             FinalValue = LegionValues[4]
-            if if_In_String(FinalValue, '%'):
+            if CF.if_In_String(FinalValue, '%'):
                 FinalValue = FinalValue.replace('%', '')
             for value in ['-', '[']:
-                if if_In_String(FinalValue, value):
+                if CF.if_In_String(FinalValue, value):
                     FinalValue = FinalValue.split(value)[0]
 
             UnionEffects = {
@@ -140,23 +140,23 @@ class CharacterSpider(scrapy.Spider):
                 "SS" : LegionValues[3],
                 "SSS" : FinalValue.rstrip()
             }
-            self.UnionDF.append(DataFrame(UnionEffects, index=[0]))
+            self.UnionDF.append(pd.DataFrame(UnionEffects, index=[0]))
             Equipments = PostContentData['equipment']
             WeaponList = Equipments[0]['weapon']
             for weap in WeaponList:
                 self.WeaponDF.append(
-                    DataFrame({
+                    pd.DataFrame({
                         "ClassName": ClassName,
                         "Weapon" : weap.capitalize() }, 
                         index=[0]))
             SecondaryList = Equipments[1]['secondary']
             for sec in SecondaryList:
-                self.SecondaryDF.append(DataFrame({"ClassName" : ClassName, "Secondary" : sec.capitalize() }, index=[0]))
+                self.SecondaryDF.append(pd.DataFrame({"ClassName" : ClassName, "Secondary" : sec.capitalize() }, index=[0]))
 
         except Exception:
             CLogger.warn(traceback.format_exc())
         finally:
-            CLogger.info(f"Adding {ClassName}")
+            CLogger.info("Adding {0}".format(ClassName))
             return
 
         

@@ -1,11 +1,10 @@
 
-from tempfile import tempdir
 import traceback
 
-from pandas import DataFrame
+import pandas as pd
 import scrapy
 import CustomLogger
-from ComFunc import *
+import ComFunc as CF
 from CompleteRun import *
 
 PLogger  = CustomLogger.Set_Custom_Logger("PotentialSpider", logTo="./Logs/Calculation.log", propagate=False)
@@ -73,15 +72,15 @@ class PotentialSpider(scrapy.Spider):
 
 
             #Upload DF to CSV
-            PDF.to_csv(APPFOLDER + "CalculationData\\PotentialData.csv")
-            CDF.to_csv(APPFOLDER + "CalculationData\\PotentialCubeRatesData.csv")
+            PDF.to_csv(CF.APPFOLDER + "CalculationData\\PotentialData.csv")
+            CDF.to_csv(CF.APPFOLDER + "CalculationData\\PotentialCubeRatesData.csv")
 
-            BPDF.to_csv(APPFOLDER + "CalculationData\\BonusData.csv")
-            BCDF.to_csv(APPFOLDER + "CalculationData\\BonusCubeRatesData.csv")
+            BPDF.to_csv(CF.APPFOLDER + "CalculationData\\BonusData.csv")
+            BCDF.to_csv(CF.APPFOLDER + "CalculationData\\BonusCubeRatesData.csv")
         except:
             PLogger.critical(traceback.format_exc())
         
-        TimeTaken(self)
+        CF.TimeTaken(self)
         pass
    
     def Execute(self, PotentialGrades):
@@ -121,15 +120,15 @@ class PotentialSpider(scrapy.Spider):
                         continue
                     if childName == 'p':
                         ptext = child.xpath("./text()").get()
-                        if if_In_String(ptext.lower(), 'level requirement') == False:
+                        if CF.if_In_String(ptext.lower(), 'level requirement') == False:
                             continue
                         l = ptext.split(":")[-1].strip().split(' ')[0]
                         CDict["MinLvl"] = int(l)
                         CDict["MaxLvl"] = self.maxLvl
                         CStat = CDict['DisplayStat']
-                        if not if_In_String(CStat, 'Increase') and if_In_String(CStat, '%'):
+                        if not CF.if_In_String(CStat, 'Increase') and CF.if_In_String(CStat, '%'):
                             fv = CStat.split('%')[0].strip().split(' ')[-1]
-                            CStat = ' '.join([value.strip() for value in replaceN(CStat, [f"{fv}%", "of", "+"]).split(' ') if value != ''])
+                            CStat = ' '.join([value.strip() for value in CF.replaceN(CStat, [f"{fv}%", "of", "+"]).split(' ') if value != ''])
                             CDict['Stat value'] = int(fv)
                             #CDict['Stat'] = CStat.replace("%", "").strip()
                             
@@ -138,7 +137,7 @@ class PotentialSpider(scrapy.Spider):
                     if childName == 'div':
                         FromDiv = True
                         for table in child.xpath(".//div"):
-                            PDcopy = DeepCopyDict(CDict)
+                            PDcopy = CF.DeepCopyDict(CDict)
                             for tchild in table.xpath("./child::node()"):
                                 cname = tchild.xpath("name()").get()                                    
                                 if cname == None:
@@ -148,11 +147,11 @@ class PotentialSpider(scrapy.Spider):
                                     Clist.append(self.ConsolidateTable(PDcopy, "StatTable"))
                                     continue
                                 ttext = tchild.xpath('.//text()').get()
-                                if if_In_String(ttext.lower(), "cubes"):
-                                    ttext = replaceN(ttext, ",",";")
+                                if CF.if_In_String(ttext.lower(), "cubes"):
+                                    ttext = CF.replaceN(ttext, ",",";")
                                     PDcopy['CubeType'] = ttext
                                     continue
-                                if if_In_String(ttext.lower(), "chance"):
+                                if CF.if_In_String(ttext.lower(), "chance"):
                                     sv = ttext.split(' ')
                                     PDcopy["Chance"] = sv[-1].strip(' +%\n')
                                     continue
@@ -166,20 +165,20 @@ class PotentialSpider(scrapy.Spider):
                                     Clist.append(self.ConsolidateTable(CDict, "StatTable"))
                                 else:
                                     for s in CDict['Slot']:
-                                        TempD = DeepCopyDict(CDict)
+                                        TempD = CF.DeepCopyDict(CDict)
                                         TempD["Slot"] = s
                                         NTempD = self.ReorgStatValue(TempD)
-                                        Clist.append(DataFrame(NTempD, index=[0]))
+                                        Clist.append(pd.DataFrame(NTempD, index=[0]))
                                         #PLogger.info(f"Grabbing {s}: {CDict['DisplayStat']} => {CDict['Stat']}")
                                         #PLogger.info(f"Grabbing {s}: {CDict['DisplayStat']}")
                             
-                            CDict = DeepCopyDict(PDict)
+                            CDict = CF.DeepCopyDict(PDict)
                             CDict["ChanceTable"] = self.HandleTables(child)
                             ChanceL.append(self.ConsolidateTable(CDict, "ChanceTable"))
 
                             #PLogger.info(f"Adding Chance for {EList}: {CDict['DisplayStat']}")
                             #Resets CDict
-                            CDict = DeepCopyDict(PDict)
+                            CDict = CF.DeepCopyDict(PDict)
                             FromDiv = False
                         else:
                             CDict["StatTable"] = self.HandleTables(child)
@@ -191,25 +190,25 @@ class PotentialSpider(scrapy.Spider):
  
     
     def HandleTables(self, context):
-        header =  removeB(context.xpath(".//th /text()").getall())
+        header =  CF.removeB(context.xpath(".//th /text()").getall())
         TableResult = []
         for row in context.xpath(".//tr"):
-            text = removeB(row.xpath(".//text()").getall())
-            if text == [] or text == header or if_In_String(" ".join(text), "GMS"):
+            text = CF.removeB(row.xpath(".//text()").getall())
+            if text == [] or text == header or CF.if_In_String(" ".join(text), "GMS"):
                 continue
             PDcopy = {}
             for i, h in enumerate(header):
-                ctext = row.xpath(f".//td[{i+1}] /text()").get()
-                if if_In_String(h.lower(), 'level'):
+                ctext = row.xpath(".//td[{0}] /text()".format(i+1)).get()
+                if CF.if_In_String(h.lower(), 'level'):
                     lvl = ctext.strip().split("-")
                     PDcopy["MinLvl"] = int(lvl[0].strip(' \n+%'))
-                    PDcopy["MaxLvl"] = self.maxLvl if if_In_String(lvl[0], '+') else int(lvl[-1].strip(' \n+%'))
-                elif if_In_String(h.lower(), 'chance'):
+                    PDcopy["MaxLvl"] = self.maxLvl if CF.if_In_String(lvl[0], '+') else int(lvl[-1].strip(' \n+%'))
+                elif CF.if_In_String(h.lower(), 'chance'):
                     PDcopy["Chance"] = ctext.strip(" +%\n")
                 else:
                     v = h.split('(')[0].strip()
-                    ctext = replaceN(ctext, ['seconds'])
-                    if if_In_String(ctext, '('):
+                    ctext = CF.replaceN(ctext, ['seconds'])
+                    if CF.if_In_String(ctext, '('):
                         ctext = ctext.split("(")[0]
                     PDcopy[v] = ctext.strip(" +\n")
                 pass
@@ -225,38 +224,38 @@ class PotentialSpider(scrapy.Spider):
                 'chance to': "Chance",
                 "second" : "Duration"
             }
-            if if_In_String(DS, 'when'):
+            if CF.if_In_String(DS, 'when'):
                 SI = SI.split('when')[0].strip()  
             for R in ToRemove.keys():
-                if if_In_String(DS, R):
+                if CF.if_In_String(DS, R):
                     idx = DS.index(R)
                     t = DS[:idx].strip().split(' ')
                     fv = t[-1]
                     if 'every' in t:
                         PDict['Tick'] = int(fv.strip(" -%"))
-                        SI = replaceN(SI, 'every')
+                        SI = CF.replaceN(SI, 'every')
                     else:
                         PDict[ToRemove[R]] = int(fv.strip(" -%"))
-                    if if_In_String(DS, 'seconds') and R == "second":
-                        SI = replaceN(SI, ['seconds', fv]).strip()
+                    if CF.if_In_String(DS, 'seconds') and R == "second":
+                        SI = CF.replaceN(SI, ['seconds', fv]).strip()
                     else:
-                        SI = replaceN(SI, [R, fv]).strip()
+                        SI = CF.replaceN(SI, [R, fv]).strip()
                         
-            SI = replaceN(SI, ['for']).strip()
+            SI = CF.replaceN(SI, ['for']).strip()
             SI = SI[0].upper() + SI[1:]
-            PDict["StatT"] = "Perc" if if_In_String(SI, "%") else "Flat"
+            PDict["StatT"] = "Perc" if CF.if_In_String(SI, "%") else "Flat"
             #PDict['Stat'] = SI.strip()
         except Exception as E:
             PLogger.critical(traceback.format_exc())        
         return PDict
     
     def formatEquipSlots(self, EquipStr):
-        if if_In_String(EquipStr, "("):
+        if CF.if_In_String(EquipStr, "("):
             EquipStr =  EquipStr.split("(")[0].strip(' ')
         if "and" in EquipStr:
             EquipStr = EquipStr.replace("and", ";").split(';')
-        if if_In_String(EquipStr, ","):
-            EquipStr = replaceN(EquipStr, ',', ';').split(';')
+        if CF.if_In_String(EquipStr, ","):
+            EquipStr = CF.replaceN(EquipStr, ',', ';').split(';')
         if isinstance(EquipStr, list):
             return [value.strip() for value in EquipStr]
         elif isinstance(EquipStr, str):
@@ -274,7 +273,7 @@ class PotentialSpider(scrapy.Spider):
             if "Slot" in Base.keys():
                 for s in Base['Slot']:
                     for row in Base[key]:
-                        TempD = DeepCopyDict(Base)
+                        TempD = CF.DeepCopyDict(Base)
                         TempD['Slot'] = s
                         TempD = self.UpdateTableDict(TempD, row)
                         del TempD[key]
@@ -282,15 +281,15 @@ class PotentialSpider(scrapy.Spider):
                             TempD = self.ReorgStatValue(TempD)
                         
                         if "Stat value" in TempD.keys() and "StatT" in TempD.keys():
-                            if if_In_String(TempD["Stat value"], "%"):
-                                TempD['Stat value'] = replaceN(TempD["Stat value"],'%').strip()
+                            if CF.if_In_String(TempD["Stat value"], "%"):
+                                TempD['Stat value'] = CF.replaceN(TempD["Stat value"],'%').strip()
                                 if TempD['StatT'] != "Perc":
                                     TempD['StatT'] = "Perc"
                         
-                        StatLists.append(DataFrame(TempD, index=[0]))   
+                        StatLists.append(pd.DataFrame(TempD, index=[0]))   
                 try:
                     #PLogger.info(f"Grabbing {s}: {Base['DisplayStat']} => {Base['Stat']}")
-                    PLogger.info(f"Grabbing {Base['Slot']} - {key} for : {Base['DisplayStat']}")
+                    PLogger.info("Grabbing {0} - {1} for : {2}".format(Base['Slot'], key, Base["DisplayStat"]))
                 except KeyError:
                     pass
             R = pd.concat(StatLists, ignore_index=True)
@@ -346,13 +345,13 @@ class StarforceSpider(scrapy.Spider):
         NormalDF = NormalDF.astype(int)
         SuperiorDF = SuperiorDF.astype(int)
         
-        StarLimitDF.to_csv(APPFOLDER + "CalculationData\\StarLimit.csv")
-        SuccessDF.to_csv(  APPFOLDER + "CalculationData\\SFSuccessRates.csv")
-        NormalDF.to_csv(   APPFOLDER + "CalculationData\\NormalEquipSF.csv")
-        SuperiorDF.to_csv( APPFOLDER + "CalculationData\\SuperiorItemsSF.csv")
+        StarLimitDF.to_csv(CF.APPFOLDER + "CalculationData\\StarLimit.csv")
+        SuccessDF.to_csv(  CF.APPFOLDER + "CalculationData\\SFSuccessRates.csv")
+        NormalDF.to_csv(   CF.APPFOLDER + "CalculationData\\NormalEquipSF.csv")
+        SuperiorDF.to_csv( CF.APPFOLDER + "CalculationData\\SuperiorItemsSF.csv")
 
         SFLogger.info("Completed CSV export for Starforce tables")
-        TimeTaken(self)
+        CF.TimeTaken(self)
         pass
 
     def GetStarforce(self, content):
@@ -368,7 +367,7 @@ class StarforceSpider(scrapy.Spider):
                 continue
             if cName == "h4":
                 CurrentKey = "".join(cid.split('_')[:2])
-                if if_In_String(cid, IgnoreTable):
+                if CF.if_In_String(cid, IgnoreTable):
                     SkipValue = True
                     continue
                 SkipValue = False
@@ -377,7 +376,7 @@ class StarforceSpider(scrapy.Spider):
             #Skip Condition
             if cName == 'h5':
                 SkipValue = True
-                if if_In_String(cid, "Total_Stats") and CurrentRecord == "Superior_Items":
+                if CF.if_In_String(cid, "Total_Stats") and CurrentRecord == "Superior_Items":
                     break
                 continue
             if cName == "table":
@@ -391,19 +390,19 @@ class StarforceSpider(scrapy.Spider):
         return
 
     def StarLimitTable(self, title, content):
-        Header = removeB(content.xpath(".//tr/th/text()").getall())
+        Header = CF.removeB(content.xpath(".//tr/th/text()").getall())
         ConsolTable = []
         for row in content.xpath(".//tr"):
-            if removeB(row.xpath(".//text()").getall()) == Header:
+            if CF.removeB(row.xpath(".//text()").getall()) == Header:
                 continue
             CRow = {
                 "Title" : title
             }
             for i, key in enumerate(Header):
-                ctext = row.xpath(f".//td[{i+1}]/text()").get()
-                if if_In_String(key, "Level"):
-                    splitv = removeB(replaceN(ctext, ['~', " "], ";").split(";"))
-                    if if_In_String(ctext, "and above"):
+                ctext = row.xpath(".//td[{0}]/text()".format(i+1)).get()
+                if CF.if_In_String(key, "Level"):
+                    splitv = CF.removeB(CF.replaceN(ctext, ['~', " "], ";").split(";"))
+                    if CF.if_In_String(ctext, "and above"):
                         CRow["MinLvl"] =splitv[0]
                         CRow["MaxLvl"] =self.MaxLvl
                         continue
@@ -411,54 +410,54 @@ class StarforceSpider(scrapy.Spider):
                     CRow["MaxLvl"] = splitv[-1]
                     continue
                 CRow[key] = ctext.strip(" \n")
-            ConsolTable.append(DataFrame(CRow, index=[0]))
-        SFLogger.info(f"Adding StarLimit Table for {title}")
+            ConsolTable.append(pd.DataFrame(CRow, index=[0]))
+        SFLogger.info("Adding StarLimit Table for {0}".format(title))
         return pd.concat(ConsolTable, ignore_index=True)
 
     def SuccessRatesTable(self, CurrentRecord, content):
-        Header = removeB(content.xpath(".//tr/th/text()").getall())
+        Header = CF.removeB(content.xpath(".//tr/th/text()").getall())
         ConsolTable = []
         for row in content.xpath(".//tr"):
-            if removeB(row.xpath(".//text()").getall()) == Header:
+            if CF.removeB(row.xpath(".//text()").getall()) == Header:
                 continue
             CRow = {
                 "Title" :  CurrentRecord
             }
             for i, key in enumerate(Header):
-                if if_In_String(key, "("):
-                    key = replaceN(key.split('(')[1], ")").strip()
-                ctext = row.xpath(f".//td[{i+1}]/text()").get()
+                if CF.if_In_String(key, "("):
+                    key = CF.replaceN(key.split('(')[1], ")").strip()
+                ctext = row.xpath(".//td[{0}]/text()".format(i+1)).get()
                 if ctext == None:
                     CRow[key] = "0"
                     continue
                 value = ctext
-                if if_In_String(ctext, '★'):
+                if CF.if_In_String(ctext, '★'):
                     splitv = ctext.split('★')
                     value = splitv[0].strip()
-                elif if_In_String(ctext, "%"):
+                elif CF.if_In_String(ctext, "%"):
                     value = ctext.split("%")[0].strip()
                 
                 CRow[key] = value
         
-            ConsolTable.append(DataFrame(CRow, index=[0]))
+            ConsolTable.append(pd.DataFrame(CRow, index=[0]))
 
-        SFLogger.info(f"Adding Success Rates for {CurrentRecord}")
+        SFLogger.info("Adding Success Rates for {0}".format(CurrentRecord))
         return pd.concat(ConsolTable, ignore_index=True)
 
     def StatsBoostsTable(self,CurrentRecord, content):
 
         
-        Header = removeB(content.xpath(".//tr/th/text()").getall())
+        Header = CF.removeB(content.xpath(".//tr/th/text()").getall())
         ConsolTable = []
         for row in content.xpath("./tbody/tr"):
-            if removeB(row.xpath(".//text()").getall()) == Header:
+            if CF.removeB(row.xpath(".//text()").getall()) == Header:
                 continue      
             Attempt = row.xpath(".//td[1]/text()").get()
             if Attempt == None:
                 continue
-            SFIDs = replaceN(Attempt, ['★','→'])
+            SFIDs = CF.replaceN(Attempt, ['★','→'])
             try:
-                if if_In_String(SFIDs, ','):
+                if CF.if_In_String(SFIDs, ','):
                     splitv = SFIDs.split(',')
                     SFIDs = [max([int(value.strip()) for value in pair.split(' ') if value != '']) for pair in splitv]
                 else:
@@ -472,38 +471,38 @@ class StarforceSpider(scrapy.Spider):
                     "MaxLvl" : self.MaxLvl
                 }
                 if ids <=15 and CurrentRecord == "Normal_Equips":
-                    Stats = removeB(row.xpath(".//td[2] //ul //text()").getall())
+                    Stats = CF.removeB(row.xpath(".//td[2] //ul //text()").getall())
                     SFat.update(self.ReturnStatDict(Stats))   
-                    ConsolTable.append(DataFrame(SFat, index=[0]))
+                    ConsolTable.append(pd.DataFrame(SFat, index=[0]))
                 else:
                     NewPoint = row.xpath(".//td[2]")
-                    CommonStats = removeB(NewPoint.xpath("./child::*[2] //text()").getall())
+                    CommonStats = CF.removeB(NewPoint.xpath("./child::*[2] //text()").getall())
                     SFat.update(self.ReturnStatDict(CommonStats))
                     for subrow in NewPoint.xpath("./child::*[1] //tr"):
-                        DCopy = DeepCopyDict(SFat)
+                        DCopy = CF.DeepCopyDict(SFat)
                         MinMaxLvl = subrow.xpath(".//td[1] //text()").get()
                         if MinMaxLvl == None:
                             continue
-                        if if_In_String(MinMaxLvl, "~"):
+                        if CF.if_In_String(MinMaxLvl, "~"):
                             Min, Max = MinMaxLvl.split("~")
                             DCopy["MinLvl"] = int(Min)
                             DCopy["MaxLvl"] = int(Max)
                         else:
                             DCopy["MinLvl"] = int(MinMaxLvl.strip(" +"))
                             DCopy["MaxLvl"] = self.MaxLvl
-                        Stats = removeB(subrow.xpath(".//td[2] //text()").getall())
+                        Stats = CF.removeB(subrow.xpath(".//td[2] //text()").getall())
                         DCopy.update(self.ReturnStatDict(Stats))
-                        ConsolTable.append(DataFrame(DCopy, index=[0]))
-                SFLogger.info(f"Adding Starforce stat at {ids} for {CurrentRecord}")
+                        ConsolTable.append(pd.DataFrame(DCopy, index=[0]))
+                SFLogger.info("Adding Starforce stat at {0} for {1}".format(ids, CurrentRecord))
 
-        SFLogger.info(f"Adding SF Stats for {CurrentRecord}")
+        SFLogger.info("Adding SF Stats for {0}".format(CurrentRecord))
         return pd.concat(ConsolTable, ignore_index=True)
 
     def ReturnStatDict(self, StatList):
         RDict = {}
         for s in StatList:
             key, value = s.split("+")
-            key = replaceN(key, ["'s", "'"]).strip()
+            key = CF.replaceN(key, ["'s", "'"]).strip()
             RDict[key] =  int(value.strip(" %"))
         
         return RDict
@@ -533,7 +532,7 @@ class BonusStatSpider(scrapy.Spider):
         pass
 
     def close(self):
-        TimeTaken(self)
+        CF.TimeTaken(self)
         pass
 
     def GetFlames(self, content):
@@ -548,10 +547,10 @@ class BonusStatSpider(scrapy.Spider):
                     continue
                 CDict["EquipType"] = "Common"
                 if Stat in SpecialConsideration:
-                    if if_In_String(Stat, "Attack"):
+                    if CF.if_In_String(Stat, "Attack"):
                         dl = tables.xpath("./preceding-sibling::dl[1] //text()").get()
                         if CDict["EquipGrp"] == "Weapons":
-                            if if_In_String(dl, "Normal"):
+                            if CF.if_In_String(dl, "Normal"):
                                 CDict["EquipType"] = "Normal"
                             else:
                                 CDict["EquipType"] = "Special"
@@ -571,32 +570,32 @@ class BonusStatSpider(scrapy.Spider):
     
     def ReturnTable(self, tables, CDict):
         ConsolRow = []
-        Header = removeB(tables.xpath(".//th/text()").getall())
+        Header = CF.removeB(tables.xpath(".//th/text()").getall())
         if "Equip level" not in Header:
             p = tables.xpath("./preceding-sibling::p[1]/text()").get()
             splitv = p.split('at least level')[-1].strip().split(' ')[0]
-            if if_In_String(p, "Not affected") and if_In_String(p, "at least") == False:
+            if CF.if_In_String(p, "Not affected") and CF.if_In_String(p, "at least") == False:
                 CDict["MinLvl"] = 0
             else:
                 CDict["MinLvl"] = int(splitv.strip(" .\n"))
             CDict["MaxLvl"] = MAXLVL
 
         for row in tables.xpath(".//tr"):
-            CRow = DeepCopyDict(CDict)
-            CText = removeB(row.xpath(".//text()").getall())
+            CRow = CF.DeepCopyDict(CDict)
+            CText = CF.removeB(row.xpath(".//text()").getall())
             if CText == Header or CText is None:
                 continue
 
             for i, th in enumerate(Header):
-                textAt = row.xpath(f"./td[{1+i}]/text()").get()
+                textAt = row.xpath("./td[{0}]/text()".format(i+1)).get()
                 if textAt is None:
                     continue
-                if if_In_String(th, "level"):
+                if CF.if_In_String(th, "level"):
                     CRow["MinLvl"], CRow["MaxLvl"] = textAt.split("-")
                     continue
                 
-                CRow[th] = replaceN(textAt, ",").strip(" %\n")
-            ConsolRow.append(DataFrame(CRow, index=[0]))
+                CRow[th] = CF.replaceN(textAt, ",").strip(" %\n")
+            ConsolRow.append(pd.pd.DataFrame(CRow, index=[0]))
         
         return pd.concat(ConsolRow, ignore_index=True)
 
@@ -607,18 +606,18 @@ class BonusStatSpider(scrapy.Spider):
         Stat = Stat.encode("ASCII", "ignore").decode()
         Stat = " ".join([ele.strip() for ele in Stat.split("increase")]).strip()
                 
-        if if_In_String(Stat, "and"):
+        if CF.if_In_String(Stat, "and"):
             Stat = "Mixed Stats"
-        if if_In_String(Stat, MainStat):
+        if CF.if_In_String(Stat, MainStat):
             Stat = "Main Stats"
 
-        if if_In_String(Stat, "("):
+        if CF.if_In_String(Stat, "("):
             splitv = Stat.split("(")
-            EquipGrp = replaceN(splitv[-1], ")").strip()
+            EquipGrp = CF.replaceN(splitv[-1], ")").strip()
             Stat = splitv[0].strip()
         else:
             EquipGrp = "Common"
-        Stat = replaceN(Stat, ["%"])
+        Stat = CF.replaceN(Stat, ["%"])
 
         return Stat, EquipGrp
 
@@ -647,25 +646,25 @@ class HyperStatSpider(scrapy.Spider):
         HDF = pd.concat(self.FinalDict["HyperStats"], ignore_index=True)
         CDF = self.FinalDict["Cost"]
 
-        DisDF.to_csv(APPFOLDER + "CalculationData\\HyperStatDistribution.csv")
-        HDF.to_csv(  APPFOLDER + "CalculationData\\HyperStat.csv")
-        CDF.to_csv(  APPFOLDER + "CalculationData\\HyperStatCost.csv")
-        TimeTaken(self)
+        DisDF.to_csv(CF.APPFOLDER + "CalculationData\\HyperStatDistribution.csv")
+        HDF.to_csv(  CF.APPFOLDER + "CalculationData\\HyperStat.csv")
+        CDF.to_csv(  CF.APPFOLDER + "CalculationData\\HyperStatCost.csv")
+        CF.TimeTaken(self)
         pass
     
     def HyperStatDistribution(self, content):
-        Header = sorted(list(set(removeB(content.xpath(".//tr //th/text()").getall()))))
+        Header = sorted(list(set(CF.removeB(content.xpath(".//tr //th/text()").getall()))))
         ConsolTable = []
         for row in content.xpath(".//tr"):
-            t = removeB(row.xpath(".//text()").getall())
+            t = CF.removeB(row.xpath(".//text()").getall())
             if sorted(t) == Header:
                 continue
             CDict = {}
             for i, key in enumerate(Header):
-                if if_In_String(key, "Level"):
+                if CF.if_In_String(key, "Level"):
                     key = key.split('(')[0].strip()
-                CDict[key] = replaceN(t[i], ",")
-            ConsolTable.append(DataFrame(CDict, index=[0]))
+                CDict[key] = CF.replaceN(t[i], ",")
+            ConsolTable.append(pd.DataFrame(CDict, index=[0]))
         self.FinalDict["Distribution"] = pd.concat(ConsolTable, ignore_index=True)
         return
 
@@ -675,26 +674,26 @@ class HyperStatSpider(scrapy.Spider):
                 StatType = table.xpath("./preceding-sibling::h3[1]/span[@class='mw-headline']/text()").get()
                 CStat = {}
                 if StatType is not None:
-                    StatType = replaceN(StatType.encode("ascii","ignore").decode(), ["%", "Weapon and Magic"]).strip()
-                    CStat["StatIncrease"] = replaceN(StatType, "Increase").strip()
+                    StatType = CF.replaceN(StatType.encode("ascii","ignore").decode(), ["%", "Weapon and Magic"]).strip()
+                    CStat["StatIncrease"] = CF.replaceN(StatType, "Increase").strip()
 
-                Header = removeB(table.xpath(".//tr/th/text()").getall())
+                Header = CF.removeB(table.xpath(".//tr/th/text()").getall())
                 ConsolTable = []
                 for row in table.xpath(".//tr"):
-                    DCopy = DeepCopyDict(CStat)
-                    Ctext = removeB(row.xpath(".//text()").getall())
+                    DCopy = CF.DeepCopyDict(CStat)
+                    Ctext = CF.removeB(row.xpath(".//text()").getall())
                     if Ctext == Header or Ctext is None:
                         continue
                     for i, td in enumerate(Header):
-                        if if_In_String(td, 'Cost'):
+                        if CF.if_In_String(td, 'Cost'):
                             td = td.split("Cost")[0].strip() + " Cost"
-                        t = row.xpath(f"./td[{1+i}]/text()").get()
-                        if if_In_String(t, "+"):
+                        t = row.xpath("./td[{0}]/text()".format(i+1)).get()
+                        if CF.if_In_String(t, "+"):
                             t = t.split("+")[-1]
                         if td == "Overall Stat":
                             td = "Overall Effect"
                         DCopy[td] = t.strip(" %\n")
-                    ConsolTable.append(DataFrame(DCopy, index=[0]))
+                    ConsolTable.append(pd.DataFrame(DCopy, index=[0]))
                 Result = pd.concat(ConsolTable, ignore_index=True)
                 if StatType is None:
                     self.FinalDict["Cost"] = Result
