@@ -37,29 +37,31 @@ def exec_Crawler():
     #    LogPath = os.path.join(currentPath,"DefaultData", dir)
     #    if not os.path.exists(LogPath):
     #        os.makedirs(LogPath)
-    
+    DefaultPath = os.path.join(CF.APPFOLDER, "DefaultData\\") 
+    if not os.path.exists(DefaultPath):
+        os.makedirs(DefaultPath)
     FolderDir = ["CalculationData","EquipmentData", "CharacterData"]
     for dir in FolderDir:
         LogPath = os.path.join(CF.APPFOLDER,"DefaultData", dir)
         if not os.path.exists(LogPath):
             os.makedirs(LogPath)
     runner = CrawlerRunner(settings=sett)
-    CF.APPFOLDER = os.path.join(CF.APPFOLDER, "DefaultData\\")
+    CF.APPFOLDER = DefaultPath
  
-    #runner.crawl(CharacterData.CharacterSpider)
-    #EquipmentSpiders = dict([(name, cls) for name, cls in EquipmentData.__dict__.items() if isinstance(cls, type)])
-    #for name, s in EquipmentSpiders.items():
-    #    if CF.if_In_String(name.lower(), "spider"):
-    #        runner.crawl(s)
-    #CalculationSpiders = dict([(name, cls) for name, cls in CalculationsData.__dict__.items() if isinstance(cls, type)])
-    #for name, s in CalculationSpiders.items():
-    #    if CF.if_In_String(name.lower(), "spider"):
-    #        runner.crawl(s)
+    runner.crawl(CharacterData.CharacterSpider)
+    EquipmentSpiders = dict([(name, cls) for name, cls in EquipmentData.__dict__.items() if isinstance(cls, type)])
+    for name, s in EquipmentSpiders.items():
+        if CF.if_In_String(name.lower(), "spider"):
+            runner.crawl(s)
+    CalculationSpiders = dict([(name, cls) for name, cls in CalculationsData.__dict__.items() if isinstance(cls, type)])
+    for name, s in CalculationSpiders.items():
+        if CF.if_In_String(name.lower(), "spider"):
+            runner.crawl(s)
     
 
     #runner.crawl(CharacterData.CharacterSpider)
     #runner.crawl(EquipmentData.TotalEquipmentSpider)
-    runner.crawl(CalculationsData.StarforceSpider)
+    #runner.crawl(CalculationsData.StarforceSpider)
     
     d = runner.join()
     d.addBoth(lambda _: reactor.stop())

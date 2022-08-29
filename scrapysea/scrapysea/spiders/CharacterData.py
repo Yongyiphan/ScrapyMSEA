@@ -39,7 +39,7 @@ class CharacterSpider(scrapy.Spider):
     def parse(self, response):
         try:
             options = webdriver.ChromeOptions()
-            options.add_argument('--log-level=0')
+            options.add_argument('--log-level=3')
             browser = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
             #browser = webdriver.Chrome(ChromeDriverManager().install())
             browser.get(response.url)
