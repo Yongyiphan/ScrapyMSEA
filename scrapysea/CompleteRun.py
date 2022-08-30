@@ -49,18 +49,18 @@ def exec_Crawler():
     runner = CrawlerRunner(settings=sett)
     CF.APPFOLDER = DefaultPath
  
-    runner.crawl(CharacterData.CharacterSpider)
-    EquipmentSpiders = dict([(name, cls) for name, cls in EquipmentData.__dict__.items() if isinstance(cls, type)])
-    for name, s in EquipmentSpiders.items():
-        if CF.if_In_String(name.lower(), "spider"):
-            runner.crawl(s)
-    CalculationSpiders = dict([(name, cls) for name, cls in CalculationsData.__dict__.items() if isinstance(cls, type)])
-    for name, s in CalculationSpiders.items():
-        if CF.if_In_String(name.lower(), "spider"):
-            runner.crawl(s)
+    #runner.crawl(CharacterData.CharacterSpider)
+    #EquipmentSpiders = dict([(name, cls) for name, cls in EquipmentData.__dict__.items() if isinstance(cls, type)])
+    #for name, s in EquipmentSpiders.items():
+    #    if CF.if_In_String(name.lower(), "spider"):
+    #        runner.crawl(s)
+    #CalculationSpiders = dict([(name, cls) for name, cls in CalculationsData.__dict__.items() if isinstance(cls, type)])
+    #for name, s in CalculationSpiders.items():
+    #    if CF.if_In_String(name.lower(), "spider"):
+    #        runner.crawl(s)
     
 
-    #runner.crawl(CharacterData.CharacterSpider)
+    runner.crawl(CharacterData.CharacterSpider)
     #runner.crawl(EquipmentData.TotalEquipmentSpider)
     #runner.crawl(CalculationsData.StarforceSpider)
     
@@ -88,8 +88,8 @@ if __name__ == "__main__":
     
 
     start = time.time()
-    #exec_Crawler()
+    exec_Crawler()
     #ComFunc.main()
-    ProgressBar(50)
+    #ProgressBar(50)
     end = time.time()
     print("Scaped All in {0}".format(end - start))

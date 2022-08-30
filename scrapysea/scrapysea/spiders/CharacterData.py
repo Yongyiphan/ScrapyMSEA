@@ -5,11 +5,13 @@ import re
 import CustomLogger
 import traceback
 
+
 import ComFunc as CF
 
 
 import scrapy
 
+from tqdm import *
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -57,6 +59,7 @@ class CharacterSpider(scrapy.Spider):
                 ClassesLinks.append(link)
             browser.close()
             buildID = json.loads(response.xpath("//script[@id='__NEXT_DATA__'] /text()").get())['buildId']
+            self.pbar = tqdm(total = len(ClassesLinks))
             for i, link in enumerate(ClassesLinks):
                 nurl = self.jsonKey + buildID + "/" + link
                 self.logger.info("{0}: {1}".format(i, nurl))
@@ -75,6 +78,7 @@ class CharacterSpider(scrapy.Spider):
 
     def close(self):
         try:
+            self.pbar.close()
             CDF = pd.concat(self.CharacterDF, ignore_index=True)
 
             UDF = pd.concat(self.UnionDF, ignore_index=True)
@@ -102,7 +106,8 @@ class CharacterSpider(scrapy.Spider):
             PostData = data['pageProps']['post']
             PostContentData = PostData['content']
 
-            ClassName = CF.replaceN(PostData['class'], ',').strip()
+            ClassName = CF.replaceN(PostData['class'], ',').strip()    
+            self.pbar.set_description("Retrieving: {0}".format(ClassName))
             UnionE = PostContentData['legion']
             UnionStatType = "Flat" if 'flat' in UnionE else "Perc"
             for value in ['%', ',']:
@@ -157,6 +162,7 @@ class CharacterSpider(scrapy.Spider):
             CLogger.warn(traceback.format_exc())
         finally:
             CLogger.info("Adding {0}".format(ClassName))
+            self.pbar.update(1)
             return
 
         
