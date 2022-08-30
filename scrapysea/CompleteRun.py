@@ -10,6 +10,7 @@ from twisted.internet import reactor
 from scrapy.crawler import CrawlerRunner
 from scrapy.utils.project import get_project_settings
 from scrapy.utils.log import configure_logging
+from TestProgressBar import ProgressBar
 
 
 
@@ -87,7 +88,8 @@ if __name__ == "__main__":
     
 
     start = time.time()
-    exec_Crawler()
+    #exec_Crawler()
     #ComFunc.main()
+    ProgressBar(50)
     end = time.time()
     print("Scaped All in {0}".format(end - start))
