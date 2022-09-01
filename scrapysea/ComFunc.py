@@ -61,6 +61,7 @@ def TimeTaken(self):
         sys.stdout.flush()
         time.sleep(1)
 
+    
 
 def main():
     Rlog = CustomLogger.Set_Custom_Logger("ReformatInfo", "./Logs/Reformat.log", propagate=False)

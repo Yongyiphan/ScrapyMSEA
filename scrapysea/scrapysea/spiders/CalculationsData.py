@@ -1,11 +1,13 @@
 
 import traceback
+from webbrowser import Elinks
 
 import pandas as pd
 import scrapy
 import CustomLogger
 import ComFunc as CF
 from CompleteRun import *
+from tqdm import *
 
 PLogger  = CustomLogger.Set_Custom_Logger("PotentialSpider", logTo="./Logs/Calculation.log", propagate=False)
 SFLogger = CustomLogger.Set_Custom_Logger("StarforceSpider",logTo="./Logs/Calculation.log",propagate=False )
@@ -85,11 +87,19 @@ class PotentialSpider(scrapy.Spider):
    
     def Execute(self, PotentialGrades):
         FromDiv = False
+        MainBar = tqdm(total=2, desc="Main Potential: ")
+        CBar = tqdm(total=1)
+        Scraped = []
         for PTableGrade in PotentialGrades:
             try:
                 divRefPoint = PTableGrade.xpath("./ancestor::div[contains(@class, 'collapsible')]")
                 h2Title = divRefPoint.xpath("./preceding-sibling::h2[1]/span[contains(@class, 'headline')] /text()").get()
-                PotentialType = "Bonus" if "bonus" in h2Title.lower() else "Potential"
+                
+                IsBonus = True if "bonus" in h2Title.lower() else False
+                                
+                MainBar.desc = "Bonus Potential: " if IsBonus else "Main Potential: "
+                
+                
                 EquipSlots = divRefPoint.xpath("./preceding-sibling::h3[1]/span[contains(@class,'headline')] /text()").get()
                 EList = self.formatEquipSlots(EquipSlots)   
                 GradeT = divRefPoint.xpath("./preceding-sibling::h4[1]/span[contains(@class,'headline')] /text()").get()
@@ -98,11 +108,8 @@ class PotentialSpider(scrapy.Spider):
                 GradeT = GradeT.split("(")
                 Grade = GradeT[0].strip(' ')
                 Prime = GradeT[1].strip(')').replace('-', ' ')
-                PDict = {
-                    "Slot" : EList,
-                    "Grade" : Grade,
-                    "Prime" : Prime
-                }
+                PDict = {"Slot" : EList,"Grade" : Grade,"Prime" : Prime}
+                CBar.set_description("{0}".format(EList))
                 Clist = self.PotentialTable[PotentialType]
                 ChanceL = self.CubeRates[PotentialType]
                 CDict = {key: value for key, value in PDict.items()}
@@ -131,7 +138,6 @@ class PotentialSpider(scrapy.Spider):
                             CStat = ' '.join([value.strip() for value in CF.replaceN(CStat, [f"{fv}%", "of", "+"]).split(' ') if value != ''])
                             CDict['Stat value'] = int(fv)
                             #CDict['Stat'] = CStat.replace("%", "").strip()
-                            
                         continue
 
                     if childName == 'div':
@@ -169,15 +175,11 @@ class PotentialSpider(scrapy.Spider):
                                         TempD["Slot"] = s
                                         NTempD = self.ReorgStatValue(TempD)
                                         Clist.append(pd.DataFrame(NTempD, index=[0]))
-                                        #PLogger.info(f"Grabbing {s}: {CDict['DisplayStat']} => {CDict['Stat']}")
-                                        #PLogger.info(f"Grabbing {s}: {CDict['DisplayStat']}")
                             
                             CDict = CF.DeepCopyDict(PDict)
                             CDict["ChanceTable"] = self.HandleTables(child)
                             ChanceL.append(self.ConsolidateTable(CDict, "ChanceTable"))
 
-                            #PLogger.info(f"Adding Chance for {EList}: {CDict['DisplayStat']}")
-                            #Resets CDict
                             CDict = CF.DeepCopyDict(PDict)
                             FromDiv = False
                         else:
@@ -186,6 +188,7 @@ class PotentialSpider(scrapy.Spider):
 
             except Exception as E:
                 PLogger.critical(traceback.format_exc())    
+        MainBar.update(1)
         return   
  
     
@@ -359,11 +362,13 @@ class StarforceSpider(scrapy.Spider):
         SkipValue = False
         IgnoreTable = ['Total_Stats', 'Meso_Cost']
         CurrentRecord = "Normal_Equips"
+        print("\nGathering {0}:".format(CurrentRecord))
         for element in content:
             cName = element.xpath("name()").get()
             cid = element.xpath(".//span[@class='mw-headline']/@id").get()
             if cName == "h3":
                 CurrentRecord = cid
+                print("\nGathering {0}:".format(CurrentRecord))
                 continue
             if cName == "h4":
                 CurrentKey = "".join(cid.split('_')[:2])
@@ -392,8 +397,10 @@ class StarforceSpider(scrapy.Spider):
     def StarLimitTable(self, title, content):
         Header = CF.removeB(content.xpath(".//tr/th/text()").getall())
         ConsolTable = []
+        StarLimitBar = tqdm(total=len(content.xpath(".//tr")), desc="Star Limits")
         for row in content.xpath(".//tr"):
             if CF.removeB(row.xpath(".//text()").getall()) == Header:
+                StarLimitBar.total -= 1
                 continue
             CRow = {
                 "Title" : title
@@ -410,15 +417,19 @@ class StarforceSpider(scrapy.Spider):
                     CRow["MaxLvl"] = splitv[-1]
                     continue
                 CRow[key] = ctext.strip(" \n")
+            StarLimitBar.update(1)
             ConsolTable.append(pd.DataFrame(CRow, index=[0]))
         SFLogger.info("Adding StarLimit Table for {0}".format(title))
+        StarLimitBar.close()
         return pd.concat(ConsolTable, ignore_index=True)
 
     def SuccessRatesTable(self, CurrentRecord, content):
         Header = CF.removeB(content.xpath(".//tr/th/text()").getall())
         ConsolTable = []
+        SuccessRatesBar = tqdm(total=len(content.xpath(".//tr")), desc="Success Rates")
         for row in content.xpath(".//tr"):
             if CF.removeB(row.xpath(".//text()").getall()) == Header:
+                SuccessRatesBar.total -= 1
                 continue
             CRow = {
                 "Title" :  CurrentRecord
@@ -439,8 +450,10 @@ class StarforceSpider(scrapy.Spider):
                 
                 CRow[key] = value
         
+            SuccessRatesBar.update(1)
             ConsolTable.append(pd.DataFrame(CRow, index=[0]))
 
+        SuccessRatesBar.close()
         SFLogger.info("Adding Success Rates for {0}".format(CurrentRecord))
         return pd.concat(ConsolTable, ignore_index=True)
 
@@ -449,6 +462,7 @@ class StarforceSpider(scrapy.Spider):
         
         Header = CF.removeB(content.xpath(".//tr/th/text()").getall())
         ConsolTable = []
+        StatsPBar = tqdm(total=1, desc="Starforce Stats: ")
         for row in content.xpath("./tbody/tr"):
             if CF.removeB(row.xpath(".//text()").getall()) == Header:
                 continue      
@@ -465,6 +479,7 @@ class StarforceSpider(scrapy.Spider):
             except:
                 SFLogger.critical(traceback.format_exc())
             for ids in SFIDs:
+                StatsPBar.total += 1
                 SFat = {
                     "SFID" : ids,
                     "MinLvl" : 0,
@@ -493,9 +508,11 @@ class StarforceSpider(scrapy.Spider):
                         Stats = CF.removeB(subrow.xpath(".//td[2] //text()").getall())
                         DCopy.update(self.ReturnStatDict(Stats))
                         ConsolTable.append(pd.DataFrame(DCopy, index=[0]))
+                StatsPBar.update(1)
                 SFLogger.info("Adding Starforce stat at {0} for {1}".format(ids, CurrentRecord))
-
+        StatsPBar.total -= 1
         SFLogger.info("Adding SF Stats for {0}".format(CurrentRecord))
+        StatsPBar.close()
         return pd.concat(ConsolTable, ignore_index=True)
 
     def ReturnStatDict(self, StatList):
@@ -506,6 +523,8 @@ class StarforceSpider(scrapy.Spider):
             RDict[key] =  int(value.strip(" %"))
         
         return RDict
+    
+        
 
 #Unuser whether implementation is necessary
 class SpellTraceSpider(scrapy.Spider):
@@ -655,9 +674,11 @@ class HyperStatSpider(scrapy.Spider):
     def HyperStatDistribution(self, content):
         Header = sorted(list(set(CF.removeB(content.xpath(".//tr //th/text()").getall()))))
         ConsolTable = []
+        HSDBar = tqdm(total=len(content.xpath(".//tr")),desc="HyperStats Distribution: ")
         for row in content.xpath(".//tr"):
             t = CF.removeB(row.xpath(".//text()").getall())
             if sorted(t) == Header:
+                HSDBar.total -= 1
                 continue
             CDict = {}
             for i, key in enumerate(Header):
@@ -665,11 +686,14 @@ class HyperStatSpider(scrapy.Spider):
                     key = key.split('(')[0].strip()
                 CDict[key] = CF.replaceN(t[i], ",")
             ConsolTable.append(pd.DataFrame(CDict, index=[0]))
+            HSDBar.update(1)
+        HSDBar.close()
         self.FinalDict["Distribution"] = pd.concat(ConsolTable, ignore_index=True)
         return
 
     def HyperStat(self, content):
         try:
+            HSBar = tqdm(total=len(content), desc="HyperStats: ")
             for i, table in enumerate(content):
                 StatType = table.xpath("./preceding-sibling::h3[1]/span[@class='mw-headline']/text()").get()
                 CStat = {}
@@ -699,7 +723,8 @@ class HyperStatSpider(scrapy.Spider):
                     self.FinalDict["Cost"] = Result
                 else:
                     self.FinalDict["HyperStats"].append(Result)
-                
+                HSBar.update(1)
+            HSBar.close()
                     
         except:
             HSLogger.critical(traceback.format_exc())
