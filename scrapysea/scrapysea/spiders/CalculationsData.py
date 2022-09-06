@@ -89,14 +89,13 @@ class PotentialSpider(scrapy.Spider):
         FromDiv = False
         MainBar = tqdm(total=2, desc="Main Potential: ")
         CBar = tqdm(total=1)
-        Scraped = []
         for PTableGrade in PotentialGrades:
             try:
                 divRefPoint = PTableGrade.xpath("./ancestor::div[contains(@class, 'collapsible')]")
                 h2Title = divRefPoint.xpath("./preceding-sibling::h2[1]/span[contains(@class, 'headline')] /text()").get()
                 
                 IsBonus = True if "bonus" in h2Title.lower() else False
-                                
+                PotentialType = "Bonus" if IsBonus else "Main"                
                 MainBar.desc = "Bonus Potential: " if IsBonus else "Main Potential: "
                 
                 
@@ -124,6 +123,8 @@ class PotentialSpider(scrapy.Spider):
                         #CDict['Stat'] = DisplayStat
                         CDict = self.reformatDisplayStat(CDict)
                         PDict["DisplayStat"] = CDict["DisplayStat"]
+                        CBar.total += 1
+                        CBar.refresh()
                         continue
                     if childName == 'p':
                         ptext = child.xpath("./text()").get()
@@ -175,6 +176,7 @@ class PotentialSpider(scrapy.Spider):
                                         TempD["Slot"] = s
                                         NTempD = self.ReorgStatValue(TempD)
                                         Clist.append(pd.DataFrame(NTempD, index=[0]))
+                                CBar.update(1)
                             
                             CDict = CF.DeepCopyDict(PDict)
                             CDict["ChanceTable"] = self.HandleTables(child)
@@ -315,6 +317,16 @@ class PotentialSpider(scrapy.Spider):
                     del TempD[d]
         return TempD
     
+class TestSpider(Scrapy.Spider):
+    name = "TestSpider"
+    start_urls = ["https://strategywiki.org/wiki/MapleStory/Potential_System"]
+    custom_settings = {
+        "LOG_SCRAPED_ITEMS": False
+    }
+
+    def parse(self, response):
+        StartPotential = response.xpath("//span[@id='Potentials_List]/parent::h2/following-siblings::*")
+        ...
 
 class StarforceSpider(scrapy.Spider):
     name = "StarforceSpider"
