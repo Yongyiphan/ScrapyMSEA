@@ -61,7 +61,7 @@ def exec_Crawler():
 
     #runner.crawl(CharacterData.CharacterSpider)
     #runner.crawl(EquipmentData.TotalEquipmentSpider)
-    runner.crawl(CalculationsData.PotentialSpider)
+    #runner.crawl(CalculationsData.StarforceSpider)
     
     d = runner.join()
     d.addBoth(lambda _: reactor.stop())

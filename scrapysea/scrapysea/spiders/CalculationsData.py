@@ -122,11 +122,8 @@ class PotentialSpider(scrapy.Spider):
                 CDict = {key: value for key, value in PDict.items()}
                 for child in PTableGrade.xpath("./*"):
                     childName = child.xpath("name()").get()
-                    if childName == None:
-                        continue
                     if childName == "h5":
                         DisplayStat = child.xpath(".//span[contains(@class, 'headline')] /text()").get().encode("ascii", "ignore").decode()
-                        
                         CDict["DisplayStat"] = DisplayStat
                         #CDict['Stat'] = DisplayStat
                         CDict = self.reformatDisplayStat(CDict)
@@ -151,10 +148,8 @@ class PotentialSpider(scrapy.Spider):
                         FromDiv = True
                         for table in child.xpath(".//div"):
                             PDcopy = CF.DeepCopyDict(CDict)
-                            for tchild in table.xpath("./child::node()"):
+                            for tchild in table.xpath("./*"):
                                 cname = tchild.xpath("name()").get()                                    
-                                if cname == None:
-                                    continue
                                 if cname == 'table':
                                     PDcopy['StatTable'] = self.HandleTables(tchild)
                                     Clist.append(self.ConsolidateTable(PDcopy, "StatTable"))
@@ -315,87 +310,7 @@ class PotentialSpider(scrapy.Spider):
                     del TempD[d]
         return TempD
     
-import re
-class TestSpider(scrapy.Spider):
-    name = "TestSpider"
-    start_urls = ["https://strategywiki.org/wiki/MapleStory/Potential_System"]
-    custom_settings = {
-        "LOG_SCRAPED_ITEMS": False
-        
-    }
-    PotentialTable = {
-        "Potential" : [],
-        "Bonus" : []
-    }
     
-    CubeRates = {
-        "Potential" : [],
-        "Bonus" : []
-    }
-    minLvl = 0
-    maxLvl = 300
-    
-    def parse(self, response):
-        try:
-            mainContent = response.xpath("//div[@class='mw-parser-output'] //span[@id='Potentials_List']/parent::h2/following-sibling::div[not(contains(@class, 'nav_box'))]")
-            PotentialGrades = mainContent.xpath(".//div[contains(@class,'collapsible-content')]")
-            self.Execute(PotentialGrades)
-                
-        except Exception as E:
-            PLogger.critical(traceback.format_exc())
-    
-    def Execute(self, Contents):
-        #Contents Contains tables at potential grade
-        
-        
-        for GradeTable in Contents:
-            try:
-                PotentialType = GradeTable.xpath("./parent::div/preceding-sibling::h2[1]//text()").get()
-                PotentialType = "Bonus" if CF.if_In_String(PotentialType.lower(), "bonus") else "Main"
-                EqList = GradeTable.xpath("./parent::div/preceding-sibling::h3[1]//text()").get()
-                EqList = [s.strip() for s in CF.replaceN(EqList, ["and", ","], "|").split('|')]
-                Grade = GradeTable.xpath("./parent::div/preceding-sibling::h4[1]//text()").get()
-                Grade, Prime =  self.ReturnGrade(Grade)
-                BlankEntry = {
-                    "PotentialType" : PotentialType,
-                    "EqList" : EqList,
-                    "Grade"  : Grade,
-                    "Prime"  : Prime
-                }
-                IsChance = False
-                for element in Contents.xpath("./*"):
-                    eName = element.xpath("name()").get()
-                    if eName == "h5":
-                        IsChance = False
-                        ##Retrieve DisplayStat
-                        DisplayStat = element.xpath(".//span[contains(@class, 'headline')] /text()").get().encode("ascii", "ignore").decode()
-                        print(DisplayStat)
-                        ... 
-                        
-                    elif eName == "dl":
-                        IsChance =  True
-                    
-                    if eName == "table":
-                        if IsChance:
-                            ...
-                        else:
-                            ...        
-                    
-                    ... 
-            except Exception as E:
-                PLogger.warning(traceback.format_exc())
-            
-            print(Grade)
-        
-    def ReturnGrade(self, Grade):
-        Temp = Grade.split(" ")
-        Grade = Temp[0]
-        Prime = CF.replaceN(Temp[1], ["(", ")"])
-        return (Grade, Prime)
-    
-    
-        
-
 class StarforceSpider(scrapy.Spider):
     name = "StarforceSpider"
     start_urls = ["https://strategywiki.org/wiki/MapleStory/Spell_Trace_and_Star_Force"]
@@ -471,7 +386,6 @@ class StarforceSpider(scrapy.Spider):
                     self.FinalDict[CurrentKey].append(self.SuccessRatesTable(CurrentRecord, element))
                 elif CurrentKey == "StatsBoost":
                     self.FinalDict[CurrentRecord]= self.StatsBoostsTable(CurrentRecord, element)
-                
         return
 
     def StarLimitTable(self, title, content):
@@ -538,8 +452,6 @@ class StarforceSpider(scrapy.Spider):
         return pd.concat(ConsolTable, ignore_index=True)
 
     def StatsBoostsTable(self,CurrentRecord, content):
-
-        
         Header = CF.removeB(content.xpath(".//tr/th/text()").getall())
         ConsolTable = []
         StatsPBar = tqdm(total=1, desc="Starforce Stats: ")
