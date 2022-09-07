@@ -13,7 +13,6 @@ from scrapy.utils.log import configure_logging
 from TestProgressBar import ProgressBar
 
 
-
 from scrapysea.spiders import CalculationsData
 from scrapysea.spiders import EquipmentData
 from scrapysea.spiders import CharacterData
@@ -62,7 +61,7 @@ def exec_Crawler():
 
     #runner.crawl(CharacterData.CharacterSpider)
     #runner.crawl(EquipmentData.TotalEquipmentSpider)
-    runner.crawl(CalculationsData.TestSpider)
+    runner.crawl(CalculationsData.PotentialSpider)
     
     d = runner.join()
     d.addBoth(lambda _: reactor.stop())

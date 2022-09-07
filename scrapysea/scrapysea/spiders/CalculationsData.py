@@ -9,6 +9,7 @@ import ComFunc as CF
 from CompleteRun import *
 from tqdm import *
 
+
 PLogger  = CustomLogger.Set_Custom_Logger("PotentialSpider", logTo="./Logs/Calculation.log", propagate=False)
 SFLogger = CustomLogger.Set_Custom_Logger("StarforceSpider",logTo="./Logs/Calculation.log",propagate=False )
 BSLogger = CustomLogger.Set_Custom_Logger("BonusSpider",logTo="./Logs/Calculation.log",propagate=False )
@@ -25,12 +26,12 @@ class PotentialSpider(scrapy.Spider):
     }
     
     PotentialTable = {
-        "Potential" : [],
+        "Main" : [],
         "Bonus" : []
     }
     
     CubeRates = {
-        "Potential" : [],
+        "Main" : [],
         "Bonus" : []
     }
     minLvl = 0
@@ -88,31 +89,38 @@ class PotentialSpider(scrapy.Spider):
     def Execute(self, PotentialGrades):
         FromDiv = False
         MainBar = tqdm(total=2, desc="Main Potential: ")
-        CBar = tqdm(total=1)
+        t = len(PotentialGrades.xpath("./h5"))
+        CBar = tqdm(total=t)
+        CurrentEListTrack = []
+        CurrentPotTrack = []
         for PTableGrade in PotentialGrades:
             try:
-                divRefPoint = PTableGrade.xpath("./ancestor::div[contains(@class, 'collapsible')]")
-                h2Title = divRefPoint.xpath("./preceding-sibling::h2[1]/span[contains(@class, 'headline')] /text()").get()
+                PotentialType = PTableGrade.xpath("./parent::div/preceding-sibling::h2[1]//text()").get()
+                PotentialType = "Bonus" if CF.if_In_String(PotentialType.lower(), "bonus") else "Main"
+                EList = PTableGrade.xpath("./parent::div/preceding-sibling::h3[1]//text()").get()
+                if PotentialType not in CurrentPotTrack:
+                    CurrentPotTrack.append(PotentialType)
+                    MainBar.update( 1  if PotentialType == "Bonus" else 0)
+                    MainBar.set_description = "Bonus Potential" if PotentialType == "Bonus" else "Main Potential"
+                    CurrentEListTrack = []
+                EList = [s.strip() for s in CF.replaceN(EList, ["and", ","], "|").split('|')]
+                if EList not in CurrentEListTrack:
+                    CurrentEListTrack.append(EList)
+                    CBar.set_description("{0}".format(EList))
+                    #CBar.total = len(PTableGrade.xpath("./child::h5"))
+                    CBar.refresh()
+                Grade = PTableGrade.xpath("./parent::div/preceding-sibling::h4[1]//text()").get()
+                Grade, Prime =  self.ReturnGrade(Grade)
+                PDict = {
+                    "Slot" : EList,
+                    "Grade"  : Grade,
+                    "Prime"  : Prime
+                }
                 
-                IsBonus = True if "bonus" in h2Title.lower() else False
-                PotentialType = "Bonus" if IsBonus else "Main"                
-                MainBar.desc = "Bonus Potential: " if IsBonus else "Main Potential: "
-                
-                
-                EquipSlots = divRefPoint.xpath("./preceding-sibling::h3[1]/span[contains(@class,'headline')] /text()").get()
-                EList = self.formatEquipSlots(EquipSlots)   
-                GradeT = divRefPoint.xpath("./preceding-sibling::h4[1]/span[contains(@class,'headline')] /text()").get()
-                if "/" in GradeT:
-                    GradeT = GradeT.split("/")[0].strip(' ')
-                GradeT = GradeT.split("(")
-                Grade = GradeT[0].strip(' ')
-                Prime = GradeT[1].strip(')').replace('-', ' ')
-                PDict = {"Slot" : EList,"Grade" : Grade,"Prime" : Prime}
-                CBar.set_description("{0}".format(EList))
                 Clist = self.PotentialTable[PotentialType]
                 ChanceL = self.CubeRates[PotentialType]
                 CDict = {key: value for key, value in PDict.items()}
-                for child in PTableGrade.xpath("./child::node()"):
+                for child in PTableGrade.xpath("./*"):
                     childName = child.xpath("name()").get()
                     if childName == None:
                         continue
@@ -123,8 +131,6 @@ class PotentialSpider(scrapy.Spider):
                         #CDict['Stat'] = DisplayStat
                         CDict = self.reformatDisplayStat(CDict)
                         PDict["DisplayStat"] = CDict["DisplayStat"]
-                        CBar.total += 1
-                        CBar.refresh()
                         continue
                     if childName == 'p':
                         ptext = child.xpath("./text()").get()
@@ -176,14 +182,12 @@ class PotentialSpider(scrapy.Spider):
                                         TempD["Slot"] = s
                                         NTempD = self.ReorgStatValue(TempD)
                                         Clist.append(pd.DataFrame(NTempD, index=[0]))
-                                CBar.update(1)
                             
                             CDict = CF.DeepCopyDict(PDict)
                             CDict["ChanceTable"] = self.HandleTables(child)
                             ChanceL.append(self.ConsolidateTable(CDict, "ChanceTable"))
-
-                            CDict = CF.DeepCopyDict(PDict)
                             FromDiv = False
+                            CBar.update(1)
                         else:
                             CDict["StatTable"] = self.HandleTables(child)
                         continue
@@ -254,18 +258,12 @@ class PotentialSpider(scrapy.Spider):
             PLogger.critical(traceback.format_exc())        
         return PDict
     
-    def formatEquipSlots(self, EquipStr):
-        if CF.if_In_String(EquipStr, "("):
-            EquipStr =  EquipStr.split("(")[0].strip(' ')
-        if "and" in EquipStr:
-            EquipStr = EquipStr.replace("and", ";").split(';')
-        if CF.if_In_String(EquipStr, ","):
-            EquipStr = CF.replaceN(EquipStr, ',', ';').split(';')
-        if isinstance(EquipStr, list):
-            return [value.strip() for value in EquipStr]
-        elif isinstance(EquipStr, str):
-            return [EquipStr.strip()]
-        pass
+    def ReturnGrade(self, Grade):
+        Temp = Grade.split(" ")
+        Grade = Temp[0]
+        Prime = CF.replaceN(Temp[1], ["(", ")"])
+        return (Grade, Prime)
+
     
     def UpdateTableDict(self, Base, AddOn):
         for k, v in AddOn.items():
@@ -317,16 +315,86 @@ class PotentialSpider(scrapy.Spider):
                     del TempD[d]
         return TempD
     
-class TestSpider(Scrapy.Spider):
+import re
+class TestSpider(scrapy.Spider):
     name = "TestSpider"
     start_urls = ["https://strategywiki.org/wiki/MapleStory/Potential_System"]
     custom_settings = {
         "LOG_SCRAPED_ITEMS": False
+        
     }
-
+    PotentialTable = {
+        "Potential" : [],
+        "Bonus" : []
+    }
+    
+    CubeRates = {
+        "Potential" : [],
+        "Bonus" : []
+    }
+    minLvl = 0
+    maxLvl = 300
+    
     def parse(self, response):
-        StartPotential = response.xpath("//span[@id='Potentials_List]/parent::h2/following-siblings::*")
-        ...
+        try:
+            mainContent = response.xpath("//div[@class='mw-parser-output'] //span[@id='Potentials_List']/parent::h2/following-sibling::div[not(contains(@class, 'nav_box'))]")
+            PotentialGrades = mainContent.xpath(".//div[contains(@class,'collapsible-content')]")
+            self.Execute(PotentialGrades)
+                
+        except Exception as E:
+            PLogger.critical(traceback.format_exc())
+    
+    def Execute(self, Contents):
+        #Contents Contains tables at potential grade
+        
+        
+        for GradeTable in Contents:
+            try:
+                PotentialType = GradeTable.xpath("./parent::div/preceding-sibling::h2[1]//text()").get()
+                PotentialType = "Bonus" if CF.if_In_String(PotentialType.lower(), "bonus") else "Main"
+                EqList = GradeTable.xpath("./parent::div/preceding-sibling::h3[1]//text()").get()
+                EqList = [s.strip() for s in CF.replaceN(EqList, ["and", ","], "|").split('|')]
+                Grade = GradeTable.xpath("./parent::div/preceding-sibling::h4[1]//text()").get()
+                Grade, Prime =  self.ReturnGrade(Grade)
+                BlankEntry = {
+                    "PotentialType" : PotentialType,
+                    "EqList" : EqList,
+                    "Grade"  : Grade,
+                    "Prime"  : Prime
+                }
+                IsChance = False
+                for element in Contents.xpath("./*"):
+                    eName = element.xpath("name()").get()
+                    if eName == "h5":
+                        IsChance = False
+                        ##Retrieve DisplayStat
+                        DisplayStat = element.xpath(".//span[contains(@class, 'headline')] /text()").get().encode("ascii", "ignore").decode()
+                        print(DisplayStat)
+                        ... 
+                        
+                    elif eName == "dl":
+                        IsChance =  True
+                    
+                    if eName == "table":
+                        if IsChance:
+                            ...
+                        else:
+                            ...        
+                    
+                    ... 
+            except Exception as E:
+                PLogger.warning(traceback.format_exc())
+            
+            print(Grade)
+        
+    def ReturnGrade(self, Grade):
+        Temp = Grade.split(" ")
+        Grade = Temp[0]
+        Prime = CF.replaceN(Temp[1], ["(", ")"])
+        return (Grade, Prime)
+    
+    
+        
 
 class StarforceSpider(scrapy.Spider):
     name = "StarforceSpider"
