@@ -49,13 +49,13 @@ def exec_Crawler():
     CF.APPFOLDER = DefaultPath
  
     #runner.crawl(CharacterData.CharacterSpider)
-    #EquipmentSpiders = dict([(name, cls) for name, cls in EquipmentData.__dict__.items() if isinstance(cls, type)])
-    #for name, s in EquipmentSpiders.items():
-    #    if CF.if_In_String(name.lower(), "spider"):
-    #        runner.crawl(s)
+    EquipmentSpiders = dict([(name, cls) for name, cls in EquipmentData.__dict__.items() if isinstance(cls, type)])
+    for name, s in EquipmentSpiders.items():
+        if CF.instring(name.lower(), "spider"):
+            runner.crawl(s, rename = CF.REJSON)
     #CalculationSpiders = dict([(name, cls) for name, cls in CalculationsData.__dict__.items() if isinstance(cls, type)])
     #for name, s in CalculationSpiders.items():
-    #    if CF.if_In_String(name.lower(), "spider"):
+    #    if CF.instring(name.lower(), "spider"):
     #        runner.crawl(s)
     
 
@@ -85,7 +85,8 @@ if __name__ == "__main__":
     else:  
         CF.setPath("C:\\Users\\edgar\\AppData\\Local\\Packages\\MseaCalculatorPackaged_h8rqv0gxgvjbt\\LocalState\\")
     
-
+    CF.LoadRenameJson()
+    print(CF.REJSON.keys())
     start = time.time()
     exec_Crawler()
     #ComFunc.main()

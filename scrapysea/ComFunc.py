@@ -10,6 +10,8 @@ MINLVL = 0
 
 #APPFOLDER = "C:\\Users\\edgar\\AppData\\Local\\Packages\\MSEA-000f7318-a33f-4024-b59c-7eafe27b8831_h8rqv0gxgvjbt\\LocalState\\ScrapedData\\"
 
+#LOADER
+
 def setPath(destination):
     global APPFOLDER
     APPFOLDER = destination 
@@ -18,7 +20,21 @@ def setMseaModule(status):
     global MseaModule
     MseaModule = bool(status)
 
-def if_In_String(string, parameter, mode="Any"):
+import json
+import os
+def LoadRenameJson():
+    t = os.listdir()
+    with open("./scrapysea/ReName.json", "r") as file:
+        global REJSON
+        REJSON = json.load(file)
+    
+    print(REJSON.keys())
+
+
+
+#STRING FORMATERS
+
+def instring(string, parameter, mode="Any"):
     if isinstance(parameter, str):
         if parameter in string:
             return True
@@ -33,7 +49,7 @@ def if_In_String(string, parameter, mode="Any"):
     
     return False
 
-def replaceN(string, parameter, replacement = ''):
+def replacen(string, parameter, replacement = ''):
     if isinstance(parameter, list):
         for p in parameter:
             string = string.replace(p,replacement)
@@ -43,7 +59,7 @@ def replaceN(string, parameter, replacement = ''):
     
     return string
 
-def removeB(list):
+def removebr(list):
     return [value.strip('\n') for value in list if value.strip(' ') != '\n']
 
 def DeepCopyDict(Base):

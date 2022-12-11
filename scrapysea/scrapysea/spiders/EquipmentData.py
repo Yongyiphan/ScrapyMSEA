@@ -9,7 +9,7 @@ import ComFunc as CF
 
 
 from ComFunc import *
-
+from tqdm import *
 
 #Naming Convention
 #ClassName = Hero, Ark, etc
@@ -29,27 +29,20 @@ class TotalEquipmentSpider(scrapy.Spider):
         "LOG_SCRAPED_ITEMS": False
         
     }
-    
-    Mclasses = ['Warrior','Knight', 'Bowman', 'Archer', 'Magician','Mage','Thief', 'Pirate']
+    FinalCategory = ["Armor", "Accessory", "Weapon", "Secondary", "Android", "Medal"] 
 
-    NonMseaClasses = {
-            "Jett" : {
-                "Weapon" :"Gun",
-                "Secondary" : "Fist" }, 
-            "Beast Tamer": {
-                "Weapon" : "Scepter", 
-                "Secondary" : "Whistle" }
-            }
-    FinalEquipTrack ={
-        "Armor" : [],
-        "Accessory" : [],
-        "Weapon" : [],
-        "Secondary" : [],
-        "Android" : [],
-        "Medal" : []
-    }
-    ArmorEquip = ['Hat','Top', 'Overall', 'Bottom', 'Shoes', 'Cape', 'Gloves']
-    AccessoriesEquip = ['Shoulder', 'Face Accessory', 'Eye Accessory', 'Ring', 'Pendant', 'Earrings','Belt', 'Pocket Item', 'Android Heart', 'Badge', 'Emblem']
+    ArmorEquip = [
+            'Hat',
+            'Top',      'Overall', 
+            'Bottom',   'Gloves',   'Cape', 
+            'Shoes',]
+    AccessoriesEquip = [
+                                                            'Emblem', 
+        'Ring', 'Pendant',  'Face Accessory',               'Badge',
+                            'Eye Accessory',    'Earrings',
+                                                'Shoulder',
+        'Pocket','Belt',
+                                                            'Heart']
         
     EquipLevelMin = {
         "Hat" : 120, "Top" : 150, "Overall" : 120, "Bottom" :150, "Shoes" :120, "Cape" : 120, "Gloves" :120,
@@ -76,91 +69,108 @@ class TotalEquipmentSpider(scrapy.Spider):
         'Utgard', 'Lapis','Lazuli'
         ,'Fafnir','AbsoLab', 'Arcane', 'Genesis'
     ]
-
-        
-    ignoreSecondary = ["evolving", "frozen"]
-    
-    ignoreSet = [
-        'Immortal', 'Walker','Anniversary', 
-        "Sweetwater", "Commerci", "Gollux", "Alien", "Blackgate", "Glona",
-        "Abyss", "Fearless", "Eclectic", "Reverse", "Timeless"]
-    
-    PageContentSkip = [
-        "Extra Stats", "Notes", "Sold for", 
-        "Tradability", "Bought from", "Dropped by",
-        "Rewarded from", "Used In", "Used To", "Durability",
-        "when first equipped", "Crafted via", "EXP"]
-    
-    
-    
+    Ignore = {
+        "ignoreSecondary" : ["evolving", "frozen"],
+        "ignoreSet" : [
+            'Immortal', 'Walker','Anniversary', 
+            "Sweetwater", "Commerci", "Gollux", "Alien", "Blackgate", "Glona",
+            "Abyss", "Fearless", "Eclectic", "Reverse", "Timeless"],
+        "PageContentSkip" : [
+            "Extra Stats", "Notes", "Sold for", 
+            "Tradability", "Bought from", "Dropped by",
+            "Rewarded from", "Used In", "Used To", "Durability",
+            "when first equipped", "Crafted via", "EXP"]
+    }
+    FinalEquipTrack = {}
+    ColStruct = {}
+    rename = {}
+    #renamed/ exclude lists in ReName.json <=> self.rename
     def parse(self, response):
+        try:
+            for t in self.FinalCategory:
+                self.FinalEquipTrack[t] = pd.DataFrame()
+                self.ColStruct[t] = []
 
-        TempLink = []
-        ArmorT = response.xpath("//span[@id = 'Armor']/parent::h2/following-sibling::div[@class='tabber wds-tabber'][1]").css('table.maplestyle-equiptable')[0]
-        
-        for Slot in ArmorT.xpath(".//a[not(descendant::img)]/@href"):
-            Link = Slot.extract()
-            if Link.find("Totem")  !=  -1:
-                continue
-            nurl = response.urljoin(Link)
-            TempLink.append(nurl)
-            yield scrapy.Request(nurl, callback=self.HandleEquipment)
-        
-        weaponT = response.xpath("//span[@id = 'Weapon']/parent::h2/following-sibling::div[@class='tabber wds-tabber'][1] //a/@href").getall()
-        for weaponLinks in weaponT:
-            if CF.if_In_String(weaponLinks, '/') == False:
-                continue
-            weaponType = " ".join(re.split('_|-', weaponLinks.split('/')[-1]))
-            if CF.if_In_String(weaponType, '('):
-                weaponType = weaponType.split('(')[0]
-            nurl = response.urljoin(weaponLinks)
-            yield scrapy.Request(nurl, callback=self.HandleWeapon, meta={"WeaponType":weaponType.rstrip()}, dont_filter=True)
-        
-        secondaryT = response.xpath("//span[@id = 'Secondary_Weapon']/parent::h3/following-sibling::table[1]")
-        for secondaryLinks  in secondaryT.css("a::attr(href)"):
-            weaponType = " ".join(re.split('_|-', secondaryLinks.extract().split('/')[-1]))
-            nurl = response.urljoin(secondaryLinks.extract())
+            ArmorT = response.xpath("//span[@id = 'Armor']/parent::h2/following-sibling::div[@class='tabber wds-tabber'][1]").css('table.maplestyle-equiptable')[0]
+            for Slot in ArmorT.xpath(".//a[not(descendant::img)]/@href"):
+                Link = Slot.extract()
+                if Link.find("Totem")  !=  -1:
+                    continue
+                
+                nurl = response.urljoin(Link)
+                yield scrapy.Request(nurl, callback=self.HandleEquipment)
+                #break
             
-            if weaponType == "Shield":
-               yield scrapy.Request(nurl, callback=self.HandleEquipment, meta = {"Class" : "Any"})
-            else:
-                yield scrapy.Request(nurl, callback=self.HandleSecondary, meta={"WeaponType":weaponType})
-
+            weaponT = response.xpath("//span[@id = 'Weapon']/parent::h2/following-sibling::div[@class='tabber wds-tabber'][1] //a/@href").getall()
+            weapignore = [i[0] for i in self.rename['NonMseaClasses'].values()]
+            secignore = [i[1] for i in self.rename['NonMseaClasses'].values()]
+            for weaponLinks in weaponT:
+                if CF.instring(weaponLinks, '/') == False:
+                    continue
+                weaponType = " ".join(re.split('_|-', weaponLinks.split('/')[-1]))
+                if CF.instring(weaponType, '('):
+                    weaponType = weaponType.split('(')[0]
+                if weaponType.rstrip().lower() in weapignore:
+                    continue
+                nurl = response.urljoin(weaponLinks)
+                yield scrapy.Request(nurl, callback=self.HandleWeapon, meta={"WeaponType":weaponType.rstrip()}, dont_filter=True)
+            
+            secondaryT = response.xpath("//span[@id = 'Secondary_Weapon']/parent::h3/following-sibling::table[1]")
+            for secondaryLinks  in secondaryT.css("a::attr(href)"):
+                weaponType = " ".join(re.split('_|-', secondaryLinks.extract().split('/')[-1]))
+                if weaponType.rstrip().lower() in secignore:
+                    continue
+                nurl = response.urljoin(secondaryLinks.extract())
+                
+                if weaponType == "Shield":
+                    yield scrapy.Request(nurl, callback=self.HandleEquipment, meta = {"Class" : "Any"})
+                else:
+                    yield scrapy.Request(nurl, callback=self.HandleSecondary, meta={"WeaponType":weaponType})
+        except Exception:
+            Eqlogger.warn(traceback.format_exc())
     def close(self):
         try:
+            for val in sum(self.rename['Dataframe ReCol'].values(), []):
+                for k, l in self.FinalEquipTrack.items():
+                    if val in l.columns.values.tolist():
+                        ...
+                    ...
+
             pd.set_option("display.max_rows", None, "display.max_columns", None)
             #Weapon pd.pd.DataFrame
-            WDF = pd.concat(self.FinalEquipTrack['Weapon'], ignore_index=True)
-            WDF = CleanWeaponDF(WDF)
-            #Secondary pd.DataFrame
-            SDF = pd.concat(self.FinalEquipTrack['Secondary'], ignore_index=True)
-            SDF = CleanSecondaryDF(SDF)
+            #WDF = pd.concat(self.FinalEquipTrack['Weapon'], ignore_index=True)
+            #WDF = CleanWeaponDF(WDF)
+            ##Secondary pd.DataFrame
+            #SDF = pd.concat(self.FinalEquipTrack['Secondary'], ignore_index=True)
+            #SDF = CleanSecondaryDF(SDF)
 
-            #Armor
-            ADF = pd.concat(self.FinalEquipTrack['Armor'], ignore_index=True)
-            ADF = CleanArmorDF(ADF)
-            #Accessories
-            AccDF = pd.concat(self.FinalEquipTrack['Accessory'], ignore_index=True)
-            AccDF = CleanAccessoryDF(AccDF)
-            #Android
-            AndroidDF = pd.concat(self.FinalEquipTrack['Android'], ignore_index=True)
-            AndroidDF = CleanAndroidDF(AndroidDF)
-            #Medals
-            MDF = pd.concat(self.FinalEquipTrack['Medal'], ignore_index=True)
-            MDF = CleanMedalDF(MDF)
+            ##Armor
+            #ADF = pd.concat(self.FinalEquipTrack['Armor'], ignore_index=True)
+            #ADF = CleanArmorDF(ADF)
+            ##Accessories
+            #AccDF = pd.concat(self.FinalEquipTrack['Accessory'], ignore_index=True)
+            #AccDF = CleanAccessoryDF(AccDF)
+            ##Android
+            #AndroidDF = pd.concat(self.FinalEquipTrack['Android'], ignore_index=True)
+            #AndroidDF = CleanAndroidDF(AndroidDF)
+            ##Medals
+            #MDF = pd.concat(self.FinalEquipTrack['Medal'], ignore_index=True)
+            #MDF = CleanMedalDF(MDF)
 
-            WDF.to_csv(CF.APPFOLDER + 'EquipmentData\\WeaponData.csv')
-            SDF.to_csv(CF.APPFOLDER + 'EquipmentData\\SecondaryData.csv')
-            ADF.to_csv(CF.APPFOLDER + 'EquipmentData\\ArmorData.csv')
-            AccDF.to_csv(CF.APPFOLDER + 'EquipmentData\\AccessoryData.csv')
-            AndroidDF.to_csv(CF.APPFOLDER + 'EquipmentData\\AndroidData.csv')
-            MDF.to_csv(CF.APPFOLDER + 'EquipmentData\\MedalData.csv')
-            Eqlogger.info("Scraped {0} Weapons".format(len(WDF)))
-            Eqlogger.info("Scraped {0} Secondaries".format(len(SDF)))
-            Eqlogger.info("Scraped {0} Armors".format(len(ADF)))
-            Eqlogger.info("Scraped {0} Accessories".format(len(AccDF)))
-            Eqlogger.info("Scraped {0} Androids".format(len(AndroidDF)))
-            Eqlogger.info("Scraped {0} Medals".format(len(MDF)))
+            #WDF.to_csv(CF.APPFOLDER + 'EquipmentData\\WeaponData.csv')
+            #SDF.to_csv(CF.APPFOLDER + 'EquipmentData\\SecondaryData.csv')
+            #ADF.to_csv(CF.APPFOLDER + 'EquipmentData\\ArmorData.csv')
+            #AccDF.to_csv(CF.APPFOLDER + 'EquipmentData\\AccessoryData.csv')
+            #AndroidDF.to_csv(CF.APPFOLDER + 'EquipmentData\\AndroidData.csv')
+            #MDF.to_csv(CF.APPFOLDER + 'EquipmentData\\MedalData.csv')
+
+            #Eqlogger.info("Scraped {0} Weapons".format(len(WDF)))
+            #Eqlogger.info("Scraped {0} Secondaries".format(len(SDF)))
+            #Eqlogger.info("Scraped {0} Armors".format(len(ADF)))
+            #Eqlogger.info("Scraped {0} Accessories".format(len(AccDF)))
+            #Eqlogger.info("Scraped {0} Androids".format(len(AndroidDF)))
+            #Eqlogger.info("Scraped {0} Medals".format(len(MDF)))
+
         except Exception:
             Eqlogger.warn(traceback.format_exc())
         finally:
@@ -172,6 +182,7 @@ class TotalEquipmentSpider(scrapy.Spider):
         weaponTablesLinks = response.xpath("//div[@class='wds-tab__content wds-is-current']").css('b > a::attr(href)')
         if weaponTablesLinks == []:
             weaponTablesLinks = response.xpath("//div[@class='mw-parser-output'] //table[@class='wikitable'] //a[not(contains(@class,'image'))]/@href")
+        
         for links in weaponTablesLinks:
             #Reformat link to retrieve weapon name
             weaponName = " ".join(re.split("%|_|-|#|27s", links.extract().split("/")[-1]))
@@ -224,33 +235,31 @@ class TotalEquipmentSpider(scrapy.Spider):
         HTitle = []
         for i, C in enumerate(classType):
             #if other server exclusive classes, break
-            if C.lower() in list(map(lambda x:x.lower(), self.NonMseaClasses)):
+            if C.lower() in list(map(lambda x:x.lower(), self.rename["NonMseaClasses"].keys())):
                 break
             for row in tables[i].css('tr'):
-                tda = CF.removeB(row.xpath('.//text()').getall())
+                tda = CF.removebr(row.xpath('.//text()').getall())
                 if tda != []:
                     FirstEle = tda[0]
                     tda.pop(0)
-                    if CF.if_In_String(FirstEle.lower(), 'picture'):
+                    if CF.instring(FirstEle.lower(), 'picture'):
                         HTitle = tda
-                        continue
-                    if any(value in FirstEle.lower() for value in self.ignoreSecondary):
                         continue
                     if WeaponType == "Katara" and list(set(FirstEle.split(' '))&set(self.WeapSetTrack)) == []:
                             continue
-                    if CF.if_In_String(FirstEle.lower(), 'equipment'):
+                    if CF.instring(FirstEle.lower(), 'equipment'):
                         break      
 
                     ItemDict = {
                         "EquipSlot" : "Secondary",
-                        "ClassName" : CF.replaceN(C, ','),
+                        "ClassName" : CF.replacen(C, ','),
                         "WeaponType" : WeaponType,
-                        "EquipName" : CF.replaceN(FirstEle, [',','<','>']).strip()
+                        "EquipName" : CF.replacen(FirstEle, [',','<','>']).strip()
                         
                     }
                     for i, col in enumerate(HTitle):
-                        Ctd = CF.removeB(row.xpath(f'.//td[{i+2}] /text()').getall())
-                        if CF.if_In_String(col.lower(), ['requirements', 'effects']):
+                        Ctd = CF.removebr(row.xpath(f'.//td[{i+2}] /text()').getall())
+                        if CF.instring(col.lower(), ['requirements', 'effects']):
                             ItemDict.update(self.RetrieveByTDContent(Ctd, ItemDict))
                         else:
                             try:
@@ -287,14 +296,14 @@ class TotalEquipmentSpider(scrapy.Spider):
             pass
         HTitle = []
         for i, table in enumerate(Wikitable):
-            Category = CF.replaceN(tabsTitle[i],',',";") if tabsTitle != [] else ""
+            Category = CF.replacen(tabsTitle[i],',',";") if tabsTitle != [] else ""
             for row in table.xpath(".//tr"):
                 
                 link =  row.xpath(".//a[not(contains(@class,'image')) and not(contains(@href,'redlink'))] //@href").get()
-                td = CF.removeB(row.xpath(".//text()").extract())
+                td = CF.removebr(row.xpath(".//text()").extract())
                 EquipName = td[0]
                 td.pop(0)
-                if CF.if_In_String(EquipName.lower(),'picture'): 
+                if CF.instring(EquipName.lower(),'picture'): 
                     HTitle = td
                     continue
                 # 
@@ -302,41 +311,31 @@ class TotalEquipmentSpider(scrapy.Spider):
                     continue
                 LevelT = [value for value in td if "Level" in value or "None" in value]
                 clvl = 0 if "None" in LevelT[0] else int(LevelT[0].split(" ")[1])
-                if EquipSlot in self.EquipLevelMin.keys():
-                    if clvl < self.EquipLevelMin[EquipSlot]:
-                        continue
-                if any(value in EquipName for value in self.ignoreSet):
+                if clvl < self.EquipLevelMin[EquipSlot] or any(value in EquipName for value in self.ignoreSet):
                     continue
-                
 
-                EquipName = CF.replaceN(EquipName, [',','<','>'])
+                EquipName = CF.replacen(EquipName, [',','<','>'])
+                ItemDict = {
+                    "EquipSlot" :EquipSlot,
+                    "EquipName" : EquipName,
+                    "Category" : Category,
+                }
                 if link == None or EquipSlot == "Android":
-                    ItemDict = {
-                        "EquipSlot" :EquipSlot,
-                        "EquipName" : EquipName,
-                        "Category" : Category,
-                        "Level" : clvl 
-                    }
+                    ItemDict["Level"]  = clvl 
                     for i, col in enumerate(HTitle):
-                        Ctd = CF.removeB(row.xpath(f'.//td[{i+1}] /text()').getall())
-                        if CF.if_In_String(col.lower(), ['requirements', 'effects']):
+                        Ctd = CF.removebr(row.xpath(f'.//td[{i+1}] /text()').getall())
+                        if CF.instring(col.lower(), ['requirements', 'effects']):
                             ItemDict.update(self.RetrieveByTDContent(Ctd, ItemDict))
                         else:
                             try:
-                                if CF.if_In_String(col.lower(),['appearance', 'functions', '[']):
+                                if CF.instring(col.lower(),['appearance', 'functions', '[']):
                                     continue
                                 ItemDict[col] = " ".join(Ctd)
                             except:
                                 continue
                     self.RecordItemDict(ItemDict)
-                    #yield ItemDict
                 else:
                     nurl = response.urljoin(link)
-                    ItemDict = {
-                        "EquipSlot" : EquipSlot,
-                        "EquipName" : EquipName,
-                        "Category" : Category
-                    }
                     yield scrapy.Request(nurl, callback=self.RetrieveByPage, cb_kwargs={"ItemDict": ItemDict})
                         
     
@@ -356,6 +355,7 @@ class TotalEquipmentSpider(scrapy.Spider):
                 TableContent = response.xpath("//h2/span[@id = 'Unsealed']/parent::h2/following-sibling::table")
         TempDict = CF.DeepCopyDict(ItemDict)
         TableCount = 0
+        TableContent.pop()
         for ctable in TableContent:
             ItemDict = CF.DeepCopyDict(TempDict)
             if AlternateTablesTitles != []:
@@ -371,41 +371,40 @@ class TotalEquipmentSpider(scrapy.Spider):
             if TableCount > TableTrack:
                 break
             td = ["".join(value.css("td ::text").getall()).strip('\n') for value in ctable.css('tr') if value.css("td ::text").getall() != ['\n']]
-            th = CF.removeB(ctable.css('tr > th ::text').getall())
+            th = CF.removebr(ctable.css('tr > th ::text').getall())
             
-            ItemDict["EquipName"] = CF.replaceN(td[0].rstrip(' \n'), ",")
             ItemDict = CF.DeepCopyDict(ItemDict)
             for key, value in zip(th, td[1:]):
                 if any(value.lower() in key.lower() for value in self.PageContentSkip):
                     continue
                 try:
                     if "(" in value:
-                        value = value.split('(')[0]
+                        value = CF.replacen(value, ['(',')'])
                     nvalue = value.strip('+').rstrip(' ')
                     if "REQ" in key:
                         if "Level" in key:
-                            ItemDict["Level"] = nvalue
+                            ItemDict["EquipLevel"] = nvalue
                         elif "Job" in key:
-                            if "ClassName" in ItemDict.keys():
-                                ItemDict['ClassType'] = nvalue
-                            else:
-                                ItemDict['ClassName'] = nvalue
+                            ItemDict['ClassName'] = nvalue
                         else:
                             continue
+                        continue
                     if ("HP" in key or "MP" in key) and '%' in nvalue:
                         ItemDict["Perc " + key] = nvalue.strip('%')
                     else:
-                        ItemDict[key] = CF.replaceN(nvalue,",")
+                        ItemDict[key] = CF.replacen(nvalue,",")
                 except:
                     continue
             if "Equipment Set" in ItemDict.keys():
-                Set = ItemDict['Equipment Set']
-                SetI = Set.find('Set')
-                Set = Set[:SetI]
-                ClassFound = list(set(Set.split(' '))&set(self.Mclasses))
-                if ClassFound != []:
-                    Set = Set.replace(ClassFound[0], '')
-                ItemDict['EquipSet'] = Set.rstrip(' ')
+                #Set = ItemDict['Equipment Set']
+                #Set = replacen(Set, 'Set')
+
+                #ClassFound = [i for i, j in self.rename["ClassTypes"].items() if list(set(Set.lower().split(' ')) &set(j)) != []]
+                #if ClassFound != []:
+                #    Set = Set.replace(ClassFound[0], '')
+                #ItemDict['EquipSet'] = Set.rstrip(' ')
+                
+                ItemDict['EquipSet'] = ItemDict.pop("Equipment Set")
                 
                        
             self.RecordItemDict(ItemDict=ItemDict)
@@ -418,11 +417,11 @@ class TotalEquipmentSpider(scrapy.Spider):
                 key, value = stat.split(':')
                 if value.strip(' ') == "":
                     continue
-                ItemDict[key] = CF.replaceN(value.strip(' +\n'), ",")
+                ItemDict[key] = CF.replacen(value.strip(' +\n'), ",")
             else:
                 try:                   
                     key, value = stat.split(' ')
-                    ItemDict[key] = CF.replaceN(value.rstrip(' \n'),",")
+                    ItemDict[key] = CF.replacen(value.rstrip(' \n'),",")
                 except:
                     continue
         return ItemDict
@@ -432,20 +431,26 @@ class TotalEquipmentSpider(scrapy.Spider):
         try:
             EquipSlot = ItemDict['EquipSlot']
             if EquipSlot is not None:
+                match = [i for i, j in self.rename['Equipment']['Slot'].items() if replacen(EquipSlot, ' ').lower() in j]
+                EquipSlot = match[0] if match != [] else EquipSlot
+                df = pd.DataFrame(ItemDict, index=[0])
                 if EquipSlot in self.ArmorEquip:
-                    self.FinalEquipTrack['Armor'].append(pd.DataFrame(ItemDict, index=[0]))
+                    self.FinalEquipTrack['Armor'] = self.FinalEquipTrack['Armor'].append(df, ignore_index=True)
                 elif EquipSlot in self.AccessoriesEquip:
-                    self.FinalEquipTrack['Accessory'].append(pd.DataFrame(ItemDict, index=[0]))
+                    self.FinalEquipTrack['Accessory'] = self.FinalEquipTrack['Accessory'].append(df, ignore_index=True)
                 else:
                     if EquipSlot == "Shield":
-                        self.FinalEquipTrack["Secondary"].append(pd.DataFrame(ItemDict, index=[0]))
+                        self.FinalEquipTrack['Secondary'] = self.FinalEquipTrack['Secondary'].append(df, ignore_index=True)
                     else:                        
-                        self.FinalEquipTrack[EquipSlot].append(pd.DataFrame(ItemDict, index=[0]))
+                        self.FinalEquipTrack[EquipSlot] = self.FinalEquipTrack[EquipSlot].append(df, ignore_index=True)
+
                 Eqlogger.info("Adding {0}".format(ItemDict['EquipName']))
         except Exception:
             Eqlogger.critical(traceback.format_exc())
 
     
+
+
 
 class EquipmentSetSpider(scrapy.Spider):
     name = "EquipmentSetData"
@@ -490,13 +495,6 @@ class EquipmentSetSpider(scrapy.Spider):
                     nurl = response.urljoin(equipLinks.extract())
                     
                     yield scrapy.Request(nurl, callback=self.HandleEquipmentSet, meta = {"EquipSet" : setName, "ClassType":ClassType})
-            
-
-        
-        #CU = TempL[1]
-        #yield scrapy.Request(CU[0], callback=self.HandleEquipmentSet, meta={"EquipSet" : CU[1]})
-            
-        print("Donezo")
         pass
 
     def close(self):
@@ -505,9 +503,9 @@ class EquipmentSetSpider(scrapy.Spider):
         CulDF = pd.concat(self.TrackEquipSets['Cumulative'], ignore_index=True)
         CulDF = CleanSetEffect(CulDF)
         
-        #SetDF.to_csv("./DefaultData/EquipmentData/EquipSetData.csv")
         SetDF.to_csv(CF.APPFOLDER + "EquipmentData\\EquipSetData.csv")
         CulDF.to_csv(CF.APPFOLDER + "EquipmentData\\EquipSetCulData.csv")
+
         Eslogger.info("Scraped {0} Set Effects".format(len(SetDF)))
         Eslogger.info("Scraped {0} Culmulative Set Effects".format(len(CulDF)))
 
@@ -571,20 +569,20 @@ class EquipmentSetSpider(scrapy.Spider):
 
 
 
+#region Cleanup
 
-
-def CleanWeaponDF(CDF):
-    CDF.drop(['Equipment Set'], axis = 1, inplace = True)
-    ColumnOrder = [
-        "EquipSlot","EquipSet","EquipName","WeaponType",
-        "Level","STR","DEX","INT", "LUK","Max HP","Defense",
-        "Weapon Attack","Magic Attack","Attack Speed","Boss Damage","Ignored Enemy Defense",
-        "Movement Speed","Knockback Chance", "Number of Upgrades"
-    ]
+def CleanWeaponDF(CDF, ColumnOrder):
+    #CDF.drop(['Equipment Set'], axis = 1, inplace = True)
+    #ColumnOrder = [
+    #    "EquipSlot","EquipSet","EquipName","WeaponType",
+    #    "Level","STR","DEX","INT", "LUK","Max HP","Defense",
+    #    "Weapon Attack","Magic Attack","Attack Speed","Boss Damage","Ignored Enemy Defense",
+    #    "Movement Speed","Knockback Chance", "Number of Upgrades"
+    #]
     CDF = CDF[ColumnOrder]
-    CDF = CDF.rename(columns={
-        'Level' : 'EquipLevel'
-    })
+    #CDF = CDF.rename(columns={
+    #    'Level' : 'EquipLevel'
+    #})
     CDF.loc[CDF['EquipSet'].isnull(), "EquipSet"] = "None"    
 
     CDF = CDF.fillna(0)
@@ -597,10 +595,11 @@ def CleanSecondaryDF(CDF):
         "Weapon Attack","Magic Attack","Attack Speed",
         "Max DF"     
     ]
+    print(CDF.head(5))
     CDF = CDF[ColumnOrder]
-    CDF = CDF.rename(columns={
-        "Level" : "EquipLevel"
-    })
+    #CDF = CDF.rename(columns={
+    #    "Level" : "EquipLevel"
+    #})
     CDF.loc[CDF["WeaponType"] == 'Arrowhead', 'WeaponType'] = "Arrow Head"
     CDF.loc[CDF["WeaponType"] == 'Bladebinder', 'WeaponType'] = "Bracelet"
     CDF.loc[CDF['WeaponType'].isnull(), "WeaponType"] = CDF["EquipSlot"]
@@ -610,7 +609,7 @@ def CleanSecondaryDF(CDF):
 def CleanArmorDF(CDF):
     CDF.drop("Category", axis=1, inplace=True)
     ColumnOrder = [
-        "EquipSlot","ClassName","EquipName","Equipment Set",
+        "EquipSlot","ClassName","EquipName","EquipSet",
         "Level","STR","DEX","INT","LUK","Max HP","Max MP","Defense",
         "Weapon Attack","Magic Attack", "Ignored Enemy Defense",
         "Movement Speed","Jump", 
@@ -620,7 +619,6 @@ def CleanArmorDF(CDF):
     
     CDF = CDF.rename(columns={
         "Level" : "EquipLevel",
-        "Equipment Set" : "EquipSet",
         "ClassName" : "ClassType"
     })
 
@@ -712,3 +710,5 @@ def CleanSetEffect(CDF):
         Eslogger.critical(traceback.format_exc())
 
     return CDF
+
+#endregion
