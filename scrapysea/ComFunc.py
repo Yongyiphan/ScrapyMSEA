@@ -50,6 +50,8 @@ def instring(string, parameter, mode="Any"):
     return False
 
 def replacen(string, parameter, replacement = ''):
+    if string == None:
+        return ""
     if isinstance(parameter, list):
         for p in parameter:
             string = string.replace(p,replacement)
@@ -77,7 +79,7 @@ def TimeTaken(self):
         sys.stdout.flush()
         time.sleep(1)
 
-    
+
 
 def main():
     Rlog = CustomLogger.Set_Custom_Logger("ReformatInfo", "./Logs/Reformat.log", propagate=False)

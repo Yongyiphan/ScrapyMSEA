@@ -13,9 +13,7 @@ from scrapy.utils.log import configure_logging
 from TestProgressBar import ProgressBar
 
 
-from scrapysea.spiders import CalculationsData
-from scrapysea.spiders import EquipmentData
-from scrapysea.spiders import CharacterData
+from scrapysea.spiders import CalculationsData, EquipmentData, CharacterData
 
 import time
 

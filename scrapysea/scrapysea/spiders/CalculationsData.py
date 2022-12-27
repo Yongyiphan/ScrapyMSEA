@@ -21,8 +21,12 @@ class PotentialSpider(scrapy.Spider):
     name = "PotentialSpider"
     start_urls = ["https://strategywiki.org/wiki/MapleStory/Potential_System"]
     custom_settings = {
-        "LOG_SCRAPED_ITEMS": False
-        
+        "LOG_SCRAPED_ITEMS": False,
+        "FEEDS" : {
+            "Test1.json" : {
+                "format" : "json"
+            }
+        }
     }
     
     PotentialTable = {
