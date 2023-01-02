@@ -48,39 +48,74 @@ def cEquipLevel(td):
 def oEquipName(D):
     return CF.replacen(D[0], [',','<','>'])
 
-
-class EquipArmorItem(Item):
-
-    EquipSlot = scrapy.Field()
-    EquipName = scrapy.Field(input_processor = MapCompose(removebr), output_processor = oEquipName)
-
-    EquipSet: Optional[str] = field(default="None")
-    EquipLevel = scrapy.Field()
-    
-    Category = scrapy.Field(default = "", input_processor = MapCompose(cCategory))
-
+class CustomItem(Item):
+    Destination = scrapy.Field()
     def AddNField(self, fieldname):
         self.fields[fieldname] = scrapy.Field()
-        ...
+
+#EQUIPMENT STATS
+class EquipItem(CustomItem):
+    PrimaryKeys = ["EquipSlot", "EquipName", "EquipSet", "ClassType"]
+
+    EquipSlot  = scrapy.Field()
+    EquipName  = scrapy.Field(input_processor = MapCompose(removebr), output_processor = oEquipName)
+    EquipLevel = scrapy.Field()
+    EquipSet   = scrapy.Field()
+    ClassType  = scrapy.Field()
+    Category   = scrapy.Field(default = "", input_processor = MapCompose(cCategory))
 
     ...
 
-class EquipLoader(ItemLoader):
+class WeaponItem(EquipItem):
+    def __init__(self):
+        super().__init__()
+        self.PrimaryKeys.append("WeaponType")
+    WeaponType = scrapy.Field()
+    ...
+
+
+class CustomLoaderBase(ItemLoader):
     default_output_processor = TakeFirst()
     default_input_processor = MapCompose(removebr, cNumber)
-    EquipSlot_in = MapCompose(cEquipSlot)
-    EquipLevel_in = MapCompose(cEquipLevel)
-    EquipLevel_out = TakeFirst()
-    default_item_class = EquipArmorItem
-    def add_New(self, fieldname, value):
+
+    def add_value(self, fieldname, value, *processors, **kw):
         try:
+            fieldname = CF.replacen(fieldname, ["REQ", "\n"]).strip()
             if ("HP" in fieldname or "MP" in fieldname) and "%" in value:
                 fieldname = "Perc " + fieldname
             value = CF.replacen(value, ["+", "%"]).strip()
+            fieldname = fieldname.replace(" ", "")
+            if fieldname.lower() in CF.REJSON["DBColumn"].keys():
+                fieldname = CF.REJSON["DBColumn"][fieldname.lower()]
         except:
             pass
+        try:
+            self.replace_value(fieldname, value)
+        except:
+            self.item.AddNField(fieldname)
+            super().add_value(fieldname, value, *processors, **kw)
 
-        self.item.AddNField(fieldname)
-        self.add_value(fieldname, value)
+
+
+
+
+class EquipLoader(CustomLoaderBase):
+    EquipSlot_in = MapCompose(cEquipSlot)
+    EquipLevel_in = MapCompose(cEquipLevel)
+    EquipLevel_out = TakeFirst()
+    default_item_class = EquipItem
     
+
+#EQUIPMENT SET EFFECTS
+class EquipSetItem(CustomItem):
+    PrimaryKeys = ["EquipSet", "ClassType", "SetAt"]
+    EquipSet = scrapy.Field()
+    ClassType = scrapy.Field()
+    SetAt = scrapy.Field()
+    Test = scrapy.Field()
+
+class ESLoader(CustomLoaderBase):
+    default_item_class = EquipSetItem()
+
+
 

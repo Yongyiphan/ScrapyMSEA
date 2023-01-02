@@ -16,6 +16,10 @@ def setPath(destination):
     global APPFOLDER
     APPFOLDER = destination 
 
+def setDBPath(destination):
+    global DBPATH
+    DBPATH = destination
+
 def setMseaModule(status):
     global MseaModule
     MseaModule = bool(status)

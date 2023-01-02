@@ -21,14 +21,19 @@ Eslogger = CustomLogger.Set_Custom_Logger("EquipmentSetSpider", logTo ="./Logs/E
 
 #configure_logging(install_root_handler=False)
 from scrapy.loader import ItemLoader
-from scrapysea.items import EquipArmorItem, EquipLoader
+from scrapysea.items import *
 
 class TotalEquipmentSpider(scrapy.Spider):
     name = "TotalEquipmentData"
     allowed_domains = ['maplestory.fandom.com']
     start_urls = ['https://maplestory.fandom.com/wiki/Equipment']
     custom_settings = {
-        "LOG_SCRAPED_ITEMS": False
+        "LOG_SCRAPED_ITEMS": False,
+        "ITEM_PIPELINES" : {
+            #'scrapysea.pipelines.ScrapyseaPipeline': 300,
+            'scrapysea.pipelines.ItemRenamePipeline'  : 800,
+            'scrapysea.pipelines.SqliteDBItemPipeline': 1000
+        }
         
     }
     FinalCategory = ["Armor", "Accessory", "Weapon", "Secondary", "Android", "Medal"] 
@@ -78,10 +83,10 @@ class TotalEquipmentSpider(scrapy.Spider):
             "Sweetwater", "Commerci", "Gollux", "Alien", "Blackgate", "Glona",
             "Abyss", "Fearless", "Eclectic", "Reverse", "Timeless"],
         "PageContentSkip" : [
-            "Extra Stats", "Notes", "Sold for", 
-            "Tradability", "Bought from", "Dropped by",
-            "Rewarded from", "Used In", "Used To", "Durability",
-            "when first equipped", "Crafted via", "EXP"]
+            "extra stats", "notes", "sold for", 
+            "tradability", "bought from", "dropped by",
+            "rewarded from", "used in", "used to", "durability",
+            "when first equipped", "crafted via", "exp"]
     }
     ItemCount = {}
     FinalEquipTrack = {}
@@ -91,6 +96,7 @@ class TotalEquipmentSpider(scrapy.Spider):
     def parse(self, response):
         try:
             for t in self.FinalCategory:
+                t = "Equip" + t
                 self.FinalEquipTrack[t] = pd.DataFrame()
                 self.ColStruct[t] = []
                 self.ItemCount[t] = tqdm(desc=t, leave=True, total=0)
@@ -131,7 +137,7 @@ class TotalEquipmentSpider(scrapy.Spider):
             #        yield scrapy.Request(nurl, callback=self.HandleEquipment, meta = {"Class" : "Any"})
             #    else:
             #        yield scrapy.Request(nurl, callback=self.HandleSecondary, meta={"WeaponType":weaponType})
-        except Exception:
+        except Exception as E:
             Eqlogger.warn(traceback.format_exc())
     def close(self):
         try:
@@ -289,14 +295,13 @@ class TotalEquipmentSpider(scrapy.Spider):
                 Wikitable.pop(Unobtainable[0])
                 tabsTitle.pop(Unobtainable[0])
             
-            
             Cat = self.CatID(EquipSlot)
             for i, table in enumerate(Wikitable):
                 Content = table.xpath(".//tr")
                 self.ItemCount[Cat].total += (len(Content) - 1 )
                 HTitle = CF.removebr(Content[0].xpath(".//text()").getall())
                 for j, row in enumerate(Content[1:]):
-                    citem = EquipArmorItem()
+                    citem = EquipItem()
                     l = EquipLoader(item = citem, response=response)
                     l.selector = row
                     l.add_value("EquipSlot", EquipSlot)
@@ -312,6 +317,7 @@ class TotalEquipmentSpider(scrapy.Spider):
                         continue
                     
                     l.add_value("Category", tabsTitle[i] if tabsTitle != [] else "")
+                    l.add_value("Destination", Cat)
                     ItemDict = {}
                     link =  row.xpath(".//a[not(contains(@class,'image')) and not(contains(@href,'redlink'))] //@href").get()
                     if link == None or EquipSlot == "Android":
@@ -330,7 +336,7 @@ class TotalEquipmentSpider(scrapy.Spider):
                     else:
                         nurl = response.urljoin(link)
                         yield scrapy.Request(nurl, callback=self.RetrieveByPage, cb_kwargs={"l" : l})
-        except Exception:
+        except Exception as E:
             Eqlogger.critical(traceback.format_exc())
 
     def RetrieveByPage(self, response, l):
@@ -341,23 +347,38 @@ class TotalEquipmentSpider(scrapy.Spider):
             l.context['response'] = response
             citem = l.load_item()
             Contents = response.xpath("//div[@class='mw-parser-output'] //table[not (contains(@class, 'collapsible'))]")
-
             #Normal case (1 table of stat contents)
             T = []
             for table in Contents:
+                EName = CF.removebr(table.xpath(".//tr//text()").getall())[0]
+                if "recipe" in EName.lower():
+                    break
                 for row in table.xpath(".//tr")[2:]:
                     StatID = row.xpath(".//th //text()").get()
+                    T.append(StatID)
                     if StatID == None:
                         continue
-                    StatID = CF.replacen(StatID, ["REQ", "\n"]).strip()
-                    if StatID == "Level" or StatID in self.Ignore["PageContentSkip"]:
+                    StatID = CF.replacen(StatID, ["\n"]).strip()
+                    if (StatID == "Level" or 
+                        StatID.lower() in self.Ignore["PageContentSkip"]):
+                        #Eqlogger.debug("Skipped {0}".format(StatID))
                         continue
+                    if "REQ" in StatID and "Job" not in StatID:
+                        continue
+                    P = set([x.lower() for x in StatID.split(" ")])
+                    if any(P.intersection(set(x.lower().split(" "))) for x in self.Ignore["PageContentSkip"]):
+                        #Eqlogger.debug("Skipped {0}".format(StatID))
+                        continue
+
                     StatC = " ".join(row.xpath(" .//td //text()").getall())
-                    l.add_New(StatID, StatC)
+                    l.add_value(StatID, StatC)
+
             citem = l.load_item()
             self.RecordItemDict(citem._values)
+            yield citem
         except Exception:
             Eqlogger.critical(traceback.format_exc())
+
 #        PageTitle = response.xpath("//h1[@class='page-header__title']/text()").get()
 #        TableTrack = 1
 #        
@@ -446,21 +467,22 @@ class TotalEquipmentSpider(scrapy.Spider):
     
     def CatID(self, EquipSlot):
         if EquipSlot in self.ArmorEquip:
-            return "Armor"
+            return "EquipArmor"
         elif EquipSlot in self.AccessoriesEquip:
-            return "Accessory"
+            return "EquipAccessory"
         elif EquipSlot == "Shield":
-            return "Secondary"
-        return EquipSlot
+            return "EquipSecondary"
+        return "Equip" + EquipSlot
 
     def RecordItemDict(self, ItemDict):
         #Save to respective pd.DataFrames
         try:
             EquipSlot = ItemDict['EquipSlot']
             if EquipSlot is not None:
-                df = pd.DataFrame(ItemDict, index=[0])
-                ID = self.CatID(EquipSlot)
-                self.FinalEquipTrack[ID] = self.FinalEquipTrack[ID].append(df, ignore_index=True)
+                #df = pd.DataFrame(ItemDict, index=[0])
+                #ID = self.CatID(EquipSlot)
+                ID = ItemDict['Destination']
+                #self.FinalEquipTrack[ID] = self.FinalEquipTrack[ID].append(df, ignore_index=True)
                 self.ItemCount[ID].update(1)
 
                 Eqlogger.info("Adding {0}".format(ItemDict['EquipName']))
@@ -477,12 +499,16 @@ class EquipmentSetSpider(scrapy.Spider):
     allowed_domains = ['maplestory.fandom.com']
     start_urls = ['https://maplestory.fandom.com/wiki/Equipment']
     custom_settings = {
-        "LOG_SCRAPED_ITEMS": False
-        
+        "LOG_SCRAPED_ITEMS": False,
+        "ITEM_PIPELINES" : {
+            #'scrapysea.pipelines.ScrapyseaPipeline': 300,
+            #'scrapysea.pipelines.MultiCSVItemPipeline': 300,
+            'scrapysea.pipelines.SqliteDBItemPipeline': 100
+        }
     }
     TrackEquipSets = {
-        "Set" : [],
-        "Cumulative" : []
+        "EquipSetEffectAt" : [],
+        "EquipSetEffectCul" : []
     }
     
     EquipSetTrack = [
@@ -507,7 +533,7 @@ class EquipmentSetSpider(scrapy.Spider):
             for equipLinks in tables.xpath(".//a[not(descendant::img)]/@href"):
                 setName = " ".join(re.split("%|_|-|#|27s", equipLinks.extract().split("/")[-1])).replace("Set", '').replace(ClassType, '').rstrip()
                 TempL.append(setName)
-                if CF.if_In_String(setName, '('):
+                if CF.instring(setName, '('):
                     setName = setName.split('(')[0].rstrip()
                 if any(value in setName for value in self.EquipSetTrack):
                     if any(value in setName for value in self.ignoreSet):
@@ -537,14 +563,14 @@ class EquipmentSetSpider(scrapy.Spider):
         EquipSet = response.meta["EquipSet"]
         ClassType = response.meta['ClassType']
         TRRows = Wikitable.xpath(".//tr")
-        Header =  CF.removeB(TRRows.xpath(".//th /text()").getall())
+        Header =  CF.removebr(TRRows.xpath(".//th /text()").getall())
         try:
             for i, SetType in enumerate(Header):
                 
                 if "Set" in SetType:
-                    SetType = "Set"
+                    SetType = "EquipSetEffectAt"
                 if "Cumulative" in SetType:
-                    SetType = "Cumulative"
+                    SetType = "EquipSetEffectCul"
                 for row in TRRows: 
                     
                     SetAt = row.xpath(".//td /b/text()").getall()
@@ -557,24 +583,31 @@ class EquipmentSetSpider(scrapy.Spider):
                         "ClassType" : ClassType,
                         "Set At" : SetAt
                     }
-                    SetEffectAt  = CF.removeB(row.xpath(".//td[{0}] /text()".format(i+1)).getall())
+                    l = ESLoader(item = EquipSetItem())
+                    l.add_value("EquipSet", EquipSet)
+                    l.add_value("ClassType", ClassType)
+                    l.add_value("SetAt", SetAt)
+                    l.add_value("Destination", SetType)
+
+                    SetEffectAt  = CF.removebr(row.xpath(".//td[{0}] /text()".format(i+1)).getall())
                     self.TrackEquipSets[SetType].append(pd.DataFrame(self.RetrieveByTDContent(SetEffectAt, ItemDict), index=[0]))
+                    yield l.load_item()
         except:
             Eslogger.critical(traceback.format_exc())
         Eslogger.info("Adding {0}".format(EquipSet))
-        return ItemDict
+        #return ItemDict
 
 
     def RetrieveByTDContent(self, content, ItemDict = {}):
         
         for stat in content:
-            if CF.if_In_String(stat, ["Max", "%"], mode="All"):
+            if CF.instring(stat, ["Max", "%"], mode="All"):
                 key, value = stat.split(':')
                 ItemDict["Perc " + key] = value.strip(' +%\n')
                 continue
-            if CF.if_In_String(stat, ":"):
+            if CF.instring(stat, ":"):
                 key, value = stat.split(':')
-                if CF.if_In_String(value, "("):
+                if CF.instring(value, "("):
                     value = value.split('(')[0]
                 ItemDict[key] = value.strip(' +%\n').replace(",", '')
             else:
