@@ -519,7 +519,7 @@ class EquipmentSetSpider(scrapy.Spider):
     ]
     
     ignoreSet = [
-        'Immortal' ,'Walker','Anniversary', 
+        'Immortal' ,'Walker','Anniversary', "Eternal Hero"
         "Sweetwater", "Commerci", "Gollux", "Alien", "Blackgate", "Glona"]
     
 

@@ -49,10 +49,11 @@ import pandas as pd
 class BasePipeline:
     def __init__(self) -> None:
         self.DBLog = CustomLogger.Set_Custom_Logger("DBLogger", logTo ="./Logs/DBLogger.log", propagate=False)
-
+        
 class SqliteDBItemPipeline(BasePipeline):
     SqliteDataType = ["INTEGER", "REAL", "TEXT", "BLOB"]
-
+    Mode = "Read"
+    #Mode = "Write"
     def __init__(self) -> None:
         try:
             self.con = sqlite3.connect(os.path.join(CF.DBPATH, "Maplestory.db"))
@@ -125,10 +126,9 @@ class SqliteDBItemPipeline(BasePipeline):
                 if k not in self.NewTable[TableN]["CT"]:
                     self.NewTable[TableN]["CT"][k] = self.sqliteTypeSort(v)
                 ...
-            self.ComplicatedRenamer(item._values.items(), spider.name)
             cdf = pd.DataFrame(item._values, index=[0])
             self.NewTable[TableN]["Data"].append(cdf)
-        except:
+        except Exception as E:
             self.DBLog.critical(traceback.format_exc())
         return item
     
@@ -179,32 +179,29 @@ class SqliteDBItemPipeline(BasePipeline):
     def sqlitetableinserter(self, TN, CT, DF):
         #Sort out auto conversion of int to float
         try:
-            ColOrder = self.ExistTable[TN]["CO"] if CT["CO"] == [] else CT["CO"]
-            #DF = DF[ColOrder]
-            InsertStr = "REPLACE INTO {0} (".format(TN)
-            for c, t in CT["CT"].items():
-                if t == "INTEGER":
-                    DF[c] = DF[c].fillna(0)
-                    DF[c] = DF[c].astype(int)
-                    continue
-                if c in CF.REJSON["DefaultValues"]:
-                    D = CF.REJSON["DefaultValues"][c]
-                    DF[c] = DF[c].fillna(CF.REJSON["DefaultValues"][c])
-                    continue
-            
-            InsertStr += ",".join(ColOrder) + ") "
-            for row in DF.to_dict("records"):
-                w = [str(row[x]) for x in ColOrder]
-                ValueStr = InsertStr + "VALUES (" + ", ".join(['"%s"' % str(row[x]) for x in ColOrder]) + ");"
-                try:
-                    self.cur.execute(ValueStr)
-                    self.con.commit()
-                except Exception as e:
-                    self.DBLog.warning(f"Failed to add: {row}")
-                    continue
-                    
-            DF.to_csv("Test.csv")
-
+            if self.Mode ==  "Write":
+                ColOrder = self.ExistTable[TN]["CO"] if CT["CO"] == [] else CT["CO"]
+                #DF = DF[ColOrder]
+                InsertStr = "REPLACE INTO {0} (".format(TN)
+                for c, t in CT["CT"].items():
+                    if t == "INTEGER":
+                        DF[c] = DF[c].fillna(0)
+                        DF[c] = DF[c].astype(int)
+                        continue
+                    if c in CF.REJSON["DefaultValues"]:
+                        D = CF.REJSON["DefaultValues"][c]
+                        DF[c] = DF[c].fillna(CF.REJSON["DefaultValues"][c])
+                
+                InsertStr += ",".join(ColOrder) + ") "
+                for row in DF.to_dict("records"):
+                    w = [str(row[x]) for x in ColOrder]
+                    ValueStr = InsertStr + "VALUES (" + ", ".join(['"%s"' % str(row[x]) for x in ColOrder]) + ");"
+                    try:
+                        self.cur.execute(ValueStr)
+                        self.con.commit()
+                    except Exception as e:
+                        self.DBLog.warning(f"Failed to add: {row}")
+                        continue
         except Exception:
             self.DBLog.critical(traceback.format_exc())
         return
@@ -228,27 +225,46 @@ class SqliteDBItemPipeline(BasePipeline):
                 "Data"     : None
             }
         ...
-    
-    def ComplicatedRenamer(self, ItemDict, spidername):
-        if spidername == "TotalEquipmentData":
-            ...
-        ...
+
 
     
     
 class ItemRenamePipeline(BasePipeline):
+    """
+    Should only be called from
+        TotalEquipment, EquipmentSet
 
+    """
     def __init__(self) -> None:
         pass
         
     def process_item(self, item, spider):
         try:
             ItemDict = item._values
+            self.ComplicatedRenamer(ItemDict, spider.name)
         
         except Exception as E:
             self.DBLog.critical(traceback.format_exc())
             self.DBLog.critical(f"Location: {spider.name}")            
         print("Here")
-        pass
+        return item
+
+    def ComplicatedRenamer(self, ItemDict, spidername):
+    
+        if "ClassType" in ItemDict:
+            if "EquipSet" in ItemDict:
+                Kek = ItemDict["EquipSet"]
+                for k, v in CF.REJSON["Equipment"]["Set"].items():
+                    if Kek.lower() in v:
+                        Kek = k
+                        ...
+                    ...
+                ...
+            if "EquipName" in ItemDict:
+                Kekw = ItemDict["EquipName"]
+                Kekw = CF.replacen(Kekw, [ItemDict["ClassType"]])
+                ...
+            ...
+        ...
     
 
