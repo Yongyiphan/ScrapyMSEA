@@ -52,9 +52,11 @@ class BasePipeline:
         
 class SqliteDBItemPipeline(BasePipeline):
     SqliteDataType = ["INTEGER", "REAL", "TEXT", "BLOB"]
-    Mode = "Read"
+    #Mode = "Read"
     #Mode = "Write"
+    Mode = "Remake"
     def __init__(self) -> None:
+        super().__init__()
         try:
             self.con = sqlite3.connect(os.path.join(CF.DBPATH, "Maplestory.db"))
             self.connected = True
@@ -139,6 +141,17 @@ class SqliteDBItemPipeline(BasePipeline):
                 if TableN in self.ExistTable:
                     #Update/ Insert
                     #Check if row exists
+                    if self.Mode == "Remake":
+                        TDropStr = f"DROP TABLE IF EXISTS {TableN}"
+                        del self.ExistTable[TableN]
+                        try:
+                            self.cur.execute(TDropStr)
+                            self.con.commit()
+                            self.sqlitetablebuilder(TableN)
+                            return
+                        except Exception as E:
+                            self.DBLog.critical(traceback.format_exc())
+                        ...
                     DiffCol = set(CTinfo["CT"]).difference(set(self.ExistTable[TableN]["CT"]))
                     if DiffCol:
                         self.ExistTable[TableN]["CT"].update({k : self.sqliteTypeSort(k) for k in DiffCol})
@@ -148,7 +161,7 @@ class SqliteDBItemPipeline(BasePipeline):
                 else:
                     CTinfo["CO"] = self.ColumnOrganiser(CTinfo["CT"])
 
-                    TCreateStr = "CREATE Table {0} (".format(TableN)
+                    TCreateStr = "CREATE Table IF NOT EXISTS {0} (".format(TableN)
                     TCreateStr += ",".join(CTinfo["CO"])
 
                     TCreateStr += ", PRIMARY KEY ("
@@ -179,7 +192,7 @@ class SqliteDBItemPipeline(BasePipeline):
     def sqlitetableinserter(self, TN, CT, DF):
         #Sort out auto conversion of int to float
         try:
-            if self.Mode ==  "Write":
+            if self.Mode !=  "Read":
                 ColOrder = self.ExistTable[TN]["CO"] if CT["CO"] == [] else CT["CO"]
                 #DF = DF[ColOrder]
                 InsertStr = "REPLACE INTO {0} (".format(TN)
@@ -228,7 +241,7 @@ class SqliteDBItemPipeline(BasePipeline):
 
 
     
-    
+import string
 class ItemRenamePipeline(BasePipeline):
     """
     Should only be called from
@@ -236,35 +249,61 @@ class ItemRenamePipeline(BasePipeline):
 
     """
     def __init__(self) -> None:
-        pass
+        super().__init__()
         
     def process_item(self, item, spider):
         try:
             ItemDict = item._values
-            self.ComplicatedRenamer(ItemDict, spider.name)
+            self.ComplicatedRenamer(ItemDict)
         
         except Exception as E:
             self.DBLog.critical(traceback.format_exc())
             self.DBLog.critical(f"Location: {spider.name}")            
-        print("Here")
         return item
 
-    def ComplicatedRenamer(self, ItemDict, spidername):
-    
-        if "ClassType" in ItemDict:
-            if "EquipSet" in ItemDict:
-                Kek = ItemDict["EquipSet"]
-                for k, v in CF.REJSON["Equipment"]["Set"].items():
-                    if Kek.lower() in v:
-                        Kek = k
+    def ComplicatedRenamer(self, ItemDict):
+        """_Rename Flow_
+        EquipmentSetSpider:
+            EquipSet | ClassType | Set At | ...stat
+        
+        TotalEquipmentSpider:
+            EquipSlot | EquipName | ClassType | EquipSet | ...set
+
+        """
+        try:
+            ID = ItemDict["Destination"].strip("Equip")
+            
+            for field, val in ItemDict.items():
+                if field == "Destination":
+                    continue
+                if isinstance(val, str):
+                    prev = val
+                    if field == 'EquipSet' or field == 'EquipName':
+                        for i, j in CF.REJSON["Equipment"]["Set"].items():
+                            if any(b in val.lower() for b in j):
+                                val = CF.replacen(val.lower(), j, i)
+                                break
+                            ...
+                        if field == "EquipSet" and "ClassType" in ItemDict:
+                            CT = ItemDict["ClassType"]
+                            discardL = [CT, "set", "(", ")"]
+                            if CT != "Any" and CT in CF.REJSON["ClassTypes"]:
+                                discardL.extend(CF.REJSON["ClassTypes"][CT]) 
+                            val = CF.replacen(val.lower(), discardL)
+                            ...
                         ...
+                    else:
+                        if ID in CF.REJSON["Equipment"]:
+                            for i, j in CF.REJSON["Equipment"][ID].items():
+                                val = CF.replacen(val, j, i) 
+                        ...
+                    if prev != val:
+                        val = string.capwords(" ".join(val.split()))
+                        ItemDict[field] = val
                     ...
                 ...
-            if "EquipName" in ItemDict:
-                Kekw = ItemDict["EquipName"]
-                Kekw = CF.replacen(Kekw, [ItemDict["ClassType"]])
-                ...
-            ...
+        except Exception as E:
+            self.DBLog.critical(traceback.format_exc())
+            
         ...
-    
 

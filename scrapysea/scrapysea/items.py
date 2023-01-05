@@ -47,6 +47,11 @@ def cEquipLevel(td):
 
 def oEquipName(D):
     return CF.replacen(D[0], [',','<','>'])
+def cClassType(D):
+    for k , v in CF.REJSON["ClassTypes"].items():
+        if D in v:
+            return k
+    return D
 
 class CustomItem(Item):
     Destination = scrapy.Field()
@@ -61,7 +66,7 @@ class EquipItem(CustomItem):
     EquipName  = scrapy.Field(input_processor = MapCompose(removebr), output_processor = oEquipName)
     EquipLevel = scrapy.Field()
     EquipSet   = scrapy.Field()
-    ClassType  = scrapy.Field()
+    ClassType  = scrapy.Field(input_processor = MapCompose(cClassType))
     Category   = scrapy.Field(default = "", input_processor = MapCompose(cCategory))
 
     ...
@@ -85,7 +90,7 @@ class CustomLoaderBase(ItemLoader):
                 fieldname = "Perc " + fieldname
             value = CF.replacen(value, ["+", "%"]).strip()
             fieldname = fieldname.replace(" ", "")
-            if fieldname.lower() in CF.REJSON["DBColumn"].keys():
+            if fieldname.lower() in CF.REJSON["DBColumn"]:
                 fieldname = CF.REJSON["DBColumn"][fieldname.lower()]
         except:
             pass

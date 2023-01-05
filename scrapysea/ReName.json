@@ -20,7 +20,6 @@
             "Set":{
                 "Arcaneshade": ["arcaneumbra", "arcane umbra"],
                 "Absolab" : ["absolab"],
-                "EquipSet" : ["equipmentset","equipset"],
                 "Black" : ["frozen"]
             },
             
@@ -35,7 +34,8 @@
             "Bowman"    :["archer", "bowman"],
             "Magician"  :["mage", "magician"],
             "Thief"     :["thief"],
-            "Pirate"    :["pirate"]
+            "Pirate"    :["pirate"],
+            "Any"       :[]
         },
     "NonMseaClasses":
         {

@@ -16,8 +16,6 @@ from tqdm import *
 #ClassType = Warrior, Magician, etc
 
 
-Eqlogger = CustomLogger.Set_Custom_Logger("EquipmentAllSpider", logTo ="./Logs/Equipment.log", propagate=False)
-Eslogger = CustomLogger.Set_Custom_Logger("EquipmentSetSpider", logTo ="./Logs/EquipmentSet.log", propagate=False)
 
 #configure_logging(install_root_handler=False)
 from scrapy.loader import ItemLoader
@@ -92,7 +90,9 @@ class TotalEquipmentSpider(scrapy.Spider):
     FinalEquipTrack = {}
     ColStruct = {}
     rename = {}
-    #renamed/ exclude lists in ReName.json <=> self.rename
+    def __init__(self, name=None, **kwargs):
+        super().__init__(name, **kwargs)
+        self.Eqlogger = CustomLogger.Set_Custom_Logger(self.name, logTo ="./Logs/Equipment.log", propagate=False)
     def parse(self, response):
         try:
             for t in self.FinalCategory:
@@ -138,52 +138,14 @@ class TotalEquipmentSpider(scrapy.Spider):
             #    else:
             #        yield scrapy.Request(nurl, callback=self.HandleSecondary, meta={"WeaponType":weaponType})
         except Exception as E:
-            Eqlogger.warn(traceback.format_exc())
+            self.Eqlogger.warn(traceback.format_exc())
     def close(self):
         try:
-            for val in sum(self.rename['Dataframe ReCol'].values(), []):
-                for k, l in self.FinalEquipTrack.items():
-                    if val in l.columns.values.tolist():
-                        ...
-                    ...
-
-            pd.set_option("display.max_rows", None, "display.max_columns", None)
-            #Weapon pd.pd.DataFrame
-            #WDF = pd.concat(self.FinalEquipTrack['Weapon'], ignore_index=True)
-            #WDF = CleanWeaponDF(WDF)
-            ##Secondary pd.DataFrame
-            #SDF = pd.concat(self.FinalEquipTrack['Secondary'], ignore_index=True)
-            #SDF = CleanSecondaryDF(SDF)
-
-            ##Armor
-            #ADF = pd.concat(self.FinalEquipTrack['Armor'], ignore_index=True)
-            #ADF = CleanArmorDF(ADF)
-            ##Accessories
-            #AccDF = pd.concat(self.FinalEquipTrack['Accessory'], ignore_index=True)
-            #AccDF = CleanAccessoryDF(AccDF)
-            ##Android
-            #AndroidDF = pd.concat(self.FinalEquipTrack['Android'], ignore_index=True)
-            #AndroidDF = CleanAndroidDF(AndroidDF)
-            ##Medals
-            #MDF = pd.concat(self.FinalEquipTrack['Medal'], ignore_index=True)
-            #MDF = CleanMedalDF(MDF)
-
-            #WDF.to_csv(CF.APPFOLDER + 'EquipmentData\\WeaponData.csv')
-            #SDF.to_csv(CF.APPFOLDER + 'EquipmentData\\SecondaryData.csv')
-            #ADF.to_csv(CF.APPFOLDER + 'EquipmentData\\ArmorData.csv')
-            #AccDF.to_csv(CF.APPFOLDER + 'EquipmentData\\AccessoryData.csv')
-            #AndroidDF.to_csv(CF.APPFOLDER + 'EquipmentData\\AndroidData.csv')
-            #MDF.to_csv(CF.APPFOLDER + 'EquipmentData\\MedalData.csv')
-
-            #Eqlogger.info("Scraped {0} Weapons".format(len(WDF)))
-            #Eqlogger.info("Scraped {0} Secondaries".format(len(SDF)))
-            #Eqlogger.info("Scraped {0} Armors".format(len(ADF)))
-            #Eqlogger.info("Scraped {0} Accessories".format(len(AccDF)))
-            #Eqlogger.info("Scraped {0} Androids".format(len(AndroidDF)))
-            #Eqlogger.info("Scraped {0} Medals".format(len(MDF)))
-
+            for t in self.FinalCategory:
+                t = "Equip" + t
+                self.ItemCount[t].refresh()
         except Exception:
-            Eqlogger.warn(traceback.format_exc())
+            self.Eqlogger.warn(traceback.format_exc())
         finally:
             CF.TimeTaken(self)
 
@@ -337,7 +299,7 @@ class TotalEquipmentSpider(scrapy.Spider):
                         nurl = response.urljoin(link)
                         yield scrapy.Request(nurl, callback=self.RetrieveByPage, cb_kwargs={"l" : l})
         except Exception as E:
-            Eqlogger.critical(traceback.format_exc())
+            self.Eqlogger.critical(traceback.format_exc())
 
     def RetrieveByPage(self, response, l):
         if not response:
@@ -361,13 +323,13 @@ class TotalEquipmentSpider(scrapy.Spider):
                     StatID = CF.replacen(StatID, ["\n"]).strip()
                     if (StatID == "Level" or 
                         StatID.lower() in self.Ignore["PageContentSkip"]):
-                        #Eqlogger.debug("Skipped {0}".format(StatID))
+                        #self.Eqlogger.debug("Skipped {0}".format(StatID))
                         continue
                     if "REQ" in StatID and "Job" not in StatID:
                         continue
                     P = set([x.lower() for x in StatID.split(" ")])
                     if any(P.intersection(set(x.lower().split(" "))) for x in self.Ignore["PageContentSkip"]):
-                        #Eqlogger.debug("Skipped {0}".format(StatID))
+                        #self.Eqlogger.debug("Skipped {0}".format(StatID))
                         continue
 
                     StatC = " ".join(row.xpath(" .//td //text()").getall())
@@ -377,7 +339,7 @@ class TotalEquipmentSpider(scrapy.Spider):
             self.RecordItemDict(citem._values)
             yield citem
         except Exception:
-            Eqlogger.critical(traceback.format_exc())
+            self.Eqlogger.critical(traceback.format_exc())
 
 #        PageTitle = response.xpath("//h1[@class='page-header__title']/text()").get()
 #        TableTrack = 1
@@ -475,20 +437,16 @@ class TotalEquipmentSpider(scrapy.Spider):
         return "Equip" + EquipSlot
 
     def RecordItemDict(self, ItemDict):
-        #Save to respective pd.DataFrames
+        #Using destination to update proper tqdm
         try:
             EquipSlot = ItemDict['EquipSlot']
             if EquipSlot is not None:
-                #df = pd.DataFrame(ItemDict, index=[0])
-                #ID = self.CatID(EquipSlot)
                 ID = ItemDict['Destination']
-                #self.FinalEquipTrack[ID] = self.FinalEquipTrack[ID].append(df, ignore_index=True)
                 self.ItemCount[ID].update(1)
-
-                Eqlogger.info("Adding {0}".format(ItemDict['EquipName']))
+                self.Eqlogger.info("Adding {0}".format(ItemDict['EquipName']))
                 self.ItemCount[ID].refresh()
         except Exception:
-            Eqlogger.critical(traceback.format_exc())
+            self.Eqlogger.critical(traceback.format_exc())
 
     
 
@@ -521,7 +479,9 @@ class EquipmentSetSpider(scrapy.Spider):
     ignoreSet = [
         'Immortal' ,'Walker','Anniversary', "Eternal Hero"
         "Sweetwater", "Commerci", "Gollux", "Alien", "Blackgate", "Glona"]
-    
+    def __init__(self, name=None, **kwargs):
+        super().__init__(name, **kwargs)
+        self.Eslogger = CustomLogger.Set_Custom_Logger("EquipmentSetSpider", logTo ="./Logs/EquipmentSet.log", propagate=False)
 
     def parse(self, response):
 
@@ -544,17 +504,6 @@ class EquipmentSetSpider(scrapy.Spider):
         pass
 
     def close(self):
-        SetDF = pd.concat(self.TrackEquipSets["Set"], ignore_index=True)
-        SetDF = CleanSetEffect(SetDF)
-        CulDF = pd.concat(self.TrackEquipSets['Cumulative'], ignore_index=True)
-        CulDF = CleanSetEffect(CulDF)
-        
-        SetDF.to_csv(CF.APPFOLDER + "EquipmentData\\EquipSetData.csv")
-        CulDF.to_csv(CF.APPFOLDER + "EquipmentData\\EquipSetCulData.csv")
-
-        Eslogger.info("Scraped {0} Set Effects".format(len(SetDF)))
-        Eslogger.info("Scraped {0} Culmulative Set Effects".format(len(CulDF)))
-
         CF.TimeTaken(self)
 
     def HandleEquipmentSet(self, response):
@@ -593,8 +542,8 @@ class EquipmentSetSpider(scrapy.Spider):
                     self.TrackEquipSets[SetType].append(pd.DataFrame(self.RetrieveByTDContent(SetEffectAt, ItemDict), index=[0]))
                     yield l.load_item()
         except:
-            Eslogger.critical(traceback.format_exc())
-        Eslogger.info("Adding {0}".format(EquipSet))
+            self.Eslogger.critical(traceback.format_exc())
+        self.Eslogger.info("Adding {0}".format(EquipSet))
         #return ItemDict
 
 
@@ -620,148 +569,3 @@ class EquipmentSetSpider(scrapy.Spider):
                     continue
         return ItemDict
 
-
-
-#region Cleanup
-
-def CleanWeaponDF(CDF, ColumnOrder):
-    #CDF.drop(['Equipment Set'], axis = 1, inplace = True)
-    #ColumnOrder = [
-    #    "EquipSlot","EquipSet","EquipName","WeaponType",
-    #    "Level","STR","DEX","INT", "LUK","Max HP","Defense",
-    #    "Weapon Attack","Magic Attack","Attack Speed","Boss Damage","Ignored Enemy Defense",
-    #    "Movement Speed","Knockback Chance", "Number of Upgrades"
-    #]
-    CDF = CDF[ColumnOrder]
-    #CDF = CDF.rename(columns={
-    #    'Level' : 'EquipLevel'
-    #})
-    CDF.loc[CDF['EquipSet'].isnull(), "EquipSet"] = "None"    
-
-    CDF = CDF.fillna(0)
-    return CDF
-
-def CleanSecondaryDF(CDF):
-    ColumnOrder =[
-        "EquipSlot","ClassName","EquipName","WeaponType",
-        "Level", "STR","DEX","INT", "LUK","All Stats","Max HP","Max MP","Defense",
-        "Weapon Attack","Magic Attack","Attack Speed",
-        "Max DF"     
-    ]
-    print(CDF.head(5))
-    CDF = CDF[ColumnOrder]
-    #CDF = CDF.rename(columns={
-    #    "Level" : "EquipLevel"
-    #})
-    CDF.loc[CDF["WeaponType"] == 'Arrowhead', 'WeaponType'] = "Arrow Head"
-    CDF.loc[CDF["WeaponType"] == 'Bladebinder', 'WeaponType'] = "Bracelet"
-    CDF.loc[CDF['WeaponType'].isnull(), "WeaponType"] = CDF["EquipSlot"]
-    CDF = CDF.fillna(0)
-    return CDF
-
-def CleanArmorDF(CDF):
-    CDF.drop("Category", axis=1, inplace=True)
-    ColumnOrder = [
-        "EquipSlot","ClassName","EquipName","EquipSet",
-        "Level","STR","DEX","INT","LUK","Max HP","Max MP","Defense",
-        "Weapon Attack","Magic Attack", "Ignored Enemy Defense",
-        "Movement Speed","Jump", 
-        "Number of Upgrades"
-        ]
-    CDF = CDF[ColumnOrder]
-    
-    CDF = CDF.rename(columns={
-        "Level" : "EquipLevel",
-        "ClassName" : "ClassType"
-    })
-
-    CDF['EquipSet'] = CDF['EquipSet'].fillna('None')
-    CDF.loc[CDF['Number of Upgrades'] == "None", "Number of Upgrades"] = 0
-    #CDF['EquipSet'].fillna('None', inplace =True)
-    CDF = CDF.fillna(0)
-
-    return CDF
-
-def CleanAccessoryDF(CDF):
-    
-    ColumnOrder = [
-    "EquipSlot","ClassName","EquipName","Equipment Set",
-    "Category",
-    "Level","STR","DEX","INT","LUK","Max HP","Max MP","Perc Max HP", "Perc Max MP","Defense",
-    "Weapon Attack","Magic Attack","Ignored Enemy Defense",
-    "Movement Speed","Jump",
-    "Number of Upgrades",
-    "Job",
-    "Rank"]
-    CDF = CDF[ColumnOrder]
-    CDF = CDF.rename(columns={
-        "Level" : "EquipLevel",
-        "Equipment Set" : "EquipSet"
-    })
-
-    CDF.drop_duplicates(keep="first", inplace=True)    
-
-    CDF.loc[CDF['Job'].isnull(), "Job"] = "Any"    
-    CDF.loc[CDF["ClassName"].isnull(), "ClassName"] = CDF['Job']
-    CDF.drop("Job", axis=1, inplace=True)
-    CDF.loc[CDF['Number of Upgrades'] == "None", "Number of Upgrades"] = 0
-
-    CDF.loc[CDF['Category'].isnull(), "Category"] = "Obtainable"    
-    CDF.loc[CDF['EquipSet'].isnull(), "EquipSet"] = "None"    
-
-
-    CDF = CDF.fillna(0) 
-
-    return CDF
-
-def CleanAndroidDF(CDF):
-
-    CDF = CDF.rename(columns={
-        "Level" :"EquipLevel"
-    }) 
-    CDF.drop_duplicates(keep="first", inplace=True)
-    return CDF
-
-def CleanMedalDF(CDF):
-
-    CDF.drop(["Number of Upgrades","Equipment Set"], axis=1, inplace=True)
-    ColumnOrder = [
-        "EquipSlot","ClassName","EquipName","EquipSet",
-        "Category",
-        "Level","STR","DEX","INT","LUK","Max HP","Max MP","Defense",
-        "Weapon Attack","Magic Attack","Ignored Enemy Defense","Boss Damage",
-        "Movement Speed","Jump"
-    ]
-
-    CDF = CDF[ColumnOrder]
-    CDF = CDF.rename(columns ={
-        "Level" : "EquipLevel"
-    })
-
-    CDF.loc[CDF['ClassName'].isnull(),"ClassName"] = "Any"
-    CDF.loc[CDF['EquipSet'].isnull(),"EquipSet"] = "None"
-    CDF.loc[CDF['Category'] == "Uncategorized", "Category"] = "Obtainable"
-    CDF = CDF.fillna(0) 
-
-
-    return CDF
-
-def CleanSetEffect(CDF):
-    try:
-        ColumnOrder = [
-            "EquipSet","ClassType","Set At",
-            "STR","DEX","INT","LUK","All Stats","Max HP","Max MP","Perc Max HP","Perc Max MP","Defense",
-            "Weapon Attack","Magic Attack","Ignored Enemy Defense","Boss Damage",
-            "Critical Damage", "Damage","All Skills","Damage Against Normal Monsters","Abnormal Status Resistance"
-        ]
-
-        
-        CDF = CDF[ColumnOrder]
-        
-        CDF = CDF.fillna(0) 
-    except:
-        Eslogger.critical(traceback.format_exc())
-
-    return CDF
-
-#endregion
