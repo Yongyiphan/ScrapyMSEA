@@ -27,14 +27,10 @@ def setMseaModule(status):
 import json
 import os
 def LoadRenameJson():
-    t = os.listdir()
     with open("./scrapysea/ReName.json", "r") as file:
         global REJSON
         REJSON = json.load(file)
     
-    print(REJSON.keys())
-
-
 
 #STRING FORMATERS
 

@@ -52,9 +52,9 @@ def exec_Crawler():
     CF.DBPATH = DBPath
     #runner.crawl(CharacterData.CharacterSpider)
     EquipmentSpiders = dict([(name, cls) for name, cls in EquipmentData.__dict__.items() if isinstance(cls, type)])
-    for name, s in EquipmentSpiders.items():
-        if CF.instring(name.lower(), "spider"):
-            runner.crawl(s, rename = CF.REJSON)
+    #for name, s in EquipmentSpiders.items():
+    #    if CF.instring(name.lower(), "spider"):
+    #        runner.crawl(s, rename = CF.REJSON)
     #CalculationSpiders = dict([(name, cls) for name, cls in CalculationsData.__dict__.items() if isinstance(cls, type)])
     #for name, s in CalculationSpiders.items():
     #    if CF.instring(name.lower(), "spider"):
@@ -62,7 +62,7 @@ def exec_Crawler():
     
 
     #runner.crawl(CharacterData.CharacterSpider)
-    #runner.crawl(EquipmentData.TotalEquipmentSpider)
+    runner.crawl(EquipmentData.TotalEquipmentSpider, rename = CF.REJSON)
     #runner.crawl(CalculationsData.StarforceSpider)
     
     d = runner.join()
@@ -88,10 +88,7 @@ if __name__ == "__main__":
         CF.setPath("C:\\Users\\edgar\\AppData\\Local\\Packages\\MseaCalculatorPackaged_h8rqv0gxgvjbt\\LocalState\\")
     
     CF.LoadRenameJson()
-    print(CF.REJSON.keys())
     start = time.time()
     exec_Crawler()
-    #ComFunc.main()
-    #ProgressBar(50)
     end = time.time()
     print("Scaped All in {0}".format(end - start))

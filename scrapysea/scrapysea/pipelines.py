@@ -194,7 +194,6 @@ class SqliteDBItemPipeline(BasePipeline):
         try:
             if self.Mode !=  "Read":
                 ColOrder = self.ExistTable[TN]["CO"] if CT["CO"] == [] else CT["CO"]
-                #DF = DF[ColOrder]
                 InsertStr = "REPLACE INTO {0} (".format(TN)
                 for c, t in CT["CT"].items():
                     if t == "INTEGER":
@@ -219,6 +218,7 @@ class SqliteDBItemPipeline(BasePipeline):
             self.DBLog.critical(traceback.format_exc())
         return
         ...
+#region Excess
 
     def sqliteTypeSort(self, value):
         if isinstance(value, str):
@@ -239,6 +239,7 @@ class SqliteDBItemPipeline(BasePipeline):
             }
         ...
 
+#endregion
 
     
 import string
@@ -246,31 +247,32 @@ class ItemRenamePipeline(BasePipeline):
     """
     Should only be called from
         TotalEquipment, EquipmentSet
-
     """
     def __init__(self) -> None:
         super().__init__()
         
     def process_item(self, item, spider):
         try:
-            ItemDict = item._values
-            self.ComplicatedRenamer(ItemDict)
-        
+            self.ComplicatedRenamer(item)
         except Exception as E:
             self.DBLog.critical(traceback.format_exc())
             self.DBLog.critical(f"Location: {spider.name}")            
         return item
 
-    def ComplicatedRenamer(self, ItemDict):
+    def ComplicatedRenamer(self, item):
         """_Rename Flow_
         EquipmentSetSpider:
             EquipSet | ClassType | Set At | ...stat
         
         TotalEquipmentSpider:
             EquipSlot | EquipName | ClassType | EquipSet | ...set
-
         """
         try:
+            ItemDict = item._values
+            for PK in item.PrimaryKeys:
+                if PK not in item and PK in CF.REJSON["DefaultValues"]:
+                    item[PK] = CF.REJSON["DefaultValues"][PK]
+
             ID = ItemDict["Destination"].strip("Equip")
             
             for field, val in ItemDict.items():
@@ -292,10 +294,12 @@ class ItemRenamePipeline(BasePipeline):
                             val = CF.replacen(val.lower(), discardL)
                             ...
                         ...
-                    else:
-                        if ID in CF.REJSON["Equipment"]:
-                            for i, j in CF.REJSON["Equipment"][ID].items():
-                                val = CF.replacen(val, j, i) 
+                        if field == "EquipName":
+                            if ID in CF.REJSON["Equipment"]:
+                                for i, j in CF.REJSON["Equipment"][ID].items():
+                                    if any(b in val.lower() for b in j):
+                                        val = CF.replacen(val.lower(), j, i) 
+                                        break
                         ...
                     if prev != val:
                         val = string.capwords(" ".join(val.split()))

@@ -15,19 +15,12 @@ class ScrapyseaItem(scrapy.Item):
 from itemloaders.processors import TakeFirst, MapCompose, Join
 from scrapy.item import Item
 from scrapy.loader import ItemLoader
-from w3lib.html import remove_tags
-from dataclasses import dataclass, field
-from typing import Optional
-def cEquipSlot(value):
-    return value.strip('\n\t').split('/')
-    ...
+from w3lib.html import remove_tags, strip_html5_whitespace
 import ComFunc as CF
 
-#CLEAN
-def cCategory(value):
-    return CF.replacen(value, ",", ";")
 
-def removebr(list):
+#CLEAN
+def cRemovebr(list):
     s = list.strip('\n')
     if s != "":
         return s
@@ -37,16 +30,25 @@ def cNumber(value):
         return int(value)
     return value
 
+def cEquipSlot(value):
+    return value.strip('\n\t').split('/')
+    ...
+
 def cEquipLevel(td):
     if "level" in td.lower():
-        return int(td.split(" ")[1])
+        return td.split(" ")[1]
     elif "none" in td.lower():
         return 0
+
+def cCategory(value):
+    return CF.replacen(value, ",", ";")
+
 
 #OUTPUTS
 
 def oEquipName(D):
     return CF.replacen(D[0], [',','<','>'])
+
 def cClassType(D):
     for k , v in CF.REJSON["ClassTypes"].items():
         if D in v:
@@ -62,12 +64,13 @@ class CustomItem(Item):
 class EquipItem(CustomItem):
     PrimaryKeys = ["EquipSlot", "EquipName", "EquipSet", "ClassType"]
 
+    #Processor (Middle Precedence)
     EquipSlot  = scrapy.Field()
-    EquipName  = scrapy.Field(input_processor = MapCompose(removebr), output_processor = oEquipName)
+    EquipName  = scrapy.Field()
     EquipLevel = scrapy.Field()
     EquipSet   = scrapy.Field()
-    ClassType  = scrapy.Field(input_processor = MapCompose(cClassType))
-    Category   = scrapy.Field(default = "", input_processor = MapCompose(cCategory))
+    ClassType  = scrapy.Field()
+    Category   = scrapy.Field()
 
     ...
 
@@ -79,14 +82,14 @@ class WeaponItem(EquipItem):
     ...
 
 
-class CustomLoaderBase(ItemLoader):
+class LBase(ItemLoader):
+    #Processor (Least Precedence)
     default_output_processor = TakeFirst()
-    default_input_processor = MapCompose(removebr, cNumber)
 
     def add_value(self, fieldname, value, *processors, **kw):
         try:
             fieldname = CF.replacen(fieldname, ["REQ", "\n"]).strip()
-            if ("HP" in fieldname or "MP" in fieldname) and "%" in value:
+            if "%" in value and ("HP" in fieldname or "MP" in fieldname):
                 fieldname = "Perc " + fieldname
             value = CF.replacen(value, ["+", "%"]).strip()
             fieldname = fieldname.replace(" ", "")
@@ -100,15 +103,16 @@ class CustomLoaderBase(ItemLoader):
             self.item.AddNField(fieldname)
             super().add_value(fieldname, value, *processors, **kw)
 
-
-
-
-
-class EquipLoader(CustomLoaderBase):
-    EquipSlot_in = MapCompose(cEquipSlot)
-    EquipLevel_in = MapCompose(cEquipLevel)
-    EquipLevel_out = TakeFirst()
+class EquipLoader(LBase):
     default_item_class = EquipItem
+    #Processor (Highest Precedence)
+    EquipSlot_in   = MapCompose(cRemovebr, cEquipSlot)
+    EquipName_in   = MapCompose(cRemovebr)
+    EquipLevel_in  = MapCompose(cRemovebr, cEquipLevel, cNumber)
+    ClassType_in   = MapCompose(cRemovebr, cClassType)
+    Category_in    = MapCompose(cRemovebr, cCategory)
+    
+    EquipName_out  = oEquipName
     
 
 #EQUIPMENT SET EFFECTS
@@ -117,9 +121,8 @@ class EquipSetItem(CustomItem):
     EquipSet = scrapy.Field()
     ClassType = scrapy.Field()
     SetAt = scrapy.Field()
-    Test = scrapy.Field()
 
-class ESLoader(CustomLoaderBase):
+class ESLoader(LBase):
     default_item_class = EquipSetItem()
 
 

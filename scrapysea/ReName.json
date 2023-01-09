@@ -2,9 +2,9 @@
     "Equipment":{
             "Accessory":{
                 "Fantasy": ["dreamy", "fantasy"],
-                "Penombre" : ["twilight"]
+                "Penombre" : ["twilight"],
+                "Loose Control Machine Mark" : ["berserked"]
             },
-        
             "Weapon":{
                 "Tuner" : ["bladecaster"],
                 "Breath Shooter"  :["whispershot"],
@@ -71,7 +71,8 @@
         "equipmentset"               : "EquipSet",
         "job"                        : "ClassType",
         "abnormalstatusresistance"   : "StatusResist",
-        "knockbackchance"            : "Knockback"
+        "knockbackchance"            : "Knockback",
+        "level"                      : "EquipLevel"
     },
     "DefaultValues":{
         "EquipSet"          : "None",

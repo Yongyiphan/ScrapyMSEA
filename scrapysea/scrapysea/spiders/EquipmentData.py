@@ -57,8 +57,8 @@ class TotalEquipmentSpider(scrapy.Spider):
         "Ring" : 30, "Pendant" : 75, 
         "Earrings" : 75, 
         "Belt" : 140, 
-        "Pocket Item" : 0, 
-        "Android": 0,"Android Heart":30,
+        "Pocket" : 0, 
+        "Android": 0,"Heart":30,
         "Emblem" : 100, "Badge": 100, "Medal": 0,
         "Shield" : 110
     }
@@ -102,16 +102,22 @@ class TotalEquipmentSpider(scrapy.Spider):
                 self.ItemCount[t] = tqdm(desc=t, leave=True, total=0)
 
             ArmorT = response.xpath("(//span[@id ='Armor']/parent::h2/following-sibling::div//table[@class='maplestyle-equiptable'])[1] //table//a[contains(@href, 'wiki/')]")
+            D = {}
             for Slot in ArmorT:
-                Link = Slot.xpath(".//@href").get()
                 S = Slot.xpath(".//@title").get()
                 if S == 'Totem':
                     continue
                 RenameSlot =[k for k, v in self.rename['Equipment']['Slot'].items() if CF.replacen(S.lower().strip(), " ") in v] 
                 S = RenameSlot[0] if RenameSlot != [] else S
+                Link = Slot.xpath(".//@href").get()
                 nurl = response.urljoin(Link)
-                yield scrapy.Request(nurl, callback=self.HandleEquipment, cb_kwargs={"EquipSlot":S, "Link":Link})
-                break
+                D[S] = nurl
+                #yield scrapy.Request(nurl, callback=self.HandleEquipment, cb_kwargs={"EquipSlot":S})
+                #break
+            ToTest = "Ring"
+            AtS = D[ToTest]
+            yield scrapy.Request(AtS, callback=self.HandleEquipment, cb_kwargs={"EquipSlot":ToTest})
+            
             #weaponT = response.xpath("//span[@id = 'Weapon']/parent::h2/following-sibling::div[@class='tabber wds-tabber'][1] //a/@href").getall()
             #weapignore = [i[0] for i in self.rename['NonMseaClasses'].values()]
             #secignore = [i[1] for i in self.rename['NonMseaClasses'].values()]
@@ -239,12 +245,12 @@ class TotalEquipmentSpider(scrapy.Spider):
                 
                     self.RecordItemDict(ItemDict)
                     yield ItemDict
-      
-    def HandleEquipment(self, response, EquipSlot, Link):
+    
+    def HandleEquipment(self, response, EquipSlot):
         try:
-            altTable = response.xpath("//div[@class='mw-parser-output'] //a[contains(@href, '{}')]/@href".format(Link)).getall()
+            altTable = response.xpath("//div[@class='mw-parser-output'] //a[contains(@title, '{}/')]/@href".format(EquipSlot)).getall()
             for altLink in altTable:
-                yield scrapy.Request(response.urljoin(altLink), callback=self.HandleEquipment, cb_kwargs={"EquipSlot":EquipSlot, "Link":Link})
+                yield scrapy.Request(response.urljoin(altLink), callback=self.HandleEquipment, cb_kwargs={"EquipSlot":EquipSlot})
             
             tabsTitle = response.xpath("//div[@class='tabber wds-tabber'] //ul[@class='wds-tabs'] //li //text()").getall()
             Unobtainable = [i for i, j in enumerate(tabsTitle) if "unobtainable" in j.lower()]
@@ -261,15 +267,12 @@ class TotalEquipmentSpider(scrapy.Spider):
             for i, table in enumerate(Wikitable):
                 Content = table.xpath(".//tr")
                 self.ItemCount[Cat].total += (len(Content) - 1 )
-                HTitle = CF.removebr(Content[0].xpath(".//text()").getall())
-                for j, row in enumerate(Content[1:]):
-                    citem = EquipItem()
-                    l = EquipLoader(item = citem, response=response)
+                for row in Content[1:]:
+                    l = EquipLoader(item = EquipItem(), response=response)
                     l.selector = row
                     l.add_value("EquipSlot", EquipSlot)
                     l.replace_xpath("EquipName", ".//text()")
                     EquipName = l.get_output_value("EquipName")
-
                     l.replace_xpath("EquipLevel", ".//text()")
                     clvl = l.get_output_value("EquipLevel")
 
@@ -280,21 +283,17 @@ class TotalEquipmentSpider(scrapy.Spider):
                     
                     l.add_value("Category", tabsTitle[i] if tabsTitle != [] else "")
                     l.add_value("Destination", Cat)
-                    ItemDict = {}
                     link =  row.xpath(".//a[not(contains(@class,'image')) and not(contains(@href,'redlink'))] //@href").get()
                     if link == None or EquipSlot == "Android":
-                        for i, col in enumerate(HTitle):
-                            Ctd = CF.removebr(row.xpath(f'.//td[{i+1}] /text()').getall())
-                            if CF.instring(col.lower(), ['requirements', 'effects']):
-                                ItemDict.update(self.RetrieveByTDContent(Ctd, ItemDict))
-                            else:
-                                try:
-                                    if CF.instring(col.lower(),['appearance', 'functions', '[']):
-                                        continue
-                                    ItemDict[col] = " ".join(Ctd)
-                                except:
-                                    continue
-                        self.RecordItemDict(ItemDict)
+                        for Stat in CF.removebr(row.xpath(".//text()").getall()):
+                            if ":" in Stat:
+                                StatSplit = Stat.split(":")
+                                l.add_value(StatSplit[0], StatSplit[-1])   
+                            ...
+                        citem = l.load_item()
+                        self.RecordItemDict(citem)
+                        yield citem
+                        ...
                     else:
                         nurl = response.urljoin(link)
                         yield scrapy.Request(nurl, callback=self.RetrieveByPage, cb_kwargs={"l" : l})
@@ -304,7 +303,6 @@ class TotalEquipmentSpider(scrapy.Spider):
     def RetrieveByPage(self, response, l):
         if not response:
             return
-        
         try:
             l.context['response'] = response
             citem = l.load_item()
@@ -323,32 +321,22 @@ class TotalEquipmentSpider(scrapy.Spider):
                     StatID = CF.replacen(StatID, ["\n"]).strip()
                     if (StatID == "Level" or 
                         StatID.lower() in self.Ignore["PageContentSkip"]):
-                        #self.Eqlogger.debug("Skipped {0}".format(StatID))
                         continue
                     if "REQ" in StatID and "Job" not in StatID:
                         continue
                     P = set([x.lower() for x in StatID.split(" ")])
                     if any(P.intersection(set(x.lower().split(" "))) for x in self.Ignore["PageContentSkip"]):
-                        #self.Eqlogger.debug("Skipped {0}".format(StatID))
                         continue
 
                     StatC = " ".join(row.xpath(" .//td //text()").getall())
                     l.add_value(StatID, StatC)
 
             citem = l.load_item()
-            self.RecordItemDict(citem._values)
+            self.RecordItemDict(citem)
             yield citem
         except Exception:
             self.Eqlogger.critical(traceback.format_exc())
 
-#        PageTitle = response.xpath("//h1[@class='page-header__title']/text()").get()
-#        TableTrack = 1
-#        
-#        AlternateTablesTitles = response.xpath("//div[@class = 'toc'] //ul/li[contains(@class, 'toclevel-2')]/a /span[@class='toctext']/text()").getall()
-#        if AlternateTablesTitles == []:
-#            AlternateTablesTitles = response.xpath("//div[@class = 'toc'] //ul/li[contains(@class, 'toclevel-1')]/a /span[@class='toctext']/text()").getall()
-#        
-#        TableContent = response.css("div.mw-parser-output table")
 #        if PageTitle.find("Genesis") != -1 and ItemDict["EquipSlot"] == "Weapon":
 #            if(ItemDict["WeaponType"] == "Long Sword" or ItemDict["WeaponType"] == "Heavy Sword") == False:
 #                TableContent = response.xpath("//h2/span[@id = 'Unsealed']/parent::h2/following-sibling::table")
@@ -368,64 +356,7 @@ class TotalEquipmentSpider(scrapy.Spider):
 #                        continue
 #                except Exception as E:
 #                    print(E)
-#            TableCount += 1
-#            if TableCount > TableTrack:
-#                break
-#            td = ["".join(value.css("td ::text").getall()).strip('\n') for value in ctable.css('tr') if value.css("td ::text").getall() != ['\n']]
-#            th = CF.removebr(ctable.css('tr > th ::text').getall())
-#            
-#            ItemDict = CF.DeepCopyDict(ItemDict)
-#            for key, value in zip(th, td[1:]):
-#                if any(value.lower() in key.lower() for value in self.Ignore["PageContentSkip"]):
-#                    continue
-#                try:
-#                    if "(" in value:
-#                        value = CF.replacen(value, ['(',')'])
-#                    nvalue = value.strip('+').rstrip(' ')
-#                    if "REQ" in key:
-#                        if "Level" in key:
-#                            ItemDict["EquipLevel"] = nvalue
-#                        elif "Job" in key:
-#                            ItemDict['ClassName'] = nvalue
-#                        else:
-#                            continue
-#                        continue
-#                    if ("HP" in key or "MP" in key) and '%' in nvalue:
-#                        ItemDict["Perc " + key] = nvalue.strip('%')
-#                    else:
-#                        ItemDict[key] = CF.replacen(nvalue,",")
-#                except:
-#                    continue
-#            if "Equipment Set" in ItemDict.keys():
-#                #Set = ItemDict['Equipment Set']
-#                #Set = replacen(Set, 'Set')
-#
-#                #ClassFound = [i for i, j in self.rename["ClassTypes"].items() if list(set(Set.lower().split(' ')) &set(j)) != []]
-#                #if ClassFound != []:
-#                #    Set = Set.replace(ClassFound[0], '')
-#                #ItemDict['EquipSet'] = Set.rstrip(' ')
-#                
-#                ItemDict['EquipSet'] = ItemDict.pop("Equipment Set")
-#                
 #                       
-#            self.RecordItemDict(ItemDict=ItemDict)
-#            yield ItemDict
-    
-    def RetrieveByTDContent(self, content, ItemDict = {}):
-        
-        for stat in content:
-            if stat.find(':') != -1:
-                key, value = stat.split(':')
-                if value.strip(' ') == "":
-                    continue
-                ItemDict[key] = CF.replacen(value.strip(' +\n'), ",")
-            else:
-                try:                   
-                    key, value = stat.split(' ')
-                    ItemDict[key] = CF.replacen(value.rstrip(' \n'),",")
-                except:
-                    continue
-        return ItemDict
     
     def CatID(self, EquipSlot):
         if EquipSlot in self.ArmorEquip:
@@ -445,7 +376,7 @@ class TotalEquipmentSpider(scrapy.Spider):
                 self.ItemCount[ID].update(1)
                 self.Eqlogger.info("Adding {0}".format(ItemDict['EquipName']))
                 self.ItemCount[ID].refresh()
-        except Exception:
+        except Exception as E:
             self.Eqlogger.critical(traceback.format_exc())
 
     
