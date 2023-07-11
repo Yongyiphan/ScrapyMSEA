@@ -106,23 +106,23 @@ class CharacterSpider(scrapy.Spider):
             PostData = data['pageProps']['post']
             PostContentData = PostData['content']
 
-            ClassName = CF.replaceN(PostData['class'], ',').strip()    
+            ClassName = CF.replacen(PostData['class'], ',').strip()    
             self.pbar.set_description("Retrieving: {0}".format(ClassName))
             UnionE = PostContentData['legion']
             UnionStatType = "Flat" if 'flat' in UnionE else "Perc"
             for value in ['%', ',']:
-                if CF.if_In_String(UnionE, value):
+                if CF.instring(UnionE, value):
                     UnionE = UnionE.replace(value, '')
             
-            if CF.if_In_String(UnionE, "("):
+            if CF.instring(UnionE, "("):
                 UnionE = UnionE.split('(')[0]
             
             CharacterDict = {
                 "ClassName" : ClassName,
                 "Faction" : PostContentData['classGroup'].split('(')[0].rstrip(' '),
-                "ClassType" : "SPECIAL" if CF.if_In_String(PostContentData['jobGroup'],"+") else PostContentData['jobGroup'],
-                "MainStat"  : "SPECIAL" if CF.if_In_String(PostContentData['mainStat'], ',') else PostContentData['mainStat'],
-                "SecStat"   : "SPECIAL" if CF.if_In_String(PostContentData['secondaryStat'], "+") else PostContentData['secondaryStat'],
+                "ClassType" : "SPECIAL" if CF.instring(PostContentData['jobGroup'],"+") else PostContentData['jobGroup'],
+                "MainStat"  : "SPECIAL" if CF.instring(PostContentData['mainStat'], ',') else PostContentData['mainStat'],
+                "SecStat"   : "SPECIAL" if CF.instring(PostContentData['secondaryStat'], "+") else PostContentData['secondaryStat'],
                 "UnionEffect" : UnionE,
                 "UnionStatType" : UnionStatType
             }
@@ -130,10 +130,10 @@ class CharacterSpider(scrapy.Spider):
             
             LegionValues = PostContentData['legionValue'].split("/")
             FinalValue = LegionValues[4]
-            if CF.if_In_String(FinalValue, '%'):
+            if CF.instring(FinalValue, '%'):
                 FinalValue = FinalValue.replace('%', '')
             for value in ['-', '[']:
-                if CF.if_In_String(FinalValue, value):
+                if CF.instring(FinalValue, value):
                     FinalValue = FinalValue.split(value)[0]
 
             UnionEffects = {

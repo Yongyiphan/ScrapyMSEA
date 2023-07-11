@@ -13,9 +13,7 @@ from scrapy.utils.log import configure_logging
 from TestProgressBar import ProgressBar
 
 
-from scrapysea.spiders import CalculationsData
-from scrapysea.spiders import EquipmentData
-from scrapysea.spiders import CharacterData
+from scrapysea.spiders import CalculationsData, EquipmentData, CharacterData
 
 import time
 
@@ -28,7 +26,7 @@ newsettings = {
     "LOG_LEVEL" : 'INFO',
     "LOG_FILE" : "./Logs/BaseScrapy.log", #Changed from None
     "LOG_FILE_APPEND" : False, #Changed from True
-    "DUPEFILTER_DEBUG" : True
+    "DUPEFILTER_DEBUG" : True,
 }
 
 def exec_Crawler():
@@ -37,30 +35,34 @@ def exec_Crawler():
     #    LogPath = os.path.join(currentPath,"DefaultData", dir)
     #    if not os.path.exists(LogPath):
     #        os.makedirs(LogPath)
-    DefaultPath = os.path.join(CF.APPFOLDER, "DefaultData\\") 
+    #DBPath = CF.APPFOLDER
+    #DefaultPath = os.path.join(CF.APPFOLDER, "DefaultData\\") 
+    DBPath = os.path.join(CF.APPFOLDER, "Test")
+    DefaultPath = os.path.join(CF.APPFOLDER, "Test\\DefaultData\\") 
     if not os.path.exists(DefaultPath):
         os.makedirs(DefaultPath)
     FolderDir = ["CalculationData","EquipmentData", "CharacterData"]
     for dir in FolderDir:
-        LogPath = os.path.join(CF.APPFOLDER,"DefaultData", dir)
+        #LogPath = os.path.join(CF.APPFOLDER,"DefaultData", dir)
+        LogPath = os.path.join(CF.APPFOLDER,"Test", "DefaultData", dir)
         if not os.path.exists(LogPath):
             os.makedirs(LogPath)
     runner = CrawlerRunner(settings=sett)
     CF.APPFOLDER = DefaultPath
- 
+    CF.DBPATH = DBPath
     #runner.crawl(CharacterData.CharacterSpider)
-    #EquipmentSpiders = dict([(name, cls) for name, cls in EquipmentData.__dict__.items() if isinstance(cls, type)])
+    EquipmentSpiders = dict([(name, cls) for name, cls in EquipmentData.__dict__.items() if isinstance(cls, type)])
     #for name, s in EquipmentSpiders.items():
-    #    if CF.if_In_String(name.lower(), "spider"):
-    #        runner.crawl(s)
+    #    if CF.instring(name.lower(), "spider"):
+    #        runner.crawl(s, rename = CF.REJSON)
     #CalculationSpiders = dict([(name, cls) for name, cls in CalculationsData.__dict__.items() if isinstance(cls, type)])
     #for name, s in CalculationSpiders.items():
-    #    if CF.if_In_String(name.lower(), "spider"):
+    #    if CF.instring(name.lower(), "spider"):
     #        runner.crawl(s)
     
 
     #runner.crawl(CharacterData.CharacterSpider)
-    #runner.crawl(EquipmentData.TotalEquipmentSpider)
+    runner.crawl(EquipmentData.TotalEquipmentSpider, rename = CF.REJSON)
     #runner.crawl(CalculationsData.StarforceSpider)
     
     d = runner.join()
@@ -85,10 +87,8 @@ if __name__ == "__main__":
     else:  
         CF.setPath("C:\\Users\\edgar\\AppData\\Local\\Packages\\MseaCalculatorPackaged_h8rqv0gxgvjbt\\LocalState\\")
     
-
+    CF.LoadRenameJson()
     start = time.time()
     exec_Crawler()
-    #ComFunc.main()
-    #ProgressBar(50)
     end = time.time()
     print("Scaped All in {0}".format(end - start))

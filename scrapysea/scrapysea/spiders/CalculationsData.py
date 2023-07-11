@@ -21,8 +21,12 @@ class PotentialSpider(scrapy.Spider):
     name = "PotentialSpider"
     start_urls = ["https://strategywiki.org/wiki/MapleStory/Potential_System"]
     custom_settings = {
-        "LOG_SCRAPED_ITEMS": False
-        
+        "LOG_SCRAPED_ITEMS": False,
+        "FEEDS" : {
+            "Test1.json" : {
+                "format" : "json"
+            }
+        }
     }
     
     PotentialTable = {
@@ -96,14 +100,14 @@ class PotentialSpider(scrapy.Spider):
         for PTableGrade in PotentialGrades:
             try:
                 PotentialType = PTableGrade.xpath("./parent::div/preceding-sibling::h2[1]//text()").get()
-                PotentialType = "Bonus" if CF.if_In_String(PotentialType.lower(), "bonus") else "Main"
+                PotentialType = "Bonus" if CF.instring(PotentialType.lower(), "bonus") else "Main"
                 EList = PTableGrade.xpath("./parent::div/preceding-sibling::h3[1]//text()").get()
                 if PotentialType not in CurrentPotTrack:
                     CurrentPotTrack.append(PotentialType)
                     MainBar.update( 1  if PotentialType == "Bonus" else 0)
                     MainBar.set_description = "Bonus Potential" if PotentialType == "Bonus" else "Main Potential"
                     CurrentEListTrack = []
-                EList = [s.strip() for s in CF.replaceN(EList, ["and", ","], "|").split('|')]
+                EList = [s.strip() for s in CF.replacen(EList, ["and", ","], "|").split('|')]
                 if EList not in CurrentEListTrack:
                     CurrentEListTrack.append(EList)
                     CBar.set_description("{0}".format(EList))
@@ -131,15 +135,15 @@ class PotentialSpider(scrapy.Spider):
                         continue
                     if childName == 'p':
                         ptext = child.xpath("./text()").get()
-                        if CF.if_In_String(ptext.lower(), 'level requirement') == False:
+                        if CF.instring(ptext.lower(), 'level requirement') == False:
                             continue
                         l = ptext.split(":")[-1].strip().split(' ')[0]
                         CDict["MinLvl"] = int(l)
                         CDict["MaxLvl"] = self.maxLvl
                         CStat = CDict['DisplayStat']
-                        if not CF.if_In_String(CStat, 'Increase') and CF.if_In_String(CStat, '%'):
+                        if not CF.instring(CStat, 'Increase') and CF.instring(CStat, '%'):
                             fv = CStat.split('%')[0].strip().split(' ')[-1]
-                            CStat = ' '.join([value.strip() for value in CF.replaceN(CStat, [f"{fv}%", "of", "+"]).split(' ') if value != ''])
+                            CStat = ' '.join([value.strip() for value in CF.replacen(CStat, [f"{fv}%", "of", "+"]).split(' ') if value != ''])
                             CDict['Stat value'] = int(fv)
                             #CDict['Stat'] = CStat.replace("%", "").strip()
                         continue
@@ -155,11 +159,11 @@ class PotentialSpider(scrapy.Spider):
                                     Clist.append(self.ConsolidateTable(PDcopy, "StatTable"))
                                     continue
                                 ttext = tchild.xpath('.//text()').get()
-                                if CF.if_In_String(ttext.lower(), "cubes"):
-                                    ttext = CF.replaceN(ttext, ",",";")
+                                if CF.instring(ttext.lower(), "cubes"):
+                                    ttext = CF.replacen(ttext, ",",";")
                                     PDcopy['CubeType'] = ttext
                                     continue
-                                if CF.if_In_String(ttext.lower(), "chance"):
+                                if CF.instring(ttext.lower(), "chance"):
                                     sv = ttext.split(' ')
                                     PDcopy["Chance"] = sv[-1].strip(' +%\n')
                                     continue
@@ -194,25 +198,25 @@ class PotentialSpider(scrapy.Spider):
  
     
     def HandleTables(self, context):
-        header =  CF.removeB(context.xpath(".//th /text()").getall())
+        header =  CF.removebr(context.xpath(".//th /text()").getall())
         TableResult = []
         for row in context.xpath(".//tr"):
-            text = CF.removeB(row.xpath(".//text()").getall())
-            if text == [] or text == header or CF.if_In_String(" ".join(text), "GMS"):
+            text = CF.removebr(row.xpath(".//text()").getall())
+            if text == [] or text == header or CF.instring(" ".join(text), "GMS"):
                 continue
             PDcopy = {}
             for i, h in enumerate(header):
                 ctext = row.xpath(".//td[{0}] /text()".format(i+1)).get()
-                if CF.if_In_String(h.lower(), 'level'):
+                if CF.instring(h.lower(), 'level'):
                     lvl = ctext.strip().split("-")
                     PDcopy["MinLvl"] = int(lvl[0].strip(' \n+%'))
-                    PDcopy["MaxLvl"] = self.maxLvl if CF.if_In_String(lvl[0], '+') else int(lvl[-1].strip(' \n+%'))
-                elif CF.if_In_String(h.lower(), 'chance'):
+                    PDcopy["MaxLvl"] = self.maxLvl if CF.instring(lvl[0], '+') else int(lvl[-1].strip(' \n+%'))
+                elif CF.instring(h.lower(), 'chance'):
                     PDcopy["Chance"] = ctext.strip(" +%\n")
                 else:
                     v = h.split('(')[0].strip()
-                    ctext = CF.replaceN(ctext, ['seconds'])
-                    if CF.if_In_String(ctext, '('):
+                    ctext = CF.replacen(ctext, ['seconds'])
+                    if CF.instring(ctext, '('):
                         ctext = ctext.split("(")[0]
                     PDcopy[v] = ctext.strip(" +\n")
                 pass
@@ -228,26 +232,26 @@ class PotentialSpider(scrapy.Spider):
                 'chance to': "Chance",
                 "second" : "Duration"
             }
-            if CF.if_In_String(DS, 'when'):
+            if CF.instring(DS, 'when'):
                 SI = SI.split('when')[0].strip()  
             for R in ToRemove.keys():
-                if CF.if_In_String(DS, R):
+                if CF.instring(DS, R):
                     idx = DS.index(R)
                     t = DS[:idx].strip().split(' ')
                     fv = t[-1]
                     if 'every' in t:
                         PDict['Tick'] = int(fv.strip(" -%"))
-                        SI = CF.replaceN(SI, 'every')
+                        SI = CF.replacen(SI, 'every')
                     else:
                         PDict[ToRemove[R]] = int(fv.strip(" -%"))
-                    if CF.if_In_String(DS, 'seconds') and R == "second":
-                        SI = CF.replaceN(SI, ['seconds', fv]).strip()
+                    if CF.instring(DS, 'seconds') and R == "second":
+                        SI = CF.replacen(SI, ['seconds', fv]).strip()
                     else:
-                        SI = CF.replaceN(SI, [R, fv]).strip()
+                        SI = CF.replacen(SI, [R, fv]).strip()
                         
-            SI = CF.replaceN(SI, ['for']).strip()
+            SI = CF.replacen(SI, ['for']).strip()
             SI = SI[0].upper() + SI[1:]
-            PDict["StatT"] = "Perc" if CF.if_In_String(SI, "%") else "Flat"
+            PDict["StatT"] = "Perc" if CF.instring(SI, "%") else "Flat"
             #PDict['Stat'] = SI.strip()
         except Exception as E:
             PLogger.critical(traceback.format_exc())        
@@ -256,7 +260,7 @@ class PotentialSpider(scrapy.Spider):
     def ReturnGrade(self, Grade):
         Temp = Grade.split(" ")
         Grade = Temp[0]
-        Prime = CF.replaceN(Temp[1], ["(", ")"])
+        Prime = CF.replacen(Temp[1], ["(", ")"])
         return (Grade, Prime)
 
     
@@ -279,8 +283,8 @@ class PotentialSpider(scrapy.Spider):
                             TempD = self.ReorgStatValue(TempD)
                         
                         if "Stat value" in TempD.keys() and "StatT" in TempD.keys():
-                            if CF.if_In_String(TempD["Stat value"], "%"):
-                                TempD['Stat value'] = CF.replaceN(TempD["Stat value"],'%').strip()
+                            if CF.instring(TempD["Stat value"], "%"):
+                                TempD['Stat value'] = CF.replacen(TempD["Stat value"],'%').strip()
                                 if TempD['StatT'] != "Perc":
                                     TempD['StatT'] = "Perc"
                         
@@ -367,7 +371,7 @@ class StarforceSpider(scrapy.Spider):
                 continue
             if cName == "h4":
                 CurrentKey = "".join(cid.split('_')[:2])
-                if CF.if_In_String(cid, IgnoreTable):
+                if CF.instring(cid, IgnoreTable):
                     SkipValue = True
                     continue
                 SkipValue = False
@@ -376,7 +380,7 @@ class StarforceSpider(scrapy.Spider):
             #Skip Condition
             if cName == 'h5':
                 SkipValue = True
-                if CF.if_In_String(cid, "Total_Stats") and CurrentRecord == "Superior_Items":
+                if CF.instring(cid, "Total_Stats") and CurrentRecord == "Superior_Items":
                     break
                 continue
             if cName == "table":
@@ -389,11 +393,11 @@ class StarforceSpider(scrapy.Spider):
         return
 
     def StarLimitTable(self, title, content):
-        Header = CF.removeB(content.xpath(".//tr/th/text()").getall())
+        Header = CF.removebr(content.xpath(".//tr/th/text()").getall())
         ConsolTable = []
         StarLimitBar = tqdm(total=len(content.xpath(".//tr")), desc="Star Limits")
         for row in content.xpath(".//tr"):
-            if CF.removeB(row.xpath(".//text()").getall()) == Header:
+            if CF.removebr(row.xpath(".//text()").getall()) == Header:
                 StarLimitBar.total -= 1
                 continue
             CRow = {
@@ -401,9 +405,9 @@ class StarforceSpider(scrapy.Spider):
             }
             for i, key in enumerate(Header):
                 ctext = row.xpath(".//td[{0}]/text()".format(i+1)).get()
-                if CF.if_In_String(key, "Level"):
-                    splitv = CF.removeB(CF.replaceN(ctext, ['~', " "], ";").split(";"))
-                    if CF.if_In_String(ctext, "and above"):
+                if CF.instring(key, "Level"):
+                    splitv = CF.removebr(CF.replacen(ctext, ['~', " "], ";").split(";"))
+                    if CF.instring(ctext, "and above"):
                         CRow["MinLvl"] =splitv[0]
                         CRow["MaxLvl"] =self.MaxLvl
                         continue
@@ -418,28 +422,28 @@ class StarforceSpider(scrapy.Spider):
         return pd.concat(ConsolTable, ignore_index=True)
 
     def SuccessRatesTable(self, CurrentRecord, content):
-        Header = CF.removeB(content.xpath(".//tr/th/text()").getall())
+        Header = CF.removebr(content.xpath(".//tr/th/text()").getall())
         ConsolTable = []
         SuccessRatesBar = tqdm(total=len(content.xpath(".//tr")), desc="Success Rates")
         for row in content.xpath(".//tr"):
-            if CF.removeB(row.xpath(".//text()").getall()) == Header:
+            if CF.removebr(row.xpath(".//text()").getall()) == Header:
                 SuccessRatesBar.total -= 1
                 continue
             CRow = {
                 "Title" :  CurrentRecord
             }
             for i, key in enumerate(Header):
-                if CF.if_In_String(key, "("):
-                    key = CF.replaceN(key.split('(')[1], ")").strip()
+                if CF.instring(key, "("):
+                    key = CF.replacen(key.split('(')[1], ")").strip()
                 ctext = row.xpath(".//td[{0}]/text()".format(i+1)).get()
                 if ctext == None:
                     CRow[key] = "0"
                     continue
                 value = ctext
-                if CF.if_In_String(ctext, '★'):
+                if CF.instring(ctext, '★'):
                     splitv = ctext.split('★')
                     value = splitv[0].strip()
-                elif CF.if_In_String(ctext, "%"):
+                elif CF.instring(ctext, "%"):
                     value = ctext.split("%")[0].strip()
                 
                 CRow[key] = value
@@ -452,18 +456,18 @@ class StarforceSpider(scrapy.Spider):
         return pd.concat(ConsolTable, ignore_index=True)
 
     def StatsBoostsTable(self,CurrentRecord, content):
-        Header = CF.removeB(content.xpath(".//tr/th/text()").getall())
+        Header = CF.removebr(content.xpath(".//tr/th/text()").getall())
         ConsolTable = []
         StatsPBar = tqdm(total=1, desc="Starforce Stats: ")
         for row in content.xpath("./tbody/tr"):
-            if CF.removeB(row.xpath(".//text()").getall()) == Header:
+            if CF.removebr(row.xpath(".//text()").getall()) == Header:
                 continue      
             Attempt = row.xpath(".//td[1]/text()").get()
             if Attempt == None:
                 continue
-            SFIDs = CF.replaceN(Attempt, ['★','→'])
+            SFIDs = CF.replacen(Attempt, ['★','→'])
             try:
-                if CF.if_In_String(SFIDs, ','):
+                if CF.instring(SFIDs, ','):
                     splitv = SFIDs.split(',')
                     SFIDs = [max([int(value.strip()) for value in pair.split(' ') if value != '']) for pair in splitv]
                 else:
@@ -478,26 +482,26 @@ class StarforceSpider(scrapy.Spider):
                     "MaxLvl" : self.MaxLvl
                 }
                 if ids <=15 and CurrentRecord == "Normal_Equips":
-                    Stats = CF.removeB(row.xpath(".//td[2] //ul //text()").getall())
+                    Stats = CF.removebr(row.xpath(".//td[2] //ul //text()").getall())
                     SFat.update(self.ReturnStatDict(Stats))   
                     ConsolTable.append(pd.DataFrame(SFat, index=[0]))
                 else:
                     NewPoint = row.xpath(".//td[2]")
-                    CommonStats = CF.removeB(NewPoint.xpath("./child::*[2] //text()").getall())
+                    CommonStats = CF.removebr(NewPoint.xpath("./child::*[2] //text()").getall())
                     SFat.update(self.ReturnStatDict(CommonStats))
                     for subrow in NewPoint.xpath("./child::*[1] //tr"):
                         DCopy = CF.DeepCopyDict(SFat)
                         MinMaxLvl = subrow.xpath(".//td[1] //text()").get()
                         if MinMaxLvl == None:
                             continue
-                        if CF.if_In_String(MinMaxLvl, "~"):
+                        if CF.instring(MinMaxLvl, "~"):
                             Min, Max = MinMaxLvl.split("~")
                             DCopy["MinLvl"] = int(Min)
                             DCopy["MaxLvl"] = int(Max)
                         else:
                             DCopy["MinLvl"] = int(MinMaxLvl.strip(" +"))
                             DCopy["MaxLvl"] = self.MaxLvl
-                        Stats = CF.removeB(subrow.xpath(".//td[2] //text()").getall())
+                        Stats = CF.removebr(subrow.xpath(".//td[2] //text()").getall())
                         DCopy.update(self.ReturnStatDict(Stats))
                         ConsolTable.append(pd.DataFrame(DCopy, index=[0]))
                 StatsPBar.update(1)
@@ -511,7 +515,7 @@ class StarforceSpider(scrapy.Spider):
         RDict = {}
         for s in StatList:
             key, value = s.split("+")
-            key = CF.replaceN(key, ["'s", "'"]).strip()
+            key = CF.replacen(key, ["'s", "'"]).strip()
             RDict[key] =  int(value.strip(" %"))
         
         return RDict
@@ -558,10 +562,10 @@ class BonusStatSpider(scrapy.Spider):
                     continue
                 CDict["EquipType"] = "Common"
                 if Stat in SpecialConsideration:
-                    if CF.if_In_String(Stat, "Attack"):
+                    if CF.instring(Stat, "Attack"):
                         dl = tables.xpath("./preceding-sibling::dl[1] //text()").get()
                         if CDict["EquipGrp"] == "Weapons":
-                            if CF.if_In_String(dl, "Normal"):
+                            if CF.instring(dl, "Normal"):
                                 CDict["EquipType"] = "Normal"
                             else:
                                 CDict["EquipType"] = "Special"
@@ -581,11 +585,11 @@ class BonusStatSpider(scrapy.Spider):
     
     def ReturnTable(self, tables, CDict):
         ConsolRow = []
-        Header = CF.removeB(tables.xpath(".//th/text()").getall())
+        Header = CF.removebr(tables.xpath(".//th/text()").getall())
         if "Equip level" not in Header:
             p = tables.xpath("./preceding-sibling::p[1]/text()").get()
             splitv = p.split('at least level')[-1].strip().split(' ')[0]
-            if CF.if_In_String(p, "Not affected") and CF.if_In_String(p, "at least") == False:
+            if CF.instring(p, "Not affected") and CF.instring(p, "at least") == False:
                 CDict["MinLvl"] = 0
             else:
                 CDict["MinLvl"] = int(splitv.strip(" .\n"))
@@ -593,7 +597,7 @@ class BonusStatSpider(scrapy.Spider):
 
         for row in tables.xpath(".//tr"):
             CRow = CF.DeepCopyDict(CDict)
-            CText = CF.removeB(row.xpath(".//text()").getall())
+            CText = CF.removebr(row.xpath(".//text()").getall())
             if CText == Header or CText is None:
                 continue
 
@@ -601,11 +605,11 @@ class BonusStatSpider(scrapy.Spider):
                 textAt = row.xpath("./td[{0}]/text()".format(i+1)).get()
                 if textAt is None:
                     continue
-                if CF.if_In_String(th, "level"):
+                if CF.instring(th, "level"):
                     CRow["MinLvl"], CRow["MaxLvl"] = textAt.split("-")
                     continue
                 
-                CRow[th] = CF.replaceN(textAt, ",").strip(" %\n")
+                CRow[th] = CF.replacen(textAt, ",").strip(" %\n")
             ConsolRow.append(pd.pd.DataFrame(CRow, index=[0]))
         
         return pd.concat(ConsolRow, ignore_index=True)
@@ -617,18 +621,18 @@ class BonusStatSpider(scrapy.Spider):
         Stat = Stat.encode("ASCII", "ignore").decode()
         Stat = " ".join([ele.strip() for ele in Stat.split("increase")]).strip()
                 
-        if CF.if_In_String(Stat, "and"):
+        if CF.instring(Stat, "and"):
             Stat = "Mixed Stats"
-        if CF.if_In_String(Stat, MainStat):
+        if CF.instring(Stat, MainStat):
             Stat = "Main Stats"
 
-        if CF.if_In_String(Stat, "("):
+        if CF.instring(Stat, "("):
             splitv = Stat.split("(")
-            EquipGrp = CF.replaceN(splitv[-1], ")").strip()
+            EquipGrp = CF.replacen(splitv[-1], ")").strip()
             Stat = splitv[0].strip()
         else:
             EquipGrp = "Common"
-        Stat = CF.replaceN(Stat, ["%"])
+        Stat = CF.replacen(Stat, ["%"])
 
         return Stat, EquipGrp
 
@@ -664,19 +668,19 @@ class HyperStatSpider(scrapy.Spider):
         pass
     
     def HyperStatDistribution(self, content):
-        Header = sorted(list(set(CF.removeB(content.xpath(".//tr //th/text()").getall()))))
+        Header = sorted(list(set(CF.removebr(content.xpath(".//tr //th/text()").getall()))))
         ConsolTable = []
         HSDBar = tqdm(total=len(content.xpath(".//tr")),desc="HyperStats Distribution: ")
         for row in content.xpath(".//tr"):
-            t = CF.removeB(row.xpath(".//text()").getall())
+            t = CF.removebr(row.xpath(".//text()").getall())
             if sorted(t) == Header:
                 HSDBar.total -= 1
                 continue
             CDict = {}
             for i, key in enumerate(Header):
-                if CF.if_In_String(key, "Level"):
+                if CF.instring(key, "Level"):
                     key = key.split('(')[0].strip()
-                CDict[key] = CF.replaceN(t[i], ",")
+                CDict[key] = CF.replacen(t[i], ",")
             ConsolTable.append(pd.DataFrame(CDict, index=[0]))
             HSDBar.update(1)
         HSDBar.close()
@@ -690,21 +694,21 @@ class HyperStatSpider(scrapy.Spider):
                 StatType = table.xpath("./preceding-sibling::h3[1]/span[@class='mw-headline']/text()").get()
                 CStat = {}
                 if StatType is not None:
-                    StatType = CF.replaceN(StatType.encode("ascii","ignore").decode(), ["%", "Weapon and Magic"]).strip()
-                    CStat["StatIncrease"] = CF.replaceN(StatType, "Increase").strip()
+                    StatType = CF.replacen(StatType.encode("ascii","ignore").decode(), ["%", "Weapon and Magic"]).strip()
+                    CStat["StatIncrease"] = CF.replacen(StatType, "Increase").strip()
 
-                Header = CF.removeB(table.xpath(".//tr/th/text()").getall())
+                Header = CF.removebr(table.xpath(".//tr/th/text()").getall())
                 ConsolTable = []
                 for row in table.xpath(".//tr"):
                     DCopy = CF.DeepCopyDict(CStat)
-                    Ctext = CF.removeB(row.xpath(".//text()").getall())
+                    Ctext = CF.removebr(row.xpath(".//text()").getall())
                     if Ctext == Header or Ctext is None:
                         continue
                     for i, td in enumerate(Header):
-                        if CF.if_In_String(td, 'Cost'):
+                        if CF.instring(td, 'Cost'):
                             td = td.split("Cost")[0].strip() + " Cost"
                         t = row.xpath("./td[{0}]/text()".format(i+1)).get()
-                        if CF.if_In_String(t, "+"):
+                        if CF.instring(t, "+"):
                             t = t.split("+")[-1]
                         if td == "Overall Stat":
                             td = "Overall Effect"

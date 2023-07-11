@@ -1,0 +1,83 @@
+{
+    "Equipment":{
+            "Accessory":{
+                "Fantasy": ["dreamy", "fantasy"],
+                "Penombre" : ["twilight"],
+                "Loose Control Machine Mark" : ["berserked"]
+            },
+            "Weapon":{
+                "Tuner" : ["bladecaster"],
+                "Breath Shooter"  :["whispershot"],
+                "Buchae" :["ritualfan"],
+                "Energy Sword" : ["whipblade"],
+                "Magic Gauntlet" : ["lucentgauntlet"]
+            },
+            "Secondary":{
+                "Arrow Head" : ["arrowhead"],
+                "Bracelet"  :["bladebinder"]
+            },
+        
+            "Set":{
+                "Arcaneshade": ["arcaneumbra", "arcane umbra"],
+                "Absolab" : ["absolab"],
+                "Black" : ["frozen"]
+            },
+            
+            "Slot":{
+                "Heart" : ["androidheart"],
+                "Pocket": ["pocketitem"]
+            }
+    },
+    "ClassTypes":
+        {
+            "Warrior"   :["warrior", "knight"],
+            "Bowman"    :["archer", "bowman"],
+            "Magician"  :["mage", "magician"],
+            "Thief"     :["thief"],
+            "Pirate"    :["pirate"],
+            "Any"       :[]
+        },
+    "NonMseaClasses":
+        {
+            "jett" : ["gun", "fist"],
+            "beasttamer" : ["scepter", "whistle"]
+        },
+    "Temp" :{
+        "Identifiers" : ["EquipSlot", "EquipSet", "EquipName", "WeaponType", "Category","EquipLevel", "ClassType", "ClassName", "Set At"],
+        "MainStat" : ["STR", "DEX", "INT", "LUK", "All Stats","DEF","Max HP", "Max MP","Perc Max HP", "Perc Max MP", "Max DF"],
+        "ExtraStat" : ["Weapon Attack", "Magic Attack", "Boss Damage", "Ignored Enemy Defense", "Critical Damage", "Damage", "All Skills", "Damage Against Normal Monsters", "Attack Speed"],
+        "Else" : ["Abnormal Status Resistance","Jump", "Movement Speed", "Knockback Chance"],
+        "Filler" : ["Number Of Upgrades", "Rank"]
+    },
+    "Dataframe ReCol" : { 
+        "Identifiers" : ["EquipSlot", "EquipSet", "EquipName", "WeaponType", "Category","EquipLevel", "ClassType", "ClassName", "SetAt"],
+        "MainStat" : ["STR", "DEX", "INT", "LUK", "AllStats","DEF","MaxHP", "MaxMP","PercMaxHP", "PercMaxMP", "MaxDF"],
+        "ExtraStat" : ["WATK", "MATK", "BD", "IED","CritDMG", "DMG", "AllSkills", "NDMG", "AtkSpd"],
+        "Else" : ["StatusResist","Jump", "Speed", "Knockback"],
+        "Filler" : ["NoUpgrades", "Rank"]
+    },
+    "DBColumn" : {
+        "defense"                    : "DEF",
+        "weaponattack"               : "WATK",
+        "magicattack"                : "MATK",
+        "ignoredenemydefense"        : "IED",
+        "damage"                     : "DMG",
+        "bossdamage"                 : "BD",
+        "criticaldamage"             : "CritDMG",
+        "damageagainstnormalmonster" : "NDMG",
+        "movementspeed"              : "Speed",
+        "numberofupgrades"           : "NoUpgrades",
+        "attackspeed"                : "AtkSpd",
+        "equipmentset"               : "EquipSet",
+        "job"                        : "ClassType",
+        "abnormalstatusresistance"   : "StatusResist",
+        "knockbackchance"            : "Knockback",
+        "level"                      : "EquipLevel"
+    },
+    "DefaultValues":{
+        "EquipSet"          : "None",
+        "ClassName"         : "Any",
+        "ClassType"         : "Any",
+        "Category"          : "Obtainable"
+    }
+}
