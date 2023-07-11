@@ -1,0 +1,16 @@
+{
+	"include": [
+		"./msspider/",
+		"./utils/"
+	],
+	"exclude" : ["env"],
+	"venvPath" : "./env/",
+	"executionEnvironments" : [
+		{
+			"root" : ".",
+			"venv" : "env"
+		}
+	],
+	"typeCheckingMode" : "off"
+}
+
