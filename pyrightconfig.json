@@ -1,6 +1,6 @@
 {
 	"include": [
-		"./msspider/",
+		"./scrapysea/",
 		"./utils/"
 	],
 	"exclude" : ["env"],
