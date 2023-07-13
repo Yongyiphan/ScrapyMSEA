@@ -1,0 +1,170 @@
+,EquipSet,ClassType,SetAt
+0,Boss Accessory,Any,3
+1,Boss Accessory,Any,5
+2,Boss Accessory,Any,7
+3,Boss Accessory,Any,9
+4,Dawn Boss,Any,2
+5,Dawn Boss,Any,3
+6,Root Abyss,Warrior,2
+7,Root Abyss,Warrior,3
+8,Sengoku Treasure,Any,2
+9,Sengoku Treasure,Any,3
+10,Dawn Boss,Any,4
+11,Root Abyss,Warrior,4
+12,Arcane Umbra,Warrior,2
+13,Arcane Umbra,Warrior,3
+14,Arcane Umbra,Warrior,4
+15,Pitched Boss,Any,2
+16,8th,Warrior,2
+17,8th,Warrior,3
+18,8th,Warrior,4
+19,8th,Warrior,5
+20,Lionheart,Warrior,2
+21,Lionheart,Warrior,3
+22,Lionheart,Warrior,4
+23,AbsoLab,Warrior,2
+24,AbsoLab,Warrior,3
+25,AbsoLab,Warrior,4
+26,Arcane Umbra,Warrior,5
+27,Arcane Umbra,Warrior,6
+28,Arcane Umbra,Warrior,7
+29,Pitched Boss,Any,3
+30,Pitched Boss,Any,4
+31,Pitched Boss,Any,5
+32,Pitched Boss,Any,6
+33,8th,Warrior,6
+34,Mystic,Any,3
+35,Mystic,Any,4
+36,Lionheart,Warrior,5
+37,Lionheart,Warrior,6
+38,Lionheart,Warrior,7
+39,Eternal,Bowman,2
+40,Eternal,Bowman,3
+41,AbsoLab,Warrior,5
+42,AbsoLab,Warrior,6
+43,AbsoLab,Warrior,7
+44,Pitched Boss,Any,7
+45,Pitched Boss,Any,8
+46,Pitched Boss,Any,9
+47,Mystic,Any,5
+48,8th,Thief,2
+49,8th,Thief,3
+50,8th,Thief,4
+51,8th,Thief,5
+52,Eternal,Bowman,4
+53,Pure Gold Parts,Pirate,3
+54,Pure Gold Parts,Pirate,5
+55,Gold Parts,Pirate,3
+56,Gold Parts,Pirate,5
+57,8th,Thief,6
+58,Arcane Umbra,Bowman,2
+59,Arcane Umbra,Bowman,3
+60,Arcane Umbra,Bowman,4
+61,Arcane Umbra,Bowman,5
+62,Arcane Umbra,Bowman,6
+63,Arcane Umbra,Bowman,7
+64,Eternal,Pirate,2
+65,Eternal,Pirate,3
+66,Root Abyss,Pirate,2
+67,Root Abyss,Pirate,3
+68,Eternal,Thief,2
+69,Eternal,Thief,3
+70,Eternal,Pirate,4
+71,Arcane Umbra,Pirate,2
+72,Arcane Umbra,Pirate,3
+73,Arcane Umbra,Pirate,4
+74,AbsoLab,Pirate,2
+75,AbsoLab,Pirate,3
+76,AbsoLab,Pirate,4
+77,Root Abyss,Pirate,4
+78,Shark Tooth,Pirate,2
+79,Shark Tooth,Pirate,3
+80,Shark Tooth,Pirate,4
+81,8th,Pirate,2
+82,8th,Pirate,3
+83,8th,Pirate,4
+84,8th,Pirate,5
+85,Eternal,Thief,4
+86,Arcane Umbra,Thief,2
+87,Arcane Umbra,Thief,3
+88,Arcane Umbra,Thief,4
+89,Arcane Umbra,Pirate,5
+90,Arcane Umbra,Pirate,6
+91,Arcane Umbra,Pirate,7
+92,AbsoLab,Pirate,5
+93,AbsoLab,Pirate,6
+94,AbsoLab,Pirate,7
+95,Shark Tooth,Pirate,5
+96,Shark Tooth,Pirate,6
+97,Shark Tooth,Pirate,7
+98,8th,Pirate,6
+99,Arcane Umbra,Thief,5
+100,Arcane Umbra,Thief,6
+101,Arcane Umbra,Thief,7
+102,Root Abyss,Bowman,2
+103,Root Abyss,Bowman,3
+104,Eternal,Magician,2
+105,Eternal,Magician,3
+106,Root Abyss,Thief,2
+107,Root Abyss,Thief,3
+108,Root Abyss,Bowman,4
+109,8th,Bowman,2
+110,8th,Bowman,3
+111,8th,Bowman,4
+112,8th,Bowman,5
+113,Eternal,Magician,4
+114,Root Abyss,Thief,4
+115,AbsoLab,Thief,2
+116,AbsoLab,Thief,3
+117,Raven Horn,Thief,2
+118,Raven Horn,Thief,3
+119,Raven Horn,Thief,4
+120,Raven Horn,Thief,5
+121,Raven Horn,Thief,6
+122,AbsoLab,Bowman,2
+123,AbsoLab,Bowman,3
+124,8th,Bowman,6
+125,AbsoLab,Thief,4
+126,AbsoLab,Thief,5
+127,AbsoLab,Thief,6
+128,AbsoLab,Thief,7
+129,Raven Horn,Thief,7
+130,AbsoLab,Bowman,4
+131,AbsoLab,Bowman,5
+132,AbsoLab,Bowman,6
+133,AbsoLab,Bowman,7
+134,Falcon Wing,Bowman,2
+135,Falcon Wing,Bowman,3
+136,Falcon Wing,Bowman,4
+137,Falcon Wing,Bowman,5
+138,Falcon Wing,Bowman,6
+139,Falcon Wing,Bowman,7
+140,Root Abyss,Magician,2
+141,Root Abyss,Magician,3
+142,Eternal,Warrior,2
+143,Eternal,Warrior,3
+144,Arcane Umbra,Magician,2
+145,Arcane Umbra,Magician,3
+146,Arcane Umbra,Magician,4
+147,AbsoLab,Magician,2
+148,AbsoLab,Magician,3
+149,AbsoLab,Magician,4
+150,Root Abyss,Magician,4
+151,8th,Magician,2
+152,8th,Magician,3
+153,8th,Magician,4
+154,8th,Magician,5
+155,Eternal,Warrior,4
+156,Arcane Umbra,Magician,5
+157,Arcane Umbra,Magician,6
+158,Arcane Umbra,Magician,7
+159,AbsoLab,Magician,5
+160,AbsoLab,Magician,6
+161,AbsoLab,Magician,7
+162,Dragon Tail,Magician,2
+163,Dragon Tail,Magician,3
+164,Dragon Tail,Magician,4
+165,Dragon Tail,Magician,5
+166,Dragon Tail,Magician,6
+167,8th,Magician,6
+168,Dragon Tail,Magician,7

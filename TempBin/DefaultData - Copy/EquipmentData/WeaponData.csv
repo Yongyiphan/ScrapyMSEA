@@ -1,0 +1,196 @@
+,EquipSlot,EquipSet,EquipName,WeaponType,EquipLevel,STR,DEX,LUK,INT,Max HP,Defense,Weapon Attack,Magic Attack,Attack Speed,Boss Damage,Ignored Enemy Defense,Movement Speed,Knockback Chance,Number of Upgrades,Equipment Set
+0,Weapon,Utgard,Utgard Cane,Cane,140,0,0,0,0,0,0,118,0,Fast,0,0,0,0,8,8th
+1,Weapon,AbsoLab,AbsoLab Bladecaster,Bladecaster,160,60,60,0,0,0,0,205,0,Fast,30,10,0,0,8,AbsoLab
+2,Weapon,Genesis,Genesis Bladecaster,Bladecaster,200,150,150,0,0,0,0,340,0,Fast,30,20,0,0,8,0
+3,Weapon,Arcane,Arcane Umbra Bladecaster,Bladecaster,200,100,100,0,0,0,0,295,0,Fast,30,20,0,0,8,Arcane Umbra
+4,Weapon,Fafnir,Fafnir Mercy,Bladecaster,150,40,40,0,0,0,0,171,0,Fast,30,10,0,0,8,Root Abyss
+5,Weapon,Utgard,Utgard Restraint,Bladecaster,140,0,0,0,0,0,0,122,0,Fast,0,0,0,0,8,8th
+6,Weapon,Genesis,Genesis Hammer,One Handed Blunt Weapon,200,150,150,0,0,0,0,326,0,Fast,30,20,0,0,8,0
+7,Weapon,Genesis,Genesis Axe,One Handed Axe,200,150,150,0,0,0,0,326,0,Fast,30,20,0,0,8,0
+8,Weapon,AbsoLab,AbsoLab Axe,One Handed Axe,160,60,60,0,0,0,0,197,0,Fast,30,10,0,0,8,AbsoLab
+9,Weapon,Lapis,Dragonic Lapis Hammer,One Handed Blunt Weapon,110,5,5,0,0,100,0,111,0,Normal,0,0,0,0,8,0
+10,Weapon,Arcane,Arcane Umbra Hammer,One Handed Blunt Weapon,200,100,100,0,0,0,0,283,0,Fast,30,20,0,0,8,Arcane Umbra
+11,Weapon,Utgard,Utgard Hair,One Handed Blunt Weapon,140,0,0,0,0,0,0,118,0,Fast,0,0,0,0,8,8th
+12,Weapon,AbsoLab,AbsoLab Bit Hammer,One Handed Blunt Weapon,160,60,60,0,0,0,0,197,0,Fast,30,10,0,0,8,AbsoLab
+13,Weapon,Fafnir,Fafnir Guardian Hammer,One Handed Blunt Weapon,150,40,40,0,0,0,0,164,0,Fast,30,10,0,0,8,Root Abyss
+14,Weapon,Arcane,Arcane Umbra Axe,One Handed Axe,200,100,100,0,0,0,0,283,0,Fast,30,20,0,0,8,Arcane Umbra
+15,Weapon,Fafnir,Fafnir Twin Cleaver,One Handed Axe,150,40,40,0,0,0,0,164,0,Fast,30,10,0,0,8,Root Abyss
+16,Weapon,Utgard,Utgard Axe,One Handed Axe,140,0,0,0,0,0,0,118,0,Fast,0,0,0,0,8,8th
+17,Weapon,Genesis,Genesis Cane,Cane,200,0,150,150,0,0,0,326,0,Fast,30,20,0,0,8,0
+18,Weapon,AbsoLab,AbsoLab Forked Cane,Cane,160,0,60,60,0,0,0,197,0,Fast,30,10,0,0,8,AbsoLab
+19,Weapon,Lapis,Dragonic Lapis Axe,One Handed Axe,110,5,5,0,0,100,0,111,0,Normal,0,0,0,0,8,0
+20,Weapon,Arcane,Arcane Umbra Cane,Cane,200,0,100,100,0,0,0,283,0,Fast,30,20,0,0,8,Arcane Umbra
+21,Weapon,Lapis,Lapis Hammer,One Handed Blunt Weapon,105,1,1,0,0,0,0,101,0,Normal,0,0,0,0,7,0
+22,Weapon,Lapis,Lapis Axe,One Handed Axe,105,1,1,0,0,0,0,101,0,Normal,0,0,0,0,7,0
+23,Weapon,Fafnir,Fafnir Ciel Claire,Cane,150,0,40,40,0,0,0,164,0,Fast,30,10,0,0,8,Root Abyss
+24,Weapon,Utgard,Utgard Hellslayer,Polearm,140,0,0,0,0,0,0,122,0,Fast,0,0,0,0,8,8th
+25,Weapon,Genesis,Genesis Spear,Spear,200,150,150,0,0,0,0,340,0,Normal,30,20,0,0,8,0
+26,Weapon,Arcane,Arcane Umbra Spear,Spear,200,100,100,0,0,0,0,295,0,Normal,30,20,0,0,8,Arcane Umbra
+27,Weapon,AbsoLab,AbsoLab Piercing Spear,Spear,160,60,60,0,0,0,0,205,0,Normal,30,10,0,0,8,AbsoLab
+28,Weapon,Utgard,Utgard Siege Gun,Hand Cannon,140,0,0,0,0,0,140,122,0,Slow,0,0,0,0,8,8th
+29,Weapon,Fafnir,Fafnir Brionak,Spear,150,40,40,0,0,0,0,171,0,Normal,30,10,0,0,8,Root Abyss
+30,Weapon,AbsoLab,AbsoLab Summoner,Fan,160,0,0,60,60,0,0,143,241,Slow,30,10,0,0,8,AbsoLab
+31,Weapon,Utgard,Utgard Pistol,Gun,140,0,0,0,0,0,0,90,0,Fast,0,0,0,0,8,8th
+32,Weapon,Arcane,Arcane Umbra Katana,Katana,200,100,100,0,0,0,0,283,0,Fast,30,20,0,0,8,Arcane Umbra
+33,Weapon,Lapis,Machlear,Katana,105,1,1,0,0,0,0,101,0,Normal,0,0,0,0,7,0
+34,Weapon,Genesis,Genesis Katana,Katana,200,150,150,0,0,0,0,326,0,Fast,30,20,0,0,8,0
+35,Weapon,Genesis,Genesis Fan,Fan,200,0,0,150,150,0,0,237,400,Normal,30,20,0,0,8,0
+36,Weapon,Utgard,Utgard Whispershot,Whispershot,140,0,0,0,0,0,0,115,0,Fast,0,0,14,0,8,8th
+37,Weapon,Arcane,Arcane Umbra Fan,Fan,200,0,0,100,100,0,0,206,347,Normal,30,20,0,0,8,Arcane Umbra
+38,Weapon,Genesis,Genesis Wand,Wand,200,0,0,150,150,0,0,237,400,Normal,30,20,0,0,8,0
+39,Weapon,Arcane,Arcane Umbra Wand,Wand,200,0,0,100,100,0,0,206,347,Normal,30,20,0,0,8,Arcane Umbra
+40,Weapon,Utgard,Utgard Hrimthurs,Arm Cannon,140,0,0,0,0,0,0,90,0,Fast,0,0,0,0,8,8th
+41,Weapon,Utgard,Utgard Energy Chain,Whip Blade,140,0,0,0,0,0,0,90,0,Fast,0,0,0,0,8,8th
+42,Weapon,Utgard,Utgard Bow,Bow,140,0,0,0,0,0,0,115,0,Normal,0,0,14,75,8,8th
+43,Weapon,Utgard,Utgard Ancient Bow,Ancient Bow,140,0,0,0,0,0,0,115,0,Normal,0,0,14,75,8,8th
+44,Weapon,AbsoLab,AbsoLab Pile God,Arm Cannon,160,60,60,0,0,0,0,154,0,Fast,30,10,0,0,8,AbsoLab
+45,Weapon,Arcane,Arcane Umbra Ellaha,Arm Cannon,200,100,100,0,0,0,0,221,0,Fast,30,20,0,0,8,Arcane Umbra
+46,Weapon,Genesis,Genesis Ancient Bow,Ancient Bow,200,150,150,0,0,0,0,318,0,Normal,30,20,19,80,8,0
+47,Weapon,Genesis,Genesis Ellaha,Arm Cannon,200,150,150,0,0,0,0,255,0,Fast,30,20,0,0,8,0
+48,Weapon,Arcane,Arcane Umbra Ancient Bow,Ancient Bow,200,100,100,0,0,0,0,276,0,Normal,30,20,19,80,8,Arcane Umbra
+49,Weapon,Fafnir,Fafnir Ancient Bow,Ancient Bow,150,40,40,0,0,0,0,160,0,Normal,30,10,0,75,8,Root Abyss
+50,Weapon,Fafnir,Fafnir Big Mountain,Arm Cannon,150,40,40,0,0,0,0,128,0,Fast,30,10,0,0,8,Root Abyss
+51,Weapon,AbsoLab,AbsoLab Ancient Bow,Ancient Bow,160,60,60,0,0,0,0,192,0,Normal,30,10,12,75,8,AbsoLab
+52,Weapon,AbsoLab,AbsoLab Spellsong Wand,Wand,160,0,0,60,60,0,0,143,241,Normal,30,10,0,0,8,AbsoLab
+53,Weapon,AbsoLab,AbsoLab Whip Blade,Whip Blade,160,0,60,60,0,0,0,154,0,Fast,30,10,0,0,8,AbsoLab
+54,Weapon,Arcane,Arcane Umbra Energy Chain,Whip Blade,200,100,100,0,0,0,0,221,0,Fast,30,20,0,0,8,Arcane Umbra
+55,Weapon,Fafnir,Fafnir Mana Taker,Wand,150,0,0,40,40,0,0,119,201,Normal,30,10,0,0,8,Root Abyss
+56,Weapon,Genesis,Genesis Energy Chain,Whip Blade,200,150,150,0,0,0,0,255,0,Fast,30,20,0,0,8,0
+57,Weapon,Genesis,Genesis Energy Chain,Whip Blade,200,150,150,150,0,0,0,255,0,Fast,30,20,0,0,8,0
+58,Weapon,Fafnir,Fafnir Split Edge,Whip Blade,150,0,40,40,0,0,0,128,0,Fast,30,10,0,0,8,Root Abyss
+59,Weapon,Utgard,Utgard Wand,Wand,140,0,0,0,0,0,0,93,153,Normal,0,0,0,0,8,8th
+60,Weapon,AbsoLab,AbsoLab Broad Hammer,Two Handed Blunt Weapon,160,60,60,0,0,0,0,205,0,Normal,30,10,0,0,8,AbsoLab
+61,Weapon,Arcane,Arcane Umbra Whispershot,Whispershot,200,100,100,0,0,0,0,276,0,Fast,30,20,19,0,8,Arcane Umbra
+62,Weapon,Genesis,Genesis Whispershot,Whispershot,200,150,150,0,0,0,0,318,0,Fast,30,20,19,80,8,0
+63,Weapon,Genesis,Genesis Two-Handed Hammer,Two Handed Blunt Weapon,200,150,150,0,0,0,0,340,0,Normal,30,20,0,0,8,0
+64,Weapon,Fafnir,Fafnir Nightchaser,Whispershot,150,40,40,0,0,0,0,160,0,Fast,30,10,0,75,8,Root Abyss
+65,Weapon,AbsoLab,AbsoLab Revenge Guard,Claw,160,0,60,60,0,0,0,103,0,Fast,30,10,0,0,8,AbsoLab
+66,Weapon,AbsoLab,AbsoLab Whispershot,Whispershot,160,60,60,0,0,0,0,192,0,Fast,30,10,12,0,8,AbsoLab
+67,Weapon,Genesis,Genesis Guards,Claw,200,0,150,150,0,0,0,172,0,Fast,30,20,0,0,8,0
+68,Weapon,Fafnir,Fafnir Risk Holder,Claw,150,0,40,40,0,0,0,86,0,Fast,30,10,0,0,8,Root Abyss
+69,Weapon,Genesis,Genesis Crossbow,Crossbow,200,150,150,0,0,0,0,326,0,Normal,30,20,19,71,8,0
+70,Weapon,Arcane,Arcane Umbra Two-Handed Hammer,Two Handed Blunt Weapon,200,100,100,0,0,0,0,295,0,Normal,30,20,0,0,8,Arcane Umbra
+71,Weapon,Arcane,Arcane Umbra Two-handed Axe,Two Handed Axe,200,100,100,0,0,0,0,295,0,Normal,30,20,0,0,8,Arcane Umbra
+72,Weapon,Fafnir,Fafnir Lightning Striker,Two Handed Blunt Weapon,150,40,40,0,0,0,0,171,0,Normal,30,10,0,0,8,Root Abyss
+73,Weapon,Fafnir,Fafnir Windwing Shooter,Crossbow,150,40,40,0,0,0,0,164,0,Normal,30,10,0,75,8,Root Abyss
+74,Weapon,Arcane,Arcane Umbra Guards,Claw,200,0,100,100,0,0,0,149,0,Fast,30,20,0,0,8,Arcane Umbra
+75,Weapon,Arcane,Arcane Umbra Crossbow,Crossbow,200,100,100,0,0,0,0,283,0,Normal,30,20,19,71,8,Arcane Umbra
+76,Weapon,AbsoLab,AbsoLab Crossbow,Crossbow,160,60,60,0,0,0,0,197,0,Normal,30,10,15,68,8,AbsoLab
+77,Weapon,Utgard,Utgard Two-handed Hammer,Two Handed Blunt Weapon,140,0,0,0,0,0,0,124,0,Normal,0,0,0,0,8,8th
+78,Weapon,Genesis,Genesis Two-Handed Axe,Two Handed Axe,200,150,150,0,0,0,0,340,0,Normal,30,20,0,0,8,0
+79,Weapon,Utgard,Utgard Guards,Claw,140,0,0,10,0,0,0,62,0,Fast,0,0,0,0,8,8th
+80,Weapon,AbsoLab,AbsoLab Broad Axe,Two Handed Axe,160,60,60,0,0,0,0,205,0,Normal,30,10,0,0,8,AbsoLab
+81,Weapon,Genesis,Genesis Bow,Bow,200,150,150,0,0,0,0,318,0,Normal,30,20,19,80,8,0
+82,Weapon,Fafnir,Fafnir Battle Cleaver,Two Handed Axe,150,40,40,0,0,0,0,171,0,Normal,30,10,0,0,8,Root Abyss
+83,Weapon,Utgard,Utgard Crossbow,Crossbow,140,0,0,0,0,0,0,118,0,Normal,0,0,14,68,8,8th
+84,Weapon,Genesis,Genesis Claw,Knuckle,200,150,150,0,0,0,0,255,0,Fast,30,20,0,0,8,0
+85,Weapon,AbsoLab,AbsoLab Katana,Katana,160,60,60,0,0,0,0,197,0,Fast,30,10,0,0,8,AbsoLab
+86,Weapon,Arcane,Arcane Umbra Bow,Bow,200,100,100,0,0,0,0,276,0,Normal,30,20,19,80,8,Arcane Umbra
+87,Weapon,Arcane,Arcane Umbra Knuckle,Knuckle,200,100,100,0,0,0,0,221,0,Fast,30,20,0,0,8,Arcane Umbra
+88,Weapon,AbsoLab,AbsoLab Blast Knuckle,Knuckle,160,60,60,0,0,0,0,154,0,Fast,30,10,0,0,8,AbsoLab
+89,Weapon,AbsoLab,AbsoLab Sureshot Bow,Bow,160,60,60,0,0,0,0,192,0,Normal,30,10,12,75,8,AbsoLab
+90,Weapon,Fafnir,Fafnir Wind Chaser,Bow,150,40,40,0,0,0,0,160,0,Normal,30,10,0,75,8,Root Abyss
+91,Weapon,Utgard,Utgard Two-handed Axe,Two Handed Axe,140,0,0,0,0,0,0,124,0,Normal,0,0,0,0,8,8th
+92,Weapon,Fafnir,Fafnir Raven Ring,Katana,150,40,40,0,0,0,0,164,0,Fast,30,10,0,0,8,Root Abyss
+93,Weapon,Fafnir,Fafnir Perry Talon,Knuckle,150,40,40,0,0,0,0,128,0,Fast,30,10,0,0,8,Root Abyss
+94,Weapon,Utgard,Utgard Katana,Katana,140,0,0,0,0,0,0,118,0,Fast,0,0,0,0,8,8th
+95,Weapon,AbsoLab,AbsoLab Dual Bowguns,Dual Bowguns,160,60,60,0,0,0,0,192,0,Normal,30,10,15,0,8,AbsoLab
+96,Weapon,Arcane,Arcane Umbra Dual Bowguns,Dual Bowguns,200,100,100,0,0,0,0,276,0,Normal,30,20,0,0,8,Arcane Umbra
+97,Weapon,Genesis,Genesis Dual Bowguns,Dual Bowguns,200,150,150,0,0,0,0,318,0,Normal,30,20,19,0,8,0
+98,Weapon,Fafnir,Fafnir Dual Windwing,Dual Bowguns,150,40,40,0,0,0,0,160,0,Normal,30,10,0,0,8,Root Abyss
+99,Weapon,Utgard,Utgard Claw,Knuckle,140,0,0,0,0,0,0,90,0,Fast,0,0,0,0,8,8th
+100,Weapon,Utgard,Utgard Dual Bowguns,Dual Bowguns,140,0,0,0,0,0,0,115,0,Normal,0,0,14,0,8,8th
+101,Weapon,Utgard,Utgard Fan,Fan,140,0,0,0,0,0,0,93,115,Fast,0,0,0,0,8,8th
+102,Weapon,Fafnir,Fafnir Indigo Flash,Fan,150,0,0,40,40,0,0,126,204,Slow,30,10,0,0,8,Root Abyss
+103,Weapon,Genesis,Genesis Pistol,Gun,200,150,150,0,0,0,0,249,0,Fast,30,20,0,0,8,0
+104,Weapon,AbsoLab,AbsoLab Point Gun,Gun,160,60,60,0,0,0,0,150,0,Fast,30,10,0,0,8,AbsoLab
+105,Weapon,Arcane,Arcane Umbra Pistol,Gun,200,100,100,0,0,0,0,216,0,Fast,30,20,0,0,8,Arcane Umbra
+106,Weapon,Arcane,Arcane Umbra Siege Gun,Hand Cannon,200,100,100,0,0,0,200,302,0,Slow,30,20,0,0,8,Arcane Umbra
+107,Weapon,Arcane,Arcane Umbra Polearm,Polearm,200,100,100,0,0,0,0,264,0,Fast,30,20,0,0,8,Arcane Umbra
+108,Weapon,Genesis,Genesis Polearm,Polearm,200,150,150,0,0,0,0,304,0,Fast,30,20,0,0,8,0
+109,Weapon,AbsoLab,AbsoLab Hellslayer,Polearm,160,60,60,0,0,0,0,184,0,Fast,30,10,0,0,8,AbsoLab
+110,Weapon,Fafnir,Fafnir Zeliska,Gun,150,40,40,0,0,0,0,125,0,Fast,30,10,0,0,8,Root Abyss
+111,Weapon,Genesis,Genesis Two-Handed Sword,Two Handed Sword,200,150,150,0,0,0,0,340,0,Normal,30,20,0,0,8,0
+112,Weapon,AbsoLab,AbsoLab Broad Saber,Two Handed Sword,160,60,60,0,0,0,0,205,0,Normal,30,10,0,0,8,AbsoLab
+113,Weapon,Fafnir,Fafnir Lost Cannon,Hand Cannon,150,40,40,0,0,0,121,175,0,Slow,30,10,0,0,8,Root Abyss
+114,Weapon,Fafnir,Fafnir Penitent Tears,Two Handed Sword,150,40,40,0,0,0,0,171,0,Normal,30,10,0,0,8,Root Abyss
+115,Weapon,Genesis,Genesis Siege Gun,Hand Cannon,200,150,150,0,0,0,250,348,0,Fast,30,20,0,0,8,0
+116,Weapon,AbsoLab,AbsoLab Blast Cannon,Hand Cannon,160,60,60,0,0,0,160,210,0,Slow,30,10,0,0,8,AbsoLab
+117,Weapon,Fafnir,Fafnir Moon Glaive,Polearm,150,40,40,0,0,0,0,153,0,Fast,30,10,0,0,8,Root Abyss
+118,Weapon,Utgard,Utgard Spear,Spear,140,0,0,0,0,0,0,124,0,Normal,0,0,0,0,8,8th
+119,Weapon,Arcane,Arcane Umbra Two-handed Sword,Two Handed Sword,200,100,100,0,0,0,0,295,0,Normal,30,20,0,0,8,Arcane Umbra
+120,Weapon,Utgard,Utgard Two-handed Sword,Two Handed Sword,140,0,0,0,0,0,0,122,0,Normal,0,0,0,0,8,8th
+121,Weapon,Genesis,Genesis Shining Rod,Shining Rod,200,0,0,150,150,0,0,237,400,Normal,30,20,0,0,8,0
+122,Weapon,Utgard,Utgard Dragon Soul,Soul Shooter,140,0,0,0,0,0,0,92,0,Fast,0,0,0,0,8,8th
+123,Weapon,Lapis,Lapis Sword,One Handed Sword,105,1,1,0,0,0,0,101,0,Fast,0,0,0,0,7,0
+124,Weapon,Utgard,Utgard Giant Ritual Fan,Ritual Fan,140,0,0,0,0,0,0,115,0,Fast,0,0,0,0,8,8th
+125,Weapon,Utgard,Utgard Shining Rod,Shining Rod,140,0,0,0,0,0,0,93,153,Normal,0,0,0,0,8,8th
+126,Weapon,Fafnir,Fafnir Scepter,Scepter,150,0,0,40,40,0,0,119,201,Normal,30,10,0,0,8,Root Abyss
+127,Weapon,Lazuli,Lazuli Type 1,Long Sword,100,0,0,0,0,0,0,100,0,Normal,0,0,0,0,7,0
+128,Weapon,Genesis,Genesis Ritual Fan,Ritual Fan,200,0,150,150,0,0,0,318,0,Fast,30,20,0,0,8,0
+129,Weapon,Arcane,Arcane Umbra Scepter,Scepter,200,0,0,100,100,0,0,206,347,Normal,30,20,0,0,8,Arcane Umbra
+130,Weapon,Genesis,Genesis Scepter,Scepter,200,0,0,150,150,0,0,237,400,Normal,30,20,0,0,8,0
+131,Weapon,AbsoLab,AbsoLab Scepter,Scepter,160,0,0,60,60,0,0,143,241,Normal,30,10,0,0,8,AbsoLab
+132,Weapon,Lapis,Lapis Type 1,Heavy Sword,100,0,0,0,0,0,80,102,0,Slow,0,0,0,0,7,0
+133,Weapon,Genesis,Genesis Chain,Chain,200,0,150,150,0,0,0,318,0,Fast,30,20,0,0,8,0
+134,Weapon,AbsoLab,AbsoLab Chain,Chain,160,0,60,60,0,0,0,192,0,Fast,30,10,0,0,8,AbsoLab
+135,Weapon,Arcane,Arcane Umbra Chain,Chain,200,0,100,100,0,0,0,276,0,Fast,30,20,0,0,8,Arcane Umbra
+136,Weapon,Fafnir,Fafnir Chain,Chain,150,0,40,40,0,0,0,160,0,Fast,30,10,0,0,8,Root Abyss
+137,Weapon,Utgard,Utgard Chain,Chain,140,0,0,0,0,0,0,115,0,Fast,0,0,0,0,8,8th
+138,Weapon,Arcane,Arcane Umbra Dagger,Dagger,200,0,100,100,0,0,0,276,0,Fast,30,20,0,0,8,Arcane Umbra
+139,Weapon,Fafnir,Fafnir Damascus,Dagger,150,0,40,40,0,0,0,160,0,Fast,30,10,0,0,8,Root Abyss
+140,Weapon,AbsoLab,AbsoLab Blade Lord,Dagger,160,0,60,60,0,0,0,192,0,Fast,30,10,0,0,8,AbsoLab
+141,Weapon,Genesis,Genesis Dagger,Dagger,200,0,150,150,0,0,0,318,0,Fast,30,20,0,0,8,0
+142,Weapon,Lapis,Lapis Type 8,Heavy Sword,180,60,60,0,0,0,160,207,0,Slow,30,10,0,0,8,0
+143,Weapon,Utgard,Utgard Dagger,Dagger,140,0,0,0,0,0,0,115,0,Fast,0,0,0,0,8,8th
+144,Weapon,Lapis,Lapis Type 9,Heavy Sword,200,100,100,0,0,0,200,297,0,Slow,30,20,0,0,8,0
+145,Weapon,Lapis,Lapis Type 7,Heavy Sword,170,40,40,0,0,0,150,173,0,Slow,30,10,0,0,8,0
+146,Weapon,Lapis,Lapis Type 6,Heavy Sword,150,35,20,0,0,0,130,139,0,Slow,0,0,0,0,8,0
+147,Weapon,Lapis,Lapis Type 5,Heavy Sword,140,8,4,0,0,0,120,121,0,Slow,0,0,0,0,8,0
+148,Weapon,Lapis,Lapis Type 4,Heavy Sword,130,0,0,0,0,0,110,114,0,Slow,0,0,0,0,7,0
+149,Weapon,Lapis,Lapis Type 3,Heavy Sword,120,0,0,0,0,0,100,107,0,Slow,0,0,0,0,7,0
+150,Weapon,AbsoLab,AbsoLab Desperado,Desperado,160,60,0,0,0,"2,250",0,205,0,Normal,30,10,0,0,8,AbsoLab
+151,Weapon,Lapis,Lapis Type 2,Heavy Sword,110,0,0,0,0,0,90,105,0,Slow,0,0,0,0,7,0
+152,Weapon,Genesis,Genesis Psy-limiter,Psy limiter,200,0,0,150,150,0,0,237,400,Normal,30,20,0,0,8,0
+153,Weapon,Arcane,Arcane Umbra Psy-limiter,Psy limiter,200,0,0,100,100,0,0,206,347,Normal,30,20,0,0,8,Arcane Umbra
+154,Weapon,Arcane,Arcane Umbra Desperado,Desperado,200,100,100,0,0,"2,500",0,295,0,Normal,30,20,0,0,8,Arcane Umbra
+155,Weapon,AbsoLab,AbsoLab Psy-limiter,Psy limiter,160,0,0,60,60,0,0,143,241,Normal,30,10,0,0,8,AbsoLab
+156,Weapon,Fafnir,Fafnir Psy-limiter,Psy limiter,150,0,0,40,40,0,0,110,201,Normal,30,10,0,0,8,Root Abyss
+157,Weapon,Genesis,Genesis Desperado,Desperado,200,150,0,0,0,"2,800",0,340,0,Fast,30,20,0,0,8,0
+158,Weapon,Fafnir,Fafnir Death Bringer,Desperado,150,40,0,0,0,"2,000",0,171,0,Normal,30,10,0,0,8,Root Abyss
+159,Weapon,Utgard,Utgard Desperado,Desperado,140,0,0,0,0,0,0,122,0,Normal,0,0,0,0,8,8th
+160,Weapon,Utgard,Utgard Shining Stick,Scepter,140,0,0,0,0,0,0,93,153,Normal,0,0,0,0,8,8th
+161,Weapon,Lazuli,Lazuli Type 9,Long Sword,200,100,100,0,0,0,0,293,0,Normal,30,20,0,0,8,0
+162,Weapon,Utgard,Utgard Psy-limiter,Psy limiter,140,0,0,0,0,0,0,93,153,Normal,0,0,0,0,8,8th
+163,Weapon,Lazuli,Lazuli Type 6,Long Sword,150,35,20,0,0,0,0,135,0,Normal,0,0,0,0,8,0
+164,Weapon,Lazuli,Lazuli Type 7,Long Sword,170,40,40,0,0,0,0,169,0,Normal,30,10,0,0,8,0
+165,Weapon,Lazuli,Lazuli Type 8,Long Sword,180,60,60,0,0,0,0,203,0,Normal,30,10,0,0,8,0
+166,Weapon,Lazuli,Lazuli Type 5,Long Sword,140,8,4,0,0,0,0,117,0,Normal,0,0,0,0,8,0
+167,Weapon,Utgard,Utgard Lucent Gauntlet,Lucent Gauntlet,140,0,0,0,0,0,0,93,153,Normal,0,0,0,0,8,8th
+168,Weapon,Lazuli,Lazuli Type 4,Long Sword,130,0,0,0,0,0,0,112,0,Normal,0,0,0,0,7,0
+169,Weapon,Genesis,Genesis Lucent Gauntlet,Lucent Gauntlet,200,0,0,150,150,0,0,237,400,Normal,30,20,0,0,8,0
+170,Weapon,Arcane,Arcane Umbra Lucent Gauntlet,Lucent Gauntlet,200,0,0,100,100,0,0,206,347,Normal,30,20,0,0,8,Arcane Umbra
+171,Weapon,Lazuli,Lazuli Type 2,Long Sword,110,0,0,0,0,0,0,103,0,Normal,0,0,0,0,7,0
+172,Weapon,Lazuli,Lazuli Type 3,Long Sword,120,0,0,0,0,0,0,105,0,Normal,0,0,0,0,7,0
+173,Weapon,AbsoLab,AbsoLab Lucent Gauntlet,Lucent Gauntlet,160,0,0,60,60,0,0,143,241,Normal,30,10,0,0,8,AbsoLab
+174,Weapon,Fafnir,Fafnir Lucent Gauntlet,Lucent Gauntlet,150,0,0,40,40,0,0,119,201,Normal,30,10,0,0,8,Root Abyss
+175,Weapon,Arcane,Arcane Umbra Super Ritual Fan,Ritual Fan,200,0,100,100,0,0,0,276,0,Fast,30,20,0,0,8,Arcane Umbra
+176,Weapon,AbsoLab,AbsoLab Soul Shooter,Soul Shooter,160,60,60,0,0,0,0,154,0,Fast,30,10,0,0,8,AbsoLab
+177,Weapon,AbsoLab,AbsoLab Monster Ritual Fan,Ritual Fan,160,0,60,60,0,0,0,192,0,Fast,30,10,0,0,8,AbsoLab
+178,Weapon,AbsoLab,AbsoLab Shining Rod,Shining Rod,160,0,0,60,60,0,0,143,241,Normal,30,10,0,0,8,AbsoLab
+179,Weapon,Fafnir,Fafnir Mana Cradle,Shining Rod,150,0,0,40,40,0,0,119,201,Normal,30,10,0,0,8,Root Abyss
+180,Weapon,Genesis,Genesis Staff,Staff,200,0,0,150,150,0,0,251,406,Slow,30,20,0,0,8,0
+181,Weapon,Fafnir,Fafnir Dragon Ritual Fan,Ritual Fan,150,0,40,40,0,0,0,160,0,Fast,30,10,0,0,8,Root Abyss
+182,Weapon,Genesis,Genesis Soul Shooter,Soul Shooter,200,150,150,0,0,0,0,255,0,Fast,30,20,0,0,8,0
+183,Weapon,Genesis,Genesis Saber,One Handed Sword,200,150,150,0,0,0,0,326,0,Fast,30,20,0,0,8,0
+184,Weapon,Arcane,Arcane Umbra Soul Shooter,Soul Shooter,200,100,100,0,0,0,0,221,0,Fast,30,20,0,0,8,Arcane Umbra
+185,Weapon,Arcane,Arcane Umbra Saber,One Handed Sword,200,100,100,0,0,0,0,283,0,Fast,30,20,0,0,8,Arcane Umbra
+186,Weapon,Fafnir,Fafnir Mana Crown,Staff,150,0,0,40,40,0,0,126,204,Slow,30,10,0,0,8,Root Abyss
+187,Weapon,AbsoLab,AbsoLab Spellsong Staff,Staff,160,0,0,60,60,0,0,151,245,Slow,30,10,0,0,8,AbsoLab
+188,Weapon,Fafnir,Fafnir Angelic Shooter,Soul Shooter,150,40,40,0,0,0,0,128,0,Fast,30,10,0,0,8,Root Abyss
+189,Weapon,Arcane,Arcane Umbra Shining Rod,Shining Rod,200,0,0,100,100,0,0,206,347,Normal,30,20,0,0,8,Arcane Umbra
+190,Weapon,Arcane,Arcane Umbra Staff,Staff,200,0,0,100,100,0,0,218,353,Slow,30,20,0,0,8,Arcane Umbra
+191,Weapon,AbsoLab,AbsoLab Saber,One Handed Sword,160,60,60,0,0,0,0,197,0,Fast,30,10,0,0,8,AbsoLab
+192,Weapon,Utgard,Utgard Staff,Staff,140,0,0,0,0,0,0,98,155,Normal,0,0,0,0,8,8th
+193,Weapon,Utgard,Utgard Saber,One Handed Sword,140,0,0,0,0,0,0,118,0,Fast,0,0,0,0,8,8th
+194,Weapon,Fafnir,Fafnir Mistilteinn,One Handed Sword,150,40,40,0,0,0,0,164,0,Fast,30,10,0,0,8,Root Abyss
