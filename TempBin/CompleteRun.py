@@ -1,6 +1,7 @@
 import os
 import sys
-import scrapysea.utils as utils
+import utils as utils
+from utils import QuietLogFormatter
 from pathlib import Path
 from twisted.internet import reactor
 from scrapy.crawler import CrawlerRunner
@@ -17,7 +18,7 @@ import time
 
 newsettings = {
     "LOG_ENABLED": True,
-    "LOG_FORMATTER": utils.QuietLogFormatter,
+    "LOG_FORMATTER": QuietLogFormatter,
     "LOG_LEVEL": "INFO",
     "LOG_FILE": "./Logs/BaseScrapy.log",  # Changed from None
     "LOG_FILE_APPEND": False,  # Changed from True
@@ -72,6 +73,7 @@ def exec_Crawler():
 
 
 if __name__ == "__main__":
+    start = time.time()
     sett = get_project_settings()
     sett.update(newsettings)
     configure_logging()
@@ -89,7 +91,6 @@ if __name__ == "__main__":
         )
 
     utils.LoadRenameJson()
-    start = time.time()
     exec_Crawler()
     end = time.time()
     print("Scaped All in {0}".format(end - start))
