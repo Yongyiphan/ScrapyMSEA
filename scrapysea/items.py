@@ -7,6 +7,7 @@ import scrapy
 from scrapy.item import Item, Field
 from scrapy.loader import ItemLoader
 from itemloaders.processors import MapCompose, TakeFirst
+import utils
 
 
 class BaseItem(Item):
@@ -37,12 +38,13 @@ class ExpItem(BaseItem):
     Multiplier = Field()
 
 
-class SFItem(BaseItem):
-    ...
-
-
 class ScrollItem(BaseItem):
     SuccessRate = Field()
+    ItemGroup = Field()
+    # MS_Stat = Field(input_processor=MapCompose(GetScrollValue))
+    MS_Stat = Field()
+    MS_MaxHP = Field()
+    MS_AS = Field()
     MaxHP = Field()
     DEF = Field()
     Atk = Field()
@@ -68,4 +70,5 @@ class StarforceItem(BaseItem):
 
 class EnhancementItemLoader(ItemLoader):
     default_input_processor = MapCompose(defaultZero)
+    default_output_processor = TakeFirst()
     ...

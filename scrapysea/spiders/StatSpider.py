@@ -12,8 +12,8 @@ class ExpSpider(scrapy.Spider):
     start_urls = [utils.g.getSourceLink(ID)]
     custom_settings = {
         "ITEM_PIPELINES": {
-            "msspider.pipelines.ExpPipeline": 200,
-            "msspider.pipelines.ExportPipeline": 800,
+            "scrapysea.pipelines.ExpPipeline": 200,
+            "scrapysea.pipelines.ExportPipeline": 800,
         }
     }
 

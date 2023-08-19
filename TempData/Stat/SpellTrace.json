@@ -1,0 +1,50 @@
+{"SuccessRate": "100%", "MinLvl": 0, "MaxLvl": 74, "ItemGroup": "Armor (except gloves)", "MS_Stat": 1, "MS_MaxHP": 50, "MaxHP": 5, "DEF": 1}
+{"SuccessRate": "100%", "MinLvl": 75, "MaxLvl": 114, "ItemGroup": "Armor (except gloves)", "MS_Stat": 2, "MS_MaxHP": 100, "MaxHP": 20, "DEF": 2}
+{"SuccessRate": "100%", "MinLvl": 115, "MaxLvl": 300, "ItemGroup": "Armor (except gloves)", "MS_Stat": 3, "MS_MaxHP": 150, "MaxHP": 30, "DEF": 3}
+{"SuccessRate": "70%", "MinLvl": 0, "MaxLvl": 74, "ItemGroup": "Armor (except gloves)", "MS_Stat": 2, "MS_MaxHP": 100, "MaxHP": 15, "DEF": 2}
+{"SuccessRate": "70%", "MinLvl": 75, "MaxLvl": 114, "ItemGroup": "Armor (except gloves)", "MS_Stat": 3, "MS_MaxHP": 150, "MaxHP": 40, "DEF": 4}
+{"SuccessRate": "70%", "MinLvl": 115, "MaxLvl": 300, "ItemGroup": "Armor (except gloves)", "MS_Stat": 4, "MS_MaxHP": 200, "MaxHP": 70, "DEF": 5}
+{"SuccessRate": "30%", "MinLvl": 0, "MaxLvl": 74, "ItemGroup": "Armor (except gloves)", "MS_Stat": 3, "MS_MaxHP": 150, "MS_AS": 1, "MaxHP": 30, "DEF": 4}
+{"SuccessRate": "30%", "MinLvl": 75, "MaxLvl": 114, "ItemGroup": "Armor (except gloves)", "MS_Stat": 5, "MS_MaxHP": 250, "MS_AS": 2, "MaxHP": 70, "DEF": 7}
+{"SuccessRate": "30%", "MinLvl": 115, "MaxLvl": 300, "ItemGroup": "Armor (except gloves)", "MS_Stat": 7, "MS_MaxHP": 350, "MS_AS": 3, "MaxHP": 120, "DEF": 10}
+{"SuccessRate": "15%", "MinLvl": 0, "MaxLvl": 74, "ItemGroup": "Armor (except gloves)", "MS_Stat": 4, "MS_MaxHP": 200, "MS_AS": 2, "MaxHP": 45, "DEF": 6}
+{"SuccessRate": "15%", "MinLvl": 75, "MaxLvl": 114, "ItemGroup": "Armor (except gloves)", "MS_Stat": 7, "MS_MaxHP": 350, "MS_AS": 3, "MaxHP": 110, "DEF": 10}
+{"SuccessRate": "15%", "MinLvl": 115, "MaxLvl": 300, "ItemGroup": "Armor (except gloves)", "MS_Stat": 10, "MS_MaxHP": 500, "MS_AS": 4, "MaxHP": 170, "DEF": 15}
+{"SuccessRate": "100%", "MinLvl": 0, "MaxLvl": 74, "ItemGroup": "Gloves", "DEF": 3}
+{"SuccessRate": "100%", "MinLvl": 75, "MaxLvl": 300, "ItemGroup": "Gloves", "Atk": 1, "Mtk": 1}
+{"SuccessRate": "70%", "MinLvl": 0, "MaxLvl": 74, "ItemGroup": "Gloves", "Atk": 1, "Mtk": 1}
+{"SuccessRate": "70%", "MinLvl": 75, "MaxLvl": 300, "ItemGroup": "Gloves", "Atk": 2, "Mtk": 2}
+{"SuccessRate": "30%", "MinLvl": 0, "MaxLvl": 74, "ItemGroup": "Gloves", "Atk": 2, "Mtk": 2}
+{"SuccessRate": "30%", "MinLvl": 75, "MaxLvl": 300, "ItemGroup": "Gloves", "Atk": 3, "Mtk": 3}
+{"SuccessRate": "15%", "MinLvl": 0, "MaxLvl": 74, "ItemGroup": "Gloves", "Atk": 3, "Mtk": 3}
+{"SuccessRate": "15%", "MinLvl": 75, "MaxLvl": 300, "ItemGroup": "Gloves", "Atk": 4, "Mtk": 4}
+{"SuccessRate": "100%", "MinLvl": 0, "MaxLvl": 74, "ItemGroup": "Accessories", "MS_Stat": 1, "MS_MaxHP": 50}
+{"SuccessRate": "100%", "MinLvl": 75, "MaxLvl": 114, "ItemGroup": "Accessories", "MS_Stat": 1, "MS_MaxHP": 50}
+{"SuccessRate": "100%", "MinLvl": 115, "MaxLvl": 300, "ItemGroup": "Accessories", "MS_Stat": 2, "MS_MaxHP": 100}
+{"SuccessRate": "70%", "MinLvl": 0, "MaxLvl": 74, "ItemGroup": "Accessories", "MS_Stat": 2, "MS_MaxHP": 100}
+{"SuccessRate": "70%", "MinLvl": 75, "MaxLvl": 114, "ItemGroup": "Accessories", "MS_Stat": 2, "MS_MaxHP": 100}
+{"SuccessRate": "70%", "MinLvl": 115, "MaxLvl": 300, "ItemGroup": "Accessories", "MS_Stat": 3, "MS_MaxHP": 150}
+{"SuccessRate": "30%", "MinLvl": 0, "MaxLvl": 74, "ItemGroup": "Accessories", "MS_Stat": 3, "MS_MaxHP": 150, "MS_AS": 1}
+{"SuccessRate": "30%", "MinLvl": 75, "MaxLvl": 114, "ItemGroup": "Accessories", "MS_Stat": 4, "MS_MaxHP": 200, "MS_AS": 2}
+{"SuccessRate": "30%", "MinLvl": 115, "MaxLvl": 300, "ItemGroup": "Accessories", "MS_Stat": 5, "MS_MaxHP": 250, "MS_AS": 3}
+{"SuccessRate": "100%", "MinLvl": 0, "MaxLvl": 74, "ItemGroup": "Hearts", "Atk": 1, "Mtk": 1}
+{"SuccessRate": "100%", "MinLvl": 75, "MaxLvl": 114, "ItemGroup": "Hearts", "Atk": 2, "Mtk": 2}
+{"SuccessRate": "100%", "MinLvl": 115, "MaxLvl": 300, "ItemGroup": "Hearts", "Atk": 3, "Mtk": 3}
+{"SuccessRate": "70%", "MinLvl": 0, "MaxLvl": 74, "ItemGroup": "Hearts", "Atk": 2, "Mtk": 2}
+{"SuccessRate": "70%", "MinLvl": 75, "MaxLvl": 114, "ItemGroup": "Hearts", "Atk": 3, "Mtk": 3}
+{"SuccessRate": "70%", "MinLvl": 115, "MaxLvl": 300, "ItemGroup": "Hearts", "Atk": 4, "Mtk": 4}
+{"SuccessRate": "30%", "MinLvl": 0, "MaxLvl": 74, "ItemGroup": "Hearts", "Atk": 3, "Mtk": 3}
+{"SuccessRate": "30%", "MinLvl": 75, "MaxLvl": 114, "ItemGroup": "Hearts", "Atk": 5, "Mtk": 5}
+{"SuccessRate": "30%", "MinLvl": 115, "MaxLvl": 300, "ItemGroup": "Hearts", "Atk": 7, "Mtk": 7}
+{"SuccessRate": "100%", "MinLvl": 0, "MaxLvl": 74, "ItemGroup": "Weapons", "Atk": 1, "Mtk": 1}
+{"SuccessRate": "100%", "MinLvl": 75, "MaxLvl": 114, "ItemGroup": "Weapons", "Atk": 2, "Mtk": 2}
+{"SuccessRate": "100%", "MinLvl": 115, "MaxLvl": 300, "ItemGroup": "Weapons", "MS_Stat": 1, "MS_MaxHP": 50, "Atk": 3, "Mtk": 3}
+{"SuccessRate": "70%", "MinLvl": 0, "MaxLvl": 74, "ItemGroup": "Weapons", "Atk": 2, "Mtk": 2}
+{"SuccessRate": "70%", "MinLvl": 75, "MaxLvl": 114, "ItemGroup": "Weapons", "MS_Stat": 1, "MS_MaxHP": 50, "Atk": 3, "Mtk": 3}
+{"SuccessRate": "70%", "MinLvl": 115, "MaxLvl": 300, "ItemGroup": "Weapons", "MS_Stat": 2, "MS_MaxHP": 100, "Atk": 5, "Mtk": 5}
+{"SuccessRate": "30%", "MinLvl": 0, "MaxLvl": 74, "ItemGroup": "Weapons", "MS_Stat": 1, "MS_MaxHP": 50, "Atk": 3, "Mtk": 3}
+{"SuccessRate": "30%", "MinLvl": 75, "MaxLvl": 114, "ItemGroup": "Weapons", "MS_Stat": 2, "MS_MaxHP": 100, "Atk": 5, "Mtk": 5}
+{"SuccessRate": "30%", "MinLvl": 115, "MaxLvl": 300, "ItemGroup": "Weapons", "MS_Stat": 3, "MS_MaxHP": 150, "Atk": 7, "Mtk": 7}
+{"SuccessRate": "15%", "MinLvl": 0, "MaxLvl": 74, "ItemGroup": "Weapons", "MS_Stat": 2, "MS_MaxHP": 100, "Atk": 5, "Mtk": 5}
+{"SuccessRate": "15%", "MinLvl": 75, "MaxLvl": 114, "ItemGroup": "Weapons", "MS_Stat": 3, "MS_MaxHP": 150, "Atk": 7, "Mtk": 7}
+{"SuccessRate": "15%", "MinLvl": 115, "MaxLvl": 300, "ItemGroup": "Weapons", "MS_Stat": 4, "MS_MaxHP": 200, "Atk": 9, "Mtk": 9}

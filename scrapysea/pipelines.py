@@ -8,6 +8,7 @@
 import json
 from itemadapter import ItemAdapter, adapter
 import utils as utils
+import io
 
 
 class ExportPipeline:
