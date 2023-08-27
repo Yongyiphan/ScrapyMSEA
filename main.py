@@ -10,6 +10,7 @@ from scrapy.utils.project import get_project_settings
 
 # import Spiders
 from scrapysea.spiders import DevSpider
+import scrapysea.spiders as spiders
 
 
 def Initialise_DB():
@@ -30,14 +31,18 @@ def Initialise_DB():
     ...
 
 
-def CrawlAll(crawler):
-    StatSpiders = {
-        name: cls for name, cls in DevSpider.__dict__.items() if isinstance(cls, type)
-    }
-    for name, s in StatSpiders.items():
-        print(name)
-        if "spider" in name.lower():
-            crawler.crawl(s)
+def CrawlAll(crawler: CrawlerRunner):
+    # StatSpiders = {
+    #     name: cls for name, cls in DevSpider.__dict__.items() if isinstance(cls, type)
+    # }
+    # for name, s in StatSpiders.items():
+    #     print(name)
+    #     if "spider" in name.lower():
+    #         crawler.crawl(s)
+    # spiders.RunEXP(crawler)
+    # spiders.RunSpellTrace(crawler)
+
+    spiders.RunDev(crawler)
     ...
 
 

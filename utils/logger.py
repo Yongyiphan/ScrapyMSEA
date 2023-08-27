@@ -9,7 +9,7 @@ from scrapy.logformatter import LogFormatter
 def Create_Log(name, logTo, level=logging.DEBUG, propagate=True):
     # currentPath = Path(__file__).parent.parent.resolve().as_posix()
     Root = g.GetSet_ProjectRoot()
-    print(Root)
+    # print(Root)
     LogPath = os.path.join(Root, "Logs")
     if not os.path.exists(LogPath):
         os.makedirs(LogPath)

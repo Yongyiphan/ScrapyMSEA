@@ -1,0 +1,72 @@
+{"MinLvl": "0", "MaxLvl": "19", "SuccessRate": "100%", "Armor": 1, "Gloves": 1, "Weapon": 1, "Accessory": 0}
+{"MinLvl": "0", "MaxLvl": "19", "SuccessRate": "70%", "Armor": 2, "Gloves": 1, "Weapon": 2, "Accessory": 0}
+{"MinLvl": "0", "MaxLvl": "19", "SuccessRate": "30%", "Armor": 2, "Gloves": 2, "Weapon": 3, "Accessory": 0}
+{"MinLvl": "0", "MaxLvl": "19", "SuccessRate": "15%", "Weapon": 4}
+{"MinLvl": "20", "MaxLvl": "29", "SuccessRate": "100%", "Armor": 2, "Gloves": 1, "Weapon": 2, "Accessory": 0}
+{"MinLvl": "20", "MaxLvl": "29", "SuccessRate": "70%", "Armor": 2, "Gloves": 2, "Weapon": 3, "Accessory": 0}
+{"MinLvl": "20", "MaxLvl": "29", "SuccessRate": "30%", "Armor": 3, "Gloves": 2, "Weapon": 4, "Accessory": 0}
+{"MinLvl": "20", "MaxLvl": "29", "SuccessRate": "15%", "Weapon": 5}
+{"MinLvl": "30", "MaxLvl": "39", "SuccessRate": "100%", "Armor": 3, "Gloves": 2, "Weapon": 3, "Accessory": 3}
+{"MinLvl": "30", "MaxLvl": "39", "SuccessRate": "70%", "Armor": 4, "Gloves": 3, "Weapon": 4, "Accessory": 4}
+{"MinLvl": "30", "MaxLvl": "39", "SuccessRate": "30%", "Armor": 5, "Gloves": 4, "Weapon": 5, "Accessory": 4}
+{"MinLvl": "30", "MaxLvl": "39", "SuccessRate": "15%", "Weapon": 6}
+{"MinLvl": "40", "MaxLvl": "49", "SuccessRate": "100%", "Armor": 4, "Gloves": 3, "Weapon": 4, "Accessory": 3}
+{"MinLvl": "40", "MaxLvl": "49", "SuccessRate": "70%", "Armor": 5, "Gloves": 4, "Weapon": 5, "Accessory": 4}
+{"MinLvl": "40", "MaxLvl": "49", "SuccessRate": "30%", "Armor": 6, "Gloves": 5, "Weapon": 6, "Accessory": 5}
+{"MinLvl": "40", "MaxLvl": "49", "SuccessRate": "15%", "Weapon": 7}
+{"MinLvl": "50", "MaxLvl": "59", "SuccessRate": "100%", "Armor": 5, "Gloves": 4, "Weapon": 5, "Accessory": 4}
+{"MinLvl": "50", "MaxLvl": "59", "SuccessRate": "70%", "Armor": 6, "Gloves": 5, "Weapon": 6, "Accessory": 5}
+{"MinLvl": "50", "MaxLvl": "59", "SuccessRate": "30%", "Armor": 7, "Gloves": 6, "Weapon": 7, "Accessory": 6}
+{"MinLvl": "50", "MaxLvl": "59", "SuccessRate": "15%", "Weapon": 8}
+{"MinLvl": "60", "MaxLvl": "69", "SuccessRate": "100%", "Armor": 5, "Gloves": 4, "Weapon": 5, "Accessory": 5}
+{"MinLvl": "60", "MaxLvl": "69", "SuccessRate": "70%", "Armor": 6, "Gloves": 6, "Weapon": 7, "Accessory": 6}
+{"MinLvl": "60", "MaxLvl": "69", "SuccessRate": "30%", "Armor": 7, "Gloves": 7, "Weapon": 8, "Accessory": 7}
+{"MinLvl": "60", "MaxLvl": "69", "SuccessRate": "15%", "Weapon": 10}
+{"MinLvl": "70", "MaxLvl": "79", "SuccessRate": "100%", "Armor": 6, "Gloves": 5, "Weapon": 7, "Accessory": 6}
+{"MinLvl": "70", "MaxLvl": "79", "SuccessRate": "70%", "Armor": 7, "Gloves": 7, "Weapon": 8, "Accessory": 7}
+{"MinLvl": "70", "MaxLvl": "79", "SuccessRate": "30%", "Armor": 8, "Gloves": 8, "Weapon": 10, "Accessory": 9}
+{"MinLvl": "70", "MaxLvl": "79", "SuccessRate": "15%", "Weapon": 12}
+{"MinLvl": "80", "MaxLvl": "89", "SuccessRate": "100%", "Armor": 8, "Gloves": 11, "Weapon": 14, "Accessory": 0}
+{"MinLvl": "80", "MaxLvl": "89", "SuccessRate": "70%", "Armor": 11, "Gloves": 14, "Weapon": 18, "Accessory": 0}
+{"MinLvl": "80", "MaxLvl": "89", "SuccessRate": "30%", "Armor": 13, "Gloves": 17, "Weapon": 22, "Accessory": 0}
+{"MinLvl": "80", "MaxLvl": "89", "SuccessRate": "15%", "Weapon": 26}
+{"MinLvl": "90", "MaxLvl": "99", "SuccessRate": "100%", "Armor": 10, "Gloves": 14, "Weapon": 17, "Accessory": 15}
+{"MinLvl": "90", "MaxLvl": "99", "SuccessRate": "70%", "Armor": 14, "Gloves": 18, "Weapon": 23, "Accessory": 19}
+{"MinLvl": "90", "MaxLvl": "99", "SuccessRate": "30%", "Armor": 17, "Gloves": 22, "Weapon": 28, "Accessory": 23}
+{"MinLvl": "90", "MaxLvl": "99", "SuccessRate": "15%", "Weapon": 33}
+{"MinLvl": "100", "MaxLvl": "109", "SuccessRate": "100%", "Armor": 13, "Gloves": 17, "Weapon": 22, "Accessory": 18}
+{"MinLvl": "100", "MaxLvl": "109", "SuccessRate": "70%", "Armor": 17, "Gloves": 23, "Weapon": 28, "Accessory": 24}
+{"MinLvl": "100", "MaxLvl": "109", "SuccessRate": "30%", "Armor": 20, "Gloves": 27, "Weapon": 34, "Accessory": 28}
+{"MinLvl": "100", "MaxLvl": "109", "SuccessRate": "15%", "Weapon": 40}
+{"MinLvl": "110", "MaxLvl": "119", "SuccessRate": "100%", "Armor": 16, "Gloves": 20, "Weapon": 26, "Accessory": 22}
+{"MinLvl": "110", "MaxLvl": "119", "SuccessRate": "70%", "Armor": 20, "Gloves": 27, "Weapon": 34, "Accessory": 28}
+{"MinLvl": "110", "MaxLvl": "119", "SuccessRate": "30%", "Armor": 24, "Gloves": 33, "Weapon": 40, "Accessory": 34}
+{"MinLvl": "110", "MaxLvl": "119", "SuccessRate": "15%", "Weapon": 48}
+{"MinLvl": "120", "MaxLvl": "129", "SuccessRate": "100%", "Armor": 57, "Gloves": 75, "Weapon": 93, "Accessory": 0}
+{"MinLvl": "120", "MaxLvl": "129", "SuccessRate": "70%", "Armor": 72, "Gloves": 96, "Weapon": 120, "Accessory": 100}
+{"MinLvl": "120", "MaxLvl": "129", "SuccessRate": "30%", "Armor": 87, "Gloves": 117, "Weapon": 144, "Accessory": 120}
+{"MinLvl": "120", "MaxLvl": "129", "SuccessRate": "15%", "Weapon": 174}
+{"MinLvl": "130", "MaxLvl": "139", "SuccessRate": "100%", "Armor": 72, "Gloves": 96, "Weapon": 120, "Accessory": 100}
+{"MinLvl": "130", "MaxLvl": "139", "SuccessRate": "70%", "Armor": 93, "Gloves": 123, "Weapon": 156, "Accessory": 130}
+{"MinLvl": "130", "MaxLvl": "139", "SuccessRate": "30%", "Armor": 114, "Gloves": 150, "Weapon": 186, "Accessory": 155}
+{"MinLvl": "130", "MaxLvl": "139", "SuccessRate": "15%", "Weapon": 222}
+{"MinLvl": "140", "MaxLvl": "149", "SuccessRate": "100%", "Armor": 90, "Gloves": 120, "Weapon": 144, "Accessory": 125}
+{"MinLvl": "140", "MaxLvl": "149", "SuccessRate": "70%", "Armor": 117, "Gloves": 156, "Weapon": 192, "Accessory": 160}
+{"MinLvl": "140", "MaxLvl": "149", "SuccessRate": "30%", "Armor": 138, "Gloves": 186, "Weapon": 228, "Accessory": 195}
+{"MinLvl": "140", "MaxLvl": "149", "SuccessRate": "15%", "Weapon": 276}
+{"MinLvl": "150", "MaxLvl": "159", "SuccessRate": "100%", "Armor": 185, "Gloves": 245, "Weapon": 300, "Accessory": 155}
+{"MinLvl": "150", "MaxLvl": "159", "SuccessRate": "70%", "Armor": 240, "Gloves": 320, "Weapon": 390, "Accessory": 200}
+{"MinLvl": "150", "MaxLvl": "159", "SuccessRate": "30%", "Armor": 290, "Gloves": 380, "Weapon": 480, "Accessory": 240}
+{"MinLvl": "150", "MaxLvl": "159", "SuccessRate": "15%", "Weapon": 575}
+{"MinLvl": "160", "MaxLvl": "169", "SuccessRate": "100%", "Armor": 220, "Gloves": 295, "Weapon": 370, "Accessory": 185}
+{"MinLvl": "160", "MaxLvl": "169", "SuccessRate": "70%", "Armor": 285, "Gloves": 385, "Weapon": 480, "Accessory": 240}
+{"MinLvl": "160", "MaxLvl": "169", "SuccessRate": "30%", "Armor": 345, "Gloves": 460, "Weapon": 575, "Accessory": 285}
+{"MinLvl": "160", "MaxLvl": "169", "SuccessRate": "15%", "Weapon": 690}
+{"MinLvl": "200", "MaxLvl": "209", "SuccessRate": "100%", "Armor": 0, "Gloves": 0, "Weapon": 725, "Accessory": 0}
+{"MinLvl": "200", "MaxLvl": "209", "SuccessRate": "70%", "Armor": 565, "Gloves": 0, "Weapon": 940, "Accessory": 0}
+{"MinLvl": "200", "MaxLvl": "209", "SuccessRate": "30%", "Armor": 675, "Gloves": 0, "Weapon": 1125, "Accessory": 0}
+{"MinLvl": "200", "MaxLvl": "209", "SuccessRate": "15%", "Weapon": 1350}
+{"MinLvl": "250", "MaxLvl": "259", "SuccessRate": "100%", "Armor": 850, "Gloves": 0, "Weapon": 0, "Accessory": 0}
+{"MinLvl": "250", "MaxLvl": "259", "SuccessRate": "70%", "Armor": 0, "Gloves": 0, "Weapon": 0, "Accessory": 0}
+{"MinLvl": "250", "MaxLvl": "259", "SuccessRate": "30%", "Armor": 0, "Gloves": 0, "Weapon": 0, "Accessory": 0}
+{"MinLvl": "250", "MaxLvl": "259", "SuccessRate": "15%", "Weapon": 0}
