@@ -7,6 +7,7 @@ import scrapy
 from scrapy.item import Item, Field
 from scrapy.loader import ItemLoader
 from itemloaders.processors import MapCompose, TakeFirst
+from globals import MINLVL
 import utils
 
 
@@ -15,6 +16,7 @@ class BaseItem(Item):
     Path = Field()
 
 
+# General Cleaning Methods
 def defaultZero(value):
     if value is None:
         return 0
@@ -22,15 +24,10 @@ def defaultZero(value):
         return value
 
 
-def CleanDelimiters(value):
-    D = ["N/A", "\n"]
-    for d in D:
-        if d in value:
-            value = value.replace(d, "")
-    return value
-    ...
+# Stat Folders
 
 
+# Exp Spider
 class ExpItem(BaseItem):
     Level = Field()
     TotalExp = Field()
@@ -38,10 +35,10 @@ class ExpItem(BaseItem):
     Multiplier = Field()
 
 
+# Spell Trace Spider
 class ScrollItem(BaseItem):
     SuccessRate = Field()
     ItemGroup = Field()
-    # MS_Stat = Field(input_processor=MapCompose(GetScrollValue))
     MS_Stat = Field()
     MS_MaxHP = Field()
     MS_AS = Field()
@@ -53,22 +50,46 @@ class ScrollItem(BaseItem):
     MaxLvl = Field()
 
 
-class StarforceItem(BaseItem):
-    JobStat = Field()
-    NonWeapVDef = Field()
-    OverallVDef = Field()
-    MaxHP = Field()
-    WeapMP = Field()
-    WeapAtk = Field()
-    WeapMtk = Field()
-    Speed = Field()
-    Jump = Field()
-    GloveAtk = Field()
-    GloveMtk = Field()
-    LevelScope = Field()
+# Star Force Spider Start
+
+
+class ItemStarLimit(BaseItem):
+    MinLvl = Field()
+    MaxLvl = Field()
+    Stars = Field()
+
+
+class ItemSuccessRate(BaseItem):
+    Star = Field()
+    Success = Field()
+    Maintain = Field()
+    Decrease = Field()
+    Destroy = Field()
+    ...
+
+
+class ItemStatBoost(BaseItem):
+    Star = Field()
+    Stat = Field()  # Stat/ Visible Stat
+    VDEF = Field()  # Overalls = this * 2
+    AMHP = Field()  # Cat A's Max HP
+    WMMP = Field()  # Weapon's Max HP
+    WATK = Field()  # Weapon's Atk
+    SSpd = Field()  # Shoe Speed
+    SJmp = Field()  # Shoe Jump
+    GATK = Field()  # Glove's Atk
+    MinL = Field()
+    MaxL = Field()
+
+
+# Star Force Spider End
 
 
 class EnhancementItemLoader(ItemLoader):
     default_input_processor = MapCompose(defaultZero)
     default_output_processor = TakeFirst()
     ...
+
+
+# Content Folder
+# Equip Folder

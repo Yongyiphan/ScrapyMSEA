@@ -6,9 +6,8 @@
 
 # useful for handling different item types with a single interface
 import json
-from itemadapter import ItemAdapter, adapter
+from itemadapter import ItemAdapter
 import utils as utils
-import io
 
 
 class ExportPipeline:
@@ -29,24 +28,6 @@ class ExportPipeline:
         del item["Category"]
         line = json.dumps(ItemAdapter(item).asdict()) + "\n"
         self.Jsons[Cat].write(line)
-        return item
-
-    ...
-
-
-class ExpPipeline:
-    def process_item(self, item, spider):
-        adapter = ItemAdapter(item)
-        if adapter.get("Level"):
-            adapter["Level"] = int(adapter["Level"])
-
-        if adapter.get("Multiplier"):
-            cvalue = adapter["Multiplier"]
-            if "N/A" in cvalue:
-                cvalue = "0.0"
-            cvalue = utils.RemoveString(cvalue, ["N/A", "\n"])
-            adapter["Multiplier"] = cvalue
-
         return item
 
     ...
